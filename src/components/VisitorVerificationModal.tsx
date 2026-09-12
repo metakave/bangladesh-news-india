@@ -4,7 +4,6 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { useApp } from '@/context/ThemeContext';
 import { TRANSLATIONS } from '@/data/translations';
 import {
-  ShieldCheck,
   Mail,
   User,
   Briefcase,
@@ -123,9 +122,9 @@ export default function VisitorVerificationModal() {
     return () => clearInterval(timer);
   }, [checkVerifiedCookie]);
 
-  // Lock Body Scroll when Modal is Open
+  // Lock Body Scroll ONLY when Modal is actively open and unverified
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen && !isVerified) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = '';
@@ -133,7 +132,7 @@ export default function VisitorVerificationModal() {
     return () => {
       document.body.style.overflow = '';
     };
-  }, [isOpen]);
+  }, [isOpen, isVerified]);
 
   // Resend Cooldown Timer
   useEffect(() => {
@@ -144,7 +143,7 @@ export default function VisitorVerificationModal() {
     return () => clearInterval(timer);
   }, [resendCooldown]);
 
-  // Real-time Background Polling when link is sent (checks if user verified from another tab/device)
+  // Real-time Background Polling when link is sent
   useEffect(() => {
     if (!isOpen || !isSent || !submittedEmail) return;
 
@@ -257,11 +256,27 @@ export default function VisitorVerificationModal() {
     <>
       {/* Success Toast */}
       {showVerifiedToast && (
-        <div className="fixed bottom-6 right-6 z-[9999] flex items-center gap-3 bg-emerald-950/95 border border-emerald-500/40 text-emerald-100 px-5 py-3.5 rounded-xl shadow-2xl backdrop-blur-md animate-in fade-in slide-in-from-bottom-5 duration-300">
-          <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0" />
+        <div
+          style={{
+            position: 'fixed',
+            bottom: '1.5rem',
+            right: '1.5rem',
+            zIndex: 99999,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            backgroundColor: '#064e3b',
+            border: '1px solid #10b981',
+            color: '#ecfdf5',
+            padding: '0.85rem 1.25rem',
+            borderRadius: '12px',
+            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.4)',
+          }}
+        >
+          <CheckCircle2 style={{ width: '22px', height: '22px', color: '#34d399', flexShrink: 0 }} />
           <div>
-            <p className="text-sm font-semibold">{t.verifiedToast}</p>
-            <p className="text-xs text-emerald-300/80">
+            <p style={{ margin: 0, fontSize: '0.875rem', fontWeight: 600 }}>{t.verifiedToast}</p>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: '#a7f3d0' }}>
               {lang === 'bn' ? 'সকল প্রতিবেদন ও বিশ্লেষণ উন্মুক্ত।' : 'Full access to all news and scans is unlocked.'}
             </p>
           </div>
@@ -271,23 +286,93 @@ export default function VisitorVerificationModal() {
       {/* Non-dismissible 59s Modal */}
       {isOpen && !isVerified && (
         <div
-          className="fixed inset-0 z-[9990] flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-xl animate-in fade-in duration-300"
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: '100vw',
+            height: '100vh',
+            zIndex: 99990,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '1rem',
+            backgroundColor: 'rgba(15, 23, 42, 0.88)',
+            backdropFilter: 'blur(10px)',
+            WebkitBackdropFilter: 'blur(10px)',
+            overflowY: 'auto',
+          }}
           role="dialog"
           aria-modal="true"
         >
-          <div className="relative w-full max-w-lg bg-slate-900 border border-slate-700/70 rounded-2xl shadow-2xl overflow-hidden text-slate-100 animate-in zoom-in-95 duration-300">
+          <div
+            style={{
+              position: 'relative',
+              width: '100%',
+              maxWidth: '520px',
+              backgroundColor: 'var(--bg-card, #1e293b)',
+              border: '1px solid var(--border-primary, #334155)',
+              borderRadius: '16px',
+              boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.6)',
+              overflow: 'hidden',
+              color: 'var(--text-primary, #ffffff)',
+              margin: 'auto',
+              maxHeight: '92vh',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
             {/* Top Accent Gradient Bar */}
-            <div className="h-1.5 w-full bg-gradient-to-r from-red-600 via-amber-500 to-emerald-500" />
+            <div
+              style={{
+                height: '5px',
+                width: '100%',
+                background: 'linear-gradient(90deg, #c93a1d 0%, #b45309 50%, #15803d 100%)',
+                flexShrink: 0,
+              }}
+            />
 
-            <div className="p-6 sm:p-8">
+            <div style={{ padding: '1.75rem 2rem', overflowY: 'auto' }}>
               {/* Header Badge & Brand */}
-              <div className="flex items-center justify-between gap-3 mb-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-medium">
-                  <Lock className="w-3.5 h-3.5 text-amber-400" />
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '0.75rem',
+                  marginBottom: '1rem',
+                }}
+              >
+                <div
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    padding: '0.25rem 0.65rem',
+                    borderRadius: '9999px',
+                    backgroundColor: 'rgba(245, 158, 11, 0.12)',
+                    border: '1px solid rgba(245, 158, 11, 0.3)',
+                    color: '#f59e0b',
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                  }}
+                >
+                  <Lock style={{ width: '13px', height: '13px' }} />
                   <span>{t.badge}</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-xs text-slate-400 font-mono">
-                  <Compass className="w-4 h-4 text-red-500" />
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.35rem',
+                    fontSize: '0.75rem',
+                    color: 'var(--text-muted, #94a3b8)',
+                    fontFamily: 'var(--font-mono, monospace)',
+                  }}
+                >
+                  <Compass style={{ width: '14px', height: '14px', color: '#c93a1d' }} />
                   <span>Narrative Compass</span>
                 </div>
               </div>
@@ -295,69 +380,184 @@ export default function VisitorVerificationModal() {
               {!isSent ? (
                 /* STEP 1: VISITOR FORM */
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-1.5">
+                  <h2
+                    style={{
+                      fontSize: '1.35rem',
+                      fontWeight: 800,
+                      color: 'var(--text-primary, #ffffff)',
+                      margin: '0 0 0.4rem 0',
+                      letterSpacing: '-0.02em',
+                    }}
+                  >
                     {t.title}
                   </h2>
-                  <p className="text-sm text-slate-300 mb-6 leading-relaxed">
+                  <p
+                    style={{
+                      fontSize: '0.875rem',
+                      color: 'var(--text-secondary, #cbd5e1)',
+                      margin: '0 0 1.25rem 0',
+                      lineHeight: 1.5,
+                    }}
+                  >
                     {t.subtitle}
                   </p>
 
                   {errorMsg && (
-                    <div className="mb-5 flex items-start gap-2.5 p-3 rounded-lg bg-red-950/60 border border-red-500/40 text-red-200 text-xs sm:text-sm">
-                      <AlertCircle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        gap: '0.6rem',
+                        padding: '0.75rem 1rem',
+                        borderRadius: '8px',
+                        backgroundColor: 'rgba(220, 38, 38, 0.15)',
+                        border: '1px solid rgba(220, 38, 38, 0.4)',
+                        color: '#fca5a5',
+                        fontSize: '0.825rem',
+                        marginBottom: '1.25rem',
+                      }}
+                    >
+                      <AlertCircle style={{ width: '16px', height: '16px', color: '#ef4444', marginTop: '2px', flexShrink: 0 }} />
                       <span>{errorMsg}</span>
                     </div>
                   )}
 
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                  <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     {/* Name */}
                     <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        {t.nameLabel} <span className="text-red-400">*</span>
+                      <label
+                        style={{
+                          display: 'block',
+                          fontSize: '0.75rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          color: 'var(--text-secondary, #cbd5e1)',
+                          marginBottom: '0.35rem',
+                        }}
+                      >
+                        {t.nameLabel} <span style={{ color: '#ef4444' }}>*</span>
                       </label>
-                      <div className="relative">
-                        <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                      <div style={{ position: 'relative' }}>
+                        <User
+                          style={{
+                            position: 'absolute',
+                            left: '0.85rem',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            width: '16px',
+                            height: '16px',
+                            color: 'var(--text-muted, #94a3b8)',
+                          }}
+                        />
                         <input
                           type="text"
                           required
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                           placeholder={t.namePlaceholder}
-                          className="w-full pl-10 pr-4 py-2.5 bg-slate-950/60 border border-slate-700/80 rounded-lg text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 transition-colors"
+                          style={{
+                            width: '100%',
+                            padding: '0.65rem 1rem 0.65rem 2.5rem',
+                            backgroundColor: 'var(--bg-secondary, #0f172a)',
+                            border: '1px solid var(--border-primary, #334155)',
+                            borderRadius: '8px',
+                            fontSize: '0.875rem',
+                            color: 'var(--text-primary, #ffffff)',
+                            outline: 'none',
+                          }}
                         />
                       </div>
                     </div>
 
                     {/* Designation & Company (Grid) */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+                        <label
+                          style={{
+                            display: 'block',
+                            fontSize: '0.75rem',
+                            fontWeight: 700,
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                            color: 'var(--text-secondary, #cbd5e1)',
+                            marginBottom: '0.35rem',
+                          }}
+                        >
                           {t.designationLabel}
                         </label>
-                        <div className="relative">
-                          <Briefcase className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                        <div style={{ position: 'relative' }}>
+                          <Briefcase
+                            style={{
+                              position: 'absolute',
+                              left: '0.85rem',
+                              top: '50%',
+                              transform: 'translateY(-50%)',
+                              width: '16px',
+                              height: '16px',
+                              color: 'var(--text-muted, #94a3b8)',
+                            }}
+                          />
                           <input
                             type="text"
                             value={designation}
                             onChange={(e) => setDesignation(e.target.value)}
                             placeholder={t.designationPlaceholder}
-                            className="w-full pl-10 pr-4 py-2.5 bg-slate-950/60 border border-slate-700/80 rounded-lg text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 transition-colors"
+                            style={{
+                              width: '100%',
+                              padding: '0.65rem 0.75rem 0.65rem 2.4rem',
+                              backgroundColor: 'var(--bg-secondary, #0f172a)',
+                              border: '1px solid var(--border-primary, #334155)',
+                              borderRadius: '8px',
+                              fontSize: '0.825rem',
+                              color: 'var(--text-primary, #ffffff)',
+                              outline: 'none',
+                            }}
                           />
                         </div>
                       </div>
 
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
+                        <label
+                          style={{
+                            display: 'block',
+                            fontSize: '0.75rem',
+                            fontWeight: 700,
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                            color: 'var(--text-secondary, #cbd5e1)',
+                            marginBottom: '0.35rem',
+                          }}
+                        >
                           {t.companyLabel}
                         </label>
-                        <div className="relative">
-                          <Building className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                        <div style={{ position: 'relative' }}>
+                          <Building
+                            style={{
+                              position: 'absolute',
+                              left: '0.85rem',
+                              top: '50%',
+                              transform: 'translateY(-50%)',
+                              width: '16px',
+                              height: '16px',
+                              color: 'var(--text-muted, #94a3b8)',
+                            }}
+                          />
                           <input
                             type="text"
                             value={company}
                             onChange={(e) => setCompany(e.target.value)}
                             placeholder={t.companyPlaceholder}
-                            className="w-full pl-10 pr-4 py-2.5 bg-slate-950/60 border border-slate-700/80 rounded-lg text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 transition-colors"
+                            style={{
+                              width: '100%',
+                              padding: '0.65rem 0.75rem 0.65rem 2.4rem',
+                              backgroundColor: 'var(--bg-secondary, #0f172a)',
+                              border: '1px solid var(--border-primary, #334155)',
+                              borderRadius: '8px',
+                              fontSize: '0.825rem',
+                              color: 'var(--text-primary, #ffffff)',
+                              outline: 'none',
+                            }}
                           />
                         </div>
                       </div>
@@ -365,18 +565,47 @@ export default function VisitorVerificationModal() {
 
                     {/* Email */}
                     <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">
-                        {t.emailLabel} <span className="text-red-400">*</span>
+                      <label
+                        style={{
+                          display: 'block',
+                          fontSize: '0.75rem',
+                          fontWeight: 700,
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          color: 'var(--text-secondary, #cbd5e1)',
+                          marginBottom: '0.35rem',
+                        }}
+                      >
+                        {t.emailLabel} <span style={{ color: '#ef4444' }}>*</span>
                       </label>
-                      <div className="relative">
-                        <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                      <div style={{ position: 'relative' }}>
+                        <Mail
+                          style={{
+                            position: 'absolute',
+                            left: '0.85rem',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            width: '16px',
+                            height: '16px',
+                            color: 'var(--text-muted, #94a3b8)',
+                          }}
+                        />
                         <input
                           type="email"
                           required
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder={t.emailPlaceholder}
-                          className="w-full pl-10 pr-4 py-2.5 bg-slate-950/60 border border-slate-700/80 rounded-lg text-sm text-white placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 transition-colors"
+                          style={{
+                            width: '100%',
+                            padding: '0.65rem 1rem 0.65rem 2.5rem',
+                            backgroundColor: 'var(--bg-secondary, #0f172a)',
+                            border: '1px solid var(--border-primary, #334155)',
+                            borderRadius: '8px',
+                            fontSize: '0.875rem',
+                            color: 'var(--text-primary, #ffffff)',
+                            outline: 'none',
+                          }}
                         />
                       </div>
                     </div>
@@ -385,49 +614,115 @@ export default function VisitorVerificationModal() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 text-white font-semibold text-sm shadow-lg shadow-red-900/30 focus:outline-none focus:ring-2 focus:ring-amber-500 disabled:opacity-60 disabled:cursor-not-allowed transition-all cursor-pointer"
+                      style={{
+                        width: '100%',
+                        marginTop: '0.5rem',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        padding: '0.8rem 1.5rem',
+                        borderRadius: '8px',
+                        background: 'linear-gradient(135deg, #c93a1d 0%, #a92911 100%)',
+                        color: '#ffffff',
+                        fontWeight: 700,
+                        fontSize: '0.875rem',
+                        boxShadow: '0 10px 15px -3px rgba(201, 58, 29, 0.3)',
+                        cursor: isSubmitting ? 'not-allowed' : 'pointer',
+                        opacity: isSubmitting ? 0.7 : 1,
+                        border: 'none',
+                      }}
                     >
                       {isSubmitting ? (
                         <>
-                          <Loader2 className="w-4 h-4 animate-spin" />
+                          <Loader2 style={{ width: '16px', height: '16px', animation: 'spin 1s linear infinite' }} />
                           <span>{t.submittingBtn}</span>
                         </>
                       ) : (
                         <>
                           <span>{t.submitBtn}</span>
-                          <ArrowRight className="w-4 h-4" />
+                          <ArrowRight style={{ width: '16px', height: '16px' }} />
                         </>
                       )}
                     </button>
                   </form>
 
-                  <div className="mt-4 text-center">
-                    <p className="text-[11px] text-slate-400">
+                  <div style={{ marginTop: '1rem', textAlign: 'center' }}>
+                    <p style={{ margin: 0, fontSize: '0.72rem', color: 'var(--text-muted, #94a3b8)' }}>
                       🔒 {t.requiredNote}
                     </p>
                   </div>
                 </div>
               ) : (
                 /* STEP 2: LINK SENT SCREEN */
-                <div className="text-center py-2">
-                  <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
-                    <Mail className="w-7 h-7" />
+                <div style={{ textAlign: 'center', padding: '0.5rem 0' }}>
+                  <div
+                    style={{
+                      width: '56px',
+                      height: '56px',
+                      margin: '0 auto 1rem auto',
+                      borderRadius: '50%',
+                      backgroundColor: 'rgba(16, 185, 129, 0.15)',
+                      border: '1px solid rgba(16, 185, 129, 0.4)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#10b981',
+                    }}
+                  >
+                    <Mail style={{ width: '28px', height: '28px' }} />
                   </div>
 
-                  <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                  <h2
+                    style={{
+                      fontSize: '1.35rem',
+                      fontWeight: 800,
+                      color: 'var(--text-primary, #ffffff)',
+                      margin: '0 0 0.5rem 0',
+                    }}
+                  >
                     {t.successTitle}
                   </h2>
-                  <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed mb-4">
+                  <p
+                    style={{
+                      fontSize: '0.875rem',
+                      color: 'var(--text-secondary, #cbd5e1)',
+                      lineHeight: 1.5,
+                      margin: '0 auto 1rem auto',
+                      maxWidth: '420px',
+                    }}
+                  >
                     {t.successDesc.replace('{email}', submittedEmail)}
                   </p>
 
-                  <div className="inline-block p-3.5 bg-slate-950/80 border border-slate-800 rounded-xl text-xs text-amber-300/90 mb-6 max-w-sm">
+                  <div
+                    style={{
+                      display: 'inline-block',
+                      padding: '0.75rem 1rem',
+                      backgroundColor: 'var(--bg-secondary, #0f172a)',
+                      border: '1px solid var(--border-primary, #334155)',
+                      borderRadius: '8px',
+                      fontSize: '0.75rem',
+                      color: '#fbbf24',
+                      marginBottom: '1.25rem',
+                    }}
+                  >
                     💡 <strong>{t.checkInboxHint}</strong>
                   </div>
 
                   {/* Realtime Waiting Indicator */}
-                  <div className="flex items-center justify-center gap-2 text-xs text-slate-400 mb-6">
-                    <Loader2 className="w-3.5 h-3.5 animate-spin text-amber-400" />
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '0.5rem',
+                      fontSize: '0.75rem',
+                      color: 'var(--text-muted, #94a3b8)',
+                      marginBottom: '1.25rem',
+                    }}
+                  >
+                    <Loader2 style={{ width: '14px', height: '14px', color: '#f59e0b', animation: 'spin 1s linear infinite' }} />
                     <span>
                       {lang === 'bn'
                         ? 'ইমেইল ভেরিফিকেশনের জন্য অপেক্ষা করা হচ্ছে...'
@@ -436,20 +731,48 @@ export default function VisitorVerificationModal() {
                   </div>
 
                   {errorMsg && (
-                    <div className="mb-4 flex items-center justify-center gap-2 p-2.5 rounded-lg bg-red-950/60 border border-red-500/40 text-red-200 text-xs">
-                      <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        padding: '0.5rem',
+                        borderRadius: '8px',
+                        backgroundColor: 'rgba(220, 38, 38, 0.15)',
+                        border: '1px solid rgba(220, 38, 38, 0.4)',
+                        color: '#fca5a5',
+                        fontSize: '0.75rem',
+                        marginBottom: '1rem',
+                      }}
+                    >
+                      <AlertCircle style={{ width: '14px', height: '14px', color: '#ef4444', flexShrink: 0 }} />
                       <span>{errorMsg}</span>
                     </div>
                   )}
 
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
                     <button
                       type="button"
                       disabled={resendCooldown > 0 || isSubmitting}
                       onClick={handleResend}
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 border border-slate-700 text-xs font-semibold text-slate-200 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.4rem',
+                        padding: '0.65rem 1.1rem',
+                        borderRadius: '8px',
+                        backgroundColor: 'var(--bg-secondary, #0f172a)',
+                        border: '1px solid var(--border-primary, #334155)',
+                        fontSize: '0.75rem',
+                        fontWeight: 600,
+                        color: 'var(--text-primary, #ffffff)',
+                        cursor: resendCooldown > 0 || isSubmitting ? 'not-allowed' : 'pointer',
+                        opacity: resendCooldown > 0 || isSubmitting ? 0.6 : 1,
+                      }}
                     >
-                      <RefreshCw className={`w-3.5 h-3.5 ${isSubmitting ? 'animate-spin' : ''}`} />
+                      <RefreshCw style={{ width: '13px', height: '13px' }} />
                       <span>
                         {resendCooldown > 0
                           ? `${t.resendIn} ${resendCooldown}s`
@@ -460,7 +783,16 @@ export default function VisitorVerificationModal() {
                     <button
                       type="button"
                       onClick={() => setIsSent(false)}
-                      className="w-full sm:w-auto text-xs text-slate-400 hover:text-slate-200 underline underline-offset-4 py-2"
+                      style={{
+                        fontSize: '0.75rem',
+                        color: 'var(--text-muted, #94a3b8)',
+                        textDecoration: 'underline',
+                        textUnderlineOffset: '3px',
+                        padding: '0.5rem',
+                        cursor: 'pointer',
+                        background: 'none',
+                        border: 'none',
+                      }}
                     >
                       {t.changeInfoBtn}
                     </button>
@@ -471,6 +803,13 @@ export default function VisitorVerificationModal() {
           </div>
         </div>
       )}
+
+      <style jsx global>{`
+        @keyframes spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
     </>
   );
 }
