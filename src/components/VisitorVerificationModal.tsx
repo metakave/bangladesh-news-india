@@ -17,13 +17,15 @@ import {
   Lock,
 } from 'lucide-react';
 
+const POPUP_DELAY_SECONDS = 150; // 2 minutes 30 seconds
+
 export default function VisitorVerificationModal() {
   const { lang } = useApp();
   const t = TRANSLATIONS[lang].verificationModal;
 
   const [isVerified, setIsVerified] = useState<boolean>(true); // start true to prevent flicker on mount
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const [secondsLeft, setSecondsLeft] = useState<number>(59);
+  const [secondsLeft, setSecondsLeft] = useState<number>(POPUP_DELAY_SECONDS);
 
   // Form State
   const [name, setName] = useState('');
@@ -66,7 +68,7 @@ export default function VisitorVerificationModal() {
     }
   }, []);
 
-  // Initial Verification Check & 59-Second Timer Setup
+  // Initial Verification Check & 2m 30s Timer Setup
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
@@ -91,7 +93,7 @@ export default function VisitorVerificationModal() {
 
     const firstSeenTime = parseInt(firstSeen, 10);
     const elapsedSeconds = Math.floor((now - firstSeenTime) / 1000);
-    const initialRemaining = Math.max(0, 59 - elapsedSeconds);
+    const initialRemaining = Math.max(0, POPUP_DELAY_SECONDS - elapsedSeconds);
 
     setSecondsLeft(initialRemaining);
 
@@ -110,7 +112,7 @@ export default function VisitorVerificationModal() {
       }
 
       const currentElapsed = Math.floor((Date.now() - firstSeenTime) / 1000);
-      const remaining = Math.max(0, 59 - currentElapsed);
+      const remaining = Math.max(0, POPUP_DELAY_SECONDS - currentElapsed);
       setSecondsLeft(remaining);
 
       if (remaining === 0) {
