@@ -6,11 +6,18 @@ import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
 import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
-import { Globe, Shield, Rss, ArrowUp } from 'lucide-react';
+import { Globe, Shield, Rss, ArrowUp, Calendar, Bookmark, Moon, Sun } from 'lucide-react';
 
 export default function Footer() {
-  const { lang } = useApp();
+  const { lang, theme, toggleTheme, bookmarks } = useApp();
   const t = TRANSLATIONS[lang];
+
+  const today = new Date().toLocaleDateString(lang === 'bn' ? 'bn-BD' : 'en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   const scrollToTop = () => {
     if (typeof window !== 'undefined') {
@@ -22,12 +29,103 @@ export default function Footer() {
     <footer style={{
       backgroundColor: 'var(--bg-secondary)',
       borderTop: '2px solid var(--border-bold)',
-      paddingTop: '3.5rem',
+      paddingTop: '2.5rem',
       paddingBottom: '2.5rem',
       fontSize: '0.85rem',
       color: 'var(--text-secondary)',
     }}>
       <div className="container">
+        {/* Mobile Quick Utility Bar (Date, Bookmarks, Dark/Light Mode) */}
+        <div className="mobile-footer-utility-bar" style={{
+          display: 'none',
+          backgroundColor: 'var(--bg-primary)',
+          border: '1px solid var(--border-primary)',
+          borderRadius: 'var(--radius-md)',
+          padding: '0.75rem 1rem',
+          marginBottom: '2rem',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: '0.75rem',
+          flexWrap: 'wrap',
+        }}>
+          {/* Mobile Date */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.78rem', color: 'var(--text-secondary)', fontWeight: 600 }}>
+            <Calendar size={13} style={{ color: 'var(--brand-primary)' }} />
+            <span className={lang === 'bn' ? 'font-bengali' : ''}>{today}</span>
+          </div>
+
+          {/* Mobile Actions: Saved + Theme Toggle */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+            {/* Bookmarks */}
+            <Link
+              href="/saved"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                backgroundColor: 'var(--bg-secondary)',
+                border: '1px solid var(--border-primary)',
+                padding: '0.3rem 0.65rem',
+                borderRadius: 'var(--radius-sm)',
+                color: 'var(--text-primary)',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                textDecoration: 'none'
+              }}
+            >
+              <Bookmark size={13} style={{ color: 'var(--brand-primary)' }} />
+              <span className={lang === 'bn' ? 'font-bengali' : ''}>{t.saved}</span>
+              {bookmarks.length > 0 && (
+                <span style={{
+                  backgroundColor: 'var(--brand-primary)',
+                  color: '#ffffff',
+                  fontSize: '0.62rem',
+                  fontWeight: 800,
+                  borderRadius: '50%',
+                  width: '15px',
+                  height: '15px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}>
+                  {bookmarks.length}
+                </span>
+              )}
+            </Link>
+
+            {/* Theme Switcher */}
+            <button
+              onClick={toggleTheme}
+              aria-label="Toggle Theme"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                backgroundColor: 'var(--bg-secondary)',
+                border: '1px solid var(--border-primary)',
+                padding: '0.3rem 0.65rem',
+                borderRadius: 'var(--radius-sm)',
+                color: 'var(--text-primary)',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+              }}
+            >
+              {theme === 'light' ? (
+                <>
+                  <Moon size={13} />
+                  <span>{lang === 'bn' ? 'ডার্ক মোড' : 'Dark'}</span>
+                </>
+              ) : (
+                <>
+                  <Sun size={13} style={{ color: '#fbbf24' }} />
+                  <span>{lang === 'bn' ? 'লাইট মোড' : 'Light'}</span>
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+
         {/* Top Footer Section */}
         <div style={{
           display: 'grid',
@@ -235,9 +333,11 @@ export default function Footer() {
           .footer-brand-col {
             grid-column: span 1 !important;
           }
+          .mobile-footer-utility-bar {
+            display: flex !important;
+          }
         }
       `}</style>
     </footer>
   );
 }
-
