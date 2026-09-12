@@ -420,16 +420,17 @@ export default function ArticleCard({
           <div
             className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
-              fontSize: '0.74rem',
-              color: 'var(--text-muted)',
+              fontSize: lang === 'bn' ? '0.85rem' : '0.80rem',
+              lineHeight: lang === 'bn' ? 1.55 : 1.45,
+              color: 'var(--text-secondary)',
               backgroundColor: 'var(--bg-secondary)',
-              padding: '0.4rem 0.6rem',
+              padding: '0.5rem 0.75rem',
               borderRadius: 'var(--radius-sm)',
               marginBottom: '1rem',
               marginTop: 'auto',
             }}
           >
-            <strong style={{ color: 'var(--text-primary)' }}>{t.scannerContext}</strong> {sentimentReason}
+            <strong style={{ color: 'var(--text-primary)', marginRight: '0.25rem' }}>{t.scannerContext}</strong> {sentimentReason}
           </div>
 
           <div style={{

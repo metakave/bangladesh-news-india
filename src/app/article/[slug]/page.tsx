@@ -318,7 +318,7 @@ export default function ArticlePage({
               margin: '2rem 0',
             }}>
               <div style={{
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? '0.84rem' : '0.78rem',
                 fontWeight: 800,
                 textTransform: 'uppercase',
                 letterSpacing: '0.06em',
@@ -337,7 +337,7 @@ export default function ArticlePage({
                   ? (article.sentiment === 'positive' ? 'ইতিবাচক দৃষ্টিভঙ্গি' : article.sentiment === 'negative' ? 'নেতিবাচক / সতর্কবার্তা' : 'নিরপেক্ষ বিশ্লেষণ')
                   : (article.sentiment === 'positive' ? 'Positive Narrative on BD' : article.sentiment === 'negative' ? 'Negative Narrative on BD' : 'Neutral / Policy Appraisal')}
               </div>
-              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.92rem', color: 'var(--text-primary)', lineHeight: 1.55 }}>
+              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: lang === 'bn' ? '1.02rem' : '0.96rem', color: 'var(--text-primary)', lineHeight: 1.6 }}>
                 {sentimentReason}
               </p>
             </div>
