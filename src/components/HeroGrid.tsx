@@ -78,7 +78,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                 style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: lang === 'bn' ? 'none' : 'uppercase', color: 'var(--text-primary)', marginBottom: '0.65rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
               >
                 <Radio size={13} style={{ color: 'var(--brand-primary)' }} />
-                {lang === 'bn' ? 'ভারতীয় মিডিয়া স্ক্যানার স্ট্যাটাস' : 'Indian Media Scanner Pulse'}
+                {lang === 'bn' ? 'ভারতীয় নিউজ স্ক্যানার স্ট্যাটাস' : 'Indian News Scanner Pulse'}
               </div>
               <div
                 className={lang === 'bn' ? 'font-bengali' : ''}
