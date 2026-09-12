@@ -433,7 +433,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     publishedAt: '2026-09-12T07:45:00Z',
     readTimeBn: '৪ মিনিট পাঠ',
     readTimeEn: '4 min read',
-    imageUrl: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200&auto=format&fit=crop&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80',
     tags: ['BSF', 'Border Security', 'Meghalaya', 'Smuggling', 'Infiltration', 'Dainik Jagran'],
   },
   {
