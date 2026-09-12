@@ -628,7 +628,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
     websiteUrl: 'https://ganashakti.com',
     domain: 'ganashakti.com',
-    bangladeshUrl: 'https://ganashakti.com/search?q=bangladesh',
+    bangladeshUrl: 'https://ganashakti.com/search?search=bangladesh',
     rssFeedUrl: 'https://ganashakti.com/feed/',
   },
   {
