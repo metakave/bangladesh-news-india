@@ -186,7 +186,7 @@ export default function Header() {
               <h1
                 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
                 style={{
-                  fontSize: lang === 'bn' ? 'clamp(2.1rem, 5.2vw, 3.5rem)' : 'clamp(2rem, 5vw, 3.4rem)',
+                  fontSize: lang === 'bn' ? 'calc(clamp(2.1rem, 5.2vw, 3.5rem) - 5pt)' : 'clamp(2rem, 5vw, 3.4rem)',
                   fontWeight: 900,
                   lineHeight: 1.1,
                   letterSpacing: lang === 'bn' ? '0' : '0.08em',
@@ -322,7 +322,7 @@ export default function Header() {
             borderRight: '1px solid var(--border-primary)'
           }} onClick={(e) => e.stopPropagation()}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
-              <h2 className="font-bengali" style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--brand-primary)' }}>
+              <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.4rem - 5pt)' : '1.4rem', fontWeight: 900, color: 'var(--brand-primary)' }}>
                 {t.siteTitle}
               </h2>
               <button onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--text-primary)' }}>

@@ -42,7 +42,7 @@ export default function Footer() {
               <h2
                 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
                 style={{
-                  fontSize: lang === 'bn' ? '1.75rem' : '1.8rem',
+                  fontSize: lang === 'bn' ? 'calc(1.75rem - 5pt)' : '1.8rem',
                   fontWeight: 900,
                   color: 'var(--text-primary)',
                   letterSpacing: lang === 'bn' ? '0' : '0.06em',
