@@ -1,157 +1,138 @@
-'use client';
-
-import React, { useState, use } from 'react';
-import Link from 'next/link';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { useApp } from '@/context/ThemeContext';
 import { SCANNED_NEWS_ITEMS, CATEGORIES } from '@/data/news-data';
-import { TRANSLATIONS } from '@/data/translations';
-import ArticleCard from '@/components/ArticleCard';
-import { ChevronRight } from 'lucide-react';
+import CategoryClientView from '@/components/CategoryClientView';
 
-export default function CategoryPage({
-  params,
-}: {
+const SITE_URL = 'https://bangladesh-news-india.vercel.app';
+
+interface CategoryPageProps {
   params: Promise<{ category: string }>;
-}) {
-  const resolvedParams = use(params);
-  const categorySlug = resolvedParams.category;
-  const { lang } = useApp();
-  const t = TRANSLATIONS[lang];
+}
 
+export async function generateStaticParams() {
+  return CATEGORIES.map((cat) => ({
+    category: cat.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const categoryInfo = CATEGORIES.find((c) => c.slug === resolvedParams.category);
+
+  if (!categoryInfo) {
+    return {
+      title: 'Category Not Found | Narrative Compass',
+    };
+  }
+
+  const title = `${categoryInfo.labelEn} (${categoryInfo.labelBn}) | Narrative Compass`;
+  const description = `Live intelligence scanner and reports on ${categoryInfo.labelEn} across leading Indian newsrooms and Delhi/Kolkata bureaus.`;
+  const url = `${SITE_URL}/category/${categoryInfo.slug}`;
+
+  return {
+    title,
+    description,
+    keywords: [categoryInfo.labelEn, categoryInfo.labelBn, 'Bangladesh News', 'India Media Scanner', 'Narrative Compass'],
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: 'website',
+      images: [
+        {
+          url: '/images/brics-summit-2026-card.png',
+          width: 1200,
+          height: 675,
+          alt: `${categoryInfo.labelEn} - Narrative Compass`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['/images/brics-summit-2026-card.png'],
+    },
+  };
+}
+
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const resolvedParams = await params;
+  const categorySlug = resolvedParams.category;
   const categoryInfo = CATEGORIES.find((c) => c.slug === categorySlug);
 
   if (!categoryInfo) {
     notFound();
   }
 
-  const [sortBy, setSortBy] = useState<'latest' | 'sentiment'>('latest');
-
   const rawArticles = SCANNED_NEWS_ITEMS.filter((a) => a.category === categorySlug);
-
   const sortedArticles = [...rawArticles].sort((a, b) => {
     return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
   });
 
-  const categoryTitle = lang === 'bn' ? categoryInfo.labelBn : categoryInfo.labelEn;
+  // Schema.org CollectionPage JSON-LD
+  const jsonLdCollection = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${categoryInfo.labelEn} - Indian Media Scanner`,
+    alternateName: categoryInfo.labelBn,
+    url: `${SITE_URL}/category/${categoryInfo.slug}`,
+    description: `Scanned articles and narrative tracking on ${categoryInfo.labelEn}`,
+    publisher: {
+      '@type': 'NewsMediaOrganization',
+      name: 'Narrative Compass',
+      url: SITE_URL,
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: sortedArticles.map((art, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        url: `${SITE_URL}/article/${art.slug}`,
+        name: art.title,
+      })),
+    },
+  };
+
+  // Schema.org Breadcrumbs
+  const jsonLdBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_URL,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: categoryInfo.labelEn,
+        item: `${SITE_URL}/category/${categoryInfo.slug}`,
+      },
+    ],
+  };
 
   return (
-    <div style={{ padding: '2rem 0 4rem 0' }}>
-      <div className="container">
-        {/* Breadcrumb */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.4rem',
-          fontSize: '0.78rem',
-          color: 'var(--text-muted)',
-          marginBottom: '1.5rem',
-        }}>
-          <Link href="/" className={lang === 'bn' ? 'font-bengali' : ''} style={{ color: 'var(--text-secondary)' }}>
-            {lang === 'bn' ? 'হোম' : 'Home'}
-          </Link>
-          <ChevronRight size={12} />
-          <span
-            className={lang === 'bn' ? 'font-bengali' : ''}
-            style={{ color: 'var(--brand-primary)', fontWeight: 700, textTransform: lang === 'bn' ? 'none' : 'uppercase' }}
-          >
-            {categoryTitle}
-          </span>
-        </div>
-
-        {/* Category Masthead */}
-        <div style={{
-          borderBottom: '2px solid var(--border-bold)',
-          paddingBottom: '1.25rem',
-          marginBottom: '2rem',
-          display: 'flex',
-          alignItems: 'flex-end',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '1rem',
-        }}>
-          <div>
-            <h1
-              className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
-              style={{
-                fontSize: lang === 'bn' ? 'clamp(1.8rem, 3.8vw, 2.5rem)' : 'clamp(2rem, 4vw, 2.75rem)',
-                fontWeight: 900,
-                color: 'var(--text-primary)',
-                textTransform: lang === 'bn' ? 'none' : 'uppercase',
-                letterSpacing: lang === 'bn' ? '0' : '0.04em',
-                lineHeight: 1.2,
-                marginBottom: '0.35rem',
-              }}
-            >
-              {categoryTitle}
-            </h1>
-            <p
-              className={lang === 'bn' ? 'font-bengali' : ''}
-              style={{ fontSize: '0.92rem', color: 'var(--text-secondary)' }}
-            >
-              {lang === 'bn'
-                ? `ভারতীয় সংবাদমাধ্যমে "${categoryTitle}" সংক্রান্ত সর্বশেষ সংগৃহীত ও বিশ্লেষণকৃত প্রতিবেদন।`
-                : `Comprehensive scanned reports, intelligence, and verified coverage on ${categoryTitle}.`}
-            </p>
-          </div>
-
-          <div
-            className={lang === 'bn' ? 'font-bengali' : ''}
-            style={{
-              fontSize: '0.82rem',
-              fontWeight: 700,
-              color: 'var(--brand-primary)',
-              backgroundColor: 'var(--bg-secondary)',
-              padding: '0.35rem 0.85rem',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid var(--border-primary)',
-            }}
-          >
-            {lang === 'bn' ? `${sortedArticles.length} টি স্ক্যানড প্রতিবেদন` : `${sortedArticles.length} Scanned Reports`}
-          </div>
-        </div>
-
-        {/* Articles Grid */}
-        {sortedArticles.length === 0 ? (
-          <div style={{ padding: '4rem 1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-            <p
-              className={lang === 'bn' ? 'font-bengali' : ''}
-              style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-primary)' }}
-            >
-              {lang === 'bn' ? 'এই বিভাগে বর্তমানে কোনো প্রতিবেদন পাওয়া যায়নি।' : 'No scanned articles currently indexed under this section.'}
-            </p>
-            <Link
-              href="/"
-              className={lang === 'bn' ? 'font-bengali' : ''}
-              style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--brand-primary)', fontWeight: 700 }}
-            >
-              {lang === 'bn' ? 'মূল পাতায় ফিরে যান' : 'Return to Frontpage'}
-            </Link>
-          </div>
-        ) : (
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-            gap: '2rem',
-          }}>
-            {sortedArticles.map((art) => (
-              <div
-                key={art.id}
-                style={{
-                  backgroundColor: 'var(--bg-card)',
-                  padding: '1.25rem',
-                  borderRadius: 'var(--radius-md)',
-                  border: '1px solid var(--border-primary)',
-                  boxShadow: 'var(--shadow-sm)',
-                }}
-              >
-                <ArticleCard article={art} variant="featured" />
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdCollection) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumbs) }}
+      />
+      <CategoryClientView
+        categorySlug={categorySlug}
+        categoryLabelBn={categoryInfo.labelBn}
+        categoryLabelEn={categoryInfo.labelEn}
+        articles={sortedArticles}
+      />
+    </>
   );
 }
-
