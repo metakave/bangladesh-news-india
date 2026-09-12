@@ -2,19 +2,18 @@ import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import { AppProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
-import MarketTicker from '@/components/MarketTicker';
 import BreakingNews from '@/components/BreakingNews';
 import SearchModal from '@/components/SearchModal';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Bangladesh Watch | The Independent Journal of Record & Ideas',
-  description: 'Fast, high-integrity digital journalism covering Bangladeshi politics, economy, tech freelancing, garment innovation, climate resilience, and global diplomacy.',
-  keywords: ['Bangladesh News', 'Dhaka Economy', 'Matarbari Deep Sea Port', 'Bangladesh RMG', 'Freelancing Bangladesh', 'Bangladesh Politics', 'Delta Plan 2100'],
-  authors: [{ name: 'Bangladesh Watch Editorial Board' }],
+  description: 'Fast, high-integrity digital journalism covering Indian media reporting on Bangladesh across English, Bengali, and Hindi with 3-marker sentiment tracking.',
+  keywords: ['Bangladesh News', 'Indian Media Scanner', 'Teesta River', 'Petrapole Benapole', 'Anandabazar Patrika', 'The Hindu', 'Dainik Jagran'],
+  authors: [{ name: 'Bangladesh Watch Editorial & Intelligence Desk' }],
   openGraph: {
-    title: 'Bangladesh Watch | The Independent Journal of Record & Ideas',
-    description: 'Fast, high-integrity digital journalism covering Bangladeshi politics, economy, tech, and geopolitics.',
+    title: 'Bangladesh Watch | Indian Media Narrative Monitor',
+    description: 'Real-time scanner of top Indian media reporting on Bangladesh across Delhi and Kolkata bureaus.',
     siteName: 'Bangladesh Watch',
     locale: 'en_US',
     type: 'website',
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Bangladesh Watch',
-    description: 'Fast, high-integrity digital journalism on Bangladesh & the Bay of Bengal.',
+    description: 'Indian Media Scanner on Bangladesh with 3-marker sentiment analysis.',
   },
 };
 
@@ -35,7 +34,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <AppProvider>
-          <MarketTicker />
           <Header />
           <BreakingNews />
           <main style={{ minHeight: '80vh' }}>

@@ -13,11 +13,6 @@ import {
   Menu,
   X,
   Globe,
-  Flame,
-  Newspaper,
-  Compass,
-  Radio,
-  SlidersHorizontal
 } from 'lucide-react';
 
 export default function Header() {
@@ -61,11 +56,6 @@ export default function Header() {
                 Edition: <span style={{ color: 'var(--brand-primary)', textDecoration: 'underline' }}>{edition === 'national' ? 'Dhaka (National)' : 'International'}</span>
               </button>
             </div>
-            <span style={{ display: 'none' }} className="epaper-link">
-              <Link href="/epaper" style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>
-                Today&apos;s ePaper
-              </Link>
-            </span>
           </div>
 
           {/* User Controls */}
@@ -86,7 +76,7 @@ export default function Header() {
               }}
             >
               <Search size={13} />
-              <span className="search-text">Search Bangladesh news...</span>
+              <span className="search-text">Search Indian media scans...</span>
               <kbd style={{
                 backgroundColor: 'var(--bg-primary)',
                 padding: '0.1rem 0.35rem',
@@ -254,7 +244,7 @@ export default function Header() {
                 position: 'relative'
               }}
             >
-              Frontpage
+              All Scans
             </Link>
 
             {CATEGORIES.map((cat) => {
@@ -277,20 +267,6 @@ export default function Header() {
                 </Link>
               );
             })}
-
-            <Link
-              href="/category/opinion"
-              style={{
-                fontWeight: pathname === '/category/opinion' ? 800 : 600,
-                fontSize: '0.84rem',
-                color: pathname === '/category/opinion' ? 'var(--brand-primary)' : 'var(--text-primary)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              Opinion
-            </Link>
           </div>
         </div>
       </nav>
@@ -327,7 +303,7 @@ export default function Header() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', borderBottom: '1px solid var(--border-primary)', paddingBottom: '1.5rem', marginBottom: '1.5rem' }}>
               <Link href="/" onClick={() => setMobileMenuOpen(false)} style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
-                Frontpage (Home)
+                Frontpage (All Scans)
               </Link>
               {CATEGORIES.map((cat) => (
                 <Link
@@ -381,9 +357,6 @@ export default function Header() {
         @media (min-width: 640px) {
           .subscribe-btn {
             display: block !important;
-          }
-          .epaper-link {
-            display: inline-block !important;
           }
         }
       `}</style>
