@@ -47,23 +47,23 @@
 }
 
 [data-theme='dark'] {
-  --bg-primary: #0a3d62;
-  --bg-secondary: #072d49;
-  --bg-card: #0a3d62;
-  --bg-accent: #0f4c78;
-  --bg-highlight: #13466f;
+  --bg-primary: #2c2c54;
+  --bg-secondary: #222244;
+  --bg-card: #2c2c54;
+  --bg-accent: #383868;
+  --bg-highlight: #3c385c;
 
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
-  --text-inverse: #0a3d62;
+  --text-inverse: #2c2c54;
 
-  --border-primary: #1b5380;
-  --border-subtle: #13466f;
+  --border-primary: #454572;
+  --border-subtle: #37375c;
   --border-bold: #f8fafc;
 
-  --brand-primary: #ff6b4a;
-  --brand-primary-hover: #ff8566;
+  --brand-primary: #ff7043;
+  --brand-primary-hover: #ff8a65;
   --brand-accent: #38bdf8;
   --brand-gold: #fbbf24;
   --brand-green: #4ade80;
