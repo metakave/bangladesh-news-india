@@ -91,7 +91,7 @@ This table lists 100 of the most popular and highly circulated news media outlet
 | **Republic Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [republicbangla.com](https://www.republicbangla.com) | [RSS Feed](https://www.republicbangla.com/rss/) |
 | **TV9 Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [tv9bangla.com](https://tv9bangla.com) | [RSS Feed](https://tv9bangla.com/rss) |
 | **Kolkata TV** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [kolkatatvonline.in](https://kolkatatvonline.in) | [RSS Feed](https://kolkatatvonline.in/feed/) |
-| **Calcutta News** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [calcuttanews.tv](https://calcuttanews.tv) | [RSS Feed](https://calcuttanews.tv/feed/) |
+| **Calcutta News** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [calcuttatelevisionnetwork.in](https://calcuttatelevisionnetwork.in) | [RSS Feed](https://calcuttatelevisionnetwork.in/feed/) |
 | **Asianet News Bengali** | Bengali | Digital | Kolkata, West Bengal | [bangla.asianetnews.com](https://bangla.asianetnews.com) | [RSS Feed](https://bangla.asianetnews.com/rss) |
 | **OneIndia Bengali** | Bengali | Digital | Bengaluru, Karnataka | [bengali.oneindia.com](https://bengali.oneindia.com) | [RSS Feed](https://bengali.oneindia.com/rss/) |
 | **Malayala Manorama** | Malayalam | Print/Digital | Kottayam, Kerala | [manoramaonline.com](https://www.manoramaonline.com) | [RSS Feed](https://www.manoramaonline.com/rss) |
