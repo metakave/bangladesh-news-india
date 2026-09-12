@@ -269,30 +269,78 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
       }
     }
 
-    // Merge new items at the top while preserving unique slugs & existing items up to 28
-    const existingSlugs = new Set();
+    // Multi-factor deduplication sets: Title+Source, Headline+Source, URL, and Slug
+    const normalizeKey = (str) => (str || '')
+      .toLowerCase()
+      .replace(/[^\w\s\u0980-\u09FF\u0900-\u097F]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    const seenKeys = {
+      titleSource: new Set(),
+      headlineSource: new Set(),
+      urls: new Set(),
+      slugs: new Set(),
+    };
+
+    const isDuplicate = (item) => {
+      const titleKey = normalizeKey(item.title);
+      const sourceNameKey = normalizeKey(item.source?.name);
+      const compositeTitleSource = titleKey && sourceNameKey ? `${titleKey}:::${sourceNameKey}` : '';
+      
+      const origHeadlineKey = item.source?.originalHeadline ? normalizeKey(item.source.originalHeadline) : '';
+      const compositeHeadlineSource = origHeadlineKey && sourceNameKey ? `${origHeadlineKey}:::${sourceNameKey}` : '';
+      
+      const urlKey = item.source?.originalUrl ? item.source.originalUrl.trim().toLowerCase().split('?')[0] : '';
+      const slugKey = (item.slug || '').trim().toLowerCase();
+
+      if (compositeTitleSource && seenKeys.titleSource.has(compositeTitleSource)) return true;
+      if (compositeHeadlineSource && seenKeys.headlineSource.has(compositeHeadlineSource)) return true;
+      if (urlKey && seenKeys.urls.has(urlKey)) return true;
+      if (slugKey && seenKeys.slugs.has(slugKey)) return true;
+
+      return false;
+    };
+
+    const registerItem = (item) => {
+      const titleKey = normalizeKey(item.title);
+      const sourceNameKey = normalizeKey(item.source?.name);
+      if (titleKey && sourceNameKey) seenKeys.titleSource.add(`${titleKey}:::${sourceNameKey}`);
+
+      const origHeadlineKey = item.source?.originalHeadline ? normalizeKey(item.source.originalHeadline) : '';
+      if (origHeadlineKey && sourceNameKey) seenKeys.headlineSource.add(`${origHeadlineKey}:::${sourceNameKey}`);
+
+      if (item.source?.originalUrl) seenKeys.urls.add(item.source.originalUrl.trim().toLowerCase().split('?')[0]);
+      if (item.slug) seenKeys.slugs.add(item.slug.trim().toLowerCase());
+    };
+
     const mergedList = [];
 
-    // Ensure lead story image is retained
+    // 1. Process and add newly scanned items first (deduplicated)
     for (let i = 0; i < parsedAiResult.newScannedItems.length; i++) {
       const item = parsedAiResult.newScannedItems[i];
-      if (!existingSlugs.has(item.slug)) {
-        existingSlugs.add(item.slug);
+      if (!isDuplicate(item)) {
+        registerItem(item);
         item.id = String(mergedList.length + 1);
         if (mergedList.length === 0) {
           item.isLeadStory = true;
-          item.imageUrl = '/images/delhi-dhaka-bilateral-summit.jpg';
+          item.imageUrl = item.imageUrl || '/images/delhi-dhaka-bilateral-summit.jpg';
         }
         mergedList.push(item);
+      } else {
+        console.log(`⚠️ Skipped duplicate new item: "${item.title}" [${item.source?.name}]`);
       }
     }
 
+    // 2. Append existing items (deduplicated against new and existing items)
     for (const oldItem of existingItems) {
-      if (!existingSlugs.has(oldItem.slug)) {
-        existingSlugs.add(oldItem.slug);
+      if (!isDuplicate(oldItem)) {
+        registerItem(oldItem);
         oldItem.id = String(mergedList.length + 1);
         oldItem.isLeadStory = false;
         mergedList.push(oldItem);
+      } else {
+        console.log(`⚠️ Removed existing duplicate item: "${oldItem.title}" [${oldItem.source?.name}]`);
       }
       if (mergedList.length >= 28) break;
     }

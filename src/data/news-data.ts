@@ -395,52 +395,6 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   },
   {
     "id": "7",
-    "slug": "india-brics-invitation-bimstec-chair-dhaka-the-hindu",
-    "title": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-    "banglaTitle": "ভারত বাংলাদেশ প্রধানমন্ত্রীকে ব্রিকসের জন্য আমন্ত্রণ জানায়নি; আমন্ত্রণ ছিল বিমসটেক সভাপতি হিসেবে: ঢাকা",
-    "summaryBn": "দ্য হিন্দু দিল্লি ব্যুরোর প্রতিবেদন অনুযায়ী, ঢাকায় পররাষ্ট্র প্রতিমন্ত্রী জানিয়েছেন যে বাংলাদেশ প্রধানমন্ত্রী তারেক রহমানকে ভারতে অনুষ্ঠিত ১৮তম ব্রিকস সম্মেলনে মূলত বিমসটেক (BIMSTEC) আঞ্চলিক জোটের বর্তমান সভাপতি হিসেবে আমন্ত্রণ জানানো হয়েছিল, বাংলাদেশের সরকারপ্রধান হিসেবে নয়। ঢাকা আরও নিশ্চিত করেছে যে এই মুহূর্তে এই শীর্ষ সম্মেলনে বাংলাদেশের সরকারপ্রধান পর্যায়ের কোনো যোগদানের পরিকল্পনা নেই।",
-    "summaryEn": "The Hindu reports from New Delhi that Dhaka has clarified the nature of the diplomatic invitation sent for the 18th BRICS Summit in New Delhi. The Minister of State for Foreign Affairs confirmed that Bangladesh Prime Minister Tarique Rahman was invited in his institutional capacity as the Chairperson of the Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation (BIMSTEC), rather than on a standalone bilateral invite.",
-    "keyPointsBn": [
-      "দিল্লিতে ১৮তম ব্রিকস শীর্ষ সম্মেলন চলাকালীন বিমসটেক কাঠামোর অধীনে সদস্য দেশগুলোর জন্য আমন্ত্রণ পাঠানো হয়েছিল।",
-      "ঢাকা স্পষ্ট করেছে যে কোনো ভুল বোঝাবুঝি এড়াতে সরকারি প্রটোকল ও কূটনৈতিক প্রক্রিয়ার বিষয়টি স্পষ্ট করা প্রয়োজন।",
-      "দ্বিপাক্ষিক স্তরে দিল্লি ও ঢাকার মধ্যে প্রাতিষ্ঠানিক যোগাযোগ অব্যাহত রয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Invitation for the New Delhi summit was routed under the multilateral BIMSTEC institutional framework.",
-      "Dhaka foreign ministry officials clarified the protocol nuances to prevent diplomatic misinterpretations.",
-      "Bilateral bureaucratic channels between South Block and Dhaka remain active on shared regional priorities."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও বহুপাক্ষিক ফোরাম",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "কূটনৈতিক আমন্ত্রণ ও প্রটোকলের প্রাতিষ্ঠানিক ব্যাখ্যা এবং বস্তুনিষ্ঠ সংবাদ পরিবেশন।",
-    "sentimentReasonEn": "Objective diplomatic reporting detailing multilateral protocol, official clarifications from Dhaka, and regional summit dynamics.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/",
-      "originalHeadline": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-      "scannedAt": "18 mins ago"
-    },
-    "publishedAt": "2026-09-12T09:47:43Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
-    "isLeadStory": false,
-    "isTrending": true,
-    "tags": [
-      "BRICS 2026",
-      "BIMSTEC",
-      "Dhaka",
-      "The Hindu",
-      "MEA Delhi",
-      "Diplomacy"
-    ]
-  },
-  {
-    "id": "8",
     "slug": "india-bangladesh-passenger-train-services-resumption-indian-express",
     "title": "India, Bangladesh likely to discuss resumption of passenger train services",
     "banglaTitle": "মৈত্রী, বন্ধন ও মিতালী এক্সপ্রেস ট্রেন পরিষেবা পুনরায় চালু নিয়ে ভারত-বাংলাদেশ আলোচনা শীঘ্রই",
@@ -486,7 +440,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "9",
+    "id": "8",
     "slug": "amar-ujala-hindu-journalist-death-dhaka-samakal-investigation",
     "title": "बांग्लादेश में हिंदू पत्रकार की संदिग्ध मौत: दफ्तर में फंदे से लटका मिला शव, अवामी लीग ने क्यों उठाए सवाल?",
     "englishTitle": "Death of Hindu Journalist in Bangladesh: Body Found Inside Newsroom, Calls for Transparent Investigation",
@@ -532,7 +486,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "10",
+    "id": "9",
     "slug": "sheikh-hasina-daughter-saima-wazed-who-regional-director-resignation",
     "title": "Sheikh Hasina’s daughter resigns as WHO regional director amid fraud allegations",
     "banglaTitle": "বিশ্ব স্বাস্থ্য সংস্থার আঞ্চলিক পরিচালকের পদ থেকে পদত্যাগ করলেন শেখ হাসিনার মেয়ে সায়মা ওয়াজেদ",
@@ -576,7 +530,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "11",
+    "id": "10",
     "slug": "durga-puja-minority-security-dhaka-indian-express",
     "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
     "banglaTitle": "আসন্ন দুর্গাপূজা উপলক্ষে সংখ্যালঘু হিন্দু সম্প্রদায়ের নিরাপত্তা ও সর্বাত্মক সহায়তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
@@ -620,7 +574,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "12",
+    "id": "11",
     "slug": "sangbad-pratidin-chinmoy-das-kolkata-reverberations",
     "title": "‘হিন্দু বলে আমার মাকেও পালিয়ে আসতে হয়েছিল’, চিন্ময় প্রভুর চোখের জল দেখে অতীত স্মরণ শুভেন্দুর",
     "englishTitle": "Kolkata Political Reactions on Bangladesh Situation: Opposition Leader Recalls Past Hardships",
@@ -664,7 +618,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "13",
+    "id": "12",
     "slug": "petrapole-benapole-trade-volume-hilsa-garment-logistics-abp",
     "title": "পেট্রাপোল সীমান্তে রেকর্ড বাণিজ্য: চব্বিশ ঘণ্টা পণ্য চলাচলে স্বস্তি দুই পারের ব্যবসায়ীদের",
     "englishTitle": "Record Cross-Border Trade at Petrapole: 24-Hour Cargo Movement Relieves Traders on Both Sides",
@@ -709,7 +663,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "14",
+    "id": "13",
     "slug": "dainik-jagran-border-security-bsf-smuggling-curfew",
     "title": "भारत-बांग्लादेश सीमा पर बीएसएफ का हाई अलर्ट: मेघालय और कूचबिहार में ड्रोन से पैनी निगरानी",
     "englishTitle": "BSF on High Alert Along Indo-Bangla Border: Drone Surveillance Intensified in Meghalaya & Cooch Behar",
@@ -755,7 +709,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "15",
+    "id": "14",
     "slug": "india-bangladesh-teesta-water-treaty-delhi-diplomatic-reassessment",
     "title": "Delhi Reviewing Technical Parameters on Teesta River Sharing Framework Ahead of Joint River Commission Talks",
     "banglaTitle": "যৌথ নদী কমিশনের বৈঠকের আগে তিস্তার পানি বণ্টন কাঠামোর কারিগরি দিক পর্যালোচনা করছে দিল্লি",
@@ -799,7 +753,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "16",
+    "id": "15",
     "slug": "ei-samay-transnational-cyber-scam-chittagong-foreigners-arrested",
     "title": "স্ক্যাম-চক্রে বাংলাদেশে শতাধিক বিদেশি ধৃত",
     "englishTitle": "Over 100 Foreign Nationals Arrested in Bangladesh for Transnational Cyber Scam & Fraud Rings",
@@ -844,7 +798,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "17",
+    "id": "16",
     "slug": "ei-samay-medical-tourism-kolkata-hospitals-bangladesh-patients",
     "title": "বাংলাদেশি রোগীদের ভিসা জট: চরম আর্থিক ধাক্কায় কলকাতার বেসরকারি হাসপাতাল ও নার্সিংহোম",
     "englishTitle": "Bangladesh Patient Visa Bottlenecks: Kolkata Private Hospitals Suffer Severe Financial Hit",
@@ -888,7 +842,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "18",
+    "id": "17",
     "slug": "business-standard-adani-power-godda-electricity-dhaka-dues",
     "title": "Adani Power and Bangladesh Power Development Board Agree on Streamlined Tariff Settlement Mechanism",
     "banglaTitle": "বিদ্যুৎ বিল নিষ্পত্তির বিষয়ে আদানি পাওয়ার ও বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ডের সমঝোতা",
@@ -932,7 +886,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "19",
+    "id": "18",
     "slug": "hilsa-shortage-india-gujarat-odisha-sea-fish-exports-dhaka-ei-samay",
     "title": "ইলিশ খেতে বাংলাদেশের ভরসা ভারত, মোদীর রাজ্য ও ওড়িশা থেকে সামুদ্রিক মাছের রফতানি বৃদ্ধি",
     "englishTitle": "Hilsa Shortage: Sea Fish Exports from Gujarat & Odisha Surge to Meet Dhaka Market Demand",
@@ -978,7 +932,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "20",
+    "id": "19",
     "slug": "tech-glitch-adani-power-unit-godda-bangladesh-grid-toi",
     "title": "Tech glitch at Adani power unit briefly hits Bangladesh grid, supply restored swiftly",
     "banglaTitle": "আদানি পাওয়ার ইউনিটে সাময়িক কারিগরি ত্রুটি: দ্রুত মেরামতের পর বাংলাদেশ গ্রিডে বিদ্যুৎ সঞ্চালন স্বাভাবিক",
@@ -1024,7 +978,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "21",
+    "id": "20",
     "slug": "sundarbans-royal-bengal-tiger-conservation-dhaka-delhi-joint-taskforce-ei-samay",
     "title": "সুন্দরবন ও বাঘ সংরক্ষণে দিল্লি-ঢাকার যৌথ পদক্ষেপ: জীববৈচিত্র্য রক্ষায় একযোগে কাজ করবে দুই দেশ",
     "englishTitle": "Dhaka-Delhi Joint Taskforce Formulates Unified Blueprint for Sundarbans Biodiversity & Tiger Protection",
@@ -1070,7 +1024,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "22",
+    "id": "21",
     "slug": "indian-high-commission-dhaka-visa-processing-expedited-medical-students-the-hindu",
     "title": "Indian High Commission in Dhaka expands emergency consular slots to expedite student and medical visas",
     "banglaTitle": "ঢাকায় ভারতীয় হাইকমিশনে শিক্ষার্থী ও জরুরি চিকিৎসা ভিসার জন্য বিশেষ কাউন্টার চালু",
@@ -1114,7 +1068,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "23",
+    "id": "22",
     "slug": "chinmoy-krishna-das-parole-funeral-court-ruling-toi",
     "title": "Hindu monk Chinmoy Krishna Das, in Bangladesh jail, gets 5-hour parole to attend mother's funeral",
     "banglaTitle": "মায়ের শেষকৃত্যে অংশ নিতে কারাবন্দি সন্ন্যাসী চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার প্যারোল দিল আদালত",
@@ -1159,7 +1113,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "24",
+    "id": "23",
     "slug": "indo-bangla-joint-river-commission-seasonal-monsoon-data-hindustan-times",
     "title": "Indo-Bangla Joint River Commission hydrologists complete seasonal monsoon data exchange session",
     "banglaTitle": "ভারত-বাংলাদেশ যৌথ নদী কমিশনের প্রকৌশলীদের মৌসুমি হাইড্রোলজিক্যাল তথ্য বিনিময় সম্পন্ন",
@@ -1203,7 +1157,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "25",
+    "id": "24",
     "slug": "digital-cargo-tracking-petrapole-benapole-customs-sangbad-pratidin",
     "title": "পেট্রাপোল-বেনাপোল বন্দরে ডিজিটাল কার্গো ট্র্যাকিং চালুর পর পণ্য খালাসে সময় কমল ৬০ শতাংশ",
     "englishTitle": "Digital Cargo Tracking at Petrapole-Benapole Slashes Customs Clearance Time by 60%",
@@ -1249,7 +1203,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "26",
+    "id": "25",
     "slug": "india-bangladesh-essential-food-commodities-export-quota-dainik-jagran",
     "title": "ढाका और दिल्ली के बीच द्विपक्षीय व्यापार वार्ता: आवश्यक खाद्य वस्तुओं के निर्यात कोटा पर सहमति",
     "englishTitle": "India & Bangladesh Agree on Essential Food Commodities Export Quota Framework to Stabilize Prices",
@@ -1295,7 +1249,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "27",
+    "id": "26",
     "slug": "times-of-india-adani-power-transmission-restored-bangladesh-grid",
     "title": "Technical Glitch at Adani Power Unit Resolved; Full 1,496 MW Electricity Flow Restored to Bangladesh Grid",
     "englishTitle": "Technical Glitch at Adani Power Unit Resolved; Full 1,496 MW Electricity Flow Restored to Bangladesh Grid",
@@ -1341,7 +1295,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "28",
+    "id": "27",
     "slug": "the-hindu-indian-high-commission-dhaka-visa-expansion-students-medical",
     "title": "Indian High Commission in Dhaka Scales Up Dedicated Consular Windows for Student & Medical Visas",
     "englishTitle": "Indian High Commission in Dhaka Scales Up Dedicated Consular Windows for Student & Medical Visas",
