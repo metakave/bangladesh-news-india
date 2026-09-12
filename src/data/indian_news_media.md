@@ -90,7 +90,7 @@ This table lists 100 of the most popular and highly circulated news media outlet
 | **News18 Bengali** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [bengali.news18.com](https://bengali.news18.com) | [RSS Feed](https://bengali.news18.com/rss/) |
 | **Republic Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [republicworld.com](https://www.youtube.com/@RepublicBangla) | [RSS Feed](https://www.youtube.com/@RepublicBangla) |
 | **TV9 Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [tv9bangla.com](https://tv9bangla.com) | [RSS Feed](https://tv9bangla.com/rss) |
-| **Kolkata TV** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [kolkatatv.org](https://kolkatatv.org) | [RSS Feed](https://kolkatatv.org/feed/) |
+| **Kolkata TV** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [kolkatatvonline.in](https://kolkatatvonline.in) | [RSS Feed](https://kolkatatvonline.in/feed/) |
 | **Calcutta News** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [calcuttatelevisionnetwork.in](https://calcuttatelevisionnetwork.in) | [RSS Feed](https://calcuttatelevisionnetwork.in/feed/) |
 | **Asianet News Bengali** | Bengali | Digital | Kolkata, West Bengal | [bangla.asianetnews.com](https://bangla.asianetnews.com) | [RSS Feed](https://bangla.asianetnews.com/rss) |
 | **OneIndia Bengali** | Bengali | Digital | Bengaluru, Karnataka | [bengali.oneindia.com](https://bengali.oneindia.com) | [RSS Feed](https://bengali.oneindia.com/rss/) |

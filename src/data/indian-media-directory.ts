@@ -769,9 +769,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Broadcast/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://kolkatatv.org',
-    domain: 'kolkatatv.org',
-    bangladeshUrl: 'https://kolkatatv.org/?s=bangladesh',
+    websiteUrl: 'https://kolkatatvonline.in',
+    domain: 'kolkatatvonline.in',
+    bangladeshUrl: 'https://kolkatatvonline.in/?s=bangladesh',
     rssFeedUrl: 'https://kolkatatvonline.in/feed/',
   },
   {
