@@ -1,19 +1,21 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { NewsItem } from '@/data/news-data';
 import { useApp } from '@/context/ThemeContext';
 import SentimentBadge from './SentimentBadge';
 import SourceBadge from './SourceBadge';
-import { Bookmark, Clock, ExternalLink, Languages, Globe } from 'lucide-react';
+import { Bookmark, Clock, ExternalLink, Languages } from 'lucide-react';
 
 interface ArticleCardProps {
   article: NewsItem;
   variant?: 'lead' | 'featured' | 'compact' | 'horizontal';
   showImage?: boolean;
 }
+
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop&q=80';
 
 export default function ArticleCard({
   article,
@@ -22,6 +24,7 @@ export default function ArticleCard({
 }: ArticleCardProps) {
   const { toggleBookmark, isBookmarked } = useApp();
   const bookmarked = isBookmarked(article.slug);
+  const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
 
   const formattedDate = new Date(article.publishedAt).toLocaleDateString('en-US', {
     month: 'short',
@@ -34,7 +37,7 @@ export default function ArticleCard({
   if (variant === 'lead') {
     return (
       <article style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        {showImage && article.imageUrl && (
+        {showImage && (
           <div style={{
             position: 'relative',
             width: '100%',
@@ -44,10 +47,11 @@ export default function ArticleCard({
             backgroundColor: 'var(--bg-secondary)',
           }}>
             <Image
-              src={article.imageUrl}
+              src={imgSrc}
               alt={article.title}
               fill
               priority
+              onError={() => setImgSrc(FALLBACK_IMAGE)}
               sizes="(max-width: 768px) 100vw, 55vw"
               style={{ objectFit: 'cover' }}
             />
@@ -101,7 +105,7 @@ export default function ArticleCard({
             </button>
           </div>
 
-          {/* Primary Headline in Original Script */}
+          {/* Primary Headline */}
           <h2
             className={isBengali || isHindi ? '' : 'font-serif'}
             style={{
@@ -116,7 +120,7 @@ export default function ArticleCard({
             {article.title}
           </h2>
 
-          {/* Multi-lingual Translation Box for Hindi News */}
+          {/* Translation Box for Hindi News */}
           {isHindi && (article.englishTitle || article.banglaTitle) && (
             <div style={{
               backgroundColor: 'var(--bg-secondary)',
@@ -234,7 +238,7 @@ export default function ArticleCard({
         border: '1px solid var(--border-primary)',
         boxShadow: 'var(--shadow-sm)',
       }}>
-        {showImage && article.imageUrl && (
+        {showImage && (
           <div style={{
             position: 'relative',
             width: '100%',
@@ -245,9 +249,10 @@ export default function ArticleCard({
             marginBottom: '1rem',
           }}>
             <Image
-              src={article.imageUrl}
+              src={imgSrc}
               alt={article.title}
               fill
+              onError={() => setImgSrc(FALLBACK_IMAGE)}
               sizes="(max-width: 768px) 100vw, 33vw"
               style={{ objectFit: 'cover' }}
             />
@@ -261,7 +266,7 @@ export default function ArticleCard({
           {/* Header Badges */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.6rem', flexWrap: 'wrap', gap: '0.4rem' }}>
             <SourceBadge source={article.source} />
-            {(!showImage || !article.imageUrl) && (
+            {!showImage && (
               <SentimentBadge sentiment={article.sentiment} size="sm" />
             )}
           </div>
@@ -367,7 +372,7 @@ export default function ArticleCard({
   if (variant === 'horizontal') {
     return (
       <article style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-        {showImage && article.imageUrl && (
+        {showImage && (
           <div style={{
             position: 'relative',
             width: '110px',
@@ -378,9 +383,10 @@ export default function ArticleCard({
             backgroundColor: 'var(--bg-secondary)',
           }}>
             <Image
-              src={article.imageUrl}
+              src={imgSrc}
               alt={article.title}
               fill
+              onError={() => setImgSrc(FALLBACK_IMAGE)}
               sizes="120px"
               style={{ objectFit: 'cover' }}
             />

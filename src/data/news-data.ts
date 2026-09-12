@@ -179,7 +179,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     },
     publishedAt: '2026-09-12T07:45:00Z',
     readTime: '4 min read',
-    imageUrl: 'https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1200&auto=format&fit=crop&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=1200&auto=format&fit=crop&q=80',
     isTrending: true,
     tags: ['BSF', 'Border Security', 'Meghalaya', 'Smuggling', 'Infiltration', 'Dainik Jagran'],
     audioDuration: '3:20',
@@ -355,7 +355,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     },
     publishedAt: '2026-09-11T11:00:00Z',
     readTime: '3 min read',
-    imageUrl: 'https://images.unsplash.com/photo-1509391365360-2e959784a276?w=1200&auto=format&fit=crop&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80',
     tags: ['Adani Power', 'BPDB', 'Energy Trade', 'Electricity Grid', 'Business Standard'],
   }
 ];
