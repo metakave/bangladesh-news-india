@@ -4,6 +4,7 @@ import { AppProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
 import BreakingNews from '@/components/BreakingNews';
 import SearchModal from '@/components/SearchModal';
+import VisitorVerificationModal from '@/components/VisitorVerificationModal';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
@@ -40,6 +41,7 @@ export default function RootLayout({
             {children}
           </main>
           <SearchModal />
+          <VisitorVerificationModal />
           <Footer />
         </AppProvider>
       </body>
