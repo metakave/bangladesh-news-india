@@ -36,9 +36,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     if (savedTheme) {
       setTheme(savedTheme);
       document.documentElement.setAttribute('data-theme', savedTheme);
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
-      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      setTheme('light');
+      document.documentElement.setAttribute('data-theme', 'light');
     }
 
     const savedLang = localStorage.getItem('india_watch_lang') as AppLanguage | null;

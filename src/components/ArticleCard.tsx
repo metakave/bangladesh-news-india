@@ -115,19 +115,22 @@ export default function ArticleCard({
           </div>
 
           {/* Primary Headline in Original Script (Always kept in original source language) */}
-          <h2
-            className={titleFontClass}
-            style={{
-              fontSize: isBengali || isHindi ? 'clamp(1.45rem, 2.3vw, 2rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
-              fontWeight: 800,
-              lineHeight: isBengali || isHindi ? 1.45 : 1.25,
-              color: 'var(--text-primary)',
-              marginBottom: '0.75rem',
-              letterSpacing: isBengali || isHindi ? '0' : '-0.01em',
-            }}
-          >
-            {article.title}
-          </h2>
+          <Link href={`/article/${article.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <h2
+              className={titleFontClass}
+              style={{
+                fontSize: isBengali || isHindi ? 'clamp(1.45rem, 2.3vw, 2rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
+                fontWeight: 800,
+                lineHeight: isBengali || isHindi ? 1.45 : 1.25,
+                color: 'var(--text-primary)',
+                marginBottom: '0.75rem',
+                letterSpacing: isBengali || isHindi ? '0' : '-0.01em',
+                transition: 'color 0.15s ease',
+              }}
+            >
+              {article.title}
+            </h2>
+          </Link>
 
           {/* Translations Box for Hindi News */}
           {isHindi && (article.englishTitle || article.banglaTitle) && (
@@ -325,18 +328,21 @@ export default function ArticleCard({
           </div>
 
           {/* Primary Headline in Original Script */}
-          <h3
-            className={titleFontClass}
-            style={{
-              fontSize: isBengali || isHindi ? '1.12rem' : '1.15rem',
-              fontWeight: 700,
-              lineHeight: isBengali || isHindi ? 1.45 : 1.3,
-              color: 'var(--text-primary)',
-              marginBottom: '0.55rem',
-            }}
-          >
-            {article.title}
-          </h3>
+          <Link href={`/article/${article.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <h3
+              className={titleFontClass}
+              style={{
+                fontSize: isBengali || isHindi ? '1.12rem' : '1.15rem',
+                fontWeight: 700,
+                lineHeight: isBengali || isHindi ? 1.45 : 1.3,
+                color: 'var(--text-primary)',
+                marginBottom: '0.55rem',
+                transition: 'color 0.15s ease',
+              }}
+            >
+              {article.title}
+            </h3>
+          </Link>
 
           {/* Hindi Translations Box */}
           {isHindi && (article.englishTitle || article.banglaTitle) && (
@@ -489,11 +495,9 @@ export default function ArticleCard({
             <span style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--text-muted)' }}>• {article.source.name} [{article.source.bureau}]</span>
           </div>
 
-          <a
-            href={article.source.originalUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: 'none' }}
+          <Link
+            href={`/article/${article.slug}`}
+            style={{ textDecoration: 'none', color: 'inherit' }}
           >
             <h4
               className={titleFontClass}
@@ -507,11 +511,12 @@ export default function ArticleCard({
                 WebkitLineClamp: 2,
                 WebkitBoxOrient: 'vertical',
                 overflow: 'hidden',
+                transition: 'color 0.15s ease',
               }}
             >
               {article.title}
             </h4>
-          </a>
+          </Link>
 
           {isHindi && article.banglaTitle && (
             <div className="font-bengali" style={{ fontSize: '0.78rem', color: '#059669', marginBottom: '0.25rem', fontWeight: 600 }}>
@@ -554,11 +559,9 @@ export default function ArticleCard({
         </span>
       </div>
 
-      <a
-        href={article.source.originalUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ textDecoration: 'none' }}
+      <Link
+        href={`/article/${article.slug}`}
+        style={{ textDecoration: 'none', color: 'inherit' }}
       >
         <h4
           className={titleFontClass}
@@ -567,11 +570,12 @@ export default function ArticleCard({
             fontWeight: 700,
             lineHeight: isBengali || isHindi ? 1.45 : 1.35,
             color: 'var(--text-primary)',
+            transition: 'color 0.15s ease',
           }}
         >
           {article.title}
         </h4>
-      </a>
+      </Link>
 
       {isHindi && (article.englishTitle || article.banglaTitle) && (
         <div style={{

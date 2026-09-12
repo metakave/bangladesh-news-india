@@ -157,10 +157,8 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                     </span>
                   </div>
 
-                  <a
-                    href={art.source.originalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/article/${art.slug}`}
                     style={{ textDecoration: 'none' }}
                   >
                     <h4
@@ -171,11 +169,12 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                         lineHeight: 1.35,
                         color: 'var(--text-primary)',
                         marginBottom: '0.3rem',
+                        transition: 'color 0.15s ease',
                       }}
                     >
                       {art.title}
                     </h4>
-                  </a>
+                  </Link>
 
                   {/* Bangla translation for Hindi or English when in bn mode */}
                   {art.banglaTitle && (

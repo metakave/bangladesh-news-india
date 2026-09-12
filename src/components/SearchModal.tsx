@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { useApp } from '@/context/ThemeContext';
 import { SCANNED_NEWS_ITEMS, NewsItem } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
@@ -265,18 +266,25 @@ export default function SearchModal() {
                     </div>
 
                     {/* Original Headline */}
-                    <h4
-                      className={titleFontClass}
-                      style={{
-                        fontSize: isBengali || isHindi ? '1.05rem' : '1.05rem',
-                        fontWeight: 700,
-                        color: 'var(--text-primary)',
-                        marginBottom: '0.35rem',
-                        lineHeight: 1.4,
-                      }}
+                    <Link
+                      href={`/article/${art.slug}`}
+                      onClick={closeSearch}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
                     >
-                      {art.title}
-                    </h4>
+                      <h4
+                        className={titleFontClass}
+                        style={{
+                          fontSize: isBengali || isHindi ? '1.05rem' : '1.05rem',
+                          fontWeight: 700,
+                          color: 'var(--text-primary)',
+                          marginBottom: '0.35rem',
+                          lineHeight: 1.4,
+                          transition: 'color 0.15s ease',
+                        }}
+                      >
+                        {art.title}
+                      </h4>
+                    </Link>
 
                     {/* Hindi translations */}
                     {isHindi && (art.englishTitle || art.banglaTitle) && (
