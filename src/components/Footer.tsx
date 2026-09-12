@@ -7,6 +7,7 @@ import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
 import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
 import { Globe, Shield, Rss, ArrowUp, Calendar, Bookmark, Moon, Sun } from 'lucide-react';
+import VisitorCounter from '@/components/VisitorCounter';
 
 export default function Footer() {
   const { lang, theme, toggleTheme, bookmarks } = useApp();
@@ -173,6 +174,11 @@ export default function Footer() {
               </span>
               <span>•</span>
               <span>{lang === 'bn' ? 'প্রতিষ্ঠিত ২০২৬' : 'Est. 2026'}</span>
+            </div>
+
+            {/* Live Visitor Tracker Counter */}
+            <div style={{ marginTop: '1.25rem' }}>
+              <VisitorCounter variant="compact" />
             </div>
           </div>
 

@@ -20,6 +20,8 @@ import {
   Share2
 } from 'lucide-react';
 
+import VisitorCounter from '@/components/VisitorCounter';
+
 export default function AboutPage() {
   const { lang } = useApp();
   const t = TRANSLATIONS[lang];
@@ -426,6 +428,11 @@ export default function AboutPage() {
               {about.email}
               <ArrowUpRight size={16} />
             </a>
+          </div>
+
+          {/* Visitor Tracker Section */}
+          <div style={{ marginTop: '2.5rem' }}>
+            <VisitorCounter variant="card" />
           </div>
 
         </div>
