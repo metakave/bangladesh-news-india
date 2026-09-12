@@ -47,26 +47,29 @@ export default function Header() {
             <span style={{ fontWeight: 600 }} className={lang === 'bn' ? 'font-bengali' : ''}>{today}</span>
           </div>
 
-          {/* Mobile Left: Quick Search Button */}
-          <div className="mobile-search-wrapper" style={{ display: 'none' }}>
+          {/* Mobile Left: Quick Search Button (covers 33% width) */}
+          <div className="mobile-search-wrapper" style={{ display: 'none', width: '33%', maxWidth: '33%' }}>
             <button
               onClick={openSearch}
               aria-label="Open Search"
               style={{
+                width: '100%',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.35rem',
                 color: 'var(--text-secondary)',
                 backgroundColor: 'var(--bg-secondary)',
-                padding: '0.22rem 0.55rem',
+                padding: '0.24rem 0.5rem',
                 borderRadius: 'var(--radius-sm)',
                 border: '1px solid var(--border-primary)',
                 fontSize: '0.74rem',
                 fontWeight: 600,
+                textAlign: 'left',
+                cursor: 'pointer',
               }}
             >
-              <Search size={13} style={{ color: 'var(--brand-primary)' }} />
-              <span className="font-bengali" style={{ fontSize: '0.75rem' }}>
+              <Search size={13} style={{ color: 'var(--brand-primary)', flexShrink: 0 }} />
+              <span className="font-bengali" style={{ fontSize: '0.74rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                 {lang === 'bn' ? 'অনুসন্ধান' : 'Search'}
               </span>
             </button>
@@ -484,15 +487,21 @@ export default function Header() {
 
         @media (max-width: 768px) {
           .top-utility-bar {
-            padding: 0.28rem 0 !important;
+            padding: 0.32rem 0 !important;
           }
           .desktop-date-wrapper,
           .desktop-controls-wrapper {
             display: none !important;
           }
-          .mobile-search-wrapper,
+          .mobile-search-wrapper {
+            display: flex !important;
+            flex: 0 0 33% !important;
+            width: 33% !important;
+            max-width: 33% !important;
+          }
           .mobile-lang-wrapper {
             display: flex !important;
+            flex-shrink: 0 !important;
           }
         }
       `}</style>
