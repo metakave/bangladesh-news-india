@@ -17,11 +17,16 @@ import {
   Lock,
 } from 'lucide-react';
 
+const ENABLE_POPUP = false; // Temporarily disabled
 const POPUP_DELAY_SECONDS = 150; // 2 minutes 30 seconds
 
 export default function VisitorVerificationModal() {
   const { lang } = useApp();
   const t = TRANSLATIONS[lang].verificationModal;
+
+  if (!ENABLE_POPUP) {
+    return null;
+  }
 
   const [isVerified, setIsVerified] = useState<boolean>(true); // start true to prevent flicker on mount
   const [isOpen, setIsOpen] = useState<boolean>(false);
