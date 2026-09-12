@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+:root {
+  --font-serif: 'Newsreader', Georgia, Cambria, 'Times New Roman', Times, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-masthead: 'Cinzel', serif;
+  --font-mono: 'Space Grotesk', monospace;
+
+  /* Light Theme Palette (Premium Editorial Newspaper) */
+  --bg-primary: #fcfbf9;
+  --bg-secondary: #f4f2eb;
+  --bg-card: #ffffff;
+  --bg-accent: #f0eee6;
+  --bg-highlight: #fffbeb;
+  
+  --text-primary: #121417;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --text-inverse: #ffffff;
+
+  --border-primary: #e2ded4;
+  --border-subtle: #eeece4;
+  --border-bold: #121417;
+
+  --brand-primary: #c93a1d; /* Deep Editorial Saffron/Red */
+  --brand-primary-hover: #a92911;
+  --brand-accent: #0f4c81; /* Deep Classic Indigo */
+  --brand-gold: #b45309;
+  --brand-green: #15803d;
+  --brand-red: #dc2626;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  --max-width: 1320px;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-card: #1b2129;
+  --bg-accent: #212833;
+  --bg-highlight: #2c2518;
+
+  --text-primary: #f0f6fc;
+  --text-secondary: #a0aec0;
+  --text-muted: #718096;
+  --text-inverse: #0d1117;
+
+  --border-primary: #2d3748;
+  --border-subtle: #212833;
+  --border-bold: #f0f6fc;
+
+  --brand-primary: #e65100;
+  --brand-primary-hover: #ff7043;
+  --brand-accent: #38bdf8;
+  --brand-gold: #f59e0b;
+  --brand-green: #22c55e;
+  --brand-red: #ef4444;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Base Layout Container */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
+/* Typography Helpers */
+.font-masthead {
+  font-family: var(--font-masthead);
+  letter-spacing: 0.04em;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* News Editorial Card Grids */
+.editorial-grid-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .editorial-grid-main {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 1080px) {
+  .editorial-grid-main {
+    grid-template-columns: 1.15fr 2fr 1fr;
+  }
+}
+
+/* Newspaper Column Dividers */
+.border-divider-r {
+  border-right: 1px solid var(--border-primary);
+  padding-right: 1.5rem;
+}
+
+.border-divider-b {
+  border-bottom: 1px solid var(--border-primary);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Live Marquee & Tickers */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 35s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+/* Pulse animation for Breaking Badges */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.15); }
+}
+
+.live-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--brand-red);
+  border-radius: 50%;
+  animation: pulseGlow 1.5s ease-in-out infinite;
+  box-shadow: 0 0 8px var(--brand-red);
+}
+
+/* Category Badge */
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand-primary);
+  background-color: rgba(201, 58, 29, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+}
+
+[data-theme='dark'] .category-pill {
+  background-color: rgba(230, 81, 0, 0.15);
+  color: var(--brand-primary);
+}
+
+.category-pill:hover {
+  background-color: var(--brand-primary);
+  color: #ffffff;
+}
+
+/* Drop Cap for Longform Articles */
+.drop-cap::first-letter {
+  font-family: var(--font-masthead);
+  font-size: 3.75rem;
+  line-height: 0.85;
+  float: left;
+  margin-top: 0.15rem;
+  margin-right: 0.65rem;
+  margin-bottom: -0.1rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+}
+
+/* Pull Quotes */
+.pull-quote {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text-primary);
+  border-left: 4px solid var(--brand-primary);
+  padding: 1rem 0 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--bg-secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
