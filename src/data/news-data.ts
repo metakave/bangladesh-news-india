@@ -168,7 +168,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     publishedAt: '2026-09-12T09:47:43Z',
     readTimeBn: '৪ মিনিট পাঠ',
     readTimeEn: '4 min read',
-    imageUrl: '/images/brics-summit-2026-hero.svg',
+    imageUrl: '/images/brics-summit-2026-card.png',
     isLeadStory: true,
     isTrending: true,
     tags: ['BRICS 2026', 'BIMSTEC', 'Dhaka', 'The Hindu', 'MEA Delhi', 'Diplomacy'],
