@@ -32,7 +32,7 @@ This table lists 100 of the most popular and highly circulated news media outlet
 | **Quint Hindi** | Hindi | Digital | Noida, Uttar Pradesh | [hindi.thequint.com](https://hindi.thequint.com) | [RSS Feed](https://hindi.thequint.com/feed) |
 | **OneIndia Hindi** | Hindi | Digital | Bengaluru, Karnataka | [hindi.oneindia.com](https://hindi.oneindia.com) | [RSS Feed](https://hindi.oneindia.com/rss/) |
 | **Webdunia Hindi** | Hindi | Digital | Indore, Madhya Pradesh | [hindi.webdunia.com](https://hindi.webdunia.com) | [RSS Feed](https://hindi.webdunia.com/rss) |
-| **Live Cities** | Hindi | Digital | Patna, Bihar | [livecities.in](https://www.livecities.in) | [RSS Feed](https://www.livecities.in/feed/) |
+| **Live Cities** | Hindi | Digital | Patna, Bihar | [livecities.news](https://livecities.news) | [RSS Feed](https://livecities.news/feed/) |
 | **The Times of India** | English | Print/Digital | Mumbai, Maharashtra | [timesofindia.indiatimes.com](https://timesofindia.indiatimes.com) | [RSS Feed](https://timesofindia.indiatimes.com/rss.cms) |
 | **The Hindu** | English | Print/Digital | Chennai, Tamil Nadu | [thehindu.com](https://www.thehindu.com) | [RSS Feed](https://www.thehindu.com/feeder/default.rss) |
 | **Hindustan Times** | English | Print/Digital | New Delhi | [hindustantimes.com](https://www.hindustantimes.com) | [RSS Feed](https://www.hindustantimes.com/rss/topnews/rssfeed.xml) |
@@ -83,14 +83,14 @@ This table lists 100 of the most popular and highly circulated news media outlet
 | **Dainik Statesman** | Bengali | Print/Digital | Kolkata, West Bengal | [dainikstatesmannews.com](https://dainikstatesmannews.com) | [RSS Feed](https://dainikstatesmannews.com/feed) |
 | **Syandan Patrika** | Bengali | Print/Digital | Agartala, Tripura | [syandanpatrika.com](https://syandanpatrika.com) | [RSS Feed](https://syandanpatrika.com/feed/) |
 | **Dainik Sambad** | Bengali | Print/Digital | Agartala, Tripura | [dainiksambad.net](https://dainiksambad.net) | [RSS Feed](https://dainiksambad.net/feed/) |
-| **Ekdin** | Bengali | Print/Digital | Kolkata, West Bengal | [ekdin.in](https://ekdin.in) | [RSS Feed](https://ekdin.in/feed/) |
-| **Puber Kalam** | Bengali | Print/Digital | Kolkata, West Bengal | [puberkalam.in](https://puberkalam.in) | [RSS Feed](https://puberkalam.in/feed/) |
+| **Ekdin** | Bengali | Print/Digital | Kolkata, West Bengal | [ekdin.org](https://ekdin.org) | [RSS Feed](https://ekdin.org/feed/) |
+| **Puber Kalam** | Bengali | Print/Digital | Kolkata, West Bengal | [kalamdaily.com](https://kalamdaily.com) | [RSS Feed](https://kalamdaily.com/feed/) |
 | **ABP Ananda** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [bengali.abplive.com](https://bengali.abplive.com) | [RSS Feed](https://bengali.abplive.com/home/feed) |
 | **Zee 24 Ghanta** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [zeenews.india.com/bengali](https://zeenews.india.com/bengali) | [RSS Feed](https://zeenews.india.com/bengali/rss) |
 | **News18 Bengali** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [bengali.news18.com](https://bengali.news18.com) | [RSS Feed](https://bengali.news18.com/rss/) |
-| **Republic Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [republicbangla.com](https://www.republicbangla.com) | [RSS Feed](https://www.republicbangla.com/rss/) |
+| **Republic Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [republicworld.com](https://www.youtube.com/@RepublicBangla) | [RSS Feed](https://www.youtube.com/@RepublicBangla) |
 | **TV9 Bangla** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [tv9bangla.com](https://tv9bangla.com) | [RSS Feed](https://tv9bangla.com/rss) |
-| **Kolkata TV** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [kolkatatvonline.in](https://kolkatatvonline.in) | [RSS Feed](https://kolkatatvonline.in/feed/) |
+| **Kolkata TV** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [kolkatatv.org](https://kolkatatv.org) | [RSS Feed](https://kolkatatv.org/feed/) |
 | **Calcutta News** | Bengali | Broadcast/Digital | Kolkata, West Bengal | [calcuttatelevisionnetwork.in](https://calcuttatelevisionnetwork.in) | [RSS Feed](https://calcuttatelevisionnetwork.in/feed/) |
 | **Asianet News Bengali** | Bengali | Digital | Kolkata, West Bengal | [bangla.asianetnews.com](https://bangla.asianetnews.com) | [RSS Feed](https://bangla.asianetnews.com/rss) |
 | **OneIndia Bengali** | Bengali | Digital | Bengaluru, Karnataka | [bengali.oneindia.com](https://bengali.oneindia.com) | [RSS Feed](https://bengali.oneindia.com/rss/) |

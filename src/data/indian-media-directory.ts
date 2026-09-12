@@ -52,7 +52,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নতুন দিল্লি',
     websiteUrl: 'https://hindustantimes.com',
     domain: 'hindustantimes.com',
-    bangladeshUrl: 'https://www.hindustantimes.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.hindustantimes.com/world-news',
     rssFeedUrl: 'https://www.hindustantimes.com/rss/topnews/rssfeed.xml',
   },
   {
@@ -104,7 +104,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'হায়দরাবাদ, তেলেঙ্গানা',
     websiteUrl: 'https://deccanchronicle.com',
     domain: 'deccanchronicle.com',
-    bangladeshUrl: 'https://www.deccanchronicle.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.deccanchronicle.com/world',
     rssFeedUrl: 'https://www.deccanchronicle.com/rss',
   },
   {
@@ -208,7 +208,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'মুম্বই, মহারাষ্ট্র',
     websiteUrl: 'https://mid-day.com',
     domain: 'mid-day.com',
-    bangladeshUrl: 'https://www.mid-day.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.mid-day.com/search/bangladesh-all',
     rssFeedUrl: 'https://www.mid-day.com/rss',
   },
   {
@@ -221,7 +221,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'মুম্বই, মহারাষ্ট্র',
     websiteUrl: 'https://freepressjournal.in',
     domain: 'freepressjournal.in',
-    bangladeshUrl: 'https://www.freepressjournal.in/topic/bangladesh',
+    bangladeshUrl: 'https://www.freepressjournal.in/world',
     rssFeedUrl: 'https://www.freepressjournal.in/rss',
   },
   {
@@ -234,7 +234,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নতুন দিল্লি',
     websiteUrl: 'https://dailypioneer.com',
     domain: 'dailypioneer.com',
-    bangladeshUrl: 'https://www.dailypioneer.com/search.php?q=bangladesh',
+    bangladeshUrl: 'https://www.dailypioneer.com/?s=bangladesh',
     rssFeedUrl: 'https://www.dailypioneer.com/rss',
   },
   {
@@ -247,7 +247,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নতুন দিল্লি',
     websiteUrl: 'https://nationalheraldindia.com',
     domain: 'nationalheraldindia.com',
-    bangladeshUrl: 'https://www.nationalheraldindia.com/tags/bangladesh',
+    bangladeshUrl: 'https://www.nationalheraldindia.com/topic/bangladesh',
     rssFeedUrl: 'https://www.nationalheraldindia.com/rss',
   },
   {
@@ -299,7 +299,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'মুম্বই, মহারাষ্ট্র',
     websiteUrl: 'https://republicworld.com',
     domain: 'republicworld.com',
-    bangladeshUrl: 'https://www.republicworld.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.republicworld.com/world-news',
     rssFeedUrl: 'https://www.republicworld.com/rss/',
   },
   {
@@ -481,7 +481,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'চেন্নাই, তামিলনাড়ু',
     websiteUrl: 'https://frontline.thehindu.com',
     domain: 'frontline.thehindu.com',
-    bangladeshUrl: 'https://frontline.thehindu.com/topic/bangladesh/',
+    bangladeshUrl: 'https://frontline.thehindu.com/world-affairs/',
     rssFeedUrl: 'https://frontline.thehindu.com/feeder/default.rss',
   },
   {
@@ -563,7 +563,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
     websiteUrl: 'https://bartamanpatrika.com',
     domain: 'bartamanpatrika.com',
-    bangladeshUrl: 'https://bartamanpatrika.com/category/38/Bangladesh',
+    bangladeshUrl: 'https://bartamanpatrika.com/category/bidesh',
     rssFeedUrl: 'https://bartamanpatrika.com/rss',
   },
   {
@@ -589,7 +589,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
     websiteUrl: 'https://eisamay.com',
     domain: 'eisamay.com',
-    bangladeshUrl: 'https://eisamay.com/bangladesh-news/articlelist/68340866.cms',
+    bangladeshUrl: 'https://eisamay.com/search?q=bangladesh',
     rssFeedUrl: 'https://eisamay.com/rss.cms',
   },
   {
@@ -628,7 +628,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
     websiteUrl: 'https://ganashakti.com',
     domain: 'ganashakti.com',
-    bangladeshUrl: 'https://ganashakti.com/bangladesh',
+    bangladeshUrl: 'https://ganashakti.com/search?q=bangladesh',
     rssFeedUrl: 'https://ganashakti.com/feed/',
   },
   {
@@ -665,9 +665,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Print/Digital',
     headOffice: 'Agartala, Tripura',
     headOfficeBn: 'আগরতলা, ত্রিপুরা',
-    websiteUrl: 'https://dainiksambad.net',
-    domain: 'dainiksambad.net',
-    bangladeshUrl: 'https://dainiksambad.net/?s=bangladesh',
+    websiteUrl: 'https://www.dainiksambad.com',
+    domain: 'dainiksambad.com',
+    bangladeshUrl: 'https://www.dainiksambad.com',
     rssFeedUrl: 'https://dainiksambad.net/feed/',
   },
   {
@@ -678,9 +678,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Print/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://ekdin.in',
-    domain: 'ekdin.in',
-    bangladeshUrl: 'https://ekdin.in/?s=bangladesh',
+    websiteUrl: 'https://ekdin.org',
+    domain: 'ekdin.org',
+    bangladeshUrl: 'https://ekdin.org/?s=bangladesh',
     rssFeedUrl: 'https://ekdin.in/feed/',
   },
   {
@@ -691,9 +691,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Print/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://puberkalam.in',
-    domain: 'puberkalam.in',
-    bangladeshUrl: 'https://puberkalam.in/category/bangladesh/',
+    websiteUrl: 'https://kalamdaily.com',
+    domain: 'kalamdaily.com',
+    bangladeshUrl: 'https://kalamdaily.com/?s=bangladesh',
     rssFeedUrl: 'https://puberkalam.in/feed/',
   },
   {
@@ -743,9 +743,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Broadcast/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://republicbangla.com',
-    domain: 'republicbangla.com',
-    bangladeshUrl: 'https://bangla.republicworld.com/topic/bangladesh',
+    websiteUrl: 'https://republicworld.com',
+    domain: 'republicworld.com',
+    bangladeshUrl: 'https://www.youtube.com/@RepublicBangla',
     rssFeedUrl: 'https://www.republicbangla.com/rss/',
   },
   {
@@ -769,9 +769,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Broadcast/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://kolkatatvonline.in',
-    domain: 'kolkatatvonline.in',
-    bangladeshUrl: 'https://kolkatatvonline.in/?s=bangladesh',
+    websiteUrl: 'https://kolkatatv.org',
+    domain: 'kolkatatv.org',
+    bangladeshUrl: 'https://kolkatatv.org/?s=bangladesh',
     rssFeedUrl: 'https://kolkatatvonline.in/feed/',
   },
   {
@@ -797,7 +797,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
     websiteUrl: 'https://bangla.asianetnews.com',
     domain: 'bangla.asianetnews.com',
-    bangladeshUrl: 'https://bangla.asianetnews.com/topic/bangladesh',
+    bangladeshUrl: 'https://bangla.asianetnews.com/international',
     rssFeedUrl: 'https://bangla.asianetnews.com/rss',
   },
   {
@@ -827,7 +827,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'ভোপাল, মধ্যপ্রদেশ',
     websiteUrl: 'https://bhaskar.com',
     domain: 'bhaskar.com',
-    bangladeshUrl: 'https://www.bhaskar.com/tag/bangladesh/',
+    bangladeshUrl: 'https://www.bhaskar.com/international/',
     rssFeedUrl: 'https://www.bhaskar.com/rss-feed/',
   },
   {
@@ -879,7 +879,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'জয়পুর, রাজস্থান',
     websiteUrl: 'https://patrika.com',
     domain: 'patrika.com',
-    bangladeshUrl: 'https://www.patrika.com/tags/bangladesh',
+    bangladeshUrl: 'https://www.patrika.com/world-news',
     rssFeedUrl: 'https://www.patrika.com/rss.xml',
   },
   {
@@ -892,7 +892,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'জলন্ধর, পাঞ্জাব',
     websiteUrl: 'https://punjabkesari.in',
     domain: 'punjabkesari.in',
-    bangladeshUrl: 'https://www.punjabkesari.in/tag/bangladesh',
+    bangladeshUrl: 'https://www.punjabkesari.in/international',
     rssFeedUrl: 'https://www.punjabkesari.in/rss',
   },
   {
@@ -905,7 +905,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নতুন দিল্লি',
     websiteUrl: 'https://navbharattimes.indiatimes.com',
     domain: 'navbharattimes.indiatimes.com',
-    bangladeshUrl: 'https://navbharattimes.indiatimes.com/topic/bangladesh',
+    bangladeshUrl: 'https://navbharattimes.indiatimes.com/search?q=bangladesh',
     rssFeedUrl: 'https://navbharattimes.indiatimes.com/rss.cms',
   },
   {
@@ -1046,9 +1046,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Broadcast/Digital',
     headOffice: 'Noida, Uttar Pradesh',
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
-    websiteUrl: 'https://republicbharat.com',
+    websiteUrl: 'https://www.republicbharat.com',
     domain: 'republicbharat.com',
-    bangladeshUrl: 'https://bharat.republicworld.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.republicbharat.com/world',
     rssFeedUrl: 'https://www.republicbharat.com/rss/',
   },
   {
@@ -1074,7 +1074,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://news24online.com',
     domain: 'news24online.com',
-    bangladeshUrl: 'https://news24online.com/tag/bangladesh/',
+    bangladeshUrl: 'https://news24online.com/?s=bangladesh',
     rssFeedUrl: 'https://news24online.com/feed/',
   },
   {
@@ -1100,7 +1100,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://samaylive.com',
     domain: 'samaylive.com',
-    bangladeshUrl: 'https://www.samaylive.com/tag/bangladesh/',
+    bangladeshUrl: 'https://samaylive.com/?s=bangladesh',
     rssFeedUrl: 'https://www.samaylive.com/rss',
   },
   {
@@ -1113,7 +1113,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://zeehindustan.in',
     domain: 'zeehindustan.in',
-    bangladeshUrl: 'https://zeehindustan.in/tags/bangladesh.html',
+    bangladeshUrl: 'https://zeenews.india.com/hindi',
     rssFeedUrl: 'https://zeehindustan.in/rss',
   },
   {
@@ -1126,7 +1126,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নতুন দিল্লি ব্যুরো',
     websiteUrl: 'https://bbc.com/hindi',
     domain: 'bbc.com',
-    bangladeshUrl: 'https://www.bbc.com/hindi/topics/c8y940026eet',
+    bangladeshUrl: 'https://www.bbc.com/hindi/topics/c9wpm0en87xt',
     rssFeedUrl: 'https://www.bbc.com/hindi/index.xml',
   },
   {
@@ -1152,7 +1152,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://hindi.thequint.com',
     domain: 'hindi.thequint.com',
-    bangladeshUrl: 'https://hindi.thequint.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.thequint.com/search?q=bangladesh',
     rssFeedUrl: 'https://hindi.thequint.com/feed',
   },
   {
@@ -1189,9 +1189,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Digital',
     headOffice: 'Patna, Bihar',
     headOfficeBn: 'পাটনা, বিহার',
-    websiteUrl: 'https://livecities.in',
-    domain: 'livecities.in',
-    bangladeshUrl: 'https://www.livecities.in/?s=bangladesh',
+    websiteUrl: 'https://livecities.news',
+    domain: 'livecities.news',
+    bangladeshUrl: 'https://livecities.news/?s=bangladesh',
     rssFeedUrl: 'https://www.livecities.in/feed/',
   },
 
@@ -1208,7 +1208,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কোট্টায়াম, কেরল',
     websiteUrl: 'https://manoramaonline.com',
     domain: 'manoramaonline.com',
-    bangladeshUrl: 'https://www.manoramaonline.com/tag-results.html?tag=bangladesh',
+    bangladeshUrl: 'https://www.manoramaonline.com/news/world.html',
     rssFeedUrl: 'https://www.manoramaonline.com/rss',
   },
   {
@@ -1221,7 +1221,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'কোঝিকোড়, কেরল',
     websiteUrl: 'https://english.mathrubhumi.com',
     domain: 'mathrubhumi.com',
-    bangladeshUrl: 'https://english.mathrubhumi.com/topic/bangladesh',
+    bangladeshUrl: 'https://english.mathrubhumi.com/search?q=bangladesh',
     rssFeedUrl: 'https://english.mathrubhumi.com/rss',
   },
   {
@@ -1247,7 +1247,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'চেন্নাই, তামিলনাড়ু',
     websiteUrl: 'https://dinamalar.com',
     domain: 'dinamalar.com',
-    bangladeshUrl: 'https://www.dinamalar.com/search.php?q=bangladesh',
+    bangladeshUrl: 'https://www.dinamalar.com',
     rssFeedUrl: 'https://www.dinamalar.com/rss',
   },
   {
@@ -1260,7 +1260,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'হায়দরাবাদ, তেলেঙ্গানা',
     websiteUrl: 'https://eenadu.net',
     domain: 'eenadu.net',
-    bangladeshUrl: 'https://www.eenadu.net/search?query=bangladesh',
+    bangladeshUrl: 'https://www.eenadu.net',
     rssFeedUrl: 'https://www.eenadu.net/rss',
   },
   {
@@ -1312,7 +1312,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'আহমেদাবাদ, গুজরাট',
     websiteUrl: 'https://gujaratsamachar.com',
     domain: 'gujaratsamachar.com',
-    bangladeshUrl: 'https://www.gujaratsamachar.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.gujaratsamachar.com/category/international',
     rssFeedUrl: 'https://www.gujaratsamachar.com/rss',
   },
   {
