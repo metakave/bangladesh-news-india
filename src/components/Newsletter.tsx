@@ -26,7 +26,7 @@ export default function Newsletter() {
       padding: '3rem 0',
       margin: '2rem 0 0 0',
     }}>
-      <div className="container" style={{ maxWidth: '800px', textAlign: 'center' }}>
+      <div className="container" style={{ maxWidth: '940px', textAlign: 'center' }}>
         <div style={{
           display: 'inline-flex',
           alignItems: 'center',
