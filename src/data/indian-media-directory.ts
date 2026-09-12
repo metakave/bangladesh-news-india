@@ -286,7 +286,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'মুম্বই, মহারাষ্ট্র',
     websiteUrl: 'https://timesnownews.com',
     domain: 'timesnownews.com',
-    bangladeshUrl: 'https://www.timesnownews.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.timesnownews.com/world',
     rssFeedUrl: 'https://www.timesnownews.com/rss',
   },
   {
@@ -312,7 +312,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://news18.com',
     domain: 'news18.com',
-    bangladeshUrl: 'https://www.news18.com/tag/bangladesh/',
+    bangladeshUrl: 'https://www.news18.com/topics/bangladesh/',
     rssFeedUrl: 'https://www.news18.com/rss/',
   },
   {
@@ -325,7 +325,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://wionews.com',
     domain: 'wionews.com',
-    bangladeshUrl: 'https://www.wionews.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.wionews.com/south-asia',
     rssFeedUrl: 'https://www.wionews.com/rss',
   },
   {
@@ -351,7 +351,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'মুম্বই, মহারাষ্ট্র',
     websiteUrl: 'https://timesnownews.com/mirror-now',
     domain: 'timesnownews.com',
-    bangladeshUrl: 'https://www.timesnownews.com/mirror-now/topic/bangladesh',
+    bangladeshUrl: 'https://www.timesnownews.com/mirror-now',
     rssFeedUrl: 'https://www.timesnownews.com/rss',
   },
   {
@@ -769,10 +769,10 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Broadcast/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://kolkatatvonline.in',
-    domain: 'kolkatatvonline.in',
-    bangladeshUrl: 'https://kolkatatvonline.in/?s=bangladesh',
-    rssFeedUrl: 'https://kolkatatvonline.in/feed/',
+    websiteUrl: 'https://kolkatatv.org',
+    domain: 'kolkatatv.org',
+    bangladeshUrl: 'https://kolkatatv.org/?s=বাংলাদেশ',
+    rssFeedUrl: 'https://kolkatatv.org/feed/',
   },
   {
     id: 'calcutta-news',
@@ -983,7 +983,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নতুন দিল্লি',
     websiteUrl: 'https://ndtv.in',
     domain: 'ndtv.in',
-    bangladeshUrl: 'https://ndtv.in/topic/bangladesh',
+    bangladeshUrl: 'https://ndtv.in/world-news',
     rssFeedUrl: 'https://ndtv.in/rss',
   },
   {
