@@ -381,40 +381,67 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Mobile Drawer Menu */}
+      {/* Mobile Drawer Menu (Slides in from Right) */}
       {mobileMenuOpen && (
-        <div style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.65)',
-          zIndex: 100,
-          backdropFilter: 'blur(4px)'
-        }} onClick={() => setMobileMenuOpen(false)}>
-          <div style={{
-            width: '80%',
-            maxWidth: '320px',
-            height: '100%',
-            backgroundColor: 'var(--bg-card)',
-            padding: '1.5rem',
-            overflowY: 'auto',
-            borderRight: '1px solid var(--border-primary)'
-          }} onClick={(e) => e.stopPropagation()}>
+        <div
+          className="mobile-drawer-backdrop"
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.65)',
+            zIndex: 100,
+            backdropFilter: 'blur(4px)',
+            display: 'flex',
+            justifyContent: 'flex-end',
+          }}
+          onClick={() => setMobileMenuOpen(false)}
+        >
+          <div
+            className="mobile-drawer-panel"
+            style={{
+              width: '82%',
+              maxWidth: '320px',
+              height: '100%',
+              backgroundColor: 'var(--bg-card)',
+              padding: '1.5rem',
+              overflowY: 'auto',
+              borderLeft: '1px solid var(--border-primary)',
+              boxShadow: '-4px 0 25px rgba(0, 0, 0, 0.35)',
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <NarrativeCompassLogo size={26} />
-                <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.35rem - 5pt)' : '1.35rem', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
+                <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.35rem - 3pt)' : 'calc(1.35rem + 1pt)', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
                   {t.siteTitle}
                 </h2>
               </div>
-              <button onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--text-primary)' }}>
-                <X size={20} />
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                aria-label="Close Menu"
+                style={{
+                  color: 'var(--text-primary)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '0.35rem',
+                  borderRadius: 'var(--radius-sm)',
+                  backgroundColor: 'var(--bg-secondary)',
+                  border: '1px solid var(--border-primary)',
+                  cursor: 'pointer'
+                }}
+              >
+                <X size={18} />
               </button>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', borderBottom: '1px solid var(--border-primary)', paddingBottom: '1.5rem', marginBottom: '1.5rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', borderBottom: '1px solid var(--border-primary)', paddingBottom: '1.5rem', marginBottom: '1.5rem', flex: 1 }}>
               <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
                 {t.allScans}
               </Link>
@@ -446,7 +473,7 @@ export default function Header() {
               </Link>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', paddingTop: '0.5rem' }}>
               <button
                 onClick={() => toggleLang()}
                 style={{
@@ -455,7 +482,12 @@ export default function Header() {
                   gap: '0.5rem',
                   color: 'var(--text-primary)',
                   fontWeight: 600,
-                  fontSize: '0.88rem'
+                  fontSize: '0.88rem',
+                  backgroundColor: 'var(--bg-secondary)',
+                  padding: '0.5rem 0.75rem',
+                  borderRadius: 'var(--radius-sm)',
+                  border: '1px solid var(--border-primary)',
+                  cursor: 'pointer'
                 }}
               >
                 <Languages size={16} />
@@ -469,7 +501,12 @@ export default function Header() {
                   gap: '0.5rem',
                   color: 'var(--text-primary)',
                   fontWeight: 600,
-                  fontSize: '0.88rem'
+                  fontSize: '0.88rem',
+                  backgroundColor: 'var(--bg-secondary)',
+                  padding: '0.5rem 0.75rem',
+                  borderRadius: 'var(--radius-sm)',
+                  border: '1px solid var(--border-primary)',
+                  cursor: 'pointer'
                 }}
               >
                 {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
@@ -481,6 +518,32 @@ export default function Header() {
       )}
 
       <style jsx>{`
+        @keyframes fadeInBackdrop {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes slideInRight {
+          from {
+            transform: translateX(100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+
+        .mobile-drawer-backdrop {
+          animation: fadeInBackdrop 0.2s ease-out forwards;
+        }
+
+        .mobile-drawer-panel {
+          animation: slideInRight 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
         @media (max-width: 850px) {
           .search-text, .saved-text {
             display: none !important;
