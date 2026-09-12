@@ -40,16 +40,20 @@ export async function POST(req: NextRequest) {
     const forwardedFor = req.headers.get('x-forwarded-for');
     const ip = forwardedFor ? forwardedFor.split(',')[0].trim() : '127.0.0.1';
 
-    // Store lead as pending
-    saveOrUpdateLead({
-      name: cleanName,
-      designation: cleanDesignation,
-      company: cleanCompany,
-      email: cleanEmail,
-      status: 'pending',
-      userAgent,
-      ip,
-    });
+    // Store lead safely (never block email sending if I/O fails)
+    try {
+      saveOrUpdateLead({
+        name: cleanName,
+        designation: cleanDesignation,
+        company: cleanCompany,
+        email: cleanEmail,
+        status: 'pending',
+        userAgent,
+        ip,
+      });
+    } catch (saveErr) {
+      console.warn('Lead store warning (non-fatal):', saveErr);
+    }
 
     // Generate signed token
     const token = createVerificationToken({
@@ -60,17 +64,14 @@ export async function POST(req: NextRequest) {
       timestamp: Date.now(),
     });
 
-    // Determine site URL from request headers or env
-    let baseUrl = process.env.NEXT_PUBLIC_APP_URL || '';
-    if (!baseUrl || baseUrl.includes('localhost:3000')) {
-      const host = req.headers.get('host') || 'localhost:3002';
-      const proto = req.headers.get('x-forwarded-proto') || (host.includes('localhost') ? 'http' : 'https');
-      baseUrl = `${proto}://${host}`;
-    }
+    // Dynamic base URL detection for Vercel / Production / Localhost
+    const host = req.headers.get('x-forwarded-host') || req.headers.get('host') || 'localhost:3002';
+    const proto = req.headers.get('x-forwarded-proto') || (host.includes('localhost') ? 'http' : 'https');
+    const baseUrl = `${proto}://${host}`;
 
     const verificationUrl = `${baseUrl}/api/auth/verify?token=${encodeURIComponent(token)}`;
 
-    // Send email
+    // Send email via Gmail SMTP
     const mailResult = await sendVerificationEmail({
       to: cleanEmail,
       name: cleanName,
@@ -80,8 +81,9 @@ export async function POST(req: NextRequest) {
     });
 
     if (!mailResult.success) {
+      console.error('Mail sending failed:', mailResult.error);
       return NextResponse.json(
-        { error: mailResult.error || 'Failed to send verification email' },
+        { error: mailResult.error || 'Failed to send verification email. Please check your email address.' },
         { status: 500 }
       );
     }
@@ -94,7 +96,7 @@ export async function POST(req: NextRequest) {
   } catch (err: any) {
     console.error('Error in send-verification route:', err);
     return NextResponse.json(
-      { error: 'Internal server error processing verification request' },
+      { error: err?.message || 'Error processing verification request' },
       { status: 500 }
     );
   }

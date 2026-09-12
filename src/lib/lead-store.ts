@@ -14,71 +14,124 @@ export interface VisitorLead {
   ip?: string;
 }
 
-const LEADS_FILE = path.join(process.cwd(), 'src', 'data', 'leads.json');
+// In-memory fallback for serverless environments (e.g. Vercel)
+const memoryLeads: Map<string, VisitorLead> = new Map();
 
-function ensureDirectoryExists() {
-  const dir = path.dirname(LEADS_FILE);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
+function getStorageFilePath(): string | null {
+  // On Vercel / AWS Lambda, use /tmp which is writable
+  if (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME) {
+    return path.join('/tmp', 'leads.json');
   }
-  if (!fs.existsSync(LEADS_FILE)) {
-    fs.writeFileSync(LEADS_FILE, JSON.stringify([], null, 2), 'utf-8');
+
+  // Local development
+  try {
+    return path.join(process.cwd(), 'src', 'data', 'leads.json');
+  } catch {
+    return null;
+  }
+}
+
+function ensureDirectoryExists(filePath: string) {
+  try {
+    const dir = path.dirname(filePath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    if (!fs.existsSync(filePath)) {
+      fs.writeFileSync(filePath, JSON.stringify([], null, 2), 'utf-8');
+    }
+  } catch (e) {
+    // If directory creation fails, fall back to memory
   }
 }
 
 export function getAllLeads(): VisitorLead[] {
-  try {
-    ensureDirectoryExists();
-    const data = fs.readFileSync(LEADS_FILE, 'utf-8');
-    return JSON.parse(data) || [];
-  } catch {
-    return [];
+  const filePath = getStorageFilePath();
+  if (filePath) {
+    try {
+      ensureDirectoryExists(filePath);
+      if (fs.existsSync(filePath)) {
+        const data = fs.readFileSync(filePath, 'utf-8');
+        const parsed: VisitorLead[] = JSON.parse(data) || [];
+        // Sync with memory
+        parsed.forEach((l) => memoryLeads.set(l.email.toLowerCase(), l));
+        return parsed;
+      }
+    } catch {
+      // ignore and return memory fallback
+    }
   }
+  return Array.from(memoryLeads.values());
 }
 
 export function saveOrUpdateLead(leadData: Omit<VisitorLead, 'id' | 'createdAt'> & { id?: string }): VisitorLead {
-  ensureDirectoryExists();
-  const leads = getAllLeads();
-  const existingIndex = leads.findIndex(
-    (l) => l.email.toLowerCase() === leadData.email.toLowerCase()
-  );
-
   const now = new Date().toISOString();
+  const cleanEmail = leadData.email.toLowerCase();
 
-  if (existingIndex >= 0) {
-    const existing = leads[existingIndex];
-    const updated: VisitorLead = {
+  let existing = memoryLeads.get(cleanEmail);
+  const leads = getAllLeads();
+  const existingInList = leads.find((l) => l.email.toLowerCase() === cleanEmail);
+  if (existingInList) {
+    existing = existingInList;
+  }
+
+  let resultLead: VisitorLead;
+
+  if (existing) {
+    resultLead = {
       ...existing,
       ...leadData,
       id: existing.id,
       createdAt: existing.createdAt,
       verifiedAt: leadData.status === 'verified' ? now : existing.verifiedAt,
     };
-    leads[existingIndex] = updated;
-    fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2), 'utf-8');
-    return updated;
   } else {
-    const newLead: VisitorLead = {
+    resultLead = {
       id: `lead_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`,
       createdAt: now,
       verifiedAt: leadData.status === 'verified' ? now : undefined,
       ...leadData,
     };
-    leads.unshift(newLead);
-    fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2), 'utf-8');
-    return newLead;
   }
+
+  memoryLeads.set(cleanEmail, resultLead);
+
+  // Safely attempt file persistence
+  const filePath = getStorageFilePath();
+  if (filePath) {
+    try {
+      ensureDirectoryExists(filePath);
+      const all = Array.from(memoryLeads.values());
+      fs.writeFileSync(filePath, JSON.stringify(all, null, 2), 'utf-8');
+    } catch {
+      // read-only filesystem or temporary error, memoryLeads holds the data
+    }
+  }
+
+  return resultLead;
 }
 
 export function markLeadVerifiedByEmail(email: string): VisitorLead | null {
-  ensureDirectoryExists();
-  const leads = getAllLeads();
-  const index = leads.findIndex((l) => l.email.toLowerCase() === email.toLowerCase());
-  if (index >= 0) {
-    leads[index].status = 'verified';
-    leads[index].verifiedAt = new Date().toISOString();
-    fs.writeFileSync(LEADS_FILE, JSON.stringify(leads, null, 2), 'utf-8');
-    return leads[index];
+  const cleanEmail = email.toLowerCase();
+  const lead = memoryLeads.get(cleanEmail) || getAllLeads().find((l) => l.email.toLowerCase() === cleanEmail);
+
+  if (lead) {
+    lead.status = 'verified';
+    lead.verifiedAt = new Date().toISOString();
+    memoryLeads.set(cleanEmail, lead);
+
+    const filePath = getStorageFilePath();
+    if (filePath) {
+      try {
+        ensureDirectoryExists(filePath);
+        const all = Array.from(memoryLeads.values());
+        fs.writeFileSync(filePath, JSON.stringify(all, null, 2), 'utf-8');
+      } catch {
+        // ignore
+      }
+    }
+    return lead;
   }
+
   return null;
 }
