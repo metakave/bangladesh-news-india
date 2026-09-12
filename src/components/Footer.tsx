@@ -144,7 +144,7 @@ export default function Footer() {
                   style={{ color: 'var(--brand-gold)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
                 >
                   <Globe size={13} />
-                  {lang === 'bn' ? '১০০ ভারতীয় গণমাধ্যম ডিরেক্টরি' : 'Indian Media Directory (100)'}
+                  {t.mediaDirectory.navTitle}
                 </Link>
               </li>
               <li>
