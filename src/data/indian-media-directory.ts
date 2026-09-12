@@ -600,9 +600,9 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     type: 'Print/Digital',
     headOffice: 'Kolkata, West Bengal',
     headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
-    websiteUrl: 'https://aajkaal.in',
+    websiteUrl: 'https://www.aajkaal.in',
     domain: 'aajkaal.in',
-    bangladeshUrl: 'https://aajkaal.in/news/bangladesh',
+    bangladeshUrl: 'https://www.aajkaal.in/topic/bangladesh',
     rssFeedUrl: 'https://aajkaal.in/rss',
   },
   {
