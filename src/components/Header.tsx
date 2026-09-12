@@ -272,6 +272,30 @@ export default function Header() {
                 </Link>
               );
             })}
+
+            <Link
+              href="/bangladesh-indian-news-media"
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontWeight: pathname === '/bangladesh-indian-news-media' ? 800 : 600,
+                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
+                color: pathname === '/bangladesh-indian-news-media' ? 'var(--brand-primary)' : 'var(--brand-gold)',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.05em',
+                whiteSpace: 'nowrap',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                padding: '0.15rem 0.55rem',
+                borderRadius: 'var(--radius-sm)',
+                backgroundColor: pathname === '/bangladesh-indian-news-media' ? 'rgba(217, 119, 6, 0.15)' : 'rgba(217, 119, 6, 0.08)',
+                border: '1px solid rgba(217, 119, 6, 0.3)',
+                transition: 'all 0.15s ease'
+              }}
+            >
+              <Globe size={13} />
+              {lang === 'bn' ? 'ভারতীয় গণমাধ্যম ডিরেক্টরি' : 'Indian Media (100)'}
+            </Link>
           </div>
         </div>
       </nav>
@@ -321,6 +345,15 @@ export default function Header() {
                   {lang === 'bn' ? cat.labelBn : cat.labelEn}
                 </Link>
               ))}
+              <Link
+                href="/bangladesh-indian-news-media"
+                onClick={() => setMobileMenuOpen(false)}
+                className="font-bengali"
+                style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--brand-gold)', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
+              >
+                <Globe size={15} />
+                {lang === 'bn' ? 'ভারতীয় গণমাধ্যম ডিরেক্টরি (১০০)' : 'Indian Media Directory (100)'}
+              </Link>
               <Link href="/saved" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--brand-primary)' }}>
                 {t.saved} ({bookmarks.length})
               </Link>

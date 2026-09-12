@@ -139,6 +139,16 @@ export default function Footer() {
               ))}
               <li>
                 <Link
+                  href="/bangladesh-indian-news-media"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--brand-gold)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+                >
+                  <Globe size={13} />
+                  {lang === 'bn' ? '১০০ ভারতীয় গণমাধ্যম ডিরেক্টরি' : 'Indian Media Directory (100)'}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/saved"
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ color: 'var(--brand-primary)', fontWeight: 600 }}
