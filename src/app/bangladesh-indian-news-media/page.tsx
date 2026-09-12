@@ -170,11 +170,11 @@ export default function BangladeshIndianNewsMediaPage() {
             <h1
               className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
               style={{
-                fontSize: lang === 'bn' ? 'clamp(2.2rem, 4.5vw, 3.2rem)' : 'clamp(2.3rem, 4.8vw, 3.4rem)',
-                fontWeight: 900,
+                fontSize: lang === 'bn' ? 'clamp(1.85rem, 3.8vw, 2.85rem)' : 'clamp(1.95rem, 4.0vw, 3.05rem)',
+                fontWeight: 600,
                 color: 'var(--text-primary)',
-                lineHeight: 1.15,
-                letterSpacing: lang === 'bn' ? '0' : '0.04em',
+                lineHeight: 1.2,
+                letterSpacing: lang === 'bn' ? '0' : '0.03em',
                 marginBottom: '1rem',
               }}
             >
