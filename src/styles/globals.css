@@ -82,11 +82,18 @@
 
 html {
   font-family: var(--font-sans);
+  font-size: 16px;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Global 2-point base font size increase across all Bengali views */
+html[data-lang='bn'],
+html[lang='bn'] {
+  font-size: calc(16px + 2pt); /* Scales all rem units by +2 points globally */
 }
 
 body {
@@ -135,10 +142,12 @@ body {
 
 .font-bengali {
   font-family: var(--font-bengali);
+  line-height: 1.6;
 }
 
 .font-devanagari {
   font-family: var(--font-devanagari);
+  line-height: 1.5;
 }
 
 a {

@@ -42,11 +42,10 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
 
     const savedLang = localStorage.getItem('india_watch_lang') as AppLanguage | null;
-    if (savedLang) {
-      setLangState(savedLang);
-    } else {
-      setLangState('bn'); // Default Bengali
-    }
+    const initialLang = savedLang || 'bn';
+    setLangState(initialLang);
+    document.documentElement.setAttribute('lang', initialLang);
+    document.documentElement.setAttribute('data-lang', initialLang);
 
     const savedBookmarks = localStorage.getItem('india_watch_bookmarks');
     if (savedBookmarks) {
@@ -67,6 +66,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   const setLang = (newLang: AppLanguage) => {
     setLangState(newLang);
+    document.documentElement.setAttribute('lang', newLang);
+    document.documentElement.setAttribute('data-lang', newLang);
     localStorage.setItem('india_watch_lang', newLang);
   };
 
