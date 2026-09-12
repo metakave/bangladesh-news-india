@@ -265,14 +265,15 @@ export default function Header() {
                   }}
                 />
                 <h1
-                  className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
+                  className={`${lang === 'bn' ? 'font-bengali' : 'font-masthead'} site-title-h1`}
                   style={{
-                    fontSize: lang === 'bn' ? 'calc(clamp(2.1rem, 5.2vw, 3.5rem) - 5pt)' : 'clamp(2rem, 5vw, 3.4rem)',
+                    fontSize: lang === 'bn' ? 'calc(clamp(1.75rem, 5.2vw, 3.5rem) - 5pt)' : 'clamp(1.75rem, 5vw, 3.4rem)',
                     fontWeight: 900,
                     lineHeight: 1.1,
                     letterSpacing: lang === 'bn' ? '0' : '0.08em',
                     color: 'var(--text-primary)',
                     margin: 0,
+                    whiteSpace: 'nowrap',
                   }}
                 >
                   {t.siteTitle}
@@ -503,6 +504,10 @@ export default function Header() {
           .mobile-right-wrapper {
             display: flex !important;
             flex-shrink: 0 !important;
+          }
+          .site-title-h1 {
+            font-size: calc(clamp(1.4rem, 5.5vw, 2.1rem) - 2pt) !important;
+            white-space: nowrap !important;
           }
         }
       `}</style>
