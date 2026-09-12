@@ -34,6 +34,8 @@ export default function ArticleCard({
   const isHindi = article.source.language === 'Hindi';
   const isBengali = article.source.language === 'Bengali';
 
+  const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
+
   if (variant === 'lead') {
     return (
       <article style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -105,13 +107,13 @@ export default function ArticleCard({
             </button>
           </div>
 
-          {/* Primary Headline */}
+          {/* Primary Headline in Noto Serif Bengali / Noto Serif Devanagari */}
           <h2
-            className={isBengali || isHindi ? '' : 'font-serif'}
+            className={titleFontClass}
             style={{
-              fontSize: isBengali || isHindi ? 'clamp(1.4rem, 2.1vw, 1.95rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
+              fontSize: isBengali || isHindi ? 'clamp(1.45rem, 2.3vw, 2rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
               fontWeight: 800,
-              lineHeight: 1.35,
+              lineHeight: isBengali || isHindi ? 1.45 : 1.25,
               color: 'var(--text-primary)',
               marginBottom: '0.75rem',
               letterSpacing: isBengali || isHindi ? '0' : '-0.01em',
@@ -144,20 +146,23 @@ export default function ArticleCard({
               )}
 
               {article.banglaTitle && (
-                <div style={{ fontSize: '0.86rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
-                  <strong style={{ color: '#059669', fontSize: '0.75rem', textTransform: 'uppercase' }}>বাংলা অনুবাদ:</strong> {article.banglaTitle}
+                <div className="font-bengali" style={{ fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                  <strong style={{ color: '#059669', fontSize: '0.75rem', textTransform: 'uppercase', fontFamily: 'var(--font-sans)' }}>বাংলা অনুবাদ:</strong> {article.banglaTitle}
                 </div>
               )}
             </div>
           )}
 
           {/* Summary */}
-          <p style={{
-            fontSize: '0.96rem',
-            lineHeight: 1.6,
-            color: 'var(--text-secondary)',
-            marginBottom: '1rem'
-          }}>
+          <p
+            className={isBengali ? 'font-bengali' : ''}
+            style={{
+              fontSize: isBengali ? '1rem' : '0.96rem',
+              lineHeight: isBengali ? 1.7 : 1.6,
+              color: 'var(--text-secondary)',
+              marginBottom: '1rem'
+            }}
+          >
             {article.summary}
           </p>
 
@@ -173,7 +178,10 @@ export default function ArticleCard({
               <div style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.4rem', letterSpacing: '0.05em' }}>
                 Key Highlights
               </div>
-              <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', paddingLeft: '1rem', fontSize: '0.86rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
+              <ul
+                className={isBengali ? 'font-bengali' : ''}
+                style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', paddingLeft: '1.1rem', fontSize: isBengali ? '0.9rem' : '0.86rem', color: 'var(--text-secondary)', lineHeight: isBengali ? 1.6 : 1.45 }}
+              >
                 {article.keyPoints.slice(0, 3).map((pt, i) => (
                   <li key={i}>{pt}</li>
                 ))}
@@ -273,11 +281,11 @@ export default function ArticleCard({
 
           {/* Title */}
           <h3
-            className={isBengali || isHindi ? '' : 'font-serif'}
+            className={titleFontClass}
             style={{
-              fontSize: isBengali || isHindi ? '1.1rem' : '1.15rem',
+              fontSize: isBengali || isHindi ? '1.12rem' : '1.15rem',
               fontWeight: 700,
-              lineHeight: 1.4,
+              lineHeight: isBengali || isHindi ? 1.45 : 1.3,
               color: 'var(--text-primary)',
               marginBottom: '0.55rem',
             }}
@@ -304,23 +312,26 @@ export default function ArticleCard({
                 </div>
               )}
               {article.banglaTitle && (
-                <div style={{ color: 'var(--text-primary)', lineHeight: 1.35 }}>
-                  <strong style={{ color: '#059669', fontSize: '0.7rem' }}>বাংলা:</strong> {article.banglaTitle}
+                <div className="font-bengali" style={{ color: 'var(--text-primary)', lineHeight: 1.4, fontSize: '0.86rem' }}>
+                  <strong style={{ color: '#059669', fontSize: '0.7rem', fontFamily: 'var(--font-sans)' }}>বাংলা:</strong> {article.banglaTitle}
                 </div>
               )}
             </div>
           )}
 
-          <p style={{
-            fontSize: '0.86rem',
-            lineHeight: 1.5,
-            color: 'var(--text-secondary)',
-            marginBottom: '1rem',
-            display: '-webkit-box',
-            WebkitLineClamp: 3,
-            WebkitBoxOrient: 'vertical',
-            overflow: 'hidden'
-          }}>
+          <p
+            className={isBengali ? 'font-bengali' : ''}
+            style={{
+              fontSize: isBengali ? '0.9rem' : '0.86rem',
+              lineHeight: isBengali ? 1.6 : 1.5,
+              color: 'var(--text-secondary)',
+              marginBottom: '1rem',
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden'
+            }}
+          >
             {article.summary}
           </p>
 
@@ -406,11 +417,11 @@ export default function ArticleCard({
             style={{ textDecoration: 'none' }}
           >
             <h4
-              className={isBengali || isHindi ? '' : 'font-serif'}
+              className={titleFontClass}
               style={{
-                fontSize: isBengali || isHindi ? '0.94rem' : '0.98rem',
+                fontSize: isBengali || isHindi ? '0.96rem' : '0.98rem',
                 fontWeight: 700,
-                lineHeight: 1.4,
+                lineHeight: isBengali || isHindi ? 1.45 : 1.35,
                 color: 'var(--text-primary)',
                 marginBottom: '0.25rem',
                 display: '-webkit-box',
@@ -424,20 +435,23 @@ export default function ArticleCard({
           </a>
 
           {isHindi && article.banglaTitle && (
-            <div style={{ fontSize: '0.75rem', color: '#059669', marginBottom: '0.25rem', fontWeight: 600 }}>
+            <div className="font-bengali" style={{ fontSize: '0.78rem', color: '#059669', marginBottom: '0.25rem', fontWeight: 600 }}>
               বাংলা: {article.banglaTitle}
             </div>
           )}
 
-          <p style={{
-            fontSize: '0.8rem',
-            color: 'var(--text-secondary)',
-            display: '-webkit-box',
-            WebkitLineClamp: 2,
-            WebkitBoxOrient: 'vertical',
-            overflow: 'hidden',
-            lineHeight: 1.45,
-          }}>
+          <p
+            className={isBengali ? 'font-bengali' : ''}
+            style={{
+              fontSize: isBengali ? '0.84rem' : '0.8rem',
+              color: 'var(--text-secondary)',
+              display: '-webkit-box',
+              WebkitLineClamp: 2,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+              lineHeight: isBengali ? 1.55 : 1.45,
+            }}
+          >
             {article.summary}
           </p>
         </div>
@@ -462,11 +476,11 @@ export default function ArticleCard({
         style={{ textDecoration: 'none' }}
       >
         <h4
-          className={isBengali || isHindi ? '' : 'font-serif'}
+          className={titleFontClass}
           style={{
-            fontSize: isBengali || isHindi ? '0.98rem' : '1.05rem',
+            fontSize: isBengali || isHindi ? '1rem' : '1.05rem',
             fontWeight: 700,
-            lineHeight: 1.4,
+            lineHeight: isBengali || isHindi ? 1.45 : 1.35,
             color: 'var(--text-primary)',
           }}
         >
@@ -485,19 +499,22 @@ export default function ArticleCard({
           gap: '0.2rem',
         }}>
           {article.englishTitle && <div><strong style={{ color: 'var(--brand-accent)' }}>EN:</strong> {article.englishTitle}</div>}
-          {article.banglaTitle && <div><strong style={{ color: '#059669' }}>বাংলা:</strong> {article.banglaTitle}</div>}
+          {article.banglaTitle && <div className="font-bengali" style={{ fontSize: '0.8rem' }}><strong style={{ color: '#059669', fontFamily: 'var(--font-sans)' }}>বাংলা:</strong> {article.banglaTitle}</div>}
         </div>
       )}
 
-      <p style={{
-        fontSize: '0.84rem',
-        lineHeight: 1.45,
-        color: 'var(--text-secondary)',
-        display: '-webkit-box',
-        WebkitLineClamp: 2,
-        WebkitBoxOrient: 'vertical',
-        overflow: 'hidden',
-      }}>
+      <p
+        className={isBengali ? 'font-bengali' : ''}
+        style={{
+          fontSize: isBengali ? '0.88rem' : '0.84rem',
+          lineHeight: isBengali ? 1.55 : 1.45,
+          color: 'var(--text-secondary)',
+          display: '-webkit-box',
+          WebkitLineClamp: 2,
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden',
+        }}
+      >
         {article.summary}
       </p>
 
