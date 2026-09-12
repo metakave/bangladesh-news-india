@@ -39,7 +39,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'চেন্নাই, তামিলনাড়ু',
     websiteUrl: 'https://thehindu.com',
     domain: 'thehindu.com',
-    bangladeshUrl: 'https://www.thehindu.com/topic/bangladesh/',
+    bangladeshUrl: 'https://www.thehindu.com/search/#gsc.tab=0&gsc.q=bangladesh&gsc.sort=date',
     rssFeedUrl: 'https://www.thehindu.com/feeder/default.rss',
   },
   {
