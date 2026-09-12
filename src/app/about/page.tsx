@@ -335,22 +335,25 @@ export default function AboutPage() {
               padding: '1.5rem',
             }}>
               <div style={{
-                width: '76px',
-                height: '76px',
-                minWidth: '76px',
+                width: '80px',
+                height: '80px',
+                minWidth: '80px',
                 borderRadius: '50%',
                 overflow: 'hidden',
-                border: '2px solid var(--brand-gold)',
+                border: '3px solid var(--brand-gold)',
                 boxShadow: 'var(--shadow-md)',
                 position: 'relative',
                 backgroundColor: 'var(--bg-card)',
+                flexShrink: 0,
               }}>
                 <Image
                   src="/images/sadiq_m_alam.jpg"
                   alt={about.sadiqName}
-                  width={76}
-                  height={76}
-                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                  width={80}
+                  height={80}
+                  priority
+                  unoptimized
+                  style={{ objectFit: 'cover', width: '100%', height: '100%', display: 'block' }}
                 />
               </div>
 
