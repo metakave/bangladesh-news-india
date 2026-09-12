@@ -80,10 +80,10 @@ export default function AboutPage() {
             <h1
               className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
               style={{
-                fontSize: lang === 'bn' ? 'clamp(2.4rem, 5vw, 3.5rem)' : 'clamp(2.5rem, 5.2vw, 3.6rem)',
-                fontWeight: 900,
+                fontSize: lang === 'bn' ? 'clamp(2.2rem, 4.6vw, 3.25rem)' : 'clamp(2.3rem, 4.8vw, 3.35rem)',
+                fontWeight: 600,
                 color: 'var(--text-primary)',
-                lineHeight: 1.15,
+                lineHeight: 1.18,
                 letterSpacing: lang === 'bn' ? '0' : '0.03em',
                 marginBottom: '1rem',
               }}

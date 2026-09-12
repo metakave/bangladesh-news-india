@@ -65,8 +65,8 @@ export default function CategoryClientView({
             <h1
               className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
               style={{
-                fontSize: lang === 'bn' ? 'clamp(1.8rem, 3.8vw, 2.5rem)' : 'clamp(2rem, 4vw, 2.75rem)',
-                fontWeight: 900,
+                fontSize: lang === 'bn' ? 'clamp(1.65rem, 3.5vw, 2.3rem)' : 'clamp(1.8rem, 3.7vw, 2.55rem)',
+                fontWeight: 600,
                 color: 'var(--text-primary)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.04em',
