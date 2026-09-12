@@ -187,6 +187,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <GoogleAnalytics />
         <link rel="preconnect" href="https://images.unsplash.com" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <script
@@ -199,7 +200,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <GoogleAnalytics />
         <AppProvider>
           <Header />
           <BreakingNews />

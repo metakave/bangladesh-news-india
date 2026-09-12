@@ -2,7 +2,7 @@ import React from 'react';
 import Script from 'next/script';
 
 export default function GoogleAnalytics({ gaId }: { gaId?: string }) {
-  const measurementId = gaId || process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  const measurementId = gaId || process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-GFC2DBDGGH';
 
   if (!measurementId) return null;
 

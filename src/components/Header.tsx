@@ -144,38 +144,6 @@ export default function Header() {
               </kbd>
             </button>
 
-            {/* Bookmarks */}
-            <Link
-              href="/saved"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.35rem',
-                color: pathname === '/saved' ? 'var(--brand-primary)' : 'var(--text-secondary)',
-                fontWeight: 600,
-                position: 'relative'
-              }}
-            >
-              <Bookmark size={15} />
-              <span className="saved-text font-bengali">{t.saved}</span>
-              {bookmarks.length > 0 && (
-                <span style={{
-                  backgroundColor: 'var(--brand-primary)',
-                  color: '#ffffff',
-                  fontSize: '0.65rem',
-                  fontWeight: 800,
-                  borderRadius: '50%',
-                  width: '15px',
-                  height: '15px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                  {bookmarks.length}
-                </span>
-              )}
-            </Link>
-
             {/* Dark/Light Switcher */}
             <button
               onClick={toggleTheme}
@@ -466,9 +434,6 @@ export default function Header() {
               </Link>
               <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
                 {t.aboutUs.pageTitle}
-              </Link>
-              <Link href="/saved" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--brand-primary)' }}>
-                {t.saved} ({bookmarks.length})
               </Link>
             </div>
 

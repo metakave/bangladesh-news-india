@@ -26,12 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: `${SITE_URL}/saved`,
-      lastModified: now,
-      changeFrequency: 'daily',
-      priority: 0.5,
-    },
   ];
 
   // Category routes

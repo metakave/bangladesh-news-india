@@ -55,45 +55,8 @@ export default function Footer() {
             <span className={lang === 'bn' ? 'font-bengali' : ''}>{today}</span>
           </div>
 
-          {/* Mobile Actions: Saved + Theme Toggle */}
+          {/* Mobile Actions: Theme Toggle */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-            {/* Bookmarks */}
-            <Link
-              href="/saved"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.35rem',
-                backgroundColor: 'var(--bg-secondary)',
-                border: '1px solid var(--border-primary)',
-                padding: '0.3rem 0.65rem',
-                borderRadius: 'var(--radius-sm)',
-                color: 'var(--text-primary)',
-                fontSize: '0.75rem',
-                fontWeight: 600,
-                textDecoration: 'none'
-              }}
-            >
-              <Bookmark size={13} style={{ color: 'var(--brand-primary)' }} />
-              <span className={lang === 'bn' ? 'font-bengali' : ''}>{t.saved}</span>
-              {bookmarks.length > 0 && (
-                <span style={{
-                  backgroundColor: 'var(--brand-primary)',
-                  color: '#ffffff',
-                  fontSize: '0.62rem',
-                  fontWeight: 800,
-                  borderRadius: '50%',
-                  width: '15px',
-                  height: '15px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                  {bookmarks.length}
-                </span>
-              )}
-            </Link>
-
             {/* Theme Switcher */}
             <button
               onClick={toggleTheme}
@@ -247,15 +210,6 @@ export default function Footer() {
                 >
                   <Globe size={13} />
                   {t.mediaDirectory.navTitle}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/saved"
-                  className={lang === 'bn' ? 'font-bengali' : ''}
-                  style={{ color: 'var(--brand-primary)', fontWeight: 600 }}
-                >
-                  {t.saved}
                 </Link>
               </li>
             </ul>

@@ -198,25 +198,6 @@ export default function ReaderTools({
             <Twitter size={13} />
             Post
           </button>
-
-          <button
-            onClick={() => toggleBookmark(slug)}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.35rem',
-              fontSize: '0.75rem',
-              fontWeight: 700,
-              padding: '0.25rem 0.75rem',
-              backgroundColor: bookmarked ? 'var(--brand-primary)' : 'var(--bg-secondary)',
-              color: bookmarked ? '#ffffff' : 'var(--text-primary)',
-              borderRadius: 'var(--radius-sm)',
-              border: '1px solid var(--border-primary)',
-            }}
-          >
-            <Bookmark size={13} fill={bookmarked ? '#ffffff' : 'none'} />
-            {bookmarked ? 'Saved' : 'Save Story'}
-          </button>
         </div>
       </div>
     </>

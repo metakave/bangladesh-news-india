@@ -212,27 +212,8 @@ export default function ArticleClientView({
                   </span>
                 </div>
 
-                {/* Actions: Bookmark and Share */}
+                {/* Actions: Share */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <button
-                    onClick={() => toggleBookmark(article.slug)}
-                    aria-label={bookmarked ? 'Saved to bookmarks' : 'Save article'}
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '0.35rem',
-                      padding: '0.4rem 0.75rem',
-                      borderRadius: 'var(--radius-sm)',
-                      backgroundColor: bookmarked ? 'var(--brand-primary)' : 'var(--bg-secondary)',
-                      color: bookmarked ? '#ffffff' : 'var(--text-secondary)',
-                      fontSize: '0.78rem',
-                      fontWeight: 600,
-                      transition: 'all 0.15s ease',
-                    }}
-                  >
-                    <Bookmark size={14} fill={bookmarked ? 'currentColor' : 'none'} />
-                    {bookmarked ? (lang === 'bn' ? 'সংরক্ষিত' : 'Saved') : (lang === 'bn' ? 'সংরক্ষণ' : 'Save')}
-                  </button>
 
                   <button
                     onClick={handleShare}

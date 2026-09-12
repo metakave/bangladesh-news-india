@@ -97,21 +97,6 @@ export default function ArticleCard({
               <span className={`category-pill ${lang === 'bn' ? 'font-bengali' : ''}`}>{categoryLabel}</span>
               <SourceBadge source={article.source} />
             </div>
-
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                toggleBookmark(article.slug);
-              }}
-              aria-label="Bookmark article"
-              style={{
-                color: bookmarked ? 'var(--brand-primary)' : 'var(--text-muted)',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              <Bookmark size={15} fill={bookmarked ? 'currentColor' : 'none'} />
-            </button>
           </div>
 
           {/* Primary Headline in Original Script (Always kept in original source language) */}
