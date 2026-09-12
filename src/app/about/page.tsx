@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useApp } from '@/context/ThemeContext';
 import { TRANSLATIONS } from '@/data/translations';
 import {
@@ -334,20 +335,23 @@ export default function AboutPage() {
               padding: '1.5rem',
             }}>
               <div style={{
-                width: '64px',
-                height: '64px',
-                minWidth: '64px',
+                width: '76px',
+                height: '76px',
+                minWidth: '76px',
                 borderRadius: '50%',
-                backgroundColor: 'var(--brand-primary)',
-                color: '#ffffff',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: 900,
-                fontSize: '1.4rem',
-                boxShadow: 'var(--shadow-sm)',
+                overflow: 'hidden',
+                border: '2px solid var(--brand-gold)',
+                boxShadow: 'var(--shadow-md)',
+                position: 'relative',
+                backgroundColor: 'var(--bg-card)',
               }}>
-                SA
+                <Image
+                  src="/images/sadiq_m_alam.jpg"
+                  alt={about.sadiqName}
+                  width={76}
+                  height={76}
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                />
               </div>
 
               <div style={{ flex: 1 }}>
