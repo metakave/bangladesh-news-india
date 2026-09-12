@@ -2,10 +2,15 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
+import { TRANSLATIONS } from '@/data/translations';
 import { Globe, Shield, Rss, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang];
+
   const scrollToTop = () => {
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -34,53 +39,69 @@ export default function Footer() {
           {/* Masthead & Info */}
           <div style={{ gridColumn: 'span 2' }} className="footer-brand-col">
             <Link href="/">
-              <h2 className="font-masthead" style={{
-                fontSize: '1.8rem',
-                fontWeight: 900,
-                color: 'var(--text-primary)',
-                letterSpacing: '0.06em',
-                marginBottom: '0.5rem',
-              }}>
-                BANGLADESH WATCH
+              <h2
+                className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
+                style={{
+                  fontSize: lang === 'bn' ? '1.75rem' : '1.8rem',
+                  fontWeight: 900,
+                  color: 'var(--text-primary)',
+                  letterSpacing: lang === 'bn' ? '0' : '0.06em',
+                  marginBottom: '0.5rem',
+                }}
+              >
+                {t.siteTitle}
               </h2>
             </Link>
-            <p style={{
-              fontSize: '0.88rem',
-              lineHeight: 1.6,
-              color: 'var(--text-secondary)',
-              marginBottom: '1.25rem',
-              maxWidth: '380px'
-            }}>
-              Bangladesh Watch is an independent digital news publication dedicated to rigorous factual reporting, investigative journalism, and insightful economic analysis across the Bengal delta and the Bay of Bengal region.
+            <p
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: lang === 'bn' ? '0.92rem' : '0.88rem',
+                lineHeight: 1.65,
+                color: 'var(--text-secondary)',
+                marginBottom: '1.25rem',
+                maxWidth: '420px'
+              }}
+            >
+              {t.footer.about}
             </p>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.75rem', fontWeight: 600 }}>
+            <div
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.75rem', fontWeight: 600, flexWrap: 'wrap' }}
+            >
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', color: 'var(--brand-primary)' }}>
-                <Shield size={14} /> Trust In Journalism Verified
+                <Shield size={14} /> {t.footer.verified}
               </span>
               <span>•</span>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-                <Globe size={14} /> Bay of Bengal Bureau
+                <Globe size={14} /> {lang === 'bn' ? 'দিল্লি ও কলকাতা প্রেস ডেস্ক' : 'Delhi & Kolkata Press Desks'}
               </span>
             </div>
           </div>
 
           {/* Sections */}
           <div>
-            <h4 style={{
-              fontSize: '0.78rem',
-              fontWeight: 800,
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              color: 'var(--text-primary)',
-              marginBottom: '1rem',
-            }}>
-              News Desks
+            <h4
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: '0.78rem',
+                fontWeight: 800,
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                color: 'var(--text-primary)',
+                marginBottom: '1rem',
+              }}
+            >
+              {lang === 'bn' ? 'সংবাদ বিভাগ' : 'News Desks'}
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {CATEGORIES.slice(0, 4).map((cat) => (
                 <li key={cat.slug}>
-                  <Link href={`/category/${cat.slug}`} style={{ color: 'var(--text-secondary)' }}>
-                    {cat.label}
+                  <Link
+                    href={`/category/${cat.slug}`}
+                    className={lang === 'bn' ? 'font-bengali' : ''}
+                    style={{ color: 'var(--text-secondary)' }}
+                  >
+                    {lang === 'bn' ? cat.labelBn : cat.labelEn}
                   </Link>
                 </li>
               ))}
@@ -89,32 +110,38 @@ export default function Footer() {
 
           {/* More Sections */}
           <div>
-            <h4 style={{
-              fontSize: '0.78rem',
-              fontWeight: 800,
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              color: 'var(--text-primary)',
-              marginBottom: '1rem',
-            }}>
-              Features &amp; Media
+            <h4
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: '0.78rem',
+                fontWeight: 800,
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                color: 'var(--text-primary)',
+                marginBottom: '1rem',
+              }}
+            >
+              {lang === 'bn' ? 'অন্যান্য ও সংরক্ষিত' : 'Features & Media'}
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
               {CATEGORIES.slice(4).map((cat) => (
                 <li key={cat.slug}>
-                  <Link href={`/category/${cat.slug}`} style={{ color: 'var(--text-secondary)' }}>
-                    {cat.label}
+                  <Link
+                    href={`/category/${cat.slug}`}
+                    className={lang === 'bn' ? 'font-bengali' : ''}
+                    style={{ color: 'var(--text-secondary)' }}
+                  >
+                    {lang === 'bn' ? cat.labelBn : cat.labelEn}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/category/opinion" style={{ color: 'var(--text-secondary)' }}>
-                  Opinion &amp; Editorials
-                </Link>
-              </li>
-              <li>
-                <Link href="/saved" style={{ color: 'var(--brand-primary)', fontWeight: 600 }}>
-                  Saved Reading List
+                <Link
+                  href="/saved"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--brand-primary)', fontWeight: 600 }}
+                >
+                  {t.saved}
                 </Link>
               </li>
             </ul>
@@ -122,22 +149,27 @@ export default function Footer() {
 
           {/* Editorial Ethics & Standards */}
           <div>
-            <h4 style={{
-              fontSize: '0.78rem',
-              fontWeight: 800,
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              color: 'var(--text-primary)',
-              marginBottom: '1rem',
-            }}>
-              Standards &amp; Governance
+            <h4
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: '0.78rem',
+                fontWeight: 800,
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                color: 'var(--text-primary)',
+                marginBottom: '1rem',
+              }}
+            >
+              {lang === 'bn' ? 'নীতিমালা ও মানদণ্ড' : 'Standards & Governance'}
             </h4>
-            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.8rem' }}>
-              <li><a href="#ethics" style={{ color: 'var(--text-secondary)' }}>Editorial Code of Ethics</a></li>
-              <li><a href="#corrections" style={{ color: 'var(--text-secondary)' }}>Corrections &amp; Clarifications</a></li>
-              <li><a href="#factcheck" style={{ color: 'var(--text-secondary)' }}>Fact-Checking Policy</a></li>
-              <li><a href="#ombudsperson" style={{ color: 'var(--text-secondary)' }}>Readers&apos; Editor / Ombudsman</a></li>
-              <li><a href="#rss" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', color: 'var(--brand-gold)' }}><Rss size={12} /> RSS News Feeds</a></li>
+            <ul
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.8rem' }}
+            >
+              <li><a href="#ethics" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Code of Ethics'}</a></li>
+              <li><a href="#corrections" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সংশোধনী ও স্পষ্টীকরণ' : 'Corrections & Clarifications'}</a></li>
+              <li><a href="#factcheck" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'তথ্য যাচাই নীতিমালা' : 'Fact-Checking Policy'}</a></li>
+              <li><a href="#rss" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', color: 'var(--brand-gold)' }}><Rss size={12} /> {lang === 'bn' ? 'আরএসএস ফিড' : 'RSS Feeds'}</a></li>
             </ul>
           </div>
         </div>
@@ -152,12 +184,13 @@ export default function Footer() {
           fontSize: '0.78rem',
           color: 'var(--text-muted)',
         }}>
-          <div>
-            © {new Date().getFullYear()} Bangladesh Watch Media Group. All rights reserved. Registered under Press Council standards • Kawran Bazar, Dhaka.
+          <div className={lang === 'bn' ? 'font-bengali' : ''}>
+            {t.footer.allRights}
           </div>
 
           <button
             onClick={scrollToTop}
+            className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -165,11 +198,11 @@ export default function Footer() {
               color: 'var(--text-primary)',
               fontWeight: 700,
               fontSize: '0.75rem',
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em',
+              textTransform: lang === 'bn' ? 'none' : 'uppercase',
+              letterSpacing: lang === 'bn' ? '0' : '0.05em',
             }}
           >
-            Back to Top <ArrowUp size={14} />
+            {t.footer.backToTop} <ArrowUp size={14} />
           </button>
         </div>
       </div>
@@ -184,3 +217,4 @@ export default function Footer() {
     </footer>
   );
 }
+

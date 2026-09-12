@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { SentimentType } from '@/data/news-data';
-import { CheckCircle2, AlertCircle, MinusCircle, ShieldAlert } from 'lucide-react';
+import { useApp } from '@/context/ThemeContext';
+import { CheckCircle2, AlertCircle, MinusCircle } from 'lucide-react';
 
 interface SentimentBadgeProps {
   sentiment: SentimentType;
@@ -15,9 +16,12 @@ export default function SentimentBadge({
   showIcon = true,
   size = 'md',
 }: SentimentBadgeProps) {
+  const { lang } = useApp();
+
   const configs = {
     positive: {
-      label: 'Positive on BD',
+      labelBn: 'ইতিবাচক দৃষ্টিভঙ্গি',
+      labelEn: 'Positive on BD',
       color: '#15803d',
       bg: 'rgba(21, 128, 61, 0.12)',
       border: 'rgba(21, 128, 61, 0.3)',
@@ -25,7 +29,8 @@ export default function SentimentBadge({
       icon: <CheckCircle2 size={size === 'sm' ? 11 : 13} />,
     },
     negative: {
-      label: 'Negative on BD',
+      labelBn: 'নেতিবাচক / উদ্বেগ',
+      labelEn: 'Negative on BD',
       color: '#dc2626',
       bg: 'rgba(220, 38, 38, 0.12)',
       border: 'rgba(220, 38, 38, 0.3)',
@@ -33,7 +38,8 @@ export default function SentimentBadge({
       icon: <AlertCircle size={size === 'sm' ? 11 : 13} />,
     },
     neutral: {
-      label: 'Neutral on BD',
+      labelBn: 'নিরপেক্ষ / বিশ্লেষণ',
+      labelEn: 'Neutral on BD',
       color: 'var(--text-secondary)',
       bg: 'var(--bg-secondary)',
       border: 'var(--border-primary)',
@@ -43,6 +49,7 @@ export default function SentimentBadge({
   };
 
   const current = configs[sentiment] || configs.neutral;
+  const label = lang === 'bn' ? current.labelBn : current.labelEn;
 
   const fontSizes = {
     sm: '0.66rem',
@@ -58,6 +65,7 @@ export default function SentimentBadge({
 
   return (
     <span
+      className={lang === 'bn' ? 'font-bengali' : ''}
       style={{
         display: 'inline-flex',
         alignItems: 'center',
@@ -69,11 +77,11 @@ export default function SentimentBadge({
         border: `1px solid ${current.border}`,
         padding: paddings[size],
         borderRadius: 'var(--radius-sm)',
-        letterSpacing: '0.04em',
-        textTransform: 'uppercase',
+        letterSpacing: lang === 'bn' ? '0' : '0.04em',
+        textTransform: lang === 'bn' ? 'none' : 'uppercase',
         flexShrink: 0,
       }}
-      title={`Narrative Marker: ${current.label}`}
+      title={`Narrative Marker: ${label}`}
     >
       <span
         style={{
@@ -85,7 +93,7 @@ export default function SentimentBadge({
           boxShadow: `0 0 6px ${current.dotColor}`,
         }}
       />
-      <span>{current.label}</span>
+      <span>{label}</span>
     </span>
   );
 }

@@ -2,10 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import { BREAKING_NEWS_ALERTS } from '@/data/news-data';
-import SentimentBadge from './SentimentBadge';
+import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
 import { ChevronRight, ChevronLeft, Radio, ExternalLink } from 'lucide-react';
 
 export default function BreakingNews() {
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -25,6 +28,9 @@ export default function BreakingNews() {
     setCurrentIndex((prev) => (prev - 1 + BREAKING_NEWS_ALERTS.length) % BREAKING_NEWS_ALERTS.length);
   };
 
+  const headline = lang === 'bn' ? current.headlineBn : current.headlineEn;
+  const timeAgo = lang === 'bn' ? current.timeAgoBn : current.timeAgoEn;
+
   return (
     <div style={{
       backgroundColor: 'var(--brand-primary)',
@@ -35,21 +41,24 @@ export default function BreakingNews() {
     }}>
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', overflow: 'hidden', flex: 1 }}>
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.35rem',
-            backgroundColor: 'rgba(0, 0, 0, 0.25)',
-            padding: '0.2rem 0.55rem',
-            borderRadius: 'var(--radius-sm)',
-            fontSize: '0.72rem',
-            fontWeight: 800,
-            letterSpacing: '0.06em',
-            textTransform: 'uppercase',
-            flexShrink: 0
-          }}>
+          <div
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.35rem',
+              backgroundColor: 'rgba(0, 0, 0, 0.25)',
+              padding: '0.2rem 0.55rem',
+              borderRadius: 'var(--radius-sm)',
+              fontSize: '0.72rem',
+              fontWeight: 800,
+              letterSpacing: lang === 'bn' ? '0' : '0.06em',
+              textTransform: lang === 'bn' ? 'none' : 'uppercase',
+              flexShrink: 0
+            }}
+          >
             <Radio size={13} style={{ color: '#fbbf24' }} />
-            Latest News
+            {t.latestNews}
           </div>
 
           <a
@@ -69,13 +78,13 @@ export default function BreakingNews() {
             }}
           >
             <span style={{ opacity: 0.85, fontSize: '0.75rem', flexShrink: 0 }}>
-              [{current.sourceName} • {current.sourceBureau} • {current.timeAgo}]
+              [{current.sourceName} • {current.sourceBureau} • {timeAgo}]
             </span>
             <span
-              className={current.sourceName === 'Anandabazar Patrika' ? 'font-bengali' : ''}
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{ fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis' }}
             >
-              {current.headline}
+              {headline}
             </span>
             <ExternalLink size={12} style={{ opacity: 0.8, flexShrink: 0 }} />
           </a>

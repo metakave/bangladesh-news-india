@@ -2,9 +2,14 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
+export type AppLanguage = 'bn' | 'en';
+
 interface AppContextType {
   theme: 'light' | 'dark';
   toggleTheme: () => void;
+  lang: AppLanguage;
+  setLang: (lang: AppLanguage) => void;
+  toggleLang: () => void;
   edition: 'national' | 'global';
   setEdition: (edition: 'national' | 'global') => void;
   bookmarks: string[]; // article slugs
@@ -19,6 +24,7 @@ const AppContext = createContext<AppContextType | undefined>(undefined);
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [lang, setLangState] = useState<AppLanguage>('bn'); // Default to Bengali
   const [edition, setEdition] = useState<'national' | 'global'>('national');
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -33,6 +39,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark');
       document.documentElement.setAttribute('data-theme', 'dark');
+    }
+
+    const savedLang = localStorage.getItem('india_watch_lang') as AppLanguage | null;
+    if (savedLang) {
+      setLangState(savedLang);
+    } else {
+      setLangState('bn'); // Default Bengali
     }
 
     const savedBookmarks = localStorage.getItem('india_watch_bookmarks');
@@ -50,6 +63,16 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setTheme(nextTheme);
     document.documentElement.setAttribute('data-theme', nextTheme);
     localStorage.setItem('india_watch_theme', nextTheme);
+  };
+
+  const setLang = (newLang: AppLanguage) => {
+    setLangState(newLang);
+    localStorage.setItem('india_watch_lang', newLang);
+  };
+
+  const toggleLang = () => {
+    const nextLang = lang === 'bn' ? 'en' : 'bn';
+    setLang(nextLang);
   };
 
   const toggleBookmark = (slug: string) => {
@@ -88,6 +111,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       value={{
         theme,
         toggleTheme,
+        lang,
+        setLang,
+        toggleLang,
         edition,
         setEdition,
         bookmarks,

@@ -3,26 +3,30 @@
 import React from 'react';
 import Link from 'next/link';
 import { NewsItem, SCANNER_STATS } from '@/data/news-data';
+import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
 import ArticleCard from './ArticleCard';
 import SentimentBadge from './SentimentBadge';
-import { TrendingUp, Sparkles, Zap, Radio, Building2, ExternalLink } from 'lucide-react';
+import { Radio, Building2, ExternalLink } from 'lucide-react';
 
 interface HeroGridProps {
   articles: NewsItem[];
 }
 
 export default function HeroGrid({ articles }: HeroGridProps) {
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang];
+
   const leadArticle = articles.find((a) => a.isLeadStory) || articles[0];
   const secondaryStories = articles.filter((a) => !a.isLeadStory && a.isTrending).slice(0, 2);
   const leftColumnStories = articles.filter((a) => a.id !== leadArticle?.id && !secondaryStories.some(s => s.id === a.id)).slice(0, 3);
-  const kolkataStories = articles.filter((a) => a.source.bureau === 'Kolkata');
   const delhiStories = articles.filter((a) => a.source.bureau === 'Delhi');
 
   return (
     <section style={{ padding: '1.75rem 0', borderBottom: '1px solid var(--border-primary)' }}>
       <div className="container">
         <div className="hero-grid-layout">
-          {/* Left Column: Kolkata Bureau Radar & High Priority Scans */}
+          {/* Left Column: Kolkata Bureau Radar */}
           <div className="hero-col-left border-divider-r">
             <div style={{
               display: 'flex',
@@ -32,18 +36,21 @@ export default function HeroGrid({ articles }: HeroGridProps) {
               paddingBottom: '0.4rem',
               marginBottom: '1.25rem'
             }}>
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                fontSize: '0.78rem',
-                fontWeight: 800,
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'var(--brand-primary)',
-              }}>
+              <div
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  fontSize: lang === 'bn' ? '0.85rem' : '0.78rem',
+                  fontWeight: 800,
+                  textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                  color: 'var(--brand-primary)',
+                }}
+              >
                 <Building2 size={14} />
-                Kolkata Press Desk
+                {t.kolkataPressDesk}
               </div>
               <span style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--text-muted)' }}>
                 ABP • Ei Samay
@@ -66,14 +73,20 @@ export default function HeroGrid({ articles }: HeroGridProps) {
               borderRadius: 'var(--radius-md)',
               border: '1px solid var(--border-primary)'
             }}>
-              <div style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--text-primary)', marginBottom: '0.65rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+              <div
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: lang === 'bn' ? 'none' : 'uppercase', color: 'var(--text-primary)', marginBottom: '0.65rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
+              >
                 <Radio size={13} style={{ color: 'var(--brand-primary)' }} />
-                Delhi / Kolkata Scanner Pulse
+                {lang === 'bn' ? 'দিল্লি / কলকাতা স্ক্যানার স্ট্যাটাস' : 'Delhi / Kolkata Scanner Pulse'}
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.78rem', color: 'var(--text-secondary)' }}>
-                <div>• Scanned <strong>{SCANNER_STATS.totalScanned24h}</strong> Indian articles in last 24h</div>
-                <div>• <strong>{SCANNER_STATS.bangladeshMatches}</strong> identified with keyword &lsquo;Bangladesh&rsquo;</div>
-                <div>• <strong>{SCANNER_STATS.bureauDistribution.kolkata}</strong> from Kolkata, <strong>{SCANNER_STATS.bureauDistribution.delhi}</strong> from Delhi</div>
+              <div
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.78rem', color: 'var(--text-secondary)' }}
+              >
+                <div>• {lang === 'bn' ? `গত ২৪ ঘণ্টায় স্ক্যান করা হয়েছে ${SCANNER_STATS.totalScanned24h}টি ভারতীয় সংবাদ` : `Scanned ${SCANNER_STATS.totalScanned24h} Indian articles in last 24h`}</div>
+                <div>• {lang === 'bn' ? `${SCANNER_STATS.bangladeshMatches}টি সংবাদে বাংলাদেশ বিষয়ক তথ্য চিহ্নিত` : `${SCANNER_STATS.bangladeshMatches} identified with keyword 'Bangladesh'`}</div>
+                <div>• {lang === 'bn' ? `${SCANNER_STATS.bureauDistribution.kolkata}টি কলকাতা এবং ${SCANNER_STATS.bureauDistribution.delhi}টি দিল্লি ব্যুরোর` : `${SCANNER_STATS.bureauDistribution.kolkata} from Kolkata, ${SCANNER_STATS.bureauDistribution.delhi} from Delhi`}</div>
               </div>
             </div>
           </div>
@@ -97,7 +110,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
             </div>
           </div>
 
-          {/* Right Column: Delhi Bureau & Strategic Policy Focus */}
+          {/* Right Column: Delhi Bureau Focus */}
           <div className="hero-col-right">
             <div style={{
               display: 'flex',
@@ -107,18 +120,21 @@ export default function HeroGrid({ articles }: HeroGridProps) {
               paddingBottom: '0.4rem',
               marginBottom: '1.25rem'
             }}>
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                fontSize: '0.78rem',
-                fontWeight: 800,
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'var(--text-primary)',
-              }}>
+              <div
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  fontSize: lang === 'bn' ? '0.85rem' : '0.78rem',
+                  fontWeight: 800,
+                  textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                  color: 'var(--text-primary)',
+                }}
+              >
                 <Building2 size={14} style={{ color: 'var(--brand-accent)' }} />
-                Delhi National Desks
+                {t.delhiNationalDesk}
               </div>
               <span style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--text-muted)' }}>
                 The Hindu • Express
@@ -148,7 +164,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                     style={{ textDecoration: 'none' }}
                   >
                     <h4
-                      className="font-serif"
+                      className={art.source.language === 'Hindi' ? 'font-devanagari' : art.source.language === 'Bengali' ? 'font-bengali' : 'font-serif'}
                       style={{
                         fontSize: '0.94rem',
                         fontWeight: 700,
@@ -161,16 +177,26 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                     </h4>
                   </a>
 
-                  <p style={{
-                    fontSize: '0.8rem',
-                    color: 'var(--text-secondary)',
-                    lineHeight: 1.45,
-                    display: '-webkit-box',
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden',
-                  }}>
-                    {art.summary}
+                  {/* Bangla translation for Hindi or English when in bn mode */}
+                  {art.banglaTitle && (
+                    <div className="font-bengali" style={{ fontSize: '0.78rem', color: '#059669', marginBottom: '0.3rem', fontWeight: 600 }}>
+                      বাংলা: {art.banglaTitle}
+                    </div>
+                  )}
+
+                  <p
+                    className={lang === 'bn' ? 'font-bengali' : ''}
+                    style={{
+                      fontSize: lang === 'bn' ? '0.84rem' : '0.8rem',
+                      color: 'var(--text-secondary)',
+                      lineHeight: 1.45,
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    {lang === 'bn' ? art.summaryBn : art.summaryEn}
                   </p>
 
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '0.35rem', fontSize: '0.7rem' }}>
@@ -179,6 +205,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                       href={art.source.originalUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className={lang === 'bn' ? 'font-bengali' : ''}
                       style={{
                         display: 'inline-flex',
                         alignItems: 'center',
@@ -187,7 +214,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                         fontWeight: 700,
                       }}
                     >
-                      Read on {art.source.name} <ExternalLink size={10} />
+                      {t.sourceLink} <ExternalLink size={10} />
                     </a>
                   </div>
                 </div>
@@ -202,11 +229,19 @@ export default function HeroGrid({ articles }: HeroGridProps) {
               borderRadius: 'var(--radius-md)',
               borderLeft: '3px solid var(--brand-primary)'
             }}>
-              <div style={{ fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.35rem', letterSpacing: '0.06em' }}>
-                Automated Scanner Rule
+              <div
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ fontSize: '0.72rem', fontWeight: 800, textTransform: lang === 'bn' ? 'none' : 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.35rem', letterSpacing: '0.06em' }}
+              >
+                {lang === 'bn' ? 'অটোমেটেড স্ক্যানার নীতিমালা' : 'Automated Scanner Rule'}
               </div>
-              <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
-                Articles are scanned continuously from accredited Indian newsrooms in Delhi &amp; Kolkata. Summaries are extracted objectively and tagged with <strong>Positive</strong>, <strong>Neutral</strong>, or <strong>Negative</strong> sentiment markers.
+              <p
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}
+              >
+                {lang === 'bn'
+                  ? 'দিল্লি ও কলকাতার শীর্ষ সংবাদমাধ্যম থেকে বাংলাদেশ বিষয়ক সংবাদ স্বয়ংক্রিয়ভাবে স্ক্যান করা হয়। শিরোনাম মূল ভাষায় রেখে ইতিবাচক, নিরপেক্ষ ও নেতিবাচক দৃষ্টিভঙ্গি চিহ্নিত করা হয়।'
+                  : 'Articles are scanned continuously from accredited Indian newsrooms in Delhi & Kolkata. Summaries are extracted objectively and tagged with Positive, Neutral, or Negative markers.'}
               </p>
             </div>
           </div>

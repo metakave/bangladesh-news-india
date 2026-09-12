@@ -2,14 +2,19 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { SCANNED_NEWS_ITEMS, SentimentType, BureauType, LanguageType, SCANNER_STATS } from '@/data/news-data';
+import { SCANNED_NEWS_ITEMS, SentimentType, BureauType, LanguageType } from '@/data/news-data';
+import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
 import HeroGrid from '@/components/HeroGrid';
 import SentimentTrackerBar from '@/components/SentimentTrackerBar';
 import ArticleCard from '@/components/ArticleCard';
 import Newsletter from '@/components/Newsletter';
-import { Radio, ArrowRight, Sparkles, Building2, Globe, Shield, RefreshCw } from 'lucide-react';
+import { Building2, Globe, Shield, Sparkles } from 'lucide-react';
 
 export default function HomePage() {
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang];
+
   const [selectedSentiment, setSelectedSentiment] = useState<'all' | SentimentType>('all');
   const [selectedBureau, setSelectedBureau] = useState<'all' | BureauType>('all');
   const [selectedLanguage, setSelectedLanguage] = useState<'all' | LanguageType>('all');
@@ -55,11 +60,13 @@ export default function HomePage() {
               paddingBottom: '0.75rem',
             }}>
               <div>
-                <h2 className="font-masthead" style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>
-                  Filtered Scanned Reports ({filteredArticles.length})
+                <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--text-primary)' }}>
+                  {t.filteredReports} ({filteredArticles.length})
                 </h2>
-                <div style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
-                  Showing reports matching: Sentiment: <strong>{selectedSentiment.toUpperCase()}</strong> | Bureau: <strong>{selectedBureau}</strong> | Language: <strong>{selectedLanguage}</strong>
+                <div className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
+                  {lang === 'bn'
+                    ? `ফিল্টার শর্ত: মনোভাব: ${selectedSentiment} | ব্যুরো: ${selectedBureau} | ভাষা: ${selectedLanguage}`
+                    : `Showing reports matching: Sentiment: ${selectedSentiment.toUpperCase()} | Bureau: ${selectedBureau} | Language: ${selectedLanguage}`}
                 </div>
               </div>
 
@@ -69,6 +76,7 @@ export default function HomePage() {
                   setSelectedBureau('all');
                   setSelectedLanguage('all');
                 }}
+                className={lang === 'bn' ? 'font-bengali' : ''}
                 style={{
                   fontSize: '0.78rem',
                   fontWeight: 700,
@@ -79,14 +87,14 @@ export default function HomePage() {
                   border: '1px solid var(--border-primary)',
                 }}
               >
-                Reset Filters
+                {t.resetFilters}
               </button>
             </div>
 
             {filteredArticles.length === 0 ? (
               <div style={{ padding: '4rem 1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-                <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-primary)' }}>
-                  No scanned reports match this specific combination of filters.
+                <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-primary)' }}>
+                  {t.noReportsFound}
                 </p>
                 <button
                   onClick={() => {
@@ -94,9 +102,10 @@ export default function HomePage() {
                     setSelectedBureau('all');
                     setSelectedLanguage('all');
                   }}
+                  className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ marginTop: '1rem', color: 'var(--brand-primary)', fontWeight: 700 }}
                 >
-                  View All Scanned Articles
+                  {t.viewAllScanned}
                 </button>
               </div>
             ) : (
@@ -128,24 +137,23 @@ export default function HomePage() {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Globe size={18} style={{ color: 'var(--brand-primary)' }} />
-                <h3 className="font-masthead" style={{
+                <h3 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{
                   fontSize: '1.35rem',
                   fontWeight: 800,
                   color: 'var(--text-primary)',
-                  letterSpacing: '0.04em',
-                  textTransform: 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.04em',
                 }}>
-                  Diplomacy, Water &amp; Bilateral Governance
+                  {t.sections.diplomacy}
                 </h3>
               </div>
-              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-                Scanned from Delhi MEA &amp; Foreign Desks
+              <span className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                {t.sections.diplomacySub}
               </span>
             </div>
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
               gap: '1.75rem',
             }}>
               {diplomacyReports.map((art) => (
@@ -170,24 +178,23 @@ export default function HomePage() {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Building2 size={18} style={{ color: 'var(--brand-primary)' }} />
-                <h3 className="font-masthead" style={{
+                <h3 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{
                   fontSize: '1.35rem',
                   fontWeight: 800,
                   color: 'var(--text-primary)',
-                  letterSpacing: '0.04em',
-                  textTransform: 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.04em',
                 }}>
-                  Trade, Petrapole-Benapole Freight &amp; Energy
+                  {t.sections.trade}
                 </h3>
               </div>
-              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-                Kolkata &amp; Border Customs Reporting
+              <span className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                {t.sections.tradeSub}
               </span>
             </div>
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
               gap: '1.75rem',
             }}>
               {tradeReports.map((art) => (
@@ -212,24 +219,23 @@ export default function HomePage() {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Shield size={18} style={{ color: '#dc2626' }} />
-                <h3 className="font-masthead" style={{
+                <h3 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{
                   fontSize: '1.35rem',
                   fontWeight: 800,
                   color: 'var(--text-primary)',
-                  letterSpacing: '0.04em',
-                  textTransform: 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.04em',
                 }}>
-                  Border Security, BSF &amp; Frontier Reports
+                  {t.sections.border}
                 </h3>
               </div>
-              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-                Meghalaya, Tripura &amp; North Bengal Desks
+              <span className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                {t.sections.borderSub}
               </span>
             </div>
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
               gap: '1.75rem',
             }}>
               {borderReports.map((art) => (
@@ -254,24 +260,23 @@ export default function HomePage() {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Sparkles size={18} style={{ color: 'var(--brand-gold)' }} />
-                <h3 className="font-masthead" style={{
+                <h3 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{
                   fontSize: '1.35rem',
                   fontWeight: 800,
                   color: 'var(--text-primary)',
-                  letterSpacing: '0.04em',
-                  textTransform: 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.04em',
                 }}>
-                  Sports Diplomacy &amp; Cultural Connections
+                  {t.sections.sports}
                 </h3>
               </div>
-              <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-                Eden Gardens &amp; Bengal Diaspora
+              <span className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.78rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                {t.sections.sportsSub}
               </span>
             </div>
 
             <div style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
               gap: '1.75rem',
             }}>
               {sportsAndCulture.map((art) => (

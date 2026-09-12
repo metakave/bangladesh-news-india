@@ -3,9 +3,11 @@
 import React, { useState, use } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ARTICLES, CATEGORIES, OPINION_PIECES } from '@/data/news-data';
+import { useApp } from '@/context/ThemeContext';
+import { SCANNED_NEWS_ITEMS, CATEGORIES } from '@/data/news-data';
+import { TRANSLATIONS } from '@/data/translations';
 import ArticleCard from '@/components/ArticleCard';
-import { ChevronRight, SlidersHorizontal, ArrowUpDown } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export default function CategoryPage({
   params,
@@ -14,28 +16,24 @@ export default function CategoryPage({
 }) {
   const resolvedParams = use(params);
   const categorySlug = resolvedParams.category;
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang];
 
-  const categoryInfo = CATEGORIES.find((c) => c.slug === categorySlug) || (
-    categorySlug === 'opinion' ? { slug: 'opinion', label: 'Opinion & Editorials' } : null
-  );
+  const categoryInfo = CATEGORIES.find((c) => c.slug === categorySlug);
 
   if (!categoryInfo) {
     notFound();
   }
 
-  const [sortBy, setSortBy] = useState<'latest' | 'views'>('latest');
+  const [sortBy, setSortBy] = useState<'latest' | 'sentiment'>('latest');
 
-  let rawArticles = ARTICLES.filter((a) => a.category === categorySlug);
-  if (categorySlug === 'opinion') {
-    rawArticles = ARTICLES.filter((a) => a.isOpinion || a.category === 'politics');
-  }
+  const rawArticles = SCANNED_NEWS_ITEMS.filter((a) => a.category === categorySlug);
 
   const sortedArticles = [...rawArticles].sort((a, b) => {
-    if (sortBy === 'views') {
-      return b.views - a.views;
-    }
     return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
   });
+
+  const categoryTitle = lang === 'bn' ? categoryInfo.labelBn : categoryInfo.labelEn;
 
   return (
     <div style={{ padding: '2rem 0 4rem 0' }}>
@@ -49,10 +47,15 @@ export default function CategoryPage({
           color: 'var(--text-muted)',
           marginBottom: '1.5rem',
         }}>
-          <Link href="/" style={{ color: 'var(--text-secondary)' }}>Home</Link>
+          <Link href="/" className={lang === 'bn' ? 'font-bengali' : ''} style={{ color: 'var(--text-secondary)' }}>
+            {lang === 'bn' ? 'হোম' : 'Home'}
+          </Link>
           <ChevronRight size={12} />
-          <span style={{ color: 'var(--brand-primary)', fontWeight: 700, textTransform: 'uppercase' }}>
-            {categoryInfo.label}
+          <span
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{ color: 'var(--brand-primary)', fontWeight: 700, textTransform: lang === 'bn' ? 'none' : 'uppercase' }}
+          >
+            {categoryTitle}
           </span>
         </div>
 
@@ -69,66 +72,60 @@ export default function CategoryPage({
         }}>
           <div>
             <h1
-              className="font-masthead"
+              className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
               style={{
-                fontSize: 'clamp(2rem, 4vw, 2.75rem)',
+                fontSize: lang === 'bn' ? 'clamp(1.8rem, 3.8vw, 2.5rem)' : 'clamp(2rem, 4vw, 2.75rem)',
                 fontWeight: 900,
                 color: 'var(--text-primary)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                lineHeight: 1.1,
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.04em',
+                lineHeight: 1.2,
                 marginBottom: '0.35rem',
               }}
             >
-              {categoryInfo.label}
+              {categoryTitle}
             </h1>
-            <p style={{ fontSize: '0.92rem', color: 'var(--text-secondary)' }}>
-              Comprehensive reporting, deep investigations, and expert perspectives on {categoryInfo.label}.
+            <p
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{ fontSize: '0.92rem', color: 'var(--text-secondary)' }}
+            >
+              {lang === 'bn'
+                ? `ভারতীয় সংবাদমাধ্যমে "${categoryTitle}" সংক্রান্ত সর্বশেষ সংগৃহীত ও বিশ্লেষণকৃত প্রতিবেদন।`
+                : `Comprehensive scanned reports, intelligence, and verified coverage on ${categoryTitle}.`}
             </p>
           </div>
 
-          {/* Sort Controls */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ fontSize: '0.78rem', fontWeight: 600, color: 'var(--text-muted)' }}>Sort by:</span>
-            <button
-              onClick={() => setSortBy('latest')}
-              style={{
-                padding: '0.3rem 0.75rem',
-                fontSize: '0.75rem',
-                fontWeight: sortBy === 'latest' ? 800 : 500,
-                color: sortBy === 'latest' ? '#ffffff' : 'var(--text-primary)',
-                backgroundColor: sortBy === 'latest' ? 'var(--brand-primary)' : 'var(--bg-secondary)',
-                borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-primary)',
-              }}
-            >
-              Latest
-            </button>
-            <button
-              onClick={() => setSortBy('views')}
-              style={{
-                padding: '0.3rem 0.75rem',
-                fontSize: '0.75rem',
-                fontWeight: sortBy === 'views' ? 800 : 500,
-                color: sortBy === 'views' ? '#ffffff' : 'var(--text-primary)',
-                backgroundColor: sortBy === 'views' ? 'var(--brand-primary)' : 'var(--bg-secondary)',
-                borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-primary)',
-              }}
-            >
-              Most Read
-            </button>
+          <div
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{
+              fontSize: '0.82rem',
+              fontWeight: 700,
+              color: 'var(--brand-primary)',
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '0.35rem 0.85rem',
+              borderRadius: 'var(--radius-full)',
+              border: '1px solid var(--border-primary)',
+            }}
+          >
+            {lang === 'bn' ? `${sortedArticles.length} টি স্ক্যানড প্রতিবেদন` : `${sortedArticles.length} Scanned Reports`}
           </div>
         </div>
 
         {/* Articles Grid */}
         {sortedArticles.length === 0 ? (
           <div style={{ padding: '4rem 1rem', textAlign: 'center', color: 'var(--text-muted)' }}>
-            <p style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-primary)' }}>
-              No articles currently indexed under this section.
+            <p
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-primary)' }}
+            >
+              {lang === 'bn' ? 'এই বিভাগে বর্তমানে কোনো প্রতিবেদন পাওয়া যায়নি।' : 'No scanned articles currently indexed under this section.'}
             </p>
-            <Link href="/" style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--brand-primary)', fontWeight: 700 }}>
-              Return to Frontpage
+            <Link
+              href="/"
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{ display: 'inline-block', marginTop: '1rem', color: 'var(--brand-primary)', fontWeight: 700 }}
+            >
+              {lang === 'bn' ? 'মূল পাতায় ফিরে যান' : 'Return to Frontpage'}
             </Link>
           </div>
         ) : (
@@ -157,3 +154,4 @@ export default function CategoryPage({
     </div>
   );
 }
+

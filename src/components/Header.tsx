@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
+import { TRANSLATIONS } from '@/data/translations';
 import {
   Search,
   Moon,
@@ -13,14 +14,16 @@ import {
   Menu,
   X,
   Globe,
+  Languages,
 } from 'lucide-react';
 
 export default function Header() {
   const pathname = usePathname();
-  const { theme, toggleTheme, edition, setEdition, bookmarks, openSearch } = useApp();
+  const { theme, toggleTheme, lang, setLang, toggleLang, edition, setEdition, bookmarks, openSearch } = useApp();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = TRANSLATIONS[lang];
 
-  const today = new Date().toLocaleDateString('en-US', {
+  const today = new Date().toLocaleDateString(lang === 'bn' ? 'bn-BD' : 'en-US', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
@@ -37,29 +40,51 @@ export default function Header() {
         color: 'var(--text-secondary)'
       }}>
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          {/* Date & Edition */}
+          {/* Date */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-            <span style={{ fontWeight: 600 }}>{today}</span>
-            <span style={{ color: 'var(--border-primary)' }}>|</span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-              <Globe size={13} style={{ color: 'var(--brand-primary)' }} />
-              <button
-                onClick={() => setEdition(edition === 'national' ? 'global' : 'national')}
-                style={{
-                  color: 'var(--text-primary)',
-                  fontWeight: 700,
-                  fontSize: '0.75rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
-                }}
-              >
-                Edition: <span style={{ color: 'var(--brand-primary)', textDecoration: 'underline' }}>{edition === 'national' ? 'Dhaka (National)' : 'International'}</span>
-              </button>
-            </div>
+            <span style={{ fontWeight: 600 }} className={lang === 'bn' ? 'font-bengali' : ''}>{today}</span>
           </div>
 
-          {/* User Controls */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          {/* User Controls & Language Switcher */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+            {/* Language Switcher Button */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              backgroundColor: 'var(--bg-secondary)',
+              borderRadius: 'var(--radius-sm)',
+              border: '1px solid var(--border-primary)',
+              overflow: 'hidden',
+            }}>
+              <button
+                onClick={() => setLang('bn')}
+                className="font-bengali"
+                style={{
+                  padding: '0.2rem 0.55rem',
+                  fontSize: '0.75rem',
+                  fontWeight: lang === 'bn' ? 800 : 600,
+                  color: lang === 'bn' ? '#ffffff' : 'var(--text-secondary)',
+                  backgroundColor: lang === 'bn' ? 'var(--brand-primary)' : 'transparent',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                বাংলা
+              </button>
+              <button
+                onClick={() => setLang('en')}
+                style={{
+                  padding: '0.2rem 0.55rem',
+                  fontSize: '0.75rem',
+                  fontWeight: lang === 'en' ? 800 : 600,
+                  color: lang === 'en' ? '#ffffff' : 'var(--text-secondary)',
+                  backgroundColor: lang === 'en' ? 'var(--brand-primary)' : 'transparent',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                English
+              </button>
+            </div>
+
             {/* Quick Search Trigger */}
             <button
               onClick={openSearch}
@@ -76,7 +101,7 @@ export default function Header() {
               }}
             >
               <Search size={13} />
-              <span className="search-text">Search Indian media scans...</span>
+              <span className="search-text font-bengali">{t.searchPlaceholder}</span>
               <kbd style={{
                 backgroundColor: 'var(--bg-primary)',
                 padding: '0.1rem 0.35rem',
@@ -102,7 +127,7 @@ export default function Header() {
               }}
             >
               <Bookmark size={15} />
-              <span className="saved-text">Saved</span>
+              <span className="saved-text font-bengali">{t.saved}</span>
               {bookmarks.length > 0 && (
                 <span style={{
                   backgroundColor: 'var(--brand-primary)',
@@ -138,24 +163,6 @@ export default function Header() {
             >
               {theme === 'light' ? <Moon size={14} /> : <Sun size={14} style={{ color: '#fbbf24' }} />}
             </button>
-
-            {/* Subscribe CTA */}
-            <button
-              style={{
-                backgroundColor: 'var(--brand-primary)',
-                color: '#ffffff',
-                fontWeight: 700,
-                fontSize: '0.72rem',
-                textTransform: 'uppercase',
-                letterSpacing: '0.06em',
-                padding: '0.35rem 0.75rem',
-                borderRadius: 'var(--radius-sm)',
-                display: 'none',
-              }}
-              className="subscribe-btn"
-            >
-              Subscribe
-            </button>
           </div>
         </div>
       </div>
@@ -177,35 +184,33 @@ export default function Header() {
           <div style={{ flex: 1, textAlign: 'center' }}>
             <Link href="/" style={{ display: 'inline-block' }}>
               <h1
-                className="font-masthead"
+                className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
                 style={{
-                  fontSize: 'clamp(2rem, 5vw, 3.4rem)',
+                  fontSize: lang === 'bn' ? 'clamp(2.1rem, 5.2vw, 3.5rem)' : 'clamp(2rem, 5vw, 3.4rem)',
                   fontWeight: 900,
-                  lineHeight: 1,
-                  letterSpacing: '0.08em',
+                  lineHeight: 1.1,
+                  letterSpacing: lang === 'bn' ? '0' : '0.08em',
                   color: 'var(--text-primary)',
-                  textTransform: 'uppercase',
-                  marginBottom: '0.25rem'
+                  marginBottom: '0.3rem'
                 }}
               >
-                Bangladesh Watch
+                {t.siteTitle}
               </h1>
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.75rem',
-                fontSize: '0.72rem',
-                textTransform: 'uppercase',
-                letterSpacing: '0.18em',
-                color: 'var(--text-muted)',
-                fontWeight: 700
-              }}>
-                <span>Est. 2026</span>
-                <span>•</span>
-                <span>The Independent Journal of Record &amp; Ideas</span>
-                <span>•</span>
-                <span>Dhaka • Chattogram • Sylhet</span>
+              <div
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.75rem',
+                  fontSize: '0.74rem',
+                  letterSpacing: lang === 'bn' ? '0' : '0.12em',
+                  color: 'var(--text-muted)',
+                  fontWeight: 700
+                }}
+              >
+                <span>{t.established}</span>
+                <span>{t.siteTagline}</span>
               </div>
             </Link>
           </div>
@@ -234,17 +239,18 @@ export default function Header() {
           }} className="desktop-nav">
             <Link
               href="/"
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 fontWeight: pathname === '/' ? 800 : 600,
-                fontSize: '0.84rem',
+                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
                 color: pathname === '/' ? 'var(--brand-primary)' : 'var(--text-primary)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.05em',
                 whiteSpace: 'nowrap',
                 position: 'relative'
               }}
             >
-              All Scans
+              {t.allScans}
             </Link>
 
             {CATEGORIES.map((cat) => {
@@ -253,17 +259,18 @@ export default function Header() {
                 <Link
                   key={cat.slug}
                   href={`/category/${cat.slug}`}
+                  className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{
                     fontWeight: active ? 800 : 600,
-                    fontSize: '0.84rem',
+                    fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
                     color: active ? 'var(--brand-primary)' : 'var(--text-primary)',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.05em',
+                    textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                    letterSpacing: lang === 'bn' ? '0' : '0.05em',
                     whiteSpace: 'nowrap',
                     transition: 'color 0.15s ease'
                   }}
                 >
-                  {cat.label}
+                  {lang === 'bn' ? cat.labelBn : cat.labelEn}
                 </Link>
               );
             })}
@@ -293,8 +300,8 @@ export default function Header() {
             borderRight: '1px solid var(--border-primary)'
           }} onClick={(e) => e.stopPropagation()}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
-              <h2 className="font-masthead" style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--brand-primary)' }}>
-                BANGLADESH WATCH
+              <h2 className="font-bengali" style={{ fontSize: '1.4rem', fontWeight: 900, color: 'var(--brand-primary)' }}>
+                {t.siteTitle}
               </h2>
               <button onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--text-primary)' }}>
                 <X size={20} />
@@ -302,29 +309,42 @@ export default function Header() {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', borderBottom: '1px solid var(--border-primary)', paddingBottom: '1.5rem', marginBottom: '1.5rem' }}>
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
-                Frontpage (All Scans)
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
+                {t.allScans}
               </Link>
               {CATEGORIES.map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/category/${cat.slug}`}
                   onClick={() => setMobileMenuOpen(false)}
+                  className="font-bengali"
                   style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-secondary)' }}
                 >
-                  {cat.label}
+                  {lang === 'bn' ? cat.labelBn : cat.labelEn}
                 </Link>
               ))}
-              <Link href="/saved" onClick={() => setMobileMenuOpen(false)} style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--brand-primary)' }}>
-                Saved Articles ({bookmarks.length})
+              <Link href="/saved" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--brand-primary)' }}>
+                {t.saved} ({bookmarks.length})
               </Link>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <button
-                onClick={() => {
-                  toggleTheme();
+                onClick={() => toggleLang()}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  color: 'var(--text-primary)',
+                  fontWeight: 600,
+                  fontSize: '0.88rem'
                 }}
+              >
+                <Languages size={16} />
+                Language: {lang === 'bn' ? 'English এ পরিবর্তন করুন' : 'Switch to বাংলা'}
+              </button>
+              <button
+                onClick={() => toggleTheme()}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -335,7 +355,7 @@ export default function Header() {
                 }}
               >
                 {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
-                Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+                {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
               </button>
             </div>
           </div>
@@ -352,11 +372,6 @@ export default function Header() {
           }
           .search-text, .saved-text {
             display: none !important;
-          }
-        }
-        @media (min-width: 640px) {
-          .subscribe-btn {
-            display: block !important;
           }
         }
       `}</style>

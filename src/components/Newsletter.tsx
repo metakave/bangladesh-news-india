@@ -1,9 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
 import { Mail, CheckCircle, Sparkles } from 'lucide-react';
 
 export default function Newsletter() {
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang].newsletter;
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -29,55 +33,64 @@ export default function Newsletter() {
           gap: '0.4rem',
           fontSize: '0.75rem',
           fontWeight: 800,
-          textTransform: 'uppercase',
-          letterSpacing: '0.08em',
+          textTransform: lang === 'bn' ? 'none' : 'uppercase',
+          letterSpacing: lang === 'bn' ? '0' : '0.08em',
           color: 'var(--brand-primary)',
           backgroundColor: 'var(--bg-primary)',
           padding: '0.25rem 0.75rem',
           borderRadius: 'var(--radius-full)',
           marginBottom: '1rem',
           border: '1px solid var(--border-primary)'
-        }}>
+        }} className={lang === 'bn' ? 'font-bengali' : ''}>
           <Sparkles size={13} style={{ color: 'var(--brand-gold)' }} />
-          The Bangladesh Watch Dispatch
+          {t.badge}
         </div>
 
-        <h2 className="font-masthead" style={{
-          fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
-          fontWeight: 900,
-          color: 'var(--text-primary)',
-          marginBottom: '0.75rem',
-          lineHeight: 1.2
-        }}>
-          Clarity, Depth, and Independent Analysis Delivered Daily
+        <h2
+          className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
+          style={{
+            fontSize: lang === 'bn' ? 'clamp(1.6rem, 3.2vw, 2.3rem)' : 'clamp(1.75rem, 3.5vw, 2.5rem)',
+            fontWeight: 900,
+            color: 'var(--text-primary)',
+            marginBottom: '0.75rem',
+            lineHeight: 1.3
+          }}
+        >
+          {t.title}
         </h2>
 
-        <p style={{
-          fontSize: '0.95rem',
-          color: 'var(--text-secondary)',
-          lineHeight: 1.6,
-          marginBottom: '1.75rem',
-          maxWidth: '620px',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-        }}>
-          Join over 120,000 policymakers, entrepreneurs, tech leaders, and thinkers who start their morning with our curated intelligence briefing on Bangladesh&apos;s economy, river delta ecology, trade, and regional diplomacy.
+        <p
+          className={lang === 'bn' ? 'font-bengali' : ''}
+          style={{
+            fontSize: lang === 'bn' ? '0.98rem' : '0.95rem',
+            color: 'var(--text-secondary)',
+            lineHeight: 1.65,
+            marginBottom: '1.75rem',
+            maxWidth: '620px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        >
+          {t.desc}
         </p>
 
         {subscribed ? (
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            padding: '0.75rem 1.5rem',
-            backgroundColor: 'rgba(21, 128, 61, 0.1)',
-            border: '1px solid var(--brand-green)',
-            borderRadius: 'var(--radius-md)',
-            color: 'var(--brand-green)',
-            fontWeight: 700,
-          }}>
+          <div
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.75rem 1.5rem',
+              backgroundColor: 'rgba(21, 128, 61, 0.1)',
+              border: '1px solid var(--brand-green)',
+              borderRadius: 'var(--radius-md)',
+              color: 'var(--brand-green)',
+              fontWeight: 700,
+            }}
+          >
             <CheckCircle size={18} />
-            Thank you! You have been subscribed to the Bangladesh Daily Dispatch.
+            {t.success}
           </div>
         ) : (
           <form onSubmit={handleSubmit} style={{
@@ -103,7 +116,8 @@ export default function Newsletter() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your work or personal email..."
+                placeholder={t.placeholder}
+                className={lang === 'bn' ? 'font-bengali' : ''}
                 style={{
                   width: '100%',
                   padding: '0.75rem 0.75rem 0.75rem 2.4rem',
@@ -120,6 +134,7 @@ export default function Newsletter() {
 
             <button
               type="submit"
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 backgroundColor: 'var(--brand-primary)',
                 color: '#ffffff',
@@ -127,19 +142,22 @@ export default function Newsletter() {
                 fontSize: '0.85rem',
                 padding: '0.75rem 1.4rem',
                 borderRadius: 'var(--radius-sm)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.04em',
                 flexShrink: 0,
                 boxShadow: 'var(--shadow-sm)',
               }}
             >
-              Subscribe Free
+              {t.btn}
             </button>
           </form>
         )}
 
-        <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '0.85rem' }}>
-          No spam ever. Unsubscribe with one click anytime.
+        <div
+          className={lang === 'bn' ? 'font-bengali' : ''}
+          style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.85rem' }}
+        >
+          {t.noSpam}
         </div>
       </div>
 
@@ -153,3 +171,4 @@ export default function Newsletter() {
     </section>
   );
 }
+

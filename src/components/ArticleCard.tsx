@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { NewsItem } from '@/data/news-data';
 import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
 import SentimentBadge from './SentimentBadge';
 import SourceBadge from './SourceBadge';
 import { Bookmark, Clock, ExternalLink, Languages } from 'lucide-react';
@@ -22,17 +23,20 @@ export default function ArticleCard({
   variant = 'compact',
   showImage = true,
 }: ArticleCardProps) {
-  const { toggleBookmark, isBookmarked } = useApp();
+  const { lang, toggleBookmark, isBookmarked } = useApp();
+  const t = TRANSLATIONS[lang];
   const bookmarked = isBookmarked(article.slug);
   const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
 
-  const formattedDate = new Date(article.publishedAt).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-  });
-
   const isHindi = article.source.language === 'Hindi';
   const isBengali = article.source.language === 'Bengali';
+  const isEnglish = article.source.language === 'English';
+
+  const categoryLabel = lang === 'bn' ? article.categoryLabelBn : article.categoryLabelEn;
+  const summary = lang === 'bn' ? article.summaryBn : article.summaryEn;
+  const keyPoints = lang === 'bn' ? article.keyPointsBn : article.keyPointsEn;
+  const sentimentReason = lang === 'bn' ? article.sentimentReasonBn : article.sentimentReasonEn;
+  const readTime = lang === 'bn' ? article.readTimeBn : article.readTimeEn;
 
   const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
 
@@ -65,18 +69,21 @@ export default function ArticleCard({
               alignItems: 'center',
               gap: '0.5rem',
             }}>
-              <span style={{
-                backgroundColor: 'var(--brand-primary)',
-                color: '#ffffff',
-                fontSize: '0.7rem',
-                fontWeight: 800,
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                padding: '0.25rem 0.6rem',
-                borderRadius: 'var(--radius-sm)',
-                boxShadow: 'var(--shadow-md)',
-              }}>
-                Lead Scanned Report
+              <span
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  backgroundColor: 'var(--brand-primary)',
+                  color: '#ffffff',
+                  fontSize: '0.7rem',
+                  fontWeight: 800,
+                  letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                  textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                  padding: '0.25rem 0.6rem',
+                  borderRadius: 'var(--radius-sm)',
+                  boxShadow: 'var(--shadow-md)',
+                }}
+              >
+                {lang === 'bn' ? 'প্রধান স্ক্যানড সংবাদ' : 'Lead Scanned Report'}
               </span>
               <SentimentBadge sentiment={article.sentiment} size="md" />
             </div>
@@ -87,7 +94,7 @@ export default function ArticleCard({
           {/* Category & Source Metadata */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.65rem' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-              <span className="category-pill">{article.categoryLabel}</span>
+              <span className={`category-pill ${lang === 'bn' ? 'font-bengali' : ''}`}>{categoryLabel}</span>
               <SourceBadge source={article.source} />
             </div>
 
@@ -107,7 +114,7 @@ export default function ArticleCard({
             </button>
           </div>
 
-          {/* Primary Headline in Noto Serif Bengali / Noto Serif Devanagari */}
+          {/* Primary Headline in Original Script (Always kept in original source language) */}
           <h2
             className={titleFontClass}
             style={{
@@ -122,7 +129,7 @@ export default function ArticleCard({
             {article.title}
           </h2>
 
-          {/* Translation Box for Hindi News */}
+          {/* Translations Box for Hindi News */}
           {isHindi && (article.englishTitle || article.banglaTitle) && (
             <div style={{
               backgroundColor: 'var(--bg-secondary)',
@@ -136,38 +143,75 @@ export default function ArticleCard({
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--brand-primary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                 <Languages size={13} />
-                Hindi Headline Translations
+                {t.hindiTranslationHeader}
               </div>
-
-              {article.englishTitle && (
-                <div style={{ fontSize: '0.86rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
-                  <strong style={{ color: 'var(--brand-accent)', fontSize: '0.75rem', textTransform: 'uppercase' }}>English:</strong> {article.englishTitle}
-                </div>
-              )}
 
               {article.banglaTitle && (
                 <div className="font-bengali" style={{ fontSize: '0.9rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
-                  <strong style={{ color: '#059669', fontSize: '0.75rem', textTransform: 'uppercase', fontFamily: 'var(--font-sans)' }}>বাংলা অনুবাদ:</strong> {article.banglaTitle}
+                  <strong style={{ color: '#059669', fontSize: '0.75rem', fontFamily: 'var(--font-sans)' }}>{t.bengaliTranslation}</strong> {article.banglaTitle}
+                </div>
+              )}
+
+              {article.englishTitle && (
+                <div style={{ fontSize: '0.86rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                  <strong style={{ color: 'var(--brand-accent)', fontSize: '0.75rem' }}>{t.englishTranslation}</strong> {article.englishTitle}
                 </div>
               )}
             </div>
           )}
 
+          {/* Translation Box for English News (Provides Bangla Translation) */}
+          {isEnglish && article.banglaTitle && (
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-md)',
+              padding: '0.75rem 1rem',
+              marginBottom: '1rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.35rem',
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--brand-primary)', letterSpacing: '0.05em' }}>
+                <Languages size={13} />
+                {t.englishTranslationHeader}
+              </div>
+              <div className="font-bengali" style={{ fontSize: '0.92rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                <strong style={{ color: '#059669', fontSize: '0.75rem', fontFamily: 'var(--font-sans)' }}>{t.bengaliTranslation}</strong> {article.banglaTitle}
+              </div>
+            </div>
+          )}
+
+          {/* Translation Box for Bengali News when in English UI mode */}
+          {isBengali && lang === 'en' && article.englishTitle && (
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-md)',
+              padding: '0.65rem 0.9rem',
+              marginBottom: '1rem',
+              fontSize: '0.86rem',
+              color: 'var(--text-primary)',
+            }}>
+              <strong style={{ color: 'var(--brand-accent)', fontSize: '0.75rem' }}>English Translation:</strong> {article.englishTitle}
+            </div>
+          )}
+
           {/* Summary */}
           <p
-            className={isBengali ? 'font-bengali' : ''}
+            className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
-              fontSize: isBengali ? '1rem' : '0.96rem',
-              lineHeight: isBengali ? 1.7 : 1.6,
+              fontSize: lang === 'bn' ? '1rem' : '0.96rem',
+              lineHeight: lang === 'bn' ? 1.7 : 1.6,
               color: 'var(--text-secondary)',
               marginBottom: '1rem'
             }}
           >
-            {article.summary}
+            {summary}
           </p>
 
           {/* Key Takeaways */}
-          {article.keyPoints && article.keyPoints.length > 0 && (
+          {keyPoints && keyPoints.length > 0 && (
             <div style={{
               backgroundColor: 'var(--bg-secondary)',
               borderLeft: '3px solid var(--brand-primary)',
@@ -175,14 +219,14 @@ export default function ArticleCard({
               borderRadius: '0 var(--radius-md) var(--radius-md) 0',
               marginBottom: '1.25rem',
             }}>
-              <div style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.4rem', letterSpacing: '0.05em' }}>
-                Key Highlights
+              <div className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: lang === 'bn' ? 'none' : 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.4rem', letterSpacing: '0.05em' }}>
+                {t.keyHighlights}
               </div>
               <ul
-                className={isBengali ? 'font-bengali' : ''}
-                style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', paddingLeft: '1.1rem', fontSize: isBengali ? '0.9rem' : '0.86rem', color: 'var(--text-secondary)', lineHeight: isBengali ? 1.6 : 1.45 }}
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', paddingLeft: '1.1rem', fontSize: lang === 'bn' ? '0.9rem' : '0.86rem', color: 'var(--text-secondary)', lineHeight: lang === 'bn' ? 1.6 : 1.45 }}
               >
-                {article.keyPoints.slice(0, 3).map((pt, i) => (
+                {keyPoints.slice(0, 3).map((pt, i) => (
                   <li key={i}>{pt}</li>
                 ))}
               </ul>
@@ -200,10 +244,10 @@ export default function ArticleCard({
             borderTop: '1px solid var(--border-subtle)',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-              <span>Scanned {article.source.scannedAt}</span>
+              <span>{t.scannedAgo} {article.source.scannedAt}</span>
               <span>•</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                <Clock size={12} /> {article.readTime}
+                <Clock size={12} /> {readTime}
               </span>
             </div>
 
@@ -211,6 +255,7 @@ export default function ArticleCard({
               href={article.source.originalUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -221,12 +266,12 @@ export default function ArticleCard({
                 fontSize: '0.8rem',
                 padding: '0.45rem 1rem',
                 borderRadius: 'var(--radius-sm)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.04em',
                 boxShadow: 'var(--shadow-sm)',
               }}
             >
-              Read Full on {article.source.name} <ExternalLink size={12} />
+              {t.readOriginalOn} {article.source.name} <ExternalLink size={12} />
             </a>
           </div>
         </div>
@@ -279,7 +324,7 @@ export default function ArticleCard({
             )}
           </div>
 
-          {/* Title */}
+          {/* Primary Headline in Original Script */}
           <h3
             className={titleFontClass}
             style={{
@@ -306,24 +351,54 @@ export default function ArticleCard({
               gap: '0.35rem',
               fontSize: '0.8rem',
             }}>
-              {article.englishTitle && (
-                <div style={{ color: 'var(--text-primary)', lineHeight: 1.35 }}>
-                  <strong style={{ color: 'var(--brand-accent)', fontSize: '0.7rem' }}>EN:</strong> {article.englishTitle}
-                </div>
-              )}
               {article.banglaTitle && (
                 <div className="font-bengali" style={{ color: 'var(--text-primary)', lineHeight: 1.4, fontSize: '0.86rem' }}>
                   <strong style={{ color: '#059669', fontSize: '0.7rem', fontFamily: 'var(--font-sans)' }}>বাংলা:</strong> {article.banglaTitle}
                 </div>
               )}
+              {article.englishTitle && (
+                <div style={{ color: 'var(--text-primary)', lineHeight: 1.35 }}>
+                  <strong style={{ color: 'var(--brand-accent)', fontSize: '0.7rem' }}>EN:</strong> {article.englishTitle}
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* English Headline Translation for English News */}
+          {isEnglish && article.banglaTitle && (
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-sm)',
+              padding: '0.5rem 0.7rem',
+              marginBottom: '0.75rem',
+              fontSize: '0.82rem',
+            }}>
+              <div className="font-bengali" style={{ color: 'var(--text-primary)', lineHeight: 1.35 }}>
+                <strong style={{ color: '#059669', fontSize: '0.7rem', fontFamily: 'var(--font-sans)' }}>বাংলা অনুবাদ:</strong> {article.banglaTitle}
+              </div>
+            </div>
+          )}
+
+          {/* Bengali News English translation when in English mode */}
+          {isBengali && lang === 'en' && article.englishTitle && (
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-sm)',
+              padding: '0.5rem 0.7rem',
+              marginBottom: '0.75rem',
+              fontSize: '0.8rem',
+            }}>
+              <strong style={{ color: 'var(--brand-accent)', fontSize: '0.7rem' }}>EN:</strong> {article.englishTitle}
             </div>
           )}
 
           <p
-            className={isBengali ? 'font-bengali' : ''}
+            className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
-              fontSize: isBengali ? '0.9rem' : '0.86rem',
-              lineHeight: isBengali ? 1.6 : 1.5,
+              fontSize: lang === 'bn' ? '0.9rem' : '0.86rem',
+              lineHeight: lang === 'bn' ? 1.6 : 1.5,
               color: 'var(--text-secondary)',
               marginBottom: '1rem',
               display: '-webkit-box',
@@ -332,20 +407,23 @@ export default function ArticleCard({
               overflow: 'hidden'
             }}
           >
-            {article.summary}
+            {summary}
           </p>
 
           {/* Sentiment Rationale Note */}
-          <div style={{
-            fontSize: '0.74rem',
-            color: 'var(--text-muted)',
-            backgroundColor: 'var(--bg-secondary)',
-            padding: '0.4rem 0.6rem',
-            borderRadius: 'var(--radius-sm)',
-            marginBottom: '1rem',
-            marginTop: 'auto',
-          }}>
-            <strong style={{ color: 'var(--text-primary)' }}>Scanner Context:</strong> {article.sentimentReason}
+          <div
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{
+              fontSize: '0.74rem',
+              color: 'var(--text-muted)',
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '0.4rem 0.6rem',
+              borderRadius: 'var(--radius-sm)',
+              marginBottom: '1rem',
+              marginTop: 'auto',
+            }}
+          >
+            <strong style={{ color: 'var(--text-primary)' }}>{t.scannerContext}</strong> {sentimentReason}
           </div>
 
           <div style={{
@@ -362,17 +440,18 @@ export default function ArticleCard({
               href={article.source.originalUrl}
               target="_blank"
               rel="noopener noreferrer"
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.3rem',
                 fontWeight: 700,
                 color: 'var(--brand-primary)',
-                textTransform: 'uppercase',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 fontSize: '0.72rem',
               }}
             >
-              Original Source <ExternalLink size={11} />
+              {t.sourceLink} <ExternalLink size={11} />
             </a>
           </div>
         </div>
@@ -440,19 +519,25 @@ export default function ArticleCard({
             </div>
           )}
 
+          {isEnglish && article.banglaTitle && (
+            <div className="font-bengali" style={{ fontSize: '0.78rem', color: '#059669', marginBottom: '0.25rem', fontWeight: 600 }}>
+              বাংলা অনুবাদ: {article.banglaTitle}
+            </div>
+          )}
+
           <p
-            className={isBengali ? 'font-bengali' : ''}
+            className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
-              fontSize: isBengali ? '0.84rem' : '0.8rem',
+              fontSize: lang === 'bn' ? '0.84rem' : '0.8rem',
               color: 'var(--text-secondary)',
               display: '-webkit-box',
               WebkitLineClamp: 2,
               WebkitBoxOrient: 'vertical',
               overflow: 'hidden',
-              lineHeight: isBengali ? 1.55 : 1.45,
+              lineHeight: lang === 'bn' ? 1.55 : 1.45,
             }}
           >
-            {article.summary}
+            {summary}
           </p>
         </div>
       </article>
@@ -498,16 +583,27 @@ export default function ArticleCard({
           flexDirection: 'column',
           gap: '0.2rem',
         }}>
-          {article.englishTitle && <div><strong style={{ color: 'var(--brand-accent)' }}>EN:</strong> {article.englishTitle}</div>}
           {article.banglaTitle && <div className="font-bengali" style={{ fontSize: '0.8rem' }}><strong style={{ color: '#059669', fontFamily: 'var(--font-sans)' }}>বাংলা:</strong> {article.banglaTitle}</div>}
+          {article.englishTitle && <div><strong style={{ color: 'var(--brand-accent)' }}>EN:</strong> {article.englishTitle}</div>}
+        </div>
+      )}
+
+      {isEnglish && article.banglaTitle && (
+        <div style={{
+          backgroundColor: 'var(--bg-secondary)',
+          padding: '0.35rem 0.5rem',
+          borderRadius: 'var(--radius-sm)',
+          fontSize: '0.75rem',
+        }}>
+          <div className="font-bengali" style={{ fontSize: '0.8rem' }}><strong style={{ color: '#059669', fontFamily: 'var(--font-sans)' }}>বাংলা:</strong> {article.banglaTitle}</div>
         </div>
       )}
 
       <p
-        className={isBengali ? 'font-bengali' : ''}
+        className={lang === 'bn' ? 'font-bengali' : ''}
         style={{
-          fontSize: isBengali ? '0.88rem' : '0.84rem',
-          lineHeight: isBengali ? 1.55 : 1.45,
+          fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
+          lineHeight: lang === 'bn' ? 1.55 : 1.45,
           color: 'var(--text-secondary)',
           display: '-webkit-box',
           WebkitLineClamp: 2,
@@ -515,15 +611,16 @@ export default function ArticleCard({
           overflow: 'hidden',
         }}
       >
-        {article.summary}
+        {summary}
       </p>
 
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-        <span>Scanned {article.source.scannedAt}</span>
+        <span>{t.scannedAgo} {article.source.scannedAt}</span>
         <a
           href={article.source.originalUrl}
           target="_blank"
           rel="noopener noreferrer"
+          className={lang === 'bn' ? 'font-bengali' : ''}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -532,7 +629,7 @@ export default function ArticleCard({
             fontWeight: 700,
           }}
         >
-          Source Link <ExternalLink size={10} />
+          {t.sourceLink} <ExternalLink size={10} />
         </a>
       </div>
     </article>

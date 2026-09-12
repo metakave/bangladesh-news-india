@@ -4,32 +4,27 @@ import React, { useState, use } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { ARTICLES, OPINION_PIECES, Article } from '@/data/news-data';
-import AudioPlayer from '@/components/AudioPlayer';
-import ReaderTools from '@/components/ReaderTools';
+import { SCANNED_NEWS_ITEMS, NewsItem } from '@/data/news-data';
+import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
+import SentimentBadge from '@/components/SentimentBadge';
+import SourceBadge from '@/components/SourceBadge';
 import ArticleCard from '@/components/ArticleCard';
-import Newsletter from '@/components/Newsletter';
 import {
   Clock,
-  Eye,
   Calendar,
-  MapPin,
-  Sparkles,
-  MessageSquare,
-  Send,
-  User,
   Share2,
   ChevronRight,
+  ExternalLink,
+  Bookmark,
+  Sparkles,
   TrendingUp,
+  Languages,
+  ArrowLeft,
+  CheckCircle2
 } from 'lucide-react';
 
-interface Comment {
-  id: string;
-  name: string;
-  avatar: string;
-  date: string;
-  text: string;
-}
+const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop&q=80';
 
 export default function ArticlePage({
   params,
@@ -38,100 +33,46 @@ export default function ArticlePage({
 }) {
   const resolvedParams = use(params);
   const slug = resolvedParams.slug;
+  const { lang, toggleBookmark, isBookmarked } = useApp();
+  const t = TRANSLATIONS[lang];
 
-  const article = ARTICLES.find((a) => a.slug === slug);
-  const opinion = OPINION_PIECES.find((p) => p.slug === slug);
+  const article = SCANNED_NEWS_ITEMS.find((a) => a.slug === slug);
 
-  // If opinion piece was clicked
-  const currentArticle: Article | undefined = article || (opinion ? {
-    id: opinion.id,
-    slug: opinion.slug,
-    title: opinion.title,
-    subtitle: 'An India Watch Exclusive Column',
-    excerpt: opinion.excerpt,
-    content: [
-      opinion.excerpt,
-      "India's demographic transformation is intersecting with a global technological revolution in artificial intelligence. While western commentators often emphasize workforce displacement, India's reality presents a fundamentally different economic dynamic.",
-      "The deployment of open-source vernacular voice agents across India's regional languages is unlocking productivity for millions of micro-entrepreneurs, farmers, and healthcare workers who were previously disenfranchised by text-heavy interfaces.",
-      "By building high-speed digital public infrastructure upon which sovereign AI models can iterate, India is not merely consuming global AI innovation—it is establishing the foundational blueprint for how emerging economies leverage compute for social mobility."
-    ],
-    category: 'politics',
-    categoryLabel: 'Opinion',
-    author: {
-      name: opinion.author.name,
-      role: opinion.author.role,
-      avatar: opinion.author.avatar,
-      location: 'New Delhi',
-    },
-    publishedAt: opinion.publishedAt,
-    readTime: opinion.readTime,
-    views: 34500,
-    imageUrl: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&auto=format&fit=crop&q=80',
-    imageCaption: 'The intersection of human capital and intelligent digital systems.',
-    imageCredit: 'India Watch Perspective',
-    tags: ['AI', 'Economy', 'Demographics', 'Future of Work'],
-  } : undefined);
-
-  if (!currentArticle) {
+  if (!article) {
     notFound();
   }
 
-  const [fontSize, setFontSize] = useState<'sm' | 'md' | 'lg' | 'xl'>('md');
-  const [fontFamily, setFontFamily] = useState<'serif' | 'sans'>('serif');
-  const [commentName, setCommentName] = useState('');
-  const [commentText, setCommentText] = useState('');
-  const [comments, setComments] = useState<Comment[]>([
-    {
-      id: 'c1',
-      name: 'Dr. Rajiv Menon',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80',
-      date: '2 hours ago',
-      text: 'A profoundly thorough analysis. The focus on reliable high-voltage power grids and talent pipeline readiness is precisely where policy execution matters most for semiconductor fabs.',
-    },
-    {
-      id: 'c2',
-      name: 'Shreya Kulkarni',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80',
-      date: '4 hours ago',
-      text: 'Extremely well-written piece. India Watch continues to produce the highest caliber technical and economic reporting.',
-    }
-  ]);
+  const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
+  const [copied, setCopied] = useState(false);
+  const bookmarked = isBookmarked(article.slug);
 
-  const relatedArticles = ARTICLES.filter((a) => a.slug !== slug && a.category === currentArticle.category).slice(0, 3);
-  const trendingArticles = ARTICLES.filter((a) => a.slug !== slug).slice(0, 4);
+  const isHindi = article.source.language === 'Hindi';
+  const isBengali = article.source.language === 'Bengali';
+  const isEnglish = article.source.language === 'English';
 
-  const formattedDate = new Date(currentArticle.publishedAt).toLocaleDateString('en-US', {
+  const categoryLabel = lang === 'bn' ? article.categoryLabelBn : article.categoryLabelEn;
+  const summary = lang === 'bn' ? article.summaryBn : article.summaryEn;
+  const keyPoints = lang === 'bn' ? article.keyPointsBn : article.keyPointsEn;
+  const sentimentReason = lang === 'bn' ? article.sentimentReasonBn : article.sentimentReasonEn;
+  const readTime = lang === 'bn' ? article.readTimeBn : article.readTimeEn;
+
+  const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
+
+  const formattedDate = new Date(article.publishedAt).toLocaleDateString(lang === 'bn' ? 'bn-BD' : 'en-US', {
     weekday: 'long',
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
 
-  const fullTextToRead = `${currentArticle.title}. ${currentArticle.excerpt}. ${currentArticle.content.join(' ')}`;
+  const relatedArticles = SCANNED_NEWS_ITEMS.filter((a) => a.slug !== slug && a.category === article.category).slice(0, 3);
+  const trendingArticles = SCANNED_NEWS_ITEMS.filter((a) => a.slug !== slug).slice(0, 4);
 
-  const handleAddComment = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!commentText.trim()) return;
-
-    const newComment: Comment = {
-      id: Date.now().toString(),
-      name: commentName.trim() || 'Reader',
-      avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80',
-      date: 'Just now',
-      text: commentText.trim(),
-    };
-
-    setComments([newComment, ...comments]);
-    setCommentName('');
-    setCommentText('');
-  };
-
-  const getFontSizeRem = () => {
-    switch (fontSize) {
-      case 'sm': return '1.02rem';
-      case 'md': return '1.15rem';
-      case 'lg': return '1.28rem';
-      case 'xl': return '1.45rem';
+  const handleShare = () => {
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
     }
   };
 
@@ -146,15 +87,22 @@ export default function ArticlePage({
           fontSize: '0.78rem',
           color: 'var(--text-muted)',
           marginBottom: '1.5rem',
+          flexWrap: 'wrap',
         }}>
-          <Link href="/" style={{ color: 'var(--text-secondary)' }}>Home</Link>
-          <ChevronRight size={12} />
-          <Link href={`/category/${currentArticle.category}`} style={{ color: 'var(--brand-primary)', fontWeight: 600 }}>
-            {currentArticle.categoryLabel}
+          <Link href="/" style={{ color: 'var(--text-secondary)' }} className={lang === 'bn' ? 'font-bengali' : ''}>
+            {lang === 'bn' ? 'হোম' : 'Home'}
           </Link>
           <ChevronRight size={12} />
-          <span style={{ color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '300px' }}>
-            {currentArticle.title}
+          <Link
+            href={`/category/${article.category}`}
+            style={{ color: 'var(--brand-primary)', fontWeight: 600 }}
+            className={lang === 'bn' ? 'font-bengali' : ''}
+          >
+            {categoryLabel}
+          </Link>
+          <ChevronRight size={12} />
+          <span style={{ color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '340px' }}>
+            {article.title}
           </span>
         </div>
 
@@ -162,38 +110,88 @@ export default function ArticlePage({
         <div className="article-layout-grid">
           {/* Main Article Content Column */}
           <div className="article-main-col">
-            {/* Header / Headline Area */}
+            {/* Header / Badges & Metadata */}
             <div style={{ marginBottom: '1.5rem' }}>
-              <div style={{ display: 'inline-block', marginBottom: '0.75rem' }}>
-                <Link href={`/category/${currentArticle.category}`} className="category-pill">
-                  {currentArticle.categoryLabel}
-                </Link>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
+                  <Link href={`/category/${article.category}`} className={`category-pill ${lang === 'bn' ? 'font-bengali' : ''}`}>
+                    {categoryLabel}
+                  </Link>
+                  <SourceBadge source={article.source} />
+                </div>
+                <SentimentBadge sentiment={article.sentiment} size="md" />
               </div>
 
+              {/* Main Original Headline */}
               <h1
-                className="font-serif"
+                className={titleFontClass}
                 style={{
-                  fontSize: 'clamp(2rem, 4vw, 3rem)',
+                  fontSize: 'clamp(1.75rem, 3.8vw, 2.75rem)',
                   fontWeight: 800,
-                  lineHeight: 1.18,
+                  lineHeight: isBengali || isHindi ? 1.35 : 1.2,
                   color: 'var(--text-primary)',
-                  letterSpacing: '-0.02em',
-                  marginBottom: '1rem',
+                  letterSpacing: isBengali || isHindi ? '0' : '-0.02em',
+                  marginBottom: '1.25rem',
                 }}
               >
-                {currentArticle.title}
+                {article.title}
               </h1>
 
-              {currentArticle.subtitle && (
-                <p style={{
-                  fontSize: '1.2rem',
-                  lineHeight: 1.5,
-                  color: 'var(--text-secondary)',
-                  marginBottom: '1.5rem',
-                  fontStyle: 'italic',
+              {/* Parallel Translation Box */}
+              {isHindi && article.banglaTitle && (
+                <div style={{
+                  backgroundColor: 'rgba(201, 58, 29, 0.05)',
+                  borderLeft: '4px solid var(--brand-primary)',
+                  padding: '0.85rem 1.15rem',
+                  borderRadius: '0 var(--radius-sm) var(--radius-sm) 0',
+                  marginBottom: '1.25rem',
                 }}>
-                  {currentArticle.subtitle}
-                </p>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--brand-primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.35rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <Languages size={13} /> {t.hindiTranslationHeader}
+                  </div>
+                  <p className="font-bengali" style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.45, marginBottom: article.englishTitle ? '0.35rem' : 0 }}>
+                    {article.banglaTitle}
+                  </p>
+                  {article.englishTitle && (
+                    <p className="font-serif" style={{ fontSize: '0.92rem', color: 'var(--text-secondary)', fontStyle: 'italic', lineHeight: 1.4 }}>
+                      <strong style={{ fontStyle: 'normal' }}>EN:</strong> {article.englishTitle}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {isBengali && article.englishTitle && (
+                <div style={{
+                  backgroundColor: 'rgba(15, 76, 129, 0.05)',
+                  borderLeft: '4px solid var(--brand-accent)',
+                  padding: '0.85rem 1.15rem',
+                  borderRadius: '0 var(--radius-sm) var(--radius-sm) 0',
+                  marginBottom: '1.25rem',
+                }}>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--brand-accent)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.35rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <Languages size={13} /> {t.englishTranslationHeader}
+                  </div>
+                  <p className="font-serif" style={{ fontSize: '1.02rem', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.4, fontStyle: 'italic' }}>
+                    {article.englishTitle}
+                  </p>
+                </div>
+              )}
+
+              {isEnglish && article.banglaTitle && (
+                <div style={{
+                  backgroundColor: 'rgba(15, 76, 129, 0.05)',
+                  borderLeft: '4px solid var(--brand-accent)',
+                  padding: '0.85rem 1.15rem',
+                  borderRadius: '0 var(--radius-sm) var(--radius-sm) 0',
+                  marginBottom: '1.25rem',
+                }}>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--brand-accent)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.35rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <Languages size={13} /> {lang === 'bn' ? 'বাংলা অনুবাদ' : 'Bengali Headline Translation'}
+                  </div>
+                  <p className="font-bengali" style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                    {article.banglaTitle}
+                  </p>
+                </div>
               )}
 
               {/* Byline & Metadata Ribbon */}
@@ -206,144 +204,242 @@ export default function ArticlePage({
                 paddingTop: '1rem',
                 borderTop: '1px solid var(--border-primary)',
               }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-                  <div style={{
-                    position: 'relative',
-                    width: '48px',
-                    height: '48px',
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    backgroundColor: 'var(--bg-secondary)',
-                  }}>
-                    <Image
-                      src={currentArticle.author.avatar}
-                      alt={currentArticle.author.name}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                    />
-                  </div>
-                  <div>
-                    <div style={{ fontWeight: 800, fontSize: '0.95rem', color: 'var(--text-primary)' }}>
-                      {currentArticle.author.name}
-                    </div>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                      <span>{currentArticle.author.role}</span>
-                      <span>•</span>
-                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem' }}>
-                        <MapPin size={11} /> {currentArticle.author.location}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
                     <Calendar size={13} /> {formattedDate}
                   </span>
                   <span>•</span>
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-                    <Clock size={13} /> {currentArticle.readTime}
+                    <Clock size={13} /> {readTime}
                   </span>
+                  <span>•</span>
+                  <span style={{ color: 'var(--brand-primary)', fontWeight: 600 }}>
+                    {t.scannedAgo}: {article.source.scannedAt}
+                  </span>
+                </div>
+
+                {/* Actions: Bookmark and Share */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <button
+                    onClick={() => toggleBookmark(article.slug)}
+                    aria-label="Bookmark"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.35rem',
+                      padding: '0.4rem 0.75rem',
+                      borderRadius: 'var(--radius-sm)',
+                      backgroundColor: bookmarked ? 'var(--brand-primary)' : 'var(--bg-secondary)',
+                      color: bookmarked ? '#ffffff' : 'var(--text-secondary)',
+                      fontSize: '0.78rem',
+                      fontWeight: 600,
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    <Bookmark size={14} fill={bookmarked ? 'currentColor' : 'none'} />
+                    {bookmarked ? (lang === 'bn' ? 'সংরক্ষিত' : 'Saved') : (lang === 'bn' ? 'সংরক্ষণ' : 'Save')}
+                  </button>
+
+                  <button
+                    onClick={handleShare}
+                    aria-label="Share"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.35rem',
+                      padding: '0.4rem 0.75rem',
+                      borderRadius: 'var(--radius-sm)',
+                      backgroundColor: 'var(--bg-secondary)',
+                      color: 'var(--text-secondary)',
+                      fontSize: '0.78rem',
+                      fontWeight: 600,
+                      transition: 'all 0.15s ease',
+                    }}
+                  >
+                    {copied ? <CheckCircle2 size={14} style={{ color: 'var(--brand-green)' }} /> : <Share2 size={14} />}
+                    {copied ? (lang === 'bn' ? 'কপি হয়েছে' : 'Copied!') : (lang === 'bn' ? 'শেয়ার' : 'Share')}
+                  </button>
                 </div>
               </div>
             </div>
 
-            {/* Reader Controls Toolbar */}
-            <ReaderTools
-              slug={currentArticle.slug}
-              title={currentArticle.title}
-              onFontSizeChange={setFontSize}
-              onFontFamilyChange={setFontFamily}
-              currentFontSize={fontSize}
-              currentFontFamily={fontFamily}
-            />
-
-            {/* Audio Reader Player Widget */}
-            <AudioPlayer
-              title={currentArticle.title}
-              duration={currentArticle.audioDuration || '5:00'}
-              textToRead={fullTextToRead}
-            />
-
-            {/* Main Featured Image with Caption */}
-            {currentArticle.imageUrl && (
-              <figure style={{ margin: '2rem 0' }}>
+            {/* Main Featured Image */}
+            {article.imageUrl && (
+              <figure style={{ margin: '1.5rem 0 2rem 0' }}>
                 <div style={{
                   position: 'relative',
                   width: '100%',
-                  height: '460px',
+                  height: '420px',
                   borderRadius: 'var(--radius-sm)',
                   overflow: 'hidden',
                   backgroundColor: 'var(--bg-secondary)',
                 }}>
                   <Image
-                    src={currentArticle.imageUrl}
-                    alt={currentArticle.title}
+                    src={imgSrc}
+                    alt={article.title}
                     fill
                     priority
+                    onError={() => setImgSrc(FALLBACK_IMAGE)}
                     sizes="(max-width: 1024px) 100vw, 70vw"
                     style={{ objectFit: 'cover' }}
                   />
                 </div>
-                {(currentArticle.imageCaption || currentArticle.imageCredit) && (
-                  <figcaption style={{
-                    fontSize: '0.8rem',
-                    color: 'var(--text-muted)',
-                    marginTop: '0.65rem',
-                    lineHeight: 1.45,
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    flexWrap: 'wrap',
-                    gap: '0.5rem'
-                  }}>
-                    <span>{currentArticle.imageCaption}</span>
-                    <span style={{ fontStyle: 'italic', fontWeight: 600 }}>Credit: {currentArticle.imageCredit}</span>
-                  </figcaption>
-                )}
+                <figcaption style={{
+                  fontSize: '0.78rem',
+                  color: 'var(--text-muted)',
+                  marginTop: '0.5rem',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem'
+                }}>
+                  <span>{article.title}</span>
+                  <span style={{ fontWeight: 600 }}>Source: {article.source.name} ({article.source.bureau} Bureau)</span>
+                </figcaption>
               </figure>
             )}
 
-            {/* Key Takeaways Box (if available) */}
-            {currentArticle.keyTakeaways && currentArticle.keyTakeaways.length > 0 && (
+            {/* Sentiment & Narrative Context Banner */}
+            <div style={{
+              backgroundColor: article.sentiment === 'positive'
+                ? 'rgba(21, 128, 61, 0.08)'
+                : article.sentiment === 'negative'
+                ? 'rgba(220, 38, 38, 0.08)'
+                : 'rgba(74, 85, 104, 0.08)',
+              borderLeft: `4px solid ${
+                article.sentiment === 'positive'
+                  ? 'var(--brand-green)'
+                  : article.sentiment === 'negative'
+                  ? 'var(--brand-red)'
+                  : 'var(--text-secondary)'
+              }`,
+              padding: '1.15rem 1.35rem',
+              borderRadius: '0 var(--radius-md) var(--radius-md) 0',
+              margin: '2rem 0',
+            }}>
+              <div style={{
+                fontSize: '0.75rem',
+                fontWeight: 800,
+                textTransform: 'uppercase',
+                letterSpacing: '0.06em',
+                color: article.sentiment === 'positive'
+                  ? 'var(--brand-green)'
+                  : article.sentiment === 'negative'
+                  ? 'var(--brand-red)'
+                  : 'var(--text-secondary)',
+                marginBottom: '0.4rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.4rem',
+              }}>
+                <Sparkles size={14} />
+                {t.scannerContext} {lang === 'bn'
+                  ? (article.sentiment === 'positive' ? 'ইতিবাচক দৃষ্টিভঙ্গি' : article.sentiment === 'negative' ? 'নেতিবাচক / সতর্কবার্তা' : 'নিরপেক্ষ বিশ্লেষণ')
+                  : (article.sentiment === 'positive' ? 'Positive Narrative on BD' : article.sentiment === 'negative' ? 'Negative Narrative on BD' : 'Neutral / Policy Appraisal')}
+              </div>
+              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.92rem', color: 'var(--text-primary)', lineHeight: 1.55 }}>
+                {sentimentReason}
+              </p>
+            </div>
+
+            {/* Key Strategic Highlights Box */}
+            {keyPoints && keyPoints.length > 0 && (
               <div style={{
                 backgroundColor: 'var(--bg-secondary)',
-                borderLeft: '4px solid var(--brand-primary)',
+                border: '1px solid var(--border-primary)',
                 padding: '1.25rem 1.5rem',
-                borderRadius: '0 var(--radius-md) var(--radius-md) 0',
+                borderRadius: 'var(--radius-md)',
                 margin: '2rem 0',
               }}>
-                <div style={{ fontSize: '0.78rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.75rem', letterSpacing: '0.06em', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <Sparkles size={14} style={{ color: 'var(--brand-gold)' }} />
-                  Executive Summary &amp; Key Takeaways
+                <div style={{
+                  fontSize: '0.78rem',
+                  fontWeight: 800,
+                  textTransform: 'uppercase',
+                  color: 'var(--brand-primary)',
+                  marginBottom: '0.75rem',
+                  letterSpacing: '0.06em',
+                }} className={lang === 'bn' ? 'font-bengali' : ''}>
+                  {t.keyHighlights}
                 </div>
-                <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.55rem', paddingLeft: '1.2rem', color: 'var(--text-secondary)', fontSize: '0.92rem', lineHeight: 1.55 }}>
-                  {currentArticle.keyTakeaways.map((point, idx) => (
-                    <li key={idx}><strong>{point}</strong></li>
+                <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', paddingLeft: '1.2rem', color: 'var(--text-primary)', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                  {keyPoints.map((point, idx) => (
+                    <li key={idx} className={lang === 'bn' ? 'font-bengali' : ''}>
+                      <strong>{point}</strong>
+                    </li>
                   ))}
                 </ul>
               </div>
             )}
 
-            {/* Article Body Content */}
-            <div
-              className={fontFamily === 'serif' ? 'font-serif' : 'font-sans'}
-              style={{
-                fontSize: getFontSizeRem(),
-                lineHeight: 1.75,
+            {/* Full Analytical Summary Body */}
+            <div style={{ margin: '2.5rem 0' }}>
+              <h3 className={`font-masthead ${lang === 'bn' ? 'font-bengali' : ''}`} style={{
+                fontSize: '1.25rem',
+                fontWeight: 800,
                 color: 'var(--text-primary)',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1.4rem',
-              }}
-            >
-              {currentArticle.content.map((paragraph, index) => (
-                <p
-                  key={index}
-                  className={index === 0 ? 'drop-cap' : ''}
-                >
-                  {paragraph}
-                </p>
-              ))}
+                marginBottom: '1rem',
+                borderBottom: '2px solid var(--border-bold)',
+                paddingBottom: '0.4rem',
+              }}>
+                {lang === 'bn' ? 'বিস্তারিত পর্যবেক্ষণ ও সারসংক্ষেপ' : 'Analytical Summary & Media Intel'}
+              </h3>
+              <div
+                className={lang === 'bn' ? 'font-bengali' : 'font-serif'}
+                style={{
+                  fontSize: '1.12rem',
+                  lineHeight: 1.8,
+                  color: 'var(--text-primary)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1.25rem',
+                }}
+              >
+                <p>{summary}</p>
+              </div>
+            </div>
+
+            {/* Outbound Link Box */}
+            <div style={{
+              backgroundColor: 'var(--bg-accent)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-md)',
+              padding: '1.35rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '1rem',
+              margin: '2.5rem 0',
+            }}>
+              <div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--text-muted)', letterSpacing: '0.06em' }}>
+                  {t.sourceLink}
+                </div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 700, color: 'var(--text-primary)', marginTop: '0.2rem' }}>
+                  {article.source.name} • {article.source.bureau} Desk ({article.source.language})
+                </div>
+              </div>
+              <a
+                href={article.source.originalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.45rem',
+                  backgroundColor: 'var(--brand-primary)',
+                  color: '#ffffff',
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  padding: '0.65rem 1.25rem',
+                  borderRadius: 'var(--radius-sm)',
+                  boxShadow: 'var(--shadow-sm)',
+                  transition: 'background-color 0.15s ease',
+                }}
+              >
+                {t.readOriginalOn} {article.source.name}
+                <ExternalLink size={14} />
+              </a>
             </div>
 
             {/* Article Tags */}
@@ -352,12 +448,12 @@ export default function ArticlePage({
               alignItems: 'center',
               gap: '0.5rem',
               flexWrap: 'wrap',
-              margin: '2.5rem 0 2rem 0',
-              paddingTop: '1.5rem',
+              margin: '2rem 0',
+              paddingTop: '1.25rem',
               borderTop: '1px solid var(--border-primary)',
             }}>
               <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted)' }}>Tags:</span>
-              {currentArticle.tags.map((tag) => (
+              {article.tags.map((tag) => (
                 <span
                   key={tag}
                   style={{
@@ -375,170 +471,24 @@ export default function ArticlePage({
               ))}
             </div>
 
-            {/* Author Profile Card */}
-            <div style={{
-              backgroundColor: 'var(--bg-secondary)',
-              padding: '1.5rem',
-              borderRadius: 'var(--radius-md)',
-              border: '1px solid var(--border-primary)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '1.25rem',
-              margin: '2.5rem 0',
-            }}>
-              <div style={{
-                position: 'relative',
-                width: '64px',
-                height: '64px',
-                borderRadius: '50%',
-                overflow: 'hidden',
-                backgroundColor: 'var(--bg-primary)',
-                flexShrink: 0,
-              }}>
-                <Image
-                  src={currentArticle.author.avatar}
-                  alt={currentArticle.author.name}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </div>
-              <div>
-                <h4 style={{ fontSize: '1.05rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>
-                  {currentArticle.author.name}
-                </h4>
-                <div style={{ fontSize: '0.8rem', color: 'var(--brand-primary)', fontWeight: 600, marginBottom: '0.4rem' }}>
-                  {currentArticle.author.role} • {currentArticle.author.location}
-                </div>
-                <p style={{ fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
-                  Covers strategic technologies, industrial infrastructure, and public policy for India Watch.
-                </p>
-              </div>
+            {/* Back to Scans Button */}
+            <div style={{ marginTop: '2rem' }}>
+              <Link
+                href="/"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  color: 'var(--brand-primary)',
+                }}
+                className={lang === 'bn' ? 'font-bengali' : ''}
+              >
+                <ArrowLeft size={16} />
+                {t.viewAllScanned}
+              </Link>
             </div>
-
-            {/* Interactive Comments Section */}
-            <section style={{
-              margin: '3rem 0',
-              paddingTop: '2rem',
-              borderTop: '2px solid var(--border-bold)',
-            }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '1.5rem' }}>
-                <MessageSquare size={20} style={{ color: 'var(--brand-primary)' }} />
-                <h3 className="font-masthead" style={{ fontSize: '1.35rem', fontWeight: 800, color: 'var(--text-primary)' }}>
-                  Reader Discussion ({comments.length})
-                </h3>
-              </div>
-
-              {/* Comment Submission Form */}
-              <form onSubmit={handleAddComment} style={{
-                backgroundColor: 'var(--bg-card)',
-                padding: '1.25rem',
-                borderRadius: 'var(--radius-md)',
-                border: '1px solid var(--border-primary)',
-                marginBottom: '2rem',
-                boxShadow: 'var(--shadow-sm)',
-              }}>
-                <div style={{ marginBottom: '0.75rem' }}>
-                  <input
-                    type="text"
-                    placeholder="Your Name / Organization"
-                    value={commentName}
-                    onChange={(e) => setCommentName(e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '0.6rem 0.85rem',
-                      fontSize: '0.85rem',
-                      backgroundColor: 'var(--bg-primary)',
-                      border: '1px solid var(--border-primary)',
-                      borderRadius: 'var(--radius-sm)',
-                      color: 'var(--text-primary)',
-                      outline: 'none',
-                    }}
-                  />
-                </div>
-
-                <div style={{ marginBottom: '0.75rem' }}>
-                  <textarea
-                    rows={3}
-                    placeholder="Contribute constructive commentary to this report..."
-                    required
-                    value={commentText}
-                    onChange={(e) => setCommentText(e.target.value)}
-                    style={{
-                      width: '100%',
-                      padding: '0.75rem 0.85rem',
-                      fontSize: '0.9rem',
-                      backgroundColor: 'var(--bg-primary)',
-                      border: '1px solid var(--border-primary)',
-                      borderRadius: 'var(--radius-sm)',
-                      color: 'var(--text-primary)',
-                      outline: 'none',
-                      fontFamily: 'inherit',
-                      resize: 'vertical',
-                    }}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  style={{
-                    backgroundColor: 'var(--brand-primary)',
-                    color: '#ffffff',
-                    fontWeight: 700,
-                    fontSize: '0.8rem',
-                    padding: '0.55rem 1.25rem',
-                    borderRadius: 'var(--radius-sm)',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.4rem',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.04em',
-                  }}
-                >
-                  <Send size={13} /> Post Comment
-                </button>
-              </form>
-
-              {/* Comments Feed */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                {comments.map((comment) => (
-                  <div
-                    key={comment.id}
-                    style={{
-                      backgroundColor: 'var(--bg-secondary)',
-                      padding: '1.15rem',
-                      borderRadius: 'var(--radius-md)',
-                      border: '1px solid var(--border-subtle)',
-                    }}
-                  >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.6rem' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
-                        <div style={{
-                          position: 'relative',
-                          width: '32px',
-                          height: '32px',
-                          borderRadius: '50%',
-                          overflow: 'hidden',
-                          backgroundColor: 'var(--border-primary)',
-                        }}>
-                          <img
-                            src={comment.avatar}
-                            alt={comment.name}
-                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                          />
-                        </div>
-                        <span style={{ fontWeight: 700, fontSize: '0.9rem', color: 'var(--text-primary)' }}>
-                          {comment.name}
-                        </span>
-                      </div>
-                      <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{comment.date}</span>
-                    </div>
-                    <p style={{ fontSize: '0.88rem', lineHeight: 1.5, color: 'var(--text-secondary)' }}>
-                      {comment.text}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </section>
           </div>
 
           {/* Right Sticky Sidebar */}
@@ -553,7 +503,7 @@ export default function ArticlePage({
                 boxShadow: 'var(--shadow-sm)',
               }}>
                 <h4
-                  className="font-masthead"
+                  className={`font-masthead ${lang === 'bn' ? 'font-bengali' : ''}`}
                   style={{
                     fontSize: '1rem',
                     fontWeight: 800,
@@ -565,16 +515,22 @@ export default function ArticlePage({
                     marginBottom: '1rem',
                   }}
                 >
-                  Related Reports
+                  {lang === 'bn' ? 'সম্পর্কিত স্ক্যানড সংবাদ' : 'Related Reports'}
                 </h4>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                  {relatedArticles.map((art) => (
-                    <ArticleCard key={art.id} article={art} variant="horizontal" />
-                  ))}
+                  {relatedArticles.length > 0 ? (
+                    relatedArticles.map((art) => (
+                      <ArticleCard key={art.id} article={art} variant="horizontal" />
+                    ))
+                  ) : (
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+                      {lang === 'bn' ? 'কোনো অতিরিক্ত প্রতিবেদন নেই' : 'No other reports in this category.'}
+                    </p>
+                  )}
                 </div>
               </div>
 
-              {/* Trending Stories */}
+              {/* Trending Scanned Stories */}
               <div style={{
                 backgroundColor: 'var(--bg-card)',
                 padding: '1.25rem',
@@ -594,9 +550,9 @@ export default function ArticlePage({
                   borderBottom: '2px solid var(--border-bold)',
                   paddingBottom: '0.4rem',
                   marginBottom: '1rem',
-                }}>
+                }} className={lang === 'bn' ? 'font-bengali' : ''}>
                   <TrendingUp size={15} style={{ color: 'var(--brand-primary)' }} />
-                  Trending Across India Watch
+                  {lang === 'bn' ? 'শীর্ষ আলোচিত সংবাদ' : 'Trending Scans'}
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
                   {trendingArticles.map((art, idx) => (
@@ -615,7 +571,10 @@ export default function ArticlePage({
                         0{idx + 1}
                       </span>
                       <div>
-                        <h5 className="font-serif" style={{ fontSize: '0.9rem', fontWeight: 700, lineHeight: 1.35, color: 'var(--text-primary)' }}>
+                        <h5
+                          className={art.source.language === 'Bengali' ? 'font-bengali' : art.source.language === 'Hindi' ? 'font-devanagari' : 'font-serif'}
+                          style={{ fontSize: '0.88rem', fontWeight: 700, lineHeight: 1.35, color: 'var(--text-primary)' }}
+                        >
                           {art.title}
                         </h5>
                       </div>

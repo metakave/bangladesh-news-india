@@ -2,7 +2,9 @@
 
 import React from 'react';
 import { SCANNER_STATS, SentimentType, BureauType, LanguageType } from '@/data/news-data';
-import { Radar, Filter, Radio, Building2, CheckCircle2, AlertCircle, MinusCircle } from 'lucide-react';
+import { useApp } from '@/context/ThemeContext';
+import { TRANSLATIONS } from '@/data/translations';
+import { Building2, CheckCircle2, AlertCircle, MinusCircle } from 'lucide-react';
 
 interface SentimentTrackerBarProps {
   selectedSentiment: 'all' | SentimentType;
@@ -23,6 +25,8 @@ export default function SentimentTrackerBar({
   onSelectLanguage,
   totalCount,
 }: SentimentTrackerBarProps) {
+  const { lang } = useApp();
+  const t = TRANSLATIONS[lang];
   const { sentimentDistribution } = SCANNER_STATS;
   const total = sentimentDistribution.positive + sentimentDistribution.neutral + sentimentDistribution.negative;
 
@@ -49,29 +53,44 @@ export default function SentimentTrackerBar({
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
             <span className="live-pulse" style={{ width: '8px', height: '8px', backgroundColor: 'var(--brand-primary)' }} />
-            <span style={{ fontSize: '0.82rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-primary)' }}>
-              Live Indian Media Scanner: Bangladesh Coverage
+            <span
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: lang === 'bn' ? '0.9rem' : '0.82rem',
+                fontWeight: 800,
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.06em',
+                color: 'var(--text-primary)'
+              }}
+            >
+              {t.liveScanner}
             </span>
-            <span style={{
-              fontSize: '0.72rem',
-              backgroundColor: 'var(--bg-secondary)',
-              color: 'var(--text-muted)',
-              padding: '0.15rem 0.5rem',
-              borderRadius: 'var(--radius-sm)',
-              border: '1px solid var(--border-primary)',
-              fontWeight: 600,
-            }}>
-              Delhi &amp; Kolkata Bureaus
+            <span
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: '0.72rem',
+                backgroundColor: 'var(--bg-secondary)',
+                color: 'var(--text-muted)',
+                padding: '0.15rem 0.5rem',
+                borderRadius: 'var(--radius-sm)',
+                border: '1px solid var(--border-primary)',
+                fontWeight: 600,
+              }}
+            >
+              {t.delhiKolkataBureaus}
             </span>
           </div>
 
           {/* Aggregate Sentiment Ratio Pulse */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.75rem', fontWeight: 700 }}>
-            <span style={{ color: '#15803d' }}>● {posPct}% Positive</span>
+          <div
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.75rem', fontWeight: 700 }}
+          >
+            <span style={{ color: '#15803d' }}>● {posPct}% {t.positiveMarker}</span>
             <span style={{ color: 'var(--text-muted)' }}>|</span>
-            <span style={{ color: 'var(--text-secondary)' }}>● {neuPct}% Neutral</span>
+            <span style={{ color: 'var(--text-secondary)' }}>● {neuPct}% {t.neutralMarker}</span>
             <span style={{ color: 'var(--text-muted)' }}>|</span>
-            <span style={{ color: '#dc2626' }}>● {negPct}% Negative</span>
+            <span style={{ color: '#dc2626' }}>● {negPct}% {t.negativeMarker}</span>
           </div>
         </div>
 
@@ -101,12 +120,22 @@ export default function SentimentTrackerBar({
         }}>
           {/* Sentiment Filter Tabs */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '0.74rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginRight: '0.25rem' }}>
-              Sentiment Marker:
+            <span
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontSize: '0.74rem',
+                fontWeight: 700,
+                color: 'var(--text-muted)',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                marginRight: '0.25rem'
+              }}
+            >
+              {t.sentimentMarker}
             </span>
 
             <button
               onClick={() => onSelectSentiment('all')}
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 padding: '0.3rem 0.7rem',
                 fontSize: '0.75rem',
@@ -117,11 +146,12 @@ export default function SentimentTrackerBar({
                 border: '1px solid var(--border-primary)',
               }}
             >
-              All Reports ({totalCount})
+              {t.allReports} ({totalCount})
             </button>
 
             <button
               onClick={() => onSelectSentiment('positive')}
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -135,11 +165,12 @@ export default function SentimentTrackerBar({
                 border: '1px solid rgba(21, 128, 61, 0.3)',
               }}
             >
-              <CheckCircle2 size={12} /> Positive
+              <CheckCircle2 size={12} /> {t.positiveMarker}
             </button>
 
             <button
               onClick={() => onSelectSentiment('neutral')}
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -153,11 +184,12 @@ export default function SentimentTrackerBar({
                 border: '1px solid var(--border-primary)',
               }}
             >
-              <MinusCircle size={12} /> Neutral
+              <MinusCircle size={12} /> {t.neutralMarker}
             </button>
 
             <button
               onClick={() => onSelectSentiment('negative')}
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -171,7 +203,7 @@ export default function SentimentTrackerBar({
                 border: '1px solid rgba(220, 38, 38, 0.3)',
               }}
             >
-              <AlertCircle size={12} /> Negative
+              <AlertCircle size={12} /> {t.negativeMarker}
             </button>
           </div>
 
@@ -183,6 +215,7 @@ export default function SentimentTrackerBar({
               <select
                 value={selectedBureau}
                 onChange={(e) => onSelectBureau(e.target.value as 'all' | BureauType)}
+                className={lang === 'bn' ? 'font-bengali' : ''}
                 style={{
                   padding: '0.3rem 0.6rem',
                   fontSize: '0.75rem',
@@ -194,9 +227,9 @@ export default function SentimentTrackerBar({
                   outline: 'none',
                 }}
               >
-                <option value="all">All Bureaus (Delhi &amp; Kolkata)</option>
-                <option value="Delhi">Delhi Bureaus Only (National / MEA)</option>
-                <option value="Kolkata">Kolkata Bureaus Only (Bengal / Border)</option>
+                <option value="all">{t.allBureaus}</option>
+                <option value="Delhi">{t.delhiBureauOnly}</option>
+                <option value="Kolkata">{t.kolkataBureauOnly}</option>
               </select>
             </div>
 
@@ -204,6 +237,7 @@ export default function SentimentTrackerBar({
             <select
               value={selectedLanguage}
               onChange={(e) => onSelectLanguage(e.target.value as 'all' | LanguageType)}
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 padding: '0.3rem 0.6rem',
                 fontSize: '0.75rem',
@@ -215,10 +249,10 @@ export default function SentimentTrackerBar({
                 outline: 'none',
               }}
             >
-              <option value="all">All Languages</option>
-              <option value="English">English Dailies</option>
-              <option value="Bengali">Bengali Media (ABP, Ei Samay)</option>
-              <option value="Hindi">Hindi Media (Jagran, Amar Ujala)</option>
+              <option value="all">{t.allLanguages}</option>
+              <option value="English">{t.englishMedia}</option>
+              <option value="Bengali">{t.bengaliMedia}</option>
+              <option value="Hindi">{t.hindiMedia}</option>
             </select>
           </div>
         </div>

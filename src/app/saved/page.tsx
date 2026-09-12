@@ -3,14 +3,16 @@
 import React from 'react';
 import Link from 'next/link';
 import { useApp } from '@/context/ThemeContext';
-import { ARTICLES } from '@/data/news-data';
+import { SCANNED_NEWS_ITEMS } from '@/data/news-data';
+import { TRANSLATIONS } from '@/data/translations';
 import ArticleCard from '@/components/ArticleCard';
 import { Bookmark, Trash2, ArrowRight, BookOpen } from 'lucide-react';
 
 export default function SavedArticlesPage() {
-  const { bookmarks, toggleBookmark } = useApp();
+  const { bookmarks, toggleBookmark, lang } = useApp();
+  const t = TRANSLATIONS[lang];
 
-  const bookmarkedArticles = ARTICLES.filter((a) => bookmarks.includes(a.slug));
+  const bookmarkedArticles = SCANNED_NEWS_ITEMS.filter((a) => bookmarks.includes(a.slug));
 
   return (
     <div style={{ padding: '2.5rem 0 5rem 0' }}>
@@ -40,32 +42,43 @@ export default function SavedArticlesPage() {
               <Bookmark size={20} fill="currentColor" />
             </div>
             <div>
-              <h1 className="font-masthead" style={{
-                fontSize: '1.85rem',
-                fontWeight: 900,
-                color: 'var(--text-primary)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
-                lineHeight: 1.1,
-              }}>
-                Saved Reading List
+              <h1
+                className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
+                style={{
+                  fontSize: lang === 'bn' ? '1.75rem' : '1.85rem',
+                  fontWeight: 900,
+                  color: 'var(--text-primary)',
+                  textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                  letterSpacing: lang === 'bn' ? '0' : '0.04em',
+                  lineHeight: 1.2,
+                }}
+              >
+                {lang === 'bn' ? 'সংরক্ষিত সংবাদ তালিকা' : 'Saved Reading List'}
               </h1>
-              <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                Articles you have saved to read offline or review later.
+              <p
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ fontSize: '0.86rem', color: 'var(--text-secondary)' }}
+              >
+                {lang === 'bn'
+                  ? 'পরে পড়ার জন্য আপনার সংরক্ষিত ভারতীয় সংবাদমাধ্যমের প্রতিবেদনসমূহ।'
+                  : 'Scanned Indian media articles you have bookmarked to review later.'}
               </p>
             </div>
           </div>
 
-          <span style={{
-            fontSize: '0.82rem',
-            fontWeight: 700,
-            color: 'var(--brand-primary)',
-            backgroundColor: 'var(--bg-secondary)',
-            padding: '0.35rem 0.85rem',
-            borderRadius: 'var(--radius-full)',
-            border: '1px solid var(--border-primary)',
-          }}>
-            {bookmarkedArticles.length} Stories Saved
+          <span
+            className={lang === 'bn' ? 'font-bengali' : ''}
+            style={{
+              fontSize: '0.82rem',
+              fontWeight: 700,
+              color: 'var(--brand-primary)',
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '0.35rem 0.85rem',
+              borderRadius: 'var(--radius-full)',
+              border: '1px solid var(--border-primary)',
+            }}
+          >
+            {lang === 'bn' ? `${bookmarkedArticles.length} টি সংরক্ষিত` : `${bookmarkedArticles.length} Stories Saved`}
           </span>
         </div>
 
@@ -79,14 +92,23 @@ export default function SavedArticlesPage() {
             border: '1px dashed var(--border-primary)',
           }}>
             <BookOpen size={48} style={{ color: 'var(--brand-primary)', opacity: 0.5, margin: '0 auto 1rem auto' }} />
-            <h3 className="font-serif" style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
-              Your Reading List is Empty
+            <h3
+              className={lang === 'bn' ? 'font-bengali' : 'font-serif'}
+              style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}
+            >
+              {lang === 'bn' ? 'সংরক্ষিত তালিকা খালি' : 'Your Reading List is Empty'}
             </h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', maxWidth: '420px', margin: '0 auto 1.5rem auto' }}>
-              Whenever you encounter a story or deep analysis you want to read later, click the bookmark icon on any article card.
+            <p
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', maxWidth: '440px', margin: '0 auto 1.5rem auto', lineHeight: 1.55 }}
+            >
+              {lang === 'bn'
+                ? 'যেকোনো প্রতিবেদনের বুকমার্ক আইকনে ক্লিক করে আপনি সেটি এখানে সংরক্ষণ করে রাখতে পারেন।'
+                : 'Whenever you encounter a scanned report you want to review later, click the bookmark icon on any card.'}
             </p>
             <Link
               href="/"
+              className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -97,11 +119,11 @@ export default function SavedArticlesPage() {
                 fontSize: '0.82rem',
                 padding: '0.6rem 1.25rem',
                 borderRadius: 'var(--radius-sm)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.04em',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.04em',
               }}
             >
-              Browse Frontpage <ArrowRight size={14} />
+              {lang === 'bn' ? 'মূল পাতায় ফিরে যান' : 'Browse All Scans'} <ArrowRight size={14} />
             </Link>
           </div>
         ) : (
@@ -137,7 +159,7 @@ export default function SavedArticlesPage() {
                     justifyContent: 'center',
                     flexShrink: 0,
                   }}
-                  title="Remove from saved"
+                  title={lang === 'bn' ? 'তালিকা থেকে মুছুন' : 'Remove from saved'}
                   aria-label="Remove from saved"
                 >
                   <Trash2 size={16} />
@@ -150,3 +172,4 @@ export default function SavedArticlesPage() {
     </div>
   );
 }
+
