@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
+import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
 import {
   Search,
   Moon,
@@ -182,20 +183,35 @@ export default function Header() {
 
           {/* Masthead Branding */}
           <div style={{ flex: 1, textAlign: 'center' }}>
-            <Link href="/" style={{ display: 'inline-block' }}>
-              <h1
-                className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
-                style={{
-                  fontSize: lang === 'bn' ? 'calc(clamp(2.1rem, 5.2vw, 3.5rem) - 5pt)' : 'clamp(2rem, 5vw, 3.4rem)',
-                  fontWeight: 900,
-                  lineHeight: 1.1,
-                  letterSpacing: lang === 'bn' ? '0' : '0.08em',
-                  color: 'var(--text-primary)',
-                  marginBottom: '0.3rem'
-                }}
-              >
-                {t.siteTitle}
-              </h1>
+            <Link href="/" style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none' }}>
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 'clamp(0.45rem, 1.2vw, 0.85rem)',
+                marginBottom: '0.3rem',
+              }}>
+                <NarrativeCompassLogo
+                  size="clamp(2.1rem, 4.8vw, 3.4rem)"
+                  style={{
+                    filter: 'drop-shadow(0 2px 5px rgba(0, 0, 0, 0.14))',
+                    transition: 'transform 0.2s ease',
+                  }}
+                />
+                <h1
+                  className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
+                  style={{
+                    fontSize: lang === 'bn' ? 'calc(clamp(2.1rem, 5.2vw, 3.5rem) - 5pt)' : 'clamp(2rem, 5vw, 3.4rem)',
+                    fontWeight: 900,
+                    lineHeight: 1.1,
+                    letterSpacing: lang === 'bn' ? '0' : '0.08em',
+                    color: 'var(--text-primary)',
+                    margin: 0,
+                  }}
+                >
+                  {t.siteTitle}
+                </h1>
+              </div>
               <div
                 className={lang === 'bn' ? 'font-bengali' : ''}
                 style={{
@@ -322,9 +338,12 @@ export default function Header() {
             borderRight: '1px solid var(--border-primary)'
           }} onClick={(e) => e.stopPropagation()}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
-              <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.4rem - 5pt)' : '1.4rem', fontWeight: 900, color: 'var(--brand-primary)' }}>
-                {t.siteTitle}
-              </h2>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <NarrativeCompassLogo size={26} />
+                <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.35rem - 5pt)' : '1.35rem', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
+                  {t.siteTitle}
+                </h2>
+              </div>
               <button onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--text-primary)' }}>
                 <X size={20} />
               </button>

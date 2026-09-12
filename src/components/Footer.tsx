@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
+import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
 import { Globe, Shield, Rss, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -38,7 +39,8 @@ export default function Footer() {
         }}>
           {/* Masthead & Info */}
           <div style={{ gridColumn: 'span 2' }} className="footer-brand-col">
-            <Link href="/">
+            <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.65rem', textDecoration: 'none', marginBottom: '0.6rem' }}>
+              <NarrativeCompassLogo size={28} />
               <h2
                 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
                 style={{
@@ -46,7 +48,7 @@ export default function Footer() {
                   fontWeight: 900,
                   color: 'var(--text-primary)',
                   letterSpacing: lang === 'bn' ? '0' : '0.06em',
-                  marginBottom: '0.5rem',
+                  margin: 0,
                 }}
               >
                 {t.siteTitle}

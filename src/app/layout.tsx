@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   description: 'Fast, high-integrity digital journalism covering Indian media reporting on Bangladesh across English, Bengali, and Hindi with 3-marker sentiment tracking.',
   keywords: ['Bangladesh News', 'Indian Media Scanner', 'Narrative Compass', 'Teesta River', 'Petrapole Benapole', 'Anandabazar Patrika', 'The Hindu', 'Dainik Jagran'],
   authors: [{ name: 'Narrative Compass Editorial & Intelligence Desk' }],
+  icons: {
+    icon: [
+      { url: '/narrative-compass.svg', type: 'image/svg+xml' },
+      { url: '/icon.svg', type: 'image/svg+xml' }
+    ],
+    shortcut: '/narrative-compass.svg',
+    apple: '/narrative-compass.svg',
+  },
   openGraph: {
     title: 'Narrative Compass | Indian Media Narrative Monitor',
     description: 'Real-time scanner of top Indian media reporting on Bangladesh across Delhi and Kolkata bureaus.',
