@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { BREAKING_NEWS_ALERTS } from '@/data/news-data';
-import { Bell, ChevronRight, ChevronLeft, Flame } from 'lucide-react';
+import SentimentBadge from './SentimentBadge';
+import { ChevronRight, ChevronLeft, Radio, ExternalLink } from 'lucide-react';
 
 export default function BreakingNews() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,12 +48,14 @@ export default function BreakingNews() {
             textTransform: 'uppercase',
             flexShrink: 0
           }}>
-            <Flame size={13} style={{ color: '#fbbf24' }} />
-            Breaking News
+            <Radio size={13} style={{ color: '#fbbf24' }} />
+            Latest News
           </div>
 
-          <Link
+          <a
             href={current.url}
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               color: '#ffffff',
               display: 'flex',
@@ -63,11 +65,20 @@ export default function BreakingNews() {
               textOverflow: 'ellipsis',
               whiteSpace: 'nowrap',
               transition: 'opacity 0.2s ease',
+              textDecoration: 'none',
             }}
           >
-            <span style={{ opacity: 0.85, fontSize: '0.75rem', flexShrink: 0 }}>[{current.timeAgo}]</span>
-            <span style={{ fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis' }}>{current.headline}</span>
-          </Link>
+            <span style={{ opacity: 0.85, fontSize: '0.75rem', flexShrink: 0 }}>
+              [{current.sourceName} • {current.sourceBureau} • {current.timeAgo}]
+            </span>
+            <span
+              className={current.sourceName === 'Anandabazar Patrika' ? 'font-bengali' : ''}
+              style={{ fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis' }}
+            >
+              {current.headline}
+            </span>
+            <ExternalLink size={12} style={{ opacity: 0.8, flexShrink: 0 }} />
+          </a>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', flexShrink: 0 }}>
