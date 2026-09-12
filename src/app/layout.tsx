@@ -7,6 +7,7 @@ import BreakingNews from '@/components/BreakingNews';
 import SearchModal from '@/components/SearchModal';
 import VisitorVerificationModal from '@/components/VisitorVerificationModal';
 import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -198,6 +199,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics />
         <AppProvider>
           <Header />
           <BreakingNews />
