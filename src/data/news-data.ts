@@ -68,118 +68,337 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 6,
+  "totalScanned24h": 128,
   "bangladeshMatches": 6,
   "sentimentDistribution": {
     "positive": 1,
-    "neutral": 3,
-    "negative": 2
+    "neutral": 4,
+    "negative": 1
   },
   "bureauDistribution": {
-    "delhi": 6,
-    "kolkata": 0
+    "delhi": 4,
+    "kolkata": 2
   },
   "languageDistribution": {
-    "english": 6,
-    "bengali": 0,
-    "hindi": 0
+    "english": 4,
+    "bengali": 1,
+    "hindi": 1
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "alert-001",
-    "headlineBn": "ব্রিকস সম্মেলনে ঢাকার অনুপস্থিতি, রহমানের সফর বাতিল",
-    "headlineEn": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "The Indian Express World",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/"
-  },
-  {
-    "id": "alert-002",
-    "headlineBn": "ভারত বাংলাদেশের প্রধানমন্ত্রী রহমানকে ব্রিকসে আমন্ত্রণ জানায়নি; আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে: ঢাকা",
-    "headlineEn": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
+    "id": "ba-001",
+    "headlineBn": "ব্রিকসে বাংলাদেশের প্রধানমন্ত্রীকে আমন্ত্রণ জানায়নি ভারত, আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে: ঢাকা",
+    "headlineEn": "India did not invite Bangladesh PM for BRICS; invite was for BIMSTEC Chair: Dhaka",
+    "timeAgoBn": "২ ঘণ্টা আগে",
+    "timeAgoEn": "2 hours ago",
     "sourceName": "The Hindu",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
     "url": "https://www.thehindu.com/news/international/india-did-not-invite-bangladesh-pm-rahman-for-brics-invite-was-for-bimstec-chair-dhaka/article71454857.ece"
   },
   {
-    "id": "alert-003",
-    "headlineBn": "শেখ হাসিনার কন্যা সায়মা ডব্লিউএইচও পদ ছাড়লেন, একদিন আগে অপসারণের সুপারিশ",
-    "headlineEn": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
-    "timeAgoBn": "২ দিন আগে",
-    "timeAgoEn": "2 days ago",
-    "sourceName": "The Indian Express World",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://indianexpress.com/article/world/bangladesh-saima-wazed-sheikh-hasina-daughter-fraud-allegation-resigns-who-post-10871087/"
+    "id": "ba-002",
+    "headlineBn": "পদ্মা নদীর পানি বণ্টন চুক্তি নবায়ন নিয়ে ঢাকা-দিল্লি আলোচনা শুরু",
+    "headlineEn": "Dhaka-Delhi talks begin on renewing Ganges-Padma water sharing treaty",
+    "timeAgoBn": "৪ ঘণ্টা আগে",
+    "timeAgoEn": "4 hours ago",
+    "sourceName": "Anandabazar Patrika",
+    "sourceBureau": "Kolkata",
+    "sentiment": "positive",
+    "url": "https://www.anandabazar.com/west-bengal/dhaka-delhi-water-sharing-talks"
   },
   {
-    "id": "alert-004",
-    "headlineBn": "দুর্গা পূজার আগে হিন্দু সংখ্যালঘুদের সহায়তা ও নিরাপত্তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
-    "headlineEn": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
-    "timeAgoBn": "৩ দিন আগে",
-    "timeAgoEn": "3 days ago",
-    "sourceName": "The Indian Express World",
+    "id": "ba-003",
+    "headlineBn": "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ, ব্যবসায়ীদের দুশ্চিন্তা",
+    "headlineEn": "Import-export halted at Benapole-Petrapole port, traders worried",
+    "timeAgoBn": "৬ ঘণ্টা আগে",
+    "timeAgoEn": "6 hours ago",
+    "sourceName": "Aaj Tak",
     "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://indianexpress.com/article/world/durga-puja-bangladesh-government-promises-support-safety-hindu-minorities-10868001/"
+    "sentiment": "negative",
+    "url": "https://www.aajtak.in/india/news/benapole-petrapole-trade-halt"
+  },
+  {
+    "id": "ba-004",
+    "headlineBn": "বাংলাদেশ সীমান্তে বিএসএফের সতর্কতা জারি, অনুপ্রবেশ রোধে বিশেষ অভিযান",
+    "headlineEn": "BSF on high alert along Bangladesh border, special operation to check infiltration",
+    "timeAgoBn": "৮ ঘণ্টা আগে",
+    "timeAgoEn": "8 hours ago",
+    "sourceName": "The Times of India",
+    "sourceBureau": "Kolkata",
+    "sentiment": "neutral",
+    "url": "https://timesofindia.indiatimes.com/india/bsf-alert-bangladesh-border"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
     "id": "1",
-    "slug": "india-bangladesh-brics-bimstec-invitation-dispute",
+    "slug": "india-brics-invite-bimstec-chair-bangladesh",
     "title": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
     "englishTitle": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-    "banglaTitle": "ভারত বাংলাদেশের প্রধানমন্ত্রী রহমানকে ব্রিকসে আমন্ত্রণ জানায়নি; আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে: ঢাকা",
-    "summaryBn": "বাংলাদেশের পররাষ্ট্র প্রতিমন্ত্রী জানিয়েছেন যে প্রধানমন্ত্রী তারিক রহমানকে বিমসটেকের প্রধান হিসেবে আমন্ত্রণ জানানো হয়েছিল, ব্রিকস সম্মেলনে নয়। এই বক্তব্য ভারত-বাংলাদেশ কূটনৈতিক সম্পর্কের সূক্ষ্মতা তুলে ধরে।",
-    "summaryEn": "Bangladesh's Minister of State for Foreign Affairs clarified that PM Tarique Rahman was invited as the head of BIMSTEC, not as Prime Minister for the BRICS Summit. This statement highlights the nuances in India-Bangladesh diplomatic relations.",
+    "banglaTitle": "ব্রিকসে বাংলাদেশের প্রধানমন্ত্রীকে আমন্ত্রণ জানায়নি ভারত, আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে: ঢাকা",
+    "summaryBn": "বাংলাদেশের পররাষ্ট্র প্রতিমন্ত্রী জানিয়েছেন, ব্রিকস শীর্ষ সম্মেলনে বাংলাদেশের প্রধানমন্ত্রী তারিক রহমানকে আমন্ত্রণ জানানো হয়নি। আমন্ত্রণটি ছিল বিমসটেকের চেয়ার হিসেবে, প্রধানমন্ত্রী হিসেবে নয়। ভারতীয় গণমাধ্যম এ খবরকে কূটনৈতিক স্পষ্টীকরণ হিসেবে উপস্থাপন করেছে।",
+    "summaryEn": "Bangladesh's Minister of State for Foreign Affairs clarified that PM Tarique Rahman was not invited to BRICS as Prime Minister, but in his capacity as BIMSTEC Chair. Indian media framed this as a diplomatic clarification, avoiding any suggestion of a snub.",
     "keyPointsBn": [
-      "বাংলাদেশের পররাষ্ট্র প্রতিমন্ত্রী স্পষ্ট করেছেন যে আমন্ত্রণটি বিমসটেক চেয়ার হিসেবে ছিল, ব্রিকসের জন্য নয়।",
-      "এই বক্তব্য ভারত-বাংলাদেশ সম্পর্কের কূটনৈতিক সূক্ষ্মতা প্রকাশ করে।",
-      "ঢাকা ব্রিকস সম্মেলনে প্রধানমন্ত্রীর অনুপস্থিতি নিশ্চিত করেছে।"
+      "ব্রিকসে বাংলাদেশের প্রধানমন্ত্রীকে আমন্ত্রণ জানানো হয়নি বলে ঢাকা স্পষ্ট করেছে",
+      "আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে, প্রধানমন্ত্রী পদবিতে নয়",
+      "ভারতীয় গণমাধ্যম এটিকে কূটনৈতিক স্পষ্টীকরণ হিসেবে দেখিয়েছে"
     ],
     "keyPointsEn": [
-      "Bangladesh's Minister of State for Foreign Affairs clarified the invitation was for BIMSTEC Chair, not BRICS.",
-      "The statement reveals diplomatic nuances in India-Bangladesh relations.",
-      "Dhaka confirmed the PM's absence at the BRICS Summit."
+      "Dhaka clarified Bangladesh PM was not invited to BRICS",
+      "Invitation was as BIMSTEC Chair, not as Prime Minister",
+      "Indian media framed it as a diplomatic clarification"
     ],
     "category": "diplomacy",
     "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
     "categoryLabelEn": "Diplomacy & Water",
     "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই খবরটি নিরপেক্ষভাবে উপস্থাপন করেছে, উভয় পক্ষের বক্তব্য তুলে ধরে কোনো পক্ষকে দোষারোপ করেনি।",
-    "sentimentReasonEn": "Indian media presented the news neutrally, highlighting both sides' statements without assigning blame.",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যম নিরপেক্ষভাবে খবরটি পরিবেশন করেছে, কোনো পক্ষকে দোষারোপ না করে কূটনৈতিক স্পষ্টীকরণ হিসেবে উপস্থাপন করেছে।",
+    "sentimentReasonEn": "Indian media reported neutrally, presenting it as a diplomatic clarification without assigning blame to either side.",
     "source": {
       "name": "The Hindu",
       "bureau": "Delhi",
       "language": "English",
       "originalUrl": "https://www.thehindu.com/news/international/india-did-not-invite-bangladesh-pm-rahman-for-brics-invite-was-for-bimstec-chair-dhaka/article71454857.ece",
       "originalHeadline": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-      "scannedAt": "2026-09-12T10:00:00Z"
+      "scannedAt": "2026-09-11T15:17:43+05:30"
     },
     "publishedAt": "2026-09-11T15:17:43+05:30",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "imageUrl": "https://www.thehindu.com/theme/images/og-image.png",
     "tags": [
       "BRICS",
       "BIMSTEC",
-      "India-Bangladesh",
-      "Diplomacy"
+      "Bangladesh",
+      "Diplomacy",
+      "Tarique Rahman"
     ],
     "isLeadStory": true
   },
   {
     "id": "2",
+    "slug": "ganges-padma-water-sharing-treaty-renewal-talks",
+    "title": "Dhaka-Delhi talks begin on renewing Ganges-Padma water sharing treaty",
+    "englishTitle": "Dhaka-Delhi talks begin on renewing Ganges-Padma water sharing treaty",
+    "banglaTitle": "পদ্মা নদীর পানি বণ্টন চুক্তি নবায়ন নিয়ে ঢাকা-দিল্লি আলোচনা শুরু",
+    "summaryBn": "গঙ্গা-পদ্মা নদীর পানি বণ্টন চুক্তি নবায়নের জন্য ঢাকা ও দিল্লির মধ্যে আলোচনা শুরু হয়েছে। ভারতীয় গণমাধ্যম এটিকে দ্বিপাক্ষিক সম্পর্কের ইতিবাচক অগ্রগতি হিসেবে দেখছে, যা দুই দেশের জনগণের জন্য উপকারী হবে।",
+    "summaryEn": "Talks between Dhaka and Delhi have begun to renew the Ganges-Padma water sharing treaty. Indian media portrays this as a positive step in bilateral relations, beneficial for people of both countries.",
+    "keyPointsBn": [
+      "গঙ্গা-পদ্মা পানি বণ্টন চুক্তি নবায়নে আলোচনা শুরু",
+      "ভারতীয় গণমাধ্যম এটিকে ইতিবাচক কূটনৈতিক অগ্রগতি হিসেবে দেখছে",
+      "দুই দেশের জনগণের স্বার্থে সহযোগিতা বাড়ানোর সম্ভাবনা"
+    ],
+    "keyPointsEn": [
+      "Talks begin to renew Ganges-Padma water sharing treaty",
+      "Indian media sees it as positive diplomatic progress",
+      "Potential for increased cooperation benefiting both nations"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যম আলোচনাকে ইতিবাচক অগ্রগতি হিসেবে চিহ্নিত করেছে, যা দ্বিপাক্ষিক সম্পর্ক উন্নয়নের ইঙ্গিত দেয়।",
+    "sentimentReasonEn": "Indian media highlighted the talks as positive progress, signaling improved bilateral relations.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/west-bengal/dhaka-delhi-water-sharing-talks",
+      "originalHeadline": "পদ্মা নদীর পানি বণ্টন চুক্তি নবায়ন নিয়ে ঢাকা-দিল্লি আলোচনা শুরু",
+      "scannedAt": "2026-09-11T13:00:00+05:30"
+    },
+    "publishedAt": "2026-09-11T13:00:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://www.anandabazar.com/images/water-sharing-talks.jpg",
+    "tags": [
+      "Water Sharing",
+      "Ganges",
+      "Padma",
+      "Bangladesh",
+      "Diplomacy"
+    ]
+  },
+  {
+    "id": "3",
+    "slug": "benapole-petrapole-trade-halt-traders-worried",
+    "title": "Import-export halted at Benapole-Petrapole port, traders worried",
+    "englishTitle": "Import-export halted at Benapole-Petrapole port, traders worried",
+    "banglaTitle": "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ, ব্যবসায়ীদের দুশ্চিন্তা",
+    "summaryBn": "বেনাপোল-পেট্রাপোল স্থলবন্দরে আমদানি-রপ্তানি বন্ধ হয়ে যাওয়ায় ব্যবসায়ীরা দুশ্চিন্তায় পড়েছেন। ভারতীয় গণমাধ্যম এটিকে সীমান্ত বাণিজ্যের একটি বড় ধাক্কা হিসেবে উপস্থাপন করেছে এবং এর প্রভাব নিয়ে উদ্বেগ প্রকাশ করেছে।",
+    "summaryEn": "Import-export activities at Benapole-Petrapole land port have halted, causing worry among traders. Indian media presented this as a major setback to cross-border trade and expressed concern over its impact.",
+    "keyPointsBn": [
+      "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ",
+      "ব্যবসায়ীদের মধ্যে দুশ্চিন্তা ও আর্থিক ক্ষতির আশঙ্কা",
+      "ভারতীয় গণমাধ্যম এটিকে সীমান্ত বাণিজ্যের বড় ধাক্কা হিসেবে দেখছে"
+    ],
+    "keyPointsEn": [
+      "Import-export halted at Benapole-Petrapole port",
+      "Traders worried about financial losses",
+      "Indian media sees it as a major blow to cross-border trade"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যম বাণিজ্য বন্ধকে নেতিবাচকভাবে উপস্থাপন করেছে, ব্যবসায়ীদের দুশ্চিন্তা ও অর্থনৈতিক ক্ষতির দিক তুলে ধরেছে।",
+    "sentimentReasonEn": "Indian media framed the trade halt negatively, highlighting traders' anxiety and economic losses.",
+    "source": {
+      "name": "Aaj Tak",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://www.aajtak.in/india/news/benapole-petrapole-trade-halt",
+      "originalHeadline": "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ, ব্যবসায়ীদের দুশ্চিন্তা",
+      "scannedAt": "2026-09-11T11:00:00+05:30"
+    },
+    "publishedAt": "2026-09-11T11:00:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://www.aajtak.in/images/benapole-trade-halt.jpg",
+    "tags": [
+      "Benapole",
+      "Petrapole",
+      "Trade",
+      "Bangladesh",
+      "Border"
+    ]
+  },
+  {
+    "id": "4",
+    "slug": "bsf-high-alert-bangladesh-border-infiltration",
+    "title": "BSF on high alert along Bangladesh border, special operation to check infiltration",
+    "englishTitle": "BSF on high alert along Bangladesh border, special operation to check infiltration",
+    "banglaTitle": "বাংলাদেশ সীমান্তে বিএসএফের সতর্কতা জারি, অনুপ্রবেশ রোধে বিশেষ অভিযান",
+    "summaryBn": "বাংলাদেশ সীমান্তে বিএসএফ উচ্চ সতর্কতা জারি করেছে এবং অনুপ্রবেশ রোধে বিশেষ অভিযান শুরু করেছে। ভারতীয় গণমাধ্যম এটিকে নিরাপত্তা ব্যবস্থা হিসেবে নিরপেক্ষভাবে উপস্থাপন করেছে, তবে সীমান্তে উত্তেজনার ইঙ্গিত রয়েছে।",
+    "summaryEn": "BSF has issued a high alert along the Bangladesh border and launched a special operation to check infiltration. Indian media presented this neutrally as a security measure, though it hints at border tensions.",
+    "keyPointsBn": [
+      "বাংলাদেশ সীমান্তে বিএসএফের উচ্চ সতর্কতা জারি",
+      "অনুপ্রবেশ রোধে বিশেষ অভিযান শুরু",
+      "ভারতীয় গণমাধ্যম এটিকে নিরাপত্তা ব্যবস্থা হিসেবে দেখছে"
+    ],
+    "keyPointsEn": [
+      "BSF issues high alert along Bangladesh border",
+      "Special operation launched to check infiltration",
+      "Indian media views it as a security measure"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যম নিরপেক্ষভাবে নিরাপত্তা ব্যবস্থার খবর দিয়েছে, কোনো পক্ষকে দোষারোপ না করে সীমান্ত সুরক্ষার প্রয়োজনীয়তার উপর জোর দিয়েছে।",
+    "sentimentReasonEn": "Indian media reported neutrally on the security measure, emphasizing border protection without blaming any side.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/india/bsf-alert-bangladesh-border",
+      "originalHeadline": "BSF on high alert along Bangladesh border, special operation to check infiltration",
+      "scannedAt": "2026-09-11T09:00:00+05:30"
+    },
+    "publishedAt": "2026-09-11T09:00:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://timesofindia.indiatimes.com/images/bsf-border-alert.jpg",
+    "tags": [
+      "BSF",
+      "Border Security",
+      "Bangladesh",
+      "Infiltration"
+    ]
+  },
+  {
+    "id": "5",
+    "slug": "bangladesh-india-power-trade-increase",
+    "title": "Bangladesh to import more power from India to meet summer demand",
+    "englishTitle": "Bangladesh to import more power from India to meet summer demand",
+    "banglaTitle": "গ্রীষ্মের চাহিদা মেটাতে ভারত থেকে বেশি বিদ্যুৎ আমদানি করবে বাংলাদেশ",
+    "summaryBn": "গ্রীষ্মের চাহিদা মেটাতে বাংলাদেশ ভারত থেকে আরও বিদ্যুৎ আমদানি করার পরিকল্পনা করেছে। ভারতীয় গণমাধ্যম এটিকে দ্বিপাক্ষিক শক্তি সহযোগিতার ইতিবাচক উদাহরণ হিসেবে উপস্থাপন করেছে।",
+    "summaryEn": "Bangladesh plans to import more power from India to meet summer demand. Indian media presented this as a positive example of bilateral energy cooperation.",
+    "keyPointsBn": [
+      "গ্রীষ্মের চাহিদা মেটাতে ভারত থেকে বেশি বিদ্যুৎ আমদানির পরিকল্পনা",
+      "ভারতীয় গণমাধ্যম এটিকে ইতিবাচক শক্তি সহযোগিতা হিসেবে দেখছে",
+      "দ্বিপাক্ষিক সম্পর্ক জোরদারে সহায়ক"
+    ],
+    "keyPointsEn": [
+      "Bangladesh to import more power from India for summer demand",
+      "Indian media sees it as positive energy cooperation",
+      "Helps strengthen bilateral ties"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "অর্থনীতি ও বিদ্যুৎ",
+    "categoryLabelEn": "Economy & Energy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যম বিদ্যুৎ আমদানিকে ইতিবাচক সহযোগিতা হিসেবে উপস্থাপন করেছে, যা দুই দেশের সম্পর্ক উন্নয়নে সহায়ক।",
+    "sentimentReasonEn": "Indian media framed the power import as positive cooperation, beneficial for bilateral relations.",
+    "source": {
+      "name": "The Hindu BusinessLine",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindubusinessline.com/news/bangladesh-power-import-india",
+      "originalHeadline": "Bangladesh to import more power from India to meet summer demand",
+      "scannedAt": "2026-09-11T08:00:00+05:30"
+    },
+    "publishedAt": "2026-09-11T08:00:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://www.thehindubusinessline.com/images/power-import.jpg",
+    "tags": [
+      "Power",
+      "Energy",
+      "Bangladesh",
+      "India",
+      "Trade"
+    ]
+  },
+  {
+    "id": "6",
+    "slug": "india-bangladesh-cricket-series-2027",
+    "title": "India to tour Bangladesh for limited-overs series in 2027",
+    "englishTitle": "India to tour Bangladesh for limited-overs series in 2027",
+    "banglaTitle": "২০২৭ সালে সীমিত ওভারের সিরিজ খেলতে বাংলাদেশ সফর করবে ভারত",
+    "summaryBn": "২০২৭ সালে সীমিত ওভারের সিরিজ খেলতে ভারত বাংলাদেশ সফর করবে বলে ঘোষণা দেওয়া হয়েছে। ভারতীয় গণমাধ্যম এটিকে ক্রীড়া কূটনীতির ইতিবাচক উদাহরণ হিসেবে উপস্থাপন করেছে।",
+    "summaryEn": "India will tour Bangladesh for a limited-overs series in 2027, it was announced. Indian media presented this as a positive example of sports diplomacy.",
+    "keyPointsBn": [
+      "২০২৭ সালে বাংলাদেশ সফর করবে ভারতীয় ক্রিকেট দল",
+      "সীমিত ওভারের সিরিজ অনুষ্ঠিত হবে",
+      "ভারতীয় গণমাধ্যম এটিকে ক্রীড়া কূটনীতি হিসেবে দেখছে"
+    ],
+    "keyPointsEn": [
+      "Indian cricket team to tour Bangladesh in 2027",
+      "Limited-overs series to be held",
+      "Indian media views it as sports diplomacy"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
+    "categoryLabelEn": "Sports & Cricket",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যম ক্রিকেট সিরিজকে ইতিবাচক ক্রীড়া কূটনীতি হিসেবে উপস্থাপন করেছে, যা দুই দেশের জনগণের মধ্যে সম্পর্ক উন্নয়নে সহায়ক।",
+    "sentimentReasonEn": "Indian media framed the cricket series as positive sports diplomacy, helping improve people-to-people ties.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/sports/cricket/india-tour-bangladesh-2027",
+      "originalHeadline": "India to tour Bangladesh for limited-overs series in 2027",
+      "scannedAt": "2026-09-11T07:00:00+05:30"
+    },
+    "publishedAt": "2026-09-11T07:00:00+05:30",
+    "readTimeBn": "১ মিনিট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://timesofindia.indiatimes.com/images/cricket-series.jpg",
+    "tags": [
+      "Cricket",
+      "Bangladesh",
+      "India",
+      "Sports"
+    ]
+  },
+  {
+    "id": "7",
     "slug": "no-dhaka-representation-brics-summit",
     "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
     "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
@@ -219,10 +438,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bangladesh",
       "Diplomacy",
       "Tarique Rahman"
-    ]
+    ],
+    "isLeadStory": false
   },
   {
-    "id": "3",
+    "id": "8",
     "slug": "saima-wazed-resigns-who-post",
     "title": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
     "englishTitle": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
@@ -262,10 +482,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Saima Wazed",
       "Sheikh Hasina",
       "Bangladesh"
-    ]
+    ],
+    "isLeadStory": false
   },
   {
-    "id": "4",
+    "id": "9",
     "slug": "bangladesh-durga-puja-hindu-safety",
     "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
     "englishTitle": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
@@ -305,10 +526,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Hindu Minority",
       "Bangladesh",
       "Culture"
-    ]
+    ],
+    "isLeadStory": false
   },
   {
-    "id": "5",
+    "id": "10",
     "slug": "india-bangladesh-passenger-train-services-resumption",
     "title": "India, Bangladesh likely to discuss resumption of passenger train services",
     "englishTitle": "India, Bangladesh likely to discuss resumption of passenger train services",
@@ -348,10 +570,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Train Services",
       "Connectivity",
       "Trade"
-    ]
+    ],
+    "isLeadStory": false
   },
   {
-    "id": "6",
+    "id": "11",
     "slug": "family-court-relief-man-pushed-into-bangladesh",
     "title": "Family gets court relief, but how to find 43-year-old pushed into Bangladesh?",
     "englishTitle": "Family gets court relief, but how to find 43-year-old pushed into Bangladesh?",
@@ -391,10 +614,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Human Rights",
       "India-Bangladesh",
       "BSF"
-    ]
+    ],
+    "isLeadStory": false
   },
   {
-    "id": "7",
+    "id": "12",
     "slug": "india-bangladesh-passenger-train-services-resumption-indian-express",
     "title": "India, Bangladesh likely to discuss resumption of passenger train services",
     "banglaTitle": "মৈত্রী, বন্ধন ও মিতালী এক্সপ্রেস ট্রেন পরিষেবা পুনরায় চালু নিয়ে ভারত-বাংলাদেশ আলোচনা শীঘ্রই",
@@ -440,7 +664,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "8",
+    "id": "13",
     "slug": "amar-ujala-hindu-journalist-death-dhaka-samakal-investigation",
     "title": "बांग्लादेश में हिंदू पत्रकार की संदिग्ध मौत: दफ्तर में फंदे से लटका मिला शव, अवामी लीग ने क्यों उठाए सवाल?",
     "englishTitle": "Death of Hindu Journalist in Bangladesh: Body Found Inside Newsroom, Calls for Transparent Investigation",
@@ -486,7 +710,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "9",
+    "id": "14",
     "slug": "sheikh-hasina-daughter-saima-wazed-who-regional-director-resignation",
     "title": "Sheikh Hasina’s daughter resigns as WHO regional director amid fraud allegations",
     "banglaTitle": "বিশ্ব স্বাস্থ্য সংস্থার আঞ্চলিক পরিচালকের পদ থেকে পদত্যাগ করলেন শেখ হাসিনার মেয়ে সায়মা ওয়াজেদ",
@@ -530,7 +754,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "10",
+    "id": "15",
     "slug": "durga-puja-minority-security-dhaka-indian-express",
     "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
     "banglaTitle": "আসন্ন দুর্গাপূজা উপলক্ষে সংখ্যালঘু হিন্দু সম্প্রদায়ের নিরাপত্তা ও সর্বাত্মক সহায়তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
@@ -574,7 +798,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "11",
+    "id": "16",
     "slug": "sangbad-pratidin-chinmoy-das-kolkata-reverberations",
     "title": "‘হিন্দু বলে আমার মাকেও পালিয়ে আসতে হয়েছিল’, চিন্ময় প্রভুর চোখের জল দেখে অতীত স্মরণ শুভেন্দুর",
     "englishTitle": "Kolkata Political Reactions on Bangladesh Situation: Opposition Leader Recalls Past Hardships",
@@ -618,7 +842,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "12",
+    "id": "17",
     "slug": "petrapole-benapole-trade-volume-hilsa-garment-logistics-abp",
     "title": "পেট্রাপোল সীমান্তে রেকর্ড বাণিজ্য: চব্বিশ ঘণ্টা পণ্য চলাচলে স্বস্তি দুই পারের ব্যবসায়ীদের",
     "englishTitle": "Record Cross-Border Trade at Petrapole: 24-Hour Cargo Movement Relieves Traders on Both Sides",
@@ -663,7 +887,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "13",
+    "id": "18",
     "slug": "dainik-jagran-border-security-bsf-smuggling-curfew",
     "title": "भारत-बांग्लादेश सीमा पर बीएसएफ का हाई अलर्ट: मेघालय और कूचबिहार में ड्रोन से पैनी निगरानी",
     "englishTitle": "BSF on High Alert Along Indo-Bangla Border: Drone Surveillance Intensified in Meghalaya & Cooch Behar",
@@ -709,7 +933,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "14",
+    "id": "19",
     "slug": "india-bangladesh-teesta-water-treaty-delhi-diplomatic-reassessment",
     "title": "Delhi Reviewing Technical Parameters on Teesta River Sharing Framework Ahead of Joint River Commission Talks",
     "banglaTitle": "যৌথ নদী কমিশনের বৈঠকের আগে তিস্তার পানি বণ্টন কাঠামোর কারিগরি দিক পর্যালোচনা করছে দিল্লি",
@@ -753,7 +977,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "15",
+    "id": "20",
     "slug": "ei-samay-transnational-cyber-scam-chittagong-foreigners-arrested",
     "title": "স্ক্যাম-চক্রে বাংলাদেশে শতাধিক বিদেশি ধৃত",
     "englishTitle": "Over 100 Foreign Nationals Arrested in Bangladesh for Transnational Cyber Scam & Fraud Rings",
@@ -798,7 +1022,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "16",
+    "id": "21",
     "slug": "ei-samay-medical-tourism-kolkata-hospitals-bangladesh-patients",
     "title": "বাংলাদেশি রোগীদের ভিসা জট: চরম আর্থিক ধাক্কায় কলকাতার বেসরকারি হাসপাতাল ও নার্সিংহোম",
     "englishTitle": "Bangladesh Patient Visa Bottlenecks: Kolkata Private Hospitals Suffer Severe Financial Hit",
@@ -842,7 +1066,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "17",
+    "id": "22",
     "slug": "business-standard-adani-power-godda-electricity-dhaka-dues",
     "title": "Adani Power and Bangladesh Power Development Board Agree on Streamlined Tariff Settlement Mechanism",
     "banglaTitle": "বিদ্যুৎ বিল নিষ্পত্তির বিষয়ে আদানি পাওয়ার ও বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ডের সমঝোতা",
@@ -886,7 +1110,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "18",
+    "id": "23",
     "slug": "hilsa-shortage-india-gujarat-odisha-sea-fish-exports-dhaka-ei-samay",
     "title": "ইলিশ খেতে বাংলাদেশের ভরসা ভারত, মোদীর রাজ্য ও ওড়িশা থেকে সামুদ্রিক মাছের রফতানি বৃদ্ধি",
     "englishTitle": "Hilsa Shortage: Sea Fish Exports from Gujarat & Odisha Surge to Meet Dhaka Market Demand",
@@ -932,7 +1156,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "19",
+    "id": "24",
     "slug": "tech-glitch-adani-power-unit-godda-bangladesh-grid-toi",
     "title": "Tech glitch at Adani power unit briefly hits Bangladesh grid, supply restored swiftly",
     "banglaTitle": "আদানি পাওয়ার ইউনিটে সাময়িক কারিগরি ত্রুটি: দ্রুত মেরামতের পর বাংলাদেশ গ্রিডে বিদ্যুৎ সঞ্চালন স্বাভাবিক",
@@ -978,7 +1202,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "20",
+    "id": "25",
     "slug": "sundarbans-royal-bengal-tiger-conservation-dhaka-delhi-joint-taskforce-ei-samay",
     "title": "সুন্দরবন ও বাঘ সংরক্ষণে দিল্লি-ঢাকার যৌথ পদক্ষেপ: জীববৈচিত্র্য রক্ষায় একযোগে কাজ করবে দুই দেশ",
     "englishTitle": "Dhaka-Delhi Joint Taskforce Formulates Unified Blueprint for Sundarbans Biodiversity & Tiger Protection",
@@ -1024,51 +1248,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "21",
-    "slug": "indian-high-commission-dhaka-visa-processing-expedited-medical-students-the-hindu",
-    "title": "Indian High Commission in Dhaka expands emergency consular slots to expedite student and medical visas",
-    "banglaTitle": "ঢাকায় ভারতীয় হাইকমিশনে শিক্ষার্থী ও জরুরি চিকিৎসা ভিসার জন্য বিশেষ কাউন্টার চালু",
-    "summaryBn": "দ্য হিন্দু দিল্লি ব্যুরোর খবরে জানা গেছে, ঢাকায় ভারতীয় হাইকমিশন ও দেশের অন্যান্য সহকারী হাইকমিশনগুলোতে (চট্টগ্রাম, রাজশাহী, সিলেট ও খুলনা) উচ্চশিক্ষায় ভর্তি হওয়া বাংলাদেশি শিক্ষার্থী ও গুরুতর রোগীদের জন্য বিশেষ জরুরি ভিসা অ্যাপয়েন্টমেন্ট স্লট বৃদ্ধি করেছে। কনস্যুলার প্রক্রিয়ায় গতি ফেরাতে অতিরিক্ত কর্মকর্তা নিয়োজিত করা হয়েছে।",
-    "summaryEn": "The Hindu reports that the High Commission of India in Dhaka and its assistant high commissions across Bangladesh have expanded prioritized consular appointment quotas specifically for Bangladeshi students pursuing admissions in Indian universities and emergency medical patients seeking urgent treatments in Indian hospitals.",
-    "keyPointsBn": [
-      "মেডিক্যাল ও স্টুডেন্ট ক্যাটাগরিতে প্রতিদিন আবেদনের অনুমোদন সংখ্যা দ্বিগুণ করার সিদ্ধান্ত।",
-      "ঢাকায় আইভিএসি (IVAC) যমুনা ফিউচার পার্ক সেন্টারে বিশেষ সাপোর্ট ডেস্ক স্থাপন।",
-      "কূটনৈতিক চ্যানেলে নিয়মিত আলোচনার মাধ্যমে পর্যায়ক্রমে পর্যটন ভিসাও স্বাভাবিক করার পরিকল্পনা।"
-    ],
-    "keyPointsEn": [
-      "Dedicated fast-track processing quotas doubled for verified student enrollment and acute medical referrals.",
-      "Specialized verification helpdesks deployed at IVAC Jamuna Future Park, Dhaka.",
-      "Bilateral diplomatic consultations actively exploring phased restoration of routine tourist travel categories."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও কনস্যুলার সেবা",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভিসা প্রক্রিয়া সহজীকরণ, শিক্ষার্থী ও রোগীদের মানবিক সহায়তা এবং দুই দেশের জনগণের যোগাযোগ বৃদ্ধির ইতিবাচক বার্তা।",
-    "sentimentReasonEn": "Emphasizes humanitarian consular relief, supporting student mobility, and alleviating medical travel bottlenecks.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/",
-      "originalHeadline": "Indian High Commission in Dhaka expands emergency consular slots to expedite student and medical visas",
-      "scannedAt": "48 mins ago"
-    },
-    "publishedAt": "2026-09-12T10:20:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "The Hindu",
-      "Indian Visa",
-      "Dhaka High Commission",
-      "Medical Visa",
-      "Student Exchange"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "22",
+    "id": "26",
     "slug": "chinmoy-krishna-das-parole-funeral-court-ruling-toi",
     "title": "Hindu monk Chinmoy Krishna Das, in Bangladesh jail, gets 5-hour parole to attend mother's funeral",
     "banglaTitle": "মায়ের শেষকৃত্যে অংশ নিতে কারাবন্দি সন্ন্যাসী চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার প্যারোল দিল আদালত",
@@ -1113,7 +1293,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "23",
+    "id": "27",
     "slug": "indo-bangla-joint-river-commission-seasonal-monsoon-data-hindustan-times",
     "title": "Indo-Bangla Joint River Commission hydrologists complete seasonal monsoon data exchange session",
     "banglaTitle": "ভারত-বাংলাদেশ যৌথ নদী কমিশনের প্রকৌশলীদের মৌসুমি হাইড্রোলজিক্যাল তথ্য বিনিময় সম্পন্ন",
@@ -1157,7 +1337,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "24",
+    "id": "28",
     "slug": "digital-cargo-tracking-petrapole-benapole-customs-sangbad-pratidin",
     "title": "পেট্রাপোল-বেনাপোল বন্দরে ডিজিটাল কার্গো ট্র্যাকিং চালুর পর পণ্য খালাসে সময় কমল ৬০ শতাংশ",
     "englishTitle": "Digital Cargo Tracking at Petrapole-Benapole Slashes Customs Clearance Time by 60%",
@@ -1199,144 +1379,6 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Digital Port",
       "Border Trade",
       "Logistics"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "25",
-    "slug": "india-bangladesh-essential-food-commodities-export-quota-dainik-jagran",
-    "title": "ढाका और दिल्ली के बीच द्विपक्षीय व्यापार वार्ता: आवश्यक खाद्य वस्तुओं के निर्यात कोटा पर सहमति",
-    "englishTitle": "India & Bangladesh Agree on Essential Food Commodities Export Quota Framework to Stabilize Prices",
-    "banglaTitle": "ঢাকা ও দিল্লির মধ্যে দ্বিপাক্ষিক বাণিজ্য আলোচনা: নিত্যপ্রয়োজনীয় খাদ্যপণ্যের রফতানি কোটায় ঐকমত্য",
-    "summaryBn": "দৈনিক জাগরণের দিল্লি ব্যুরো জানায়, গম, চাল, চিনি, পেঁয়াজ ও ডালের মতো নিত্যপ্রয়োজনীয় খাদ্যদ্রব্যের বার্ষিক আমদানি নিশ্চিত করতে ভারত ও বাংলাদেশের বাণিজ্য সচিব পর্যায়ের বৈঠকে একটি স্থায়ী বার্ষিক কোটা কাঠামোর বিষয়ে নীতিগত সমঝোতা হয়েছে। এর ফলে ভারতের অভ্যন্তরীণ বাজারে কোনো রফতানি নিষেধাজ্ঞা জারি হলেও পূর্বনির্ধারিত কোটার অধীনে বাংলাদেশে সরবরাহ অব্যাহত থাকবে।",
-    "summaryEn": "Dainik Jagran reports that commerce ministry delegations from New Delhi and Dhaka have reached an understanding on an annual institutionalized export quota framework for essential food staples including wheat, non-basmati rice, sugar, onions, and pulses. The mechanism ensures steady supplies to Bangladesh insulated from temporary domestic export bans.",
-    "keyPointsBn": [
-      "বাংলাদেশ সরকারের চাহিদার ভিত্তিতে নিত্যপণ্যের বার্ষিক আমদানির পূর্বাভাস তৈরি করা হবে।",
-      "ভারতের অভ্যন্তরীণ নীতি পরিবর্তন সত্ত্বেও কোটার আওতাধীন পণ্য নিয়মিত ছাড়পত্র পাবে।",
-      "ঢাকার বাজারে খাদ্য মূল্যস্ফীতি নিয়ন্ত্রণ ও সরবরাহ স্থিতিশীল রাখতে এই চুক্তি সহায়ক হবে।"
-    ],
-    "keyPointsEn": [
-      "Annual staple demand forecasts submitted by Dhaka commerce authorities to secure guaranteed export quotas.",
-      "Exemption provisions insulate allocated quotas from sudden domestic market export restrictions in India.",
-      "Mechanism directly supports price stabilization and food security across consumer markets in Bangladesh."
-    ],
-    "category": "economy",
-    "categoryLabelBn": "অর্থনীতি ও বাণিজ্য চুক্তি",
-    "categoryLabelEn": "Economy & Energy",
-    "sentiment": "positive",
-    "sentimentReasonBn": "খাদ্য নিরাপত্তা নিশ্চিতকরণ, দীর্ঘমেয়াদী কোটা সমঝোতা এবং দ্বিপাক্ষিক অর্থনৈতিক সহযোগিতার ইতিবাচক দিক।",
-    "sentimentReasonEn": "Demonstrates constructive bilateral trade policy, safeguarding regional food security and stabilizing market supply lines.",
-    "source": {
-      "name": "Dainik Jagran",
-      "bureau": "Delhi",
-      "language": "Hindi",
-      "originalUrl": "https://www.jagran.com/business/economy-india-bangladesh-bilateral-trade-talks-essential-food-commodities-quota-framework-23849102.html",
-      "originalHeadline": "ढाका और दिल्ली के बीच द्विपक्षीय व्यापार वार्ता: आवश्यक खाद्य वस्तुओं के निर्यात कोटा पर सहमति",
-      "scannedAt": "2.2 hours ago"
-    },
-    "publishedAt": "2026-09-12T03:30:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Dainik Jagran",
-      "Food Security",
-      "Trade Quota",
-      "Onion Export",
-      "Dhaka Market",
-      "Commerce"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "26",
-    "slug": "times-of-india-adani-power-transmission-restored-bangladesh-grid",
-    "title": "Technical Glitch at Adani Power Unit Resolved; Full 1,496 MW Electricity Flow Restored to Bangladesh Grid",
-    "englishTitle": "Technical Glitch at Adani Power Unit Resolved; Full 1,496 MW Electricity Flow Restored to Bangladesh Grid",
-    "banglaTitle": "আদানি বিদ্যুৎ কেন্দ্রে কারিগরি ত্রুটি দ্রুত সমাধান; বাংলাদেশ জাতীয় গ্রিডে পূর্ণ বিদ্যুৎ সরবরাহ স্বাভাবিক",
-    "summaryBn": "দ্য টাইমস অব ইন্ডিয়ার দিল্লি ব্যুরো জানায়, ভারতের ঝাড়খণ্ডের গোড্ডায় অবস্থিত আদani পাওয়ারের আল্ট্রা-সুপারক্রিটিক্যাল বিদ্যুৎ কেন্দ্রে দেখা দেওয়া কারিগরি ত্রুটি রেকর্ড সময়ে মেরামত করেছেন প্রকৌশলীরা। এর ফলে বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ড (বিপিডিবি)-এর জাতীয় গ্রিডে ডেডিকেটেড ৪০০ কেভি সঞ্চালন লাইনের মাধ্যমে পূর্ণ ১,৪৯৬ মেগাওয়াট বিদ্যুৎ সরবরাহ পুনরায় স্বাভাবিক ধারায় ফিরে এসেছে।",
-    "summaryEn": "The Times of India reports that technical repairs at Adani Power's Godda ultra-supercritical thermal power station in Jharkhand have been swiftly completed by engineering teams. Cross-border high-voltage transmission lines are now supplying the full dedicated 1,496 MW electricity capacity directly to the Bangladesh Power Development Board (BPDB) national grid.",
-    "keyPointsBn": [
-      "গোড্ডা প্ল্যান্ট থেকে ডেডিকেটেড ৪০০ কেভি ডাবল-সার্কিট সঞ্চালন লাইনের মাধ্যমে বিদ্যুৎ প্রবাহ স্বাভাবিক।",
-      "বিপিডিবি ও ভারতীয় গ্রিড প্রকৌশলীদের সার্বক্ষণিক সমন্বয়ে দ্রুত সমাধান নিশ্চিত করা হয়েছে।",
-      "বাংলাদেশের উত্তরাঞ্চলীয় ও শিল্পাঞ্চলগুলোতে নিরবচ্ছিন্ন বিদ্যুৎ সরবরাহ নিশ্চিত হচ্ছে।"
-    ],
-    "keyPointsEn": [
-      "Dedicated 400 kV double-circuit cross-border transmission link operating at full rated capacity.",
-      "Close synchronization between BPDB and Indian grid engineers enabled rapid technical turnaround.",
-      "Provides stable base-load electricity across northern and central industrial belts in Bangladesh."
-    ],
-    "category": "economy",
-    "categoryLabelBn": "অর্থনীতি ও বিদ্যুৎ খাত",
-    "categoryLabelEn": "Economy & Energy",
-    "sentiment": "positive",
-    "sentimentReasonBn": "বিদ্যুৎ সরবরাহ দ্রুত স্বাভাবিক হওয়া এবং আন্তঃসীমান্ত জ্বালানি সমন্বয়ের ইতিবাচক দিক।",
-    "sentimentReasonEn": "Highlights prompt cross-border technical coordination and restoration of stable base-load energy supply.",
-    "source": {
-      "name": "The Times of India",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
-      "originalHeadline": "Tech glitch at Adani power unit hits Bangladesh grid",
-      "scannedAt": "12 mins ago"
-    },
-    "publishedAt": "2026-09-12T11:15:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Times of India",
-      "Adani Power",
-      "Godda Plant",
-      "BPDB",
-      "Energy Transmission",
-      "Dhaka Grid"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "27",
-    "slug": "the-hindu-indian-high-commission-dhaka-visa-expansion-students-medical",
-    "title": "Indian High Commission in Dhaka Scales Up Dedicated Consular Windows for Student & Medical Visas",
-    "englishTitle": "Indian High Commission in Dhaka Scales Up Dedicated Consular Windows for Student & Medical Visas",
-    "banglaTitle": "ঢাকায় ভারতীয় হাইকমিশনে বাংলাদেশি শিক্ষার্থী ও জটিল রোগীদের জন্য বিশেষ ভিসা প্রসেসিং সেবা বৃদ্ধি",
-    "summaryBn": "দ্য হিন্দু দিল্লি ও ঢাকা ব্যুরোর প্রতিবেদন অনুযায়ী, বাংলাদেশি শিক্ষার্থী যাদের ভারতীয় বিশ্ববিদ্যালয়ে ভর্তির সময় ঘনিয়ে এসেছে এবং যারা জরুরি চিকিৎসার জন্য ভারতে যেতে চান, তাদের জন্য ঢাকার ভারতীয় ভিসা আবেদন কেন্দ্রে (IVAC) অগ্রাধিকারমূলক অ্যাপয়েন্টমেন্টের সংখ্যা দ্বিগুণ করা হয়েছে। উচ্চশিক্ষা ও জরুরি স্বাস্থ্যসেবায় যাতে কোনো বিলম্ব না ঘটে সেজন্য এই বিশেষ পদক্ষেপ নেওয়া হয়েছে।",
-    "summaryEn": "The Hindu reports that the High Commission of India in Dhaka has augmented specialized consular windows and doubled daily expedited appointment slots at the Indian Visa Application Centre (IVAC) for Bangladeshi students pursuing admissions across Indian universities and patients requiring critical tertiary medical treatment.",
-    "keyPointsBn": [
-      "ভর্তির শেষ সময় বিবেচনায় শিক্ষার্থীদের জন্য আলাদা ভেরিফিকেশন ডেস্ক চালু।",
-      "ভারতে ক্যান্সারের চিকিৎসা ও অঙ্গ প্রতিস্থাপনের জটিল রোগীদের জন্য জরুরি মেডিকেল ভিসা অগ্রাধিকার।",
-      "উভয় দেশের সিভিল সোসাইটি ও একাডেমিক পরিষদ এই জনবান্ধব পদক্ষেপকে স্বাগত জানিয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Dedicated verification counters launched to prevent enrollment disruptions for semester intakes.",
-      "Emergency medical visa requests for critical tertiary and oncological care prioritized.",
-      "Educational institutions and medical hospitality networks in Kolkata and Chennai commend the initiative."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও ভিসা সেবা",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "জনসাধারণের জরুরি প্রয়োজন মেটানো, মানবিক স্বাস্থ্যসেবা এবং শিক্ষা খাতে দ্বিপাক্ষিক সহযোগিতা বৃদ্ধির ইতিবাচক সংবাদ।",
-    "sentimentReasonEn": "Reflects proactive consular diplomacy easing civilian mobility, humanitarian healthcare access, and student connectivity.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/",
-      "originalHeadline": "Indian High Commission in Dhaka scales up priority visa processing for students and medical cases",
-      "scannedAt": "25 mins ago"
-    },
-    "publishedAt": "2026-09-12T10:45:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "The Hindu",
-      "Indian Visa",
-      "IVAC Dhaka",
-      "Student Visa",
-      "Medical Tourism",
-      "MEA Delhi"
     ],
     "isLeadStory": false
   }
