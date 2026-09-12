@@ -56,7 +56,7 @@ export default function SentimentTrackerBar({
             <span
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
-                fontSize: lang === 'bn' ? '0.9rem' : '0.82rem',
+                fontSize: '0.82rem',
                 fontWeight: 800,
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.06em',
@@ -64,20 +64,6 @@ export default function SentimentTrackerBar({
               }}
             >
               {t.liveScanner}
-            </span>
-            <span
-              className={lang === 'bn' ? 'font-bengali' : ''}
-              style={{
-                fontSize: '0.72rem',
-                backgroundColor: 'var(--bg-secondary)',
-                color: 'var(--text-muted)',
-                padding: '0.15rem 0.5rem',
-                borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-primary)',
-                fontWeight: 600,
-              }}
-            >
-              {t.delhiKolkataBureaus}
             </span>
           </div>
 
