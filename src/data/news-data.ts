@@ -68,20 +68,20 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  totalScanned24h: 184,
-  bangladeshMatches: 38,
+  totalScanned24h: 189,
+  bangladeshMatches: 39,
   sentimentDistribution: {
     positive: 12,
-    neutral: 16,
+    neutral: 17,
     negative: 10,
   },
   bureauDistribution: {
     delhi: 20,
-    kolkata: 18,
+    kolkata: 19,
   },
   languageDistribution: {
     english: 18,
-    bengali: 12,
+    bengali: 13,
     hindi: 8,
   }
 };
@@ -424,6 +424,44 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     readTimeEn: '3 min read',
     imageUrl: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80',
     tags: ['Adani Power', 'BPDB', 'Energy Trade', 'Electricity Grid', 'Business Standard'],
+  },
+  {
+    id: '9',
+    slug: 'ei-samay-transnational-cyber-scam-chittagong-foreigners-arrested',
+    title: 'স্ক্যাম-চক্রে বাংলাদেশে শতাধিক বিদেশি ধৃত',
+    englishTitle: 'Over 100 Foreign Nationals Arrested in Bangladesh for Transnational Cyber Scam & Fraud Rings',
+    summaryBn: 'এই সময় অনলাইনের প্রতিবেদনে জানানো হয়েছে, হত্যা, আর্থিক প্রতারণা, নারী পাচার ও অনলাইন জুয়া চক্রে জড়িত থাকার অভিযোগে গত এক বছরে ৫৩ জন চিনা নাগরিকসহ অন্তত ১১৬ জন বিদেশিকে গ্রেপ্তার করেছে বাংলাদেশ পুলিশ। সম্প্রতি চট্টগ্রামের খুলশিতে একটি আন্তর্জাতিক সাইবার ল্যাবে অভিযান চালিয়ে চিন, পাকিস্তান, লাওস, নেপাল ও ভিয়েতনামের ৬৩ জন জালিয়াতি চক্রের সদস্যকে আটক করা হয়।',
+    summaryEn: 'Ei Samay reports that Bangladesh Police have cracked down on a major transnational cybercrime network, arresting over 116 foreign nationals across the past year—including 53 Chinese and several Pakistani citizens. A specialized raid in Chittagong’s Khulshi dismantled an international digital scam and cyber fraud hub with operations spanning Laos, Nepal, and Vietnam.',
+    keyPointsBn: [
+      'চট্টগ্রামের খুলশিতে সাইবার অপরাধের আন্তর্জাতিক আস্তানায় অভিযান চালিয়ে ৬৩ জন বিদেশিকে গ্রেপ্তার করা হয়েছে।',
+      'ধৃতদের মধ্যে চিন, পাকিস্তান, লাওস, নেপাল ও ভিয়েতনামের নাগরিক রয়েছে।',
+      'পারিবারিক ও বিয়ের ভিসায় নারী পাচার এবং ডিজিটাল আর্থিক প্রতারণার বিষয়ে তদন্ত আরও জোরদার করা হয়েছে।'
+    ],
+    keyPointsEn: [
+      'Police raided a high-tech international cyber scam den in Chittagong’s Khulshi, detaining 63 foreign operatives.',
+      'The transnational network involved citizens from China, Pakistan, Laos, Nepal, and Vietnam.',
+      'Intelligence agencies have escalated probes into digital fraud syndicates and human trafficking rings exploiting marriage visas.'
+    ],
+    category: 'border',
+    categoryLabelBn: 'আন্তর্জাতিক অপরাধ ও সাইবার নিরাপত্তা',
+    categoryLabelEn: 'Border & Cyber Security',
+    sentiment: 'neutral',
+    sentimentReasonBn: 'আন্তর্জাতিক সাইবার অপরাধ চক্রের বিস্তার এবং একই সাথে বাংলাদেশ পুলিশের সক্রিয় পদক্ষেপ ও কার্যকর আইনি অভিযানের বাস্তবনিষ্ঠ প্রতিবেদন।',
+    sentimentReasonEn: 'Covers transnational fraud syndicates operating across regional borders alongside active law enforcement crackdowns by Bangladesh Police.',
+    source: {
+      name: 'Ei Samay',
+      bureau: 'Kolkata',
+      language: 'Bengali',
+      originalUrl: 'https://eisamay.com/bangladesh-news/more-than-100-foreigners-arrested-for-scam-in-bangladesh/200541587.cms',
+      originalHeadline: 'স্ক্যাম-চক্রে বাংলাদেশে শতাধিক বিদেশি ধৃত',
+      scannedAt: '10 mins ago',
+    },
+    publishedAt: '2026-09-12T11:19:45Z',
+    readTimeBn: '৩ মিনিট পাঠ',
+    readTimeEn: '3 min read',
+    imageUrl: 'https://cf-images.assettype.com/eisamay%2F2026-08-26%2Fslc2ajr6%2F1786002572arrest-1.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true',
+    isTrending: true,
+    tags: ['Cyber Crime', 'Ei Samay', 'Chittagong', 'Khulshi', 'Transnational Fraud', 'Arrests'],
   }
 ];
 
