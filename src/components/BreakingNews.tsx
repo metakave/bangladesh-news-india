@@ -32,13 +32,16 @@ export default function BreakingNews() {
   const timeAgo = lang === 'bn' ? current.timeAgoBn : current.timeAgoEn;
 
   return (
-    <div style={{
-      backgroundColor: 'var(--brand-primary)',
-      color: '#ffffff',
-      padding: '0.45rem 0',
-      fontSize: '0.84rem',
-      fontWeight: 500,
-    }}>
+    <div
+      className="breaking-news-bar"
+      style={{
+        backgroundColor: 'var(--brand-primary)',
+        color: '#ffffff',
+        padding: '0.45rem 0',
+        fontSize: '0.84rem',
+        fontWeight: 500,
+      }}
+    >
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', overflow: 'hidden', flex: 1 }}>
           <div
@@ -126,6 +129,13 @@ export default function BreakingNews() {
           </button>
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .breaking-news-bar {
+            display: none !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
