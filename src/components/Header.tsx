@@ -195,8 +195,8 @@ export default function Header() {
             </button>
           </div>
 
-          {/* Mobile Right: Compact Brief Language Dropdown */}
-          <div className="mobile-lang-wrapper" style={{ display: 'none' }}>
+          {/* Mobile Right: Language Dropdown + Mobile Menu Button */}
+          <div className="mobile-right-wrapper" style={{ display: 'none', alignItems: 'center', gap: '0.45rem' }}>
             <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}>
               <Languages size={12} style={{ position: 'absolute', left: '0.42rem', pointerEvents: 'none', color: 'var(--brand-primary)' }} />
               <select
@@ -221,25 +221,34 @@ export default function Header() {
               </select>
               <ChevronDown size={11} style={{ position: 'absolute', right: '0.35rem', pointerEvents: 'none', color: 'var(--text-secondary)' }} />
             </div>
+
+            {/* Mobile Menu Trigger Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: 'var(--bg-secondary)',
+                border: '1px solid var(--border-primary)',
+                borderRadius: 'var(--radius-sm)',
+                padding: '0.22rem 0.4rem',
+                color: 'var(--text-primary)',
+                cursor: 'pointer',
+              }}
+              aria-label="Toggle Navigation Menu"
+            >
+              {mobileMenuOpen ? <X size={15} /> : <Menu size={15} />}
+            </button>
           </div>
         </div>
       </div>
 
       {/* Main Masthead Banner */}
       <div style={{ padding: '1.25rem 0 1rem 0', textAlign: 'center', position: 'relative' }}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          {/* Mobile Menu Trigger */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            style={{ color: 'var(--text-primary)', display: 'none' }}
-            className="mobile-hamburger"
-            aria-label="Toggle Navigation Menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-
+        <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           {/* Masthead Branding */}
-          <div style={{ flex: 1, textAlign: 'center' }}>
+          <div style={{ textAlign: 'center' }}>
             <Link href="/" style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none' }}>
               <div style={{
                 display: 'inline-flex',
@@ -285,8 +294,6 @@ export default function Header() {
               </div>
             </Link>
           </div>
-
-          <div style={{ width: '40px', display: 'none' }} className="mobile-spacer" />
         </div>
       </div>
 
@@ -474,12 +481,6 @@ export default function Header() {
 
       <style jsx>{`
         @media (max-width: 850px) {
-          .mobile-hamburger {
-            display: block !important;
-          }
-          .mobile-spacer {
-            display: block !important;
-          }
           .search-text, .saved-text {
             display: none !important;
           }
@@ -499,7 +500,7 @@ export default function Header() {
             width: 33% !important;
             max-width: 33% !important;
           }
-          .mobile-lang-wrapper {
+          .mobile-right-wrapper {
             display: flex !important;
             flex-shrink: 0 !important;
           }
