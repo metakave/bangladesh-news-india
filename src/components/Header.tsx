@@ -229,16 +229,15 @@ export default function Header() {
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: 'var(--bg-secondary)',
-                border: '1px solid var(--border-primary)',
-                borderRadius: 'var(--radius-sm)',
-                padding: '0.22rem 0.4rem',
+                backgroundColor: 'transparent',
+                border: 'none',
+                padding: '0.15rem 0.25rem',
                 color: 'var(--text-primary)',
                 cursor: 'pointer',
               }}
               aria-label="Toggle Navigation Menu"
             >
-              {mobileMenuOpen ? <X size={15} /> : <Menu size={15} />}
+              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
