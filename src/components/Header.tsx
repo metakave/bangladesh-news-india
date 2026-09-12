@@ -16,6 +16,7 @@ import {
   X,
   Globe,
   Languages,
+  ChevronDown,
 } from 'lucide-react';
 
 export default function Header() {
@@ -34,21 +35,46 @@ export default function Header() {
   return (
     <header style={{ backgroundColor: 'var(--bg-primary)', borderBottom: '2px solid var(--border-bold)' }}>
       {/* Top Utility Bar */}
-      <div style={{
+      <div className="top-utility-bar" style={{
         borderBottom: '1px solid var(--border-primary)',
         padding: '0.45rem 0',
         fontSize: '0.78rem',
         color: 'var(--text-secondary)'
       }}>
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          {/* Date */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+          {/* Desktop Left: Date */}
+          <div className="desktop-date-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
             <span style={{ fontWeight: 600 }} className={lang === 'bn' ? 'font-bengali' : ''}>{today}</span>
           </div>
 
-          {/* User Controls & Language Switcher */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-            {/* Language Switcher Button */}
+          {/* Mobile Left: Quick Search Button */}
+          <div className="mobile-search-wrapper" style={{ display: 'none' }}>
+            <button
+              onClick={openSearch}
+              aria-label="Open Search"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                color: 'var(--text-secondary)',
+                backgroundColor: 'var(--bg-secondary)',
+                padding: '0.22rem 0.55rem',
+                borderRadius: 'var(--radius-sm)',
+                border: '1px solid var(--border-primary)',
+                fontSize: '0.74rem',
+                fontWeight: 600,
+              }}
+            >
+              <Search size={13} style={{ color: 'var(--brand-primary)' }} />
+              <span className="font-bengali" style={{ fontSize: '0.75rem' }}>
+                {lang === 'bn' ? 'অনুসন্ধান' : 'Search'}
+              </span>
+            </button>
+          </div>
+
+          {/* Desktop Right: Full Controls */}
+          <div className="desktop-controls-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+            {/* Desktop Language Switcher Button */}
             <div style={{
               display: 'flex',
               alignItems: 'center',
@@ -164,6 +190,34 @@ export default function Header() {
             >
               {theme === 'light' ? <Moon size={14} /> : <Sun size={14} style={{ color: '#fbbf24' }} />}
             </button>
+          </div>
+
+          {/* Mobile Right: Compact Brief Language Dropdown */}
+          <div className="mobile-lang-wrapper" style={{ display: 'none' }}>
+            <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}>
+              <Languages size={12} style={{ position: 'absolute', left: '0.42rem', pointerEvents: 'none', color: 'var(--brand-primary)' }} />
+              <select
+                value={lang}
+                onChange={(e) => setLang(e.target.value as 'bn' | 'en')}
+                aria-label="Language Selector"
+                style={{
+                  appearance: 'none',
+                  backgroundColor: 'var(--bg-secondary)',
+                  color: 'var(--text-primary)',
+                  border: '1px solid var(--border-primary)',
+                  borderRadius: 'var(--radius-sm)',
+                  padding: '0.2rem 1.35rem 0.2rem 1.45rem',
+                  fontSize: '0.74rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  outline: 'none',
+                }}
+              >
+                <option value="bn">বাং</option>
+                <option value="en">EN</option>
+              </select>
+              <ChevronDown size={11} style={{ position: 'absolute', right: '0.35rem', pointerEvents: 'none', color: 'var(--text-secondary)' }} />
+            </div>
           </div>
         </div>
       </div>
@@ -425,6 +479,20 @@ export default function Header() {
           }
           .search-text, .saved-text {
             display: none !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .top-utility-bar {
+            padding: 0.28rem 0 !important;
+          }
+          .desktop-date-wrapper,
+          .desktop-controls-wrapper {
+            display: none !important;
+          }
+          .mobile-search-wrapper,
+          .mobile-lang-wrapper {
+            display: flex !important;
           }
         }
       `}</style>
