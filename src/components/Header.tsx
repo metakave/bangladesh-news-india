@@ -202,14 +202,12 @@ export default function Header() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '0.75rem',
                   fontSize: lang === 'bn' ? '0.88rem' : '0.82rem',
                   letterSpacing: lang === 'bn' ? '0' : '0.12em',
-                  color: 'var(--text-muted)',
+                  color: 'var(--color-tagline)',
                   fontWeight: 700
                 }}
               >
-                <span>{t.established}</span>
                 <span>{t.siteTagline}</span>
               </div>
             </Link>

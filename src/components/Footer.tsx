@@ -66,11 +66,13 @@ export default function Footer() {
             </p>
             <div
               className={lang === 'bn' ? 'font-bengali' : ''}
-              style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.75rem', fontWeight: 600, flexWrap: 'wrap' }}
+              style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.75rem', fontWeight: 600, flexWrap: 'wrap' }}
             >
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', color: 'var(--brand-primary)' }}>
                 <Shield size={14} /> {t.footer.verified}
               </span>
+              <span>•</span>
+              <span>{lang === 'bn' ? 'প্রতিষ্ঠিত ২০২৬' : 'Est. 2026'}</span>
               <span>•</span>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
                 <Globe size={14} /> {lang === 'bn' ? 'দিল্লি ও কলকাতা প্রেস ডেস্ক' : 'Delhi & Kolkata Press Desks'}
