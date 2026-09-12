@@ -267,7 +267,7 @@ export default function Header() {
                   className={`${lang === 'bn' ? 'font-bengali' : 'font-masthead'} site-title-h1`}
                   style={{
                     fontSize: lang === 'bn' ? 'calc(clamp(1.75rem, 5.2vw, 3.5rem) - 3pt)' : 'calc(clamp(1.75rem, 5vw, 3.4rem) + 1pt)',
-                    fontWeight: 900,
+                    fontWeight: lang === 'bn' ? 600 : 900,
                     lineHeight: 1.1,
                     letterSpacing: lang === 'bn' ? '0' : '0.08em',
                     color: 'var(--text-primary)',

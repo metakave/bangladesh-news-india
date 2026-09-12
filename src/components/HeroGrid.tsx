@@ -78,7 +78,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                 style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: lang === 'bn' ? 'none' : 'uppercase', color: 'var(--text-primary)', marginBottom: '0.65rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}
               >
                 <Radio size={13} style={{ color: 'var(--brand-primary)' }} />
-                {lang === 'bn' ? 'দিল্লি / কলকাতা স্ক্যানার স্ট্যাটাস' : 'Delhi / Kolkata Scanner Pulse'}
+                {lang === 'bn' ? 'ভারতীয় মিডিয়া স্ক্যানার স্ট্যাটাস' : 'Indian Media Scanner Pulse'}
               </div>
               <div
                 className={lang === 'bn' ? 'font-bengali' : ''}
@@ -239,8 +239,8 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                 style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}
               >
                 {lang === 'bn'
-                  ? 'দিল্লি ও কলকাতার শীর্ষ সংবাদমাধ্যম থেকে বাংলাদেশ বিষয়ক সংবাদ স্বয়ংক্রিয়ভাবে স্ক্যান করা হয়। শিরোনাম মূল ভাষায় রেখে ইতিবাচক, নিরপেক্ষ ও নেতিবাচক দৃষ্টিভঙ্গি চিহ্নিত করা হয়।'
-                  : 'Articles are scanned continuously from accredited Indian newsrooms in Delhi & Kolkata. Summaries are extracted objectively and tagged with Positive, Neutral, or Negative markers.'}
+                  ? 'ভারতের শীর্ষ সংবাদমাধ্যম থেকে বাংলাদেশ বিষয়ক সংবাদ স্বয়ংক্রিয়ভাবে স্ক্যান করা হয়। শিরোনাম মূল ভাষায় রেখে ইতিবাচক, নিরপেক্ষ ও নেতিবাচক দৃষ্টিভঙ্গি চিহ্নিত করা হয়।'
+                  : 'Articles are scanned continuously from accredited Indian newsrooms. Summaries are extracted objectively and tagged with Positive, Neutral, or Negative markers.'}
               </p>
             </div>
           </div>

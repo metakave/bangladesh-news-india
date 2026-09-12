@@ -173,10 +173,6 @@ export default function Footer() {
               </span>
               <span>•</span>
               <span>{lang === 'bn' ? 'প্রতিষ্ঠিত ২০২৬' : 'Est. 2026'}</span>
-              <span>•</span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-                <Globe size={14} /> {lang === 'bn' ? 'দিল্লি ও কলকাতা প্রেস ডেস্ক' : 'Delhi & Kolkata Press Desks'}
-              </span>
             </div>
           </div>
 

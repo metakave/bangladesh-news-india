@@ -35,7 +35,7 @@ export default function BreakingNews() {
     <div
       className="breaking-news-bar"
       style={{
-        backgroundColor: 'var(--brand-primary)',
+        backgroundColor: '#c93a1d',
         color: '#ffffff',
         padding: '0.45rem 0',
         fontSize: '0.84rem',
