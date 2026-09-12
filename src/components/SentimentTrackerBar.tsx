@@ -123,13 +123,15 @@ export default function SentimentTrackerBar({
               onClick={() => onSelectSentiment('all')}
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
-                padding: '0.3rem 0.7rem',
+                padding: '0.35rem 0.75rem',
                 fontSize: '0.75rem',
                 fontWeight: selectedSentiment === 'all' ? 800 : 600,
                 color: selectedSentiment === 'all' ? '#ffffff' : 'var(--text-primary)',
-                backgroundColor: selectedSentiment === 'all' ? 'var(--text-primary)' : 'var(--bg-secondary)',
+                backgroundColor: selectedSentiment === 'all' ? 'var(--brand-primary)' : 'var(--bg-secondary)',
                 borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-primary)',
+                border: selectedSentiment === 'all' ? '1px solid var(--brand-primary)' : '1px solid var(--border-primary)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
               }}
             >
               {t.allReports} ({totalCount})
@@ -142,13 +144,15 @@ export default function SentimentTrackerBar({
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.35rem',
-                padding: '0.3rem 0.7rem',
+                padding: '0.35rem 0.75rem',
                 fontSize: '0.75rem',
                 fontWeight: selectedSentiment === 'positive' ? 800 : 600,
-                color: selectedSentiment === 'positive' ? '#ffffff' : '#15803d',
-                backgroundColor: selectedSentiment === 'positive' ? '#15803d' : 'rgba(21, 128, 61, 0.1)',
+                color: selectedSentiment === 'positive' ? '#ffffff' : '#22c55e',
+                backgroundColor: selectedSentiment === 'positive' ? '#16a34a' : 'rgba(34, 197, 94, 0.12)',
                 borderRadius: 'var(--radius-sm)',
-                border: '1px solid rgba(21, 128, 61, 0.3)',
+                border: selectedSentiment === 'positive' ? '1px solid #16a34a' : '1px solid rgba(34, 197, 94, 0.35)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
               }}
             >
               <CheckCircle2 size={12} /> {t.positiveMarker}
@@ -161,13 +165,15 @@ export default function SentimentTrackerBar({
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.35rem',
-                padding: '0.3rem 0.7rem',
+                padding: '0.35rem 0.75rem',
                 fontSize: '0.75rem',
                 fontWeight: selectedSentiment === 'neutral' ? 800 : 600,
                 color: selectedSentiment === 'neutral' ? '#ffffff' : 'var(--text-secondary)',
-                backgroundColor: selectedSentiment === 'neutral' ? 'var(--text-secondary)' : 'var(--bg-secondary)',
+                backgroundColor: selectedSentiment === 'neutral' ? 'var(--brand-accent)' : 'var(--bg-secondary)',
                 borderRadius: 'var(--radius-sm)',
-                border: '1px solid var(--border-primary)',
+                border: selectedSentiment === 'neutral' ? '1px solid var(--brand-accent)' : '1px solid var(--border-primary)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
               }}
             >
               <MinusCircle size={12} /> {t.neutralMarker}
@@ -180,13 +186,15 @@ export default function SentimentTrackerBar({
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.35rem',
-                padding: '0.3rem 0.7rem',
+                padding: '0.35rem 0.75rem',
                 fontSize: '0.75rem',
                 fontWeight: selectedSentiment === 'negative' ? 800 : 600,
-                color: selectedSentiment === 'negative' ? '#ffffff' : '#dc2626',
-                backgroundColor: selectedSentiment === 'negative' ? '#dc2626' : 'rgba(220, 38, 38, 0.1)',
+                color: selectedSentiment === 'negative' ? '#ffffff' : '#f87171',
+                backgroundColor: selectedSentiment === 'negative' ? '#dc2626' : 'rgba(220, 38, 38, 0.12)',
                 borderRadius: 'var(--radius-sm)',
-                border: '1px solid rgba(220, 38, 38, 0.3)',
+                border: selectedSentiment === 'negative' ? '1px solid #dc2626' : '1px solid rgba(220, 38, 38, 0.35)',
+                cursor: 'pointer',
+                transition: 'all 0.15s ease',
               }}
             >
               <AlertCircle size={12} /> {t.negativeMarker}
