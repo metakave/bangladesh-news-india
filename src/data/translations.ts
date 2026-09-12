@@ -1,6 +1,6 @@
 export const TRANSLATIONS = {
   bn: {
-    siteTitle: 'বাংলাদেশ ওয়াচ',
+    siteTitle: 'ন্যারেটিভ কম্পাস',
     siteTagline: 'ভারতীয় গণমাধ্যমে বাংলাদেশ সংক্রান্ত সংবাদের নিরপেক্ষ পর্যবেক্ষণ ও স্ক্যানার',
     established: 'প্রতিষ্ঠিত ২০২৬ •',
     editionNational: 'ঢাকা সংস্করণ',
@@ -67,7 +67,7 @@ export const TRANSLATIONS = {
       problemP1: 'বাংলাদেশের সর্ববৃহৎ প্রতিবেশী এবং অন্যতম প্রধান কৌশলগত ও বাণিজ্যিক অংশীদার হলো ভারত। দুই দেশের ভূরাজনীতি, সীমান্ত বাণিজ্য, স্বাস্থ্য পর্যটন ও সংস্কৃতির নিবিড় যোগাযোগ দীর্ঘদিনের।',
       problemP2: '২০২৬ সালের ৫ই আগস্টের পরবর্তী সময়ে ভারতীয় মূলধারার ও আঞ্চলিক গণমাধ্যমে বাংলাদেশকে ঘিরে তৈরি হওয়া বয়ান ও সংবাদ অনেক ক্ষেত্রেই পক্ষপাতদুষ্ট, একপেশে এবং বাস্তবতাবিবর্জিত প্রতীয়মান হয়েছে। সঠিক তথ্যের অনুপস্থিতিতে বিভ্রান্তি ও অবিশ্বাসের দেয়াল তৈরি হয়।',
       missionTitle: 'আমাদের উদ্দেশ্য ও লক্ষ্য',
-      missionP1: 'বাংলাদেশ ওয়াচ-এর মূল উদ্দেশ্য হলো ভারতের শীর্ষস্থানীয় সংবাদমাধ্যমগুলোতে বাংলাদেশকে কীভাবে উপস্থাপন করা হচ্ছে তা নিয়মিত স্ক্যান ও ট্র্যাক করা। আমরা মূলত ৩টি প্রধান ভাষায়—ইংরেজি, হিন্দি এবং বাংলা—ভারতীয় গণমাধ্যমের সংবাদ সংগ্রহ করি।',
+      missionP1: 'ন্যারেটিভ কম্পাস-এর মূল উদ্দেশ্য হলো ভারতের শীর্ষস্থানীয় সংবাদমাধ্যমগুলোতে বাংলাদেশকে কীভাবে উপস্থাপন করা হচ্ছে তা নিয়মিত স্ক্যান ও ট্র্যাক করা। আমরা মূলত ৩টি প্রধান ভাষায়—ইংরেজি, হিন্দি এবং বাংলা—ভারতীয় গণমাধ্যমের সংবাদ সংগ্রহ করি।',
       missionP2: 'সংগৃহীত সংবাদগুলোকে নির্ভুলভাবে বিশ্লেষণ করে তাদের দৃষ্টিভঙ্গি অনুযায়ী ইতিবাচক (Positive), নেতিবাচক (Negative) ও নিরপেক্ষ (Neutral) শ্রেণিতে বিন্যস্ত করা হয়, যাতে পাঠক এক নজরে দ্বিপাক্ষিক বয়ানের গতিপ্রকৃতি বুঝতে পারেন।',
       aiTitle: 'অ্যালগরিদমিক নিরপেক্ষতা ও ফ্রন্টিয়ার এআই প্রযুক্তি',
       aiP1: 'আমাদের প্ল্যাটফর্মের সম্পূর্ণ স্ক্যানিং, সংবাদ বাছাই এবং শ্রেণিবিন্যাস স্বয়ংক্রিয় অ্যালগরিদমের মাধ্যমে পরিচালিত হয়—এখানে কোনো মানবিক পক্ষপাত বা সেন্সরশিপের স্থান নেই। ভারতীয় গণমাধ্যমে যেভাবে প্রকাশিত হয়েছে, আমরা হুবহু সেভাবেই তা তুলে ধরি।',
@@ -91,14 +91,14 @@ export const TRANSLATIONS = {
       sportsSub: 'ইডেন গার্ডেন ও দুই বাংলার আবেগ',
     },
     footer: {
-      about: 'বাংলাদেশ ওয়াচ একটি স্বাধীন ডিজিটাল জার্নালিজম প্ল্যাটফর্ম, যা ভারতীয় মূলধারার ও আঞ্চলিক সংবাদমাধ্যমে বাংলাদেশ সংক্রান্ত সংবাদ ও বয়ান বিশ্লেষণ করে।',
+      about: 'ন্যারেটিভ কম্পাস একটি স্বাধীন ডিজিটাল জার্নালিজম প্ল্যাটফর্ম, যা ভারতীয় মূলধারার ও আঞ্চলিক সংবাদমাধ্যমে বাংলাদেশ সংক্রান্ত সংবাদ ও বয়ান বিশ্লেষণ করে।',
       verified: 'যাচাইকৃত পর্যবেক্ষণ',
-      allRights: 'সর্বস্বত্ব সংরক্ষিত © ২০২৬ বাংলাদেশ ওয়াচ মিডিয়া গ্রুপ।',
+      allRights: 'সর্বস্বত্ব সংরক্ষিত © ২০২৬ ন্যারেটিভ কম্পাস মিডিয়া গ্রুপ।',
       backToTop: 'শীর্ষে ফিরে যান',
       aboutLink: 'আমাদের সম্পর্কে',
     },
     newsletter: {
-      badge: 'বাংলাদেশ ওয়াচ বার্তা',
+      badge: 'ন্যারেটিভ কম্পাস বার্তা',
       title: 'প্রতিদিনের ভারতীয় মিডিয়া পর্যবেক্ষণ ও বিশ্লেষণ পান',
       desc: 'ভারতের শীর্ষ সংবাদমাধ্যমগুলোতে বাংলাদেশকে কীভাবে উপস্থাপন করা হচ্ছে তার দৈনিক সারসংক্ষেপ পান সরাসরি আপনার ইমেইলে।',
       placeholder: 'আপনার ইমেইল অ্যাড্রেস লিখুন...',
@@ -108,7 +108,7 @@ export const TRANSLATIONS = {
     }
   },
   en: {
-    siteTitle: 'Bangladesh Watch',
+    siteTitle: 'Narrative Compass',
     siteTagline: 'The Independent Journal of Record & Indian Media Intelligence Scanner',
     established: 'Est. 2026 •',
     editionNational: 'Dhaka Edition',
@@ -175,7 +175,7 @@ export const TRANSLATIONS = {
       problemP1: "Bangladesh's biggest neighbour and most critical strategic business partner is India. The two nations share deep historical, trade, logistical, and people-to-people ties across a shared 4,096-kilometer frontier.",
       problemP2: 'Following August 5, 2026, news surrounding Bangladesh and the broader portrayal of Bangladesh across prominent Indian news outlets has frequently been skewed, polarized, and inaccurate. This information asymmetry hinders informed diplomacy and cross-border understanding.',
       missionTitle: 'Our Mission & Methodology',
-      missionP1: 'This platform aims to continuously scan prominent Indian news media across 3 primary languages—English, Hindi, and Bengali—curating Bangladesh-related coverage in real time.',
+      missionP1: 'Narrative Compass aims to continuously scan prominent Indian news media across 3 primary languages—English, Hindi, and Bengali—curating Bangladesh-related coverage in real time.',
       missionP2: 'Each scanned report is analyzed and ranked objectively as Positive, Negative, or Neutral based on tone, strategic posture, and bilateral impact, giving readers instant clarity on narrative trends.',
       aiTitle: '100% Algorithmic Objectivity & Frontier AI',
       aiP1: 'The entire scanning pipeline, article curation, and sentiment scoring are conducted entirely through algorithms with zero human bias involved. We report news "as is" directly from original Indian news outlets without editorial distortion.',
@@ -199,14 +199,14 @@ export const TRANSLATIONS = {
       sportsSub: 'Eden Gardens & Bengal Connections',
     },
     footer: {
-      about: 'Bangladesh Watch is an independent intelligence and media monitoring journal tracking reporting on Bangladesh across Indian newsrooms.',
+      about: 'Narrative Compass is an independent intelligence and media monitoring journal tracking reporting on Bangladesh across Indian newsrooms.',
       verified: 'Verified Monitoring',
-      allRights: 'All rights reserved © 2026 Bangladesh Watch Media Group.',
+      allRights: 'All rights reserved © 2026 Narrative Compass Media Group.',
       backToTop: 'Back to Top',
       aboutLink: 'About Us',
     },
     newsletter: {
-      badge: 'The Bangladesh Watch Dispatch',
+      badge: 'The Narrative Compass Dispatch',
       title: 'Clarity, Depth, and Independent Media Analysis Delivered Daily',
       desc: 'Join policymakers and analysts receiving our morning intelligence briefing on how Indian media reports on Bangladesh.',
       placeholder: 'Enter your email address...',

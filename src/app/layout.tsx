@@ -7,20 +7,20 @@ import SearchModal from '@/components/SearchModal';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Bangladesh Watch | The Independent Journal of Record & Ideas',
+  title: 'Narrative Compass | The Independent Journal of Record & Ideas',
   description: 'Fast, high-integrity digital journalism covering Indian media reporting on Bangladesh across English, Bengali, and Hindi with 3-marker sentiment tracking.',
-  keywords: ['Bangladesh News', 'Indian Media Scanner', 'Teesta River', 'Petrapole Benapole', 'Anandabazar Patrika', 'The Hindu', 'Dainik Jagran'],
-  authors: [{ name: 'Bangladesh Watch Editorial & Intelligence Desk' }],
+  keywords: ['Bangladesh News', 'Indian Media Scanner', 'Narrative Compass', 'Teesta River', 'Petrapole Benapole', 'Anandabazar Patrika', 'The Hindu', 'Dainik Jagran'],
+  authors: [{ name: 'Narrative Compass Editorial & Intelligence Desk' }],
   openGraph: {
-    title: 'Bangladesh Watch | Indian Media Narrative Monitor',
+    title: 'Narrative Compass | Indian Media Narrative Monitor',
     description: 'Real-time scanner of top Indian media reporting on Bangladesh across Delhi and Kolkata bureaus.',
-    siteName: 'Bangladesh Watch',
+    siteName: 'Narrative Compass',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bangladesh Watch',
+    title: 'Narrative Compass',
     description: 'Indian Media Scanner on Bangladesh with 3-marker sentiment analysis.',
   },
 };
