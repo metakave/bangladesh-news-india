@@ -354,6 +354,9 @@ export default function Header() {
                 <Globe size={15} />
                 {t.mediaDirectory.navTitle}
               </Link>
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
+                {t.aboutUs.pageTitle}
+              </Link>
               <Link href="/saved" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--brand-primary)' }}>
                 {t.saved} ({bookmarks.length})
               </Link>

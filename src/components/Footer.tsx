@@ -178,6 +178,15 @@ export default function Footer() {
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.8rem' }}
             >
+              <li>
+                <Link
+                  href="/about"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--brand-primary)', fontWeight: 700 }}
+                >
+                  {t.aboutUs.pageTitle}
+                </Link>
+              </li>
               <li><a href="#ethics" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Code of Ethics'}</a></li>
               <li><a href="#corrections" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সংশোধনী ও স্পষ্টীকরণ' : 'Corrections & Clarifications'}</a></li>
               <li><a href="#factcheck" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'তথ্য যাচাই নীতিমালা' : 'Fact-Checking Policy'}</a></li>
