@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useDeferredValue } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useApp } from '@/context/ThemeContext';
@@ -19,8 +19,12 @@ import {
   Filter,
   CheckCircle2,
   ChevronRight,
-  ArrowUpRight
+  ArrowUpRight,
+  ChevronDown
 } from 'lucide-react';
+
+const INITIAL_BATCH_SIZE = 24;
+const BATCH_INCREMENT = 24;
 
 export default function BangladeshIndianNewsMediaPage() {
   const { lang } = useApp();
@@ -28,11 +32,13 @@ export default function BangladeshIndianNewsMediaPage() {
   const dirT = t.mediaDirectory;
 
   const [searchQuery, setSearchQuery] = useState('');
+  const deferredSearch = useDeferredValue(searchQuery);
   const [selectedLanguage, setSelectedLanguage] = useState<'All' | 'English' | 'Bengali' | 'Hindi' | 'Regional'>('All');
   const [selectedType, setSelectedType] = useState<string>('All');
+  const [visibleCount, setVisibleCount] = useState<number>(INITIAL_BATCH_SIZE);
   const [imageErrors, setImageErrors] = useState<Record<string, boolean>>({});
 
-  // Filter outlets
+  // Filter outlets using deferred search for 60fps input responsiveness
   const filteredOutlets = useMemo(() => {
     return INDIAN_MEDIA_DIRECTORY.filter((outlet) => {
       // Language Filter
@@ -45,8 +51,8 @@ export default function BangladeshIndianNewsMediaPage() {
       if (selectedType !== 'All' && outlet.type !== selectedType) return false;
 
       // Search Query Filter
-      if (searchQuery.trim() !== '') {
-        const q = searchQuery.toLowerCase();
+      if (deferredSearch.trim() !== '') {
+        const q = deferredSearch.toLowerCase();
         const matchesName = outlet.name.toLowerCase().includes(q);
         const matchesNameBn = outlet.nameBn?.toLowerCase().includes(q) || false;
         const matchesHeadOffice = outlet.headOffice.toLowerCase().includes(q);
@@ -60,7 +66,14 @@ export default function BangladeshIndianNewsMediaPage() {
 
       return true;
     });
-  }, [searchQuery, selectedLanguage, selectedType]);
+  }, [deferredSearch, selectedLanguage, selectedType]);
+
+  // If filtering or searching, show all matches; otherwise render visible batch
+  const isFiltering = deferredSearch.trim() !== '' || selectedLanguage !== 'All' || selectedType !== 'All';
+  const displayedOutlets = useMemo(() => {
+    if (isFiltering) return filteredOutlets;
+    return filteredOutlets.slice(0, visibleCount);
+  }, [filteredOutlets, isFiltering, visibleCount]);
 
   const stats = useMemo(() => {
     return {
@@ -388,206 +401,239 @@ export default function BangladeshIndianNewsMediaPage() {
             </button>
           </div>
         ) : (
-          <div className="media-outlet-grid">
-            {filteredOutlets.map((outlet, index) => {
-              const langPill = getLanguagePillColor(outlet.language);
-              const logoSrc = `https://www.google.com/s2/favicons?domain=${outlet.domain}&sz=128`;
-              const hasError = imageErrors[outlet.id];
+          <>
+            <div className="media-outlet-grid">
+              {displayedOutlets.map((outlet, index) => {
+                const langPill = getLanguagePillColor(outlet.language);
+                const logoSrc = `https://www.google.com/s2/favicons?domain=${outlet.domain}&sz=128`;
+                const hasError = imageErrors[outlet.id];
 
-              return (
-                <div
-                  key={outlet.id}
-                  className="media-card"
-                  style={{
-                    backgroundColor: 'var(--bg-card)',
-                    borderRadius: 'var(--radius-md)',
-                    border: '1px solid var(--border-primary)',
-                    padding: '1.25rem',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    boxShadow: 'var(--shadow-sm)',
-                    transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
-                    position: 'relative',
-                  }}
-                >
-                  {/* Top Card Area */}
-                  <div>
-                    {/* Header Row: Logo & Language Badge */}
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
-                      {/* Logo Container (Unified Width & Height) */}
-                      <div
-                        style={{
-                          width: '48px',
-                          height: '48px',
-                          minWidth: '48px',
-                          borderRadius: '10px',
-                          backgroundColor: '#ffffff',
-                          border: '1px solid var(--border-primary)',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          boxShadow: '0 2px 4px rgba(0,0,0,0.04)',
-                          overflow: 'hidden',
-                          padding: '6px',
-                        }}
-                      >
-                        {!hasError ? (
-                          <img
-                            src={logoSrc}
-                            alt={`${outlet.name} logo`}
-                            width={34}
-                            height={34}
-                            style={{ objectFit: 'contain', width: '34px', height: '34px' }}
-                            onError={() => handleImageError(outlet.id)}
-                            loading="lazy"
-                          />
-                        ) : (
-                          <div style={{
-                            width: '100%',
-                            height: '100%',
-                            backgroundColor: 'var(--brand-primary)',
-                            color: '#ffffff',
-                            fontWeight: 900,
-                            fontSize: '0.9rem',
+                return (
+                  <div
+                    key={outlet.id}
+                    className="media-card"
+                    style={{
+                      backgroundColor: 'var(--bg-card)',
+                      borderRadius: 'var(--radius-md)',
+                      border: '1px solid var(--border-primary)',
+                      padding: '1.25rem',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      boxShadow: 'var(--shadow-sm)',
+                      transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                      position: 'relative',
+                      contentVisibility: 'auto',
+                      containIntrinsicSize: '220px',
+                    }}
+                  >
+                    {/* Top Card Area */}
+                    <div>
+                      {/* Header Row: Logo & Language Badge */}
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
+                        {/* Logo Container (Unified Width & Height) */}
+                        <div
+                          style={{
+                            width: '48px',
+                            height: '48px',
+                            minWidth: '48px',
+                            borderRadius: '10px',
+                            backgroundColor: '#ffffff',
+                            border: '1px solid var(--border-primary)',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            borderRadius: '6px',
-                          }}>
-                            {outlet.name.slice(0, 2).toUpperCase()}
-                          </div>
-                        )}
-                      </div>
+                            boxShadow: '0 2px 4px rgba(0,0,0,0.04)',
+                            overflow: 'hidden',
+                            padding: '6px',
+                          }}
+                        >
+                          {!hasError ? (
+                            <img
+                              src={logoSrc}
+                              alt={`${outlet.name} logo`}
+                              width={34}
+                              height={34}
+                              style={{ objectFit: 'contain', width: '34px', height: '34px' }}
+                              onError={() => handleImageError(outlet.id)}
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          ) : (
+                            <div style={{
+                              width: '100%',
+                              height: '100%',
+                              backgroundColor: 'var(--brand-primary)',
+                              color: '#ffffff',
+                              fontWeight: 900,
+                              fontSize: '0.9rem',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              borderRadius: '6px',
+                            }}>
+                              {outlet.name.slice(0, 2).toUpperCase()}
+                            </div>
+                          )}
+                        </div>
 
-                      {/* Language Pill */}
-                      <span
-                        style={{
-                          fontSize: '0.72rem',
-                          fontWeight: 800,
-                          padding: '0.25rem 0.6rem',
-                          borderRadius: '999px',
-                          backgroundColor: langPill.bg,
-                          color: langPill.text,
-                          border: `1px solid ${langPill.border}`,
-                          textTransform: 'uppercase',
-                          letterSpacing: '0.04em',
-                        }}
-                        className={lang === 'bn' ? 'font-bengali' : ''}
-                      >
-                        {getLanguageLabel(outlet.language)}
-                      </span>
-                    </div>
-
-                    {/* Outlet Name */}
-                    <h3
-                      className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
-                      style={{
-                        fontSize: '1.05rem',
-                        fontWeight: 800,
-                        color: 'var(--text-primary)',
-                        lineHeight: 1.3,
-                        marginBottom: '0.35rem',
-                      }}
-                    >
-                      {lang === 'bn' && outlet.nameBn ? outlet.nameBn : outlet.name}
-                    </h3>
-
-                    {/* English Subtitle if Bengali mode */}
-                    {lang === 'bn' && outlet.nameBn && (
-                      <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '0.65rem' }}>
-                        {outlet.name}
-                      </div>
-                    )}
-
-                    {/* Type & Headquarters */}
-                    <div style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '0.3rem',
-                      fontSize: '0.76rem',
-                      color: 'var(--text-secondary)',
-                      marginBottom: '1.25rem',
-                    }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                        <span style={{ color: 'var(--brand-gold)' }}>{getTypeIcon(outlet.type)}</span>
-                        <span>{outlet.type}</span>
-                      </div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                        <Building2 size={13} style={{ color: 'var(--text-muted)' }} />
-                        <span className={lang === 'bn' ? 'font-bengali' : ''}>
-                          {lang === 'bn' && outlet.headOfficeBn ? outlet.headOfficeBn : outlet.headOffice}
+                        {/* Language Pill */}
+                        <span
+                          style={{
+                            fontSize: '0.72rem',
+                            fontWeight: 800,
+                            padding: '0.25rem 0.6rem',
+                            borderRadius: '999px',
+                            backgroundColor: langPill.bg,
+                            color: langPill.text,
+                            border: `1px solid ${langPill.border}`,
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.04em',
+                          }}
+                          className={lang === 'bn' ? 'font-bengali' : ''}
+                        >
+                          {getLanguageLabel(outlet.language)}
                         </span>
                       </div>
-                    </div>
-                  </div>
 
-                  {/* Action Button: Direct Bangladesh Category / Tag Link */}
-                  <div>
-                    <a
-                      href={outlet.bangladeshUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="category-btn"
-                      style={{
+                      {/* Outlet Name */}
+                      <h3
+                        className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
+                        style={{
+                          fontSize: '1.05rem',
+                          fontWeight: 800,
+                          color: 'var(--text-primary)',
+                          lineHeight: 1.3,
+                          marginBottom: '0.35rem',
+                        }}
+                      >
+                        {lang === 'bn' && outlet.nameBn ? outlet.nameBn : outlet.name}
+                      </h3>
+
+                      {/* English Subtitle if Bengali mode */}
+                      {lang === 'bn' && outlet.nameBn && (
+                        <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', marginBottom: '0.65rem' }}>
+                          {outlet.name}
+                        </div>
+                      )}
+
+                      {/* Type & Headquarters */}
+                      <div style={{
                         display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        gap: '0.45rem',
-                        width: '100%',
-                        backgroundColor: 'var(--brand-primary)',
-                        color: '#ffffff',
-                        fontSize: '0.82rem',
-                        fontWeight: 700,
-                        padding: '0.65rem 0.85rem',
-                        borderRadius: 'var(--radius-sm)',
-                        textDecoration: 'none',
-                        boxShadow: 'var(--shadow-sm)',
-                        transition: 'background-color 0.15s ease, transform 0.15s ease',
-                      }}
-                    >
-                      <span className={lang === 'bn' ? 'font-bengali' : ''}>
-                        {dirT.viewBangladeshDesk}
-                      </span>
-                      <ArrowUpRight size={15} />
-                    </a>
+                        flexDirection: 'column',
+                        gap: '0.3rem',
+                        fontSize: '0.76rem',
+                        color: 'var(--text-secondary)',
+                        marginBottom: '1.25rem',
+                      }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                          <span style={{ color: 'var(--brand-gold)' }}>{getTypeIcon(outlet.type)}</span>
+                          <span>{outlet.type}</span>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                          <Building2 size={13} style={{ color: 'var(--text-muted)' }} />
+                          <span className={lang === 'bn' ? 'font-bengali' : ''}>
+                            {lang === 'bn' && outlet.headOfficeBn ? outlet.headOfficeBn : outlet.headOffice}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
 
-                    {/* Subtle footer links (Website & RSS) */}
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      marginTop: '0.65rem',
-                      fontSize: '0.72rem',
-                      color: 'var(--text-muted)',
-                      paddingTop: '0.5rem',
-                      borderTop: '1px dashed var(--border-primary)',
-                    }}>
+                    {/* Action Button: Direct Bangladesh Category / Tag Link */}
+                    <div>
                       <a
-                        href={outlet.websiteUrl}
+                        href={outlet.bangladeshUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: 'var(--text-secondary)', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}
+                        className="category-btn"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '0.45rem',
+                          width: '100%',
+                          backgroundColor: 'var(--brand-primary)',
+                          color: '#ffffff',
+                          fontSize: '0.82rem',
+                          fontWeight: 700,
+                          padding: '0.65rem 0.85rem',
+                          borderRadius: 'var(--radius-sm)',
+                          textDecoration: 'none',
+                          boxShadow: 'var(--shadow-sm)',
+                          transition: 'background-color 0.15s ease, transform 0.15s ease',
+                        }}
                       >
-                        <Globe size={11} /> {outlet.domain.replace('www.', '')}
+                        <span className={lang === 'bn' ? 'font-bengali' : ''}>
+                          {dirT.viewBangladeshDesk}
+                        </span>
+                        <ArrowUpRight size={15} />
                       </a>
-                      {outlet.rssFeedUrl && (
+
+                      {/* Subtle footer links (Website & RSS) */}
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        marginTop: '0.65rem',
+                        fontSize: '0.72rem',
+                        color: 'var(--text-muted)',
+                        paddingTop: '0.5rem',
+                        borderTop: '1px dashed var(--border-primary)',
+                      }}>
                         <a
-                          href={outlet.rssFeedUrl}
+                          href={outlet.websiteUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          style={{ color: 'var(--brand-gold)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', fontWeight: 600 }}
-                          title="RSS Feed"
+                          style={{ color: 'var(--text-secondary)', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}
                         >
-                          <Rss size={11} /> RSS
+                          <Globe size={11} /> {outlet.domain.replace('www.', '')}
                         </a>
-                      )}
+                        {outlet.rssFeedUrl && (
+                          <a
+                            href={outlet.rssFeedUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: 'var(--brand-gold)', display: 'inline-flex', alignItems: 'center', gap: '0.2rem', fontWeight: 600 }}
+                            title="RSS Feed"
+                          >
+                            <Rss size={11} /> RSS
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+
+            {/* Progressive Load More Outlets CTA */}
+            {!isFiltering && visibleCount < filteredOutlets.length && (
+              <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+                <button
+                  onClick={() => setVisibleCount((prev) => Math.min(prev + BATCH_INCREMENT, filteredOutlets.length))}
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    backgroundColor: 'var(--bg-card)',
+                    color: 'var(--text-primary)',
+                    border: '1px solid var(--border-bold)',
+                    padding: '0.75rem 2rem',
+                    borderRadius: 'var(--radius-sm)',
+                    fontWeight: 700,
+                    fontSize: '0.88rem',
+                    cursor: 'pointer',
+                    boxShadow: 'var(--shadow-sm)',
+                    transition: 'all 0.15s ease',
+                  }}
+                >
+                  <span>{lang === 'bn' ? `আরও সংবাদমাধ্যম দেখুন (${visibleCount}/${filteredOutlets.length})` : `Load More Media Outlets (${visibleCount}/${filteredOutlets.length})`}</span>
+                  <ChevronDown size={16} style={{ color: 'var(--brand-primary)' }} />
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
 

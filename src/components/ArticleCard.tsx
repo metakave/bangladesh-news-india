@@ -293,8 +293,9 @@ export default function ArticleCard({
               src={imgSrc}
               alt={article.title}
               fill
+              loading="lazy"
               onError={() => setImgSrc(FALLBACK_IMAGE)}
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               style={{ objectFit: 'cover' }}
             />
             <div style={{ position: 'absolute', top: '10px', left: '10px' }}>
