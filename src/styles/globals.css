@@ -8,20 +8,20 @@
   --font-bengali: 'Noto Serif Bengali', serif;
   --font-devanagari: 'Noto Serif Devanagari', serif;
 
-  /* Light Theme Palette (Premium Editorial Newspaper - Light Beige) */
-  --bg-primary: #faf0e6;
-  --bg-secondary: #f2e6d8;
-  --bg-card: #faf0e6;
-  --bg-accent: #eddcd0;
-  --bg-highlight: #fff6eb;
+  /* Light Theme Palette (Premium Editorial Newspaper - 30% Lighter Soft Beige) */
+  --bg-primary: #fcf5ee;
+  --bg-secondary: #f7ede3;
+  --bg-card: #fcf5ee;
+  --bg-accent: #f3e7dc;
+  --bg-highlight: #fff9f2;
   
   --text-primary: #121417;
   --text-secondary: #4a5568;
   --text-muted: #718096;
   --text-inverse: #ffffff;
 
-  --border-primary: #e6dacb;
-  --border-subtle: #eee3d5;
+  --border-primary: #ede0d2;
+  --border-subtle: #f4ece2;
   --border-bold: #121417;
 
   --brand-primary: #c93a1d; /* Deep Editorial Saffron/Red */
