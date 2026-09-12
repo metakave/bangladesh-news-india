@@ -7,7 +7,7 @@ import { NewsItem } from '@/data/news-data';
 import { useApp } from '@/context/ThemeContext';
 import SentimentBadge from './SentimentBadge';
 import SourceBadge from './SourceBadge';
-import { Bookmark, Clock, ExternalLink, Sparkles, Volume2, ArrowUpRight } from 'lucide-react';
+import { Bookmark, Clock, ExternalLink, Languages, Globe } from 'lucide-react';
 
 interface ArticleCardProps {
   article: NewsItem;
@@ -27,6 +27,9 @@ export default function ArticleCard({
     month: 'short',
     day: 'numeric',
   });
+
+  const isHindi = article.source.language === 'Hindi';
+  const isBengali = article.source.language === 'Bengali';
 
   if (variant === 'lead') {
     return (
@@ -98,42 +101,53 @@ export default function ArticleCard({
             </button>
           </div>
 
-          {/* Title with Sentiment Badge if no image */}
-          {(!showImage || !article.imageUrl) && (
-            <div style={{ marginBottom: '0.5rem' }}>
-              <SentimentBadge sentiment={article.sentiment} size="sm" />
-            </div>
-          )}
-
+          {/* Primary Headline in Original Script */}
           <h2
-            className="font-serif"
+            className={isBengali || isHindi ? '' : 'font-serif'}
             style={{
-              fontSize: 'clamp(1.5rem, 2.2vw, 2.1rem)',
+              fontSize: isBengali || isHindi ? 'clamp(1.4rem, 2.1vw, 1.95rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
               fontWeight: 800,
-              lineHeight: 1.2,
+              lineHeight: 1.35,
               color: 'var(--text-primary)',
               marginBottom: '0.75rem',
-              letterSpacing: '-0.01em',
+              letterSpacing: isBengali || isHindi ? '0' : '-0.01em',
             }}
           >
             {article.title}
           </h2>
 
-          {/* Original Headline in Vernacular if available */}
-          {article.source.originalHeadline && (
+          {/* Multi-lingual Translation Box for Hindi News */}
+          {isHindi && (article.englishTitle || article.banglaTitle) && (
             <div style={{
-              fontSize: '0.85rem',
-              fontStyle: 'italic',
-              color: 'var(--text-muted)',
-              marginBottom: '0.75rem',
-              paddingLeft: '0.75rem',
-              borderLeft: '2px solid var(--border-primary)',
+              backgroundColor: 'var(--bg-secondary)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-md)',
+              padding: '0.85rem 1rem',
+              marginBottom: '1rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.45rem',
             }}>
-              Original Headline ({article.source.language}): &ldquo;{article.source.originalHeadline}&rdquo;
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.72rem', fontWeight: 800, color: 'var(--brand-primary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                <Languages size={13} />
+                Hindi Headline Translations
+              </div>
+
+              {article.englishTitle && (
+                <div style={{ fontSize: '0.86rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                  <strong style={{ color: 'var(--brand-accent)', fontSize: '0.75rem', textTransform: 'uppercase' }}>English:</strong> {article.englishTitle}
+                </div>
+              )}
+
+              {article.banglaTitle && (
+                <div style={{ fontSize: '0.86rem', color: 'var(--text-primary)', lineHeight: 1.45 }}>
+                  <strong style={{ color: '#059669', fontSize: '0.75rem', textTransform: 'uppercase' }}>বাংলা অনুবাদ:</strong> {article.banglaTitle}
+                </div>
+              )}
             </div>
           )}
 
-          {/* Analytical Summary */}
+          {/* Summary */}
           <p style={{
             fontSize: '0.96rem',
             lineHeight: 1.6,
@@ -153,7 +167,7 @@ export default function ArticleCard({
               marginBottom: '1.25rem',
             }}>
               <div style={{ fontSize: '0.74rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', marginBottom: '0.4rem', letterSpacing: '0.05em' }}>
-                Key Strategic Highlights
+                Key Highlights
               </div>
               <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem', paddingLeft: '1rem', fontSize: '0.86rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
                 {article.keyPoints.slice(0, 3).map((pt, i) => (
@@ -252,18 +266,45 @@ export default function ArticleCard({
             )}
           </div>
 
+          {/* Title */}
           <h3
-            className="font-serif"
+            className={isBengali || isHindi ? '' : 'font-serif'}
             style={{
-              fontSize: '1.15rem',
+              fontSize: isBengali || isHindi ? '1.1rem' : '1.15rem',
               fontWeight: 700,
-              lineHeight: 1.3,
+              lineHeight: 1.4,
               color: 'var(--text-primary)',
               marginBottom: '0.55rem',
             }}
           >
             {article.title}
           </h3>
+
+          {/* Hindi Translations Box */}
+          {isHindi && (article.englishTitle || article.banglaTitle) && (
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              border: '1px solid var(--border-primary)',
+              borderRadius: 'var(--radius-sm)',
+              padding: '0.6rem 0.75rem',
+              marginBottom: '0.75rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.35rem',
+              fontSize: '0.8rem',
+            }}>
+              {article.englishTitle && (
+                <div style={{ color: 'var(--text-primary)', lineHeight: 1.35 }}>
+                  <strong style={{ color: 'var(--brand-accent)', fontSize: '0.7rem' }}>EN:</strong> {article.englishTitle}
+                </div>
+              )}
+              {article.banglaTitle && (
+                <div style={{ color: 'var(--text-primary)', lineHeight: 1.35 }}>
+                  <strong style={{ color: '#059669', fontSize: '0.7rem' }}>বাংলা:</strong> {article.banglaTitle}
+                </div>
+              )}
+            </div>
+          )}
 
           <p style={{
             fontSize: '0.86rem',
@@ -359,11 +400,11 @@ export default function ArticleCard({
             style={{ textDecoration: 'none' }}
           >
             <h4
-              className="font-serif"
+              className={isBengali || isHindi ? '' : 'font-serif'}
               style={{
-                fontSize: '0.98rem',
+                fontSize: isBengali || isHindi ? '0.94rem' : '0.98rem',
                 fontWeight: 700,
-                lineHeight: 1.35,
+                lineHeight: 1.4,
                 color: 'var(--text-primary)',
                 marginBottom: '0.25rem',
                 display: '-webkit-box',
@@ -375,6 +416,12 @@ export default function ArticleCard({
               {article.title}
             </h4>
           </a>
+
+          {isHindi && article.banglaTitle && (
+            <div style={{ fontSize: '0.75rem', color: '#059669', marginBottom: '0.25rem', fontWeight: 600 }}>
+              বাংলা: {article.banglaTitle}
+            </div>
+          )}
 
           <p style={{
             fontSize: '0.8rem',
@@ -409,17 +456,32 @@ export default function ArticleCard({
         style={{ textDecoration: 'none' }}
       >
         <h4
-          className="font-serif"
+          className={isBengali || isHindi ? '' : 'font-serif'}
           style={{
-            fontSize: '1.05rem',
+            fontSize: isBengali || isHindi ? '0.98rem' : '1.05rem',
             fontWeight: 700,
-            lineHeight: 1.35,
+            lineHeight: 1.4,
             color: 'var(--text-primary)',
           }}
         >
           {article.title}
         </h4>
       </a>
+
+      {isHindi && (article.englishTitle || article.banglaTitle) && (
+        <div style={{
+          backgroundColor: 'var(--bg-secondary)',
+          padding: '0.4rem 0.55rem',
+          borderRadius: 'var(--radius-sm)',
+          fontSize: '0.75rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.2rem',
+        }}>
+          {article.englishTitle && <div><strong style={{ color: 'var(--brand-accent)' }}>EN:</strong> {article.englishTitle}</div>}
+          {article.banglaTitle && <div><strong style={{ color: '#059669' }}>বাংলা:</strong> {article.banglaTitle}</div>}
+        </div>
+      )}
 
       <p style={{
         fontSize: '0.84rem',
