@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { NewsItem } from '@/data/news-data';
 import { useApp } from '@/context/ThemeContext';
 import { TRANSLATIONS } from '@/data/translations';
+import { formatArticleTimestamp } from '@/utils/date';
 import SentimentBadge from './SentimentBadge';
 import SourceBadge from './SourceBadge';
 import ArticleCard from './ArticleCard';
@@ -28,20 +29,18 @@ const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1504711434969-e3388616
 interface ArticleClientViewProps {
   article: NewsItem;
   relatedArticles: NewsItem[];
-  trendingArticles: NewsItem[];
+  trendingArticles?: NewsItem[];
 }
 
 export default function ArticleClientView({
   article,
   relatedArticles,
-  trendingArticles,
+  trendingArticles = [],
 }: ArticleClientViewProps) {
-  const { lang, toggleBookmark, isBookmarked } = useApp();
+  const { lang, isBookmarked } = useApp();
   const t = TRANSLATIONS[lang];
-
-  const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
   const [copied, setCopied] = useState(false);
-  const bookmarked = isBookmarked(article.slug);
+  const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
 
   const isHindi = article.source.language === 'Hindi';
   const isBengali = article.source.language === 'Bengali';
@@ -55,6 +54,7 @@ export default function ArticleClientView({
 
   const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
 
+  const formattedScannedTime = formatArticleTimestamp(article.source.scannedAt, lang, article.publishedAt);
   const formattedDate = new Date(article.publishedAt).toLocaleDateString(lang === 'bn' ? 'bn-BD' : 'en-US', {
     weekday: 'long',
     year: 'numeric',
@@ -208,7 +208,7 @@ export default function ArticleClientView({
                   </span>
                   <span>•</span>
                   <span style={{ color: 'var(--brand-primary)', fontWeight: 600 }}>
-                    {t.scannedAgo}: {article.source.scannedAt}
+                    {t.scannedAgo}: {formattedScannedTime}
                   </span>
                 </div>
 

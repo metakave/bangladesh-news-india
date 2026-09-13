@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useApp } from '@/context/ThemeContext';
 import { SCANNED_NEWS_ITEMS, NewsItem } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
+import { formatArticleTimestamp } from '@/utils/date';
 import SentimentBadge from './SentimentBadge';
 import { Search, X, ExternalLink, Sparkles, Languages } from 'lucide-react';
 
@@ -262,7 +263,9 @@ export default function SearchModal() {
                           {art.source.name} [{art.source.bureau}]
                         </span>
                       </div>
-                      <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>{art.source.scannedAt}</span>
+                      <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                        {formatArticleTimestamp(art.source.scannedAt, lang, art.publishedAt)}
+                      </span>
                     </div>
 
                     {/* Original Headline */}

@@ -317,11 +317,14 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
     const mergedList = [];
 
     // 1. Process and add newly scanned items first (deduplicated)
+    const scanTimestamp = new Date().toISOString();
     for (let i = 0; i < parsedAiResult.newScannedItems.length; i++) {
       const item = parsedAiResult.newScannedItems[i];
       if (!isDuplicate(item)) {
         registerItem(item);
         item.id = String(mergedList.length + 1);
+        if (!item.source) item.source = {};
+        item.source.scannedAt = item.source.scannedAt && !item.source.scannedAt.includes('ago') ? item.source.scannedAt : scanTimestamp;
         if (mergedList.length === 0) {
           item.isLeadStory = true;
           item.imageUrl = item.imageUrl || '/images/delhi-dhaka-bilateral-summit.jpg';

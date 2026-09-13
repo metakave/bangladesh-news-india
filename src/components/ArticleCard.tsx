@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { NewsItem } from '@/data/news-data';
 import { useApp } from '@/context/ThemeContext';
 import { TRANSLATIONS } from '@/data/translations';
+import { formatArticleTimestamp } from '@/utils/date';
 import SentimentBadge from './SentimentBadge';
 import SourceBadge from './SourceBadge';
 import { Bookmark, Clock, ExternalLink, Languages } from 'lucide-react';
@@ -32,6 +33,7 @@ export default function ArticleCard({
   const isBengali = article.source.language === 'Bengali';
   const isEnglish = article.source.language === 'English';
 
+  const formattedTime = formatArticleTimestamp(article.source.scannedAt, lang, article.publishedAt);
   const categoryLabel = lang === 'bn' ? article.categoryLabelBn : article.categoryLabelEn;
   const summary = lang === 'bn' ? article.summaryBn : article.summaryEn;
   const keyPoints = lang === 'bn' ? article.keyPointsBn : article.keyPointsEn;
@@ -232,7 +234,7 @@ export default function ArticleCard({
             borderTop: '1px solid var(--border-subtle)',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.78rem', color: 'var(--text-muted)' }}>
-              <span>{t.scannedAgo} {article.source.scannedAt}</span>
+              <span>{t.scannedAgo} {formattedTime}</span>
               <span>•</span>
               <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
                 <Clock size={12} /> {readTime}
@@ -427,7 +429,7 @@ export default function ArticleCard({
             paddingTop: '0.75rem',
             borderTop: '1px solid var(--border-subtle)',
           }}>
-            <span style={{ color: 'var(--text-muted)' }}>{article.source.scannedAt}</span>
+            <span style={{ color: 'var(--text-muted)' }}>{formattedTime}</span>
 
             <a
               href={article.source.originalUrl}
@@ -606,7 +608,7 @@ export default function ArticleCard({
       </p>
 
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-        <span>{t.scannedAgo} {article.source.scannedAt}</span>
+        <span>{t.scannedAgo} {formattedTime}</span>
         <a
           href={article.source.originalUrl}
           target="_blank"
