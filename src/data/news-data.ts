@@ -348,7 +348,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T07:29:00+05:30",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/bangladesh-army-type-59-tank.jpg",
     "tags": [
       "Defense",
       "Military",
