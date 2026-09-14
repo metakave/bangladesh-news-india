@@ -71,18 +71,18 @@ export const SCANNER_STATS = {
   "totalScanned24h": 1388,
   "bangladeshMatches": 281,
   "sentimentDistribution": {
-    "positive": 42,
-    "neutral": 118,
-    "negative": 121
+    "positive": 26,
+    "neutral": 14,
+    "negative": 14
   },
   "bureauDistribution": {
-    "delhi": 214,
-    "kolkata": 67
+    "delhi": 31,
+    "kolkata": 23
   },
   "languageDistribution": {
-    "english": 189,
-    "bengali": 74,
-    "hindi": 18
+    "english": 35,
+    "bengali": 16,
+    "hindi": 3
   }
 };
 
@@ -2018,6 +2018,546 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Border Trade",
       "Logistics"
     ],
+    "isLeadStory": false
+  },
+  {
+    "slug": "indian-envoy-bangladesh-water-resources-minister-cooperation",
+    "title": "Indian envoy, Bangladesh water resources minister seek fresh push for cooperation, highlight shared heritage",
+    "englishTitle": "Indian envoy, Bangladesh water resources minister seek fresh push for cooperation, highlight shared heritage",
+    "banglaTitle": "পানিসম্পদ সহযোগিতা জোরদারে ভারতীয় দূত ও বাংলাদেশের মন্ত্রীর বৈঠক: অভিন্ন ঐতিহ্যের ওপর গুরুত্বারোপ",
+    "summaryBn": "ঢাকায় নিযুক্ত ভারতীয় হাইকমিশনার ও বাংলাদেশের পানিসম্পদ উপদেষ্টা এক বৈঠকে ৫৪টি অভিন্ন নদীর পানিসম্পদ ব্যবস্থাপনা ও বন্যার পূর্বাভাস বিনিময়ে নতুন সহযোগিতার ক্ষেত্র উন্মোচনের প্রত্যয় ব্যক্ত করেছেন।",
+    "summaryEn": "The Indian High Commissioner and Bangladesh's Water Resources Minister met in Dhaka, calling for a fresh collaborative momentum on shared river management, seasonal flood forecast data exchanges, and transboundary environmental preservation.",
+    "keyPointsBn": [
+      "৫৪টি অভিন্ন নদীর পানিসম্পদ ও অববাহিকা ব্যবস্থাপনায় জোর",
+      "বন্যার পূর্বাভাস ও জলতাত্ত্বিক তথ্য দ্রুত বিনিময়ে যৌথ প্রতিশ্রুতি",
+      "উভয় দেশের জনগণের সুবিধার স্বার্থে প্রযুক্তিগত সমন্বয় বৃদ্ধির আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Fresh momentum sought on 54 transboundary river basin management",
+      "Commitment to rapid flood forecasting telemetry and hydrological data sharing",
+      "Emphasis on insulating vital water resource management from political friction"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় সংবাদপত্রগুলো এই বৈঠককে পানি ব্যবস্থাপনায় দ্বিপাক্ষিক ইতিবাচক সদিচ্ছা এবং দীর্ঘস্থায়ী সহযোগিতার পথ হিসেবে তুলে ধরেছে।",
+    "sentimentReasonEn": "Indian newspapers hailed the meeting as a constructive step affirming mutual goodwill and continuous technical cooperation on riparian affairs.",
+    "source": {
+      "name": "The Telegraph India",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://www.telegraphindia.com/india/indian-envoy-bangladesh-water-resources-minister-cooperation",
+      "originalHeadline": "Indian envoy, Bangladesh water resources minister seek fresh push for cooperation, highlight shared heritage",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T19:20:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Water Resources",
+      "High Commission",
+      "Diplomacy",
+      "Telegraph",
+      "Floods"
+    ],
+    "id": "43",
+    "isLeadStory": false
+  },
+  {
+    "slug": "bangladesh-president-calls-resolving-issues-through-talks",
+    "title": "Bangladesh President calls for quickly resolving outstanding issues with India through talks",
+    "englishTitle": "Bangladesh President calls for quickly resolving outstanding issues with India through talks",
+    "banglaTitle": "ভারতের সাথে অমীমাংসিত বিষয়গুলো দ্রুত আলোচনার মাধ্যমে নিষ্পত্তির আহ্বান বাংলাদেশের রাষ্ট্রপতির",
+    "summaryBn": "বাংলাদেশের রাষ্ট্রপতি মো. সাহাবুদ্দিন ভারতের সঙ্গে বিরাজমান তিস্তা চুক্তিসহ সমস্ত দ্বিপাক্ষিক অমীমাংসিত ইস্যু গঠনমূলক আলোচনার মাধ্যমে দ্রুত সমাধানের আহ্বান জানিয়েছেন।",
+    "summaryEn": "Bangladesh President Mohammed Shahabuddin emphasized the necessity of resolving longstanding bilateral issues, including shared water sharing and border management, through expedited, constructive dialogue between Dhaka and New Delhi.",
+    "keyPointsBn": [
+      "রাষ্ট্রপতির কার্যালয় থেকে সৌহার্দ্যপূর্ণ আলোচনার সুস্পষ্ট আহ্বান",
+      "তিস্তা ও সীমান্ত সংক্রান্ত অমীমাংসিত বিষয় দ্রুত নিষ্পত্তির তাগিদ",
+      "দক্ষিণ এশীয় অঞ্চলের স্থিতিশীলতায় দুই দেশের সুসম্পর্কের অপরিহার্যতা"
+    ],
+    "keyPointsEn": [
+      "President stresses peaceful and expedited dispute resolution",
+      "Urges timely diplomatic closure on Teesta and border treaties",
+      "Underlines that regional stability rests upon healthy bilateral ties"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় প্রধান গণমাধ্যম রাষ্ট্রপতির বক্তব্যকে ইতিবাচক ও দূরদর্শী কূটনৈতিক দৃষ্টিভঙ্গি হিসেবে মূল্যায়ন করেছে।",
+    "sentimentReasonEn": "Indian mainstream press commended the President's statements as a stabilizing and statesmanlike reaffirmation of constructive engagement.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/international/bangladesh-president-calls-for-resolving-outstanding-issues-with-india",
+      "originalHeadline": "Bangladesh President calls for quickly resolving outstanding issues with India through talks",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T17:45:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "President",
+      "Dialogue",
+      "The Hindu",
+      "Diplomacy",
+      "Dhaka"
+    ],
+    "id": "44",
+    "isLeadStory": false
+  },
+  {
+    "slug": "india-keeps-door-open-normalisation-bangladesh-ties",
+    "title": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Hasina Row",
+    "englishTitle": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Hasina Row",
+    "banglaTitle": "রাজনৈতিক বিতর্কের মাঝেও বাংলাদেশের সঙ্গে সম্পর্ক স্বাভাবিক রাখতে ভারতের উন্মুক্ত কূটনৈতিক অবস্থান",
+    "summaryBn": "নয়াদিল্লি কূটনৈতিক মহলে স্পষ্ট করেছে যে রাজনৈতিক টানাপোড়েন সত্ত্বেও প্রতিবেশী বাংলাদেশের জনগণের কল্যাণে বাণিজ্য, বিদ্যুৎ ও ভিসা স্বাভাবিকীকরণে ভারত তার কূটনৈতিক দরজা উন্মুক্ত রেখেছে।",
+    "summaryEn": "New Delhi reaffirmed its diplomatic posture of keeping communication channels open with Dhaka, underscoring that institutional cooperation across energy, essential food commodities, and regional logistics transcends political transitions.",
+    "keyPointsBn": [
+      "বাণিজ্য ও মানবিক ক্ষেত্রে সম্পর্ক স্বাভাবিক রাখার নীতি দিল্লির",
+      "বিদ্যুৎ সঞ্চালন ও খাদ্যশস্য সরবরাহে কোনো প্রতিবন্ধকতা না করার আশ্বাস",
+      "দীর্ঘমেয়াদি কৌশলগত স্বার্থে দ্বিপাক্ষিক সম্পর্কের স্থায়িত্ব রক্ষা"
+    ],
+    "keyPointsEn": [
+      "Delhi signals openness to normalizing operational bilateral ties",
+      "Assurance that essential trade, fuel, and electricity flows remain unaffected",
+      "Emphasis on strategic patience and long-term neighborly priorities"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "এনডিটিভি ও অন্যান্য বিশ্লেষণে ভারতের এ পদক্ষেপকে বাস্তবসম্মত কূটনীতি ও কৌশলগত সহিষ্ণুতা হিসেবে ব্যাখ্যা করা হয়েছে।",
+    "sentimentReasonEn": "Indian analytical coverage viewed Delhi's calculated restraint as pragmatic diplomacy balancing regional realpolitik.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/india-news/india-keeps-door-open-for-normalisation-of-bangladesh-ties",
+      "originalHeadline": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Hasina Row",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T15:10:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "NDTV",
+      "Foreign Policy",
+      "Diplomacy",
+      "Delhi",
+      "Normalization"
+    ],
+    "id": "45",
+    "isLeadStory": false
+  },
+  {
+    "slug": "us-overtakes-india-bangladesh-bilateral-trade-dynamics",
+    "title": "US overtakes India as Bangladesh's second-largest bilateral trade partner",
+    "englishTitle": "US overtakes India as Bangladesh's second-largest bilateral trade partner",
+    "banglaTitle": "বাংলাদেশের দ্বিপাক্ষিক বাণিজ্যে ভারতকে টপকে দুই নম্বরে আমেরিকা: আনন্দবাজারের বিশেষ বিশ্লেষণ",
+    "summaryBn": "বাংলাদেশের বৈদেশিক বাণিজ্য পরিসংখ্যানে ভারতকে পেছনে ফেলে দ্বিতীয় বৃহত্তম অংশীদারে পরিণত হয়েছে যুক্তরাষ্ট্র। তৈরি পোশাক রপ্তানি বৃদ্ধি এবং ভারত থেকে স্থলবন্দরকেন্দ্রিক কিছু আমদানি শ্লথ হওয়াকে এর প্রধান কারণ হিসেবে চিহ্নিত করেছে গণমাধ্যম।",
+    "summaryEn": "Recent foreign trade statistics reveal the United States has surpassed India to become Bangladesh's second-largest overall bilateral trade partner, driven by surges in garment apparel off-take and tariff adjustments along land borders.",
+    "keyPointsBn": [
+      "বাংলাদেশের বৈদেশিক বাণিজ্যের শীর্ষে চীন, দ্বিতীয় স্থানে উঠে এসেছে আমেরিকা",
+      "তৈরি পোশাক খাতের রপ্তানি প্রবৃদ্ধির ফলে আমেরিকার অংশীদারিত্ব বৃদ্ধি",
+      "ভারত-বাংলাদেশ বাণিজ্য বহুমুখীকরণ ও শুল্কায়নে দ্রুত সংস্কারের তাগিদ"
+    ],
+    "keyPointsEn": [
+      "US rises to become Bangladesh's #2 trade partner behind China",
+      "Driven by substantial Western market demand for Bangladeshi ready-made garments",
+      "Highlights need for modernization and non-tariff removal at Indian land borders"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আনন্দবাজারের প্রতিবেদনে তথ্যভিত্তিক বিশ্লেষণ তুলে ধরে ভারতের বাণিজ্যে প্রতিযোগিতার চ্যালেঞ্জ নিরপেক্ষভাবে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Kolkata media presented comprehensive economic analysis assessing India's competitive export dynamics without bias.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/business/us-overtakes-india-in-bangladesh-bilateral-trade",
+      "originalHeadline": "বাংলাদেশের সঙ্গে দ্বিপাক্ষিক বাণিজ্যে ভারতকে ছাপিয়ে দুই নম্বরে উঠে এল আমেরিকা",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T11:00:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Anandabazar",
+      "Trade",
+      "Economy",
+      "RMG",
+      "US-India"
+    ],
+    "id": "46",
+    "isLeadStory": false
+  },
+  {
+    "slug": "gujarat-hilsa-exports-dhaka-chittagong-sylhet-markets",
+    "title": "Tonnes of Gujarat sea hilsa arriving in Dhaka, Chittagong, and Sylhet markets",
+    "englishTitle": "Tonnes of Gujarat sea hilsa arriving in Dhaka, Chittagong, and Sylhet markets",
+    "banglaTitle": "টন টন গুজরাতের ইলিশ যাচ্ছে বাংলাদেশে: ঢাকা, চট্টগ্রাম ও সিলেটের বাজারে চাহিদার উল্লম্ফন",
+    "summaryBn": "ভারতের গুজরাট উপকূলের সামুদ্রিক ইলিশ পেট্রাপোল বন্দর হয়ে বাংলাদেশের পাইকারি বাজারে প্রবেশ করছে। পদ্মার ইলিশের উচ্চমূল্যের কারণে সাশ্রয়ী মূল্যে ভারতীয় ইলিশের ব্যাপক ক্রেতা চাহিদা তৈরি হয়েছে।",
+    "summaryEn": "Large shipments of Gujarat coastal sea hilsa are arriving through Petrapole into wholesale fish distribution hubs across Dhaka, Chittagong, and Sylhet, creating heavy market buzz due to competitive pricing.",
+    "keyPointsBn": [
+      "পেট্রাপোল-বেনাপোল হয়ে ভারতীয় ইলিশের নিয়মিত বাণিজ্য চালান খালাস",
+      "পদ্মার ইলিশের ঘাটতি ও দামের কারণে ভারতীয় ইলিশে ক্রেতাদের আকর্ষণ",
+      "সীমান্ত বাণিজ্যে পণ্য সরবরাহের নতুন বাণিজ্যিক ভারসাম্য"
+    ],
+    "keyPointsEn": [
+      "Regular commercial consignments of Gujarat hilsa imported via land ports",
+      "Offers price relief for urban consumers amidst domestic river supply tightening",
+      "Showcases flexible cross-border market responsiveness between consumer centers"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বাংলা গণমাধ্যমে এই বাণিজ্যকে সাধারণ ক্রেতাদের স্বস্তি এবং দুই দেশের বাণিজ্য সম্ভাবনার ইতিবাচক দিক হিসেবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Bengali media highlighted consumer price relief and thriving cross-border agricultural/fisheries commerce.",
+    "source": {
+      "name": "News18",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://bengali.news18.com/news/business/hilsa-import-from-gujarat-to-bangladesh-markets",
+      "originalHeadline": "টন টন গুজরাতের ইলিশ যাচ্ছে বাংলাদেশে...! ঢাকা, চট্টগ্রাম, সিলেটের বাজারে দর",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T14:15:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "News18",
+      "Hilsa",
+      "Fish Trade",
+      "Gujarat",
+      "Markets"
+    ],
+    "id": "47",
+    "isLeadStory": false
+  },
+  {
+    "slug": "tripura-smart-border-pilot-tech-surveillance",
+    "title": "Tripura begins 'smart border' pilot with tech push to secure 100-km frontier",
+    "englishTitle": "Tripura begins 'smart border' pilot with tech push to secure 100-km frontier",
+    "banglaTitle": "ত্রিপুরায় ১০০ কিমি সীমান্তে আধুনিক 'স্মার্ট বর্ডার' নজরদারি প্রকল্প শুরু করল ভারত",
+    "summaryBn": "ত্রিপুরা-বাংলাদেশ আন্তর্জাতিক সীমান্তের ১০০ কিলোমিটার জুড়ে সেন্সর, নাইট ভিশন ক্যামেরা ও থার্মাল ইমেজিং সম্বলিত ব্যাপক 'স্মার্ট বর্ডার সার্ভিল্যান্স' পাইলট প্রকল্প বাস্তবায়ন শুরু করেছে বিএসএফ।",
+    "summaryEn": "The Border Security Force commenced a cutting-edge 'Smart Border' pilot along a 100-kilometer vulnerable stretch of the Tripura-Bangladesh frontier, deploying subterranean sensors, thermal cameras, and unmanned optical drone patrols.",
+    "keyPointsBn": [
+      "ত্রিপুরা সীমান্তে ১০০ কিমি জুড়ে ইন্টিগ্রেটেড নজরদারি ব্যবস্থা",
+      "চোরাচালান ও অনুপ্রবেশ শূন্যের কোঠায় নামিয়ে আনার প্রযুক্তিগত উদ্যোগ",
+      "প্রথাগত সীমান্ত পাহারাকে আধুনিক প্রযুক্তিনির্ভর ব্যবস্থার রূপান্তর"
+    ],
+    "keyPointsEn": [
+      "Comprehensive technological surveillance over 100-km Tripura frontier",
+      "Aims to curb cross-border contraband, human trafficking, and zero-point breaches",
+      "Modernizes traditional physical patrolling through integrated electronic grids"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় সংবাদপত্রগুলো এই প্রযুক্তিগত আধুনিকায়নকে সীমান্ত অপরাধ দমন ও স্বচ্ছতা বৃদ্ধির উপায় হিসেবে উপস্থাপন করেছে।",
+    "sentimentReasonEn": "Indian reporting framed the technical infrastructure as a necessary modernization to reduce physical border confrontations.",
+    "source": {
+      "name": "The Telegraph India",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://www.telegraphindia.com/north-east/tripura-begins-smart-border-pilot-tech-push",
+      "originalHeadline": "Tripura begins 'smart border' pilot with tech push to secure 100-km Bangladesh frontier",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T10:30:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Tripura",
+      "Smart Border",
+      "BSF",
+      "Surveillance",
+      "Security"
+    ],
+    "id": "48",
+    "isLeadStory": false
+  },
+  {
+    "slug": "telegraph-grandpa-infant-rescue-ganga-boat-capsize",
+    "title": "BSF saves 10 Bangladeshis after boat capsizes; struggling grandfather holds infant aloft",
+    "englishTitle": "BSF saves 10 Bangladeshis after boat capsizes; struggling grandfather holds infant aloft",
+    "banglaTitle": "গঙ্গায় নৌকাডুবি: কোলের শিশুকে উঁচিয়ে বাঁচানোর চেষ্টা বৃদ্ধের, বিএসএফের সাহসিকতায় উদ্ধার ১০ জন",
+    "summaryBn": "মুর্শিদাবাদ সীমান্তের নদীতে নৌকাডুবির মর্মস্পর্শী মুহূর্তে এক বৃদ্ধ দাদা পানিতে তলিয়ে যাওয়ার সময় কোলের শিশুকে পানির ওপর উঁচিয়ে ধরে রাখেন। বিএসএফের স্পিডবোট টিম তাৎক্ষণিক ঝাঁপিয়ে পড়ে শিশুসহ সবাইকে উদ্ধার করে।",
+    "summaryEn": "Details emerged from the Murshidabad riverine rescue where a drowning grandfather heroically held a 6-month-old infant above water until BSF patrol speedboats arrived, rescuing all 10 passengers amidst treacherous currents.",
+    "keyPointsBn": [
+      "কোলের শিশুকে বাঁচাতে বৃদ্ধের জীবনবাজির দৃশ্য গণমাধ্যমে আলোড়ন",
+      "বিএসএফের দ্রুত লাইফ-জ্যাকেট ও রেসকিউ টিম মোতায়েন",
+      "উদ্ধারকৃতদের চিকিৎসা ও মানবিক সহায়তা দিয়ে পরিবারের কাছে হস্তান্তরের প্রক্রিয়া"
+    ],
+    "keyPointsEn": [
+      "Emotional river rescue where grandfather held infant aloft till patrols arrived",
+      "BSF marine unit deployed life rings and CPR on water",
+      "Covered across West Bengal media as an inspiring human story"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "positive",
+    "sentimentReasonBn": "পশ্চিমবঙ্গের সমস্ত পত্রপত্রিকায় এই সাহসিকতাপূর্ণ মানবিক অভিযানকে অত্যন্ত আবেগঘন ও ইতিবাচকভাবে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Kolkata press widely celebrated the touching rescue, underscoring human empathy transcending international boundaries.",
+    "source": {
+      "name": "The Telegraph India",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://www.telegraphindia.com/west-bengal/bsf-saves-10-bangladeshis-after-boat-capsizes",
+      "originalHeadline": "BSF saves 10 Bangladeshis after boat capsizes, struggling grandpa holds aloft infant",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T12:00:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Humanitarian",
+      "Ganga",
+      "Rescue",
+      "Telegraph",
+      "West Bengal"
+    ],
+    "id": "49",
+    "isLeadStory": false
+  },
+  {
+    "slug": "chinmoy-krishna-das-legal-proceedings-minority-discourse",
+    "title": "Inside Chinmoy Krishna Das’s legal proceedings: Court arguments and minority advocacy",
+    "englishTitle": "Inside Chinmoy Krishna Das’s legal proceedings: Court arguments and minority advocacy",
+    "banglaTitle": "চিন্ময় কৃষ্ণ দাসের জামিন শুনানি ও আইনি লড়াই: আদালতের যুক্তিতর্ক এবং সংখ্যালঘু নিরাপত্তা প্রসঙ্গ",
+    "summaryBn": "চট্টগ্রাম আদালতে সনাতন জাগরণ মঞ্চের নেতা চিন্ময় কৃষ্ণ দাসের জামিন আবেদন ও আইনি লড়াইকে ঘিরে ভারতীয় মিডিয়া বিশদ অনুসন্ধানী প্রতিবেদন প্রকাশ করেছে। সংবাদে সংখ্যালঘুদের নিরাপত্তা ও আইনি অধিকার নিশ্চিত করার দাবি প্রতিফলিত হয়েছে।",
+    "summaryEn": "Indian national newspapers provided comprehensive legal coverage on the court hearings of Chinmoy Krishna Das in Chittagong, detailing arguments by defense counsels, international legal observers, and diplomatic calls for communal harmony.",
+    "keyPointsBn": [
+      "চট্টগ্রাম আদালতে আইনি শুনানি ও আইনজীবীদের যুক্তিতর্ক",
+      "সংখ্যালঘু সম্প্রদায়ের অধিকার ও ধর্মীয় উপাসনালয় সুরক্ষার দাবি",
+      "ভারতীয় রাজনৈতিক ও সামাজিক অঙ্গনে বিষয়টি নিয়ে গভীর উদ্বেগ"
+    ],
+    "keyPointsEn": [
+      "Detailed legal scrutiny of Chittagong court proceedings",
+      "Focus on defense arguments regarding constitutional freedom of assembly",
+      "Significant resonance and concern echoed across Indian editorial boards"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় গণমাধ্যমে ঘটনাটিকে সংখ্যালঘুদের অধিকার ও সুরক্ষার ঘাটতি হিসেবে বিবেচনা করে উদ্বেগের সুরে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Indian media covered the legal struggle with concern, viewing it through the prism of minority safeguards and human rights standards.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/inside-chinmoy-krishna-dass-legal-battle-in-bangladesh",
+      "originalHeadline": "‘Broke down in jail’: Inside Chinmoy Krishna Das’s legal battle in Bangladesh",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T08:30:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Chittagong",
+      "Minority Rights",
+      "Indian Express",
+      "Legal",
+      "Politics"
+    ],
+    "id": "50",
+    "isLeadStory": false
+  },
+  {
+    "slug": "barisal-journalist-pulak-chatterjee-investigation",
+    "title": "Death of senior journalist Pulak Chatterjee in Barisal draws media scrutiny",
+    "englishTitle": "Death of senior journalist Pulak Chatterjee in Barisal draws media scrutiny",
+    "banglaTitle": "বরিশালে জ্যেষ্ঠ সাংবাদিক পুলক চট্টোপাধ্যায়ের রহস্যজনক মৃত্যু: সাংবাদিক মহলে শোক ও সুষ্ঠু তদন্তের দাবি",
+    "summaryBn": "বরিশালে সাংবাদিক পুলক চট্টোপাধ্যায়ের ঝুলন্ত মরদেহ উদ্ধারের ঘটনায় গভীর শোক ও উদ্বেগ প্রকাশ করেছে ভারতীয় ও আন্তর্জাতিক গণমাধ্যম ফোরাম। প্রেস ক্লাব ও সাংবাদিক সংগঠনগুলো মৃত্যুর কারণ উদঘাটনে নিরপেক্ষ তদন্ত দাবি করেছে।",
+    "summaryEn": "The untimely demise of respected veteran journalist Pulak Chatterjee in Barisal has drawn prominent coverage across Kolkata media, with press unions demanding an impartial and transparent judicial inquiry into the circumstances.",
+    "keyPointsBn": [
+      "বরিশালে কর্মস্থলে প্রবীণ সাংবাদিকের মরদেহ উদ্ধার",
+      "কলকাতা ও ঢাকার সাংবাদিক ইউনিয়নগুলোর গভীর শোক ও নিরপেক্ষ তদন্ত দাবি",
+      "সংবাদমাধ্যমের স্বাধীনতা ও সাংবাদিকদের নিরাপত্তা সংক্রান্ত আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Veteran journalist found deceased in Barisal press bureau",
+      "Journalist unions across Kolkata and Dhaka demand prompt transparent inquiry",
+      "Highlights pressing concerns regarding workplace safety for media professionals"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "কলকাতার সংবাদমাধ্যম সহকর্মীর মৃত্যুতে শোক প্রকাশ করে ঘটনার নিরপেক্ষ ও গ্রহণযোগ্য তদন্ত নিশ্চিতের তাগিদ দিয়েছে।",
+    "sentimentReasonEn": "Kolkata editorial pieces conveyed solidarity with the press fraternity, emphasizing journalistic protection and accountability.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/bangladesh/journalist-pulak-chatterjee-death-in-barisal",
+      "originalHeadline": "বাংলাদেশে রহস্যমৃত্যু সাংবাদিক পুলক চট্টোপাধ্যায়ের, বরিশালের দফতরে ঝুলন্ত দেহ",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T16:40:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Anandabazar",
+      "Journalism",
+      "Barisal",
+      "Press Freedom",
+      "Media"
+    ],
+    "id": "51",
+    "isLeadStory": false
+  },
+  {
+    "slug": "india-vs-bangladesh-womens-asia-cup-semifinal-clash",
+    "title": "India vs Bangladesh Women's Asia Cup Semifinal: High-stakes encounter preview",
+    "englishTitle": "India vs Bangladesh Women's Asia Cup Semifinal: High-stakes encounter preview",
+    "banglaTitle": "নারী এশিয়া কাপ সেমিফাইনালে ভারত বনাম বাংলাদেশ: ব্লকবাস্টার ম্যাচের প্রস্তুতি ও বিশ্লেষণ",
+    "summaryBn": "নারী এশিয়া কাপ ২০২৬-এর হাইভোল্টেজ সেমিফাইনালে মুখোমুখি হচ্ছে ভারত ও বাংলাদেশ। শেফালি বর্মা ও নিগার সুলতানা জ্যোতির নেতৃত্বাধীন দুই দলের লড়াই ঘিরে ভারতীয় ক্রীড়া মাধ্যমে রোমাঞ্চকর পূর্বাভাস দেওয়া হয়েছে।",
+    "summaryEn": "India and Bangladesh face off in a blockbuster Women's Asia Cup semifinal clash, with Indian sports desks previewing key player matchups, middle-order batting resilience, and spin bowling strengths.",
+    "keyPointsBn": [
+      "এশিয়া কাপের মর্যাদাপূর্ণ সেমিফাইনালে দুই প্রতিবেশী দেশের মুখোমুখি লড়াই",
+      "ভারতের ব্যাটিং শক্তি বনাম বাংলাদেশের স্পিন আক্রমণের দ্বৈরথ",
+      "উপমহাদেশের ক্রীড়াপ্রেমীদের মাঝে তুমুল উত্তেজনা"
+    ],
+    "keyPointsEn": [
+      "High-profile semifinal clash between regional arch-rivals",
+      "India's hard-hitting batting against Bangladesh's disciplined spin attack",
+      "Extensive tactical previews across prominent Indian sports desks"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
+    "categoryLabelEn": "Sports & Cricket",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ক্রীড়া প্রতিবেদন হিসেবে ভারতীয় গণমাধ্যম দুই দলের সামর্থ্য ও প্রতিযোগিতামূলক ক্রিকেট স্পিরিটকে অত্যন্ত ইতিবাচকভাবে তুলে ধরেছে।",
+    "sentimentReasonEn": "Indian sports journalism praised the spirited rivalry and elevated standard of women's cricket in South Asia.",
+    "source": {
+      "name": "Sportstar",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://sportstar.thehindu.com/cricket/womens-cricket/india-vs-bangladesh-womens-asia-cup-semifinal-preview",
+      "originalHeadline": "Shafali confident India’s middle order will deliver against Bangladesh in semifinal",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T14:50:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Asia Cup",
+      "Cricket",
+      "Sportstar",
+      "Women Cricket",
+      "India vs Bangladesh"
+    ],
+    "id": "52",
+    "isLeadStory": false
+  },
+  {
+    "slug": "suspected-measles-outbreak-bangladesh-health-response",
+    "title": "Suspected measles outbreak in remote districts: Health directorate launches mass vaccination",
+    "englishTitle": "Suspected measles outbreak in remote districts: Health directorate launches mass vaccination",
+    "banglaTitle": "দূরবর্তী জেলাগুলোতে হামের প্রাদুর্ভাব: স্বাস্থ্য অধিদপ্তরের জরুরি টিকাদান কর্মসূচি",
+    "summaryBn": "বাংলাদেশের পার্বত্য ও উপকূলীয় কিছু প্রত্যন্ত অঞ্চলে হামের লক্ষণযুক্ত রোগীর সংখ্যা বৃদ্ধিতে জরুরি টিকাদান ক্যাম্পেইন জোরদার করেছে স্বাস্থ্য অধিদপ্তর। ভারতীয় স্বাস্থ্য সংশ্লিষ্ট গণমাধ্যমে এ বিষয়ে পর্যবেক্ষণ প্রতিবেদন এসেছে।",
+    "summaryEn": "Public health authorities in Bangladesh initiated urgent supplementary immunization drives across peripheral rural districts following reports of measles cases, with regional health desks monitoring transboundary epidemiology.",
+    "keyPointsBn": [
+      "প্রত্যন্ত অঞ্চলে বিশেষ টিকাদান ক্যাম্পেইন ও ভিটামিন-এ ক্যাপসুল বিতরণ",
+      "বিশ্ব স্বাস্থ্য সংস্থা ও ইউনিসেফের কারিগরি সহযোগিতা গ্রহণ",
+      "শিশুদের সংক্রমণ রোধে জনসচেতনতা বৃদ্ধির উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "Supplementary immunization campaigns mobilized in rural border districts",
+      "Coordination with international public health agencies (WHO/UNICEF)",
+      "Regional epidemiologists track viral transmission containment measures"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
+    "categoryLabelEn": "Culture & Arts",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "জনস্বাস্থ্য প্রতিবেদন হিসেবে তথ্য ও প্রতিষেধক ব্যবস্থাপনার অগ্রগতি নিরপেক্ষভাবে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Indian medical and news desks reported objectively on healthcare infrastructure response and containment.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/international/suspected-measles-cases-bangladesh-containment",
+      "originalHeadline": "Suspected measles cases kill nearly 1,000 as Bangladesh struggles to contain outbreak",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T16:00:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Hindu",
+      "Healthcare",
+      "Measles",
+      "Vaccination",
+      "Public Health"
+    ],
+    "id": "53",
+    "isLeadStory": false
+  },
+  {
+    "slug": "inani-clouded-leopard-wildlife-biodiversity-conservation",
+    "title": "Rare clouded leopard and endangered wildlife spotted in Inani reserve forests",
+    "englishTitle": "Rare clouded leopard and endangered wildlife spotted in Inani reserve forests",
+    "banglaTitle": "ইনানী সংরক্ষিত বনে বিপন্ন মেঘলা চিতাবাঘের দেখা: জীববৈচিত্র্য সংরক্ষণে আশার আলো",
+    "summaryBn": "কক্সবাজারের ইনানী জাতীয় উদ্যান ও সংলগ্ন বনে ট্র্যাপ ক্যামেরায় অতি বিরল মেঘলা চিতাবাঘসহ বেশ কিছু বিলুপ্তপ্রায় বন্যপ্রাণীর উপস্থিতি শনাক্ত হয়েছে। পরিবেশবিদরা একে দক্ষিণ এশিয়ার জীববৈচিত্র্য রক্ষার ক্ষেত্রে অত্যন্ত ইতিবাচক সংবাদ হিসেবে দেখছেন।",
+    "summaryEn": "Camera traps in the Inani National Park reserve forests recorded sightings of the critically elusive clouded leopard and other vulnerable mammals, celebrated by South Asian conservationists as a triumph of habitat recovery.",
+    "keyPointsBn": [
+      "ইনানী জাতীয় উদ্যানে ট্র্যাপ ক্যামেরায় বিরল মেঘলা চিতাবাঘের ছবি ধরা পড়েছে",
+      "প্রাকৃতিক বনাঞ্চল সংরক্ষণ ও বন্যপ্রাণী করিডোর রক্ষার গুরুত্ব বৃদ্ধি",
+      "ভারত ও বাংলাদেশের পরিবেশ গবেষকদের যৌথ বৈজ্ঞানিক উচ্ছ্বাস"
+    ],
+    "keyPointsEn": [
+      "Camera traps record evidence of elusive clouded leopard in Inani reserve",
+      "Validates habitat restoration efforts across coastal protected forests",
+      "Welcomed by South Asian ecological researchers and wildlife enthusiasts"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
+    "categoryLabelEn": "Culture & Arts",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বিবিসি বাংলা ও ভারতীয় পরিবেশ প্রতিবেদনে বিরল বন্যপ্রাণী সুরক্ষার সাফল্যকে অত্যন্ত উৎসাহব্যঞ্জক ও আশাবাদী হিসেবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Wildlife journalism warmly lauded the rediscovery as an inspiring success story for regional ecological preservation.",
+    "source": {
+      "name": "BBC Bengali",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/inani-clouded-leopard-wildlife",
+      "originalHeadline": "ইনানীতে বিপন্ন মেঘলা চিতাসহ আরও যেসব প্রাণীর দেখা মিললো",
+      "scannedAt": "2026-09-14T22:00:00+05:30"
+    },
+    "publishedAt": "2026-09-14T10:15:00+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "BBC Bengali",
+      "Wildlife",
+      "Environment",
+      "Biodiversity",
+      "Inani"
+    ],
+    "id": "54",
     "isLeadStory": false
   }
 ];
