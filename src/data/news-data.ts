@@ -2144,7 +2144,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T15:10:00+05:30",
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
     "tags": [
       "NDTV",
       "Foreign Policy",
