@@ -135,6 +135,201 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "tv-wion-1",
+    "slug": "wion-bangladesh-foreign-policy-reset-south-asia",
+    "title": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
+    "englishTitle": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
+    "banglaTitle": "কৌশলগত পুনর্বিন্যাস: বাংলাদেশের পররাষ্ট্রনীতির রূপান্তর কীভাবে দক্ষিণ এশিয়ার ভূরাজনীতিকে প্রভাবিত করছে — ওয়িয়নের বিশ্লেষণ",
+    "summaryBn": "আন্তর্জাতিক টেলিভিশন নেটওয়ার্ক ওয়িয়নের বিশেষ প্রতিবেদনে বলা হয়েছে, ঢাকা এখন বহুমুখী কূটনীতির অংশ হিসেবে প্রতিবেশী ভারতের বাইরে আঞ্চলিক পরাশক্তিদের সঙ্গে ভারসাম্য বজায় রাখার কৌশল গ্রহণ করছে, যা দক্ষিণ এশিয়ার দীর্ঘমেয়াদী ভূরাজনীতিতে প্রভাব ফেলবে।",
+    "summaryEn": "In a broadcast analysis, global television network WION examines Bangladesh's evolving diplomatic posture, noting that Dhaka is actively balancing its regional partnerships while seeking an interest-based equilibrium with New Delhi.",
+    "keyPointsBn": [
+      "ওয়িয়নের আন্তর্জাতিক ডেস্কে বাংলাদেশের কূটনৈতিক রূপান্তরের বিশদ পর্যালোচনা",
+      "সার্ক ও বিমসটেক অঞ্চলের ভূরাজনৈতিক গতিপ্রকৃতি নিয়ে বিশ্লেষণ",
+      "ভারতের সঙ্গে পারস্পরিক স্বার্থভিত্তিক বোঝাপড়ার গুরুত্ব তুলে ধরা"
+    ],
+    "keyPointsEn": [
+      "WION global desk assesses Dhaka's evolving foreign policy doctrine",
+      "Analysis on regional balance across SAARC and BIMSTEC stakeholders",
+      "Underlines necessity of mutual, interest-driven diplomatic dialogue"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "প্রতিবেদনে অতিমাত্রায় পক্ষপাত বা বিতর্ক এড়িয়ে ভারসাম্যপূর্ণ আন্তর্জাতিক দৃষ্টিভঙ্গি উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "WION's coverage maintains an objective analytical lens, dissecting geopolitical implications without adversarial sensationalism.",
+    "source": {
+      "name": "WION",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.wionews.com/south-asia/bangladesh-diplomatic-recalibration-regional-ties",
+      "originalHeadline": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
+      "scannedAt": "2026-09-14T21:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T18:45:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "tags": ["WION", "Diplomacy", "Geopolitics", "South Asia", "Foreign Policy"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-indiatoday-2",
+    "slug": "india-today-bangladesh-reset-ties-bilateral-diplomacy",
+    "title": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
+    "englishTitle": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
+    "banglaTitle": "'অস্বস্তিকর' অধ্যায় পেরিয়ে: দিল্লির সঙ্গে দ্বিপাক্ষিক সম্পর্ক পুনর্গঠনে ইতিবাচক বার্তা ঢাকার",
+    "summaryBn": "ইন্ডিয়া টুডের সম্প্রচারে জানানো হয়েছে, সাম্প্রতিক টানাপোড়েন ও অনিশ্চয়তার পর বাংলাদেশ দিল্লির সঙ্গে সম্পর্ক নতুন করে শুরু করার ব্যাপারে স্পষ্ট ইতিবাচক সংকেত দিয়েছে। উভয় দেশের পারস্পরিক অর্থনৈতিক ও নিরাপত্তা স্বার্থের তাগিদেই এ অগ্রগতি ঘটছে।",
+    "summaryEn": "India Today reports that following months of unease, diplomatic channels between New Delhi and Dhaka are witnessing constructive messaging, with both sides acknowledging deep interdependencies in commerce and frontier stability.",
+    "keyPointsBn": [
+      "দিল্লি ও ঢাকার উচ্চপর্যায়ের কূটনৈতিক যোগাযোগের অগ্রগতি",
+      "দ্বিপাক্ষিক বাণিজ্য ও ট্রানজিট স্বাভাবিক রাখার ওপর গুরুত্বারোপ",
+      "উভয় দেশের নিরাপত্তাগত উদ্বেগ নিরসনে সংলাপের আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Constructive diplomatic signaling between Dhaka and New Delhi",
+      "Emphasis on maintaining vital bilateral trade and cargo corridors",
+      "Recognition of shared frontier and regional security priorities"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিবেদনে দুই দেশের সম্পর্ক পুনরুজ্জীবনের সম্ভাবনাময় দিকগুলো এবং পারস্পরিক সহযোগিতার প্রয়োজনীয়তা জোরালোভাবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "India Today frames the development constructively, emphasizing pragmatism and the mutual benefits of stabilizing bilateral ties.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/story/bangladesh-wants-reset-ties-india-bilateral-discussions",
+      "originalHeadline": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
+      "scannedAt": "2026-09-14T21:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T17:15:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "tags": ["India Today", "Diplomacy", "Bilateral Ties", "Delhi", "Dhaka"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-timesnow-3",
+    "slug": "times-now-bangladesh-cross-border-connectivity-security-scrutiny",
+    "title": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
+    "englishTitle": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
+    "banglaTitle": "সীমান্ত নিরাপত্তা ও ট্রানজিট: বাংলাদেশ করিডোর নিয়ে ভারতীয় কৌশলগত মহলে নতুন পর্যালোচনা",
+    "summaryBn": "টাইমস নাউ চ্যানেলের প্রাইমটাইম আলোচনায় ভারতের পূর্বাঞ্চলীয় সীমান্ত নিরাপত্তা এবং শিলিগুড়ি করিডোর সুরক্ষার প্রেক্ষিতে বাংলাদেশ সীমান্তবর্তী এলাকাগুলোতে নজরদারি বৃদ্ধির সুপারিশ করেছেন অবসরপ্রাপ্ত সেনা ও গোয়েন্দা কর্মকর্তারা।",
+    "summaryEn": "Times Now broadcast featured extensive strategic discussions focusing on the Siliguri Corridor and Northeastern transit security, with Indian defense panelists debating surveillance protocols along the 4,096-km Bangladesh frontier.",
+    "keyPointsBn": [
+      "টাইমস নাউয়ের প্রাইমটাইমে পূর্বাঞ্চলীয় সীমান্ত নিরাপত্তা নিয়ে বিতর্ক",
+      "শিলিগুড়ি করিডোর ও ট্রানজিট রুটের নিরাপত্তা ব্যবস্থার মূল্যায়ন",
+      "সীমান্তবর্তী এলাকার গোয়েন্দা নজরদারি জোরদারের দাবি"
+    ],
+    "keyPointsEn": [
+      "Prime-time security debate on Eastern border vigil and transit",
+      "Assessment of Siliguri Corridor defenses and frontier stability",
+      "Calls by strategic commentators for tightened border infrastructure"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও অভিবাসন",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "টেলিভিশন বিতর্কে প্রধানত নিরাপত্তা ঝুঁকি ও সীমান্ত অস্থিতিশীলতার আশঙ্কাজনক দিকগুলো বাড়িয়ে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Coverage maintained an alert, security-heavy framing, amplifying perceived vulnerabilities along the international border.",
+    "source": {
+      "name": "Times Now",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.timesnownews.com/world/bangladesh-border-security-transit-corridor-scrutiny",
+      "originalHeadline": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
+      "scannedAt": "2026-09-14T21:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T16:00:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["Times Now", "Border", "Security", "Siliguri Corridor", "Defense"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-republic-4",
+    "slug": "republic-tv-bangladesh-minority-rights-interim-governance-debate",
+    "title": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
+    "englishTitle": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
+    "banglaTitle": "ভারতীয় গণমাধ্যমে জোর আলোচনা: বাংলাদেশে সংখ্যালঘু নিরাপত্তা ও সামাজিক স্থায়িত্ব নিয়ে বিতর্ক",
+    "summaryBn": "রিপাবলিক টিভির বিশেষ অনুষ্ঠানে বাংলাদেশের আইন-শৃঙ্খলা পরিস্থিতি এবং আসন্ন উৎসব উপলক্ষে সামাজিক সম্প্রীতি রক্ষায় গৃহীত প্রশাসনিক পদক্ষেপগুলো নিয়ে বিস্তারিত বিতর্ক অনুষ্ঠিত হয়েছে।",
+    "summaryEn": "Republic World broadcast intensive prime-time segments evaluating ground realities and law enforcement commitments across Bangladesh, monitoring official assurances regarding communal harmony during major religious celebrations.",
+    "keyPointsBn": [
+      "রিপাবলিক টিভির বিশেষ বিতর্ক অনুষ্ঠানে সংখ্যালঘু পরিস্থিতি পর্যালোচনা",
+      "বাংলাদেশ প্রশাসনের নিরাপত্তা প্রতিশ্রুতি ও মাঠ পর্যায়ের তথ্যের তুলনা",
+      "উভয় দেশের সচেতন মহলের মধ্যে সম্প্রীতি রক্ষার আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Special televised coverage tracking community safety in Bangladesh",
+      "Evaluation of law enforcement deployments and institutional safeguards",
+      "Debate among civil society voices advocating cross-border reassurance"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "চ্যানেলটিতে উদ্বেগজনক সুর ও নাটকীয় উপস্থাপনার মাধ্যমে জনমনে উদ্বেগের আবহ সৃষ্টি করা হয়েছে।",
+    "sentimentReasonEn": "Republic World applied an emphatic, high-friction tone focusing heavily on anxieties and potential flashpoints.",
+    "source": {
+      "name": "Republic TV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.republicworld.com/world-news/bangladesh-minority-protections-governance-debate",
+      "originalHeadline": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
+      "scannedAt": "2026-09-14T21:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T14:30:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["Republic TV", "Politics", "Law and Order", "Society", "Human Rights"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-abpananda-5",
+    "slug": "abp-ananda-petrapole-benapole-trade-transporter-talks",
+    "title": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
+    "englishTitle": "Petrapole-Benapole Border Trade: Joint Steps Initiated To Expedite Cargo Movement And Clearance",
+    "banglaTitle": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
+    "summaryBn": "এবিপি আনন্দের বিশেষ গ্রাউন্ড রিপোর্টে বলা হয়েছে, উত্তর ২৪ পরগনার পেট্রাপোল সীমান্তে পণ্যবাহী ট্রাকের দীর্ঘ জট কাটাতে এবং বেনাপোল বন্দরে ছাড়পত্র প্রক্রিয়া দ্রুত করতে ভারত ও বাংলাদেশের কাস্টমস ও পরিবহন প্রতিনিধিদের মধ্যে ফলপ্রসূ বৈঠক অনুষ্ঠিত হয়েছে।",
+    "summaryEn": "ABP Ananda's ground report highlights joint coordination talks between Indian and Bangladeshi logistics associations at the Petrapole-Benapole land port to unclog cargo queues and streamline customs clearances for perishable commodities.",
+    "keyPointsBn": [
+      "পেট্রাপোল সীমান্তে ট্রাক জট নিরসনে কাস্টমস কর্মকর্তাদের বৈঠক",
+      "পচনশীল পণ্য রফতানিতে বিশেষ গ্রিন চ্যানেলের সুবিধা চালুর প্রস্তাব",
+      "দৈনিক আমদানি-রফতানির পরিমাণ স্বাভাবিক পর্যায়ে ফিরিয়ে আনার লক্ষ্য"
+    ],
+    "keyPointsEn": [
+      "Joint coordination meeting at Petrapole-Benapole to clear truck backlogs",
+      "Proposals for green corridor facilitation for perishable exports",
+      "Efforts to restore daily cross-border freight volumes to optimal capacity"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও অর্থনীতি",
+    "categoryLabelEn": "Trade & Transit",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিবেদনে দ্বিপাক্ষিক বাণিজ্যের গতি বৃদ্ধি এবং ব্যবসায়িক সংকট নিরসনে ইতিবাচক পদক্ষেপ তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "ABP Ananda frames the story positively, highlighting cross-border economic cooperation and trade normalization.",
+    "source": {
+      "name": "ABP Ananda",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://bengali.abplive.com/news/petrapole-benapole-trade-coordination-talks",
+      "originalHeadline": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
+      "scannedAt": "2026-09-14T21:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T13:00:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["ABP Ananda", "Petrapole", "Benapole", "Trade", "Border Cargo"],
+    "isLeadStory": false
+  },
+  {
     "id": "1",
     "slug": "bangladesh-india-reset-ties-bilateral-discussions",
     "title": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",

@@ -78,6 +78,7 @@ export default function BangladeshIndianNewsMediaPage() {
   const stats = useMemo(() => {
     return {
       total: INDIAN_MEDIA_DIRECTORY.length,
+      broadcast: INDIAN_MEDIA_DIRECTORY.filter(o => o.type === 'Broadcast/Digital').length,
       english: INDIAN_MEDIA_DIRECTORY.filter(o => o.language === 'English').length,
       bengali: INDIAN_MEDIA_DIRECTORY.filter(o => o.language === 'Bengali').length,
       hindi: INDIAN_MEDIA_DIRECTORY.filter(o => o.language === 'Hindi').length,
@@ -218,28 +219,48 @@ export default function BangladeshIndianNewsMediaPage() {
               paddingTop: '1.25rem',
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-primary)' }}>
-                <span style={{ color: 'var(--brand-primary)', fontSize: '1.1rem', fontWeight: 900 }}>100</span>
+                <span style={{ color: 'var(--brand-primary)', fontSize: '1.1rem', fontWeight: 900 }}>{stats.total}</span>
                 <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'মোট মিডিয়া' : 'Total Media'}</span>
               </div>
               <span style={{ color: 'var(--border-bold)' }}>•</span>
+              <button
+                onClick={() => { setSelectedType(selectedType === 'Broadcast/Digital' ? 'All' : 'Broadcast/Digital'); setVisibleCount(INITIAL_BATCH_SIZE); }}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  padding: 0,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.45rem',
+                  fontSize: '0.82rem',
+                  fontWeight: 700,
+                  color: selectedType === 'Broadcast/Digital' ? 'var(--brand-gold)' : 'var(--text-primary)',
+                }}
+              >
+                <Tv size={14} style={{ color: 'var(--brand-gold)' }} />
+                <span style={{ color: 'var(--brand-gold)', fontSize: '1.1rem', fontWeight: 900 }}>{stats.broadcast}</span>
+                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'টিভি চ্যানেল' : 'TV Channels'}</span>
+              </button>
+              <span style={{ color: 'var(--border-bold)' }}>•</span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.82rem', fontWeight: 700, color: '#2563eb' }}>
-                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>39</span>
-                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'ইংরেজি দৈনিক' : 'English (1st)'}</span>
+                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>{stats.english}</span>
+                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'ইংরেজি' : 'English'}</span>
               </div>
               <span style={{ color: 'var(--border-bold)' }}>•</span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.82rem', fontWeight: 700, color: '#059669' }}>
-                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>21</span>
-                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'বাংলা গণমাধ্যম' : 'Bengali (2nd)'}</span>
+                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>{stats.bengali}</span>
+                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'বাংলা' : 'Bengali'}</span>
               </div>
               <span style={{ color: 'var(--border-bold)' }}>•</span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.82rem', fontWeight: 700, color: '#ea580c' }}>
-                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>29</span>
-                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'হিন্দি গণমাধ্যম' : 'Hindi (3rd)'}</span>
+                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>{stats.hindi}</span>
+                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'হিন্দি' : 'Hindi'}</span>
               </div>
               <span style={{ color: 'var(--border-bold)' }}>•</span>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.82rem', fontWeight: 700, color: '#7c3aed' }}>
-                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>10</span>
-                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'আঞ্চলিক দৈনিক' : 'Regional'}</span>
+                <span style={{ fontSize: '1.1rem', fontWeight: 900 }}>{stats.regional}</span>
+                <span className={lang === 'bn' ? 'font-bengali' : ''}>{lang === 'bn' ? 'আঞ্চলিক' : 'Regional'}</span>
               </div>
             </div>
           </div>
@@ -312,6 +333,48 @@ export default function BangladeshIndianNewsMediaPage() {
             )}
           </div>
 
+          {/* Medium Type Filter Tabs (TV, Print, Digital) */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            flexWrap: 'wrap',
+            paddingBottom: '0.75rem',
+            borderBottom: '1px solid var(--border-primary)',
+          }}>
+            <span style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--text-muted)' }} className={lang === 'bn' ? 'font-bengali' : ''}>
+              {lang === 'bn' ? 'মাধ্যম ধরন:' : 'Medium:'}
+            </span>
+            {[
+              { id: 'All', label: dirT.allTypes || 'All Mediums' },
+              { id: 'Broadcast/Digital', label: dirT.broadcastTv || '📺 TV & Broadcast News' },
+              { id: 'Print/Digital', label: dirT.printMedia || '📰 Print Newspapers' },
+              { id: 'Digital', label: dirT.digitalMedia || '🌐 Digital Portals' },
+            ].map((typeTab) => {
+              const isActive = selectedType === typeTab.id;
+              return (
+                <button
+                  key={typeTab.id}
+                  onClick={() => { setSelectedType(typeTab.id); setVisibleCount(INITIAL_BATCH_SIZE); }}
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{
+                    padding: '0.35rem 0.75rem',
+                    borderRadius: 'var(--radius-sm)',
+                    fontSize: '0.8rem',
+                    fontWeight: isActive ? 800 : 600,
+                    backgroundColor: isActive ? 'var(--brand-gold)' : 'var(--bg-secondary)',
+                    color: isActive ? '#000000' : 'var(--text-secondary)',
+                    border: `1px solid ${isActive ? 'var(--brand-gold)' : 'var(--border-primary)'}`,
+                    cursor: 'pointer',
+                    transition: 'all 0.15s ease',
+                  }}
+                >
+                  {typeTab.label}
+                </button>
+              );
+            })}
+          </div>
+
           {/* Bottom row: Language Tabs (English First, Bengali Second, Hindi Third, Regional) */}
           <div style={{
             display: 'flex',
@@ -339,7 +402,7 @@ export default function BangladeshIndianNewsMediaPage() {
                 return (
                   <button
                     key={lTab}
-                    onClick={() => setSelectedLanguage(lTab)}
+                    onClick={() => { setSelectedLanguage(lTab); setVisibleCount(INITIAL_BATCH_SIZE); }}
                     className={lang === 'bn' ? 'font-bengali' : ''}
                     style={{
                       padding: '0.45rem 0.85rem',

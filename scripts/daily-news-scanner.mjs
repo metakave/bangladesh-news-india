@@ -52,12 +52,28 @@ const RSS_FEEDS = [
   // 3. Hindi Outlets
   { name: 'BBC Hindi', bureau: 'Delhi', language: 'Hindi', url: 'https://feeds.bbci.co.uk/hindi/rss.xml', webUrl: 'https://www.bbc.com/hindi' },
 
-  // 4. Multi-outlet Aggregated Live Feeds from Top Indian Media
+  // 4. Leading Indian TV News Channels (Direct Feeds)
+  { name: 'WION World & South Asia', bureau: 'Delhi', language: 'English', url: 'https://www.wionews.com/rss/world.xml', webUrl: 'https://www.wionews.com/south-asia' },
+  { name: 'Times Now World', bureau: 'Mumbai', language: 'English', url: 'https://www.timesnownews.com/rss/world.xml', webUrl: 'https://www.timesnownews.com/world' },
+  { name: 'Republic TV World', bureau: 'Mumbai', language: 'English', url: 'https://www.republicworld.com/rss/world-news.xml', webUrl: 'https://www.republicworld.com/world-news' },
+  { name: 'News18 World', bureau: 'Delhi', language: 'English', url: 'https://www.news18.com/commonfeeds/v1/eng/rss/world.xml', webUrl: 'https://www.news18.com/topics/bangladesh/' },
+  { name: 'Aaj Tak World', bureau: 'Delhi', language: 'Hindi', url: 'https://www.aajtak.in/rssfeeds/world-news.xml', webUrl: 'https://www.aajtak.in/topic/bangladesh' },
+  { name: 'Zee News World', bureau: 'Delhi', language: 'Hindi', url: 'https://zeenews.india.com/rss/world-news.xml', webUrl: 'https://zeenews.india.com/hindi/tags/bangladesh.html' },
+  { name: 'TV9 Bangla', bureau: 'Kolkata', language: 'Bengali', url: 'https://tv9bangla.com/feed', webUrl: 'https://tv9bangla.com/topic/bangladesh' },
+
+  // 5. Multi-outlet Aggregated Live Feeds from Top Indian Media
   { 
     name: 'Indian Media - Bangladesh Wire', 
     bureau: 'Delhi', 
     language: 'English', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('Bangladesh (site:thehindu.com OR site:indianexpress.com OR site:timesofindia.indiatimes.com OR site:hindustantimes.com OR site:ndtv.com OR site:telegraphindia.com OR site:anandabazar.com OR site:livemint.com OR site:news18.com OR site:indiatoday.in OR site:business-standard.com) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Indian TV Channels - Bangladesh Tracker Wire', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('Bangladesh (site:wionews.com OR site:timesnownews.com OR site:republicworld.com OR site:indiatoday.in OR site:ndtv.com OR site:news18.com OR site:aajtak.in OR site:zeenews.india.com OR site:tv9hindi.com OR site:indiatvnews.com OR site:bengali.abplive.com OR site:tv9bangla.com) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
     webUrl: 'https://news.google.com' 
   },
   { 
@@ -71,14 +87,14 @@ const RSS_FEEDS = [
     name: 'Bengali Media - Bangladesh Tracker', 
     bureau: 'Kolkata', 
     language: 'Bengali', 
-    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('বাংলাদেশ (site:anandabazar.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:bengali.news18.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('বাংলাদেশ (site:anandabazar.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:bengali.news18.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
     webUrl: 'https://news.google.com' 
   },
   { 
     name: 'Hindi Media - Bangladesh Tracker', 
     bureau: 'Delhi', 
     language: 'Hindi', 
-    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('बांग्लादेश (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:ndtv.in OR site:hindi.news18.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('बांग्लादेश (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:ndtv.in OR site:hindi.news18.com OR site:zeenews.india.com OR site:tv9hindi.com OR site:indiatvnews.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
     webUrl: 'https://news.google.com' 
   }
 ];
