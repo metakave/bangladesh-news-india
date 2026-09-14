@@ -104,7 +104,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'হায়দরাবাদ, তেলেঙ্গানা',
     websiteUrl: 'https://deccanchronicle.com',
     domain: 'deccanchronicle.com',
-    bangladeshUrl: 'https://www.deccanchronicle.com/world',
+    bangladeshUrl: 'https://www.deccanchronicle.com/gsearch?q=bangladesh#gsc.tab=0&gsc.q=bangladesh&gsc.page=1',
     rssFeedUrl: 'https://www.deccanchronicle.com/rss',
   },
   {
