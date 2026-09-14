@@ -303,7 +303,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T10:00:26+05:30",
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/gauhati-high-court.jpg",
     "tags": [
       "Border",
       "High Court",
