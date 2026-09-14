@@ -68,72 +68,308 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1388,
-  "bangladeshMatches": 281,
+  "totalScanned24h": 1764,
+  "bangladeshMatches": 328,
   "sentimentDistribution": {
-    "positive": 26,
-    "neutral": 14,
-    "negative": 14
+    "positive": 30,
+    "neutral": 17,
+    "negative": 15
   },
   "bureauDistribution": {
-    "delhi": 31,
-    "kolkata": 23
+    "delhi": 37,
+    "kolkata": 25
   },
   "languageDistribution": {
-    "english": 35,
-    "bengali": 16,
+    "english": 41,
+    "bengali": 18,
     "hindi": 3
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
+    "id": "ba-tv-001",
+    "headlineBn": "বাংলাদেশি মন্ত্রীর বক্তব্যে ভারতের সঙ্গে সম্পর্ক পুনর্মূল্যায়নের স্পষ্ট ইঙ্গিত: এনডিটিভির বিশেষ পর্যালোচনা",
+    "headlineEn": "In comments of Bangladesh minister, a hint of recalibration of ties with India: NDTV report",
+    "timeAgoBn": "১ ঘণ্টা আগে",
+    "timeAgoEn": "1 hour ago",
+    "sourceName": "NDTV",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://www.ndtv.com/world-news/in-comments-of-bangladesh-minister-a-hint-of-recalibration-of-ties-with-india"
+  },
+  {
+    "id": "ba-tv-002",
+    "headlineBn": "বিমানবন্দর ও প্রতিষ্ঠানে ভুয়া বোমা হুমকি কাণ্ডে বাংলাদেশ সংশ্লিষ্টতার যোগসূত্র, ৫ লাখ ইমেইল আইডিসহ গ্রেপ্তার ২: ইন্ডিয়া টুডে",
+    "headlineEn": "Gujarat cyber crime probe unearths Bangladesh link in hoax threat emails, 2 held with 5 lakh email IDs: India Today",
+    "timeAgoBn": "৩ ঘণ্টা আগে",
+    "timeAgoEn": "3 hours ago",
+    "sourceName": "India Today",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.indiatoday.in/world/story/gujarat-bomb-threat-probe-bangladesh-link-two-arrested"
+  },
+  {
+    "id": "ba-tv-003",
+    "headlineBn": "শারদীয় উৎসবে বাংলা সীমান্তে ইলিশ আমদানি-রফতানি বাণিজ্যের টানাপোড়েন ও গতিপ্রকৃতি: টেলিভিশন বিশেষ প্রতিবেদন",
+    "headlineEn": "Festive trade dynamic: Indian news channels monitor Hilsa cross-border movements along Bengal frontier",
+    "timeAgoBn": "৪ ঘণ্টা আগে",
+    "timeAgoEn": "4 hours ago",
+    "sourceName": "India Today",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14"
+  },
+  {
     "id": "ba-001",
     "headlineBn": "ভারতের সঙ্গে সম্পর্ক 'রিসেট' করতে চায় বাংলাদেশ, দ্বিপাক্ষিক আলোচনার মাধ্যমে হওয়া উচিত: পররাষ্ট্র প্রতিমন্ত্রী",
     "headlineEn": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister for Foreign Affairs",
-    "timeAgoBn": "২ ঘণ্টা আগে",
-    "timeAgoEn": "2 hours ago",
+    "timeAgoBn": "৬ ঘণ্টা আগে",
+    "timeAgoEn": "6 hours ago",
     "sourceName": "The Hindu",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
     "url": "https://www.thehindu.com/news/national/bangladesh-wants-to-reset-ties-with-india/article71464479.ece"
-  },
-  {
-    "id": "ba-002",
-    "headlineBn": "বাংলাদেশ সীমান্তের কাছে মাদ্রাসা বাড়ছে: গিরিরাজ সিং",
-    "headlineEn": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
-    "timeAgoBn": "৪ ঘণ্টা আগে",
-    "timeAgoEn": "4 hours ago",
-    "sourceName": "The Hindu Top",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.thehindu.com/videos/shorts/madrassas-mushrooming-near-bangladesh-border-giriraj-singh/article71466105.ece"
-  },
-  {
-    "id": "ba-003",
-    "headlineBn": "ব্রিকস শীর্ষ সম্মেলনে ঢাকার কোনো প্রতিনিধি নেই, তারেক রহমানের সফর বাতিল",
-    "headlineEn": "No Dhaka representation at BRICS Summit as Bangladesh rules out Tarique Rahman's visit",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "The Indian Express World",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/"
-  },
-  {
-    "id": "ba-004",
-    "headlineBn": "শেখ হাসিনার মেয়ে সায়মা ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করলেন",
-    "headlineEn": "Sheikh Hasina's daughter Saima quits WHO regional post after fraud charges",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "NDTV",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.ndtv.com/india-news/sheikh-hasinas-daughter-resigns-as-who-regional-head-after-fraud-charges-12045650"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "tv-ndtv-recalibration-6",
+    "slug": "ndtv-bangladesh-minister-recalibration-ties-with-india",
+    "title": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
+    "englishTitle": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
+    "banglaTitle": "বাংলাদেশি মন্ত্রীর বক্তব্যে ভারতের সঙ্গে সম্পর্ক পুনর্মূল্যায়নের ইঙ্গিত: এনডিটিভির বিশেষ প্রতিবেদন",
+    "summaryBn": "এনডিটিভির এক বিশেষ বিশ্লেষণে বলা হয়েছে, অন্তর্বর্তী সরকারের পররাষ্ট্র বিষয়ক নেতৃত্বের সাম্প্রতিক বক্তব্যে ভারতের সঙ্গে দ্বিপাক্ষিক সম্পর্ক স্বাভাবিক করা এবং 'অহেতুক টানাপোড়েন' এড়িয়ে বাস্তবিক কূটনীতি অনুসরণের স্পষ্ট ইতিবাচক বার্তা পাওয়া গেছে।",
+    "summaryEn": "NDTV's analytical broadcast underscores that recent remarks by Bangladesh's foreign policy leadership signal an intention to move past strained rhetoric, seeking an interest-driven, stabilized equilibrium and pragmatic bilateral engagement with New Delhi.",
+    "keyPointsBn": [
+      "এনডিটিভির বিশেষ প্রতিবেদনে ঢাকা ও দিল্লির মধ্যকার সম্পর্ক পুনর্গঠনের ইঙ্গিত পর্যালোচনা",
+      "কূটনৈতিক পর্যায়ে নিয়মিত দ্বিপাক্ষিক যোগাযোগের প্রয়োজনীয়তার ওপর গুরুত্ব",
+      "সীমান্ত ও আঞ্চলিক স্থিতিশীলতা রক্ষায় গঠনমূলক কূটনীতির তাগিদ"
+    ],
+    "keyPointsEn": [
+      "NDTV broadcast examines signals of pragmatic recalibration emerging from Dhaka",
+      "Highlights emphasis on bilateral dialogue over confrontational posturing",
+      "Focus on regional economic stability and peaceful frontier management"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "এনডিটিভি প্রতিবেদনে দুই দেশের সম্পর্ককে ইতিবাচক ধারায় ফেরানোর সম্ভাবনা এবং বাস্তববাদী কূটনীতির ওপর গুরুত্ব দেওয়া হয়েছে।",
+    "sentimentReasonEn": "NDTV frames the remarks through a constructive lens, highlighting practical diplomacy and avenues for de-escalating diplomatic friction.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/world-news/in-comments-of-bangladesh-minister-a-hint-of-recalibration-of-ties-with-india",
+      "originalHeadline": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
+      "scannedAt": "2026-09-14T23:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T19:37:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "tags": ["NDTV", "Diplomacy", "Delhi", "Dhaka", "Bilateral Ties"],
+    "isLeadStory": true,
+    "isTrending": true
+  },
+  {
+    "id": "tv-indiatoday-cyber-7",
+    "slug": "india-today-gujarat-bomb-threat-probe-bangladesh-link",
+    "title": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
+    "englishTitle": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
+    "banglaTitle": "গুজরাটে বোমা হামলার হুমকি তদন্তে মিলল বাংলাদেশ সংযোগ: ৫ লাখ ইমেইল আইডিসহ গ্রেপ্তার ২ — ইন্ডিয়া টুডে",
+    "summaryBn": "ইন্ডিয়া টুডের প্রতিবেদনে প্রকাশ, বিভিন্ন ভারতীয় প্রতিষ্ঠান ও বিমানবন্দরে ভুয়া বোমা হামলার হুমকি পাঠিয়ে আতঙ্ক সৃষ্টির ঘটনায় তদন্তে নেমে গুজরাট সাইবার সেল ও এটিএস বাংলাদেশ থেকে পরিচালিত সার্ভার নেটওয়ার্কের সন্ধান পেয়েছে এবং ২ জনকে গ্রেপ্তার করেছে।",
+    "summaryEn": "India Today reports that Gujarat Cyber Crime and ATS sleuths investigating coordinated hoax bomb threats across Indian infrastructure uncovered email routing trails linking to Bangladesh-based proxy networks, leading to two arrests.",
+    "keyPointsBn": [
+      "ভারতীয় বিমানবন্দরে ভুয়া বোমা হুমকির তদন্তে আন্তর্জাতিক সাইবার যোগসূত্র উদ্ঘাটন",
+      "বাংলাদেশ সংশ্লিষ্ট প্রক্সি সার্ভার ও ডাটাবেজ ব্যবহার করে ইমেইল প্রেরণের অভিযোগ",
+      "ভারতের গোয়েন্দা সংস্থাগুলোর যৌথ অভিযান এবং নজরদারি বৃদ্ধির নির্দেশ"
+    ],
+    "keyPointsEn": [
+      "Gujarat Cyber Crime investigation traces hoax bomb threats to cross-border IP clusters",
+      "Seizure of 5 lakh email addresses and digital forensic evidence",
+      "Agencies step up coordinated monitoring of transnational cyber harassment networks"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও সাইবার নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "প্রতিবেদনে সীমান্তপারের সাইবার হুমকি ও ভারতীয় স্থাপনার সুরক্ষার ঝুঁকি তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Coverage adopts a stern security posture, focusing on cross-border digital vulnerabilities and threats to critical infrastructure.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/story/gujarat-bomb-threat-probe-bangladesh-link-two-arrested",
+      "originalHeadline": "Gujarat bomb threat probe reveals Bangladesh link, 2 arrested with 5 lakh email IDs",
+      "scannedAt": "2026-09-14T23:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T19:40:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["India Today", "Cyber Security", "Border", "Investigation", "Gujarat Police"],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "tv-indiatoday-tribunal-8",
+    "slug": "india-today-bangladesh-tribunal-seven-awami-league-leaders",
+    "title": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
+    "englishTitle": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
+    "banglaTitle": "জুলাই অভ্যুত্থান মামলায় ৭ আওয়ামী লীগ নেতার বিষয়ে আদেশ দেবে ট্রাইব্যুনাল: ইন্ডিয়া টুডের খবর",
+    "summaryBn": "ইন্ডিয়া টুডে জানিয়েছে, বাংলাদেশে জুলাই-আগস্টের গণঅভ্যুত্থানে সহিংসতা ও প্রাণহানির ঘটনায় সাবেক সাতজন আওয়ামী লীগ মন্ত্রী ও শীর্ষ নেতার বিরুদ্ধে আন্তর্জাতিক অপরাধ ট্রাইব্যুনালে শুনানি সম্পন্ন হয়েছে এবং শীঘ্রই আদেশ আসতে যাচ্ছে।",
+    "summaryEn": "India Today reports on judicial proceedings at Bangladesh's International Crimes Tribunal, where hearings have concluded regarding the legal status and custody of seven former Awami League ministers over events during the July uprising.",
+    "keyPointsBn": [
+      "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালে সাত আওয়ামী লীগ নেতার শুনানি সম্পন্ন",
+      "জুলাই অভ্যুত্থানের ঘটনাবলী নিয়ে আইনি প্রক্রিয়ায় ভারতীয় গণমাধ্যমের তীক্ষ্ণ দৃষ্টি",
+      "রাজনৈতিক দল ও বন্দীদের আইনি অধিকার নিয়ে আন্তর্জাতিক মহলের কৌতূহল"
+    ],
+    "keyPointsEn": [
+      "Hearings conclude for seven Awami League figures at International Crimes Tribunal",
+      "Televised coverage tracks the evolving political and judicial trajectory in Dhaka",
+      "Focus on due process, detention protocols, and regional political ramifications"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "প্রতিবেদনে আদালতের কার্যক্রম এবং আইনি প্রক্রিয়াকে তথ্যভিত্তিক নিরপেক্ষ ভঙ্গিতে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "The report adopts a fact-based legal reporting approach, detailing tribunal submissions and procedural timelines without editorial bias.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/story/bangladesh-tribunal-seven-awami-league-leaders-july-uprising",
+      "originalHeadline": "Bangladesh tribunal to rule on seven Awami League leaders over July Uprising",
+      "scannedAt": "2026-09-14T23:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T21:06:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["India Today", "Tribunal", "Politics", "Dhaka", "Awami League"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-indiatoday-hilsa-9",
+    "slug": "india-today-hilsa-trade-cross-border-dynamics",
+    "title": "Festive Trade Dynamics: Indian Outlets Track Hilsa Shipments Across Bengal-Bangladesh Frontier",
+    "englishTitle": "Festive Trade Dynamics: Indian Outlets Track Hilsa Shipments Across Bengal-Bangladesh Frontier",
+    "banglaTitle": "উৎসবের বাণিজ্যে গতি: বাংলা-বাংলাদেশ সীমান্তে ইলিশের আমদানি-রফতানি প্রবাহ নিয়ে ভারতীয় গণমাধ্যমের নজরদারি",
+    "summaryBn": "ইন্ডিয়া টুডের বিশেষ ডিজিটাল প্রতিবেদনে উৎসবের মৌসুমে ভারত ও বাংলাদেশের মধ্যে ঐতিহ্যবাহী ইলিশ মাছের বাণিজ্য, সীমান্ত শুল্ক ছাড়পত্র এবং বাজার মূল্যের ওঠানামা নিয়ে আলোকপাত করা হয়েছে।",
+    "summaryEn": "India Today highlights the seasonal cross-border trade dynamics of Hilsa fish across the Bengal-Bangladesh frontier, tracking customs clearance protocols and market supplies ahead of peak festive demand.",
+    "keyPointsBn": [
+      "শারদীয় উৎসবের প্রাক্কালে সীমান্ত বাণিজ্যে ইলিশের চালান নিয়ে আগ্রহ",
+      "পেট্রাপোল ও অন্যান্য স্থলবন্দরে শুল্ক ও কোয়ারেন্টাইন প্রক্রিয়ার দ্রুত নিষ্পত্তি",
+      "দুই দেশের রসনা ও সাংস্কৃতিক সংযোগের প্রতীক হিসেবে ইলিশের গুরুত্ব"
+    ],
+    "keyPointsEn": [
+      "Tracking seasonal Hilsa trade corridors along the India-Bangladesh border",
+      "Customs expediting clearance procedures for perishable shipments",
+      "Cultural resonance and economic interdependence during the festive season"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও পণ্য সরবরাহ",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিবেদনে সীমান্ত বাণিজ্য ও দুই দেশের মানুষের মধ্যকার ঐতিহ্যবাহী সাংস্কৃতিক ও খাদ্যাভ্যাসের বন্ধন ইতিবাচকভাবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Coverage highlights harmonious cross-border consumer demand and economic collaboration between Bengali communities across borders.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14",
+      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
+      "scannedAt": "2026-09-14T23:30:00+05:30"
+    },
+    "publishedAt": "2026-09-14T21:50:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["India Today", "Trade", "Hilsa", "Petrapole", "Commerce"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-indiatoday-asiacup-10",
+    "slug": "india-today-womens-asia-cup-semi-final-india-crush-bangladesh",
+    "title": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
+    "englishTitle": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
+    "banglaTitle": "দাপুটে খেলায় বাংলাদেশকে হারিয়ে নারীদের এশিয়া কাপের ফাইনালে ভারত: ভারতীয় টিভি চ্যানেলের খবর",
+    "summaryBn": "ইন্ডিয়া টুডে ও প্রধান ভারতীয় স্পোর্টস চ্যানেলগুলোর খবরে বলা হয়েছে, নারীদের এশিয়া কাপ সেমিফাইনালে ভারতের দল নিয়ন্ত্রিত বোলিং ও ব্যাটিংয়ের প্রদর্শন করে বাংলাদেশকে বিশাল ব্যবধানে হারিয়ে ফাইনালে স্থান করে নিয়েছে।",
+    "summaryEn": "India Today sports coverage reviews India's commanding victory over Bangladesh in the Women's Asia Cup semi-finals, praising clinical performances across both bowling and batting departments.",
+    "keyPointsBn": [
+      "নারী এশিয়া কাপ সেমিফাইনালে বাংলাদেশ ও ভারতের মুখোমুখি লড়াই",
+      "ভারতীয় বোলারদের নিয়ন্ত্রিত বোলিংয়ে বাংলাদেশের ইনিংসের সমাপ্তি",
+      "সহজ জয়ে ভারতের ফাইনালে প্রবেশ এবং ক্রীড়া অঙ্গনে দুই দলের প্রতিযোগিতা"
+    ],
+    "keyPointsEn": [
+      "Comprehensive semi-final encounter between India and Bangladesh women's cricket teams",
+      "Disciplined all-round performance seals decisive victory for the Indian side",
+      "Highlights healthy regional athletic rivalry and sports diplomacy"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
+    "categoryLabelEn": "Sports & Cricket",
+    "sentiment": "positive",
+    "sentimentReasonBn": "খেলাধুলার সংবাদে ইতিবাচক ক্রীড়াসুলভ মনোভাব এবং দুই দেশের মধ্যকার প্রতিদ্বন্দ্বিতা তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Sports reportage focuses on athletic achievement, skill demonstration, and sportsmanlike contest.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/sports/cricket/story/dominant-india-crush-bangladesh-womens-asia-cup-final",
+      "originalHeadline": "Dominant India crush Bangladesh to storm into Women's Asia Cup final with ease",
+      "scannedAt": "2026-09-14T23:30:00+05:30"
+    },
+    "publishedAt": "2026-09-10T23:24:00+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80",
+    "tags": ["India Today", "Sports", "Cricket", "Asia Cup", "Women's Cricket"],
+    "isLeadStory": false
+  },
+  {
+    "id": "tv-indiatoday-defence-11",
+    "slug": "india-today-india-bangladesh-defence-ties-training-talks",
+    "title": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
+    "englishTitle": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
+    "banglaTitle": "যৌথ প্রশিক্ষণ ও নিরাপত্তা আলোচনার মাধ্যমে প্রতিরক্ষা সম্পর্ক সুদৃঢ় করছে ভারত ও বাংলাদেশ: ইন্ডিয়া টুডে",
+    "summaryBn": "ইন্ডিয়া টুডের সম্প্রচারে জানানো হয়েছে, দুই দেশের উচ্চপদস্থ সামরিক প্রতিনিধিরা নিয়মিত প্রাতিষ্ঠানিক প্রশিক্ষণ বিনিময় ও যৌথ নিরাপত্তা সংলাপের মাধ্যমে প্রতিরক্ষা সহযোগিতা অব্যাহত রাখতে একমত হয়েছেন।",
+    "summaryEn": "India Today reports on bilateral military engagement between India and Bangladesh, detailing ongoing staff training exchanges and institutional dialogues to safeguard shared maritime and frontier security interests.",
+    "keyPointsBn": [
+      "ভারত ও বাংলাদেশের মধ্যে সামরিক প্রশিক্ষণ বিনিময় কর্মসূচি অব্যাহত রাখার সিদ্ধান্ত",
+      "আঞ্চলিক জলসীমা ও সীমান্ত সুরক্ষায় যৌথ সমন্বয়ের ওপর জোর",
+      "কৌশলগত বিভ্রান্তি দূরীকরণে প্রাতিষ্ঠানিক প্রতিরক্ষা সংলাপের কার্যকারিতা"
+    ],
+    "keyPointsEn": [
+      "Continuation of military staff courses and institutional training exchanges",
+      "Focus on maritime security, frontier coordination, and counter-insurgency training",
+      "Commitment to maintaining direct institutional lines between armed forces"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিরক্ষা ও নিরাপত্তা সহযোগিতার ধারাবাহিকতা বজায় রাখার ইতিবাচক বার্তা রয়েছে এ প্রতিবেদনে।",
+    "sentimentReasonEn": "Coverage frames bilateral defence contacts as a stabilizing, institutional anchor amidst political transitions.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/story/india-bangladesh-push-defence-ties-training-security-talks",
+      "originalHeadline": "India, Bangladesh push defence ties with training and security talks",
+      "scannedAt": "2026-09-14T23:30:00+05:30"
+    },
+    "publishedAt": "2026-09-09T16:42:00+05:30",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "tags": ["India Today", "Defence", "Military Cooperation", "Security", "Delhi"],
+    "isLeadStory": false
+  },
   {
     "id": "tv-wion-1",
     "slug": "wion-bangladesh-foreign-policy-reset-south-asia",
