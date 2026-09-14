@@ -325,7 +325,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     headOfficeBn: 'নয়ডা, উত্তর প্রদেশ',
     websiteUrl: 'https://wionews.com',
     domain: 'wionews.com',
-    bangladeshUrl: 'https://www.wionews.com/topic/bangladesh',
+    bangladeshUrl: 'https://www.wionews.com/tags/bangladesh-0',
     rssFeedUrl: 'https://www.wionews.com/rss',
   },
   {

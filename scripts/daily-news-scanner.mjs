@@ -53,7 +53,7 @@ const RSS_FEEDS = [
   { name: 'BBC Hindi', bureau: 'Delhi', language: 'Hindi', url: 'https://feeds.bbci.co.uk/hindi/rss.xml', webUrl: 'https://www.bbc.com/hindi' },
 
   // 4. Leading Indian TV News Channels (Direct Feeds)
-  { name: 'WION World & South Asia', bureau: 'Delhi', language: 'English', url: 'https://www.wionews.com/rss/world.xml', webUrl: 'https://www.wionews.com/south-asia' },
+  { name: 'WION Bangladesh & South Asia', bureau: 'Delhi', language: 'English', url: 'https://www.wionews.com/rss/world.xml', webUrl: 'https://www.wionews.com/tags/bangladesh-0' },
   { name: 'Times Now World', bureau: 'Mumbai', language: 'English', url: 'https://www.timesnownews.com/rss/world.xml', webUrl: 'https://www.timesnownews.com/world' },
   { name: 'Republic TV World', bureau: 'Mumbai', language: 'English', url: 'https://www.republicworld.com/rss/world-news.xml', webUrl: 'https://www.republicworld.com/world-news' },
   { name: 'News18 World', bureau: 'Delhi', language: 'English', url: 'https://www.news18.com/commonfeeds/v1/eng/rss/world.xml', webUrl: 'https://www.news18.com/topics/bangladesh/' },
