@@ -644,7 +644,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T18:05:34+05:30",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
     "tags": [
       "High Commission",
       "President",
