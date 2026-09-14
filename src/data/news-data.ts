@@ -366,7 +366,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-09T16:42:00+05:30",
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
     "tags": ["India Today", "Defence", "Military Cooperation", "Security", "Delhi"],
     "isLeadStory": false
   },
@@ -405,7 +405,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T18:45:00+05:30",
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
     "tags": ["WION", "Diplomacy", "Geopolitics", "South Asia", "Foreign Policy"],
     "isLeadStory": false
   },
