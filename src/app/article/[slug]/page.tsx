@@ -78,7 +78,7 @@ export default async function ArticlePage({ params }: PageProps) {
   const relatedArticles = SCANNED_NEWS_ITEMS.filter(
     (a) => a.slug !== slug && a.category === article.category
   ).slice(0, 3);
-  const trendingArticles = SCANNED_NEWS_ITEMS.filter((a) => a.slug !== slug).slice(0, 4);
+  const trendingArticles = SCANNED_NEWS_ITEMS.filter((a) => a.slug !== slug).slice(0, 5);
 
   const articleImageUrl = article.imageUrl.startsWith('http')
     ? article.imageUrl

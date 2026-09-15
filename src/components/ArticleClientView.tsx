@@ -530,7 +530,7 @@ export default function ArticleClientView({
                   {lang === 'bn' ? 'শীর্ষ আলোচিত সংবাদ' : 'Trending Scans'}
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-                  {trendingArticles.map((art, idx) => (
+                  {trendingArticles.slice(0, 5).map((art, idx, arr) => (
                     <Link
                       key={art.id}
                       href={`/article/${art.slug}`}
@@ -539,7 +539,7 @@ export default function ArticleClientView({
                         alignItems: 'flex-start',
                         gap: '0.65rem',
                         paddingBottom: '0.65rem',
-                        borderBottom: idx !== trendingArticles.length - 1 ? '1px solid var(--border-subtle)' : 'none',
+                        borderBottom: idx !== arr.length - 1 ? '1px solid var(--border-subtle)' : 'none',
                       }}
                     >
                       <span className="font-masthead" style={{ fontSize: '1.25rem', fontWeight: 900, color: 'var(--brand-primary)', opacity: 0.8 }}>
