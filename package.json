@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "scan": "node scripts/daily-news-scanner.mjs"
+    "scan": "node scripts/daily-news-scanner.mjs",
+    "scan:rss": "node scripts/daily-news-scanner.mjs --mode=rss",
+    "scan:youtube": "node scripts/daily-news-scanner.mjs --mode=youtube"
   },
   "dependencies": {
     "clsx": "^2.1.1",

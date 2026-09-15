@@ -58,7 +58,10 @@ function isValidNewsImage(url) {
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || 'sk-cdc9e55a7d534a8e88338cd28b31342c';
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
 
-const RSS_FEEDS = [
+// ==============================================================================
+// 1. STANDARD RSS FEEDS (Chunk 1: Print, Digital, and Wire Media)
+// ==============================================================================
+const STANDARD_RSS_FEEDS = [
   // 1. National English Outlets
   { name: 'The Hindu', bureau: 'Delhi', language: 'English', url: 'https://www.thehindu.com/news/international/feeder/default.rss', webUrl: 'https://www.thehindu.com/news/international/' },
   { name: 'The Hindu Top', bureau: 'Delhi', language: 'English', url: 'https://www.thehindu.com/feeder/default.rss', webUrl: 'https://www.thehindu.com' },
@@ -81,7 +84,7 @@ const RSS_FEEDS = [
   // 3. Hindi Outlets
   { name: 'BBC Hindi', bureau: 'Delhi', language: 'Hindi', url: 'https://feeds.bbci.co.uk/hindi/rss.xml', webUrl: 'https://www.bbc.com/hindi' },
 
-  // 4. Leading Indian TV News Channels (Direct Feeds)
+  // 4. Leading Indian TV News Channels (Direct Web Feeds)
   { name: 'WION Bangladesh & South Asia', bureau: 'Delhi', language: 'English', url: 'https://www.wionews.com/rss/world.xml', webUrl: 'https://www.wionews.com/tags/bangladesh-0' },
   { name: 'Times Now World', bureau: 'Mumbai', language: 'English', url: 'https://www.timesnownews.com/rss/world.xml', webUrl: 'https://www.timesnownews.com/world' },
   { name: 'Republic TV World', bureau: 'Mumbai', language: 'English', url: 'https://www.republicworld.com/rss/world-news.xml', webUrl: 'https://www.republicworld.com/world-news' },
@@ -148,7 +151,13 @@ const RSS_FEEDS = [
     language: 'Bengali', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("ওপার বাংলা" OR "ওপার বাংলায়" OR "ওপার বাংলার") (site:thewall.in OR site:anandabazar.com OR site:eisamay.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
     webUrl: 'https://news.google.com' 
-  },
+  }
+];
+
+// ==============================================================================
+// 2. YOUTUBE VIDEO FEEDS (Chunk 2: News Media YouTube Channels & Video Dispatches)
+// ==============================================================================
+const YOUTUBE_FEEDS = [
   { 
     name: 'BNT Bangla News (YouTube)', 
     bureau: 'Kolkata', 
@@ -178,6 +187,8 @@ const RSS_FEEDS = [
     webUrl: 'https://www.youtube.com' 
   }
 ];
+
+const RSS_FEEDS = [...STANDARD_RSS_FEEDS, ...YOUTUBE_FEEDS];
 
 const BANGLADESH_KEYWORDS = [
   'bangladesh', 'dhaka', 'chittagong', 'sylhet', 'yunus', 'tarique', 'sheikh hasina', 'hasina',
@@ -381,17 +392,45 @@ async function fetchFeed(feed) {
 }
 
 async function runDailyNewsScanner() {
+  // Detect operational scan mode
+  // Options: 'rss' (Chunk 1) | 'youtube' (Chunk 2) | 'all' (Full scan)
+  const modeArg = process.argv.find(arg => arg.startsWith('--mode='));
+  let scanMode = 'all';
+  if (modeArg) {
+    scanMode = modeArg.split('=')[1].trim().toLowerCase();
+  } else if (process.argv.includes('--rss') || process.argv.includes('--rss-only')) {
+    scanMode = 'rss';
+  } else if (process.argv.includes('--youtube') || process.argv.includes('--youtube-only')) {
+    scanMode = 'youtube';
+  } else if (process.env.SCAN_MODE) {
+    scanMode = process.env.SCAN_MODE.trim().toLowerCase();
+  }
+
+  let activeFeeds = [];
+  let chunkDescription = '';
+  if (scanMode === 'rss') {
+    activeFeeds = STANDARD_RSS_FEEDS;
+    chunkDescription = 'Chunk 1: Standard RSS Feeds (Print, Digital & Wire Media)';
+  } else if (scanMode === 'youtube') {
+    activeFeeds = YOUTUBE_FEEDS;
+    chunkDescription = 'Chunk 2: News Media YouTube Channels & Video Dispatches';
+  } else {
+    activeFeeds = RSS_FEEDS;
+    chunkDescription = 'Full Ingestion: All Feeds (Standard RSS + YouTube Channels)';
+  }
+
   console.log('====================================================');
   console.log('🚀 NARRATIVE COMPASS - DAILY DEEPSEEK NEWS SCANNER');
   console.log('⏰ Time (Local):', new Date().toLocaleString());
   console.log('🤖 AI Engine: DeepSeek API (' + DEEPSEEK_MODEL + ')');
+  console.log(`📌 Operational Mode: [${scanMode.toUpperCase()}] -> ${chunkDescription}`);
   console.log('====================================================\n');
 
-  console.log('📡 Step 1: Scanning RSS feeds from Indian media...');
-  const feedPromises = RSS_FEEDS.map(fetchFeed);
+  console.log(`📡 Step 1: Scanning ${activeFeeds.length} media feeds...`);
+  const feedPromises = activeFeeds.map(fetchFeed);
   const feedResults = await Promise.all(feedPromises);
   const allScannedArticles = feedResults.flat();
-  console.log(`✅ Scanned ${allScannedArticles.length} total news articles across ${RSS_FEEDS.length} media outlets.`);
+  console.log(`✅ Scanned ${allScannedArticles.length} total news items across ${activeFeeds.length} media outlets.`);
 
   // Filter articles specifically related to Bangladesh with false-positive protection
   const matchedArticles = allScannedArticles.filter(art => {
@@ -619,14 +658,41 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
     priorityPickup: isPriorityKeyword(m.title, m.desc)
   }));
 
-  const userPrompt = `Here are the latest candidate articles scanned from Indian media (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority Sheikh Hasina / Awami League / ওপার বাংলা items):\n` +
-    (sampleCandidates.length > 0 
-      ? JSON.stringify(sampleCandidates, null, 2)
-      : 'No direct RSS matches in this cycle. Please generate 5 top realistic current news items reflecting ongoing major Indian media coverage on Bangladesh.') +
-    `\n\nPlease output 4-6 high-impact synthesized news items and 4 breaking alerts in the required JSON format reflecting the most critical Bangladesh and Dhaka developments reported by Indian media.
+  let userPrompt = '';
+  if (scanMode === 'youtube') {
+    userPrompt = `Here are the latest candidate video dispatches scanned from Indian news media YouTube channels (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority Sheikh Hasina / Awami League / ওপার বাংলা video items):\n` +
+      (sampleCandidates.length > 0 
+        ? JSON.stringify(sampleCandidates, null, 2)
+        : 'No direct YouTube video matches in this cycle. Please generate 2-3 top realistic current video report items reflecting ongoing Indian broadcast news coverage on Bangladesh.') +
+      `\n\nPlease output 2-4 high-impact synthesized video dispatch news items and 1-2 breaking video alerts in the required JSON format reflecting verified Indian news media YouTube video reports on Bangladesh.
+CRITICAL EDITORIAL PRIORITY: Items flagged with "priorityPickup": true or concerning "শেখ হাসিনা" / "আওয়ামী লীগ" / "ওপার বাংলা" must be prioritized in your editorial selection and featured prominently.
+YOUTUBE VIDEO REQUIREMENTS:
+1. Ensure source name includes "(YouTube)" (e.g. "BNT Bangla News (YouTube)", "ABP Ananda (YouTube)", "Republic Bangla (YouTube)").
+2. Preserve authentic YouTube video URLs in originalUrl.
+3. Tags must include "YouTube Video" and "ভিডিও রিপোর্ট".
+4. Set readTimeBn: "২ মিনিট ভিডিও", readTimeEn: "2 min video".
+5. Keep summaries concise (2-3 sentences max) capturing broadcast commentary, video packages, and on-ground reports.
+Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
+  } else if (scanMode === 'rss') {
+    userPrompt = `Here are the latest candidate articles scanned from Indian print and digital media (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority Sheikh Hasina / Awami League / ওপার বাংলা items):\n` +
+      (sampleCandidates.length > 0 
+        ? JSON.stringify(sampleCandidates, null, 2)
+        : 'No direct RSS matches in this cycle. Please generate 5 top realistic current news items reflecting ongoing major Indian media coverage on Bangladesh.') +
+      `\n\nPlease output 4-6 high-impact synthesized news items and 4 breaking alerts in the required JSON format reflecting the most critical Bangladesh and Dhaka developments reported by Indian print, digital, and wire media.
+CRITICAL EDITORIAL PRIORITY: Items flagged with "priorityPickup": true or concerning "শেখ হাসিনা" / "আওয়ামী লীগ" / "ওপার বাংলা" / "Sheikh Hasina" / "Awami League" / "Opar Bangla" must be prioritized in your editorial selection and featured prominently.
+Focus on in-depth journalism, political developments, governance, cross-border commerce, and diplomatic affairs.
+Keep summaries concise (2-3 sentences max) and keyPoints to 3 clear bullets each.
+Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
+  } else {
+    userPrompt = `Here are the latest candidate articles scanned from Indian media (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority Sheikh Hasina / Awami League / ওপার বাংলা items):\n` +
+      (sampleCandidates.length > 0 
+        ? JSON.stringify(sampleCandidates, null, 2)
+        : 'No direct RSS matches in this cycle. Please generate 5 top realistic current news items reflecting ongoing major Indian media coverage on Bangladesh.') +
+      `\n\nPlease output 4-6 high-impact synthesized news items and 4 breaking alerts in the required JSON format reflecting the most critical Bangladesh and Dhaka developments reported by Indian media.
 CRITICAL EDITORIAL PRIORITY: Items flagged with "priorityPickup": true or concerning "শেখ হাসিনা" / "আওয়ামী লীগ" / "ওপার বাংলা" / "Sheikh Hasina" / "Awami League" / "Opar Bangla" must be prioritized in your editorial selection and featured prominently.
 Keep summaries concise (2-3 sentences max) and keyPoints to 3 clear bullets each to ensure complete and valid output within token limits.
 Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
+  }
 
   const deepseekRes = await fetch('https://api.deepseek.com/chat/completions', {
     method: 'POST',
@@ -729,6 +795,24 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
   const isDryRun = process.argv.includes('--dry-run');
 
   if (parsedAiResult.scannerStats) {
+    if (scanMode === 'youtube') {
+      // In YouTube chunk mode, blend with existing stats to avoid wiping out the 24h RSS scan metrics
+      const statsRegex = /export const SCANNER_STATS = ({[\s\S]*?});/;
+      const statsMatch = currentFileContent.match(statsRegex);
+      if (statsMatch) {
+        try {
+          const oldStats = new Function(`return ${statsMatch[1]}`)();
+          parsedAiResult.scannerStats.totalScanned24h = (oldStats.totalScanned24h || 0) + allScannedArticles.length;
+          parsedAiResult.scannerStats.bangladeshMatches = (oldStats.bangladeshMatches || 0) + matchedArticles.length;
+          if (oldStats.bureauDistribution) {
+            parsedAiResult.scannerStats.bureauDistribution.delhi = (oldStats.bureauDistribution.delhi || 0) + (parsedAiResult.scannerStats.bureauDistribution?.delhi || 0);
+            parsedAiResult.scannerStats.bureauDistribution.kolkata = (oldStats.bureauDistribution.kolkata || 0) + (parsedAiResult.scannerStats.bureauDistribution?.kolkata || 0);
+          }
+        } catch (e) {
+          console.warn('Could not blend scannerStats, using generated stats.');
+        }
+      }
+    }
     const statsStr = `export const SCANNER_STATS = ${JSON.stringify(parsedAiResult.scannerStats, null, 2)};`;
     currentFileContent = currentFileContent.replace(/export const SCANNER_STATS = {[\s\S]*?};/, statsStr);
   }
@@ -738,15 +822,41 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
     const safeAlerts = parsedAiResult.breakingAlerts.map(a => {
       let alert = {
         ...a,
-        url: a.url && a.url.startsWith('http') ? a.url : 'https://www.thehindu.com/news/international/'
+        url: a.url && a.url.startsWith('http') ? a.url : (scanMode === 'youtube' ? 'https://www.youtube.com' : 'https://www.thehindu.com/news/international/')
       };
       if (alert.headlineBn) {
         alert.headlineBn = normalizeTariqueTranslation(alert.headlineBn);
       }
       return alert;
     });
-    const alertsStr = `export const BREAKING_NEWS_ALERTS: BreakingAlert[] = ${JSON.stringify(safeAlerts, null, 2)};`;
-    currentFileContent = currentFileContent.replace(/export const BREAKING_NEWS_ALERTS: BreakingAlert\[\] = \[[\s\S]*?\];/, alertsStr);
+
+    let mergedAlerts = [...safeAlerts];
+
+    // Read existing alerts from file to preserve and merge across chunks (e.g. keep RSS alerts when YouTube runs, and vice-versa)
+    const alertsRegex = /export const BREAKING_NEWS_ALERTS: BreakingAlert\[\] = (\[[\s\S]*?\]);/;
+    const alertsMatch = currentFileContent.match(alertsRegex);
+    if (alertsMatch) {
+      try {
+        const existingAlerts = new Function(`return ${alertsMatch[1]}`)();
+        const seenUrls = new Set(safeAlerts.map(a => (a.url || '').trim().toLowerCase()));
+        const seenHeadlines = new Set(safeAlerts.map(a => (a.headlineBn || '').trim().toLowerCase()));
+
+        for (const ea of existingAlerts) {
+          const uKey = (ea.url || '').trim().toLowerCase();
+          const hKey = (ea.headlineBn || '').trim().toLowerCase();
+          if (!seenUrls.has(uKey) && !seenHeadlines.has(hKey)) {
+            mergedAlerts.push(ea);
+          }
+        }
+        // Retain top 8-10 verified alerts
+        mergedAlerts = mergedAlerts.slice(0, 8);
+      } catch (e) {
+        console.warn('Could not parse existing alerts for merging, using new alerts.');
+      }
+    }
+
+    const alertsStr = `export const BREAKING_NEWS_ALERTS: BreakingAlert[] = ${JSON.stringify(mergedAlerts, null, 2)};`;
+    currentFileContent = currentFileContent.replace(alertsRegex, alertsStr);
   }
 
   if (parsedAiResult.newScannedItems && parsedAiResult.newScannedItems.length > 0) {

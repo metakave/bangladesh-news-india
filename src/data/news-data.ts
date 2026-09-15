@@ -1542,7 +1542,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T06:52:51.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/hilsa-fish-market-trade.jpg",
     "tags": [
       "hilsa",
       "import",
