@@ -68,25 +68,36 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1148,
-  "bangladeshMatches": 294,
+  "totalScanned24h": 1943,
+  "bangladeshMatches": 352,
   "sentimentDistribution": {
     "positive": 1,
-    "neutral": 5,
+    "neutral": 8,
     "negative": 3
   },
   "bureauDistribution": {
-    "delhi": 5,
-    "kolkata": 4
+    "delhi": 6,
+    "kolkata": 6
   },
   "languageDistribution": {
-    "english": 5,
-    "bengali": 4,
+    "english": 6,
+    "bengali": 6,
     "hindi": 0
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-006",
+    "headlineBn": "কাদেরসহ আওয়ামী লীগের ৭ শীর্ষ নেতার বিরুদ্ধে আজ ট্রাইব্যুনালের রায় ঘোষণা",
+    "headlineEn": "Dhaka Tribunal to Deliver Verdict on 7 AL Leaders Including Obaidul Quader Today",
+    "timeAgoBn": "১ ঘন্টা আগে",
+    "timeAgoEn": "1 hour ago",
+    "sourceName": "The Wall",
+    "sourceBureau": "Kolkata",
+    "sentiment": "neutral",
+    "url": "https://www.thewall.in/bangladesh/dhaka-tribunal-verdict-against-seven-awami-league-leaders-before-hasinas-return/tid/204850"
+  },
   {
     "id": "alert-005",
     "headlineBn": "শেখ সেলিমের ‘নেতৃত্ব’ ইস্যুতে আওয়ামী লীগে তীব্র বিতর্ক ও অসন্তোষ",
@@ -146,6 +157,161 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "38",
+    "slug": "dhaka-tribunal-verdict-obaidul-quader-seven-awami-league-leaders",
+    "title": "হাসিনা ফেরার আগে কাদের-সহ ৭ লিগ নেতার বিরুদ্ধে আজ রায় ঘোষণা করবে ঢাকার ট্রাইবুনাল",
+    "englishTitle": "Dhaka Tribunal Set to Deliver Verdict on 7 Awami League Leaders Including Obaidul Quader Ahead of Hasina's Return",
+    "banglaTitle": "হাসিনা ফেরার আগে কাদের-সহ ৭ লিগ নেতার বিরুদ্ধে আজ রায় ঘোষণা করবে ঢাকার ট্রাইবুনাল",
+    "summaryBn": "আওয়ামী লীগের সাধারণ সম্পাদক ওবায়দুল কাদেরসহ দলটির শীর্ষ সাত নেতার বিরুদ্ধে দায়েরকৃত মানবতাবিরোধী অপরাধের মামলায় আজ মঙ্গলবার আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল-২ রায় ঘোষণা করতে চলেছে। ২০২৪ সালের জুলাই-আগস্টের ছাত্র আন্দোলন দমনে হত্যার উসকানি ও পরিকল্পনার অভিযোগে অভিযুক্ত এই সাত নেতার সকলেই বর্তমানে পলাতক। রাষ্ট্রপক্ষ আসামিদের সর্বোচ্চ শাস্তির আবেদন জানিয়েছে, অন্যদিকে আওয়ামী লীগ এই বিচার প্রক্রিয়াকে রাজনৈতিক প্রতিহিংসা ও নেতাকর্মীদের মনোবল ভাঙার চক্রান্ত হিসেবে আখ্যা দিয়েছে।",
+    "summaryEn": "Dhaka's International Crimes Tribunal-2 (ICT-2) is set to deliver its verdict on Tuesday against seven senior Awami League leaders, including General Secretary Obaidul Quader, on charges of crimes against humanity linked to the suppression of the July-August 2024 student uprising. With all seven accused currently absconding, the prosecution has sought capital punishment and asset confiscation, while the Awami League condemned the proceedings as politically motivated vengeance aimed at demoralizing party cadres.",
+    "keyPointsBn": [
+      "বিচারপতি মো. নজরুল ইসলাম চৌধুরীর নেতৃত্বাধীন তিন সদস্যের আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল-২ ওবায়দুল কাদেরসহ সাত নেতার রায় ঘোষণা করবে",
+      "অভিযুক্তদের মধ্যে রয়েছেন আ ফ ম বাহাউদ্দিন নাছিম, মোহাম্মদ আলী আরাফাত, শেখ ফজলে শামস পরশ, মাইনুল হোসেন খান নিখিল, সাদ্দাম হোসেন ও শেখ ওয়ালী আসিফ ইনান",
+      "রাষ্ট্রপক্ষ জুলাই অভ্যুত্থানে গণহত্যার মদদ ও উসকানির অভিযোগে আসামিদের সর্বোচ্চ শাস্তি এবং সম্পত্তি বাজেয়াপ্তের আবেদন জানিয়েছে",
+      "আওয়ামী লীগের পক্ষ থেকে বলা হয়েছে, শীর্ষ নেতাদের মনোবল ভাঙতে তড়িঘড়ি করে একপাক্ষিক ও অসত্য মামলায় এই রায় চাপিয়ে দেওয়া হচ্ছে"
+    ],
+    "keyPointsEn": [
+      "A three-member bench of ICT-2 headed by Justice Md Nazrul Islam Chowdhury will deliver the judgment against Obaidul Quader and six other leaders",
+      "The co-accused include AFM Bahauddin Nasim, Mohammad Ali Arafat, Sheikh Fazle Shams Parash, Mainul Hossain Khan Nikhil, Saddam Hussain, and Sheikh Wali Asif Inan",
+      "Prosecutors charged the leaders with commanding violent crackdowns and inciting deadly violence against civilian demonstrators, demanding maximum penalty",
+      "The Awami League dismissed the allegations as completely fabricated and politically orchestrated to fracture the party's remaining leadership"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কলকাতার দ্য ওয়াল ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের বিচারিক পর্যায়, প্রসিকিউশনের দাবি এবং আওয়ামী লীগের প্রতিক্রিয়া ভারসাম্যপূর্ণভাবে প্রতিবেদন করেছে।",
+    "sentimentReasonEn": "Kolkata's The Wall delivers a factual and balanced report covering ICT proceedings, prosecution demands, and the Awami League's counter-allegations.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/dhaka-tribunal-verdict-against-seven-awami-league-leaders-before-hasinas-return/tid/204850",
+      "originalHeadline": "হাসিনা ফেরার আগে কাদের-সহ ৭ লিগ নেতার বিরুদ্ধে মঙ্গলবার সাজা‌ ঘোষণা করবে ঢাকার ট্রাইবুনাল",
+      "scannedAt": "2026-09-15T05:25:00.000Z"
+    },
+    "publishedAt": "2026-09-15T05:19:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+    "tags": [
+      "Awami League",
+      "আওয়ামী লীগ",
+      "Obaidul Quader",
+      "ওবায়দুল কাদের",
+      "International Crimes Tribunal",
+      "Sheikh Hasina",
+      "শেখ হাসিনা",
+      "ICT Dhaka",
+      "July Uprising"
+    ],
+    "isLeadStory": true,
+    "isTrending": true
+  },
+  {
+    "id": "39",
+    "slug": "delhi-dilemma-dhaka-ict-tribunal-verdicts-extradition-treaty",
+    "title": "ঢাকায় কাদেরসহ শীর্ষ নেতাদের ট্রাইব্যুনাল রায়: নয়াদিল্লির উপর প্রত্যর্পণ চুক্তির কূটনৈতিক চাপ",
+    "englishTitle": "Dhaka Tribunal Rulings on Quader and AL Brass: Delhi Faces Mounting Diplomatic Heat over Extradition Treaty",
+    "banglaTitle": "ঢাকায় কাদেরসহ শীর্ষ নেতাদের ট্রাইব্যুনাল রায়: নয়াদিল্লির উপর প্রত্যর্পণ চুক্তির কূটনৈতিক চাপ",
+    "summaryBn": "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালে আওয়ামী লীগের সাধারণ সম্পাদক ওবায়দুল কাদের ও শীর্ষ নেতাদের বিরুদ্ধে বিচার কার্যক্রম শেষ পর্যায়ে পৌঁছানোয় নয়াদিল্লির ওপর ঢাকার কূটনৈতিক চাপ তীব্রতর হচ্ছে। ভারত-বাংলাদেশ ২০১৩ সালের প্রত্যর্পণ চুক্তির অধীনে শেখ হাসিনাসহ পলাতক নেতাদের হস্তান্তরের দাবি তোলা হলেও, ভারতীয় নীতি নির্ধারকরা বিচার প্রক্রিয়ার আন্তর্জাতিক মানদণ্ড ও ভূরাজনৈতিক প্রভাবের দিকটি গভীরভাবে পর্যবেক্ষণ করছেন।",
+    "summaryEn": "As Bangladesh's International Crimes Tribunal accelerates verdicts against Awami League General Secretary Obaidul Quader and senior party stalwarts, New Delhi faces mounting diplomatic demands from Dhaka invoking the 2013 bilateral Extradition Treaty. While Dhaka presses for the transfer of exiled leaders including Sheikh Hasina, Indian policymakers are scrutinizing legal safeguards and geopolitical fallout.",
+    "keyPointsBn": [
+      "ঢাকায় ট্রাইব্যুনাল রায় ঘোষণার সাথে সাথে বাংলাদেশে অবস্থানরত ভারতীয় হাই কমিশনের মাধ্যমে দ্বিপাক্ষিক যোগাযোগ নিবিড় করা হয়েছে",
+      "২০১৩ সালের প্রত্যর্পণ চুক্তির রাজনৈতিক ধারা এবং অপরাধের নিরপেক্ষ বিচার নিশ্চিতকরণ নিয়ে দিল্লির সাউথ ব্লকে আইনি পর্যালোচনা চলছে",
+      "কূটনৈতিক বিশ্লেষকদের মতে, পলাতক নেতাদের অনুপস্থিতিতে দেওয়া রায় ওবায়দুল কাদের ও শেখ হাসিনার বিষয়ে দিল্লির সিদ্ধান্তকে আরও সংবেদনশীল করে তুলেছে",
+      "ভারত সরকার স্পষ্টভাবে জানিয়েছে, বাংলাদেশের সঙ্গে দীর্ঘমেয়াদী স্থিতিশীলতা এবং নিরাপত্তা অংশীদারিত্ব রক্ষা করাই তাদের প্রধান লক্ষ্য"
+    ],
+    "keyPointsEn": [
+      "Accelerated tribunal verdicts in Dhaka have triggered intensified bilateral backchannel communications between Dhaka and New Delhi",
+      "South Block legal advisors are examining Article 6 of the 2013 India-Bangladesh Extradition Treaty regarding political offenses",
+      "Strategic analysts note that judgments delivered in absentia complicate any formal processing of extradition requests across borders",
+      "New Delhi maintains that regional stability, border security, and long-term democratic institutionalism remain its core focus"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও তিস্তা",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্য হিন্দু দিল্লির সাউথ ব্লকের কূটনৈতিক বিবেচনা এবং প্রত্যর্পণ চুক্তির আইনি জটিলতা বিশ্লেষণাত্মক দৃষ্টিতে তুলে ধরেছে।",
+    "sentimentReasonEn": "The Hindu provides a measured diplomatic analysis evaluating South Block's strategic considerations and extradition treaty complexities.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/international/bangladesh-crimes-tribunal-verdict-extradition-delhi/article6864120.ece",
+      "originalHeadline": "Dhaka tribunal verdicts against Awami League leadership put bilateral extradition pact in focus in New Delhi",
+      "scannedAt": "2026-09-15T05:30:00.000Z"
+    },
+    "publishedAt": "2026-09-15T04:50:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "tags": [
+      "Diplomacy",
+      "Extradition Treaty",
+      "The Hindu",
+      "Obaidul Quader",
+      "Sheikh Hasina",
+      "শেখ হাসিনা",
+      "Awami League",
+      "আওয়ামী লীগ",
+      "South Block"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "40",
+    "slug": "anandabazar-tribunal-verdict-absentia-awami-league-exile-reaction",
+    "title": "অনুপস্থিতিতে বিচার ও সর্বোচ্চ শাস্তির দাবি: আনন্দবাজারের বিশ্লেষণে ঢাকার ট্রাইব্যুনাল ও লীগের অবস্থান",
+    "englishTitle": "Trial in Absentia and Death Penalty Pleas: Anandabazar Analyzes Dhaka Tribunal Proceedings and Awami League Stance",
+    "banglaTitle": "অনুপস্থিতিতে বিচার ও সর্বোচ্চ শাস্তির দাবি: আনন্দবাজারের বিশ্লেষণে ঢাকার ট্রাইব্যুনাল ও লীগের অবস্থান",
+    "summaryBn": "কলকাতার আনন্দবাজার পত্রিকার বিশেষ বিশ্লেষণে ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের বিচারিক প্রক্রিয়া এবং আওয়ামী লীগের নির্বাসিত নেতৃত্বের প্রতিক্রিয়া তুলে ধরা হয়েছে। ওবায়দুল কাদেরসহ সাত নেতার বিরুদ্ধে রাষ্ট্রনিযুক্ত আইনজীবীদের মাধ্যমে পরিচালিত শুনানি ও সর্বোচ্চ শাস্তির দাবি নিয়ে তৈরি হওয়া আইনি বিতর্ক এবং দলটির রাজনৈতিক টিকে থাকার লড়াইয়ে এই রায়ের প্রভাব পর্যবেক্ষণ করছে পশ্চিমবঙ্গের রাজনৈতিক মহল।",
+    "summaryEn": "A specialized analysis by Kolkata's Anandabazar Patrika examines the legal mechanics of Dhaka's International Crimes Tribunal and the defense narrative mounted by the Awami League's exiled leadership. The piece highlights debates surrounding state-appointed defense counsel, demands for capital punishment in absentia, and the profound political repercussions for the party's future.",
+    "keyPointsBn": [
+      "আসামিদের অনুপস্থিতিতে ট্রাইব্যুনালের রায় ঘোষণার সাংবিধানিক ও আন্তর্জাতিক গ্রহণযোগ্যতা নিয়ে দুই বাংলার আইন বিশেষজ্ঞদের মধ্যে বিতর্ক",
+      "আওয়ামী লীগের নির্বাসিত নেতাদের বক্তব্য—আত্মপক্ষ সমর্থনের ন্যায়সঙ্গত সুযোগ ছাড়া একতরফা বিচার প্রক্রিয়া রাজনৈতিক উদ্দেশ্যপ্রণোদিত",
+      "ইতিপূর্বে শেখ হাসিনাসহ ১৫ জনের মৃত্যুদণ্ডের পর ওবায়দুল কাদেরের মামলার রায় দলের তৃণমূল স্তরে মিশ্র প্রতিক্রিয়ার জন্ম দিয়েছে",
+      "পশ্চিমবঙ্গ ও ত্রিপুরায় অবস্থানরত নেতাকর্মীদের মধ্যে আইনি পরিণতি ও আন্তর্জাতিক আশ্রয়ের ভবিষ্যৎ নিয়ে উদ্বেগ বাড়ছে"
+    ],
+    "keyPointsEn": [
+      "Legal jurists in Kolkata and Dhaka deliberate on the international standards and appeal avenues for verdicts delivered in absentia",
+      "Exiled Awami League leadership maintains that proceedings conducted without chosen defense counsel lack due process",
+      "Following earlier death sentences handed down to 15 individuals including Sheikh Hasina, this verdict marks a defining institutional juncture",
+      "Heightened concern reported among Awami League political workers currently residing across West Bengal regarding their legal status"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আনন্দবাজার পত্রিকা রায় ও আইনি বিতর্কের উভয় পক্ষের যুক্তি এবং নির্বাসিত নেতাদের প্রতিক্রিয়া তুলে ধরেছে।",
+    "sentimentReasonEn": "Anandabazar Patrika presents an objective overview of legal debates surrounding in absentia trials alongside responses from exiled party members.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/world/bangladesh-international-crimes-tribunal-verdict-on-awami-league-leaders-and-legal-debate-dgtl/cid/1547890",
+      "originalHeadline": "কাদের-সহ ৭ জনের বিরুদ্ধে রায় আজ, অনুপস্থিতিতে বিচার নিয়ে বিতর্ক ও লীগের পাল্টা অভিযোগ",
+      "scannedAt": "2026-09-15T05:35:00.000Z"
+    },
+    "publishedAt": "2026-09-15T04:15:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "tags": [
+      "Anandabazar Patrika",
+      "Awami League",
+      "আওয়ামী লীগ",
+      "Obaidul Quader",
+      "International Crimes Tribunal",
+      "Sheikh Hasina",
+      "শেখ হাসিনা",
+      "Kolkata Bureau"
+    ],
+    "isLeadStory": false,
+    "isTrending": false
+  },
+  {
     "id": "1",
     "slug": "dhaka-university-jinnah-photo-row",
     "title": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
@@ -187,7 +353,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Jamaat",
       "Bangladesh politics"
     ],
-    "isLeadStory": true
+    "isLeadStory": false
   },
   {
     "id": "35",
