@@ -6,7 +6,7 @@ import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
 import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
-import { Globe, Shield, ArrowUp, Calendar, Bookmark, Moon, Sun, Archive } from 'lucide-react';
+import { Globe, Shield, ArrowUp, Calendar, Bookmark, Moon, Sun, Archive, Instagram } from 'lucide-react';
 import VisitorCounter from '@/components/VisitorCounter';
 
 export default function Footer() {
@@ -220,6 +220,16 @@ export default function Footer() {
                 >
                   <Archive size={13} />
                   {t.archive.navTitle}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/instagram"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: '#E1306C', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+                >
+                  <Instagram size={13} style={{ color: '#E1306C' }} />
+                  {t.instagram.navTitle}
                 </Link>
               </li>
             </ul>
