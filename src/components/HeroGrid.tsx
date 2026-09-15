@@ -162,7 +162,7 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                     style={{ textDecoration: 'none' }}
                   >
                     <h4
-                      className={art.source.language === 'Hindi' ? 'font-devanagari' : art.source.language === 'Bengali' ? 'font-bengali' : 'font-serif'}
+                      className={/[\u0980-\u09FF]/.test(art.title) || art.source.language === 'Bengali' ? 'font-bengali' : /[\u0900-\u097F]/.test(art.title) || art.source.language === 'Hindi' ? 'font-devanagari' : 'font-serif'}
                       style={{
                         fontSize: '0.94rem',
                         fontWeight: 700,

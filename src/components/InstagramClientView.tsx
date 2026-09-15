@@ -632,7 +632,7 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
               }}
             >
               {filteredArticles.map((article) => {
-                const isBengali = article.source.language === 'Bengali';
+                const isBengali = /[\u0980-\u09FF]/.test(article.title) || article.source.language === 'Bengali';
                 const timeAgo = formatArticleTimestamp(article.source.scannedAt, lang, article.publishedAt);
                 const originalOutletName = article.source.name.replace(/\s*\(Instagram\)/i, '').trim();
                 const outletInfo = getInstagramOutletInfo(article);

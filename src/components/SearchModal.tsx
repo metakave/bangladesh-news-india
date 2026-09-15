@@ -239,9 +239,9 @@ export default function SearchModal() {
                   : `Found ${results.length} Scanned Reports`}
               </div>
               {results.map((art) => {
-                const isHindi = art.source.language === 'Hindi';
-                const isBengali = art.source.language === 'Bengali';
-                const isEnglish = art.source.language === 'English';
+                const isBengali = /[\u0980-\u09FF]/.test(art.title) || art.source.language === 'Bengali';
+                const isHindi = /[\u0900-\u097F]/.test(art.title) || art.source.language === 'Hindi';
+                const isEnglish = !isBengali && !isHindi;
                 const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
                 const summary = lang === 'bn' ? art.summaryBn : art.summaryEn;
 

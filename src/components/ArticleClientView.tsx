@@ -42,6 +42,10 @@ export default function ArticleClientView({
   const [copied, setCopied] = useState(false);
   const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
 
+  const isBengaliContent = /[\u0980-\u09FF]/.test(article.title) || article.source.language === 'Bengali';
+  const isHindiContent = /[\u0900-\u097F]/.test(article.title) || article.source.language === 'Hindi';
+  const isEnglishContent = !isBengaliContent && !isHindiContent;
+
   const isHindi = article.source.language === 'Hindi';
   const isBengali = article.source.language === 'Bengali';
   const isEnglish = article.source.language === 'English';
@@ -52,7 +56,7 @@ export default function ArticleClientView({
   const sentimentReason = lang === 'bn' ? article.sentimentReasonBn : article.sentimentReasonEn;
   const readTime = lang === 'bn' ? article.readTimeBn : article.readTimeEn;
 
-  const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
+  const titleFontClass = isBengaliContent ? 'font-bengali' : isHindiContent ? 'font-devanagari' : 'font-serif';
 
   const formattedScannedTime = formatArticleTimestamp(article.source.scannedAt, lang, article.publishedAt);
   const formattedDate = new Date(article.publishedAt).toLocaleDateString(lang === 'bn' ? 'bn-BD' : 'en-US', {
@@ -95,7 +99,7 @@ export default function ArticleClientView({
             {categoryLabel}
           </Link>
           <ChevronRight size={12} />
-          <span style={{ color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '340px' }}>
+          <span style={{ color: 'var(--text-muted)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: '340px' }} className={isBengaliContent || lang === 'bn' ? 'font-bengali' : ''}>
             {article.title}
           </span>
         </nav>
@@ -122,9 +126,9 @@ export default function ArticleClientView({
                 style={{
                   fontSize: 'clamp(1.75rem, 3.8vw, 2.75rem)',
                   fontWeight: 800,
-                  lineHeight: isBengali || isHindi ? 1.35 : 1.2,
+                  lineHeight: isBengaliContent || isHindiContent ? 1.35 : 1.2,
                   color: 'var(--text-primary)',
-                  letterSpacing: isBengali || isHindi ? '0' : '-0.02em',
+                  letterSpacing: isBengaliContent || isHindiContent ? '0' : '-0.02em',
                   marginBottom: '1.25rem',
                 }}
               >
@@ -132,7 +136,7 @@ export default function ArticleClientView({
               </h1>
 
               {/* Parallel Translation Box */}
-              {isHindi && article.banglaTitle && (
+              {isHindiContent && article.banglaTitle && (
                 <div style={{
                   backgroundColor: 'rgba(201, 58, 29, 0.05)',
                   borderLeft: '4px solid var(--brand-primary)',
@@ -154,7 +158,7 @@ export default function ArticleClientView({
                 </div>
               )}
 
-              {isBengali && article.englishTitle && (
+              {isBengaliContent && article.englishTitle && article.englishTitle !== article.title && (
                 <div style={{
                   backgroundColor: 'rgba(15, 76, 129, 0.05)',
                   borderLeft: '4px solid var(--brand-accent)',
@@ -171,7 +175,7 @@ export default function ArticleClientView({
                 </div>
               )}
 
-              {isEnglish && article.banglaTitle && (
+              {isEnglishContent && article.banglaTitle && article.banglaTitle !== article.title && (
                 <div style={{
                   backgroundColor: 'rgba(15, 76, 129, 0.05)',
                   borderLeft: '4px solid var(--brand-accent)',
@@ -268,7 +272,7 @@ export default function ArticleClientView({
                   flexWrap: 'wrap',
                   gap: '0.5rem'
                 }}>
-                  <span>{article.title}</span>
+                  <span className={isBengaliContent || lang === 'bn' ? 'font-bengali' : ''}>{article.title}</span>
                   <span style={{ fontWeight: 600 }}>Source: {article.source.name} ({article.source.bureau} Bureau)</span>
                 </figcaption>
               </figure>
@@ -359,7 +363,7 @@ export default function ArticleClientView({
                 {lang === 'bn' ? 'বিস্তারিত পর্যবেক্ষণ ও সারসংক্ষেপ' : 'Analytical Summary & Media Intel'}
               </h2>
               <div
-                className={lang === 'bn' ? 'font-bengali' : 'font-serif'}
+                className={lang === 'bn' || /[\u0980-\u09FF]/.test(summary || '') ? 'font-bengali' : 'font-serif'}
                 style={{
                   fontSize: '1.12rem',
                   lineHeight: 1.8,

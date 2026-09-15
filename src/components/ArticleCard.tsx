@@ -29,6 +29,10 @@ export default function ArticleCard({
   const bookmarked = isBookmarked(article.slug);
   const [imgSrc, setImgSrc] = useState(article.imageUrl || FALLBACK_IMAGE);
 
+  const isBengaliContent = /[\u0980-\u09FF]/.test(article.title) || article.source.language === 'Bengali';
+  const isHindiContent = /[\u0900-\u097F]/.test(article.title) || article.source.language === 'Hindi';
+  const isEnglishContent = !isBengaliContent && !isHindiContent;
+
   const isHindi = article.source.language === 'Hindi';
   const isBengali = article.source.language === 'Bengali';
   const isEnglish = article.source.language === 'English';
@@ -40,7 +44,7 @@ export default function ArticleCard({
   const sentimentReason = lang === 'bn' ? article.sentimentReasonBn : article.sentimentReasonEn;
   const readTime = lang === 'bn' ? article.readTimeBn : article.readTimeEn;
 
-  const titleFontClass = isBengali ? 'font-bengali' : isHindi ? 'font-devanagari' : 'font-serif';
+  const titleFontClass = isBengaliContent ? 'font-bengali' : isHindiContent ? 'font-devanagari' : 'font-serif';
 
   if (variant === 'lead') {
     return (
@@ -106,12 +110,12 @@ export default function ArticleCard({
             <h2
               className={titleFontClass}
               style={{
-                fontSize: isBengali || isHindi ? 'clamp(1.45rem, 2.3vw, 2rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
+                fontSize: isBengaliContent || isHindiContent ? 'clamp(1.45rem, 2.3vw, 2rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
                 fontWeight: 800,
-                lineHeight: isBengali || isHindi ? 1.45 : 1.25,
+                lineHeight: isBengaliContent || isHindiContent ? 1.45 : 1.25,
                 color: 'var(--text-primary)',
                 marginBottom: '0.75rem',
-                letterSpacing: isBengali || isHindi ? '0' : '-0.01em',
+                letterSpacing: isBengaliContent || isHindiContent ? '0' : '-0.01em',
                 transition: 'color 0.15s ease',
               }}
             >
@@ -173,7 +177,7 @@ export default function ArticleCard({
           )}
 
           {/* Translation Box for Bengali News when in English UI mode */}
-          {isBengali && lang === 'en' && article.englishTitle && (
+          {(isBengaliContent || isBengali) && lang === 'en' && article.englishTitle && article.englishTitle !== article.title && (
             <div style={{
               backgroundColor: 'var(--bg-secondary)',
               border: '1px solid var(--border-primary)',
@@ -320,9 +324,9 @@ export default function ArticleCard({
             <h3
               className={titleFontClass}
               style={{
-                fontSize: isBengali || isHindi ? '1.12rem' : '1.15rem',
+                fontSize: isBengaliContent || isHindiContent ? '1.12rem' : '1.15rem',
                 fontWeight: 700,
-                lineHeight: isBengali || isHindi ? 1.45 : 1.3,
+                lineHeight: isBengaliContent || isHindiContent ? 1.45 : 1.3,
                 color: 'var(--text-primary)',
                 marginBottom: '0.55rem',
                 transition: 'color 0.15s ease',
@@ -375,7 +379,7 @@ export default function ArticleCard({
           )}
 
           {/* Bengali News English translation when in English mode */}
-          {isBengali && lang === 'en' && article.englishTitle && (
+          {(isBengaliContent || isBengali) && lang === 'en' && article.englishTitle && article.englishTitle !== article.title && (
             <div style={{
               backgroundColor: 'var(--bg-secondary)',
               border: '1px solid var(--border-primary)',
@@ -491,9 +495,9 @@ export default function ArticleCard({
             <h4
               className={titleFontClass}
               style={{
-                fontSize: isBengali || isHindi ? '0.96rem' : '0.98rem',
+                fontSize: isBengaliContent || isHindiContent ? '0.96rem' : '0.98rem',
                 fontWeight: 700,
-                lineHeight: isBengali || isHindi ? 1.45 : 1.35,
+                lineHeight: isBengaliContent || isHindiContent ? 1.45 : 1.35,
                 color: 'var(--text-primary)',
                 marginBottom: '0.25rem',
                 display: '-webkit-box',
@@ -555,9 +559,8 @@ export default function ArticleCard({
         <h4
           className={titleFontClass}
           style={{
-            fontSize: isBengali || isHindi ? '1rem' : '1.05rem',
-            fontWeight: 700,
-            lineHeight: isBengali || isHindi ? 1.45 : 1.35,
+            fontSize: isBengaliContent || isHindiContent ? '1rem' : '1.05rem',
+            lineHeight: isBengaliContent || isHindiContent ? 1.45 : 1.35,
             color: 'var(--text-primary)',
             transition: 'color 0.15s ease',
           }}

@@ -84,7 +84,7 @@ export default function BreakingNews() {
               [{current.sourceName} • {current.sourceBureau} • {timeAgo}]
             </span>
             <span
-              className={lang === 'bn' ? 'font-bengali' : ''}
+              className={lang === 'bn' || /[\u0980-\u09FF]/.test(headline || '') ? 'font-bengali' : ''}
               style={{ fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis' }}
             >
               {headline}
