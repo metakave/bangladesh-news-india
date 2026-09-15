@@ -130,11 +130,48 @@ const RSS_FEEDS = [
 
 const BANGLADESH_KEYWORDS = [
   'bangladesh', 'dhaka', 'chittagong', 'sylhet', 'yunus', 'tarique', 'sheikh hasina', 
-  'awami league', 'bnp', 'teesta', 'petrapole', 'benapole', 'rohingya', 'bsf', 'bgb',
-  'maitree', 'bandhan', 'mitali', 'bangla', 'padma', 'adani power', 'hindu minority',
-  'বাংলাদেশ', 'ঢাকা', 'চট্টগ্রাম', 'সিলেট', 'ইউনূস', 'তারেক', 'হাসিনা', 'তিস্তা', 'বেনাপোল', 'পেট্রাপোল',
+  'awami league', 'bnp', 'teesta', 'benapole', 'rohingya', 'bgb',
+  'maitree express', 'bandhan express', 'mitali express', 'adani power',
+  'বাংলাদেশ', 'ঢাকা', 'চট্টগ্রাম', 'সিলেট', 'ইউনূস', 'তারেক রহমান', 'শেখ হাসিনা', 'আওয়ামী লীগ', 'আওয়ামী লীগ', 'বিএনপি', 'তিস্তা', 'বেনাপোল', 'বিজিবি',
   'बांग्लादेश', 'ढाका', 'हसीना', 'यूनुस', 'तारिक', 'तीस्ता'
 ];
+
+/**
+ * Robust filter to eliminate false positives:
+ * Rejects domestic Indian/West Bengal municipal, police, or local crime reports
+ * that happen to mention a border town (e.g. Bongaon, Petrapole, Siliguri) or the Bengali language.
+ */
+function isTrulyBangladeshRelated(title, desc) {
+  const text = ((title || '') + ' ' + (desc || '')).toLowerCase();
+
+  // 1. Negative exclusion list: Local Indian domestic affairs that have no Bangladesh connection
+  const domesticExclusions = [
+    'নাবালিকা বিয়ে', 'child marriage', 'গৃহবধূ খুন', 'বধূ নির্যাতন', 'পারিবারিক কলহ',
+    'পৌরসভা নির্বাচন', 'তৃণমূল-বিজেপি সংঘর্ষ', 'টমটম চালক', 'suvendu adhikari warning',
+    'padma shri', 'padma bhushan', 'padma vibhushan', 'পদ্মশ্রী', 'পদ্মভূষণ', 'পদ্মবিভূষণ',
+    'রেশন দুর্নীতি', 'শিক্ষক নিয়োগ দুর্নীতি'
+  ];
+
+  const hasNegative = domesticExclusions.some(neg => text.includes(neg));
+  const hasExplicitCountryRef = text.includes('bangladesh') || text.includes('বাংলাদেশ') || text.includes('बांग्लादेश');
+
+  if (hasNegative && !hasExplicitCountryRef) {
+    return false;
+  }
+
+  // 2. Positive keywords match
+  if (BANGLADESH_KEYWORDS.some(kw => text.includes(kw))) {
+    return true;
+  }
+
+  // 3. Cross-border compound terms
+  const crossBorderTerms = [
+    'petrapole-benapole', 'পেট্রাপোল-বেনাপোল', 'ভারত-বাংলাদেশ', 'india-bangladesh',
+    'বাংলাদেশ সীমান্ত', 'bangladesh border', 'indo-bangla', 'indo-bangladesh',
+    'সীমান্ত হাট', 'border haat'
+  ];
+  return crossBorderTerms.some(term => text.includes(term));
+}
 
 const CATEGORY_DEFAULT_IMAGES = {
   diplomacy: '/images/bangladesh-ministry-of-foreign-affairs.jpg',
@@ -260,10 +297,9 @@ async function runDailyNewsScanner() {
   const allScannedArticles = feedResults.flat();
   console.log(`✅ Scanned ${allScannedArticles.length} total news articles across ${RSS_FEEDS.length} media outlets.`);
 
-  // Filter articles containing Bangladesh keywords
+  // Filter articles specifically related to Bangladesh with false-positive protection
   const matchedArticles = allScannedArticles.filter(art => {
-    const text = (art.title + ' ' + art.desc).toLowerCase();
-    return BANGLADESH_KEYWORDS.some(kw => text.includes(kw));
+    return isTrulyBangladeshRelated(art.title, art.desc);
   });
 
   console.log(`🎯 Identified ${matchedArticles.length} articles specifically related to Bangladesh / Dhaka.`);
@@ -273,6 +309,11 @@ async function runDailyNewsScanner() {
   const systemPrompt = `You are the lead intelligence analyst and bilingual editor for "Narrative Compass" (ন্যারেটিভ কম্পাস), an editorial platform monitoring and analyzing how Indian news media (Delhi, Kolkata bureaus in English, Bengali, Hindi) covers Bangladesh, Dhaka, and bilateral relations.
 
 Your goal is to evaluate the provided candidate news headlines/reports, filter and structure the most important authentic stories, and generate high-quality editorial data adhering strictly to the JSON schema.
+
+CRITICAL RELEVANCE & ANTI-FALSE-POSITIVE RULES:
+1. Every single selected story MUST be substantively about Bangladesh (its government, political parties like Awami League/BNP/Jamaat, economy, society, cricket, people) or direct India-Bangladesh bilateral relations (border trade, diplomacy, water sharing, shared transit).
+2. STRICTLY REJECT and EXCLUDE any story that is purely an internal Indian or West Bengal state/local domestic incident (such as domestic crimes, local police arrests, child marriages, civic affairs, municipal issues, local political disputes between Indian parties like TMC vs BJP) even if it took place in a border district (like Bongaon, Petrapole, Siliguri, North 24 Parganas, Malda) or was reported in Bengali. If it is not about the country of Bangladesh, IT IS A FALSE POSITIVE AND MUST BE DISCARDED.
+3. NEVER fabricate or hallucinate a connection to Bangladesh if the source article does not explicitly concern Bangladesh.
 
 Categories must be one of: "diplomacy" | "trade" | "border" | "politics" | "economy" | "sports" | "culture"
 CategoryLabelBn:

@@ -720,50 +720,6 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   },
   {
     "id": "14",
-    "slug": "bangladesh-child-marriage-crackdown-bongaon",
-    "title": "বনগাঁয় নাবালিকা বিয়ে: মুখ্যমন্ত্রীর নির্দেশে স্বামী-শ্বশুর-শাশুড়ি গ্রেপ্তার",
-    "englishTitle": "Bongaon child marriage crackdown: Husband, in-laws arrested after CM's warning",
-    "banglaTitle": "বনগাঁয় নাবালিকা বিয়ে: মুখ্যমন্ত্রীর নির্দেশে স্বামী-শ্বশুর-শাশুড়ি গ্রেপ্তার",
-    "summaryBn": "উত্তর ২৪ পরগনার বনগাঁয় এক নাবালিকার সঙ্গে বিয়ের ঘটনায় স্বামী, শ্বশুর ও শাশুড়িকে গ্রেপ্তার করেছে পুলিশ। মুখ্যমন্ত্রীর নির্দেশের পর এই অভিযান চালানো হয়।",
-    "summaryEn": "Police in Bongaon, North 24 Parganas, have arrested the husband, father-in-law, and mother-in-law in a child marriage case. The action was taken after the Chief Minister's directive.",
-    "keyPointsBn": [
-      "নাবালিকার সঙ্গে বিয়ের ঘটনায় তিনজন গ্রেপ্তার",
-      "মুখ্যমন্ত্রীর নির্দেশে অভিযান",
-      "পেট্রাপোল থানার খোলিদপুর এলাকার ঘটনা"
-    ],
-    "keyPointsEn": [
-      "Three arrested in child marriage case",
-      "Action taken on CM's directive",
-      "Incident in Kholidpur area of Petrapole police station"
-    ],
-    "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া আইনশৃঙ্খলা রক্ষার ঘটনা হিসেবে প্রতিবেদন করেছে, যা নিরপেক্ষ।",
-    "sentimentReasonEn": "Indian media reports it as a law-and-order enforcement incident, which is neutral.",
-    "source": {
-      "name": "TV9 Bangla",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://tv9bangla.com/west-bengal/north-24-parganas/west-bengal-child-marriage-crackdown-husband-in-laws-arrested-in-bongaon-after-cm-suvendu-adhikaris-warning-1346323.html",
-      "originalHeadline": "Bongaon News: দেড় বছর আগে নাবালিকার সঙ্গে বিয়ে, মুখ্যমন্ত্রীর নির্দেশের পরই স্বামী-শ্বশুর-শাশুড়িকে তুলে আনল পুলিশ",
-      "scannedAt": "2026-09-14T15:54:57+05:30"
-    },
-    "publishedAt": "2026-09-14T15:54:57+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "child marriage",
-      "Bongaon",
-      "arrest",
-      "West Bengal"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "15",
     "slug": "republic-tv-bangladesh-minority-rights-interim-governance-debate",
     "title": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
     "englishTitle": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
@@ -849,7 +805,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Kolkata",
       "Petrapole"
     ],
-    "id": "16",
+    "id": "15",
     "isLeadStory": false
   },
   {
@@ -894,11 +850,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "River",
       "Diplomacy"
     ],
-    "id": "17",
+    "id": "16",
     "isLeadStory": false
   },
   {
-    "id": "18",
+    "id": "17",
     "slug": "bangladesh-minister-india-fascination-reset-ties",
     "title": "Bangladesh minister says 'fascination with India must end', seeks reset of ties",
     "englishTitle": "Bangladesh minister says 'fascination with India must end', seeks reset of ties",
@@ -943,7 +899,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "19",
+    "id": "18",
     "slug": "abp-ananda-petrapole-benapole-trade-transporter-talks",
     "title": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
     "englishTitle": "Petrapole-Benapole Border Trade: Joint Steps Initiated To Expedite Cargo Movement And Clearance",
@@ -988,7 +944,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "20",
+    "id": "19",
     "slug": "bangladesh-imports-hilsa-from-india",
     "title": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
     "englishTitle": "Why Bangladesh is importing tons of hilsa from India",
@@ -1073,7 +1029,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Logistics"
     ],
-    "id": "21",
+    "id": "20",
     "isLeadStory": false
   },
   {
@@ -1118,7 +1074,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Rescue",
       "Ganga"
     ],
-    "id": "22",
+    "id": "21",
     "isLeadStory": false
   },
   {
@@ -1163,7 +1119,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Rural Economy"
     ],
-    "id": "23",
+    "id": "22",
     "isLeadStory": false
   },
   {
@@ -1208,7 +1164,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Legal",
       "Human Rights"
     ],
-    "id": "24",
+    "id": "23",
     "isLeadStory": false
   },
   {
@@ -1253,7 +1209,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bangladesh Bank",
       "Energy"
     ],
-    "id": "25",
+    "id": "24",
     "isLeadStory": false
   },
   {
@@ -1298,7 +1254,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Afghanistan",
       "UAE"
     ],
-    "id": "26",
+    "id": "25",
     "isLeadStory": false
   },
   {
@@ -1343,11 +1299,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Strategic",
       "Security"
     ],
-    "id": "27",
+    "id": "26",
     "isLeadStory": false
   },
   {
-    "id": "28",
+    "id": "27",
     "slug": "india-bangladesh-ties-tarique-rahman",
     "title": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
     "englishTitle": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
@@ -1391,7 +1347,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "29",
+    "id": "28",
     "slug": "bangladesh-india-reset-ties-bilateral-discussions",
     "title": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
     "englishTitle": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
@@ -1436,7 +1392,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "30",
+    "id": "29",
     "slug": "india-today-womens-asia-cup-semi-final-india-crush-bangladesh",
     "title": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
     "englishTitle": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
@@ -1481,7 +1437,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "31",
+    "id": "30",
     "slug": "bangladesh-brics-summit-no-dhaka-representation",
     "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
     "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
@@ -1525,7 +1481,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "32",
+    "id": "31",
     "slug": "saima-wazed-quits-who-post",
     "title": "Sheikh Hasina's daughter Saima quits WHO post after termination recommendation",
     "englishTitle": "Sheikh Hasina's daughter Saima quits WHO post after termination recommendation",
@@ -1570,7 +1526,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "33",
+    "id": "32",
     "slug": "sheikh-hasina-daughter-resigns-who",
     "title": "শেখ হাসিনার কন্যা জালিয়াতির অভিযোগে ডব্লিউএইচও আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন",
     "englishTitle": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
@@ -1614,7 +1570,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "34",
+    "id": "33",
     "slug": "india-today-india-bangladesh-defence-ties-training-talks",
     "title": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
     "englishTitle": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
@@ -1659,7 +1615,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "35",
+    "id": "34",
     "slug": "bangladesh-durga-puja-hindu-safety",
     "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
     "englishTitle": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
