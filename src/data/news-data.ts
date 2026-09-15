@@ -61,7 +61,7 @@ export interface BreakingAlert {
 export const CATEGORIES = [
   { slug: 'diplomacy', labelBn: 'কূটনীতি ও তিস্তা', labelEn: 'Diplomacy & Water', icon: 'Globe' },
   { slug: 'trade', labelBn: 'সীমান্ত বাণিজ্য ও বন্দর', labelEn: 'Cross-Border Trade', icon: 'TrendingUp' },
-  { slug: 'border', labelBn: 'সীমান্ত নিরাপত্তা ও বিএসএফ', labelEn: 'Border & Security', icon: 'Shield' },
+  { slug: 'border', labelBn: 'সীমান্ত নিরাপত্তা', labelEn: 'Border & Security', icon: 'Shield' },
   { slug: 'economy', labelBn: 'অর্থনীতি ও বিদ্যুৎ', labelEn: 'Economy & Energy', icon: 'Building2' },
   { slug: 'sports', labelBn: 'ক্রীড়া ও ক্রিকেট', labelEn: 'Sports & Cricket', icon: 'Trophy' },
   { slug: 'culture', labelBn: 'সংস্কৃতি ও সাহিত্য', labelEn: 'Culture & Arts', icon: 'Sparkles' },
@@ -422,7 +422,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Adds to political debate on border management"
     ],
     "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
     "categoryLabelEn": "Border & Security",
     "sentiment": "negative",
     "sentimentReasonBn": "ভারতীয় মিডিয়া এই দাবিকে নিরাপত্তা হুমকি হিসেবে উপস্থাপন করেছে, যা বাংলাদেশ-বিরোধী নেতিবাচক আবহ তৈরি করে। সীমান্তে মাদ্রাসা বৃদ্ধির বিষয়টি সন্ত্রাসবাদ ও অনুপ্রবেশের সঙ্গে যুক্ত করে দেখা হচ্ছে।",
@@ -1050,7 +1050,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Widely reported in Kolkata media as exemplary humanitarian duty"
     ],
     "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
     "categoryLabelEn": "Border & Security",
     "sentiment": "positive",
     "sentimentReasonBn": "কলকাতা ও দিল্লির গণমাধ্যমে বিএসএফের মানবিক দায়িত্বপালন ও দ্রুত পদক্ষেপকে অত্যন্ত ইতিবাচকভাবে চিত্রিত করা হয়েছে।",
@@ -1140,7 +1140,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Reiterates compliance with international and constitutional safeguards"
     ],
     "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
     "categoryLabelEn": "Border & Security",
     "sentiment": "neutral",
     "sentimentReasonBn": "ভারতীয় প্রধান জাতীয় সংবাদপত্রগুলো রায়টিকে ন্যায়বিচার ও প্রশাসনিক জবাবদিহিতার মানদণ্ডে ইতিবাচক মূল্যায়ন করেছে।",

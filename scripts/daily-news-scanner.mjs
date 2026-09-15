@@ -325,7 +325,7 @@ Categories must be one of: "diplomacy" | "trade" | "border" | "politics" | "econ
 CategoryLabelBn:
 - diplomacy -> 'কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক'
 - trade -> 'সীমান্ত বাণিজ্য ও বন্দর'
-- border -> 'সীমান্ত নিরাপত্তা ও বিএসএফ'
+- border -> 'সীমান্ত নিরাপত্তা'
 - politics -> 'রাজনীতি ও নির্বাচন'
 - economy -> 'অর্থনীতি ও বিদ্যুৎ'
 - sports -> 'ক্রীড়া ও ক্রিকেট'
