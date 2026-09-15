@@ -68,74 +68,337 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1764,
-  "bangladeshMatches": 328,
+  "totalScanned24h": 1142,
+  "bangladeshMatches": 296,
   "sentimentDistribution": {
-    "positive": 30,
-    "neutral": 17,
-    "negative": 15
+    "positive": 1,
+    "neutral": 3,
+    "negative": 2
   },
   "bureauDistribution": {
-    "delhi": 37,
-    "kolkata": 25
+    "delhi": 4,
+    "kolkata": 2
   },
   "languageDistribution": {
-    "english": 41,
-    "bengali": 18,
-    "hindi": 3
+    "english": 4,
+    "bengali": 2,
+    "hindi": 0
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "ba-tv-001",
-    "headlineBn": "বাংলাদেশি মন্ত্রীর বক্তব্যে ভারতের সঙ্গে সম্পর্ক পুনর্মূল্যায়নের স্পষ্ট ইঙ্গিত: এনডিটিভির বিশেষ পর্যালোচনা",
-    "headlineEn": "In comments of Bangladesh minister, a hint of recalibration of ties with India: NDTV report",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "NDTV",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.ndtv.com/world-news/in-comments-of-bangladesh-minister-a-hint-of-recalibration-of-ties-with-india"
-  },
-  {
-    "id": "ba-tv-002",
-    "headlineBn": "বিমানবন্দর ও প্রতিষ্ঠানে ভুয়া বোমা হুমকি কাণ্ডে বাংলাদেশ সংশ্লিষ্টতার যোগসূত্র, ৫ লাখ ইমেইল আইডিসহ গ্রেপ্তার ২: ইন্ডিয়া টুডে",
-    "headlineEn": "Gujarat cyber crime probe unearths Bangladesh link in hoax threat emails, 2 held with 5 lakh email IDs: India Today",
-    "timeAgoBn": "৩ ঘণ্টা আগে",
-    "timeAgoEn": "3 hours ago",
-    "sourceName": "India Today",
+    "id": "alert-001",
+    "headlineBn": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
+    "headlineEn": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "timeAgoBn": "২ ঘণ্টা আগে",
+    "timeAgoEn": "2 hours ago",
+    "sourceName": "Times of India World",
     "sourceBureau": "Delhi",
     "sentiment": "negative",
-    "url": "https://www.indiatoday.in/world/story/gujarat-bomb-threat-probe-bangladesh-link-two-arrested"
+    "url": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms"
   },
   {
-    "id": "ba-tv-003",
-    "headlineBn": "শারদীয় উৎসবে বাংলা সীমান্তে ইলিশ আমদানি-রফতানি বাণিজ্যের টানাপোড়েন ও গতিপ্রকৃতি: টেলিভিশন বিশেষ প্রতিবেদন",
-    "headlineEn": "Festive trade dynamic: Indian news channels monitor Hilsa cross-border movements along Bengal frontier",
-    "timeAgoBn": "৪ ঘণ্টা আগে",
-    "timeAgoEn": "4 hours ago",
+    "id": "alert-002",
+    "headlineBn": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: উল্টো স্রোত",
+    "headlineEn": "UNO reverse: India is now sending hilsa to Bangladesh",
+    "timeAgoBn": "১ দিন আগে",
+    "timeAgoEn": "1 day ago",
     "sourceName": "India Today",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14"
+    "url": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss"
   },
   {
-    "id": "ba-001",
-    "headlineBn": "ভারতের সঙ্গে সম্পর্ক 'রিসেট' করতে চায় বাংলাদেশ, দ্বিপাক্ষিক আলোচনার মাধ্যমে হওয়া উচিত: পররাষ্ট্র প্রতিমন্ত্রী",
-    "headlineEn": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister for Foreign Affairs",
-    "timeAgoBn": "৬ ঘণ্টা আগে",
-    "timeAgoEn": "6 hours ago",
-    "sourceName": "The Hindu",
+    "id": "alert-003",
+    "headlineBn": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
+    "headlineEn": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
+    "timeAgoBn": "৬ দিন আগে",
+    "timeAgoEn": "6 days ago",
+    "sourceName": "NDTV",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5"
+  },
+  {
+    "id": "alert-004",
+    "headlineBn": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "headlineEn": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
+    "timeAgoBn": "১ দিন আগে",
+    "timeAgoEn": "1 day ago",
+    "sourceName": "The Indian Express",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.thehindu.com/news/national/bangladesh-wants-to-reset-ties-with-india/article71464479.ece"
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
-    "id": "tv-ndtv-recalibration-6",
+    "id": "1",
+    "slug": "dhaka-university-jinnah-photo-row",
+    "title": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
+    "englishTitle": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
+    "summaryBn": "ঢাকা বিশ্ববিদ্যালয়ের সংগ্রশালা থেকে জিন্নাহ ও জামায়াতের সাবেক প্রধান আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক সৃষ্টি হয়েছে। বিশ্ববিদ্যালয় কর্তৃপক্ষ তিনটি ঘটনা তদন্তে তিনটি কমিটি গঠন করেছে।",
+    "summaryEn": "A controversy has erupted at Dhaka University over the removal of portraits of Jinnah and former Jamaat chief Abdul Malek from the museum. The university has formed three committees to investigate three incidents.",
+    "keyPointsBn": [
+      "সংগ্রশালা থেকে জিন্নাহ ও আব্দুল মালেকের ছবি টানানো হয়",
+      "শিক্ষক মূল্যায়ন ও 'নির্ভীক জুলাই' স্মৃতিসৌধ নিয়েও বিতর্ক",
+      "তদন্তে তিন কমিটি গঠন"
+    ],
+    "keyPointsEn": [
+      "Portraits of Jinnah and Abdul Malek removed from museum",
+      "Controversy also over teacher evaluation and 'Nirbhik July' memorial",
+      "Three committees formed to investigate"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে বাংলাদেশে সাম্প্রদায়িক ও রাজনৈতিক উত্তেজনা হিসেবে উপস্থাপন করছে, যা নেতিবাচক ছবি তৈরি করে।",
+    "sentimentReasonEn": "Indian media frames this as communal and political tension in Bangladesh, creating a negative image.",
+    "source": {
+      "name": "Times of India World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms",
+      "originalHeadline": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+      "scannedAt": "2026-09-15T07:17:45+05:30"
+    },
+    "publishedAt": "2026-09-15T07:17:45+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://timesofindia.indiatimes.com/photo/134249657.cms",
+    "tags": [
+      "Dhaka University",
+      "Jinnah",
+      "Jamaat",
+      "controversy"
+    ],
+    "isLeadStory": true
+  },
+  {
+    "id": "2",
+    "slug": "india-hilsa-export-bangladesh",
+    "title": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: উল্টো স্রোত",
+    "englishTitle": "UNO reverse: India is now sending hilsa to Bangladesh",
+    "banglaTitle": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: উল্টো স্রোত",
+    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩ লাখ ৫২ হাজার ৪৮৪ কেজি ইলিশ আমদানি হয়েছে। সাধারণত বাংলাদেশ ভারতকে ইলিশ রপ্তানি করে, কিন্তু এবার উল্টো চিত্র দেখা যাচ্ছে।",
+    "summaryEn": "In the first two months of the current fiscal year, Bangladesh imported 352,484 kg of hilsa from India. Usually Bangladesh exports hilsa to India, but this time the trend has reversed.",
+    "keyPointsBn": [
+      "জুলাই-আগস্টে ৩.৫২ লাখ কেজি ইলিশ আমদানি",
+      "সাধারণত বাংলাদেশ ভারতকে ইলিশ রপ্তানি করে",
+      "ভারতীয় মিডিয়া এটিকে 'উল্টো স্রোত' বলে অভিহিত করেছে"
+    ],
+    "keyPointsEn": [
+      "352,484 kg hilsa imported in July-August",
+      "Usually Bangladesh exports hilsa to India",
+      "Indian media calls it a 'reverse trend'"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে হালকা মজার ছলে উপস্থাপন করেছে, যা দ্বিপাক্ষিক বাণিজ্যের ইতিবাচক দিক তুলে ধরে।",
+    "sentimentReasonEn": "Indian media presents this in a light-hearted manner, highlighting a positive aspect of bilateral trade.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss",
+      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
+      "scannedAt": "2026-09-14T21:50:17+05:30"
+    },
+    "publishedAt": "2026-09-14T21:50:17+05:30",
+    "readTimeBn": "১ মিনিট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://www.indiatoday.in/photo/2994581.cms",
+    "tags": [
+      "hilsa",
+      "trade",
+      "Bangladesh",
+      "India"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "3",
+    "slug": "hasina-daughter-resigns-who",
+    "title": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
+    "englishTitle": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
+    "banglaTitle": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
+    "summaryBn": "শেখ হাসিনার কন্যা সায়মা ওয়াজেদ ডব্লিউএইচওর দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন। জালিয়াতির অভিযোগ ও জরিমানার মুখে তিনি এই সিদ্ধান্ত নেন।",
+    "summaryEn": "Sheikh Hasina's daughter Saima Wazed has resigned as WHO Regional Director for South-East Asia. She stepped down amid fraud charges and fines.",
+    "keyPointsBn": [
+      "সায়মা ওয়াজেদ ডব্লিউএইচওর আঞ্চলিক প্রধান ছিলেন",
+      "জালিয়াতির অভিযোগ ও জরিমানার মুখে পদত্যাগ",
+      "ভারতীয় মিডিয়া এটিকে হাসিনা পরিবারের সমালোচনা হিসেবে ব্যবহার করছে"
+    ],
+    "keyPointsEn": [
+      "Saima Wazed was WHO Regional Director",
+      "Resigned amid fraud charges and fines",
+      "Indian media uses this to criticize Hasina family"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে শেখ হাসিনা পরিবারের দুর্নীতির প্রমাণ হিসেবে উপস্থাপন করছে, যা নেতিবাচক।",
+    "sentimentReasonEn": "Indian media presents this as evidence of corruption in the Sheikh Hasina family, which is negative.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5",
+      "originalHeadline": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
+      "scannedAt": "2026-09-09T23:18:11GMT"
+    },
+    "publishedAt": "2026-09-09T23:18:11GMT",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://ndtv.com/photo/123456.cms",
+    "tags": [
+      "Sheikh Hasina",
+      "Saima Wazed",
+      "WHO",
+      "resignation"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "4",
+    "slug": "india-bangladesh-ties-tarique-rahman",
+    "title": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "englishTitle": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
+    "banglaTitle": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "summaryBn": "বিশ্লেষকরা বলছেন, তরিক রহমানের নেতৃত্বে ভারত-বাংলাদেশ সম্পর্কের পুনর্গঠন সম্ভব। তবে অতীতের রাজনৈতিক জটিলতা ও নতুন ভূরাজনৈতিক বাস্তবতা বিবেচনায় এটি চ্যালেঞ্জিং।",
+    "summaryEn": "Experts suggest that India-Bangladesh ties could be reset under Tarique Rahman's leadership. However, past political complexities and new geopolitical realities make it challenging.",
+    "keyPointsBn": [
+      "তরিক রহমানের নেতৃত্বে সম্পর্ক পুনর্গঠনের সম্ভাবনা",
+      "অতীতের রাজনৈতিক জটিলতা একটি বাধা",
+      "নতুন ভূরাজনৈতিক বাস্তবতা বিবেচনায় আনতে হবে"
+    ],
+    "keyPointsEn": [
+      "Potential to reset ties under Tarique Rahman",
+      "Past political complexities are a hurdle",
+      "New geopolitical realities must be considered"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া বিশ্লেষণধর্মী প্রতিবেদনে সম্ভাবনা ও চ্যালেঞ্জ উভয়ই তুলে ধরেছে, যা নিরপেক্ষ।",
+    "sentimentReasonEn": "Indian media presents both potential and challenges in an analytical report, which is neutral.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5",
+      "originalHeadline": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
+      "scannedAt": "2026-09-14T03:16:01GMT"
+    },
+    "publishedAt": "2026-09-14T03:16:01GMT",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://indianexpress.com/photo/123456.cms",
+    "tags": [
+      "Tarique Rahman",
+      "India-Bangladesh",
+      "diplomacy"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "5",
+    "slug": "bangladesh-hilsa-import-india",
+    "title": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
+    "englishTitle": "Why Bangladesh is importing tonnes of hilsa from India",
+    "banglaTitle": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
+    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩ লাখ ৫২ হাজার ৪৮৪ কেজি ইলিশ আমদানি হয়েছে। স্থানীয় বাজারে ইলিশের ঘাটতি ও দাম বৃদ্ধির কারণে এই আমদানি বেড়েছে।",
+    "summaryEn": "In the first two months of the fiscal year, Bangladesh imported 352,484 kg of hilsa from India. The import has increased due to a shortage and price hike in the local market.",
+    "keyPointsBn": [
+      "জুলাই-আগস্টে ৩.৫২ লাখ কেজি ইলিশ আমদানি",
+      "স্থানীয় বাজারে ইলিশের ঘাটতি ও দাম বৃদ্ধি",
+      "ভারত থেকে আমদানি বেড়েছে"
+    ],
+    "keyPointsEn": [
+      "352,484 kg hilsa imported in July-August",
+      "Shortage and price hike in local market",
+      "Imports from India have increased"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া তথ্যভিত্তিক প্রতিবেদন প্রকাশ করেছে, যা নিরপেক্ষ।",
+    "sentimentReasonEn": "Indian media has published an informative report, which is neutral.",
+    "source": {
+      "name": "BBC Bengali",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/cmz7znp5477qo?at_medium=RSS&at_campaign=rss",
+      "originalHeadline": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
+      "scannedAt": "2026-09-14T12:22:51GMT"
+    },
+    "publishedAt": "2026-09-14T12:22:51GMT",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://bbc.com/bengali/photo/123456.cms",
+    "tags": [
+      "hilsa",
+      "import",
+      "Bangladesh",
+      "India"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "6",
+    "slug": "bangladesh-child-marriage-crackdown-bongaon",
+    "title": "বনগাঁয় নাবালিকা বিয়ে: মুখ্যমন্ত্রীর নির্দেশে স্বামী-শ্বশুর-শাশুড়ি গ্রেপ্তার",
+    "englishTitle": "Bongaon child marriage crackdown: Husband, in-laws arrested after CM's warning",
+    "banglaTitle": "বনগাঁয় নাবালিকা বিয়ে: মুখ্যমন্ত্রীর নির্দেশে স্বামী-শ্বশুর-শাশুড়ি গ্রেপ্তার",
+    "summaryBn": "উত্তর ২৪ পরগনার বনগাঁয় এক নাবালিকার সঙ্গে বিয়ের ঘটনায় স্বামী, শ্বশুর ও শাশুড়িকে গ্রেপ্তার করেছে পুলিশ। মুখ্যমন্ত্রীর নির্দেশের পর এই অভিযান চালানো হয়।",
+    "summaryEn": "Police in Bongaon, North 24 Parganas, have arrested the husband, father-in-law, and mother-in-law in a child marriage case. The action was taken after the Chief Minister's directive.",
+    "keyPointsBn": [
+      "নাবালিকার সঙ্গে বিয়ের ঘটনায় তিনজন গ্রেপ্তার",
+      "মুখ্যমন্ত্রীর নির্দেশে অভিযান",
+      "পেট্রাপোল থানার খোলিদপুর এলাকার ঘটনা"
+    ],
+    "keyPointsEn": [
+      "Three arrested in child marriage case",
+      "Action taken on CM's directive",
+      "Incident in Kholidpur area of Petrapole police station"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া আইনশৃঙ্খলা রক্ষার ঘটনা হিসেবে প্রতিবেদন করেছে, যা নিরপেক্ষ।",
+    "sentimentReasonEn": "Indian media reports it as a law-and-order enforcement incident, which is neutral.",
+    "source": {
+      "name": "TV9 Bangla",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://tv9bangla.com/west-bengal/north-24-parganas/west-bengal-child-marriage-crackdown-husband-in-laws-arrested-in-bongaon-after-cm-suvendu-adhikaris-warning-1346323.html",
+      "originalHeadline": "Bongaon News: দেড় বছর আগে নাবালিকার সঙ্গে বিয়ে, মুখ্যমন্ত্রীর নির্দেশের পরই স্বামী-শ্বশুর-শাশুড়িকে তুলে আনল পুলিশ",
+      "scannedAt": "2026-09-14T15:54:57+05:30"
+    },
+    "publishedAt": "2026-09-14T15:54:57+05:30",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://tv9bangla.com/photo/1346323.cms",
+    "tags": [
+      "child marriage",
+      "Bongaon",
+      "arrest",
+      "West Bengal"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "7",
     "slug": "ndtv-bangladesh-minister-recalibration-ties-with-india",
     "title": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
     "englishTitle": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
@@ -170,12 +433,18 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
     "imageUrl": "/images/south-block-mea-delhi.jpg",
-    "tags": ["NDTV", "Diplomacy", "Delhi", "Dhaka", "Bilateral Ties"],
-    "isLeadStory": true,
+    "tags": [
+      "NDTV",
+      "Diplomacy",
+      "Delhi",
+      "Dhaka",
+      "Bilateral Ties"
+    ],
+    "isLeadStory": false,
     "isTrending": true
   },
   {
-    "id": "tv-indiatoday-cyber-7",
+    "id": "8",
     "slug": "india-today-gujarat-bomb-threat-probe-bangladesh-link",
     "title": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
     "englishTitle": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
@@ -210,12 +479,18 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["India Today", "Cyber Security", "Border", "Investigation", "Gujarat Police"],
+    "tags": [
+      "India Today",
+      "Cyber Security",
+      "Border",
+      "Investigation",
+      "Gujarat Police"
+    ],
     "isLeadStory": false,
     "isTrending": true
   },
   {
-    "id": "tv-indiatoday-tribunal-8",
+    "id": "9",
     "slug": "india-today-bangladesh-tribunal-seven-awami-league-leaders",
     "title": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
     "englishTitle": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
@@ -250,50 +525,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
     "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["India Today", "Tribunal", "Politics", "Dhaka", "Awami League"],
+    "tags": [
+      "India Today",
+      "Tribunal",
+      "Politics",
+      "Dhaka",
+      "Awami League"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-indiatoday-hilsa-9",
-    "slug": "india-today-hilsa-trade-cross-border-dynamics",
-    "title": "Festive Trade Dynamics: Indian Outlets Track Hilsa Shipments Across Bengal-Bangladesh Frontier",
-    "englishTitle": "Festive Trade Dynamics: Indian Outlets Track Hilsa Shipments Across Bengal-Bangladesh Frontier",
-    "banglaTitle": "উৎসবের বাণিজ্যে গতি: বাংলা-বাংলাদেশ সীমান্তে ইলিশের আমদানি-রফতানি প্রবাহ নিয়ে ভারতীয় গণমাধ্যমের নজরদারি",
-    "summaryBn": "ইন্ডিয়া টুডের বিশেষ ডিজিটাল প্রতিবেদনে উৎসবের মৌসুমে ভারত ও বাংলাদেশের মধ্যে ঐতিহ্যবাহী ইলিশ মাছের বাণিজ্য, সীমান্ত শুল্ক ছাড়পত্র এবং বাজার মূল্যের ওঠানামা নিয়ে আলোকপাত করা হয়েছে।",
-    "summaryEn": "India Today highlights the seasonal cross-border trade dynamics of Hilsa fish across the Bengal-Bangladesh frontier, tracking customs clearance protocols and market supplies ahead of peak festive demand.",
-    "keyPointsBn": [
-      "শারদীয় উৎসবের প্রাক্কালে সীমান্ত বাণিজ্যে ইলিশের চালান নিয়ে আগ্রহ",
-      "পেট্রাপোল ও অন্যান্য স্থলবন্দরে শুল্ক ও কোয়ারেন্টাইন প্রক্রিয়ার দ্রুত নিষ্পত্তি",
-      "দুই দেশের রসনা ও সাংস্কৃতিক সংযোগের প্রতীক হিসেবে ইলিশের গুরুত্ব"
-    ],
-    "keyPointsEn": [
-      "Tracking seasonal Hilsa trade corridors along the India-Bangladesh border",
-      "Customs expediting clearance procedures for perishable shipments",
-      "Cultural resonance and economic interdependence during the festive season"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও পণ্য সরবরাহ",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "প্রতিবেদনে সীমান্ত বাণিজ্য ও দুই দেশের মানুষের মধ্যকার ঐতিহ্যবাহী সাংস্কৃতিক ও খাদ্যাভ্যাসের বন্ধন ইতিবাচকভাবে তুলে ধরা হয়েছে।",
-    "sentimentReasonEn": "Coverage highlights harmonious cross-border consumer demand and economic collaboration between Bengali communities across borders.",
-    "source": {
-      "name": "India Today",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14",
-      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
-      "scannedAt": "2026-09-14T23:30:00+05:30"
-    },
-    "publishedAt": "2026-09-14T21:50:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["India Today", "Trade", "Hilsa", "Petrapole", "Commerce"],
-    "isLeadStory": false
-  },
-  {
-    "id": "tv-indiatoday-asiacup-10",
+    "id": "10",
     "slug": "india-today-womens-asia-cup-semi-final-india-crush-bangladesh",
     "title": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
     "englishTitle": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
@@ -328,11 +570,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
     "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["India Today", "Sports", "Cricket", "Asia Cup", "Women's Cricket"],
+    "tags": [
+      "India Today",
+      "Sports",
+      "Cricket",
+      "Asia Cup",
+      "Women's Cricket"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-indiatoday-defence-11",
+    "id": "11",
     "slug": "india-today-india-bangladesh-defence-ties-training-talks",
     "title": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
     "englishTitle": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
@@ -367,11 +615,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
     "imageUrl": "/images/south-block-mea-delhi.jpg",
-    "tags": ["India Today", "Defence", "Military Cooperation", "Security", "Delhi"],
+    "tags": [
+      "India Today",
+      "Defence",
+      "Military Cooperation",
+      "Security",
+      "Delhi"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-wion-1",
+    "id": "12",
     "slug": "wion-bangladesh-foreign-policy-reset-south-asia",
     "title": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
     "englishTitle": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
@@ -406,11 +660,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
     "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
-    "tags": ["WION", "Diplomacy", "Geopolitics", "South Asia", "Foreign Policy"],
+    "tags": [
+      "WION",
+      "Diplomacy",
+      "Geopolitics",
+      "South Asia",
+      "Foreign Policy"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-indiatoday-2",
+    "id": "13",
     "slug": "india-today-bangladesh-reset-ties-bilateral-diplomacy",
     "title": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
     "englishTitle": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
@@ -445,11 +705,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
     "imageUrl": "/images/south-block-mea-delhi.jpg",
-    "tags": ["India Today", "Diplomacy", "Bilateral Ties", "Delhi", "Dhaka"],
+    "tags": [
+      "India Today",
+      "Diplomacy",
+      "Bilateral Ties",
+      "Delhi",
+      "Dhaka"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-timesnow-3",
+    "id": "14",
     "slug": "times-now-bangladesh-cross-border-connectivity-security-scrutiny",
     "title": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
     "englishTitle": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
@@ -484,11 +750,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["Times Now", "Border", "Security", "Siliguri Corridor", "Defense"],
+    "tags": [
+      "Times Now",
+      "Border",
+      "Security",
+      "Siliguri Corridor",
+      "Defense"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-republic-4",
+    "id": "15",
     "slug": "republic-tv-bangladesh-minority-rights-interim-governance-debate",
     "title": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
     "englishTitle": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
@@ -523,11 +795,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
     "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["Republic TV", "Politics", "Law and Order", "Society", "Human Rights"],
+    "tags": [
+      "Republic TV",
+      "Politics",
+      "Law and Order",
+      "Society",
+      "Human Rights"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "tv-abpananda-5",
+    "id": "16",
     "slug": "abp-ananda-petrapole-benapole-trade-transporter-talks",
     "title": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
     "englishTitle": "Petrapole-Benapole Border Trade: Joint Steps Initiated To Expedite Cargo Movement And Clearance",
@@ -562,11 +840,17 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
     "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
-    "tags": ["ABP Ananda", "Petrapole", "Benapole", "Trade", "Border Cargo"],
+    "tags": [
+      "ABP Ananda",
+      "Petrapole",
+      "Benapole",
+      "Trade",
+      "Border Cargo"
+    ],
     "isLeadStory": false
   },
   {
-    "id": "1",
+    "id": "17",
     "slug": "bangladesh-india-reset-ties-bilateral-discussions",
     "title": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
     "englishTitle": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
@@ -608,7 +892,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bilateral Ties",
       "Humaiun Kobir"
     ],
-    "isLeadStory": true
+    "isLeadStory": false
   },
   {
     "slug": "indian-high-commissioner-meets-bangladesh-president-ties",
@@ -652,7 +936,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Dhaka",
       "Bilateral Ties"
     ],
-    "id": "2",
+    "id": "18",
     "isLeadStory": false
   },
   {
@@ -697,7 +981,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Kolkata",
       "Petrapole"
     ],
-    "id": "3",
+    "id": "19",
     "isLeadStory": false
   },
   {
@@ -742,7 +1026,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Legal",
       "Human Rights"
     ],
-    "id": "4",
+    "id": "20",
     "isLeadStory": false
   },
   {
@@ -787,7 +1071,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Strategic",
       "Security"
     ],
-    "id": "5",
+    "id": "21",
     "isLeadStory": false
   },
   {
@@ -832,7 +1116,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Rescue",
       "Ganga"
     ],
-    "id": "6",
+    "id": "22",
     "isLeadStory": false
   },
   {
@@ -877,7 +1161,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Afghanistan",
       "UAE"
     ],
-    "id": "7",
+    "id": "23",
     "isLeadStory": false
   },
   {
@@ -922,7 +1206,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "River",
       "Diplomacy"
     ],
-    "id": "8",
+    "id": "24",
     "isLeadStory": false
   },
   {
@@ -967,7 +1251,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bangladesh Bank",
       "Energy"
     ],
-    "id": "9",
+    "id": "25",
     "isLeadStory": false
   },
   {
@@ -1012,7 +1296,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Logistics"
     ],
-    "id": "10",
+    "id": "26",
     "isLeadStory": false
   },
   {
@@ -1057,7 +1341,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Students",
       "Healthcare"
     ],
-    "id": "11",
+    "id": "27",
     "isLeadStory": false
   },
   {
@@ -1102,7 +1386,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Rural Economy"
     ],
-    "id": "12",
+    "id": "28",
     "isLeadStory": false
   },
   {
@@ -1147,11 +1431,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Culture",
       "Publishers"
     ],
-    "id": "13",
+    "id": "29",
     "isLeadStory": false
   },
   {
-    "id": "14",
+    "id": "30",
     "slug": "bangladesh-minister-fascination-with-india-row",
     "title": "'Fascination with India must end': Bangladesh minister sparks row",
     "englishTitle": "'Fascination with India must end': Bangladesh minister sparks row",
@@ -1196,7 +1480,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "15",
+    "id": "31",
     "slug": "madrassas-mushrooming-near-bangladesh-border-giriraj-singh",
     "title": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
     "englishTitle": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
@@ -1241,7 +1525,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "16",
+    "id": "32",
     "slug": "no-dhaka-representation-brics-summit-tarique-rahman",
     "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
     "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
@@ -1286,7 +1570,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "17",
+    "id": "33",
     "slug": "sheikh-hasina-daughter-saima-quits-who-post",
     "title": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
     "englishTitle": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
@@ -1331,7 +1615,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "18",
+    "id": "34",
     "slug": "durga-puja-bangladesh-government-promises-safety-hindu-minority",
     "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
     "englishTitle": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
@@ -1376,7 +1660,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "19",
+    "id": "35",
     "slug": "bangladesh-india-resume-train-ops-october",
     "title": "Bangladesh and India plan to resume train ops by October",
     "englishTitle": "Bangladesh and India plan to resume train ops by October",
@@ -1418,1577 +1702,6 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Connectivity",
       "Trade"
     ],
-    "isLeadStory": false
-  },
-  {
-    "id": "20",
-    "slug": "india-brics-invite-bimstec-chair-bangladesh",
-    "title": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-    "englishTitle": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-    "banglaTitle": "ব্রিকসে বাংলাদেশের প্রধানমন্ত্রীকে আমন্ত্রণ জানায়নি ভারত, আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে: ঢাকা",
-    "summaryBn": "বাংলাদেশের পররাষ্ট্র প্রতিমন্ত্রী জানিয়েছেন, ব্রিকস শীর্ষ সম্মেলনে বাংলাদেশের প্রধানমন্ত্রী তারিক রহমানকে আমন্ত্রণ জানানো হয়নি। আমন্ত্রণটি ছিল বিমসটেকের চেয়ার হিসেবে, প্রধানমন্ত্রী হিসেবে নয়। ভারতীয় গণমাধ্যম এ খবরকে কূটনৈতিক স্পষ্টীকরণ হিসেবে উপস্থাপন করেছে।",
-    "summaryEn": "Bangladesh's Minister of State for Foreign Affairs clarified that PM Tarique Rahman was not invited to BRICS as Prime Minister, but in his capacity as BIMSTEC Chair. Indian media framed this as a diplomatic clarification, avoiding any suggestion of a snub.",
-    "keyPointsBn": [
-      "ব্রিকসে বাংলাদেশের প্রধানমন্ত্রীকে আমন্ত্রণ জানানো হয়নি বলে ঢাকা স্পষ্ট করেছে",
-      "আমন্ত্রণ ছিল বিমসটেক চেয়ার হিসেবে, প্রধানমন্ত্রী পদবিতে নয়",
-      "ভারতীয় গণমাধ্যম এটিকে কূটনৈতিক স্পষ্টীকরণ হিসেবে দেখিয়েছে"
-    ],
-    "keyPointsEn": [
-      "Dhaka clarified Bangladesh PM was not invited to BRICS",
-      "Invitation was as BIMSTEC Chair, not as Prime Minister",
-      "Indian media framed it as a diplomatic clarification"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যম নিরপেক্ষভাবে খবরটি পরিবেশন করেছে, কোনো পক্ষকে দোষারোপ না করে কূটনৈতিক স্পষ্টীকরণ হিসেবে উপস্থাপন করেছে।",
-    "sentimentReasonEn": "Indian media reported neutrally, presenting it as a diplomatic clarification without assigning blame to either side.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/india-did-not-invite-bangladesh-pm-rahman-for-brics-invite-was-for-bimstec-chair-dhaka/article71454857.ece",
-      "originalHeadline": "India did not invite Bangladesh PM Rahman for BRICS; invite was for BIMSTEC Chair: Dhaka",
-      "scannedAt": "2026-09-11T15:17:43+05:30"
-    },
-    "publishedAt": "2026-09-11T15:17:43+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://www.thehindu.com/theme/images/og-image.png",
-    "tags": [
-      "BRICS",
-      "BIMSTEC",
-      "Bangladesh",
-      "Diplomacy",
-      "Tarique Rahman"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "21",
-    "slug": "ganges-padma-water-sharing-treaty-renewal-talks",
-    "title": "Dhaka-Delhi talks begin on renewing Ganges-Padma water sharing treaty",
-    "englishTitle": "Dhaka-Delhi talks begin on renewing Ganges-Padma water sharing treaty",
-    "banglaTitle": "পদ্মা নদীর পানি বণ্টন চুক্তি নবায়ন নিয়ে ঢাকা-দিল্লি আলোচনা শুরু",
-    "summaryBn": "গঙ্গা-পদ্মা নদীর পানি বণ্টন চুক্তি নবায়নের জন্য ঢাকা ও দিল্লির মধ্যে আলোচনা শুরু হয়েছে। ভারতীয় গণমাধ্যম এটিকে দ্বিপাক্ষিক সম্পর্কের ইতিবাচক অগ্রগতি হিসেবে দেখছে, যা দুই দেশের জনগণের জন্য উপকারী হবে।",
-    "summaryEn": "Talks between Dhaka and Delhi have begun to renew the Ganges-Padma water sharing treaty. Indian media portrays this as a positive step in bilateral relations, beneficial for people of both countries.",
-    "keyPointsBn": [
-      "গঙ্গা-পদ্মা পানি বণ্টন চুক্তি নবায়নে আলোচনা শুরু",
-      "ভারতীয় গণমাধ্যম এটিকে ইতিবাচক কূটনৈতিক অগ্রগতি হিসেবে দেখছে",
-      "দুই দেশের জনগণের স্বার্থে সহযোগিতা বাড়ানোর সম্ভাবনা"
-    ],
-    "keyPointsEn": [
-      "Talks begin to renew Ganges-Padma water sharing treaty",
-      "Indian media sees it as positive diplomatic progress",
-      "Potential for increased cooperation benefiting both nations"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যম আলোচনাকে ইতিবাচক অগ্রগতি হিসেবে চিহ্নিত করেছে, যা দ্বিপাক্ষিক সম্পর্ক উন্নয়নের ইঙ্গিত দেয়।",
-    "sentimentReasonEn": "Indian media highlighted the talks as positive progress, signaling improved bilateral relations.",
-    "source": {
-      "name": "Anandabazar Patrika",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.anandabazar.com/west-bengal/dhaka-delhi-water-sharing-talks",
-      "originalHeadline": "পদ্মা নদীর পানি বণ্টন চুক্তি নবায়ন নিয়ে ঢাকা-দিল্লি আলোচনা শুরু",
-      "scannedAt": "2026-09-11T13:00:00+05:30"
-    },
-    "publishedAt": "2026-09-11T13:00:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://www.anandabazar.com/images/water-sharing-talks.jpg",
-    "tags": [
-      "Water Sharing",
-      "Ganges",
-      "Padma",
-      "Bangladesh",
-      "Diplomacy"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "22",
-    "slug": "benapole-petrapole-trade-halt-traders-worried",
-    "title": "Import-export halted at Benapole-Petrapole port, traders worried",
-    "englishTitle": "Import-export halted at Benapole-Petrapole port, traders worried",
-    "banglaTitle": "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ, ব্যবসায়ীদের দুশ্চিন্তা",
-    "summaryBn": "বেনাপোল-পেট্রাপোল স্থলবন্দরে আমদানি-রপ্তানি বন্ধ হয়ে যাওয়ায় ব্যবসায়ীরা দুশ্চিন্তায় পড়েছেন। ভারতীয় গণমাধ্যম এটিকে সীমান্ত বাণিজ্যের একটি বড় ধাক্কা হিসেবে উপস্থাপন করেছে এবং এর প্রভাব নিয়ে উদ্বেগ প্রকাশ করেছে।",
-    "summaryEn": "Import-export activities at Benapole-Petrapole land port have halted, causing worry among traders. Indian media presented this as a major setback to cross-border trade and expressed concern over its impact.",
-    "keyPointsBn": [
-      "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ",
-      "ব্যবসায়ীদের মধ্যে দুশ্চিন্তা ও আর্থিক ক্ষতির আশঙ্কা",
-      "ভারতীয় গণমাধ্যম এটিকে সীমান্ত বাণিজ্যের বড় ধাক্কা হিসেবে দেখছে"
-    ],
-    "keyPointsEn": [
-      "Import-export halted at Benapole-Petrapole port",
-      "Traders worried about financial losses",
-      "Indian media sees it as a major blow to cross-border trade"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যম বাণিজ্য বন্ধকে নেতিবাচকভাবে উপস্থাপন করেছে, ব্যবসায়ীদের দুশ্চিন্তা ও অর্থনৈতিক ক্ষতির দিক তুলে ধরেছে।",
-    "sentimentReasonEn": "Indian media framed the trade halt negatively, highlighting traders' anxiety and economic losses.",
-    "source": {
-      "name": "Aaj Tak",
-      "bureau": "Delhi",
-      "language": "Hindi",
-      "originalUrl": "https://www.aajtak.in/india/news/benapole-petrapole-trade-halt",
-      "originalHeadline": "বেনাপোল-পেট্রাপোল বন্দরে আমদানি-রপ্তানি বন্ধ, ব্যবসায়ীদের দুশ্চিন্তা",
-      "scannedAt": "2026-09-11T11:00:00+05:30"
-    },
-    "publishedAt": "2026-09-11T11:00:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://www.aajtak.in/images/benapole-trade-halt.jpg",
-    "tags": [
-      "Benapole",
-      "Petrapole",
-      "Trade",
-      "Bangladesh",
-      "Border"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "23",
-    "slug": "bsf-high-alert-bangladesh-border-infiltration",
-    "title": "BSF on high alert along Bangladesh border, special operation to check infiltration",
-    "englishTitle": "BSF on high alert along Bangladesh border, special operation to check infiltration",
-    "banglaTitle": "বাংলাদেশ সীমান্তে বিএসএফের সতর্কতা জারি, অনুপ্রবেশ রোধে বিশেষ অভিযান",
-    "summaryBn": "বাংলাদেশ সীমান্তে বিএসএফ উচ্চ সতর্কতা জারি করেছে এবং অনুপ্রবেশ রোধে বিশেষ অভিযান শুরু করেছে। ভারতীয় গণমাধ্যম এটিকে নিরাপত্তা ব্যবস্থা হিসেবে নিরপেক্ষভাবে উপস্থাপন করেছে, তবে সীমান্তে উত্তেজনার ইঙ্গিত রয়েছে।",
-    "summaryEn": "BSF has issued a high alert along the Bangladesh border and launched a special operation to check infiltration. Indian media presented this neutrally as a security measure, though it hints at border tensions.",
-    "keyPointsBn": [
-      "বাংলাদেশ সীমান্তে বিএসএফের উচ্চ সতর্কতা জারি",
-      "অনুপ্রবেশ রোধে বিশেষ অভিযান শুরু",
-      "ভারতীয় গণমাধ্যম এটিকে নিরাপত্তা ব্যবস্থা হিসেবে দেখছে"
-    ],
-    "keyPointsEn": [
-      "BSF issues high alert along Bangladesh border",
-      "Special operation launched to check infiltration",
-      "Indian media views it as a security measure"
-    ],
-    "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যম নিরপেক্ষভাবে নিরাপত্তা ব্যবস্থার খবর দিয়েছে, কোনো পক্ষকে দোষারোপ না করে সীমান্ত সুরক্ষার প্রয়োজনীয়তার উপর জোর দিয়েছে।",
-    "sentimentReasonEn": "Indian media reported neutrally on the security measure, emphasizing border protection without blaming any side.",
-    "source": {
-      "name": "The Times of India",
-      "bureau": "Kolkata",
-      "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/india/bsf-alert-bangladesh-border",
-      "originalHeadline": "BSF on high alert along Bangladesh border, special operation to check infiltration",
-      "scannedAt": "2026-09-11T09:00:00+05:30"
-    },
-    "publishedAt": "2026-09-11T09:00:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://timesofindia.indiatimes.com/images/bsf-border-alert.jpg",
-    "tags": [
-      "BSF",
-      "Border Security",
-      "Bangladesh",
-      "Infiltration"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "24",
-    "slug": "bangladesh-india-power-trade-increase",
-    "title": "Bangladesh to import more power from India to meet summer demand",
-    "englishTitle": "Bangladesh to import more power from India to meet summer demand",
-    "banglaTitle": "গ্রীষ্মের চাহিদা মেটাতে ভারত থেকে বেশি বিদ্যুৎ আমদানি করবে বাংলাদেশ",
-    "summaryBn": "গ্রীষ্মের চাহিদা মেটাতে বাংলাদেশ ভারত থেকে আরও বিদ্যুৎ আমদানি করার পরিকল্পনা করেছে। ভারতীয় গণমাধ্যম এটিকে দ্বিপাক্ষিক শক্তি সহযোগিতার ইতিবাচক উদাহরণ হিসেবে উপস্থাপন করেছে।",
-    "summaryEn": "Bangladesh plans to import more power from India to meet summer demand. Indian media presented this as a positive example of bilateral energy cooperation.",
-    "keyPointsBn": [
-      "গ্রীষ্মের চাহিদা মেটাতে ভারত থেকে বেশি বিদ্যুৎ আমদানির পরিকল্পনা",
-      "ভারতীয় গণমাধ্যম এটিকে ইতিবাচক শক্তি সহযোগিতা হিসেবে দেখছে",
-      "দ্বিপাক্ষিক সম্পর্ক জোরদারে সহায়ক"
-    ],
-    "keyPointsEn": [
-      "Bangladesh to import more power from India for summer demand",
-      "Indian media sees it as positive energy cooperation",
-      "Helps strengthen bilateral ties"
-    ],
-    "category": "economy",
-    "categoryLabelBn": "অর্থনীতি ও বিদ্যুৎ",
-    "categoryLabelEn": "Economy & Energy",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যম বিদ্যুৎ আমদানিকে ইতিবাচক সহযোগিতা হিসেবে উপস্থাপন করেছে, যা দুই দেশের সম্পর্ক উন্নয়নে সহায়ক।",
-    "sentimentReasonEn": "Indian media framed the power import as positive cooperation, beneficial for bilateral relations.",
-    "source": {
-      "name": "The Hindu BusinessLine",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindubusinessline.com/news/bangladesh-power-import-india",
-      "originalHeadline": "Bangladesh to import more power from India to meet summer demand",
-      "scannedAt": "2026-09-11T08:00:00+05:30"
-    },
-    "publishedAt": "2026-09-11T08:00:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://www.thehindubusinessline.com/images/power-import.jpg",
-    "tags": [
-      "Power",
-      "Energy",
-      "Bangladesh",
-      "India",
-      "Trade"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "25",
-    "slug": "india-bangladesh-cricket-series-2027",
-    "title": "India to tour Bangladesh for limited-overs series in 2027",
-    "englishTitle": "India to tour Bangladesh for limited-overs series in 2027",
-    "banglaTitle": "২০২৭ সালে সীমিত ওভারের সিরিজ খেলতে বাংলাদেশ সফর করবে ভারত",
-    "summaryBn": "২০২৭ সালে সীমিত ওভারের সিরিজ খেলতে ভারত বাংলাদেশ সফর করবে বলে ঘোষণা দেওয়া হয়েছে। ভারতীয় গণমাধ্যম এটিকে ক্রীড়া কূটনীতির ইতিবাচক উদাহরণ হিসেবে উপস্থাপন করেছে।",
-    "summaryEn": "India will tour Bangladesh for a limited-overs series in 2027, it was announced. Indian media presented this as a positive example of sports diplomacy.",
-    "keyPointsBn": [
-      "২০২৭ সালে বাংলাদেশ সফর করবে ভারতীয় ক্রিকেট দল",
-      "সীমিত ওভারের সিরিজ অনুষ্ঠিত হবে",
-      "ভারতীয় গণমাধ্যম এটিকে ক্রীড়া কূটনীতি হিসেবে দেখছে"
-    ],
-    "keyPointsEn": [
-      "Indian cricket team to tour Bangladesh in 2027",
-      "Limited-overs series to be held",
-      "Indian media views it as sports diplomacy"
-    ],
-    "category": "sports",
-    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
-    "categoryLabelEn": "Sports & Cricket",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যম ক্রিকেট সিরিজকে ইতিবাচক ক্রীড়া কূটনীতি হিসেবে উপস্থাপন করেছে, যা দুই দেশের জনগণের মধ্যে সম্পর্ক উন্নয়নে সহায়ক।",
-    "sentimentReasonEn": "Indian media framed the cricket series as positive sports diplomacy, helping improve people-to-people ties.",
-    "source": {
-      "name": "The Times of India",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/sports/cricket/india-tour-bangladesh-2027",
-      "originalHeadline": "India to tour Bangladesh for limited-overs series in 2027",
-      "scannedAt": "2026-09-11T07:00:00+05:30"
-    },
-    "publishedAt": "2026-09-11T07:00:00+05:30",
-    "readTimeBn": "১ মিনিট",
-    "readTimeEn": "1 min read",
-    "imageUrl": "https://timesofindia.indiatimes.com/images/cricket-series.jpg",
-    "tags": [
-      "Cricket",
-      "Bangladesh",
-      "India",
-      "Sports"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "26",
-    "slug": "india-bangladesh-passenger-train-services-resumption",
-    "title": "India, Bangladesh likely to discuss resumption of passenger train services",
-    "englishTitle": "India, Bangladesh likely to discuss resumption of passenger train services",
-    "banglaTitle": "ভারত, বাংলাদেশ যাত্রীবাহী ট্রেন পরিষেবা পুনরায় চালু নিয়ে আলোচনা করতে পারে",
-    "summaryBn": "ভারত ও বাংলাদেশ মৈত্রী ও বন্ধন এক্সপ্রেস সহ যাত্রীবাহী ট্রেন পরিষেবা পুনরায় চালু করার বিষয়ে আলোচনা করতে পারে। এই আলোচনা দ্বিপাক্ষিক যোগাযোগ ও সম্পর্ক উন্নয়নের ইঙ্গিত দেয়।",
-    "summaryEn": "India and Bangladesh are likely to discuss resuming passenger train services, including Maitree and Bandhan Express. This discussion signals improved bilateral connectivity and relations.",
-    "keyPointsBn": [
-      "ভারত ও বাংলাদেশ যাত্রীবাহী ট্রেন পরিষেবা পুনরায় চালু নিয়ে আলোচনা করতে পারে।",
-      "মৈত্রী ও বন্ধন এক্সপ্রেস সহ পরিষেবাগুলি আলোচনার অন্তর্ভুক্ত।",
-      "এই আলোচনা দ্বিপাক্ষিক যোগাযোগ ও সম্পর্ক উন্নয়নের ইঙ্গিত দেয়।"
-    ],
-    "keyPointsEn": [
-      "India and Bangladesh may discuss resuming passenger train services.",
-      "Services including Maitree and Bandhan Express are part of the discussion.",
-      "This discussion signals improved bilateral connectivity and relations."
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই খবরটি ইতিবাচকভাবে উপস্থাপন করেছে, দ্বিপাক্ষিক সম্পর্ক উন্নয়নের সম্ভাবনা তুলে ধরে।",
-    "sentimentReasonEn": "Indian media framed the news positively, highlighting potential improvements in bilateral relations.",
-    "source": {
-      "name": "The Indian Express India",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/india/india-bangladesh-to-discuss-resuming-maitree-bandhan-mitali-express-train-services-10867306/",
-      "originalHeadline": "India, Bangladesh likely to discuss resumption of passenger train services",
-      "scannedAt": "2026-09-12T10:00:00Z"
-    },
-    "publishedAt": "2026-09-07T13:36:01+00:00",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/train-services.jpg",
-    "tags": [
-      "India-Bangladesh",
-      "Train Services",
-      "Connectivity",
-      "Trade"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "27",
-    "slug": "family-court-relief-man-pushed-into-bangladesh",
-    "title": "Family gets court relief, but how to find 43-year-old pushed into Bangladesh?",
-    "englishTitle": "Family gets court relief, but how to find 43-year-old pushed into Bangladesh?",
-    "banglaTitle": "পরিবার আদালত থেকে স্বস্তি পেলেও, বাংলাদেশে ঠেলে দেওয়া ৪৩ বছর বয়সীকে কীভাবে খুঁজে পাওয়া যাবে?",
-    "summaryBn": "একটি পরিবার আদালত থেকে স্বস্তি পেলেও, তাদের ৪৩ বছর বয়সী সদস্যকে বাংলাদেশে ঠেলে দেওয়ার পর খুঁজে পাওয়া চ্যালেঞ্জিং হয়ে দাঁড়িয়েছে। এই ঘটনা সীমান্ত নিরাপত্তা ও মানবাধিকার উদ্বেগ প্রকাশ করে।",
-    "summaryEn": "A family received court relief, but finding their 43-year-old member who was pushed into Bangladesh remains challenging. This incident highlights border security and human rights concerns.",
-    "keyPointsBn": [
-      "একটি পরিবার আদালত থেকে স্বস্তি পেয়েছে।",
-      "তাদের ৪৩ বছর বয়সী সদস্যকে বাংলাদেশে ঠেলে দেওয়া হয়েছে।",
-      "এই ঘটনা সীমান্ত নিরাপত্তা ও মানবাধিকার উদ্বেগ প্রকাশ করে।"
-    ],
-    "keyPointsEn": [
-      "A family received court relief.",
-      "Their 43-year-old member was pushed into Bangladesh.",
-      "This incident highlights border security and human rights concerns."
-    ],
-    "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই খবরটি নেতিবাচকভাবে উপস্থাপন করেছে, সীমান্ত নিরাপত্তা ও মানবাধিকার লঙ্ঘনের দিকে মনোযোগ আকর্ষণ করে।",
-    "sentimentReasonEn": "Indian media framed the news negatively, drawing attention to border security and human rights violations.",
-    "source": {
-      "name": "The Indian Express India",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/india/family-court-relief-how-find-43-year-old-pushed-bangladesh-10870452/",
-      "originalHeadline": "Family gets court relief, but how to find 43-year-old pushed into Bangladesh?",
-      "scannedAt": "2026-09-12T10:00:00Z"
-    },
-    "publishedAt": "2026-09-09T14:37:44+00:00",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/border-security.jpg",
-    "tags": [
-      "Border Security",
-      "Human Rights",
-      "India-Bangladesh",
-      "BSF"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "28",
-    "slug": "amar-ujala-hindu-journalist-death-dhaka-samakal-investigation",
-    "title": "बांग्लादेश में हिंदू पत्रकार की संदिग्ध मौत: दफ्तर में फंदे से लटका मिला शव, अवामी लीग ने क्यों उठाए सवाल?",
-    "englishTitle": "Death of Hindu Journalist in Bangladesh: Body Found Inside Newsroom, Calls for Transparent Investigation",
-    "banglaTitle": "বাংলাদেশে হিন্দু সাংবাদিকের রহস্যজনক মৃত্যু: পত্রিকা কার্যালয়ে মরদেহ উদ্ধার, নিরপেক্ষ তদন্তের দাবি",
-    "summaryBn": "অমর উজালা দিল্লি ব্যুরোর খবরে প্রকাশ, ঢাকায় দৈনিক সমকাল পত্রিকার সিনিয়র সহ-সম্পাদক ও সনাতন ধর্মাবলম্বী সাংবাদিকের মরদেহ কার্যালয়ের ভেতর থেকে উদ্ধার করা হয়েছে। পুলিশ ঘটনার তদন্ত শুরু করেছে এবং ময়নাতদন্তের জন্য মরদেহ ঢাকা মেডিকেল কলেজ হাসপাতালে পাঠানো হয়েছে। বিভিন্ন সাংবাদিক সংগঠন ও রাজনৈতিক মহল ঘটনার নিরপেক্ষ তদন্ত ও সংবাদকর্মীদের সুরক্ষার জোর দাবি জানিয়েছে।",
-    "summaryEn": "Amar Ujala reports on the tragic discovery of a senior Hindu journalist and sub-editor found dead inside the newsroom of a major daily in Dhaka. Local law enforcement authorities have launched an inquest and sent the body for forensic post-mortem analysis, while journalist associations and political observers urge a thorough, transparent probe and enhanced safety for mediapersons.",
-    "keyPointsBn": [
-      "ঢাকা পুলিশ ঘটনাস্থল পরিদর্শন করে সিসিটিভি ফুটেজ ও আলামত সংগ্রহ করেছে।",
-      "বাংলাদেশ ফেডারেল সাংবাদিক ইউনিয়ন (বিএফইউজে) নিরপেক্ষ ও দ্রুত তদন্ত প্রতিবেদন প্রকাশের দাবি জানিয়েছে।",
-      "ঘটনার কারণ খতিয়ে দেখতে পুলিশের গোয়েন্দা বিভাগ বিশেষ দল গঠন করেছে।"
-    ],
-    "keyPointsEn": [
-      "Dhaka Metropolitan Police inspect the premises, retrieving CCTV footage and forensic evidence.",
-      "Journalist federations in Dhaka issue calls for an impartial, expedited forensic enquiry.",
-      "Specialist detective units assigned to investigate all circumstantial elements."
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও গণমাধ্যম সুরক্ষা",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "সাংবাদিকের অনাকাঙ্ক্ষিত মৃত্যু এবং গণমাধ্যমকর্মীদের নিরাপত্তা ও উদ্বেগের প্রেক্ষাপট।",
-    "sentimentReasonEn": "Focuses on the unfortunate demise of a media professional, safety concerns, and demands for swift justice.",
-    "source": {
-      "name": "Amar Ujala",
-      "bureau": "Delhi",
-      "language": "Hindi",
-      "originalUrl": "https://www.amarujala.com/world",
-      "originalHeadline": "बांग्लादेश में हिंदू पत्रकार की संदिग्ध मौत: दफ्तर में फंदे से लटका मिला शव, अवामी लीग ने क्यों उठाए सवाल?",
-      "scannedAt": "52 mins ago"
-    },
-    "publishedAt": "2026-09-12T02:05:05Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop&q=80",
-    "isTrending": true,
-    "tags": [
-      "Amar Ujala",
-      "Media Freedom",
-      "Dhaka Newsroom",
-      "Investigation",
-      "Journalism"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "29",
-    "slug": "sheikh-hasina-daughter-saima-wazed-who-regional-director-resignation",
-    "title": "Sheikh Hasina’s daughter resigns as WHO regional director amid fraud allegations",
-    "banglaTitle": "বিশ্ব স্বাস্থ্য সংস্থার আঞ্চলিক পরিচালকের পদ থেকে পদত্যাগ করলেন শেখ হাসিনার মেয়ে সায়মা ওয়াজেদ",
-    "summaryBn": "দ্য হিন্দু ও ইন্ডিয়ান এক্সপ্রেসের প্রতিবেদনে জানা গেছে, বিশ্ব স্বাস্থ্য সংস্থার (হু) দক্ষিণ-পূর্ব এশিয়া অঞ্চলের আঞ্চলিক পরিচালকের পদ থেকে ইস্তফা দিয়েছেন সাবেক প্রধানমন্ত্রী শেখ হাসিনার মেয়ে সায়মা ওয়াজেদ পুতুল। এর আগে হু আঞ্চলিক কমিটি তার নিয়োগের প্রক্রিয়া ও অনিয়মের অভিযোগ নিয়ে পর্যালোচনা বৈঠক করে পদত্যাগের সুপারিশ করেছিল।",
-    "summaryEn": "The Hindu and Indian Express report that Saima Wazed, daughter of former Bangladesh Prime Minister Sheikh Hasina, has resigned from her position as the World Health Organization (WHO) Regional Director for South-East Asia. The resignation followed recommendations by the WHO regional committee reviewing complaints and administrative petitions.",
-    "keyPointsBn": [
-      "সায়মা ওয়াজেদ ২০২৩ সালে দিল্লির আঞ্চলিক কার্যালয়ে পাঁচ বছরের জন্য দায়িত্ব গ্রহণ করেছিলেন।",
-      "ঢাকা থেকে অন্তর্বর্তী সরকারের পক্ষ থেকে নিয়োগ সংক্রান্ত অনিয়মের অভিযোগ আন্তর্জাতিক ফোরামে তোলা হয়েছিল।",
-      "হু প্রধান কার্যালয় জানিয়েছে যে অন্তর্বর্তীকালীন নেতৃত্বের মাধ্যমে আঞ্চলিক কার্যক্রম নির্বিঘ্নে পরিচালিত হবে।"
-    ],
-    "keyPointsEn": [
-      "Saima Wazed had assumed the five-year directorship role at the New Delhi regional headquarters in 2023.",
-      "Administrative petitions challenging the nomination process had been submitted by interim authorities in Dhaka.",
-      "WHO headquarters confirmed interim arrangements to ensure South-East Asia healthcare operations proceed without disruption."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও আন্তর্জাতিক সংস্থা",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "negative",
-    "sentimentReasonBn": "আন্তর্জাতিক সংস্থার শীর্ষ পদে বিতর্ক, অভিযোগ এবং আকস্মিক পদত্যাগের ঘটনা।",
-    "sentimentReasonEn": "Covers administrative scrutiny, institutional resignations, and multilateral governance friction.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/",
-      "originalHeadline": "Sheikh Hasina's daughter resigns as WHO regional director amid fraud allegations",
-      "scannedAt": "1 hour ago"
-    },
-    "publishedAt": "2026-09-11T19:49:44Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "WHO",
-      "The Hindu",
-      "Diplomacy",
-      "Saima Wazed",
-      "Health Governance"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "30",
-    "slug": "sangbad-pratidin-chinmoy-das-kolkata-reverberations",
-    "title": "‘হিন্দু বলে আমার মাকেও পালিয়ে আসতে হয়েছিল’, চিন্ময় প্রভুর চোখের জল দেখে অতীত স্মরণ শুভেন্দুর",
-    "englishTitle": "Kolkata Political Reactions on Bangladesh Situation: Opposition Leader Recalls Past Hardships",
-    "summaryBn": "সংবাদ প্রতিদিনের কলকাতা ডেস্ক জানাচ্ছে, বাংলাদেশে কারাবন্দি ইসকন সন্ন্যাসী চিন্ময় কৃষ্ণ দাস প্রভুর মায়ের শেষকৃত্য সংক্রান্ত ছবিকে কেন্দ্র করে কলকাতায় রাজনৈতিক মহলে তীব্র প্রতিক্রিয়া তৈরি হয়েছে। বিরোধী দলনেতা শুভেন্দু অধিকারী অতীত স্মৃতি স্মরণ করে সনাতন ধর্মাবলম্বীদের ধর্মীয় অধিকার ও মানবাধিকার সুরক্ষার দাবি জানিয়েছেন। একই সাথে দ্য হিন্দুতেও এই বিষয়ে বিস্তারিত প্রতিবেদন প্রকাশিত হয়েছে।",
-    "summaryEn": "Sangbad Pratidin reports from Kolkata on intense political discussions regarding the continued incarceration of Bangladeshi Hindu monk Chinmoy Krishna Das. Leaders in West Bengal reacted strongly to recent media photographs of the monk, urging international rights bodies and bilateral diplomatic channels to ensure fair trial standards, bail considerations, and human rights safeguards.",
-    "keyPointsBn": [
-      "কলকাতায় বিভিন্ন সামাজিক ও ধর্মীয় সংগঠনের পক্ষ থেকে সংহতি সমাবেশ অনুষ্ঠিত।",
-      "দ্বিপাক্ষিক স্তরে ধর্মীয় সংখ্যালঘুদের অধিকার রক্ষার বিষয়ে ভারতের বিদেশ মন্ত্রকের দৃষ্টি আকর্ষণ।",
-      "আইনজীবীরা আদালতে মানবিক কারণে জামিন শুনানির আবেদন দ্রুত নিষ্পত্তির তাগিদ দিয়েছেন।"
-    ],
-    "keyPointsEn": [
-      "Solidarity rallies organized by cultural and religious organizations across Kolkata.",
-      "Calls directed to MEA in Delhi to maintain diplomatic monitoring of fair legal trials.",
-      "Legal defense teams advocate for prompt bail consideration on humanitarian grounds."
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও মানবাধিকার",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "কারাবন্দি ধর্মীয় নেতাকে কেন্দ্র করে উদ্বেগ, রাজনৈতিক বিতর্ক ও সংবেদনশীল আলোচনা।",
-    "sentimentReasonEn": "Covers political friction, human rights concerns, and heightened public sensitivity across the Bengal border.",
-    "source": {
-      "name": "Sangbad Pratidin",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.sangbadpratidin.in/kolkata/",
-      "originalHeadline": "‘হিন্দু বলে আমার মাকেও পালিয়ে আসতে হয়েছিল’, চিন্ময় প্রভুর চোখের জল দেখে অতীত স্মরণ শুভেন্দুর",
-      "scannedAt": "2 hours ago"
-    },
-    "publishedAt": "2026-09-12T09:23:33Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Sangbad Pratidin",
-      "Kolkata Politics",
-      "Chinmoy Das",
-      "Human Rights",
-      "West Bengal"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "31",
-    "slug": "petrapole-benapole-trade-volume-hilsa-garment-logistics-abp",
-    "title": "পেট্রাপোল সীমান্তে রেকর্ড বাণিজ্য: চব্বিশ ঘণ্টা পণ্য চলাচলে স্বস্তি দুই পারের ব্যবসায়ীদের",
-    "englishTitle": "Record Cross-Border Trade at Petrapole: 24-Hour Cargo Movement Relieves Traders on Both Sides",
-    "summaryBn": "আনন্দবাজার পত্রিকার সীমান্ত প্রতিনিধি জানাচ্ছেন, পেট্রাপোল-বেনাপোল সীমান্তে ২৪ ঘণ্টা স্বয়ংক্রিয় পণ্য ও যাত্রীবাহী লেন চালুর পর আমদানি-রফতানি বাণিজ্যে নতুন গতি এসেছে। ভারতীয় টেক্সটাইল মিল থেকে সুতো, তুলা ও রাসায়নিক কাঁচামাল দ্রুত বাংলাদেশে পৌঁছাচ্ছে। অন্যদিকে পদ্মার ইলিশবাহী ট্রাক বিশেষ ছাড়পত্র পেয়ে কলকাতার পাইকারি বাজারে পৌঁছানো শুরু হয়েছে।",
-    "summaryEn": "Anandabazar Patrika’s border correspondent reports that land customs at Petrapole-Benapole have implemented 24/7 automated passenger and cargo lanes. Raw cotton, yarn, and chemical dyes from Indian mills are flowing into Bangladeshi ready-made garment clusters with minimal inspection delays, while specialized seasonal consignments of Padma Hilsa arrived at Kolkata wholesale fish markets.",
-    "keyPointsBn": [
-      "স্বয়ংক্রিয় স্মার্ট গেট চালুর পর দৈনিক পণ্যবাহী ট্রাকের সংখ্যা ৭৫০ থেকে বেড়ে ১২০০ ছাড়িয়েছে।",
-      "সুরাট, আমদাবাদ ও লুধিয়ানার সুতো রফতানিকারকরা বাংলাদেশের গার্মেন্টস অর্ডার দ্রুত সরবরাহে স্বস্তি প্রকাশ করেছেন।",
-      "উৎসবের মরশুমে কলকাতার মাছ বাজারে বিশেষ সড়ক করিডোর দিয়ে ৫০০ টন পদ্মার ইলিশ আমদানি নিশ্চিত হয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Daily cargo clearance increased from 750 trucks to over 1,200 following integrated automated smart gates.",
-      "Textile exporters in Surat, Ahmedabad, and Ludhiana report steady demand from Dhaka buying houses.",
-      "Kolkata fish merchants welcome the arrival of 500 tonnes of festive Hilsa consignments via land route."
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "সীমান্ত বাণিজ্য সহজীকরণ, ২৪ ঘণ্টা কার্গো চলাচল এবং দুই দেশের ব্যবসায়ীদের অর্থনৈতিক সুফলের ওপর জোর দেওয়া হয়েছে।",
-    "sentimentReasonEn": "Highlights seamless cross-border trade acceleration, automated cargo clearance, and mutual economic benefits between Kolkata and Bangladesh.",
-    "source": {
-      "name": "Anandabazar Patrika",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.anandabazar.com/world",
-      "originalHeadline": "পেট্রাপোল সীমান্তে রেকর্ড বাণিজ্য: চব্বিশ ঘণ্টা পণ্য চলাচলে স্বস্তি দুই পারের ব্যবসায়ীদের",
-      "scannedAt": "2.5 hours ago"
-    },
-    "publishedAt": "2026-09-12T08:30:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Petrapole",
-      "Benapole",
-      "Border Trade",
-      "Hilsa",
-      "RMG Supply Chain",
-      "Kolkata"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "32",
-    "slug": "dainik-jagran-border-security-bsf-smuggling-curfew",
-    "title": "भारत-बांग्लादेश सीमा पर बीएसएफ का हाई अलर्ट: मेघालय और कूचबिहार में ड्रोन से पैनी निगरानी",
-    "englishTitle": "BSF on High Alert Along Indo-Bangla Border: Drone Surveillance Intensified in Meghalaya & Cooch Behar",
-    "banglaTitle": "ভারত-বাংলাদেশ সীমান্তে বিএসএফের হাই অ্যালার্ট: মেঘালয় ও কোচবিহারে ড্রোন নজরদারি জোরদার",
-    "summaryBn": "দৈনিক জাগরণের প্রতিবেদন অনুযায়ী, বিএসএফের ইস্টার্ন কমান্ড মেঘালয় ও উত্তরবঙ্গের নদীমাতৃক ও কাঁটাতারহীন সীমান্তে অতিরিক্ত সৈন্য মোতায়েন করেছে। সীমান্ত এলাকায় চোরাচালান ও অনুপ্রবেশের আশঙ্কায় নাইট-ভিশন ড্রোন ও থার্মাল ইমেজিং ক্যামেরার মাধ্যমে সার্বক্ষণিক নজরদারি চালানো হচ্ছে এবং সীমান্তবর্তী গ্রামগুলোতে রাতের কারফিউ জারি করা হয়েছে।",
-    "summaryEn": "Dainik Jagran reports that the Border Security Force (BSF) eastern command has deployed additional thermal imaging cameras and drone surveillance along unfenced patches in Meghalaya and Cooch Behar. The report cites intelligence inputs regarding smuggling cartels attempting to exploit political transitions in Dhaka, prompting joint patrolling and border curfew enforcement.",
-    "keyPointsBn": [
-      "মেঘালয় ও আসাম সীমান্তে বিএসএফ ব্যাটালিয়নগুলোকে রাতের টহল দ্বিগুণ করার কঠোর নির্দেশ দেওয়া হয়েছে।",
-      "নদীপথে চোরাচালান ঠেকাতে স্পর্শকাতর সেক্টরগুলোতে অতিরিক্ত স্পিডবোট মোতায়েন করা হয়েছে।",
-      "দিল্লিতে ভারতের স্বরাষ্ট্র মন্ত্রণালয় বর্ডার গার্ড বাংলাদেশের (BGB) সাথে নিয়মিত ফ্ল্যাগ মিটিং অব্যাহত রাখার পরামর্শ দিয়েছে।"
-    ],
-    "keyPointsEn": [
-      "BSF battalions in Meghalaya and Assam sectors issued heightened red-alerts for night-time patrols.",
-      "Seizures of contraband and unauthorized crossing attempts monitored along riverine unfenced patches.",
-      "Indian Home Ministry officials in Delhi urge Border Guard Bangladesh (BGB) to maintain synchronized flag meetings."
-    ],
-    "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "negative",
-    "sentimentReasonBn": "সীমান্তে অনুপ্রবেশের আশঙ্কা, চোরাচালান এবং ভারতীয় নিরাপত্তা বাহিনীর উচ্চ সতর্কতার ওপর আলোকপাত করা হয়েছে।",
-    "sentimentReasonEn": "Focuses on cross-border infiltration risks, smuggling concerns, and heightened border alerts flagged by Indian security forces.",
-    "source": {
-      "name": "Dainik Jagran",
-      "bureau": "Delhi",
-      "language": "Hindi",
-      "originalUrl": "https://www.jagran.com/news/national-news-hindi.html",
-      "originalHeadline": "भारत-बांग्लादेश सीमा पर बीएसएफ का हाई अलर्ट: मेघालय और कूचबिहार में ड्रोन से पैनी निगरानी",
-      "scannedAt": "3 hours ago"
-    },
-    "publishedAt": "2026-09-12T07:45:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "BSF",
-      "Border Security",
-      "Meghalaya",
-      "Smuggling",
-      "Infiltration",
-      "Dainik Jagran"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "33",
-    "slug": "india-bangladesh-teesta-water-treaty-delhi-diplomatic-reassessment",
-    "title": "Delhi Reviewing Technical Parameters on Teesta River Sharing Framework Ahead of Joint River Commission Talks",
-    "banglaTitle": "যৌথ নদী কমিশনের বৈঠকের আগে তিস্তার পানি বণ্টন কাঠামোর কারিগরি দিক পর্যালোচনা করছে দিল্লি",
-    "summaryBn": "ভারতের জলসম্পদ ও বিদেশ মন্ত্রক যৌথ নদী কমিশনের (JRC) আসন্ন বৈঠকের জন্য তিস্তা নদীর পানি প্রবাহ সংক্রান্ত সর্বশেষ হাইড্রোলজিক্যাল তথ্য প্রস্তুত করছে। প্রতিবেদনে উত্তরবঙ্গের সেচের প্রয়োজনীয়তা রক্ষার পাশাপাশি সিকিমের ব্যারেজ ব্যবস্থাপনার মাধ্যমে শুষ্ক মৌসুমে বাংলাদেশের রংপুর অঞ্চলের জন্য পানির ন্যায্য প্রবাহ নিশ্চিত করার উপায় খতিয়ে দেখা হচ্ছে।",
-    "summaryEn": "India’s Ministry of Water Resources and External Affairs Ministry in Delhi are preparing updated hydrological data for the upcoming Joint River Commission meeting with Bangladesh. The report emphasizes balancing northern West Bengal irrigation needs while exploring reservoir management options in Sikkim to ensure dry-season water flow guarantees for Bangladesh’s Rangpur basin.",
-    "keyPointsBn": [
-      "দিল্লির নীতিনির্ধারকরা সিকিমের উজানের জলাধারের পানি প্রবাহের তথ্য বিশ্লেষণ করছেন।",
-      "পশ্চিমবঙ্গ রাজ্য প্রশাসন স্পষ্ট করেছে যে উত্তরবঙ্গের কৃষকদের সেচের পানি সংকট তৈরি হতে দেওয়া যাবে না।",
-      "উভয় পক্ষই একমত যে তৃতীয় পক্ষের প্রভাব এড়াতে প্রাতিষ্ঠানিক জেআরসি আলোচনাই প্রধান সমাধান।"
-    ],
-    "keyPointsEn": [
-      "Delhi bureaucrats are analyzing Sikkim upstream reservoir flow data to model minimum winter discharge into Bangladesh.",
-      "Kolkata state administration maintains that North Bengal farmers must not face lean-season water shortages.",
-      "Both capitals agree that institutional JRC dialogues are essential to avoid third-party geopolitical entanglements."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও পানি",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "দিল্লির ইতিবাচক মনোভাব এবং তিস্তার তথ্য বিনিময় ও প্রাতিষ্ঠানিক আলোচনা শুরুর আগ্রহ প্রকাশ পেয়েছে।",
-    "sentimentReasonEn": "Constructive diplomatic posture from Delhi signaling willingness to share hydrological data and resume formal Joint River Commission dialogues.",
-    "source": {
-      "name": "The Indian Express",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/india/delhi-reviews-technical-parameters-teesta-river-sharing-framework-joint-rivers-commission-9562810/",
-      "originalHeadline": "India preps technical data on Teesta ahead of proposed Joint Rivers Commission engagement with Dhaka",
-      "scannedAt": "3.5 hours ago"
-    },
-    "publishedAt": "2026-09-12T06:30:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Teesta River",
-      "MEA Delhi",
-      "Diplomacy",
-      "Joint River Commission",
-      "Water Resources"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "34",
-    "slug": "ei-samay-transnational-cyber-scam-chittagong-foreigners-arrested",
-    "title": "স্ক্যাম-চক্রে বাংলাদেশে শতাধিক বিদেশি ধৃত",
-    "englishTitle": "Over 100 Foreign Nationals Arrested in Bangladesh for Transnational Cyber Scam & Fraud Rings",
-    "summaryBn": "এই সময় অনলাইনের প্রতিবেদনে জানানো হয়েছে, হত্যা, আর্থিক প্রতারণা, নারী পাচার ও অনলাইন জুয়া চক্রে জড়িত থাকার অভিযোগে গত এক বছরে ৫৩ জন চিনা নাগরিকসহ অন্তত ১১৬ জন বিদেশিকে গ্রেপ্তার করেছে বাংলাদেশ পুলিশ। সম্প্রতি চট্টগ্রামের খুলশিতে একটি আন্তর্জাতিক সাইবার ল্যাবে অভিযান চালিয়ে চিন, পাকিস্তান, লাওস, নেপাল ও ভিয়েতনামের ৬৩ জন জালিয়াতি চক্রের সদস্যকে আটক করা হয়।",
-    "summaryEn": "Ei Samay reports that Bangladesh Police have cracked down on a major transnational cybercrime network, arresting over 116 foreign nationals across the past year—including 53 Chinese and several Pakistani citizens. A specialized raid in Chittagong’s Khulshi dismantled an international digital scam and cyber fraud hub with operations spanning Laos, Nepal, and Vietnam.",
-    "keyPointsBn": [
-      "চট্টগ্রামের খুলশিতে সাইবার অপরাধের আন্তর্জাতিক আস্তানায় অভিযান চালিয়ে ৬৩ জন বিদেশিকে গ্রেপ্তার করা হয়েছে।",
-      "ধৃতদের মধ্যে চিন, পাকিস্তান, লাওস, নেপাল ও ভিয়েতনামের নাগরিক রয়েছে।",
-      "পারিবারিক ও বিয়ের ভিসায় নারী পাচার এবং ডিজিটাল আর্থিক প্রতারণার বিষয়ে তদন্ত আরও জোরদার করা হয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Police raided a high-tech international cyber scam den in Chittagong’s Khulshi, detaining 63 foreign operatives.",
-      "The transnational network involved citizens from China, Pakistan, Laos, Nepal, and Vietnam.",
-      "Intelligence agencies have escalated probes into digital fraud syndicates and human trafficking rings exploiting marriage visas."
-    ],
-    "category": "border",
-    "categoryLabelBn": "আন্তর্জাতিক অপরাধ ও সাইবার নিরাপত্তা",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "আন্তর্জাতিক সাইবার অপরাধ চক্রের বিস্তার এবং একই সাথে বাংলাদেশ পুলিশের সক্রিয় পদক্ষেপ ও কার্যকর আইনি অভিযানের বাস্তবনিষ্ঠ প্রতিবেদন।",
-    "sentimentReasonEn": "Covers transnational fraud syndicates operating across regional borders alongside active law enforcement crackdowns by Bangladesh Police.",
-    "source": {
-      "name": "Ei Samay",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://eisamay.com/bangladesh-news/more-than-100-foreigners-arrested-for-scam-in-bangladesh/200541587.cms",
-      "originalHeadline": "স্ক্যাম-চক্রে বাংলাদেশে শতাধিক বিদেশি ধৃত",
-      "scannedAt": "4 hours ago"
-    },
-    "publishedAt": "2026-09-12T11:19:45Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://cf-images.assettype.com/eisamay%2F2026-08-26%2Fslc2ajr6%2F1786002572arrest-1.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true",
-    "tags": [
-      "Cyber Crime",
-      "Ei Samay",
-      "Chittagong",
-      "Khulshi",
-      "Transnational Fraud",
-      "Arrests"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "35",
-    "slug": "ei-samay-medical-tourism-kolkata-hospitals-bangladesh-patients",
-    "title": "বাংলাদেশি রোগীদের ভিসা জট: চরম আর্থিক ধাক্কায় কলকাতার বেসরকারি হাসপাতাল ও নার্সিংহোম",
-    "englishTitle": "Bangladesh Patient Visa Bottlenecks: Kolkata Private Hospitals Suffer Severe Financial Hit",
-    "summaryBn": "এই সময় (টাইমস গ্রুপ বাংলা)-এর প্রতিবেদনে কলকাতার স্বাস্থ্য পর্যটনের দুরবস্থা তুলে ধরা হয়েছে। মুকুন্দপুর ও সল্টলেকের নামী সুপার-স্পেশ্যালিটি হাসপাতালগুলিতে আন্তর্জাতিক রোগীদের ৭০ শতাংশই আসতেন বাংলাদেশ থেকে। মেডিক্যাল ভিসা প্রাপ্তিতে বিলম্বের কারণে রোগী আগমন প্রায় ৪০ শতাংশ কমে যাওয়ায় স্বাস্থ্য সংস্থাগুলি কেন্দ্রীয় বিদেশ মন্ত্রকে জরুরি ই-মেডিক্যাল ভিসা চালুর আবেদন জানিয়েছে।",
-    "summaryEn": "Ei Samay (Times Group Bengali) reports on the severe economic impact felt by private hospital networks in Mukundapur and Salt Lake, Kolkata. Medical travel from Bangladesh, which traditionally constituted over 70% of Kolkata’s medical tourism revenue, has dropped sharply due to restricted visa appointments, prompting appeals for emergency medical e-visas.",
-    "keyPointsBn": [
-      "কলকাতার বেসরকারি হাসপাতালগুলিতে আন্তর্জাতিক স্যুট ও পূর্বনির্ধারিত জটিল অস্ত্রোপচার স্থগিত।",
-      "ক্লিনিক, ডায়াগনস্টিক সেন্টার ও নিকটবর্তী গেস্ট হাউস মিলিয়ে মাসে প্রায় ৩৫০ কোটি টাকার আর্থিক ক্ষতির আশঙ্কা।",
-      "পশ্চিমবঙ্গ বেসরকারি স্বাস্থ্য প্রতিষ্ঠান সমিতি বিদেশ মন্ত্রকে দ্রুত ই-ভিসা চালুর স্মারকলিপি জমা দিয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Major private hospitals in Kolkata report empty international patient suites and deferred surgeries.",
-      "An estimated ₹350 Crore monthly revenue loss reported across private clinics and nearby guest houses.",
-      "West Bengal health associations submit joint memorandum to MEA seeking fast-track medical e-visa clearance."
-    ],
-    "category": "economy",
-    "categoryLabelBn": "অর্থনীতি ও চিকিৎসা",
-    "categoryLabelEn": "Economy & Energy",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভিসা জটিলতার কারণে বাংলাদেশি রোগীদের ভোগান্তি এবং কলকাতার চিকিৎসা বাণিজ্যে নেতিবাচক আর্থিক প্রভাব তুলে ধরা হয়েছে।",
-    "sentimentReasonEn": "Details the mutual economic hardship and medical distress caused by bilateral visa delays affecting Bangladeshi patients and Kolkata healthcare.",
-    "source": {
-      "name": "Ei Samay",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://eisamay.com/business/kolkata-private-hospitals-face-revenue-loss-due-to-bangladesh-medical-visa-delays/200539812.cms",
-      "originalHeadline": "বাংলাদেশি রোগীদের ভিসা জট: চরম আর্থিক ধাক্কায় কলকাতার নামী বেসরকারি হাসপাতাল ও নার্সিংহোম",
-      "scannedAt": "4.5 hours ago"
-    },
-    "publishedAt": "2026-09-11T22:15:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Medical Tourism",
-      "Kolkata Hospitals",
-      "Visas",
-      "Healthcare",
-      "Ei Samay"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "36",
-    "slug": "business-standard-adani-power-godda-electricity-dhaka-dues",
-    "title": "Adani Power and Bangladesh Power Development Board Agree on Streamlined Tariff Settlement Mechanism",
-    "banglaTitle": "বিদ্যুৎ বিল নিষ্পত্তির বিষয়ে আদানি পাওয়ার ও বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ডের সমঝোতা",
-    "summaryBn": "বিজনেস স্ট্যান্ডার্ডের প্রতিবেদন অনুযায়ী, ঝাড়খণ্ডের গড্ডা প্ল্যান্ট থেকে বাংলাদেশে ১,১৬০ মেগাওয়াট নিরবচ্ছিন্ন বিদ্যুৎ সরবরাহ স্বাভাবিক রাখতে বিল পরিশোধের একটি ধারাবাহিক রোডম্যাপে সম্মত হয়েছে আদানি পাওয়ার ও বিপিডিবি। বাংলাদেশ ব্যাংক বৈদেশিক মুদ্রার রিজার্ভের সমর্থনে নিয়মিত লেটার অব ক্রেডিট প্রদান করছে।",
-    "summaryEn": "Business Standard in Delhi reports that Adani Power and the Bangladesh Power Development Board (BPDB) have finalized a roadmap for regularizing power tariff payments from the 1,600 MW Godda plant. The dispatch of uninterrupted high-voltage electricity continues normally with active letters of credit.",
-    "keyPointsBn": [
-      "ডেডিকেটেড সঞ্চালন লাইনের মাধ্যমে বাংলাদেশে ১,১৬০ মেগাওয়াট বিদ্যুৎ সরবরাহ পূর্ণমাত্রায় বজায় রয়েছে।",
-      "মাসিক বিল পরিশোধের জন্য সোনালী ব্যাংকের মাধ্যমে এলসি নিয়মিত খোলা হচ্ছে।",
-      "জ্বালানি বিশেষজ্ঞরা জানিয়েছেন, দ্বিপাক্ষিক বিদ্যুৎ বাণিজ্য চুক্তি পেশাদারিত্বের সাথেই পরিচালিত হচ্ছে।"
-    ],
-    "keyPointsEn": [
-      "Uninterrupted cross-border power supply of 1,160 MW maintained across the transmission line.",
-      "BPDB opened fresh revolving letters of credit with Sonali Bank for timely invoice clearance.",
-      "Energy analysts note that cross-border electricity trade remains resilient."
-    ],
-    "category": "economy",
-    "categoryLabelBn": "বিদ্যুৎ ও জ্বালানি",
-    "categoryLabelEn": "Economy & Energy",
-    "sentiment": "positive",
-    "sentimentReasonBn": "বিদ্যুৎ সরবরাহের ধারাবাহিকতা এবং উভয় দেশের আর্থিক সমঝোতার ইতিবাচক দিক তুলে ধরা হয়েছে।",
-    "sentimentReasonEn": "Demonstrates successful commercial resolution, steady energy grid stability, and contractual compliance between Dhaka and Indian power utilities.",
-    "source": {
-      "name": "Business Standard",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.business-standard.com/economy/news/adani-power-and-bangladesh-power-development-board-agree-on-payment-schedule-for-godda-plant-126091100482_1.html",
-      "originalHeadline": "Adani Power, Bangladesh PDB reach understanding on payment schedule for Godda supply",
-      "scannedAt": "5 hours ago"
-    },
-    "publishedAt": "2026-09-11T11:00:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Adani Power",
-      "BPDB",
-      "Energy Trade",
-      "Electricity Grid",
-      "Business Standard"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "37",
-    "slug": "hilsa-shortage-india-gujarat-odisha-sea-fish-exports-dhaka-ei-samay",
-    "title": "ইলিশ খেতে বাংলাদেশের ভরসা ভারত, মোদীর রাজ্য ও ওড়িশা থেকে সামুদ্রিক মাছের রফতানি বৃদ্ধি",
-    "englishTitle": "Hilsa Shortage: Sea Fish Exports from Gujarat & Odisha Surge to Meet Dhaka Market Demand",
-    "banglaTitle": "ইলিশের জোগানে ঘাটতি: গুজরাত ও ওড়িশা থেকে বাংলাদেশের বাজারে সামুদ্রিক মাছের রফতানি বৃদ্ধি",
-    "summaryBn": "এই সময় (কলকাতা ব্যুরো)-এর অনুসন্ধানী প্রতিবেদনে জানা গেছে, বাজারে ইলিশের অভ্যন্তরীণ সংকট ও চড়া মূল্যের প্রেক্ষাপটে ভারতের গুজরাত ও ওড়িশার সামুদ্রিক মাছ এখন ঢাকার কাঁচাবাজারে বিকল্প হিসেবে জনপ্রিয় হয়ে উঠেছে। বেনাপোল ও হিলি স্থলবন্দর দিয়ে প্রতিদিন টনকে টন কড, পমফ্রেট ও টুনা জাতীয় সামুদ্রিক মাছ আমদানি হচ্ছে।",
-    "summaryEn": "Ei Samay reports that amid domestic supply gaps and soaring prices for riverine Hilsa, commercial fish exports from Gujarat and Odisha ports are bridging consumer demand across Dhaka and major retail hubs in Bangladesh. Customs records indicate hundreds of tonnes of refrigerated sea fish shipments clearing through Benapole and Hili land customs.",
-    "keyPointsBn": [
-      "গুজরাতের ভেরাভল ও ওড়িশার পারাদ্বীপ বন্দর থেকে শীতাতপ নিয়ন্ত্রিত কন্টেইনারে মাছ সরবরাহ বৃদ্ধি।",
-      "ঢাকার কারওয়ান বাজার ও চট্টগ্রামের পাইকারি বাজারে তুলনামূলক কম মূল্যে বিক্রি হচ্ছে ভারতীয় সামুদ্রিক মাছ।",
-      "দুই দেশের রফতানিকারক ও আমদানি সমিতি দ্রুত পচনশীল খাদ্যদ্রব্যের জন্য বিশেষ গ্রিন চ্যানেল চালুর আহ্বান জানিয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Temperature-controlled reefer containers dispatched from Veraval (Gujarat) and Paradip (Odisha).",
-      "Dhaka wholesale markets like Kawran Bazar and Chittagong report brisk sales due to affordable pricing.",
-      "Bilateral trade chambers urge dedicated perishable-cargo green corridors across land borders."
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও খাদ্য",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "বাণিজ্যিক বিকল্প তৈরি, খাদ্য নিরাপত্তা রক্ষা এবং দুই দেশের পারস্পরিক বাণিজ্যিক সুবিধার ইতিবাচক চিত্র।",
-    "sentimentReasonEn": "Demonstrates resilient commercial trade adaptability, meeting consumer nutritional needs, and expanding cross-border supply chains.",
-    "source": {
-      "name": "Ei Samay",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://eisamay.com/west-bengal-news/howrah-news/india-exports-hilsa-to-bangladesh-from-narendra-modi-state-gujarat/200541702.cms",
-      "originalHeadline": "ইলিশ খেতে বাংলাদেশের ভরসা ভারত, ত্রাতা মোদীর রাজ্য",
-      "scannedAt": "12 mins ago"
-    },
-    "publishedAt": "2026-09-12T13:45:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Ei Samay",
-      "Hilsa",
-      "Fish Exports",
-      "Gujarat",
-      "Benapole",
-      "Dhaka Market"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "38",
-    "slug": "tech-glitch-adani-power-unit-godda-bangladesh-grid-toi",
-    "title": "Tech glitch at Adani power unit briefly hits Bangladesh grid, supply restored swiftly",
-    "banglaTitle": "আদানি পাওয়ার ইউনিটে সাময়িক কারিগরি ত্রুটি: দ্রুত মেরামতের পর বাংলাদেশ গ্রিডে বিদ্যুৎ সঞ্চালন স্বাভাবিক",
-    "summaryBn": "টাইমস অব ইন্ডিয়ার প্রতিবেদনে বলা হয়েছে, ঝাড়খণ্ডের গড্ডায় আদানি পাওয়ারের ১৬০০ মেগাওয়াট আল্ট্রা-সুপারক্রিটিক্যাল থার্মাল পাওয়ার প্ল্যান্টের একটি ইউনিটে আকস্মিক কারিগরি ত্রুটির কারণে বাংলাদেশে বিদ্যুৎ সঞ্চালন কিছুক্ষণের জন্য হ্রাস পায়। ভারতীয় প্রকৌশলীদের দ্রুত পদক্ষেপে কয়েক ঘণ্টার মধ্যে ফল্ট শনাক্ত ও মেরামত করে বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ডের (বিপিডিবি) কাছে পূর্ণ ক্ষমতায় ১,১৬০ মেগাওয়াট বিদ্যুৎ সরবরাহ পুনঃস্থাপন করা হয়েছে।",
-    "summaryEn": "The Times of India reports that an unexpected boiler-turbine technical glitch at Unit 2 of Adani Power’s 1,600 MW ultra-supercritical plant in Godda, Jharkhand, caused a temporary dip in power dispatch to Bangladesh’s national grid. Dedicated engineering teams rectified the fault within hours, safely stabilizing high-voltage transmission back to the agreed 1,160 MW capacity.",
-    "keyPointsBn": [
-      "ঝাড়খণ্ডের গড্ডা প্ল্যান্টের বিশেষ আন্তঃসীমান্ত সঞ্চালন লাইনের মাধ্যমে বিদ্যুৎ প্রবাহ সম্পূর্ণ স্বাভাবিক।",
-      "বাংলাদেশ বিদ্যুৎ উন্নয়ন বোর্ড (বিপিডিবি) লোড ম্যানেজমেন্টের মাধ্যমে গ্রিডের ভারসাম্য বজায় রেখেছে।",
-      "উভয় দেশের গ্রিড অপারেটরদের মধ্যে সার্বক্ষণিক কারিগরি সমন্বয় ব্যবস্থার কার্যকারিতা প্রমাণিত হয়েছে।"
-    ],
-    "keyPointsEn": [
-      "Cross-border dedicated 400kV transmission link fully restored to standard operational throughput.",
-      "Bangladesh Power Development Board (BPDB) smoothly managed local load balancing during the transient dip.",
-      "Real-time grid synchronization protocols between Indian and Bangladeshi dispatch centers operated effectively."
-    ],
-    "category": "economy",
-    "categoryLabelBn": "বিদ্যুৎ ও জ্বালানি গ্রিড",
-    "categoryLabelEn": "Economy & Energy",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "কারিগরি ত্রুটির বাস্তব তথ্য এবং তা দ্রুত মেরামত করে সরবরাহ স্বাভাবিক করার বস্তুনিষ্ঠ বিবরণ।",
-    "sentimentReasonEn": "Objective technical reporting detailing transmission maintenance, rapid engineering resolution, and grid reliability.",
-    "source": {
-      "name": "The Times of India",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/tech-glitch-at-adani-power-unit-hits-bangladesh-grid/articleshow/134099803.cms",
-      "originalHeadline": "Tech glitch at Adani power unit hits Bangladesh grid",
-      "scannedAt": "25 mins ago"
-    },
-    "publishedAt": "2026-09-12T12:30:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80",
-    "isTrending": true,
-    "tags": [
-      "Times of India",
-      "Adani Power",
-      "BPDB",
-      "Energy Grid",
-      "Godda Plant",
-      "Dhaka"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "39",
-    "slug": "sundarbans-royal-bengal-tiger-conservation-dhaka-delhi-joint-taskforce-ei-samay",
-    "title": "সুন্দরবন ও বাঘ সংরক্ষণে দিল্লি-ঢাকার যৌথ পদক্ষেপ: জীববৈচিত্র্য রক্ষায় একযোগে কাজ করবে দুই দেশ",
-    "englishTitle": "Dhaka-Delhi Joint Taskforce Formulates Unified Blueprint for Sundarbans Biodiversity & Tiger Protection",
-    "banglaTitle": "সুন্দরবন ও রয়্যাল বেঙ্গল টাইগার সংরক্ষণে দিল্লি-ঢাকার যৌথ পদক্ষেপ: জীববৈচিত্র্য রক্ষায় সমঝোতা",
-    "summaryBn": "এই সময় কলকাতার প্রতিবেদনে প্রকাশ, সুন্দরবনের প্রাকৃতিক বাস্তুতন্ত্র ও সংকটাপন্ন রয়্যাল বেঙ্গল টাইগার সুরক্ষায় ঢাকায় ভারত ও বাংলাদেশের পরিবেশ, বন ও জলবায়ু পরিবর্তন মন্ত্রণালয়ের শীর্ষ কর্মকর্তাদের মধ্যে দ্বিপাক্ষিক টাস্কফোর্সের উচ্চপর্যায়ের বৈঠক অনুষ্ঠিত হয়েছে। দুই দেশের সুন্দরবন অংশে বাঘ গণনা, ম্যানগ্রোভ বন সংরক্ষণ ও যৌথ টহল জোরদার করার বিষয়ে চূড়ান্ত সমঝোতা হয়েছে।",
-    "summaryEn": "Ei Samay reports that environmental and wildlife conservation authorities from India and Bangladesh concluded a bilateral taskforce consultation in Dhaka, unveiling a unified strategy to safeguard the shared Sundarbans mangrove ecosystem and monitor the transboundary Royal Bengal Tiger population through joint spatial tracking and anti-poaching patrols.",
-    "keyPointsBn": [
-      "উভয় দেশের যৌথ ক্যামেরা ট্র্যাপিং ও কৃত্রিম বুদ্ধিমত্তা চালিত সেন্সর দিয়ে রয়্যাল বেঙ্গল টাইগার ট্র্যাকিং।",
-      "নদীমাতৃক ম্যানগ্রোভ অঞ্চলে আন্তর্জাতিক চোরাশিকারিদের বিরুদ্ধে যৌথ কোস্টগার্ড ও বনরক্ষী টহল।",
-      "জলবায়ু পরিবর্তনজনিত লবণাক্ততা বৃদ্ধির প্রভাব মোকাবিলায় বিজ্ঞানভিত্তিক গবেষণায় ঢাকা-কলকাতা অংশীদারিত্ব।"
-    ],
-    "keyPointsEn": [
-      "Joint camera-trapping census and AI-powered sensors deployed for harmonized tiger habitat tracking.",
-      "Coordinated anti-poaching maritime patrols along delta water channels by forest guards.",
-      "Collaborative scientific research between Dhaka and Kolkata institutes to counter salinity intrusion in mangroves."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "পরিবেশ ও যৌথ উদ্যোগ",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "পরিবেশ ও বিরল বন্যপ্রাণী সুরক্ষায় দুই দেশের সৌহার্দ্যপূর্ণ সহযোগিতা ও ইতিবাচক পদক্ষেপ।",
-    "sentimentReasonEn": "Highlights constructive cross-border environmental stewardship, biodiversity conservation, and peaceful scientific cooperation.",
-    "source": {
-      "name": "Ei Samay",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://eisamay.com/bangladesh-news/meeting-of-bangladesh-and-india-in-dhaka-on-biodiversity-and-royal-bengal-tiger-conservation-of-sundarbans/200539806.cms",
-      "originalHeadline": "সুন্দরবন ও বাঘ সংরক্ষণে দিল্লি-ঢাকার যৌথ পদক্ষেপ",
-      "scannedAt": "40 mins ago"
-    },
-    "publishedAt": "2026-09-12T11:15:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Sundarbans",
-      "Tiger Conservation",
-      "Ei Samay",
-      "Biodiversity",
-      "Dhaka",
-      "Kolkata"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "40",
-    "slug": "chinmoy-krishna-das-parole-funeral-court-ruling-toi",
-    "title": "Hindu monk Chinmoy Krishna Das, in Bangladesh jail, gets 5-hour parole to attend mother's funeral",
-    "banglaTitle": "মায়ের শেষকৃত্যে অংশ নিতে কারাবন্দি সন্ন্যাসী চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার প্যারোল দিল আদালত",
-    "summaryBn": "টাইমস অব ইন্ডিয়া এবং এই সময়ের প্রতিবেদনে জানানো হয়েছে, চট্টগ্রামে কারাবন্দি হিন্দু ধর্মীয় নেতা চিন্ময় কৃষ্ণ দাস প্রভুর মায়ের মৃত্যুর পর আদালতের নির্দেশে কঠোর পুলিশি নিরাপত্তায় তাঁকে ৫ ঘণ্টার মানবিক প্যারোলে মুক্তি দেওয়া হয়। তিনি শ্মশানে উপস্থিত হয়ে মায়ের শেষকৃত্য সম্পন্ন করেন এবং পরবর্তীতে পুনরায় কারাগারে প্রত্যাবর্তন করেন।",
-    "summaryEn": "The Times of India and regional Bengali dailies report that a metropolitan court in Chittagong granted a 5-hour humanitarian parole to incarcerated Hindu monk Chinmoy Krishna Das to perform the final rites of his deceased mother, Sandhyarani Dhar. Following emotional scenes at the crematorium under tight security escort, he was escorted back to the central jail.",
-    "keyPointsBn": [
-      "আদালতের বিশেষ মানবিক আদেশে ৫ ঘণ্টার জন্য শেষকৃত্যে উপস্থিত থাকার অনুমতি।",
-      "আইনজীবী দল নিয়মিত জামিন শুনানির জন্য উচ্চ আদালতে আবেদন বজায় রেখেছেন।",
-      "কলকাতার বিভিন্ন সামাজিক সংগঠন ও মানবাধিকার পর্যবেক্ষকরা আইনি প্রক্রিয়ার স্বচ্ছতার ওপর গুরুত্ব দিয়েছেন।"
-    ],
-    "keyPointsEn": [
-      "Humanitarian parole order sanctioned by judicial magistrate for conducting cremation rituals.",
-      "Legal defense counsels continue pursuing substantive regular bail hearings before higher appellate benches.",
-      "Civil society and human rights observers monitor the judicial proceedings with close attention."
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও আইনি প্রক্রিয়া",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "মানবিক প্যারোলের আদালতের সিদ্ধান্ত ও শেষকৃত্যের ঘটনার সংবেদনশীল ও বস্তুনিষ্ঠ প্রতিবেদন।",
-    "sentimentReasonEn": "Balanced legal reporting covering humanitarian parole permissions, judicial processes, and public sensitivity.",
-    "source": {
-      "name": "The Times of India",
-      "bureau": "Kolkata",
-      "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/hindu-monk-chinmoy-krishna-das-in-bangladesh-jail-gets-5-hour-parole-to-attend-mothers-funeral/articleshow/134048032.cms",
-      "originalHeadline": "Hindu monk Chinmoy Krishna Das, in Bangladesh jail, gets 5-hour parole to attend mother's funeral",
-      "scannedAt": "1 hour ago"
-    },
-    "publishedAt": "2026-09-11T20:30:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Times of India",
-      "Chinmoy Das",
-      "Chittagong",
-      "Parole",
-      "Human Rights",
-      "Judiciary"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "41",
-    "slug": "indo-bangla-joint-river-commission-seasonal-monsoon-data-hindustan-times",
-    "title": "Indo-Bangla Joint River Commission hydrologists complete seasonal monsoon data exchange session",
-    "banglaTitle": "ভারত-বাংলাদেশ যৌথ নদী কমিশনের প্রকৌশলীদের মৌসুমি হাইড্রোলজিক্যাল তথ্য বিনিময় সম্পন্ন",
-    "summaryBn": "হিন্দুস্তান টাইমসের দিল্লি ব্যুরোর খবরে প্রকাশ, ভারত ও বাংলাদেশের যৌথ নদী কমিশনের (JRC) কারিগরি দল গঙ্গা, তিস্তা, ব্রহ্মপুত্র ও বরাক নদীর মৌসুমি বৃষ্টিপাত ও পানি প্রবাহের বিস্তারিত হাইড্রোলজিক্যাল তথ্য আদান-প্রদান সম্পন্ন করেছে। এর ফলে উভয় দেশের বন্যা পূর্বাভাস কেন্দ্রগুলো আরও নিখুঁতভাবে আগাম সতর্কবার্তা জারি করতে সক্ষম হবে।",
-    "summaryEn": "Hindustan Times reports that hydrology experts from the India-Bangladesh Joint River Commission (JRC) concluded their routine seasonal hydrological data sharing session covering the Ganga, Teesta, Brahmaputra, and Barak river basins. The synchronized telemetry enables meteorological departments in Delhi and Dhaka to issue precision flood advisories.",
-    "keyPointsBn": [
-      "উভয় দেশের ৫৪টি অভিন্ন নদীর পানি প্রবাহের রিয়েল-টাইম তথ্য বিনিময় চুক্তি বাস্তবায়িত।",
-      "আসাম, ত্রিপুরা ও বাংলাদেশের পূর্বাঞ্চলীয় জেলার বন্যা নিয়ন্ত্রণে আগাম সতর্কবার্তা ব্যবস্থার উন্নয়ন।",
-      "নদী বিশেষজ্ঞগণ দীর্ঘমেয়াদি অববাহিকাভিত্তিক সমন্বিত পানি ব্যবস্থাপনার পরামর্শ দিয়েছেন।"
-    ],
-    "keyPointsEn": [
-      "Real-time telemetry and river discharge metrics exchanged across common transboundary river corridors.",
-      "Enhanced early-warning radar integration assisting flood mitigation across Assam, Tripura, and Sylhet.",
-      "Water resources engineers advocate for expanded institutional river basin basin-wide management protocols."
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "নদী ও পানি সম্পদ",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "নদী সংক্রান্ত তথ্য বিনিময়, বন্যা প্রতিরোধ ও প্রাতিষ্ঠানিক কারিগরি সহযোগিতার ইতিবাচক দিক তুলে ধরা হয়েছে।",
-    "sentimentReasonEn": "Constructive scientific collaboration enhancing shared disaster management, flood mitigation, and water resource monitoring.",
-    "source": {
-      "name": "Hindustan Times",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.hindustantimes.com/world-news",
-      "originalHeadline": "Indo-Bangla Joint River Commission hydrologists complete seasonal monsoon data exchange session",
-      "scannedAt": "1.2 hours ago"
-    },
-    "publishedAt": "2026-09-12T05:15:00Z",
-    "readTimeBn": "৪ মিনিট পাঠ",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Joint River Commission",
-      "Hindustan Times",
-      "Flood Control",
-      "Teesta",
-      "Hydrology"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "42",
-    "slug": "digital-cargo-tracking-petrapole-benapole-customs-sangbad-pratidin",
-    "title": "পেট্রাপোল-বেনাপোল বন্দরে ডিজিটাল কার্গো ট্র্যাকিং চালুর পর পণ্য খালাসে সময় কমল ৬০ শতাংশ",
-    "englishTitle": "Digital Cargo Tracking at Petrapole-Benapole Slashes Customs Clearance Time by 60%",
-    "banglaTitle": "পেট্রাপোল-বেনাপোল বন্দরে ডিজিটাল কার্গো ট্র্যাকিং চালুর পর পণ্য খালাসে সময় কমল ৬০ শতাংশ",
-    "summaryBn": "সংবাদ প্রতিদিনের বাণিজ্য পাতায় জানানো হয়েছে, পেট্রাপোল-বেনাপোল সমন্বিত চেকপোস্টে (আইসিপি) রেডিও ফ্রিকোয়েন্সি আইডেন্টিফিকেশন (RFID) এবং কিউআর কোডভিত্তিক ডিজিটাল ট্র্যাকিং ব্যবস্থা চালুর ফলে পণ্যবাহী ট্রাকের ছাড়পত্র নেওয়ার সময় নাটকীয়ভাবে কমেছে। আগে যেখানে ২ থেকে ৩ দিন অপেক্ষা করতে হতো, এখন মাত্র কয়েক ঘণ্টার মধ্যে পণ্যবাহী যান সীমান্ত পার হতে পারছে।",
-    "summaryEn": "Sangbad Pratidin reports from Kolkata that the introduction of RFID automated digital e-tracking and QR code clearance at the Petrapole-Benapole Integrated Check Post (ICP) has reduced freight turnaround times by over 60%. Cross-border commercial trucks which previously queued for days now complete joint customs inspections in under four hours.",
-    "keyPointsBn": [
-      "স্বয়ংক্রিয় স্ক্যানিং ব্যবস্থার মাধ্যমে প্রতিদিন গড়ে ১,৪০০ পণ্যবাহী ট্রাক চলাচল করছে।",
-      "পোশাক শিল্পের রফতানি চালান ও শিল্প কাঁচামালের দ্রুত পৌঁছানো নিশ্চিত হচ্ছে।",
-      "ভারত-বাংলাদেশ ল্যান্ডপোর্ট অথরিটি যৌথভাবে অন্যান্য স্থলবন্দরেও এই মডেল চালুর পরিকল্পনা করছে।"
-    ],
-    "keyPointsEn": [
-      "Integrated automated scanners facilitate daily clearance of over 1,400 commercial cargo trucks.",
-      "Apparel export consignments and essential raw materials reach manufacturing hubs without delays.",
-      "Land Port Authorities of India and Bangladesh plan scaling this smart digitised protocol across all border terminals."
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও প্রযুক্তি",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "বাণিজ্য সহজীকরণ, ডিজিটাল বন্দর আধুনিকায়ন এবং আমদানি-রফতানিকারকদের সময় ও ব্যয় হ্রাসের ইতিবাচক সংবাদ।",
-    "sentimentReasonEn": "Highlights modern trade infrastructure efficiency, reduced logistics costs, and technological modernization at land borders.",
-    "source": {
-      "name": "Sangbad Pratidin",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.sangbadpratidin.in/business/digital-cargo-tracking-at-petrapole-benapole-reduces-customs-clearance-time/pid/1335890/",
-      "originalHeadline": "পেট্রাপোল-বেনাপোল বন্দরে ডিজিটাল কার্গো ট্র্যাকিং চালুর পর পণ্য খালাসে সময় কমল ৬০ শতাংশ",
-      "scannedAt": "1.8 hours ago"
-    },
-    "publishedAt": "2026-09-12T04:45:00Z",
-    "readTimeBn": "৩ মিনিট পাঠ",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Sangbad Pratidin",
-      "Petrapole",
-      "Benapole",
-      "Digital Port",
-      "Border Trade",
-      "Logistics"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "slug": "indian-envoy-bangladesh-water-resources-minister-cooperation",
-    "title": "Indian envoy, Bangladesh water resources minister seek fresh push for cooperation, highlight shared heritage",
-    "englishTitle": "Indian envoy, Bangladesh water resources minister seek fresh push for cooperation, highlight shared heritage",
-    "banglaTitle": "পানিসম্পদ সহযোগিতা জোরদারে ভারতীয় দূত ও বাংলাদেশের মন্ত্রীর বৈঠক: অভিন্ন ঐতিহ্যের ওপর গুরুত্বারোপ",
-    "summaryBn": "ঢাকায় নিযুক্ত ভারতীয় হাইকমিশনার ও বাংলাদেশের পানিসম্পদ উপদেষ্টা এক বৈঠকে ৫৪টি অভিন্ন নদীর পানিসম্পদ ব্যবস্থাপনা ও বন্যার পূর্বাভাস বিনিময়ে নতুন সহযোগিতার ক্ষেত্র উন্মোচনের প্রত্যয় ব্যক্ত করেছেন।",
-    "summaryEn": "The Indian High Commissioner and Bangladesh's Water Resources Minister met in Dhaka, calling for a fresh collaborative momentum on shared river management, seasonal flood forecast data exchanges, and transboundary environmental preservation.",
-    "keyPointsBn": [
-      "৫৪টি অভিন্ন নদীর পানিসম্পদ ও অববাহিকা ব্যবস্থাপনায় জোর",
-      "বন্যার পূর্বাভাস ও জলতাত্ত্বিক তথ্য দ্রুত বিনিময়ে যৌথ প্রতিশ্রুতি",
-      "উভয় দেশের জনগণের সুবিধার স্বার্থে প্রযুক্তিগত সমন্বয় বৃদ্ধির আহ্বান"
-    ],
-    "keyPointsEn": [
-      "Fresh momentum sought on 54 transboundary river basin management",
-      "Commitment to rapid flood forecasting telemetry and hydrological data sharing",
-      "Emphasis on insulating vital water resource management from political friction"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় সংবাদপত্রগুলো এই বৈঠককে পানি ব্যবস্থাপনায় দ্বিপাক্ষিক ইতিবাচক সদিচ্ছা এবং দীর্ঘস্থায়ী সহযোগিতার পথ হিসেবে তুলে ধরেছে।",
-    "sentimentReasonEn": "Indian newspapers hailed the meeting as a constructive step affirming mutual goodwill and continuous technical cooperation on riparian affairs.",
-    "source": {
-      "name": "The Telegraph India",
-      "bureau": "Kolkata",
-      "language": "English",
-      "originalUrl": "https://www.telegraphindia.com/india/indian-envoy-bangladesh-water-resources-minister-cooperation",
-      "originalHeadline": "Indian envoy, Bangladesh water resources minister seek fresh push for cooperation, highlight shared heritage",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T19:20:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Water Resources",
-      "High Commission",
-      "Diplomacy",
-      "Telegraph",
-      "Floods"
-    ],
-    "id": "43",
-    "isLeadStory": false
-  },
-  {
-    "slug": "bangladesh-president-calls-resolving-issues-through-talks",
-    "title": "Bangladesh President calls for quickly resolving outstanding issues with India through talks",
-    "englishTitle": "Bangladesh President calls for quickly resolving outstanding issues with India through talks",
-    "banglaTitle": "ভারতের সাথে অমীমাংসিত বিষয়গুলো দ্রুত আলোচনার মাধ্যমে নিষ্পত্তির আহ্বান বাংলাদেশের রাষ্ট্রপতির",
-    "summaryBn": "বাংলাদেশের রাষ্ট্রপতি মো. সাহাবুদ্দিন ভারতের সঙ্গে বিরাজমান তিস্তা চুক্তিসহ সমস্ত দ্বিপাক্ষিক অমীমাংসিত ইস্যু গঠনমূলক আলোচনার মাধ্যমে দ্রুত সমাধানের আহ্বান জানিয়েছেন।",
-    "summaryEn": "Bangladesh President Mohammed Shahabuddin emphasized the necessity of resolving longstanding bilateral issues, including shared water sharing and border management, through expedited, constructive dialogue between Dhaka and New Delhi.",
-    "keyPointsBn": [
-      "রাষ্ট্রপতির কার্যালয় থেকে সৌহার্দ্যপূর্ণ আলোচনার সুস্পষ্ট আহ্বান",
-      "তিস্তা ও সীমান্ত সংক্রান্ত অমীমাংসিত বিষয় দ্রুত নিষ্পত্তির তাগিদ",
-      "দক্ষিণ এশীয় অঞ্চলের স্থিতিশীলতায় দুই দেশের সুসম্পর্কের অপরিহার্যতা"
-    ],
-    "keyPointsEn": [
-      "President stresses peaceful and expedited dispute resolution",
-      "Urges timely diplomatic closure on Teesta and border treaties",
-      "Underlines that regional stability rests upon healthy bilateral ties"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় প্রধান গণমাধ্যম রাষ্ট্রপতির বক্তব্যকে ইতিবাচক ও দূরদর্শী কূটনৈতিক দৃষ্টিভঙ্গি হিসেবে মূল্যায়ন করেছে।",
-    "sentimentReasonEn": "Indian mainstream press commended the President's statements as a stabilizing and statesmanlike reaffirmation of constructive engagement.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/bangladesh-president-calls-for-resolving-outstanding-issues-with-india",
-      "originalHeadline": "Bangladesh President calls for quickly resolving outstanding issues with India through talks",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T17:45:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "President",
-      "Dialogue",
-      "The Hindu",
-      "Diplomacy",
-      "Dhaka"
-    ],
-    "id": "44",
-    "isLeadStory": false
-  },
-  {
-    "slug": "india-keeps-door-open-normalisation-bangladesh-ties",
-    "title": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Hasina Row",
-    "englishTitle": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Hasina Row",
-    "banglaTitle": "রাজনৈতিক বিতর্কের মাঝেও বাংলাদেশের সঙ্গে সম্পর্ক স্বাভাবিক রাখতে ভারতের উন্মুক্ত কূটনৈতিক অবস্থান",
-    "summaryBn": "নয়াদিল্লি কূটনৈতিক মহলে স্পষ্ট করেছে যে রাজনৈতিক টানাপোড়েন সত্ত্বেও প্রতিবেশী বাংলাদেশের জনগণের কল্যাণে বাণিজ্য, বিদ্যুৎ ও ভিসা স্বাভাবিকীকরণে ভারত তার কূটনৈতিক দরজা উন্মুক্ত রেখেছে।",
-    "summaryEn": "New Delhi reaffirmed its diplomatic posture of keeping communication channels open with Dhaka, underscoring that institutional cooperation across energy, essential food commodities, and regional logistics transcends political transitions.",
-    "keyPointsBn": [
-      "বাণিজ্য ও মানবিক ক্ষেত্রে সম্পর্ক স্বাভাবিক রাখার নীতি দিল্লির",
-      "বিদ্যুৎ সঞ্চালন ও খাদ্যশস্য সরবরাহে কোনো প্রতিবন্ধকতা না করার আশ্বাস",
-      "দীর্ঘমেয়াদি কৌশলগত স্বার্থে দ্বিপাক্ষিক সম্পর্কের স্থায়িত্ব রক্ষা"
-    ],
-    "keyPointsEn": [
-      "Delhi signals openness to normalizing operational bilateral ties",
-      "Assurance that essential trade, fuel, and electricity flows remain unaffected",
-      "Emphasis on strategic patience and long-term neighborly priorities"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "এনডিটিভি ও অন্যান্য বিশ্লেষণে ভারতের এ পদক্ষেপকে বাস্তবসম্মত কূটনীতি ও কৌশলগত সহিষ্ণুতা হিসেবে ব্যাখ্যা করা হয়েছে।",
-    "sentimentReasonEn": "Indian analytical coverage viewed Delhi's calculated restraint as pragmatic diplomacy balancing regional realpolitik.",
-    "source": {
-      "name": "NDTV",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.ndtv.com/india-news/india-keeps-door-open-for-normalisation-of-bangladesh-ties",
-      "originalHeadline": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Hasina Row",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T15:10:00+05:30",
-    "readTimeBn": "৪ মিনিট",
-    "readTimeEn": "4 min read",
-    "imageUrl": "/images/south-block-mea-delhi.jpg",
-    "tags": [
-      "NDTV",
-      "Foreign Policy",
-      "Diplomacy",
-      "Delhi",
-      "Normalization"
-    ],
-    "id": "45",
-    "isLeadStory": false
-  },
-  {
-    "slug": "us-overtakes-india-bangladesh-bilateral-trade-dynamics",
-    "title": "US overtakes India as Bangladesh's second-largest bilateral trade partner",
-    "englishTitle": "US overtakes India as Bangladesh's second-largest bilateral trade partner",
-    "banglaTitle": "বাংলাদেশের দ্বিপাক্ষিক বাণিজ্যে ভারতকে টপকে দুই নম্বরে আমেরিকা: আনন্দবাজারের বিশেষ বিশ্লেষণ",
-    "summaryBn": "বাংলাদেশের বৈদেশিক বাণিজ্য পরিসংখ্যানে ভারতকে পেছনে ফেলে দ্বিতীয় বৃহত্তম অংশীদারে পরিণত হয়েছে যুক্তরাষ্ট্র। তৈরি পোশাক রপ্তানি বৃদ্ধি এবং ভারত থেকে স্থলবন্দরকেন্দ্রিক কিছু আমদানি শ্লথ হওয়াকে এর প্রধান কারণ হিসেবে চিহ্নিত করেছে গণমাধ্যম।",
-    "summaryEn": "Recent foreign trade statistics reveal the United States has surpassed India to become Bangladesh's second-largest overall bilateral trade partner, driven by surges in garment apparel off-take and tariff adjustments along land borders.",
-    "keyPointsBn": [
-      "বাংলাদেশের বৈদেশিক বাণিজ্যের শীর্ষে চীন, দ্বিতীয় স্থানে উঠে এসেছে আমেরিকা",
-      "তৈরি পোশাক খাতের রপ্তানি প্রবৃদ্ধির ফলে আমেরিকার অংশীদারিত্ব বৃদ্ধি",
-      "ভারত-বাংলাদেশ বাণিজ্য বহুমুখীকরণ ও শুল্কায়নে দ্রুত সংস্কারের তাগিদ"
-    ],
-    "keyPointsEn": [
-      "US rises to become Bangladesh's #2 trade partner behind China",
-      "Driven by substantial Western market demand for Bangladeshi ready-made garments",
-      "Highlights need for modernization and non-tariff removal at Indian land borders"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "আনন্দবাজারের প্রতিবেদনে তথ্যভিত্তিক বিশ্লেষণ তুলে ধরে ভারতের বাণিজ্যে প্রতিযোগিতার চ্যালেঞ্জ নিরপেক্ষভাবে উপস্থাপন করা হয়েছে।",
-    "sentimentReasonEn": "Kolkata media presented comprehensive economic analysis assessing India's competitive export dynamics without bias.",
-    "source": {
-      "name": "Anandabazar Patrika",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.anandabazar.com/business/us-overtakes-india-in-bangladesh-bilateral-trade",
-      "originalHeadline": "বাংলাদেশের সঙ্গে দ্বিপাক্ষিক বাণিজ্যে ভারতকে ছাপিয়ে দুই নম্বরে উঠে এল আমেরিকা",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T11:00:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Anandabazar",
-      "Trade",
-      "Economy",
-      "RMG",
-      "US-India"
-    ],
-    "id": "46",
-    "isLeadStory": false
-  },
-  {
-    "slug": "gujarat-hilsa-exports-dhaka-chittagong-sylhet-markets",
-    "title": "Tonnes of Gujarat sea hilsa arriving in Dhaka, Chittagong, and Sylhet markets",
-    "englishTitle": "Tonnes of Gujarat sea hilsa arriving in Dhaka, Chittagong, and Sylhet markets",
-    "banglaTitle": "টন টন গুজরাতের ইলিশ যাচ্ছে বাংলাদেশে: ঢাকা, চট্টগ্রাম ও সিলেটের বাজারে চাহিদার উল্লম্ফন",
-    "summaryBn": "ভারতের গুজরাট উপকূলের সামুদ্রিক ইলিশ পেট্রাপোল বন্দর হয়ে বাংলাদেশের পাইকারি বাজারে প্রবেশ করছে। পদ্মার ইলিশের উচ্চমূল্যের কারণে সাশ্রয়ী মূল্যে ভারতীয় ইলিশের ব্যাপক ক্রেতা চাহিদা তৈরি হয়েছে।",
-    "summaryEn": "Large shipments of Gujarat coastal sea hilsa are arriving through Petrapole into wholesale fish distribution hubs across Dhaka, Chittagong, and Sylhet, creating heavy market buzz due to competitive pricing.",
-    "keyPointsBn": [
-      "পেট্রাপোল-বেনাপোল হয়ে ভারতীয় ইলিশের নিয়মিত বাণিজ্য চালান খালাস",
-      "পদ্মার ইলিশের ঘাটতি ও দামের কারণে ভারতীয় ইলিশে ক্রেতাদের আকর্ষণ",
-      "সীমান্ত বাণিজ্যে পণ্য সরবরাহের নতুন বাণিজ্যিক ভারসাম্য"
-    ],
-    "keyPointsEn": [
-      "Regular commercial consignments of Gujarat hilsa imported via land ports",
-      "Offers price relief for urban consumers amidst domestic river supply tightening",
-      "Showcases flexible cross-border market responsiveness between consumer centers"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "বাংলা গণমাধ্যমে এই বাণিজ্যকে সাধারণ ক্রেতাদের স্বস্তি এবং দুই দেশের বাণিজ্য সম্ভাবনার ইতিবাচক দিক হিসেবে তুলে ধরা হয়েছে।",
-    "sentimentReasonEn": "Bengali media highlighted consumer price relief and thriving cross-border agricultural/fisheries commerce.",
-    "source": {
-      "name": "News18",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://bengali.news18.com/news/business/hilsa-import-from-gujarat-to-bangladesh-markets",
-      "originalHeadline": "টন টন গুজরাতের ইলিশ যাচ্ছে বাংলাদেশে...! ঢাকা, চট্টগ্রাম, সিলেটের বাজারে দর",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T14:15:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "News18",
-      "Hilsa",
-      "Fish Trade",
-      "Gujarat",
-      "Markets"
-    ],
-    "id": "47",
-    "isLeadStory": false
-  },
-  {
-    "slug": "tripura-smart-border-pilot-tech-surveillance",
-    "title": "Tripura begins 'smart border' pilot with tech push to secure 100-km frontier",
-    "englishTitle": "Tripura begins 'smart border' pilot with tech push to secure 100-km frontier",
-    "banglaTitle": "ত্রিপুরায় ১০০ কিমি সীমান্তে আধুনিক 'স্মার্ট বর্ডার' নজরদারি প্রকল্প শুরু করল ভারত",
-    "summaryBn": "ত্রিপুরা-বাংলাদেশ আন্তর্জাতিক সীমান্তের ১০০ কিলোমিটার জুড়ে সেন্সর, নাইট ভিশন ক্যামেরা ও থার্মাল ইমেজিং সম্বলিত ব্যাপক 'স্মার্ট বর্ডার সার্ভিল্যান্স' পাইলট প্রকল্প বাস্তবায়ন শুরু করেছে বিএসএফ।",
-    "summaryEn": "The Border Security Force commenced a cutting-edge 'Smart Border' pilot along a 100-kilometer vulnerable stretch of the Tripura-Bangladesh frontier, deploying subterranean sensors, thermal cameras, and unmanned optical drone patrols.",
-    "keyPointsBn": [
-      "ত্রিপুরা সীমান্তে ১০০ কিমি জুড়ে ইন্টিগ্রেটেড নজরদারি ব্যবস্থা",
-      "চোরাচালান ও অনুপ্রবেশ শূন্যের কোঠায় নামিয়ে আনার প্রযুক্তিগত উদ্যোগ",
-      "প্রথাগত সীমান্ত পাহারাকে আধুনিক প্রযুক্তিনির্ভর ব্যবস্থার রূপান্তর"
-    ],
-    "keyPointsEn": [
-      "Comprehensive technological surveillance over 100-km Tripura frontier",
-      "Aims to curb cross-border contraband, human trafficking, and zero-point breaches",
-      "Modernizes traditional physical patrolling through integrated electronic grids"
-    ],
-    "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় সংবাদপত্রগুলো এই প্রযুক্তিগত আধুনিকায়নকে সীমান্ত অপরাধ দমন ও স্বচ্ছতা বৃদ্ধির উপায় হিসেবে উপস্থাপন করেছে।",
-    "sentimentReasonEn": "Indian reporting framed the technical infrastructure as a necessary modernization to reduce physical border confrontations.",
-    "source": {
-      "name": "The Telegraph India",
-      "bureau": "Kolkata",
-      "language": "English",
-      "originalUrl": "https://www.telegraphindia.com/north-east/tripura-begins-smart-border-pilot-tech-push",
-      "originalHeadline": "Tripura begins 'smart border' pilot with tech push to secure 100-km Bangladesh frontier",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T10:30:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Tripura",
-      "Smart Border",
-      "BSF",
-      "Surveillance",
-      "Security"
-    ],
-    "id": "48",
-    "isLeadStory": false
-  },
-  {
-    "slug": "telegraph-grandpa-infant-rescue-ganga-boat-capsize",
-    "title": "BSF saves 10 Bangladeshis after boat capsizes; struggling grandfather holds infant aloft",
-    "englishTitle": "BSF saves 10 Bangladeshis after boat capsizes; struggling grandfather holds infant aloft",
-    "banglaTitle": "গঙ্গায় নৌকাডুবি: কোলের শিশুকে উঁচিয়ে বাঁচানোর চেষ্টা বৃদ্ধের, বিএসএফের সাহসিকতায় উদ্ধার ১০ জন",
-    "summaryBn": "মুর্শিদাবাদ সীমান্তের নদীতে নৌকাডুবির মর্মস্পর্শী মুহূর্তে এক বৃদ্ধ দাদা পানিতে তলিয়ে যাওয়ার সময় কোলের শিশুকে পানির ওপর উঁচিয়ে ধরে রাখেন। বিএসএফের স্পিডবোট টিম তাৎক্ষণিক ঝাঁপিয়ে পড়ে শিশুসহ সবাইকে উদ্ধার করে।",
-    "summaryEn": "Details emerged from the Murshidabad riverine rescue where a drowning grandfather heroically held a 6-month-old infant above water until BSF patrol speedboats arrived, rescuing all 10 passengers amidst treacherous currents.",
-    "keyPointsBn": [
-      "কোলের শিশুকে বাঁচাতে বৃদ্ধের জীবনবাজির দৃশ্য গণমাধ্যমে আলোড়ন",
-      "বিএসএফের দ্রুত লাইফ-জ্যাকেট ও রেসকিউ টিম মোতায়েন",
-      "উদ্ধারকৃতদের চিকিৎসা ও মানবিক সহায়তা দিয়ে পরিবারের কাছে হস্তান্তরের প্রক্রিয়া"
-    ],
-    "keyPointsEn": [
-      "Emotional river rescue where grandfather held infant aloft till patrols arrived",
-      "BSF marine unit deployed life rings and CPR on water",
-      "Covered across West Bengal media as an inspiring human story"
-    ],
-    "category": "border",
-    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও বিএসএফ",
-    "categoryLabelEn": "Border & Security",
-    "sentiment": "positive",
-    "sentimentReasonBn": "পশ্চিমবঙ্গের সমস্ত পত্রপত্রিকায় এই সাহসিকতাপূর্ণ মানবিক অভিযানকে অত্যন্ত আবেগঘন ও ইতিবাচকভাবে উপস্থাপন করা হয়েছে।",
-    "sentimentReasonEn": "Kolkata press widely celebrated the touching rescue, underscoring human empathy transcending international boundaries.",
-    "source": {
-      "name": "The Telegraph India",
-      "bureau": "Kolkata",
-      "language": "English",
-      "originalUrl": "https://www.telegraphindia.com/west-bengal/bsf-saves-10-bangladeshis-after-boat-capsizes",
-      "originalHeadline": "BSF saves 10 Bangladeshis after boat capsizes, struggling grandpa holds aloft infant",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T12:00:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Humanitarian",
-      "Ganga",
-      "Rescue",
-      "Telegraph",
-      "West Bengal"
-    ],
-    "id": "49",
-    "isLeadStory": false
-  },
-  {
-    "slug": "chinmoy-krishna-das-legal-proceedings-minority-discourse",
-    "title": "Inside Chinmoy Krishna Das’s legal proceedings: Court arguments and minority advocacy",
-    "englishTitle": "Inside Chinmoy Krishna Das’s legal proceedings: Court arguments and minority advocacy",
-    "banglaTitle": "চিন্ময় কৃষ্ণ দাসের জামিন শুনানি ও আইনি লড়াই: আদালতের যুক্তিতর্ক এবং সংখ্যালঘু নিরাপত্তা প্রসঙ্গ",
-    "summaryBn": "চট্টগ্রাম আদালতে সনাতন জাগরণ মঞ্চের নেতা চিন্ময় কৃষ্ণ দাসের জামিন আবেদন ও আইনি লড়াইকে ঘিরে ভারতীয় মিডিয়া বিশদ অনুসন্ধানী প্রতিবেদন প্রকাশ করেছে। সংবাদে সংখ্যালঘুদের নিরাপত্তা ও আইনি অধিকার নিশ্চিত করার দাবি প্রতিফলিত হয়েছে।",
-    "summaryEn": "Indian national newspapers provided comprehensive legal coverage on the court hearings of Chinmoy Krishna Das in Chittagong, detailing arguments by defense counsels, international legal observers, and diplomatic calls for communal harmony.",
-    "keyPointsBn": [
-      "চট্টগ্রাম আদালতে আইনি শুনানি ও আইনজীবীদের যুক্তিতর্ক",
-      "সংখ্যালঘু সম্প্রদায়ের অধিকার ও ধর্মীয় উপাসনালয় সুরক্ষার দাবি",
-      "ভারতীয় রাজনৈতিক ও সামাজিক অঙ্গনে বিষয়টি নিয়ে গভীর উদ্বেগ"
-    ],
-    "keyPointsEn": [
-      "Detailed legal scrutiny of Chittagong court proceedings",
-      "Focus on defense arguments regarding constitutional freedom of assembly",
-      "Significant resonance and concern echoed across Indian editorial boards"
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় গণমাধ্যমে ঘটনাটিকে সংখ্যালঘুদের অধিকার ও সুরক্ষার ঘাটতি হিসেবে বিবেচনা করে উদ্বেগের সুরে উপস্থাপন করা হয়েছে।",
-    "sentimentReasonEn": "Indian media covered the legal struggle with concern, viewing it through the prism of minority safeguards and human rights standards.",
-    "source": {
-      "name": "The Indian Express",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/world/inside-chinmoy-krishna-dass-legal-battle-in-bangladesh",
-      "originalHeadline": "‘Broke down in jail’: Inside Chinmoy Krishna Das’s legal battle in Bangladesh",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T08:30:00+05:30",
-    "readTimeBn": "৪ মিনিট",
-    "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Chittagong",
-      "Minority Rights",
-      "Indian Express",
-      "Legal",
-      "Politics"
-    ],
-    "id": "50",
-    "isLeadStory": false
-  },
-  {
-    "slug": "barisal-journalist-pulak-chatterjee-investigation",
-    "title": "Death of senior journalist Pulak Chatterjee in Barisal draws media scrutiny",
-    "englishTitle": "Death of senior journalist Pulak Chatterjee in Barisal draws media scrutiny",
-    "banglaTitle": "বরিশালে জ্যেষ্ঠ সাংবাদিক পুলক চট্টোপাধ্যায়ের রহস্যজনক মৃত্যু: সাংবাদিক মহলে শোক ও সুষ্ঠু তদন্তের দাবি",
-    "summaryBn": "বরিশালে সাংবাদিক পুলক চট্টোপাধ্যায়ের ঝুলন্ত মরদেহ উদ্ধারের ঘটনায় গভীর শোক ও উদ্বেগ প্রকাশ করেছে ভারতীয় ও আন্তর্জাতিক গণমাধ্যম ফোরাম। প্রেস ক্লাব ও সাংবাদিক সংগঠনগুলো মৃত্যুর কারণ উদঘাটনে নিরপেক্ষ তদন্ত দাবি করেছে।",
-    "summaryEn": "The untimely demise of respected veteran journalist Pulak Chatterjee in Barisal has drawn prominent coverage across Kolkata media, with press unions demanding an impartial and transparent judicial inquiry into the circumstances.",
-    "keyPointsBn": [
-      "বরিশালে কর্মস্থলে প্রবীণ সাংবাদিকের মরদেহ উদ্ধার",
-      "কলকাতা ও ঢাকার সাংবাদিক ইউনিয়নগুলোর গভীর শোক ও নিরপেক্ষ তদন্ত দাবি",
-      "সংবাদমাধ্যমের স্বাধীনতা ও সাংবাদিকদের নিরাপত্তা সংক্রান্ত আলোচনা"
-    ],
-    "keyPointsEn": [
-      "Veteran journalist found deceased in Barisal press bureau",
-      "Journalist unions across Kolkata and Dhaka demand prompt transparent inquiry",
-      "Highlights pressing concerns regarding workplace safety for media professionals"
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "কলকাতার সংবাদমাধ্যম সহকর্মীর মৃত্যুতে শোক প্রকাশ করে ঘটনার নিরপেক্ষ ও গ্রহণযোগ্য তদন্ত নিশ্চিতের তাগিদ দিয়েছে।",
-    "sentimentReasonEn": "Kolkata editorial pieces conveyed solidarity with the press fraternity, emphasizing journalistic protection and accountability.",
-    "source": {
-      "name": "Anandabazar Patrika",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.anandabazar.com/bangladesh/journalist-pulak-chatterjee-death-in-barisal",
-      "originalHeadline": "বাংলাদেশে রহস্যমৃত্যু সাংবাদিক পুলক চট্টোপাধ্যায়ের, বরিশালের দফতরে ঝুলন্ত দেহ",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T16:40:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Anandabazar",
-      "Journalism",
-      "Barisal",
-      "Press Freedom",
-      "Media"
-    ],
-    "id": "51",
-    "isLeadStory": false
-  },
-  {
-    "slug": "india-vs-bangladesh-womens-asia-cup-semifinal-clash",
-    "title": "India vs Bangladesh Women's Asia Cup Semifinal: High-stakes encounter preview",
-    "englishTitle": "India vs Bangladesh Women's Asia Cup Semifinal: High-stakes encounter preview",
-    "banglaTitle": "নারী এশিয়া কাপ সেমিফাইনালে ভারত বনাম বাংলাদেশ: ব্লকবাস্টার ম্যাচের প্রস্তুতি ও বিশ্লেষণ",
-    "summaryBn": "নারী এশিয়া কাপ ২০২৬-এর হাইভোল্টেজ সেমিফাইনালে মুখোমুখি হচ্ছে ভারত ও বাংলাদেশ। শেফালি বর্মা ও নিগার সুলতানা জ্যোতির নেতৃত্বাধীন দুই দলের লড়াই ঘিরে ভারতীয় ক্রীড়া মাধ্যমে রোমাঞ্চকর পূর্বাভাস দেওয়া হয়েছে।",
-    "summaryEn": "India and Bangladesh face off in a blockbuster Women's Asia Cup semifinal clash, with Indian sports desks previewing key player matchups, middle-order batting resilience, and spin bowling strengths.",
-    "keyPointsBn": [
-      "এশিয়া কাপের মর্যাদাপূর্ণ সেমিফাইনালে দুই প্রতিবেশী দেশের মুখোমুখি লড়াই",
-      "ভারতের ব্যাটিং শক্তি বনাম বাংলাদেশের স্পিন আক্রমণের দ্বৈরথ",
-      "উপমহাদেশের ক্রীড়াপ্রেমীদের মাঝে তুমুল উত্তেজনা"
-    ],
-    "keyPointsEn": [
-      "High-profile semifinal clash between regional arch-rivals",
-      "India's hard-hitting batting against Bangladesh's disciplined spin attack",
-      "Extensive tactical previews across prominent Indian sports desks"
-    ],
-    "category": "sports",
-    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
-    "categoryLabelEn": "Sports & Cricket",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ক্রীড়া প্রতিবেদন হিসেবে ভারতীয় গণমাধ্যম দুই দলের সামর্থ্য ও প্রতিযোগিতামূলক ক্রিকেট স্পিরিটকে অত্যন্ত ইতিবাচকভাবে তুলে ধরেছে।",
-    "sentimentReasonEn": "Indian sports journalism praised the spirited rivalry and elevated standard of women's cricket in South Asia.",
-    "source": {
-      "name": "Sportstar",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://sportstar.thehindu.com/cricket/womens-cricket/india-vs-bangladesh-womens-asia-cup-semifinal-preview",
-      "originalHeadline": "Shafali confident India’s middle order will deliver against Bangladesh in semifinal",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T14:50:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Asia Cup",
-      "Cricket",
-      "Sportstar",
-      "Women Cricket",
-      "India vs Bangladesh"
-    ],
-    "id": "52",
-    "isLeadStory": false
-  },
-  {
-    "slug": "suspected-measles-outbreak-bangladesh-health-response",
-    "title": "Suspected measles outbreak in remote districts: Health directorate launches mass vaccination",
-    "englishTitle": "Suspected measles outbreak in remote districts: Health directorate launches mass vaccination",
-    "banglaTitle": "দূরবর্তী জেলাগুলোতে হামের প্রাদুর্ভাব: স্বাস্থ্য অধিদপ্তরের জরুরি টিকাদান কর্মসূচি",
-    "summaryBn": "বাংলাদেশের পার্বত্য ও উপকূলীয় কিছু প্রত্যন্ত অঞ্চলে হামের লক্ষণযুক্ত রোগীর সংখ্যা বৃদ্ধিতে জরুরি টিকাদান ক্যাম্পেইন জোরদার করেছে স্বাস্থ্য অধিদপ্তর। ভারতীয় স্বাস্থ্য সংশ্লিষ্ট গণমাধ্যমে এ বিষয়ে পর্যবেক্ষণ প্রতিবেদন এসেছে।",
-    "summaryEn": "Public health authorities in Bangladesh initiated urgent supplementary immunization drives across peripheral rural districts following reports of measles cases, with regional health desks monitoring transboundary epidemiology.",
-    "keyPointsBn": [
-      "প্রত্যন্ত অঞ্চলে বিশেষ টিকাদান ক্যাম্পেইন ও ভিটামিন-এ ক্যাপসুল বিতরণ",
-      "বিশ্ব স্বাস্থ্য সংস্থা ও ইউনিসেফের কারিগরি সহযোগিতা গ্রহণ",
-      "শিশুদের সংক্রমণ রোধে জনসচেতনতা বৃদ্ধির উদ্যোগ"
-    ],
-    "keyPointsEn": [
-      "Supplementary immunization campaigns mobilized in rural border districts",
-      "Coordination with international public health agencies (WHO/UNICEF)",
-      "Regional epidemiologists track viral transmission containment measures"
-    ],
-    "category": "culture",
-    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
-    "categoryLabelEn": "Culture & Arts",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "জনস্বাস্থ্য প্রতিবেদন হিসেবে তথ্য ও প্রতিষেধক ব্যবস্থাপনার অগ্রগতি নিরপেক্ষভাবে উপস্থাপন করা হয়েছে।",
-    "sentimentReasonEn": "Indian medical and news desks reported objectively on healthcare infrastructure response and containment.",
-    "source": {
-      "name": "The Hindu",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/suspected-measles-cases-bangladesh-containment",
-      "originalHeadline": "Suspected measles cases kill nearly 1,000 as Bangladesh struggles to contain outbreak",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T16:00:00+05:30",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "The Hindu",
-      "Healthcare",
-      "Measles",
-      "Vaccination",
-      "Public Health"
-    ],
-    "id": "53",
-    "isLeadStory": false
-  },
-  {
-    "slug": "inani-clouded-leopard-wildlife-biodiversity-conservation",
-    "title": "Rare clouded leopard and endangered wildlife spotted in Inani reserve forests",
-    "englishTitle": "Rare clouded leopard and endangered wildlife spotted in Inani reserve forests",
-    "banglaTitle": "ইনানী সংরক্ষিত বনে বিপন্ন মেঘলা চিতাবাঘের দেখা: জীববৈচিত্র্য সংরক্ষণে আশার আলো",
-    "summaryBn": "কক্সবাজারের ইনানী জাতীয় উদ্যান ও সংলগ্ন বনে ট্র্যাপ ক্যামেরায় অতি বিরল মেঘলা চিতাবাঘসহ বেশ কিছু বিলুপ্তপ্রায় বন্যপ্রাণীর উপস্থিতি শনাক্ত হয়েছে। পরিবেশবিদরা একে দক্ষিণ এশিয়ার জীববৈচিত্র্য রক্ষার ক্ষেত্রে অত্যন্ত ইতিবাচক সংবাদ হিসেবে দেখছেন।",
-    "summaryEn": "Camera traps in the Inani National Park reserve forests recorded sightings of the critically elusive clouded leopard and other vulnerable mammals, celebrated by South Asian conservationists as a triumph of habitat recovery.",
-    "keyPointsBn": [
-      "ইনানী জাতীয় উদ্যানে ট্র্যাপ ক্যামেরায় বিরল মেঘলা চিতাবাঘের ছবি ধরা পড়েছে",
-      "প্রাকৃতিক বনাঞ্চল সংরক্ষণ ও বন্যপ্রাণী করিডোর রক্ষার গুরুত্ব বৃদ্ধি",
-      "ভারত ও বাংলাদেশের পরিবেশ গবেষকদের যৌথ বৈজ্ঞানিক উচ্ছ্বাস"
-    ],
-    "keyPointsEn": [
-      "Camera traps record evidence of elusive clouded leopard in Inani reserve",
-      "Validates habitat restoration efforts across coastal protected forests",
-      "Welcomed by South Asian ecological researchers and wildlife enthusiasts"
-    ],
-    "category": "culture",
-    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
-    "categoryLabelEn": "Culture & Arts",
-    "sentiment": "positive",
-    "sentimentReasonBn": "বিবিসি বাংলা ও ভারতীয় পরিবেশ প্রতিবেদনে বিরল বন্যপ্রাণী সুরক্ষার সাফল্যকে অত্যন্ত উৎসাহব্যঞ্জক ও আশাবাদী হিসেবে তুলে ধরা হয়েছে।",
-    "sentimentReasonEn": "Wildlife journalism warmly lauded the rediscovery as an inspiring success story for regional ecological preservation.",
-    "source": {
-      "name": "BBC Bengali",
-      "bureau": "Kolkata",
-      "language": "Bengali",
-      "originalUrl": "https://www.bbc.com/bengali/articles/inani-clouded-leopard-wildlife",
-      "originalHeadline": "ইনানীতে বিপন্ন মেঘলা চিতাসহ আরও যেসব প্রাণীর দেখা মিললো",
-      "scannedAt": "2026-09-14T22:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T10:15:00+05:30",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "BBC Bengali",
-      "Wildlife",
-      "Environment",
-      "Biodiversity",
-      "Inani"
-    ],
-    "id": "54",
     "isLeadStory": false
   }
 ];
