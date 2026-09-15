@@ -917,7 +917,7 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
 CRITICAL EDITORIAL PRIORITY: Items flagged with "priorityPickup": true or concerning "শেখ হাসিনা" / "আওয়ামী লীগ" / "ওপার বাংলা" must be prioritized in your editorial selection and featured prominently.
 INSTAGRAM REQUIREMENTS:
 1. Ensure source name includes "(Instagram)" (e.g. "Firstpost (Instagram)", "The Wall (Instagram)", "India Today (Instagram)", "Ei Samay (Instagram)").
-2. Preserve authentic Instagram post URLs in originalUrl (e.g. https://www.instagram.com/p/...).
+2. For originalUrl, provide the authentic verified Instagram profile URL of the outlet (e.g. https://www.instagram.com/firstpost/, https://www.instagram.com/thewall_bangla/, https://www.instagram.com/indiatoday/, https://www.instagram.com/eisamay.digital/, https://www.instagram.com/abpanandatv/) or verified live post link.
 3. Tags must include "Instagram Post" and "Visual Journalism", plus relevant hashtags (e.g. "#FirstpostNews", "#TheWall", etc.).
 4. Set readTimeBn: "১ মিনিট পোস্ট", readTimeEn: "1 min read".
 5. Keep summaries concise (2-3 sentences max) capturing the photo report, post caption, and visual context.
@@ -1022,6 +1022,47 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         if (!item.tags.some(t => t.includes('ভিডিও'))) item.tags.push('ভিডিও রিপোর্ট');
         if (!item.readTimeBn) item.readTimeBn = 'ভিডিও রিপোর্ট';
         if (!item.readTimeEn) item.readTimeEn = 'Video Dispatch';
+      }
+
+      // Detect Instagram dispatches and normalize working profile URLs
+      if (item.source?.name?.includes('Instagram') || item.tags?.some(t => t.toLowerCase().includes('instagram'))) {
+        if (!Array.isArray(item.tags)) item.tags = [];
+        if (!item.tags.some(t => t === 'Instagram Post')) item.tags.push('Instagram Post');
+        if (!item.tags.some(t => t === 'Visual Journalism')) item.tags.push('Visual Journalism');
+        if (!item.readTimeBn) item.readTimeBn = '১ মিনিট পোস্ট';
+        if (!item.readTimeEn) item.readTimeEn = '1 min read';
+
+        const outletMap = {
+          'firstpost': 'https://www.instagram.com/firstpost/',
+          'the wall': 'https://www.instagram.com/thewall_bangla/',
+          'thewall': 'https://www.instagram.com/thewall_bangla/',
+          'india today': 'https://www.instagram.com/indiatoday/',
+          'indiatoday': 'https://www.instagram.com/indiatoday/',
+          'newsmo': 'https://www.instagram.com/newsmo/',
+          'ei samay': 'https://www.instagram.com/eisamay.digital/',
+          'eisamay': 'https://www.instagram.com/eisamay.digital/',
+          'abp ananda': 'https://www.instagram.com/abpanandatv/',
+          'abpananda': 'https://www.instagram.com/abpanandatv/',
+          'tv9 bangla': 'https://www.instagram.com/tv9_bangla/',
+          'republic bangla': 'https://www.instagram.com/republicbangla/',
+          'ndtv': 'https://www.instagram.com/ndtv/',
+          'anandabazar': 'https://www.instagram.com/anandabazar_patrika/',
+        };
+
+        const nameLower = (item.source?.name || '').toLowerCase();
+        let fallbackProfile = 'https://www.instagram.com';
+        for (const [key, url] of Object.entries(outletMap)) {
+          if (nameLower.includes(key)) {
+            fallbackProfile = url;
+            break;
+          }
+        }
+
+        const currentUrl = (item.source?.originalUrl || '').trim();
+        if (!currentUrl || currentUrl.includes('news.google.com') || !currentUrl.includes('instagram.com/')) {
+          if (!item.source) item.source = {};
+          item.source.originalUrl = fallbackProfile;
+        }
       }
 
       return item;

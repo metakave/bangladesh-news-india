@@ -219,7 +219,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Firstpost (Instagram)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.instagram.com/p/DFP82j4T_9x/",
+      "originalUrl": "https://www.instagram.com/firstpost/",
       "originalHeadline": "Chinmoy Krishna Das’ grief has become a haunting portrait of the crisis facing minorities in Bangladesh | #FirstpostNews - instagram.com",
       "scannedAt": "2026-09-15T07:15:00.000Z"
     },
@@ -270,7 +270,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall (Instagram)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.instagram.com/p/DGH38mPshj1/",
+      "originalUrl": "https://www.instagram.com/thewall_bangla/",
       "originalHeadline": "মায়ের শেষকৃত্যে ৫ ঘণ্টার প্যারোল, চন্দনকাঠের আগুনে হাতজোড় করে দাঁড়িয়ে চিন্ময় কৃষ্ণ দাস | #TheWallNews",
       "scannedAt": "2026-09-15T07:18:00.000Z"
     },
@@ -321,7 +321,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today (Instagram)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.instagram.com/p/DF7uW_XMo8x/",
+      "originalUrl": "https://www.instagram.com/indiatoday/",
       "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh | #IndiaToday #NewsMo",
       "scannedAt": "2026-09-15T07:20:00.000Z"
     },
@@ -372,7 +372,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Ei Samay (Instagram)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.instagram.com/p/DFz8983zH3a/",
+      "originalUrl": "https://www.instagram.com/eisamay.digital/",
       "originalHeadline": "পেট্রাপোল-বেনাপোল সীমান্তে আটকে থাকা ট্রাক চলাচল স্বাভাবিক করার বিষয়ে বৈঠক | #EiSamay",
       "scannedAt": "2026-09-15T07:22:00.000Z"
     },

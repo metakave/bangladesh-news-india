@@ -29,6 +29,46 @@ interface InstagramClientViewProps {
 
 const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&auto=format&fit=crop&q=80';
 
+const OUTLET_PROFILES: Record<string, { handle: string; url: string }> = {
+  firstpost: { handle: '@firstpost', url: 'https://www.instagram.com/firstpost/' },
+  'the wall': { handle: '@thewall_bangla', url: 'https://www.instagram.com/thewall_bangla/' },
+  thewall: { handle: '@thewall_bangla', url: 'https://www.instagram.com/thewall_bangla/' },
+  'india today': { handle: '@indiatoday', url: 'https://www.instagram.com/indiatoday/' },
+  indiatoday: { handle: '@indiatoday', url: 'https://www.instagram.com/indiatoday/' },
+  newsmo: { handle: '@newsmo', url: 'https://www.instagram.com/newsmo/' },
+  'ei samay': { handle: '@eisamay.digital', url: 'https://www.instagram.com/eisamay.digital/' },
+  eisamay: { handle: '@eisamay.digital', url: 'https://www.instagram.com/eisamay.digital/' },
+  'abp ananda': { handle: '@abpanandatv', url: 'https://www.instagram.com/abpanandatv/' },
+  abpananda: { handle: '@abpanandatv', url: 'https://www.instagram.com/abpanandatv/' },
+  'tv9 bangla': { handle: '@tv9_bangla', url: 'https://www.instagram.com/tv9_bangla/' },
+  tv9: { handle: '@tv9_bangla', url: 'https://www.instagram.com/tv9_bangla/' },
+  'republic bangla': { handle: '@republicbangla', url: 'https://www.instagram.com/republicbangla/' },
+  ndtv: { handle: '@ndtv', url: 'https://www.instagram.com/ndtv/' },
+  anandabazar: { handle: '@anandabazar_patrika', url: 'https://www.instagram.com/anandabazar_patrika/' },
+  'zee 24 ghanta': { handle: '@zee24ghanta', url: 'https://www.instagram.com/zee24ghanta/' },
+};
+
+function getInstagramOutletInfo(article: NewsItem): { handle: string; url: string } {
+  const nameLower = (article.source?.name || '').toLowerCase();
+  for (const [k, v] of Object.entries(OUTLET_PROFILES)) {
+    if (nameLower.includes(k)) return v;
+  }
+  return { handle: '@instagram', url: 'https://www.instagram.com' };
+}
+
+function resolveInstagramLink(article: NewsItem): string {
+  const url = article.source?.originalUrl || '';
+  const outletInfo = getInstagramOutletInfo(article);
+  if (!url || url.includes('news.google.com') || !url.includes('instagram.com/')) {
+    return outletInfo.url;
+  }
+  const fakeSeedCodes = ['DFP82j4T_9x', 'DGH38mPshj1', 'DF7uW_XMo8x', 'DFz8983zH3a'];
+  if (fakeSeedCodes.some(c => url.includes(c))) {
+    return outletInfo.url;
+  }
+  return url;
+}
+
 export default function InstagramClientView({ initialArticles }: InstagramClientViewProps) {
   const { lang } = useApp();
   const t = TRANSLATIONS[lang];
@@ -595,6 +635,8 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
                 const isBengali = article.source.language === 'Bengali';
                 const timeAgo = formatArticleTimestamp(article.source.scannedAt, lang, article.publishedAt);
                 const originalOutletName = article.source.name.replace(/\s*\(Instagram\)/i, '').trim();
+                const outletInfo = getInstagramOutletInfo(article);
+                const directInstagramUrl = resolveInstagramLink(article);
 
                 // Extract hashtags from tags or caption
                 const hashtags = article.tags?.filter((t) => t.startsWith('#')) || [];
@@ -675,6 +717,16 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
                             </span>
                           </div>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                            <a
+                              href={outletInfo.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ color: '#E1306C', fontWeight: 600, textDecoration: 'none' }}
+                              title={`${originalOutletName} Instagram`}
+                            >
+                              {outletInfo.handle}
+                            </a>
+                            <span>•</span>
                             <span>{article.source.bureau === 'Kolkata' ? (lang === 'bn' ? 'কলকাতা ব্যুরো' : 'Kolkata') : (lang === 'bn' ? 'দিল্লি ব্যুরো' : 'Delhi')}</span>
                             <span>•</span>
                             <span>{timeAgo}</span>
@@ -821,7 +873,7 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
                       >
                         {/* Direct View on Instagram external link */}
                         <a
-                          href={article.source.originalUrl}
+                          href={directInstagramUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{
@@ -846,7 +898,7 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                           {/* Share / Copy Link */}
                           <button
-                            onClick={() => handleShare(article.source.originalUrl, article.id)}
+                            onClick={() => handleShare(directInstagramUrl, article.id)}
                             title="Copy Link"
                             style={{
                               padding: '0.4rem',
