@@ -2213,7 +2213,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-08T05:20:43.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/dhakeshwari-national-temple-dhaka.jpg",
     "tags": [
       "Durga Puja",
       "Hindu minority",
