@@ -108,7 +108,8 @@ export default function Header() {
                 className="font-bengali"
                 style={{
                   padding: '0.2rem 0.55rem',
-                  fontSize: '0.75rem',
+                  fontSize: '0.78rem',
+                  lineHeight: 1.2,
                   fontWeight: lang === 'bn' ? 800 : 600,
                   color: lang === 'bn' ? '#ffffff' : 'var(--text-secondary)',
                   backgroundColor: lang === 'bn' ? 'var(--brand-primary)' : 'transparent',
@@ -121,7 +122,8 @@ export default function Header() {
                 onClick={() => setLang('en')}
                 style={{
                   padding: '0.2rem 0.55rem',
-                  fontSize: '0.82rem',
+                  fontSize: '0.78rem',
+                  lineHeight: 1.2,
                   fontWeight: lang === 'en' ? 800 : 600,
                   color: lang === 'en' ? '#ffffff' : 'var(--text-secondary)',
                   backgroundColor: lang === 'en' ? 'var(--brand-primary)' : 'transparent',
