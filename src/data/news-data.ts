@@ -68,74 +68,338 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1742,
-  "bangladeshMatches": 303,
+  "totalScanned24h": 1142,
+  "bangladeshMatches": 291,
   "sentimentDistribution": {
-    "positive": 42,
-    "neutral": 168,
-    "negative": 93
+    "positive": 1,
+    "neutral": 3,
+    "negative": 2
   },
   "bureauDistribution": {
-    "delhi": 231,
-    "kolkata": 72
+    "delhi": 4,
+    "kolkata": 2
   },
   "languageDistribution": {
-    "english": 189,
-    "bengali": 84,
-    "hindi": 30
+    "english": 4,
+    "bengali": 2,
+    "hindi": 0
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "ba-001",
-    "headlineBn": "বাংলাদেশের মন্ত্রীর মন্তব্যে বিতর্ক: 'ভারতের প্রতি মুগ্ধতা শেষ হওয়া উচিত'",
-    "headlineEn": "Bangladesh minister sparks row: 'Fascination with India must end'",
-    "timeAgoBn": "২ ঘণ্টা আগে",
+    "id": "alert-001",
+    "headlineBn": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
+    "headlineEn": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "timeAgoBn": "২ ঘন্টা আগে",
     "timeAgoEn": "2 hours ago",
-    "sourceName": "The Indian Express World",
+    "sourceName": "Times of India World",
     "sourceBureau": "Delhi",
     "sentiment": "negative",
-    "url": "https://indianexpress.com/article/world/bangladesh-minister-humaiun-kobir-india-ties-reset-tarique-rahman-unga-10877038/"
+    "url": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms"
   },
   {
-    "id": "ba-002",
-    "headlineBn": "ব্রিকস শীর্ষ সম্মেলনে ঢাকার প্রতিনিধিত্ব নেই, তারেক রহমানের সফর বাতিল",
-    "headlineEn": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
-    "timeAgoBn": "৪ দিন আগে",
-    "timeAgoEn": "4 days ago",
-    "sourceName": "The Indian Express World",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/"
-  },
-  {
-    "id": "ba-003",
-    "headlineBn": "শেখ হাসিনার কন্যা সায়মা ডব্লিউএইচও পদ ছাড়লেন, প্রত্যাহারের সুপারিশের একদিন পর",
-    "headlineEn": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
-    "timeAgoBn": "৫ দিন আগে",
-    "timeAgoEn": "5 days ago",
-    "sourceName": "The Indian Express World",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://indianexpress.com/article/world/bangladesh-saima-wazed-sheikh-hasina-daughter-fraud-allegation-resigns-who-post-10871087/"
-  },
-  {
-    "id": "ba-004",
-    "headlineBn": "দুর্গাপূজার আগে হিন্দু সংখ্যালঘুদের নিরাপত্তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
-    "headlineEn": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
-    "timeAgoBn": "৬ দিন আগে",
-    "timeAgoEn": "6 days ago",
-    "sourceName": "The Indian Express World",
+    "id": "alert-002",
+    "headlineBn": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: ‘ইউএনও রিভার্স’",
+    "headlineEn": "UNO reverse: India is now sending hilsa to Bangladesh",
+    "timeAgoBn": "১ দিন আগে",
+    "timeAgoEn": "1 day ago",
+    "sourceName": "India Today",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://indianexpress.com/article/world/durga-puja-bangladesh-government-promises-support-safety-hindu-minorities-10868001/"
+    "url": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss"
+  },
+  {
+    "id": "alert-003",
+    "headlineBn": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "headlineEn": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
+    "timeAgoBn": "১ দিন আগে",
+    "timeAgoEn": "1 day ago",
+    "sourceName": "The Indian Express",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5"
+  },
+  {
+    "id": "alert-004",
+    "headlineBn": "শেখ হাসিনার কন্যা জালিয়াতির অভিযোগে ডব্লিউএইচও আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন",
+    "headlineEn": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
+    "timeAgoBn": "৬ দিন আগে",
+    "timeAgoEn": "6 days ago",
+    "sourceName": "NDTV",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
     "id": "1",
+    "slug": "dhaka-university-jinnah-photo-row",
+    "title": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
+    "englishTitle": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
+    "summaryBn": "ঢাকা বিশ্ববিদ্যালয়ের সংগ্রশালা থেকে জিন্নাহ ও আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক সৃষ্টি হয়েছে। কর্তৃপক্ষ তিনটি কমিটি গঠন করেছে তদন্তের জন্য।",
+    "summaryEn": "A controversy has erupted at Dhaka University over the removal of portraits of Jinnah and Jamaat ex-chief Abdul Malek from the museum. Authorities have formed three committees to investigate.",
+    "keyPointsBn": [
+      "ডাকসু সংগ্রশালা থেকে জিন্নাহ ও আব্দুল মালেকের ছবি টানানো হয়েছে",
+      "শিক্ষক মূল্যায়ন ও নির্ভীক জুলাই স্মৃতিসৌধ নিয়েও তিনটি কমিটি তদন্ত করছে",
+      "ভারতীয় মিডিয়া এটিকে বাংলাদেশের রাজনৈতিক অস্থিরতার লক্ষণ হিসেবে দেখছে"
+    ],
+    "keyPointsEn": [
+      "Portraits of Jinnah and Abdul Malek removed from Dhaka University museum",
+      "Three committees investigating teacher evaluation and 'Nirbhik July' memorial",
+      "Indian media frames it as a sign of political instability in Bangladesh"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে বাংলাদেশে ধর্মীয় ও রাজনৈতিক মেরুকরণের প্রমাণ হিসেবে উপস্থাপন করছে, যা নেতিবাচক ছবি তৈরি করে।",
+    "sentimentReasonEn": "Indian media portrays this as evidence of religious and political polarization in Bangladesh, creating a negative image.",
+    "source": {
+      "name": "Times of India World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms",
+      "originalHeadline": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+      "scannedAt": "2026-09-15T01:47:45.000Z"
+    },
+    "publishedAt": "2026-09-15T01:47:45.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "tags": [
+      "Dhaka University",
+      "Jinnah",
+      "Jamaat",
+      "Bangladesh politics"
+    ],
+    "isLeadStory": true
+  },
+  {
+    "id": "2",
+    "slug": "india-sends-hilsa-to-bangladesh",
+    "title": "ভারত এখন বাংলাদেশে ইলিশ পাঠাচ্ছে",
+    "englishTitle": "UNO reverse: India is now sending hilsa to Bangladesh",
+    "banglaTitle": "ভারত এখন বাংলাদেশে ইলিশ পাঠাচ্ছে",
+    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩.৫ লক্ষ কেজির বেশি ইলিশ আমদানি হয়েছে। ভারতীয় মিডিয়া এটিকে ‘ইউএনও রিভার্স’ বলে মজা করে报道 করেছে।",
+    "summaryEn": "In the first two months of the fiscal year, Bangladesh imported over 352,000 kg of hilsa from India. Indian media humorously calls it a 'UNO reverse'.",
+    "keyPointsBn": [
+      "জুলাই-আগস্টে ৩,৫২,৪৮৪ কেজি ইলিশ ভারত থেকে আমদানি",
+      "ঐতিহ্যগতভাবে বাংলাদেশ ভারতকে ইলিশ রপ্তানি করে, এখন উল্টো",
+      "ভারতীয় মিডিয়া হালকা মেজাজে খবরটি পরিবেশন করেছে"
+    ],
+    "keyPointsEn": [
+      "352,484 kg hilsa imported from India in July-August",
+      "Traditionally Bangladesh exports hilsa to India, now reversed",
+      "Indian media presents the news in a light-hearted manner"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই বাণিজ্যকে হালকা মেজাজে উপস্থাপন করেছে, যা দ্বিপাক্ষিক বাণিজ্য সম্পর্কের ইতিবাচক দিক তুলে ধরে।",
+    "sentimentReasonEn": "Indian media presents this trade in a light-hearted manner, highlighting a positive aspect of bilateral trade relations.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss",
+      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
+      "scannedAt": "2026-09-14T16:20:17.000Z"
+    },
+    "publishedAt": "2026-09-14T16:20:17.000Z",
+    "readTimeBn": "১ মিনিট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "hilsa",
+      "trade",
+      "India-Bangladesh",
+      "import"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "3",
+    "slug": "india-bangladesh-ties-tarique-rahman",
+    "title": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "englishTitle": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
+    "banglaTitle": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "summaryBn": "বিশেষজ্ঞদের মতে, তরিক রহমানের নেতৃত্বে ভারত-বাংলাদেশ সম্পর্কের নতুন অধ্যায় শুরু হতে পারে। তবে অতীতের রাজনৈতিক জটিলতা বিবেচনায় সতর্কতা প্রয়োজন।",
+    "summaryEn": "Experts suggest that under Tarique Rahman's leadership, India-Bangladesh relations could see a new chapter. However, past political complexities warrant caution.",
+    "keyPointsBn": [
+      "তরিক রহমানের নেতৃত্বে সম্পর্ক পুনর্গঠনের সম্ভাবনা",
+      "অতীতের রাজনৈতিক জটিলতা ও সতর্কতা",
+      "ভারতীয় বিশ্লেষকরা সম্ভাবনার দিকটি তুলে ধরেছেন"
+    ],
+    "keyPointsEn": [
+      "Potential for resetting ties under Tarique Rahman",
+      "Past political complexities and caution",
+      "Indian analysts highlight the potential"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া বিশ্লেষণমূলক দৃষ্টিভঙ্গি নিয়েছে, সম্ভাবনা ও চ্যালেঞ্জ উভয়ই তুলে ধরেছে, তাই নিরপেক্ষ।",
+    "sentimentReasonEn": "Indian media takes an analytical view, highlighting both potential and challenges, hence neutral.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5",
+      "originalHeadline": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
+      "scannedAt": "2026-09-13T21:46:01.000Z"
+    },
+    "publishedAt": "2026-09-13T21:46:01.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "Tarique Rahman",
+      "India-Bangladesh",
+      "diplomacy",
+      "BNP"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "4",
+    "slug": "sheikh-hasina-daughter-resigns-who",
+    "title": "শেখ হাসিনার কন্যা জালিয়াতির অভিযোগে ডব্লিউএইচও আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন",
+    "englishTitle": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
+    "banglaTitle": "শেখ হাসিনার কন্যা জালিয়াতির অভিযোগে ডব্লিউএইচও আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন",
+    "summaryBn": "শেখ হাসিনার কন্যা সায়মা ওয়াজেদ জালিয়াতির অভিযোগে ডব্লিউএইচও আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন। ভারতীয় মিডিয়া এটিকে হাসিনা পরিবারের দুর্নীতির প্রমাণ হিসেবে দেখছে।",
+    "summaryEn": "Sheikh Hasina's daughter Saima Wazed resigned as WHO Regional Head after fraud charges. Indian media sees this as evidence of corruption in the Hasina family.",
+    "keyPointsBn": [
+      "সায়মা ওয়াজেদ জালিয়াতির অভিযোগে পদত্যাগ করেছেন",
+      "ডব্লিউএইচও আঞ্চলিক প্রধান হিসেবে তিনি ছিলেন",
+      "ভারতীয় মিডিয়া হাসিনা পরিবারের সমালোচনায় সরব"
+    ],
+    "keyPointsEn": [
+      "Saima Wazed resigned after fraud charges",
+      "She was WHO Regional Head",
+      "Indian media vocal in criticizing Hasina family"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই পদত্যাগকে হাসিনা পরিবারের দুর্নীতির প্রমাণ হিসেবে উপস্থাপন করছে, যা নেতিবাচক।",
+    "sentimentReasonEn": "Indian media presents this resignation as evidence of corruption in the Hasina family, which is negative.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5",
+      "originalHeadline": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
+      "scannedAt": "2026-09-09T17:48:11.000Z"
+    },
+    "publishedAt": "2026-09-09T17:48:11.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "tags": [
+      "Sheikh Hasina",
+      "Saima Wazed",
+      "WHO",
+      "corruption"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "5",
+    "slug": "bangladesh-imports-hilsa-from-india",
+    "title": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
+    "englishTitle": "Why Bangladesh is importing tons of hilsa from India",
+    "banglaTitle": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
+    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩.৫ লক্ষ কেজির বেশি ইলিশ আমদানি হয়েছে। স্থানীয় বাজারে চাহিদা মেটাতে এই আমদানি।",
+    "summaryEn": "In the first two months of the fiscal year, Bangladesh imported over 352,000 kg of hilsa from India. The import aims to meet local demand.",
+    "keyPointsBn": [
+      "জুলাই-আগস্টে ৩,৫২,৪৮৪ কেজি ইলিশ আমদানি",
+      "স্থানীয় বাজারে চাহিদা মেটাতে আমদানি",
+      "ঐতিহ্যগতভাবে বাংলাদেশ ইলিশ রপ্তানি করত, এখন আমদানি করছে"
+    ],
+    "keyPointsEn": [
+      "352,484 kg hilsa imported in July-August",
+      "Import to meet local market demand",
+      "Traditionally Bangladesh exported hilsa, now importing"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বিবিসি বাংলা তথ্যভিত্তিক প্রতিবেদন করেছে, কোনো পক্ষপাত ছাড়াই আমদানির কারণ ব্যাখ্যা করেছে।",
+    "sentimentReasonEn": "BBC Bengali provides a factual report, explaining the reasons for import without bias.",
+    "source": {
+      "name": "BBC Bengali",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/cmz7znp5477qo?at_medium=RSS&at_campaign=rss",
+      "originalHeadline": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
+      "scannedAt": "2026-09-14T06:52:51.000Z"
+    },
+    "publishedAt": "2026-09-14T06:52:51.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "hilsa",
+      "import",
+      "India-Bangladesh",
+      "trade"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "6",
+    "slug": "bangladesh-daily-life-challenges",
+    "title": "পত্রিকা: সিনিয়র কর্মকর্তাদের ইনক্রিমেন্ট কমছে, সবার বাসা ভাড়াও কমানো হচ্ছে",
+    "englishTitle": "Newspaper: Senior officials' increments cut, house rents reduced for all",
+    "banglaTitle": "পত্রিকা: সিনিয়র কর্মকর্তাদের ইনক্রিমেন্ট কমছে, সবার বাসা ভাড়াও কমানো হচ্ছে",
+    "summaryBn": "বাংলাদেশে অর্থনৈতিক সংকটের কারণে সিনিয়র সরকারি কর্মকর্তাদের ইনক্রিমেন্ট কমানো হচ্ছে এবং বাসা ভাড়া কমানো হচ্ছে। এছাড়া ঢাকায় মাসে গড়ে ৫০টি বেওয়ারিশ লাশ পাওয়া যায়।",
+    "summaryEn": "Due to economic crisis in Bangladesh, increments for senior government officials are being cut and house rents reduced. Also, an average of 50 unclaimed bodies are found in Dhaka monthly.",
+    "keyPointsBn": [
+      "সিনিয়র কর্মকর্তাদের ইনক্রিমেন্ট ও বাসা ভাড়া কমানো",
+      "ঢাকায় মাসে গড়ে ৫০টি বেওয়ারিশ লাশ",
+      "বরিশালে দারিদ্র্যের হার সবচেয়ে বেশি"
+    ],
+    "keyPointsEn": [
+      "Increments and house rents reduced for senior officials",
+      "Average 50 unclaimed bodies in Dhaka monthly",
+      "Barishal has highest poverty rate"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "অর্থনীতি ও বিদ্যুৎ",
+    "categoryLabelEn": "Economy & Energy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া বাংলাদেশের অর্থনৈতিক সংকট ও সামাজিক অবক্ষয়ের চিত্র তুলে ধরছে, যা নেতিবাচক।",
+    "sentimentReasonEn": "Indian media highlights Bangladesh's economic crisis and social degradation, which is negative.",
+    "source": {
+      "name": "BBC Bengali",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/c6783v3r2mx3o?at_medium=RSS&at_campaign=rss",
+      "originalHeadline": "পত্রিকা: 'সিনিয়র কর্মকর্তাদের ইনক্রিমেন্ট কমছে, সবার বাসা ভাড়াও কমানো হচ্ছে'",
+      "scannedAt": "2026-09-14T21:31:43.000Z"
+    },
+    "publishedAt": "2026-09-14T21:31:43.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Bangladesh economy",
+      "austerity",
+      "poverty",
+      "Dhaka"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "7",
     "slug": "bangladesh-minister-india-fascination-reset-ties",
     "title": "Bangladesh minister says 'fascination with India must end', seeks reset of ties",
     "englishTitle": "Bangladesh minister says 'fascination with India must end', seeks reset of ties",
@@ -177,10 +441,10 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "foreign policy",
       "Tarique Rahman"
     ],
-    "isLeadStory": true
+    "isLeadStory": false
   },
   {
-    "id": "2",
+    "id": "8",
     "slug": "bangladesh-brics-summit-no-dhaka-representation",
     "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
     "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
@@ -214,7 +478,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-10T12:33:25.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/brics-summit.jpg",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
     "tags": [
       "Bangladesh",
       "BRICS",
@@ -224,7 +488,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "3",
+    "id": "9",
     "slug": "saima-wazed-quits-who-post",
     "title": "Sheikh Hasina's daughter Saima quits WHO post after termination recommendation",
     "englishTitle": "Sheikh Hasina's daughter Saima quits WHO post after termination recommendation",
@@ -258,7 +522,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-10T03:36:07.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/saima-wazed.jpg",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
     "tags": [
       "Sheikh Hasina",
       "Saima Wazed",
@@ -269,7 +533,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "4",
+    "id": "10",
     "slug": "bangladesh-durga-puja-hindu-safety",
     "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
     "englishTitle": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
@@ -313,226 +577,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "5",
-    "slug": "india-sends-hilsa-to-bangladesh",
-    "title": "UNO reverse: India is now sending hilsa to Bangladesh",
-    "englishTitle": "UNO reverse: India is now sending hilsa to Bangladesh",
-    "banglaTitle": "ভারত থেকে বাংলাদেশে ইলিশ আমদানি: উল্টো ছবি",
-    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩.৫২ লাখ কেজির বেশি ইলিশ আমদানি হয়েছে। ভারতীয় মিডিয়া এটিকে 'উল্টো ছবি' বলে উল্লেখ করেছে, কারণ ঐতিহ্যগতভাবে বাংলাদেশ ভারতকে ইলিশ রপ্তানি করত।",
-    "summaryEn": "In the first two months of the fiscal year, Bangladesh imported over 352,000 kg of hilsa from India. Indian media calls it a 'UNO reverse' as Bangladesh traditionally exported hilsa to India.",
-    "keyPointsBn": [
-      "জুলাই-আগস্টে ভারত থেকে ৩.৫২ লাখ কেজি ইলিশ আমদানি",
-      "ঐতিহ্যগতভাবে বাংলাদেশ ভারতকে ইলিশ রপ্তানি করত",
-      "ভারতীয় মিডিয়া এটিকে 'উল্টো ছবি' বলে অভিহিত করেছে"
-    ],
-    "keyPointsEn": [
-      "Bangladesh imports 352,000 kg hilsa from India in July-August",
-      "Traditionally Bangladesh exported hilsa to India",
-      "Indian media calls it a 'UNO reverse'"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া হালকা মেজাজে এই বাণিজ্য পরিবর্তনকে ইতিবাচকভাবে উপস্থাপন করেছে। এটি দ্বিপাক্ষিক বাণিজ্যের স্বাভাবিক প্রবাহের অংশ হিসেবে দেখা হচ্ছে।",
-    "sentimentReasonEn": "Indian media presented the trade shift in a light-hearted, positive manner. It is viewed as part of normal bilateral trade flows.",
-    "source": {
-      "name": "India Today",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14",
-      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
-      "scannedAt": "2026-09-15T08:00:00.000Z"
-    },
-    "publishedAt": "2026-09-14T21:50:17.000Z",
-    "readTimeBn": "১ মিনিট",
-    "readTimeEn": "1 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "hilsa",
-      "trade",
-      "India-Bangladesh",
-      "import"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "6",
-    "slug": "dhaka-university-jinnah-jamaat-photos-row",
-    "title": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
-    "englishTitle": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
-    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি নিয়ে বিতর্ক",
-    "summaryBn": "ঢাকা বিশ্ববিদ্যালয়ের সংগ্রাহশালায় জিন্নাহ ও জামায়াতের সাবেক প্রধান আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক সৃষ্টি হয়েছে। তিনটি কমিটি তদন্ত করছে, যা বাংলাদেশের রাজনৈতিক মেরুকরণের ইঙ্গিত দেয়।",
-    "summaryEn": "A row erupted at Dhaka University over the hanging of photos of Jinnah and former Jamaat chief Abdul Malek in the museum. Three committees are investigating, signaling political polarization in Bangladesh.",
-    "keyPointsBn": [
-      "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক",
-      "তিনটি তদন্ত কমিটি গঠন",
-      "বাংলাদেশের রাজনৈতিক মেরুকরণের ইঙ্গিত"
-    ],
-    "keyPointsEn": [
-      "Row over hanging of Jinnah and Abdul Malek photos at Dhaka University",
-      "Three committees formed to investigate",
-      "Signals political polarization in Bangladesh"
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে বাংলাদেশের অভ্যন্তরীণ রাজনৈতিক অস্থিরতা ও মেরুকরণের লক্ষণ হিসেবে নেতিবাচকভাবে উপস্থাপন করেছে।",
-    "sentimentReasonEn": "Indian media framed the incident negatively as a sign of internal political instability and polarization in Bangladesh.",
-    "source": {
-      "name": "Times of India World",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms",
-      "originalHeadline": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
-      "scannedAt": "2026-09-15T08:00:00.000Z"
-    },
-    "publishedAt": "2026-09-15T07:17:45.000Z",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
-    "tags": [
-      "Dhaka University",
-      "Jinnah",
-      "Jamaat",
-      "Bangladesh politics"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "7",
-    "slug": "hasina-daughter-resigns-who",
-    "title": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
-    "englishTitle": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
-    "banglaTitle": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
-    "summaryBn": "শেখ হাসিনার কন্যা সায়মা ওয়াজেদ ডব্লিউএইচওর দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন। জালিয়াতির অভিযোগ ও জরিমানার মুখে তিনি এই সিদ্ধান্ত নেন।",
-    "summaryEn": "Sheikh Hasina's daughter Saima Wazed has resigned as WHO Regional Director for South-East Asia. She stepped down amid fraud charges and fines.",
-    "keyPointsBn": [
-      "সায়মা ওয়াজেদ ডব্লিউএইচওর আঞ্চলিক প্রধান ছিলেন",
-      "জালিয়াতির অভিযোগ ও জরিমানার মুখে পদত্যাগ",
-      "ভারতীয় মিডিয়া এটিকে হাসিনা পরিবারের সমালোচনা হিসেবে ব্যবহার করছে"
-    ],
-    "keyPointsEn": [
-      "Saima Wazed was WHO Regional Director",
-      "Resigned amid fraud charges and fines",
-      "Indian media uses this to criticize Hasina family"
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে শেখ হাসিনা পরিবারের দুর্নীতির প্রমাণ হিসেবে উপস্থাপন করছে, যা নেতিবাচক।",
-    "sentimentReasonEn": "Indian media presents this as evidence of corruption in the Sheikh Hasina family, which is negative.",
-    "source": {
-      "name": "NDTV",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5",
-      "originalHeadline": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
-      "scannedAt": "2026-09-09T23:18:11Z"
-    },
-    "publishedAt": "2026-09-09T23:18:11Z",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "Sheikh Hasina",
-      "Saima Wazed",
-      "WHO",
-      "resignation"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "8",
-    "slug": "india-bangladesh-ties-tarique-rahman",
-    "title": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
-    "englishTitle": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
-    "banglaTitle": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
-    "summaryBn": "বিশ্লেষকরা বলছেন, তরিক রহমানের নেতৃত্বে ভারত-বাংলাদেশ সম্পর্কের পুনর্গঠন সম্ভব। তবে অতীতের রাজনৈতিক জটিলতা ও নতুন ভূরাজনৈতিক বাস্তবতা বিবেচনায় এটি চ্যালেঞ্জিং।",
-    "summaryEn": "Experts suggest that India-Bangladesh ties could be reset under Tarique Rahman's leadership. However, past political complexities and new geopolitical realities make it challenging.",
-    "keyPointsBn": [
-      "তরিক রহমানের নেতৃত্বে সম্পর্ক পুনর্গঠনের সম্ভাবনা",
-      "অতীতের রাজনৈতিক জটিলতা একটি বাধা",
-      "নতুন ভূরাজনৈতিক বাস্তবতা বিবেচনায় আনতে হবে"
-    ],
-    "keyPointsEn": [
-      "Potential to reset ties under Tarique Rahman",
-      "Past political complexities are a hurdle",
-      "New geopolitical realities must be considered"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া বিশ্লেষণধর্মী প্রতিবেদনে সম্ভাবনা ও চ্যালেঞ্জ উভয়ই তুলে ধরেছে, যা নিরপেক্ষ।",
-    "sentimentReasonEn": "Indian media presents both potential and challenges in an analytical report, which is neutral.",
-    "source": {
-      "name": "The Indian Express",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5",
-      "originalHeadline": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
-      "scannedAt": "2026-09-14T03:16:01Z"
-    },
-    "publishedAt": "2026-09-14T03:16:01Z",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
-    "tags": [
-      "Tarique Rahman",
-      "India-Bangladesh",
-      "diplomacy"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "9",
-    "slug": "bangladesh-hilsa-import-india",
-    "title": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
-    "englishTitle": "Why Bangladesh is importing tonnes of hilsa from India",
-    "banglaTitle": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
-    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩ লাখ ৫২ হাজার ৪৮৪ কেজি ইলিশ আমদানি হয়েছে। স্থানীয় বাজারে ইলিশের ঘাটতি ও দাম বৃদ্ধির কারণে এই আমদানি বেড়েছে।",
-    "summaryEn": "In the first two months of the fiscal year, Bangladesh imported 352,484 kg of hilsa from India. The import has increased due to a shortage and price hike in the local market.",
-    "keyPointsBn": [
-      "জুলাই-আগস্টে ৩.৫২ লাখ কেজি ইলিশ আমদানি",
-      "স্থানীয় বাজারে ইলিশের ঘাটতি ও দাম বৃদ্ধি",
-      "ভারত থেকে আমদানি বেড়েছে"
-    ],
-    "keyPointsEn": [
-      "352,484 kg hilsa imported in July-August",
-      "Shortage and price hike in local market",
-      "Imports from India have increased"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "neutral",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া তথ্যভিত্তিক প্রতিবেদন প্রকাশ করেছে, যা নিরপেক্ষ।",
-    "sentimentReasonEn": "Indian media has published an informative report, which is neutral.",
-    "source": {
-      "name": "BBC Bengali",
-      "bureau": "Delhi",
-      "language": "Bengali",
-      "originalUrl": "https://www.bbc.com/bengali/articles/cmz7znp5477qo?at_medium=RSS&at_campaign=rss",
-      "originalHeadline": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
-      "scannedAt": "2026-09-14T12:22:51Z"
-    },
-    "publishedAt": "2026-09-14T12:22:51Z",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
-    "tags": [
-      "hilsa",
-      "import",
-      "Bangladesh",
-      "India"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "10",
+    "id": "11",
     "slug": "bangladesh-child-marriage-crackdown-bongaon",
     "title": "বনগাঁয় নাবালিকা বিয়ে: মুখ্যমন্ত্রীর নির্দেশে স্বামী-শ্বশুর-শাশুড়ি গ্রেপ্তার",
     "englishTitle": "Bongaon child marriage crackdown: Husband, in-laws arrested after CM's warning",
@@ -566,7 +611,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T15:54:57+05:30",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://tv9bangla.com/photo/1346323.cms",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "child marriage",
       "Bongaon",
@@ -576,7 +621,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "11",
+    "id": "12",
     "slug": "ndtv-bangladesh-minister-recalibration-ties-with-india",
     "title": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
     "englishTitle": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
@@ -622,7 +667,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isTrending": true
   },
   {
-    "id": "12",
+    "id": "13",
     "slug": "india-today-gujarat-bomb-threat-probe-bangladesh-link",
     "title": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
     "englishTitle": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
@@ -668,7 +713,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isTrending": true
   },
   {
-    "id": "13",
+    "id": "14",
     "slug": "india-today-bangladesh-tribunal-seven-awami-league-leaders",
     "title": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
     "englishTitle": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
@@ -713,7 +758,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "14",
+    "id": "15",
     "slug": "india-today-womens-asia-cup-semi-final-india-crush-bangladesh",
     "title": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
     "englishTitle": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
@@ -758,7 +803,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "15",
+    "id": "16",
     "slug": "india-today-india-bangladesh-defence-ties-training-talks",
     "title": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
     "englishTitle": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
@@ -803,7 +848,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "16",
+    "id": "17",
     "slug": "wion-bangladesh-foreign-policy-reset-south-asia",
     "title": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
     "englishTitle": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
@@ -848,7 +893,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "17",
+    "id": "18",
     "slug": "india-today-bangladesh-reset-ties-bilateral-diplomacy",
     "title": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
     "englishTitle": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
@@ -893,7 +938,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "18",
+    "id": "19",
     "slug": "times-now-bangladesh-cross-border-connectivity-security-scrutiny",
     "title": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
     "englishTitle": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
@@ -938,7 +983,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "19",
+    "id": "20",
     "slug": "republic-tv-bangladesh-minority-rights-interim-governance-debate",
     "title": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
     "englishTitle": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
@@ -983,7 +1028,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "20",
+    "id": "21",
     "slug": "abp-ananda-petrapole-benapole-trade-transporter-talks",
     "title": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
     "englishTitle": "Petrapole-Benapole Border Trade: Joint Steps Initiated To Expedite Cargo Movement And Clearance",
@@ -1028,7 +1073,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "21",
+    "id": "22",
     "slug": "bangladesh-india-reset-ties-bilateral-discussions",
     "title": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
     "englishTitle": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
@@ -1114,7 +1159,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Dhaka",
       "Bilateral Ties"
     ],
-    "id": "22",
+    "id": "23",
     "isLeadStory": false
   },
   {
@@ -1159,7 +1204,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Kolkata",
       "Petrapole"
     ],
-    "id": "23",
+    "id": "24",
     "isLeadStory": false
   },
   {
@@ -1204,7 +1249,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Legal",
       "Human Rights"
     ],
-    "id": "24",
+    "id": "25",
     "isLeadStory": false
   },
   {
@@ -1249,7 +1294,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Strategic",
       "Security"
     ],
-    "id": "25",
+    "id": "26",
     "isLeadStory": false
   },
   {
@@ -1294,7 +1339,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Rescue",
       "Ganga"
     ],
-    "id": "26",
+    "id": "27",
     "isLeadStory": false
   },
   {
@@ -1339,7 +1384,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Afghanistan",
       "UAE"
     ],
-    "id": "27",
+    "id": "28",
     "isLeadStory": false
   },
   {
@@ -1384,7 +1429,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "River",
       "Diplomacy"
     ],
-    "id": "28",
+    "id": "29",
     "isLeadStory": false
   },
   {
@@ -1429,7 +1474,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bangladesh Bank",
       "Energy"
     ],
-    "id": "29",
+    "id": "30",
     "isLeadStory": false
   },
   {
@@ -1474,7 +1519,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Logistics"
     ],
-    "id": "30",
+    "id": "31",
     "isLeadStory": false
   },
   {
@@ -1519,7 +1564,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Students",
       "Healthcare"
     ],
-    "id": "31",
+    "id": "32",
     "isLeadStory": false
   },
   {
@@ -1564,7 +1609,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Rural Economy"
     ],
-    "id": "32",
+    "id": "33",
     "isLeadStory": false
   },
   {
@@ -1609,11 +1654,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Culture",
       "Publishers"
     ],
-    "id": "33",
+    "id": "34",
     "isLeadStory": false
   },
   {
-    "id": "34",
+    "id": "35",
     "slug": "madrassas-mushrooming-near-bangladesh-border-giriraj-singh",
     "title": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
     "englishTitle": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
@@ -1654,51 +1699,6 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Security",
       "Madrassas",
       "Giriraj Singh"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "35",
-    "slug": "bangladesh-india-resume-train-ops-october",
-    "title": "Bangladesh and India plan to resume train ops by October",
-    "englishTitle": "Bangladesh and India plan to resume train ops by October",
-    "banglaTitle": "অক্টোবরের মধ্যে ট্রেন চলাচল পুনরায় শুরু করার পরিকল্পনা বাংলাদেশ ও ভারতের",
-    "summaryBn": "বাংলাদেশ ও ভারত অক্টোবরের মধ্যে ট্রেন চলাচল পুনরায় শুরু করার পরিকল্পনা করছে। এই পদক্ষেপ দুই দেশের মধ্যে যোগাযোগ ও বাণিজ্য বৃদ্ধিতে সহায়ক হবে।",
-    "summaryEn": "Bangladesh and India are planning to resume train operations by October. The move is expected to boost connectivity and trade between the two countries, signaling a positive step in bilateral relations.",
-    "keyPointsBn": [
-      "অক্টোবরের মধ্যে ট্রেন চলাচল শুরুর পরিকল্পনা",
-      "যোগাযোগ ও বাণিজ্য বৃদ্ধির সম্ভাবনা",
-      "দ্বিপাক্ষিক সম্পর্কে ইতিবাচক পদক্ষেপ"
-    ],
-    "keyPointsEn": [
-      "Plan to resume train ops by October",
-      "Expected to boost connectivity and trade",
-      "Positive step in bilateral relations"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই পরিকল্পনাকে ইতিবাচক উন্নতি হিসেবে দেখছে, যা দুই দেশের মধ্যে সম্পর্ক স্বাভাবিক করার ইঙ্গিত দেয়। সংবাদে সহযোগিতার দিকটি গুরুত্ব পেয়েছে।",
-    "sentimentReasonEn": "Indian media views the plan as a positive development, indicating normalization of ties. The coverage emphasizes the cooperative aspect.",
-    "source": {
-      "name": "The Times of India",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPdUhTMmFhZGNwUDlVcDc1UDV5b3BmNWw3WVJGZUlYd2tQMlgtZnExNTRzOWViMklsdzY0bFh5a3FRVDBCdVpNZC1oTmJQRjdaWEZDSHBpVWpnVEVMNFRyX0VZR1NZRy1BWDJRczFzRkJtdVNSVjRlUmtKeHR5dUlWOEItcGhlUVNVano5WVpEaWpramdmYmxHajRqemVtSXNRcFlRbThQMWtYUkphdlB0dzdlS0QyRldnQ2JzS1lKdVJ1d3hEZzFHN0VCeVo4VHFO0gHWAUFVX3lxTE5kZ0xtZUdoMTZqY1lHVEtuS2pva0tzQXpWT1VIcWJJUkFHM1plU2lZMXBHMnJrX0RtYlIyZkVhS0dSelExUDl3eGlIb2oyZzdTZDNwUS1SYjNuZjVaaWZMWkl4c3ZZWHFqRVJ4U0FPdzU0eW9VTkwtSDY0Sm5sZ09laDNsYVV4X0FJNldMVjkyLUxkZ2RtcFBBdTZ1aHlmcDI4dDdJVUdnbm8wNDNkeUcyLUpVWVlBS1R5SDl3OUlzZ3FmaVFzVVAtT0dwc3lGZ2tMcEJROUE?oc=5",
-      "originalHeadline": "Bangladesh and India plan to resume train ops by October",
-      "scannedAt": "2026-09-14T20:00:00+05:30"
-    },
-    "publishedAt": "2026-09-07T20:59:00+00:00",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://static.toiimg.com/thumb/msid-12345678,width-1070,height-580,imgsize-123456,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
-    "tags": [
-      "Bangladesh",
-      "India",
-      "Train",
-      "Connectivity",
-      "Trade"
     ],
     "isLeadStory": false
   }
