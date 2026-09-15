@@ -9,7 +9,7 @@ import HeroGrid from '@/components/HeroGrid';
 import SentimentTrackerBar from '@/components/SentimentTrackerBar';
 import ArticleCard from '@/components/ArticleCard';
 import Newsletter from '@/components/Newsletter';
-import { Building2, Globe, Shield, Sparkles } from 'lucide-react';
+import { Building2, Globe, Shield, Sparkles, Archive, ArrowRight } from 'lucide-react';
 
 export default function HomePage() {
   const { lang } = useApp();
@@ -287,7 +287,66 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* 7. Newsletter */}
+      {/* 7. Comprehensive Archive Callout */}
+      <section style={{ padding: '2.5rem 0', borderBottom: '1px solid var(--border-primary)', backgroundColor: 'var(--bg-secondary)' }}>
+        <div className="container">
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '1.5rem',
+            padding: '1.75rem 2rem',
+            backgroundColor: 'var(--bg-primary)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-primary)',
+            boxShadow: 'var(--shadow-sm)',
+          }}>
+            <div style={{ maxWidth: '680px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.4rem' }}>
+                <Archive size={16} style={{ color: 'var(--brand-primary)' }} />
+                <span style={{ fontSize: '0.75rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', letterSpacing: '0.06em' }}>
+                  {t.archive.badge}
+                </span>
+              </div>
+              <h3 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.35rem' }}>
+                {t.archive.exploreArchiveCta}
+              </h3>
+              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', margin: 0 }}>
+                {t.archive.tagline}
+              </p>
+            </div>
+
+            <div>
+              <Link
+                href="/archive"
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.75rem 1.4rem',
+                  borderRadius: 'var(--radius-sm)',
+                  backgroundColor: 'var(--brand-primary)',
+                  color: '#ffffff',
+                  fontSize: '0.88rem',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  whiteSpace: 'nowrap',
+                  boxShadow: 'var(--shadow-sm)',
+                  transition: 'opacity 0.15s ease',
+                }}
+              >
+                <Archive size={16} />
+                {t.archive.viewArchiveBtn}
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. Newsletter */}
       <Newsletter />
     </div>
   );

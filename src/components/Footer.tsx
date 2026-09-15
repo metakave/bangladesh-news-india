@@ -6,7 +6,7 @@ import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
 import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
-import { Globe, Shield, Rss, ArrowUp, Calendar, Bookmark, Moon, Sun } from 'lucide-react';
+import { Globe, Shield, Rss, ArrowUp, Calendar, Bookmark, Moon, Sun, Archive } from 'lucide-react';
 import VisitorCounter from '@/components/VisitorCounter';
 
 export default function Footer() {
@@ -210,6 +210,16 @@ export default function Footer() {
                 >
                   <Globe size={13} />
                   {t.mediaDirectory.navTitle}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/archive"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--brand-primary)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+                >
+                  <Archive size={13} />
+                  {t.archive.navTitle}
                 </Link>
               </li>
             </ul>

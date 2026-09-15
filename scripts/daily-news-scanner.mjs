@@ -616,8 +616,6 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
     for (const oldItem of existingItems) {
       if (!isDuplicate(oldItem)) {
         registerItem(oldItem);
-        oldItem.id = String(mergedList.length + 1);
-        oldItem.isLeadStory = false;
         if (!isValidNewsImage(oldItem.imageUrl)) {
           oldItem.imageUrl = CATEGORY_DEFAULT_IMAGES[oldItem.category] || '/images/bangladesh-ministry-of-foreign-affairs.jpg';
         }
@@ -625,8 +623,22 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
       } else {
         console.log(`⚠️ Removed existing duplicate item: "${oldItem.title}" [${oldItem.source?.name}]`);
       }
-      if (mergedList.length >= 35) break;
+      // Retain up to 500 historical news items in the archive
+      if (mergedList.length >= 500) break;
     }
+
+    // 3. Sort all articles strictly chronologically descending by publishedAt (latest first)
+    mergedList.sort((a, b) => {
+      const timeA = new Date(a.publishedAt).getTime() || 0;
+      const timeB = new Date(b.publishedAt).getTime() || 0;
+      return timeB - timeA;
+    });
+
+    // 4. Re-assign sequential IDs and lead story status (newest item is lead)
+    mergedList.forEach((item, index) => {
+      item.id = String(index + 1);
+      item.isLeadStory = (index === 0);
+    });
 
     const newItemsStr = `export const SCANNED_NEWS_ITEMS: NewsItem[] = ${JSON.stringify(mergedList, null, 2)};\n\nexport const ARTICLES`;
     currentFileContent = currentFileContent.replace(itemsRegex, newItemsStr);

@@ -135,6 +135,32 @@ export const TRANSLATIONS = {
       errorGeneric: 'দুঃখিত, কোনো ত্রুটি হয়েছে। অনুগ্রহ করে পুনরায় চেষ্টা করুন।',
       invalidEmail: 'অনুগ্রহ করে একটি সঠিক ইমেইল ঠিকানা দিন।',
       nameRequired: 'অনুগ্রহ করে আপনার নাম লিখুন।',
+    },
+    archive: {
+      navTitle: 'সংরক্ষণাগার',
+      pageTitle: 'সংবাদ সংরক্ষণাগার ও অতীত কভারেজ',
+      tagline: 'ভারতীয় মূলধারা ও আঞ্চলিক গণমাধ্যমে বাংলাদেশ সংক্রান্ত সংবাদের ঐতিহাসিক সংরক্ষণাগার ও বিশ্লেষণ',
+      badge: 'ঐতিহাসিক মিডিয়া আর্কাইভ',
+      allDates: 'সকল সময়',
+      filterByMonth: 'মাস নির্বাচন করুন',
+      searchPlaceholder: 'সংরক্ষণাগারে প্রতিবেদন খুঁজুন...',
+      totalArchived: 'টি সংরক্ষিত প্রতিবেদন',
+      showingPage: 'পৃষ্ঠা',
+      of: 'এর',
+      previous: 'পূর্ববর্তী',
+      next: 'পরবর্তী',
+      noResults: 'এই ফিল্টারে কোনো সংরক্ষিত সংবাদ পাওয়া যায়নি।',
+      clearFilters: 'ফিল্টার রিসেট করুন',
+      exploreArchiveCta: 'অতীতের সংবাদ ও বয়ান খুঁজছেন? আমাদের সম্পূর্ণ সংবাদ সংরক্ষণাগার ঘুরে দেখুন',
+      viewArchiveBtn: 'সম্পূর্ণ সংরক্ষণাগার দেখুন'
+    },
+    pagination: {
+      previous: 'পূর্ববর্তী',
+      next: 'পরবর্তী',
+      page: 'পৃষ্ঠা',
+      of: 'এর',
+      showing: 'প্রদর্শিত হচ্ছে',
+      results: 'টি প্রতিবেদন'
     }
   },
   en: {
@@ -273,6 +299,32 @@ export const TRANSLATIONS = {
       errorGeneric: 'An error occurred. Please try again.',
       invalidEmail: 'Please enter a valid email address.',
       nameRequired: 'Please enter your full name.',
+    },
+    archive: {
+      navTitle: 'Archive',
+      pageTitle: 'News Archive & Past Coverage',
+      tagline: 'Comprehensive historical repository of Indian media intelligence and coverage on Bangladesh',
+      badge: 'Historical Media Archive',
+      allDates: 'All Dates',
+      filterByMonth: 'Select Month',
+      searchPlaceholder: 'Search archive by headline or topic...',
+      totalArchived: 'Archived Reports',
+      showingPage: 'Page',
+      of: 'of',
+      previous: 'Previous',
+      next: 'Next',
+      noResults: 'No archived reports match your selected criteria.',
+      clearFilters: 'Reset Filters',
+      exploreArchiveCta: 'Looking for past coverage and narrative trends? Explore our comprehensive News Archive',
+      viewArchiveBtn: 'Explore Complete Archive'
+    },
+    pagination: {
+      previous: 'Previous',
+      next: 'Next',
+      page: 'Page',
+      of: 'of',
+      showing: 'Showing',
+      results: 'reports'
     }
   }
 };
