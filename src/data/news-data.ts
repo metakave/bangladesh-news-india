@@ -111,7 +111,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   },
   {
     "id": "alert-003",
-    "headlineBn": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "headlineBn": "তারেক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
     "headlineEn": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
     "timeAgoBn": "১ দিন আগে",
     "timeAgoEn": "1 day ago",
@@ -1305,13 +1305,13 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
     "id": "27",
     "slug": "india-bangladesh-ties-tarique-rahman",
-    "title": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "title": "তারেক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
     "englishTitle": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
-    "banglaTitle": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
-    "summaryBn": "বিশেষজ্ঞদের মতে, তরিক রহমানের নেতৃত্বে ভারত-বাংলাদেশ সম্পর্কের নতুন অধ্যায় শুরু হতে পারে। তবে অতীতের রাজনৈতিক জটিলতা বিবেচনায় সতর্কতা প্রয়োজন।",
+    "banglaTitle": "তারেক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
+    "summaryBn": "বিশেষজ্ঞদের মতে, তারেক রহমানের নেতৃত্বে ভারত-বাংলাদেশ সম্পর্কের নতুন অধ্যায় শুরু হতে পারে। তবে অতীতের রাজনৈতিক জটিলতা বিবেচনায় সতর্কতা প্রয়োজন।",
     "summaryEn": "Experts suggest that under Tarique Rahman's leadership, India-Bangladesh relations could see a new chapter. However, past political complexities warrant caution.",
     "keyPointsBn": [
-      "তরিক রহমানের নেতৃত্বে সম্পর্ক পুনর্গঠনের সম্ভাবনা",
+      "তারেক রহমানের নেতৃত্বে সম্পর্ক পুনর্গঠনের সম্ভাবনা",
       "অতীতের রাজনৈতিক জটিলতা ও সতর্কতা",
       "ভারতীয় বিশ্লেষকরা সম্ভাবনার দিকটি তুলে ধরেছেন"
     ],

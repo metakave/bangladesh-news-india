@@ -315,6 +315,12 @@ CRITICAL RELEVANCE & ANTI-FALSE-POSITIVE RULES:
 2. STRICTLY REJECT and EXCLUDE any story that is purely an internal Indian or West Bengal state/local domestic incident (such as domestic crimes, local police arrests, child marriages, civic affairs, municipal issues, local political disputes between Indian parties like TMC vs BJP) even if it took place in a border district (like Bongaon, Petrapole, Siliguri, North 24 Parganas, Malda) or was reported in Bengali. If it is not about the country of Bangladesh, IT IS A FALSE POSITIVE AND MUST BE DISCARDED.
 3. NEVER fabricate or hallucinate a connection to Bangladesh if the source article does not explicitly concern Bangladesh.
 
+EDITORIAL TRANSLATION & NAMING RULES:
+1. For any news on Tarique Rahman (whether referred to as Tarique Rahman, Tariq Rahman, Tarique Zia, etc.):
+   - When translated into Bengali (in title, banglaTitle, summaryBn, keyPointsBn, sentimentReasonBn, headlineBn, tags):
+     Translation MUST ALWAYS BE: "তারেক রহমান" (NEVER "তরিক রহমান" or "তারিক রহমান").
+   - If the news is originally published in Bengali (e.g. from Kolkata outlets like Anandabazar, Sangbad Pratidin, ABP Ananda, Bartaman): Keep it as is in original Bengali wording.
+
 Categories must be one of: "diplomacy" | "trade" | "border" | "politics" | "economy" | "sports" | "culture"
 CategoryLabelBn:
 - diplomacy -> 'কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক'
@@ -530,11 +536,33 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
   const rawContent = deepseekData.choices?.[0]?.message?.content;
   const parsedAiResult = cleanAndParseJson(rawContent);
 
-  // Validate array structures to prevent downstream runtime errors
+  // Programmatic enforcement of translation rules for Tarique Rahman:
+  // When translated into Bengali, ensure "তারেক রহমান" is used.
+  // If the news was originally in Bengali, keep it as is.
+  const normalizeTariqueTranslation = (text) => {
+    if (typeof text !== 'string') return text;
+    return text.replace(/তরিক\s*রহমান/g, 'তারেক রহমান')
+               .replace(/তারিক\s*রহমান/g, 'তারেক রহমান');
+  };
+
+  // Validate array structures and enforce translation rules
   if (Array.isArray(parsedAiResult.newScannedItems)) {
     parsedAiResult.newScannedItems = parsedAiResult.newScannedItems.filter(item => 
       item && typeof item === 'object' && item.title && (item.summaryBn || item.summaryEn)
-    );
+    ).map(item => {
+      const isOriginalBengali = (item.source?.language || '').toLowerCase() === 'bengali';
+      if (!isOriginalBengali) {
+        // Enforce Tarique Rahman translation on translated Bengali fields
+        if (item.title) item.title = normalizeTariqueTranslation(item.title);
+        if (item.banglaTitle) item.banglaTitle = normalizeTariqueTranslation(item.banglaTitle);
+        if (item.summaryBn) item.summaryBn = normalizeTariqueTranslation(item.summaryBn);
+        if (item.sentimentReasonBn) item.sentimentReasonBn = normalizeTariqueTranslation(item.sentimentReasonBn);
+        if (Array.isArray(item.keyPointsBn)) {
+          item.keyPointsBn = item.keyPointsBn.map(normalizeTariqueTranslation);
+        }
+      }
+      return item;
+    });
   } else {
     parsedAiResult.newScannedItems = [];
   }
@@ -558,11 +586,17 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
   }
 
   if (parsedAiResult.breakingAlerts && parsedAiResult.breakingAlerts.length > 0) {
-    // Keep top verified URLs
-    const safeAlerts = parsedAiResult.breakingAlerts.map(a => ({
-      ...a,
-      url: a.url && a.url.startsWith('http') ? a.url : 'https://www.thehindu.com/news/international/'
-    }));
+    // Keep top verified URLs and enforce translation rules
+    const safeAlerts = parsedAiResult.breakingAlerts.map(a => {
+      let alert = {
+        ...a,
+        url: a.url && a.url.startsWith('http') ? a.url : 'https://www.thehindu.com/news/international/'
+      };
+      if (alert.headlineBn) {
+        alert.headlineBn = normalizeTariqueTranslation(alert.headlineBn);
+      }
+      return alert;
+    });
     const alertsStr = `export const BREAKING_NEWS_ALERTS: BreakingAlert[] = ${JSON.stringify(safeAlerts, null, 2)};`;
     currentFileContent = currentFileContent.replace(/export const BREAKING_NEWS_ALERTS: BreakingAlert\[\] = \[[\s\S]*?\];/, alertsStr);
   }
