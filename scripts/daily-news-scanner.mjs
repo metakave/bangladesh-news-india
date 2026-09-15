@@ -108,10 +108,10 @@ const BANGLADESH_KEYWORDS = [
 ];
 
 const CATEGORY_DEFAULT_IMAGES = {
-  diplomacy: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80',
+  diplomacy: '/images/bangladesh-ministry-of-foreign-affairs.jpg',
   trade: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80',
   border: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80',
-  politics: 'https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=1200&auto=format&fit=crop&q=80',
+  politics: '/images/bangabhaban-presidential-palace-dhaka.jpg',
   economy: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80',
   sports: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80',
   culture: 'https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200&auto=format&fit=crop&q=80'
@@ -322,10 +322,102 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
   ]
 }`;
 
-  // Select diverse and relevant top candidate items to send to the AI
-  const sampleCandidates = matchedArticles.slice(0, 25).map(m => ({
+  /**
+   * Resilient self-healing JSON parser for LLM outputs.
+   * Handles markdown code blocks, trailing commas, and token-truncated JSON strings/arrays.
+   */
+  function cleanAndParseJson(rawContent) {
+    if (!rawContent || typeof rawContent !== 'string') {
+      throw new Error('Empty or invalid response received from DeepSeek');
+    }
+
+    let cleaned = rawContent.trim();
+    if (cleaned.startsWith('```')) {
+      cleaned = cleaned.replace(/^```(?:json)?\s*\n?/i, '').replace(/\n?```\s*$/i, '').trim();
+    }
+
+    // 1. Attempt direct parse
+    try {
+      return JSON.parse(cleaned);
+    } catch (err1) {
+      console.warn(`⚠️ Direct JSON.parse failed (${err1.message}). Attempting self-healing repair...`);
+    }
+
+    // 2. Remove trailing commas before closing braces/brackets
+    let repaired = cleaned.replace(/,\s*([\]}])/g, '$1');
+    try {
+      return JSON.parse(repaired);
+    } catch (err2) {
+      // Continue to boundary walk
+    }
+
+    // 3. Self-healing boundary walk for truncated JSON:
+    // Walks backwards from the end, balancing open quotes, braces, and brackets
+    for (let i = repaired.length - 1; i > 0; i--) {
+      const char = repaired[i];
+      if (char === '}' || char === ']' || char === '"' || char === ',') {
+        let candidate = repaired.substring(0, i + 1);
+        if (char === ',') candidate = candidate.slice(0, -1);
+
+        let inString = false;
+        let escaped = false;
+        let openBrackets = 0;
+        let openBraces = 0;
+
+        for (let j = 0; j < candidate.length; j++) {
+          const c = candidate[j];
+          if (escaped) {
+            escaped = false;
+            continue;
+          }
+          if (c === '\\') {
+            escaped = true;
+            continue;
+          }
+          if (c === '"') {
+            inString = !inString;
+            continue;
+          }
+          if (!inString) {
+            if (c === '{') openBraces++;
+            else if (c === '}') openBraces--;
+            else if (c === '[') openBrackets++;
+            else if (c === ']') openBrackets--;
+          }
+        }
+
+        if (inString) {
+          candidate += '"';
+        }
+
+        while (openBrackets > 0) {
+          candidate += ']';
+          openBrackets--;
+        }
+        while (openBraces > 0) {
+          candidate += '}';
+          openBraces--;
+        }
+
+        candidate = candidate.replace(/,\s*([\]}])/g, '$1');
+
+        try {
+          const parsed = JSON.parse(candidate);
+          console.log(`✅ Self-healing parser successfully recovered truncated JSON (original: ${cleaned.length} chars, recovered: ${candidate.length} chars)`);
+          return parsed;
+        } catch (e) {
+          // Keep seeking backwards for next clean boundary
+        }
+      }
+    }
+
+    throw new Error(`Unable to recover JSON from AI response (${cleaned.length} characters).`);
+  }
+
+  // Select diverse and relevant top candidate items to send to the AI (optimized to prevent context bloat)
+  const sampleCandidates = matchedArticles.slice(0, 16).map(m => ({
     title: m.title,
-    description: m.desc.slice(0, 160),
+    description: (m.desc || '').slice(0, 120),
     sourceName: m.sourceName,
     bureau: m.sourceBureau,
     language: m.sourceLanguage,
@@ -336,8 +428,9 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
   const userPrompt = `Here are the latest candidate articles scanned from Indian media (${matchedArticles.length} total matches found):\n` +
     (sampleCandidates.length > 0 
       ? JSON.stringify(sampleCandidates, null, 2)
-      : 'No direct RSS matches in this cycle. Please generate 6 top realistic current news items reflecting ongoing major Indian media coverage on Bangladesh.') +
-    `\n\nPlease output 6-8 comprehensive, synthesized news items and 4 breaking alerts in the required JSON format reflecting the most critical Bangladesh and Dhaka developments reported by Indian media.
+      : 'No direct RSS matches in this cycle. Please generate 5 top realistic current news items reflecting ongoing major Indian media coverage on Bangladesh.') +
+    `\n\nPlease output 4-6 high-impact synthesized news items and 4 breaking alerts in the required JSON format reflecting the most critical Bangladesh and Dhaka developments reported by Indian media.
+Keep summaries concise (2-3 sentences max) and keyPoints to 3 clear bullets each to ensure complete and valid output within token limits.
 Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
 
   const deepseekRes = await fetch('https://api.deepseek.com/chat/completions', {
@@ -353,6 +446,7 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         { role: 'user', content: userPrompt }
       ],
       temperature: 0.2,
+      max_tokens: 8192,
       response_format: { type: 'json_object' }
     })
   });
@@ -363,10 +457,23 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
   }
 
   const deepseekData = await deepseekRes.json();
-  const rawContent = deepseekData.choices[0].message.content;
-  const parsedAiResult = JSON.parse(rawContent);
+  const rawContent = deepseekData.choices?.[0]?.message?.content;
+  const parsedAiResult = cleanAndParseJson(rawContent);
 
-  console.log(`✨ DeepSeek successfully analyzed and structured ${parsedAiResult.newScannedItems?.length || 0} news stories and ${parsedAiResult.breakingAlerts?.length || 0} alerts.`);
+  // Validate array structures to prevent downstream runtime errors
+  if (Array.isArray(parsedAiResult.newScannedItems)) {
+    parsedAiResult.newScannedItems = parsedAiResult.newScannedItems.filter(item => 
+      item && typeof item === 'object' && item.title && (item.summaryBn || item.summaryEn)
+    );
+  } else {
+    parsedAiResult.newScannedItems = [];
+  }
+
+  if (!Array.isArray(parsedAiResult.breakingAlerts)) {
+    parsedAiResult.breakingAlerts = [];
+  }
+
+  console.log(`✨ DeepSeek successfully analyzed and structured ${parsedAiResult.newScannedItems.length} news stories and ${parsedAiResult.breakingAlerts.length} alerts.`);
 
   console.log('\n💾 Step 3: Updating src/data/news-data.ts...');
   const newsDataPath = path.join(rootDir, 'src', 'data', 'news-data.ts');
@@ -467,7 +574,7 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
           item.isLeadStory = false;
         }
         if (!item.imageUrl || (!item.imageUrl.startsWith('http') && !item.imageUrl.startsWith('/'))) {
-          item.imageUrl = CATEGORY_DEFAULT_IMAGES[item.category] || '/images/delhi-dhaka-bilateral-summit.jpg';
+          item.imageUrl = CATEGORY_DEFAULT_IMAGES[item.category] || '/images/bangladesh-ministry-of-foreign-affairs.jpg';
         }
         mergedList.push(item);
       } else {
