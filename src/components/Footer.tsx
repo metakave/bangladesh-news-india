@@ -252,7 +252,7 @@ export default function Footer() {
             </h4>
             <ul
               className={lang === 'bn' ? 'font-bengali' : ''}
-              style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', fontSize: '0.8rem' }}
+              style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}
             >
               <li>
                 <Link
@@ -263,9 +263,33 @@ export default function Footer() {
                   {t.aboutUs.pageTitle}
                 </Link>
               </li>
-              <li><a href="#ethics" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Code of Ethics'}</a></li>
-              <li><a href="#corrections" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সংশোধনী ও স্পষ্টীকরণ' : 'Corrections & Clarifications'}</a></li>
-              <li><a href="#factcheck" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'তথ্য যাচাই নীতিমালা' : 'Fact-Checking Policy'}</a></li>
+              <li>
+                <a
+                  href="#ethics"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--text-secondary)' }}
+                >
+                  {lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Code of Ethics'}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#corrections"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--text-secondary)' }}
+                >
+                  {lang === 'bn' ? 'সংশোধনী ও স্পষ্টীকরণ' : 'Corrections & Clarifications'}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#factcheck"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--text-secondary)' }}
+                >
+                  {lang === 'bn' ? 'তথ্য যাচাই নীতিমালা' : 'Fact-Checking Policy'}
+                </a>
+              </li>
             </ul>
           </div>
         </div>
