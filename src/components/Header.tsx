@@ -39,13 +39,21 @@ export default function Header() {
       <div className="top-utility-bar" style={{
         borderBottom: '1px solid var(--border-primary)',
         padding: '0.45rem 0',
-        fontSize: '0.78rem',
+        fontSize: lang === 'bn' ? '0.78rem' : '0.85rem',
         color: 'var(--text-secondary)'
       }}>
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           {/* Desktop Left: Date */}
           <div className="desktop-date-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-            <span style={{ fontWeight: 600 }} className={lang === 'bn' ? 'font-bengali' : ''}>{today}</span>
+            <span
+              style={{
+                fontWeight: 600,
+                fontSize: lang === 'bn' ? '0.78rem' : '0.85rem',
+              }}
+              className={lang === 'bn' ? 'font-bengali' : ''}
+            >
+              {today}
+            </span>
           </div>
 
           {/* Mobile Left: Quick Search Button (covers 33% width) */}
@@ -63,14 +71,22 @@ export default function Header() {
                 padding: '0.24rem 0.5rem',
                 borderRadius: 'var(--radius-sm)',
                 border: '1px solid var(--border-primary)',
-                fontSize: '0.74rem',
+                fontSize: lang === 'bn' ? '0.74rem' : '0.80rem',
                 fontWeight: 600,
                 textAlign: 'left',
                 cursor: 'pointer',
               }}
             >
               <Search size={13} style={{ color: 'var(--brand-primary)', flexShrink: 0 }} />
-              <span className="font-bengali" style={{ fontSize: '0.74rem', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+              <span
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  fontSize: lang === 'bn' ? '0.74rem' : '0.80rem',
+                  overflow: 'hidden',
+                  textOverflow: 'ellipsis',
+                  whiteSpace: 'nowrap',
+                }}
+              >
                 {lang === 'bn' ? 'অনুসন্ধান' : 'Search'}
               </span>
             </button>
@@ -105,7 +121,7 @@ export default function Header() {
                 onClick={() => setLang('en')}
                 style={{
                   padding: '0.2rem 0.55rem',
-                  fontSize: '0.75rem',
+                  fontSize: '0.82rem',
                   fontWeight: lang === 'en' ? 800 : 600,
                   color: lang === 'en' ? '#ffffff' : 'var(--text-secondary)',
                   backgroundColor: lang === 'en' ? 'var(--brand-primary)' : 'transparent',
@@ -128,11 +144,18 @@ export default function Header() {
                 padding: '0.25rem 0.65rem',
                 borderRadius: 'var(--radius-sm)',
                 border: '1px solid var(--border-primary)',
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? '0.75rem' : '0.82rem',
               }}
             >
               <Search size={13} />
-              <span className="search-text font-bengali">{t.searchPlaceholder}</span>
+              <span
+                className={`search-text ${lang === 'bn' ? 'font-bengali' : ''}`}
+                style={{
+                  fontSize: lang === 'bn' ? '0.75rem' : '0.82rem',
+                }}
+              >
+                {t.searchPlaceholder}
+              </span>
               <kbd style={{
                 backgroundColor: 'var(--bg-primary)',
                 padding: '0.1rem 0.35rem',
@@ -179,7 +202,7 @@ export default function Header() {
                   border: '1px solid var(--border-primary)',
                   borderRadius: 'var(--radius-sm)',
                   padding: '0.2rem 1.35rem 0.2rem 1.45rem',
-                  fontSize: '0.74rem',
+                  fontSize: lang === 'bn' ? '0.74rem' : '0.80rem',
                   fontWeight: 700,
                   cursor: 'pointer',
                   outline: 'none',
