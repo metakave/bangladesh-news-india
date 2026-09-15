@@ -95,24 +95,29 @@ export default function Header() {
           {/* Desktop Right: Full Controls */}
           <div className="desktop-controls-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
             {/* Desktop Language Switcher Button */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              backgroundColor: 'var(--bg-secondary)',
-              borderRadius: 'var(--radius-sm)',
-              border: '1px solid var(--border-primary)',
-              overflow: 'hidden',
-            }}>
+            <div
+              className="desktop-lang-switcher"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                backgroundColor: 'var(--bg-secondary)',
+                borderRadius: 'var(--radius-sm)',
+                border: '1px solid var(--border-primary)',
+                overflow: 'hidden',
+              }}
+            >
               <button
                 onClick={() => setLang('bn')}
                 className="font-bengali"
                 style={{
-                  padding: '0.2rem 0.55rem',
-                  fontSize: '0.78rem',
-                  lineHeight: 1.2,
+                  padding: '4px 9px',
+                  fontSize: '13px',
+                  lineHeight: '18px',
                   fontWeight: lang === 'bn' ? 800 : 600,
                   color: lang === 'bn' ? '#ffffff' : 'var(--text-secondary)',
                   backgroundColor: lang === 'bn' ? 'var(--brand-primary)' : 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
                   transition: 'all 0.15s ease',
                 }}
               >
@@ -121,12 +126,14 @@ export default function Header() {
               <button
                 onClick={() => setLang('en')}
                 style={{
-                  padding: '0.2rem 0.55rem',
-                  fontSize: '0.78rem',
-                  lineHeight: 1.2,
+                  padding: '4px 9px',
+                  fontSize: '13px',
+                  lineHeight: '18px',
                   fontWeight: lang === 'en' ? 800 : 600,
                   color: lang === 'en' ? '#ffffff' : 'var(--text-secondary)',
                   backgroundColor: lang === 'en' ? 'var(--brand-primary)' : 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
                   transition: 'all 0.15s ease',
                 }}
               >
@@ -572,6 +579,11 @@ export default function Header() {
 
         .mobile-drawer-panel {
           animation: slideInRight 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .desktop-lang-switcher button {
+          font-size: 13px !important;
+          line-height: 18px !important;
         }
 
         @media (max-width: 850px) {

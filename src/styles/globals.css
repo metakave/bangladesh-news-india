@@ -251,3 +251,9 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--text-muted);
 }
+
+/* Fixed pixel sizing for desktop language switcher to keep font size identical in both versions */
+.desktop-lang-switcher button {
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
