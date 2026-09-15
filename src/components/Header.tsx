@@ -258,7 +258,7 @@ export default function Header() {
                 <h1
                   className={`${lang === 'bn' ? 'font-bengali' : 'font-masthead'} site-title-h1`}
                   style={{
-                    fontSize: lang === 'bn' ? 'calc(clamp(1.75rem, 5.2vw, 3.5rem) - 3pt)' : 'calc(clamp(1.75rem, 5vw, 3.4rem) + 1pt)',
+                    fontSize: lang === 'bn' ? 'calc(clamp(1.75rem, 5.2vw, 3.5rem) - 4pt)' : 'calc(clamp(1.75rem, 5vw, 3.4rem) + 1pt)',
                     fontWeight: lang === 'bn' ? 600 : 900,
                     lineHeight: 1.1,
                     letterSpacing: lang === 'bn' ? '0' : '0.08em',
@@ -276,7 +276,7 @@ export default function Header() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: lang === 'bn' ? '0.88rem' : '0.82rem',
+                  fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.82rem',
                   letterSpacing: lang === 'bn' ? '0' : '0.12em',
                   color: 'var(--color-tagline)',
                   fontWeight: 700
@@ -312,7 +312,7 @@ export default function Header() {
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 fontWeight: pathname === '/' ? 800 : 600,
-                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
+                fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
                 color: pathname === '/' ? 'var(--brand-primary)' : 'var(--text-primary)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.05em',
@@ -332,7 +332,7 @@ export default function Header() {
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{
                     fontWeight: active ? 800 : 600,
-                    fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
+                    fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
                     color: active ? 'var(--brand-primary)' : 'var(--text-primary)',
                     textTransform: lang === 'bn' ? 'none' : 'uppercase',
                     letterSpacing: lang === 'bn' ? '0' : '0.05em',
@@ -350,7 +350,7 @@ export default function Header() {
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 fontWeight: pathname === '/bangladesh-indian-news-media' ? 800 : 600,
-                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
+                fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
                 color: pathname === '/bangladesh-indian-news-media' ? 'var(--brand-primary)' : 'var(--text-primary)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.05em',
@@ -374,7 +374,7 @@ export default function Header() {
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 fontWeight: pathname === '/archive' ? 800 : 600,
-                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
+                fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
                 color: pathname === '/archive' ? 'var(--brand-primary)' : 'var(--text-primary)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.05em',
@@ -433,7 +433,7 @@ export default function Header() {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.5rem' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <NarrativeCompassLogo size={26} />
-                <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.35rem - 3pt)' : 'calc(1.35rem + 1pt)', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
+                <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: lang === 'bn' ? 'calc(1.35rem - 4pt)' : 'calc(1.35rem + 1pt)', fontWeight: 900, color: 'var(--brand-primary)', margin: 0 }}>
                   {t.siteTitle}
                 </h2>
               </div>
@@ -457,7 +457,7 @@ export default function Header() {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', borderBottom: '1px solid var(--border-primary)', paddingBottom: '1.5rem', marginBottom: '1.5rem', flex: 1 }}>
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
+              <Link href="/" onClick={() => setMobileMenuOpen(false)} className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontWeight: 700, fontSize: lang === 'bn' ? 'calc(1rem - 1pt)' : '1rem', color: 'var(--text-primary)' }}>
                 {t.allScans}
               </Link>
               {CATEGORIES.map((cat) => (
@@ -465,8 +465,8 @@ export default function Header() {
                   key={cat.slug}
                   href={`/category/${cat.slug}`}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="font-bengali"
-                  style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-secondary)' }}
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ fontWeight: 600, fontSize: lang === 'bn' ? 'calc(0.95rem - 1pt)' : '0.95rem', color: 'var(--text-secondary)' }}
                 >
                   {lang === 'bn' ? cat.labelBn : cat.labelEn}
                 </Link>
@@ -474,8 +474,8 @@ export default function Header() {
               <Link
                 href="/bangladesh-indian-news-media"
                 onClick={() => setMobileMenuOpen(false)}
-                className="font-bengali"
-                style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--brand-gold)', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{ fontWeight: 700, fontSize: lang === 'bn' ? 'calc(0.95rem - 1pt)' : '0.95rem', color: 'var(--brand-gold)', display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}
               >
                 <Globe size={15} />
                 {t.mediaDirectory.navTitle}
@@ -483,10 +483,10 @@ export default function Header() {
               <Link
                 href="/archive"
                 onClick={() => setMobileMenuOpen(false)}
-                className="font-bengali"
+                className={lang === 'bn' ? 'font-bengali' : ''}
                 style={{
                   fontWeight: pathname === '/archive' ? 800 : 600,
-                  fontSize: '0.95rem',
+                  fontSize: lang === 'bn' ? 'calc(0.95rem - 1pt)' : '0.95rem',
                   color: pathname === '/archive' ? 'var(--brand-primary)' : 'var(--text-primary)',
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -496,7 +496,7 @@ export default function Header() {
                 <Archive size={15} />
                 {t.archive.navTitle}
               </Link>
-              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="font-bengali" style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-secondary)' }}>
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontWeight: 600, fontSize: lang === 'bn' ? 'calc(0.95rem - 1pt)' : '0.95rem', color: 'var(--text-secondary)' }}>
                 {t.aboutUs.pageTitle}
               </Link>
             </div>
@@ -597,7 +597,7 @@ export default function Header() {
             flex-shrink: 0 !important;
           }
           .site-title-h1.font-bengali {
-            font-size: calc(clamp(1.4rem, 5.5vw, 2.1rem)) !important;
+            font-size: calc(clamp(1.4rem, 5.5vw, 2.1rem) - 1pt) !important;
             white-space: nowrap !important;
           }
           .site-title-h1.font-masthead {

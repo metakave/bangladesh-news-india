@@ -56,7 +56,7 @@ export default function SentimentTrackerBar({
             <span
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
-                fontSize: '0.82rem',
+                fontSize: lang === 'bn' ? 'calc(0.82rem - 1pt)' : '0.82rem',
                 fontWeight: 800,
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.06em',
@@ -70,7 +70,13 @@ export default function SentimentTrackerBar({
           {/* Aggregate Sentiment Ratio Pulse */}
           <div
             className={lang === 'bn' ? 'font-bengali' : ''}
-            style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.75rem', fontWeight: 700 }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem',
+              fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
+              fontWeight: 700
+            }}
           >
             <span style={{ color: '#15803d' }}>● {posPct}% {t.positiveMarker}</span>
             <span style={{ color: 'var(--text-muted)' }}>|</span>
@@ -109,7 +115,7 @@ export default function SentimentTrackerBar({
             <span
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
-                fontSize: '0.74rem',
+                fontSize: lang === 'bn' ? 'calc(0.74rem - 1pt)' : '0.74rem',
                 fontWeight: 700,
                 color: 'var(--text-muted)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
@@ -124,7 +130,7 @@ export default function SentimentTrackerBar({
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 padding: '0.35rem 0.75rem',
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
                 fontWeight: selectedSentiment === 'all' ? 800 : 600,
                 color: selectedSentiment === 'all' ? '#ffffff' : 'var(--text-primary)',
                 backgroundColor: selectedSentiment === 'all' ? 'var(--brand-primary)' : 'var(--bg-secondary)',
@@ -145,7 +151,7 @@ export default function SentimentTrackerBar({
                 alignItems: 'center',
                 gap: '0.35rem',
                 padding: '0.35rem 0.75rem',
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
                 fontWeight: selectedSentiment === 'positive' ? 800 : 600,
                 color: selectedSentiment === 'positive' ? '#ffffff' : '#22c55e',
                 backgroundColor: selectedSentiment === 'positive' ? '#16a34a' : 'rgba(34, 197, 94, 0.12)',
@@ -166,7 +172,7 @@ export default function SentimentTrackerBar({
                 alignItems: 'center',
                 gap: '0.35rem',
                 padding: '0.35rem 0.75rem',
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
                 fontWeight: selectedSentiment === 'neutral' ? 800 : 600,
                 color: selectedSentiment === 'neutral' ? '#ffffff' : 'var(--text-secondary)',
                 backgroundColor: selectedSentiment === 'neutral' ? 'var(--brand-accent)' : 'var(--bg-secondary)',
@@ -187,7 +193,7 @@ export default function SentimentTrackerBar({
                 alignItems: 'center',
                 gap: '0.35rem',
                 padding: '0.35rem 0.75rem',
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
                 fontWeight: selectedSentiment === 'negative' ? 800 : 600,
                 color: selectedSentiment === 'negative' ? '#ffffff' : '#f87171',
                 backgroundColor: selectedSentiment === 'negative' ? '#dc2626' : 'rgba(220, 38, 38, 0.12)',
@@ -212,7 +218,7 @@ export default function SentimentTrackerBar({
                 className={lang === 'bn' ? 'font-bengali' : ''}
                 style={{
                   padding: '0.3rem 0.6rem',
-                  fontSize: '0.75rem',
+                  fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
                   fontWeight: 600,
                   backgroundColor: 'var(--bg-secondary)',
                   color: 'var(--text-primary)',
@@ -234,7 +240,7 @@ export default function SentimentTrackerBar({
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 padding: '0.3rem 0.6rem',
-                fontSize: '0.75rem',
+                fontSize: lang === 'bn' ? 'calc(0.75rem - 1pt)' : '0.75rem',
                 fontWeight: 600,
                 backgroundColor: 'var(--bg-secondary)',
                 color: 'var(--text-primary)',
@@ -243,10 +249,10 @@ export default function SentimentTrackerBar({
                 outline: 'none',
               }}
             >
-              <option value="all">{t.allLanguages}</option>
-              <option value="English">{t.englishMedia}</option>
-              <option value="Bengali">{t.bengaliMedia}</option>
-              <option value="Hindi">{t.hindiMedia}</option>
+                <option value="all">{t.allLanguages}</option>
+                <option value="English">{t.englishMedia}</option>
+                <option value="Bengali">{t.bengaliMedia}</option>
+                <option value="Hindi">{t.hindiMedia}</option>
             </select>
           </div>
         </div>
