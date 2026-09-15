@@ -567,13 +567,14 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         registerItem(item);
         item.id = String(mergedList.length + 1);
         if (!item.source) item.source = {};
-        item.source.scannedAt = item.source.scannedAt && !item.source.scannedAt.includes('ago') ? item.source.scannedAt : scanTimestamp;
+        item.source.scannedAt = normalizeIsoDate(item.source.scannedAt || scanTimestamp);
+        item.publishedAt = normalizeIsoDate(item.publishedAt || scanTimestamp);
         if (mergedList.length === 0) {
           item.isLeadStory = true;
         } else {
           item.isLeadStory = false;
         }
-        if (!item.imageUrl || (!item.imageUrl.startsWith('http') && !item.imageUrl.startsWith('/'))) {
+        if (!item.imageUrl || (!item.imageUrl.startsWith('http') && !item.imageUrl.startsWith('/')) || item.imageUrl.includes('123456') || item.imageUrl.includes('.cms') || item.imageUrl.includes('example.com')) {
           item.imageUrl = CATEGORY_DEFAULT_IMAGES[item.category] || '/images/bangladesh-ministry-of-foreign-affairs.jpg';
         }
         mergedList.push(item);

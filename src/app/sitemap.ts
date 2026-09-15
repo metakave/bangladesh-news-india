@@ -37,12 +37,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Article routes
-  const articleRoutes: MetadataRoute.Sitemap = SCANNED_NEWS_ITEMS.map((item) => ({
-    url: `${SITE_URL}/article/${item.slug}`,
-    lastModified: new Date(item.publishedAt),
-    changeFrequency: 'weekly',
-    priority: item.isLeadStory ? 0.95 : 0.8,
-  }));
+  const articleRoutes: MetadataRoute.Sitemap = SCANNED_NEWS_ITEMS.map((item) => {
+    const parsedDate = new Date(item.publishedAt);
+    const lastModified = isNaN(parsedDate.getTime()) ? now : parsedDate;
+    return {
+      url: `${SITE_URL}/article/${item.slug}`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: item.isLeadStory ? 0.95 : 0.8,
+    };
+  });
 
   return [...staticRoutes, ...categoryRoutes, ...articleRoutes];
 }

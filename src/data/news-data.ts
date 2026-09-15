@@ -252,12 +252,12 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "language": "English",
       "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5",
       "originalHeadline": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
-      "scannedAt": "2026-09-09T23:18:11GMT"
+      "scannedAt": "2026-09-09T23:18:11Z"
     },
-    "publishedAt": "2026-09-09T23:18:11GMT",
+    "publishedAt": "2026-09-09T23:18:11Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://ndtv.com/photo/123456.cms",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "Sheikh Hasina",
       "Saima Wazed",
@@ -296,12 +296,12 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "language": "English",
       "originalUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5",
       "originalHeadline": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
-      "scannedAt": "2026-09-14T03:16:01GMT"
+      "scannedAt": "2026-09-14T03:16:01Z"
     },
-    "publishedAt": "2026-09-14T03:16:01GMT",
+    "publishedAt": "2026-09-14T03:16:01Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://indianexpress.com/photo/123456.cms",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
     "tags": [
       "Tarique Rahman",
       "India-Bangladesh",
@@ -339,12 +339,12 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "language": "Bengali",
       "originalUrl": "https://www.bbc.com/bengali/articles/cmz7znp5477qo?at_medium=RSS&at_campaign=rss",
       "originalHeadline": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
-      "scannedAt": "2026-09-14T12:22:51GMT"
+      "scannedAt": "2026-09-14T12:22:51Z"
     },
-    "publishedAt": "2026-09-14T12:22:51GMT",
+    "publishedAt": "2026-09-14T12:22:51Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://bbc.com/bengali/photo/123456.cms",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "hilsa",
       "import",
