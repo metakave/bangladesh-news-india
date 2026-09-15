@@ -9,15 +9,20 @@ interface CategoryPageProps {
   params: Promise<{ category: string }>;
 }
 
+const ALL_PAGE_CATEGORIES = [
+  ...CATEGORIES,
+  { slug: 'politics', labelBn: 'রাজনীতি ও নির্বাচন', labelEn: 'Politics & Governance', icon: 'Vote' },
+];
+
 export async function generateStaticParams() {
-  return CATEGORIES.map((cat) => ({
+  return ALL_PAGE_CATEGORIES.map((cat) => ({
     category: cat.slug,
   }));
 }
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const categoryInfo = CATEGORIES.find((c) => c.slug === resolvedParams.category);
+  const categoryInfo = ALL_PAGE_CATEGORIES.find((c) => c.slug === resolvedParams.category);
 
   if (!categoryInfo) {
     return {
@@ -62,7 +67,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const resolvedParams = await params;
   const categorySlug = resolvedParams.category;
-  const categoryInfo = CATEGORIES.find((c) => c.slug === categorySlug);
+  const categoryInfo = ALL_PAGE_CATEGORIES.find((c) => c.slug === categorySlug);
 
   if (!categoryInfo) {
     notFound();

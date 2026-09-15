@@ -35,12 +35,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // Category routes
-  const categoryRoutes: MetadataRoute.Sitemap = CATEGORIES.map((cat) => ({
-    url: `${SITE_URL}/category/${cat.slug}`,
-    lastModified: now,
-    changeFrequency: 'hourly',
-    priority: 0.8,
-  }));
+  const categoryRoutes: MetadataRoute.Sitemap = [
+    ...CATEGORIES.map((cat) => ({
+      url: `${SITE_URL}/category/${cat.slug}`,
+      lastModified: now,
+      changeFrequency: 'hourly' as const,
+      priority: 0.8,
+    })),
+    {
+      url: `${SITE_URL}/category/politics`,
+      lastModified: now,
+      changeFrequency: 'hourly' as const,
+      priority: 0.8,
+    },
+  ];
 
   // Article routes
   const articleRoutes: MetadataRoute.Sitemap = SCANNED_NEWS_ITEMS.map((item) => {

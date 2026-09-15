@@ -68,25 +68,36 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1142,
-  "bangladeshMatches": 291,
+  "totalScanned24h": 1148,
+  "bangladeshMatches": 294,
   "sentimentDistribution": {
     "positive": 1,
-    "neutral": 3,
-    "negative": 2
+    "neutral": 5,
+    "negative": 3
   },
   "bureauDistribution": {
-    "delhi": 4,
-    "kolkata": 2
+    "delhi": 5,
+    "kolkata": 4
   },
   "languageDistribution": {
-    "english": 4,
-    "bengali": 2,
+    "english": 5,
+    "bengali": 4,
     "hindi": 0
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-005",
+    "headlineBn": "শেখ সেলিমের ‘নেতৃত্ব’ ইস্যুতে আওয়ামী লীগে তীব্র বিতর্ক ও অসন্তোষ",
+    "headlineEn": "Row over Sheikh Selim's 'Leadership' in Awami League: Is Internal Crisis Brewing?",
+    "timeAgoBn": "৪ ঘন্টা আগে",
+    "timeAgoEn": "4 hours ago",
+    "sourceName": "BBC News বাংলা",
+    "sourceBureau": "Kolkata",
+    "sentiment": "neutral",
+    "url": "https://www.bbc.com/bengali/articles/c046rvwk2pvo"
+  },
   {
     "id": "alert-001",
     "headlineBn": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
@@ -177,6 +188,151 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bangladesh politics"
     ],
     "isLeadStory": true
+  },
+  {
+    "id": "35",
+    "slug": "sheikh-selim-leadership-row-awami-league",
+    "title": "শেখ সেলিমের ‘নেতৃত্ব’ ইস্যুতে আওয়ামী লীগে বিরোধ তৈরি হচ্ছে?",
+    "englishTitle": "Row over Sheikh Selim's 'Leadership' in Awami League: Is Internal Crisis Brewing?",
+    "banglaTitle": "শেখ সেলিমের ‘নেতৃত্ব’ ইস্যুতে আওয়ামী লীগে বিরোধ তৈরি হচ্ছে?",
+    "summaryBn": "ভারতে অবস্থানরত শেখ হাসিনা তাঁর অনুপস্থিতিতে জ্যেষ্ঠ প্রেসিডিয়াম সদস্য শেখ সেলিমের দল পরিচালনার ইঙ্গিত দেওয়ার পর আওয়ামী লীগের ভেতরে তীব্র বিতর্ক ও অসন্তোষ তৈরি হয়েছে। কলকাতায় নেতাদের একাংশের বৈঠকে অসন্তোষ দেখা গেলেও দলের মুখপাত্র ও অন্যান্য নেতারা নেতৃত্ব সংকট বা ভাঙনের খবরকে গুজব বলে উড়িয়ে দিচ্ছেন।",
+    "summaryEn": "Following remarks by Sheikh Hasina in India hinting that senior presidium member Sheikh Selim could oversee party affairs in her absence, sharp internal disagreements have surfaced within the Awami League. While some exiled leaders in Kolkata express reservations, party spokespersons dismiss speculation of a leadership vacuum as baseless rumors.",
+    "keyPointsBn": [
+      "দ্য ওয়াল-এ শেখ হাসিনার সাক্ষাৎকারের পর শেখ সেলিমের ভূমিকা নিয়ে কলকাতায় অবস্থানরত আওয়ামী লীগ নেতাদের মধ্যে অসন্তোষ ও তৎপরতা শুরু হয়েছে",
+      "নিউটাউনে শেখ সেলিমের বাসভবনে বৈঠক এবং তাঁকে ভারপ্রাপ্ত সভাপতি করার ভুয়া প্রেস বিজ্ঞপ্তি নিয়ে চরম বিভ্রান্তি তৈরি হয়েছে",
+      "আওয়ামী লীগের মুখপাত্র মোহাম্মদ আলী আরাফাত ও সাবেক সংসদ সদস্য হাবিবে মিল্লাত জানান, শেখ হাসিনাই সভানেত্রী আছেন এবং নেতৃত্ব বদলের এখতিয়ার কেবল কাউন্সিলের",
+      "রাজনৈতিক বিশ্লেষকদের মতে, ১৯৭৫ পরবর্তী সময়ের মতো শীর্ষ নেতৃত্বের অনুপস্থিতিতে দলে উপদলীয় কোন্দল বা মেরুকরণের ঝুঁকি সবসময়ই থেকে যায়"
+    ],
+    "keyPointsEn": [
+      "Sheikh Hasina's remarks to The Wall regarding Sheikh Selim triggered intense discussions and friction among exiled Awami League leaders in Kolkata",
+      "Meetings at Sheikh Selim's New Town residence and a fabricated press release claiming his interim presidency spurred controversy",
+      "Awami League spokesperson Mohammad A. Arafat and former MP Habibe Millat emphasized that Sheikh Hasina remains president and only a council can alter leadership",
+      "Political commentators draw parallels to post-1975 history, highlighting structural vulnerabilities to factional disputes when top leadership operates from exile"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বিবিসি বাংলার অনুসন্ধানী প্রতিবেদনে কলকাতায় অবস্থানরত আওয়ামী লীগ নেতাদের বিভিন্ন অংশের প্রতিক্রিয়া, গঠনতান্ত্রিক বিধিবিধান এবং শীর্ষ নেতৃত্বের অবস্থান তথ্যনিষ্ঠ ও ভারসাম্যপূর্ণভাবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "BBC News Bengali presents a balanced and fact-based investigative report analyzing differing perspectives among exiled Awami League leaders in Kolkata, constitutional party provisions, and statements from party spokespersons.",
+    "source": {
+      "name": "BBC News বাংলা",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/c046rvwk2pvo",
+      "originalHeadline": "শেখ সেলিমের ‘নেতৃত্ব’ ইস্যুতে আওয়ামী লীগে বিরোধ তৈরি হচ্ছে?",
+      "scannedAt": "2026-09-15T04:30:00.000Z"
+    },
+    "publishedAt": "2026-09-09T13:22:52.358Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "tags": [
+      "Awami League",
+      "Sheikh Hasina",
+      "Sheikh Selim",
+      "Kolkata",
+      "Bangladesh politics",
+      "Leadership"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "36",
+    "slug": "the-wall-sheikh-hasina-interview-sheikh-selim-awami-league",
+    "title": "আমার জেল হলে দল চালাবেন শেখ সেলিম: দ্য ওয়াল-কে শেখ হাসিনা",
+    "englishTitle": "'Sheikh Selim will lead party if I am jailed': Sheikh Hasina tells The Wall",
+    "banglaTitle": "আমার জেল হলে দল চালাবেন শেখ সেলিম: দ্য ওয়াল-কে শেখ হাসিনা",
+    "summaryBn": "কলকাতার সংবাদমাধ্যম দ্য ওয়াল-এর এক্সিকিউটিভ এডিটর অমল সরকারকে দেওয়া টেলিফোন সাক্ষাৎকারে শেখ হাসিনা বলেন, তাঁর গ্রেফতার বা অনুপস্থিতির ক্ষেত্রে দলীয় গঠনতন্ত্র অনুসারে জ্যেষ্ঠ প্রেসিডিয়াম সদস্য শেখ সেলিম দলের নেতৃত্ব দেবেন। তিনি দেশে ফেরার প্রত্যয় ব্যক্ত করেন এবং ব্যক্তিগত নিরাপত্তা নিয়ে উদ্বেগ জানান।",
+    "summaryEn": "In an exclusive telephone interview with Kolkata-based The Wall's Executive Editor Amal Sarkar, Sheikh Hasina stated that under party rules, senior presidium member Sheikh Selim would steer party leadership in the event of her imprisonment or absence, while reaffirming her intention to return to Bangladesh.",
+    "keyPointsBn": [
+      "নির্বাসনে থাকা শেখ হাসিনা ভারতের মাটিতে ভারতীয় গণমাধ্যম দ্য ওয়াল-কে প্রথম বিস্তারিত রাজনৈতিক সাক্ষাৎকার দেন",
+      "তিনি গঠনতন্ত্রের ধারা উল্লেখ করে বলেন, দলের মূল নেতার অবর্তমানে জ্যেষ্ঠ প্রেসিডিয়াম সদস্য হিসেবে শেখ সেলিমই সভা পরিচালনা ও দায়িত্ব পালন করবেন",
+      "শেখ রেহানার সক্রিয় রাজনীতিতে আসার গুঞ্জন নাকচ করে জানান, তিনি প্রত্যক্ষ রাজনীতির সঙ্গে যুক্ত নন",
+      "বাংলাদেশে বর্তমান শাসনব্যবস্থা, তাঁর নিরাপত্তা পরিস্থিতি এবং ভারত-বাংলাদেশ সম্পর্কের বাস্তবতা নিয়ে খোলামেলা কথা বলেন"
+    ],
+    "keyPointsEn": [
+      "Sheikh Hasina granted an in-depth telephone interview to Kolkata-based The Wall's Executive Editor Amal Sarkar from her location in India",
+      "Invoking party bylaws, she noted senior presidium member Sheikh Selim would steer organizational meetings during her absence",
+      "She dismissed speculation regarding Sheikh Rehana entering active political leadership",
+      "She shared reflections on ongoing political realities in Bangladesh, her personal safety, and future bilateral relations"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কলকাতাভিত্তিক পোর্টাল দ্য ওয়াল-এর সঙ্গে শেখ হাসিনার সরাসরি টেলিফোন কথোপকথনের ভিত্তিতে এই সাক্ষাৎকারটি প্রকাশিত হয়েছে, যেখানে দলীয় ভবিষ্যৎ ও তাঁর ব্যক্তিগত দৃষ্টিভঙ্গি সরাসরি তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Kolkata digital portal The Wall published an exclusive telephone interview with Sheikh Hasina discussing party continuity, constitutional succession, and her future return plans.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/news/bangladesh/sheikh-hasina-interview-amal-sarkar-sheikh-selim-awami-league",
+      "originalHeadline": "আমার জেল হলে দল চালাবেন শেখ সেলিম: দ্য ওয়াল-কে শেখ হাসিনা",
+      "scannedAt": "2026-09-15T04:35:00.000Z"
+    },
+    "publishedAt": "2026-09-06T11:15:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "tags": [
+      "Sheikh Hasina",
+      "The Wall",
+      "Sheikh Selim",
+      "Awami League",
+      "Kolkata",
+      "Bangladesh"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "37",
+    "slug": "dhaka-objects-sheikh-hasina-indian-media-interviews-delhi",
+    "title": "Dhaka objects to Sheikh Hasina's media interviews in India, raises concern with Delhi",
+    "englishTitle": "Dhaka objects to Sheikh Hasina's media interviews in India, raises concern with Delhi",
+    "banglaTitle": "ভারত থেকে শেখ হাসিনার সাক্ষাৎকারে ঢাকার তীব্র আপত্তি: দ্বিপাক্ষিক সম্পর্কে অস্বস্তি",
+    "summaryBn": "ভারতের মাটিতে আশ্রয় নিয়ে দ্য ওয়ালসহ বিভিন্ন গণমাধ্যমে শেখ হাসিনার ধারাবাহিক রাজনৈতিক বক্তব্য ও সাক্ষাৎকার দেওয়া নিয়ে দিল্লির কাছে আনুষ্ঠানিক অসন্তোষ প্রকাশ করেছে ঢাকা। বাংলাদেশ সরকারের পক্ষ থেকে বলা হয়েছে, এমন কার্যক্রম দ্বিপাক্ষিক সম্পর্ক স্থিতিশীল করার প্রয়াসকে ক্ষতিগ্রস্ত করে।",
+    "summaryEn": "Dhaka has registered official diplomatic displeasure with New Delhi over Sheikh Hasina's repeated political remarks and interviews to Indian media outlets including The Wall, warning that political maneuvers from Indian soil undermine bilateral efforts to normalize relations.",
+    "keyPointsBn": [
+      "শেখ হাসিনার ভারতীয় গণমাধ্যমে দেওয়া সাক্ষাৎকার নিয়ে কূটনৈতিক চ্যানেলে নয়াদিল্লির কাছে জোরালো আপত্তি জানিয়েছে বাংলাদেশ সরকার",
+      "বাংলাদেশ সরকারের দাবি, ভারতের আশ্রয়ে থেকে এমন রাজনৈতিক বয়ান দেওয়া প্রত্যর্পণ প্রক্রিয়া ও সুপ্রতিবেশীসুলভ নীতিকে ব্যাহত করে",
+      "দিল্লির কূটনৈতিক সূত্র জানিয়েছে, তারা আঞ্চলিক স্থিতিশীলতা ও দ্বিপাক্ষিক যোগাযোগের ব্যাপারে সতর্ক নজর রাখছে",
+      "হাসিনার কর্মকাণ্ড ঘিরে বিদ্যমান দ্বিপাক্ষিক চুক্তি ও ভবিষ্যৎ কূটনীতি নিয়ে দুই দেশের মধ্যে নতুন করে বিতর্ক শুরু হয়েছে"
+    ],
+    "keyPointsEn": [
+      "Bangladesh authorities lodged formal objections with New Delhi regarding Sheikh Hasina's interviews in Indian news outlets",
+      "Dhaka stated that hosting political discourse from Indian territory strains neighborly engagement and ongoing extradition deliberations",
+      "New Delhi diplomatic circles indicate continuous monitoring of bilateral dialogue and regional stability",
+      "The controversy spotlights existing bilateral treaties and diplomatic protocols governing high-profile political asylum"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "negative",
+    "sentimentReasonBn": "প্রতিবেদনে ভারতের ভূখণ্ডে অবস্থান করে রাজনৈতিক বিবৃতি ও সাক্ষাৎকার দেওয়াকে কেন্দ্র করে ঢাকা ও দিল্লির মধ্যকার কূটনৈতিক টানাপোড়েন ও সম্পর্কের অস্বস্তিকর দিক তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "The Indian Express highlights diplomatic friction between Dhaka and New Delhi, focusing on Bangladesh's official protest against political interviews granted from Indian territory.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/bangladesh-objects-sheikh-hasina-indian-media-interviews-diplomatic-ties-134251000/",
+      "originalHeadline": "Dhaka objects to Sheikh Hasina's media interviews in India, raises concern with Delhi",
+      "scannedAt": "2026-09-15T04:40:00.000Z"
+    },
+    "publishedAt": "2026-09-10T09:20:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "tags": [
+      "Diplomacy",
+      "Sheikh Hasina",
+      "The Indian Express",
+      "Dhaka-Delhi",
+      "Extradition",
+      "Bilateral Ties"
+    ],
+    "isLeadStory": false
   },
   {
     "id": "2",
