@@ -9,7 +9,8 @@
     "lint": "next lint",
     "scan": "node scripts/daily-news-scanner.mjs",
     "scan:rss": "node scripts/daily-news-scanner.mjs --mode=rss",
-    "scan:youtube": "node scripts/daily-news-scanner.mjs --mode=youtube"
+    "scan:youtube": "node scripts/daily-news-scanner.mjs --mode=youtube",
+    "scan:instagram": "node scripts/daily-news-scanner.mjs --mode=instagram"
   },
   "dependencies": {
     "clsx": "^2.1.1",

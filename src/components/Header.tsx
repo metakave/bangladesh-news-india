@@ -18,6 +18,7 @@ import {
   Languages,
   ChevronDown,
   Archive,
+  Instagram,
 } from 'lucide-react';
 
 export default function Header() {
@@ -401,6 +402,30 @@ export default function Header() {
               <Archive size={13} style={{ color: 'var(--brand-primary)' }} />
               {t.archive.navTitle}
             </Link>
+
+            <Link
+              href="/instagram"
+              className={lang === 'bn' ? 'font-bengali' : ''}
+              style={{
+                fontWeight: pathname === '/instagram' ? 800 : 600,
+                fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
+                color: pathname === '/instagram' ? '#E1306C' : 'var(--text-primary)',
+                textTransform: lang === 'bn' ? 'none' : 'uppercase',
+                letterSpacing: lang === 'bn' ? '0' : '0.05em',
+                whiteSpace: 'nowrap',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                padding: '0.15rem 0.55rem',
+                borderRadius: 'var(--radius-sm)',
+                backgroundColor: pathname === '/instagram' ? 'rgba(225, 48, 108, 0.12)' : 'transparent',
+                border: pathname === '/instagram' ? '1px solid rgba(225, 48, 108, 0.3)' : '1px solid transparent',
+                transition: 'all 0.15s ease'
+              }}
+            >
+              <Instagram size={13} style={{ color: '#E1306C' }} />
+              {t.instagram.navTitle}
+            </Link>
           </div>
         </div>
       </nav>
@@ -504,6 +529,22 @@ export default function Header() {
               >
                 <Archive size={15} />
                 {t.archive.navTitle}
+              </Link>
+              <Link
+                href="/instagram"
+                onClick={() => setMobileMenuOpen(false)}
+                className={lang === 'bn' ? 'font-bengali' : ''}
+                style={{
+                  fontWeight: pathname === '/instagram' ? 800 : 600,
+                  fontSize: lang === 'bn' ? 'calc(0.95rem - 1pt)' : '0.95rem',
+                  color: pathname === '/instagram' ? '#E1306C' : 'var(--text-primary)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                }}
+              >
+                <Instagram size={15} style={{ color: '#E1306C' }} />
+                {t.instagram.navTitle}
               </Link>
               <Link href="/about" onClick={() => setMobileMenuOpen(false)} className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontWeight: 600, fontSize: lang === 'bn' ? 'calc(0.95rem - 1pt)' : '0.95rem', color: 'var(--text-secondary)' }}>
                 {t.aboutUs.pageTitle}

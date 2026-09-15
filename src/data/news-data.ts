@@ -190,6 +190,210 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "ig-001",
+    "slug": "firstpost-instagram-chinmoy-krishna-das-minority-crisis-portrait",
+    "title": "Chinmoy Krishna Das’ grief has become a haunting portrait of the crisis facing minorities in Bangladesh",
+    "englishTitle": "Chinmoy Krishna Das’ grief has become a haunting portrait of the crisis facing minorities in Bangladesh",
+    "banglaTitle": "বাংলাদেশে ধর্মীয় সংখ্যালঘুদের সংকটের এক বেদনার প্রতিচ্ছবি হয়ে দাঁড়িয়েছে চিন্ময় কৃষ্ণ দাসের শোক",
+    "summaryBn": "ফার্স্টপোস্টের অফিশিয়াল ইনস্টাগ্রাম ডিসপ্যাচে প্রকাশিত এক প্রতিবেদনে জানানো হয়েছে, বাংলাদেশে বন্দি হিন্দু সন্ন্যাসী চিন্ময় কৃষ্ণ দাসের মায়ের শেষকৃত্যে তাঁর শোকগ্রস্ত কান্নার ছবি আন্তর্জাতিক অঙ্গনে আলোড়ন সৃষ্টি করেছে। এই ভিজ্যুয়াল ডিসপ্যাচটিতে তুলে ধরা হয় কীভাবে তাঁর পারিবারিক ট্র্যাজেডি বর্তমানে ওপার বাংলার সংখ্যালঘুদের নিরাপত্তাহীনতা ও মানবাধিকার উদ্বেগের এক গভীর প্রতীক হয়ে উঠেছে।",
+    "summaryEn": "In an official visual dispatch posted on Firstpost's Instagram, the media network highlighted the haunting photograph of incarcerated Hindu monk Chinmoy Krishna Das weeping at his mother's funeral pyre. The report frames his grief as a poignant portrait of the escalating concerns surrounding religious minorities and human rights in post-August Bangladesh.",
+    "keyPointsBn": [
+      "ফার্স্টপোস্টের ইনস্টাগ্রাম ফটো জার্নালিজমে চিন্ময় কৃষ্ণ দাসের মায়ের শেষকৃত্যে প্যারোলের মুহূর্ত তুলে ধরা হয়েছে",
+      "পোস্টটিতে ওপার বাংলার সংখ্যালঘু ধর্মীয় সম্প্রদায়ের বর্তমান উদ্বেগ ও নিরাপত্তা সংকট নিয়ে আলোকপাত করা হয়",
+      "ইনস্টাগ্রাম পোস্টটি সামাজিক মাধ্যমে হাজার হাজার ব্যবহারকারীর মধ্যে শেয়ার ও আলোচিত হচ্ছে",
+      "দিল্লি ব্যুরো থেকে পরিবেশিত এই ভিজ্যুয়াল ডিসপ্যাচটি আন্তর্জাতিক সম্প্রদায়ের মানবাধিকার নজরদারির প্রেক্ষাপট টানে"
+    ],
+    "keyPointsEn": [
+      "Firstpost visual dispatch documents monk Chinmoy Krishna Das during his 5-hour parole for his mother's cremation",
+      "The post captions highlight growing diplomatic and minority safety discussions concerning Bangladesh",
+      "Extensive engagement across digital platforms reflecting cross-border humanitarian discourse",
+      "Framed by the Delhi national desk as a crucial visual focal point in regional minority monitoring"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Strategic Affairs",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ফার্স্টপোস্টের ইনস্টাগ্রাম ডিসপ্যাচে বাংলাদেশে সংখ্যালঘুদের পরিস্থিতি ও চিন্ময় কৃষ্ণ দাসের পারিবারিক ট্র্যাজেডি সংক্রান্ত উদ্বেগ প্রকাশ পেয়েছে।",
+    "sentimentReasonEn": "Firstpost Instagram visual dispatch focuses on the humanitarian concerns and legal situation of religious minorities in Bangladesh.",
+    "source": {
+      "name": "Firstpost (Instagram)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.instagram.com/p/DFP82j4T_9x/",
+      "originalHeadline": "Chinmoy Krishna Das’ grief has become a haunting portrait of the crisis facing minorities in Bangladesh | #FirstpostNews - instagram.com",
+      "scannedAt": "2026-09-15T07:15:00.000Z"
+    },
+    "publishedAt": "2026-09-14T18:30:00.000Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/chinmoy-krishna-das.jpg",
+    "tags": [
+      "Instagram Post",
+      "Visual Journalism",
+      "Firstpost",
+      "Chinmoy Krishna Das",
+      "Minorities in Bangladesh",
+      "Delhi Bureau",
+      "#FirstpostNews",
+      "#BangladeshNews"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "ig-002",
+    "slug": "the-wall-instagram-chinmoy-krishna-parole-mother-cremation-kolkata",
+    "title": "মায়ের শেষকৃত্যে ৫ ঘণ্টার প্যারোল, চন্দনকাঠের আগুনে হাতজোড় করে দাঁড়িয়ে চিন্ময় কৃষ্ণ দাস",
+    "englishTitle": "5-Hour Parole at Mother's Cremation: Chinmoy Krishna Das Stands with Folded Hands Before the Pyre",
+    "banglaTitle": "মায়ের শেষকৃত্যে ৫ ঘণ্টার প্যারোল, চন্দনকাঠের আগুনে হাতজোড় করে দাঁড়িয়ে চিন্ময় কৃষ্ণ দাস",
+    "summaryBn": "কলকাতার জনপ্রিয় ডিজিটাল সংবাদমাধ্যম 'দ্য ওয়াল'-এর ইনস্টাগ্রাম হ্যান্ডেলে প্রকাশিত ফটো ডিসপ্যাচে চট্টগ্রামের বলুয়ারদীঘি মহাশ্মশানে চিন্ময় কৃষ্ণ দাসের উপস্থিতির ছবি তুলে ধরা হয়েছে। মা পদ্মা দেবী মুখার্জির চিতার সামনে পুলিশি পাহারায় অশ্রুসজল চোখে হাতজোড় করা এই চিত্রটি দুই বাংলার নেটিজেনদের মনে গভীর আবেগ ও আলোচনার জন্ম দিয়েছে।",
+    "summaryEn": "A visual news dispatch on the Instagram page of Kolkata-based digital outlet 'The Wall' depicts monk Chinmoy Krishna Das at the Baluardighi crematorium in Chattogram. Accompanied by stringent security under 5-hour parole, the somber visual of him standing tearfully before his mother Padma Devi Mukherjee's pyre has triggered widespread commentary across West Bengal.",
+    "keyPointsBn": [
+      "দ্য ওয়াল-এর ইনস্টাগ্রাম ডিসপ্যাচে বলুয়ারদীঘি মহাশ্মশানে মায়ের চিতার সামনে চিন্ময় কৃষ্ণের শোকস্তব্ধ মুহূর্ত",
+      "আদালত মঞ্জুর করেছিল মাত্র পাঁচ ঘণ্টার বিশেষ মানবিক প্যারোল",
+      "পশ্চিমবঙ্গের রাজনৈতিক ও সামাজিক মহলে এই পোস্টকে কেন্দ্র করে নতুন করে আলোচনা শুরু হয়েছে",
+      "কলকাতা প্রেস ডেস্কের বিশ্লেষণে উঠে এসেছে দুই বাংলার সাংস্কৃতিক ও আবেগীয় সংযোগের দিকটি"
+    ],
+    "keyPointsEn": [
+      "The Wall's Instagram visual capture of monk Chinmoy Krishna Das at Chattogram's crematorium",
+      "Court had granted a brief 5-hour humanitarian parole under strict escort",
+      "Has resonated intensely among readers across Kolkata and West Bengal civil society",
+      "Highlighted by Kolkata desk as an emotional cross-border narrative touchpoint"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সমাজ",
+    "categoryLabelEn": "Culture & Society",
+    "sentiment": "negative",
+    "sentimentReasonBn": "দ্য ওয়াল-এর ইনস্টাগ্রাম প্রতিবেদনে চিন্ময় কৃষ্ণ দাসের মায়ের শেষকৃত্য ও বন্দিদশার মানবিক দিকটি তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "The Wall Instagram post highlights the humanitarian distress of monk Chinmoy Krishna Das attending his mother's funeral under guard.",
+    "source": {
+      "name": "The Wall (Instagram)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.instagram.com/p/DGH38mPshj1/",
+      "originalHeadline": "মায়ের শেষকৃত্যে ৫ ঘণ্টার প্যারোল, চন্দনকাঠের আগুনে হাতজোড় করে দাঁড়িয়ে চিন্ময় কৃষ্ণ দাস | #TheWallNews",
+      "scannedAt": "2026-09-15T07:18:00.000Z"
+    },
+    "publishedAt": "2026-09-14T14:45:00.000Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/suvendu-adhikari-chinmoy-bangladesh.jpg",
+    "tags": [
+      "Instagram Post",
+      "Visual Journalism",
+      "The Wall",
+      "কলকাতা",
+      "Kolkata Bureau",
+      "চিন্ময় কৃষ্ণ দাস",
+      "ওপার বাংলা",
+      "#TheWall"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "ig-003",
+    "slug": "india-today-newsmo-instagram-uno-reverse-hilsa-export-bangladesh",
+    "title": "UNO Reverse: India is now exporting Hilsa fish to Bangladesh as supply shortages hit Dhaka markets",
+    "englishTitle": "UNO Reverse: India is now exporting Hilsa fish to Bangladesh as supply shortages hit Dhaka markets",
+    "banglaTitle": "ইউএনও রিভার্স: ঢাকার বাজারে সরবরাহ সংকটে এবার ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি শুরু",
+    "summaryBn": "ইন্ডিয়া টুডে ও নিউজমো-র ইনস্টাগ্রাম ইনফোগ্রাফিক্সে তুলে ধরা হয়েছে এক কৌতূহলোদ্দীপক বাণিজ্যিক পরিবর্তন। সাধারণত বাংলাদেশ থেকে ভারতে পদ্মার ইলিশ রপ্তানি হয়ে আসলেও, এবার ঢাকার বাজারে সংকট মেটাতে ও দাম নিয়ন্ত্রণে রাখতে ভারত থেকেই পদ্মার স্বাদের ইলিশ মাছ রপ্তানি হচ্ছে বাংলাদেশে। সামাজিক মাধ্যমে এটি 'UNO Reverse' শিরোনামে ভাইরাল হয়েছে।",
+    "summaryEn": "An eye-catching visual infographic and carousel post on India Today's NewsMo Instagram showcases an ironic shift in bilateral trade dynamics: traditionally Bangladesh exports prized Padma Hilsa to Kolkata, but current supply constraints in Dhaka markets have led to fish consignments being exported from India to Bangladesh, labeled playfully as a 'UNO reverse'.",
+    "keyPointsBn": [
+      "ইন্ডিয়া টুডে নিউজমো-র ইনস্টাগ্রাম পোস্টে ভারত থেকে বাংলাদেশে ইলিশ মাছের চালান যাওয়ার তথ্যচিত্র",
+      "সাধারণত দুর্গাপূজায় ভারতে ইলিশ পাঠানোর ঐতিহ্য থাকলেও এবার উল্টো প্রবাহ লক্ষ্য করা যাচ্ছে",
+      "সীমান্ত বাণিজ্য ও খাদ্যদ্রব্য সরবরাহে দ্বিপাক্ষিক নির্ভরতার এক ইতিবাচক ও কৌতূহলোদ্দীপক দৃষ্টান্ত",
+      "ইনস্টাগ্রামে পোস্টটি তরুণ প্রজন্মের মধ্যে দারুণ সাড়া ফেলেছে"
+    ],
+    "keyPointsEn": [
+      "India Today NewsMo Instagram post charts the reverse flow of Hilsa consignments into Bangladesh",
+      "A reversal of the traditional seasonal export of Padma Hilsa towards West Bengal",
+      "Exemplifies pragmatism and mutual dependency in cross-border food commerce",
+      "Gained significant social buzz and engagement across bilateral digital communities"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও শুল্ক",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ইন্ডিয়া টুডের ইনস্টাগ্রাম পোস্টে খাদ্যপণ্য আদান-প্রদান ও দ্বিপাক্ষিক বাণিজ্যের এক কৌতূহলোদ্দীপক ইতিবাচক দিক উঠে এসেছে।",
+    "sentimentReasonEn": "India Today Instagram visual outlines pragmatic cross-border fish trade easing supply crunches in Dhaka.",
+    "source": {
+      "name": "India Today (Instagram)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.instagram.com/p/DF7uW_XMo8x/",
+      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh | #IndiaToday #NewsMo",
+      "scannedAt": "2026-09-15T07:20:00.000Z"
+    },
+    "publishedAt": "2026-09-14T11:20:00.000Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/hilsa-fish-market-trade.jpg",
+    "tags": [
+      "Instagram Post",
+      "Visual Journalism",
+      "India Today",
+      "Hilsa Fish",
+      "Trade",
+      "Delhi Bureau",
+      "#IndiaToday",
+      "#NewsMo"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "ig-004",
+    "slug": "ei-samay-instagram-petrapole-benapole-border-trucks-customs-meeting",
+    "title": "পেট্রাপোল-বেনাপোল সীমান্তে আটকে থাকা ট্রাক চলাচল স্বাভাবিক করার বিষয়ে বৈঠক, আশ্বাস কলকাতা শুল্ক বিভাগের",
+    "englishTitle": "Meeting held to normalize movement of stranded trucks at Petrapole-Benapole border; Kolkata Customs gives assurance",
+    "banglaTitle": "পেট্রাপোল-বেনাপোল সীমান্তে আটকে থাকা ট্রাক চলাচল স্বাভাবিক করার বিষয়ে বৈঠক, আশ্বাস কলকাতা শুল্ক বিভাগের",
+    "summaryBn": "এই সময় সংবাদপত্রের অফিশিয়াল ইনস্টাগ্রাম পেজে প্রকাশিত সীমান্ত বাণিজ্য বিষয়ক ফটো আপডেটে জানানো হয়েছে, পেট্রাপোল-বেনাপোল ইন্টিগ্রেটেড চেকপোস্টে (ICP) পণ্যবাহী ট্রাকের দীর্ঘ জট কমাতে দুই দেশের কর্মকর্তাদের বিশেষ বৈঠক অনুষ্ঠিত হয়েছে। দ্রুত কাস্টমস ক্লিয়ারেন্স ও কাঁচামাল ছাড়ের বিষয়ে ইতিবাচক বার্তা দেওয়া হয়েছে।",
+    "summaryEn": "An Instagram visual update from Ei Samay's verified social desk reports on high-level customs coordination at the Petrapole-Benapole Integrated Check Post (ICP) to ease long queues of stranded cargo trucks. Kolkata and Benapole customs officials discussed expedited clearances for essential perishable commodities.",
+    "keyPointsBn": [
+      "এই সময় ইনস্টাগ্রাম হ্যান্ডেলে পেট্রাপোল সীমান্তে আটকে থাকা ট্রাক চলাচলের ছবি ও তথ্য প্রকাশ",
+      "কলকাতা শুল্ক বিভাগ ও পেট্রাপোল ল্যান্ড পোর্ট অথরিটির জরুরি বৈঠক",
+      "দ্রুত ক্লিয়ারেন্স দিয়ে দ্বিপাক্ষিক বাণিজ্য স্বাভাবিক রাখার বার্তা",
+      "দুই দেশের আমদানিকারক ও রপ্তানিকারকদের উদ্বেগের অবসান ঘটানোর উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "Ei Samay Instagram dispatch documents cargo truck congestion easing at Petrapole border",
+      "Emergency meeting between Kolkata Customs and Land Port authorities",
+      "Commitment to expedite clearance of perishables and industrial raw goods",
+      "Direct positive impact on cross-border logistics and merchant confidence"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও শুল্ক",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "এই সময় ইনস্টাগ্রামে সীমান্তে পণ্যবাহী ট্রাকের গতিবিধি ও শুল্ক বিভাগের সমন্বয় সংক্রান্ত তথ্য তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Ei Samay Instagram dispatch neutrally reports on customs logistics and cross-border transport coordination.",
+    "source": {
+      "name": "Ei Samay (Instagram)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.instagram.com/p/DFz8983zH3a/",
+      "originalHeadline": "পেট্রাপোল-বেনাপোল সীমান্তে আটকে থাকা ট্রাক চলাচল স্বাভাবিক করার বিষয়ে বৈঠক | #EiSamay",
+      "scannedAt": "2026-09-15T07:22:00.000Z"
+    },
+    "publishedAt": "2026-09-14T09:15:00.000Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "Instagram Post",
+      "Visual Journalism",
+      "Ei Samay",
+      "পেট্রাপোল",
+      "Kolkata Bureau",
+      "Cross-Border Trade",
+      "#EiSamay",
+      "#Petrapole"
+    ],
+    "isLeadStory": false,
+    "isTrending": false
+  },
+  {
     "id": "44",
     "slug": "bnt-bangla-suvendu-adhikari-opar-bangla-mother-refugee-chinmoy-krishna",
     "title": "আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল শুধু হিন্দু বলে: শুভেন্দু অধিকারী",

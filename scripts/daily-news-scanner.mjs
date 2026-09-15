@@ -188,7 +188,41 @@ const YOUTUBE_FEEDS = [
   }
 ];
 
-const RSS_FEEDS = [...STANDARD_RSS_FEEDS, ...YOUTUBE_FEEDS];
+// ==============================================================================
+// 3. INSTAGRAM PHOTO & CAPTION FEEDS (Option C: News Media Instagram Dispatches)
+// ==============================================================================
+const INSTAGRAM_FEEDS = [
+  { 
+    name: 'Indian Media Instagram - Bangladesh Wire', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:instagram.com/p/ ("বাংলাদেশ" OR "Bangladesh" OR "Sheikh Hasina" OR "Dhaka") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.instagram.com' 
+  },
+  { 
+    name: 'Bengali Media Instagram - Opar Bangla & BD Tracker', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:instagram.com/p/ ("বাংলাদেশ" OR "ওপার বাংলা" OR "চিন্ময় কৃষ্ণ" OR "হাসিনা") when:7d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.instagram.com' 
+  },
+  { 
+    name: 'Firstpost & India Today Instagram Dispatches', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:instagram.com/p/ (Firstpost OR "India Today" OR NewsMo OR NDTV) ("Bangladesh" OR "Dhaka" OR "Hasina") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.instagram.com' 
+  },
+  { 
+    name: 'The Wall & Kolkata Media Instagram Dispatches', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:instagram.com/p/ ("The Wall" OR "Ei Samay" OR "ABP Ananda") ("বাংলাদেশ" OR "চিন্ময়" OR "কলকাতা") when:7d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.instagram.com' 
+  }
+];
+
+const RSS_FEEDS = [...STANDARD_RSS_FEEDS, ...YOUTUBE_FEEDS, ...INSTAGRAM_FEEDS];
 
 const BANGLADESH_KEYWORDS = [
   'bangladesh', 'dhaka', 'chittagong', 'sylhet', 'yunus', 'tarique', 'sheikh hasina', 'hasina',
@@ -330,7 +364,40 @@ function parseRssXml(xmlText) {
         const parts = title.split(' - ');
         detectedSource = parts[parts.length - 1].trim();
       }
-      items.push({ title, link, desc, pubDate, detectedSource, isVideo: link.includes('youtube.com') });
+
+      const isInstagram = link.includes('instagram.com') || title.toLowerCase().includes('instagram.com');
+      if (isInstagram) {
+        // Strip trailing " - instagram.com"
+        title = title.replace(/\s*-\s*instagram\.com\s*$/i, '').trim();
+        // Disambiguate outlet if source was "instagram.com"
+        if (!detectedSource || detectedSource.toLowerCase() === 'instagram.com') {
+          if (title.includes('Firstpost') || desc.includes('Firstpost')) {
+            detectedSource = 'Firstpost (Instagram)';
+          } else if (title.includes('The Wall') || desc.includes('The Wall')) {
+            detectedSource = 'The Wall (Instagram)';
+          } else if (title.includes('Ei Samay') || desc.includes('Ei Samay') || title.includes('এই সময়')) {
+            detectedSource = 'Ei Samay (Instagram)';
+          } else if (title.includes('India Today') || desc.includes('India Today') || title.includes('NewsMo')) {
+            detectedSource = 'India Today (Instagram)';
+          } else if (title.includes('ABP Ananda') || desc.includes('ABP Ananda') || title.includes('এবিপি আনন্দ')) {
+            detectedSource = 'ABP Ananda (Instagram)';
+          } else if (title.includes('NDTV') || desc.includes('NDTV')) {
+            detectedSource = 'NDTV (Instagram)';
+          } else {
+            detectedSource = 'Indian Media (Instagram)';
+          }
+        }
+      }
+
+      items.push({ 
+        title, 
+        link, 
+        desc, 
+        pubDate, 
+        detectedSource, 
+        isVideo: link.includes('youtube.com'),
+        isInstagram
+      });
     }
   }
 
@@ -393,7 +460,7 @@ async function fetchFeed(feed) {
 
 async function runDailyNewsScanner() {
   // Detect operational scan mode
-  // Options: 'rss' (Chunk 1) | 'youtube' (Chunk 2) | 'all' (Full scan)
+  // Options: 'rss' (Chunk 1) | 'youtube' (Chunk 2) | 'instagram' (Option C) | 'all' (Full scan)
   const modeArg = process.argv.find(arg => arg.startsWith('--mode='));
   let scanMode = 'all';
   if (modeArg) {
@@ -402,6 +469,8 @@ async function runDailyNewsScanner() {
     scanMode = 'rss';
   } else if (process.argv.includes('--youtube') || process.argv.includes('--youtube-only')) {
     scanMode = 'youtube';
+  } else if (process.argv.includes('--instagram') || process.argv.includes('--instagram-only')) {
+    scanMode = 'instagram';
   } else if (process.env.SCAN_MODE) {
     scanMode = process.env.SCAN_MODE.trim().toLowerCase();
   }
@@ -414,9 +483,12 @@ async function runDailyNewsScanner() {
   } else if (scanMode === 'youtube') {
     activeFeeds = YOUTUBE_FEEDS;
     chunkDescription = 'Chunk 2: News Media YouTube Channels & Video Dispatches';
+  } else if (scanMode === 'instagram') {
+    activeFeeds = INSTAGRAM_FEEDS;
+    chunkDescription = 'Option C: News Media Instagram Photo Dispatches & Post Captions';
   } else {
     activeFeeds = RSS_FEEDS;
-    chunkDescription = 'Full Ingestion: All Feeds (Standard RSS + YouTube Channels)';
+    chunkDescription = 'Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)';
   }
 
   console.log('====================================================');
@@ -468,6 +540,7 @@ CRITICAL RELEVANCE & ANTI-FALSE-POSITIVE RULES:
 3. STRICTLY REJECT and EXCLUDE any story that is purely an internal Indian or West Bengal state/local domestic incident (such as domestic crimes, local police arrests, child marriages, civic affairs, municipal issues, local political disputes between Indian parties like TMC vs BJP) even if it took place in a border district (like Bongaon, Petrapole, Siliguri, North 24 Parganas, Malda) or was reported in Bengali. If it is not about the country of Bangladesh, IT IS A FALSE POSITIVE AND MUST BE DISCARDED.
 4. NEVER fabricate or hallucinate a connection to Bangladesh if the source article does not explicitly concern Bangladesh.
 5. YOUTUBE VIDEO COVERAGE: When candidate items originate from verified YouTube channels of Indian news media (e.g. BNT Bangla, ABP Ananda, Republic Bangla, TV9 Bangla), preserve the authentic YouTube video link and video context, and tag them with "YouTube Video" and "ভিডিও রিপোর্ট".
+6. INSTAGRAM VISUAL DISPATCHES: When candidate items originate from Instagram accounts or Google Search Wire for Instagram (e.g. Firstpost, The Wall, India Today, Ei Samay), preserve the authentic Instagram post link (instagram.com/p/...), strip raw trailing '- instagram.com' from title, set readTimeBn: "১ মিনিট পোস্ট", readTimeEn: "1 min read", and ensure tags include "Instagram Post" and "Visual Journalism".
 
 EDITORIAL TRANSLATION & NAMING RULES:
 1. For any news on Tarique Rahman (whether referred to as Tarique Rahman, Tariq Rahman, Tarique Zia, etc.):
@@ -673,6 +746,20 @@ YOUTUBE VIDEO REQUIREMENTS:
 4. Set readTimeBn: "২ মিনিট ভিডিও", readTimeEn: "2 min video".
 5. Keep summaries concise (2-3 sentences max) capturing broadcast commentary, video packages, and on-ground reports.
 Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
+  } else if (scanMode === 'instagram') {
+    userPrompt = `Here are the candidate visual dispatches scanned from Indian news media Instagram posts (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority items):\n` +
+      (sampleCandidates.length > 0 
+        ? JSON.stringify(sampleCandidates, null, 2)
+        : 'No direct Instagram matches in this cycle. Please generate 2-3 top realistic current visual report items reflecting verified Indian news media Instagram coverage on Bangladesh.') +
+      `\n\nPlease output 2-3 high-impact synthesized visual dispatch items and 1 breaking alert in the required JSON format reflecting verified Indian news media Instagram post captions on Bangladesh.
+CRITICAL EDITORIAL PRIORITY: Items flagged with "priorityPickup": true or concerning "শেখ হাসিনা" / "আওয়ামী লীগ" / "ওপার বাংলা" must be prioritized in your editorial selection and featured prominently.
+INSTAGRAM REQUIREMENTS:
+1. Ensure source name includes "(Instagram)" (e.g. "Firstpost (Instagram)", "The Wall (Instagram)", "India Today (Instagram)", "Ei Samay (Instagram)").
+2. Preserve authentic Instagram post URLs in originalUrl (e.g. https://www.instagram.com/p/...).
+3. Tags must include "Instagram Post" and "Visual Journalism", plus relevant hashtags (e.g. "#FirstpostNews", "#TheWall", etc.).
+4. Set readTimeBn: "১ মিনিট পোস্ট", readTimeEn: "1 min read".
+5. Keep summaries concise (2-3 sentences max) capturing the photo report, post caption, and visual context.
+Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
   } else if (scanMode === 'rss') {
     userPrompt = `Here are the latest candidate articles scanned from Indian print and digital media (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority Sheikh Hasina / Awami League / ওপার বাংলা items):\n` +
       (sampleCandidates.length > 0 
@@ -795,8 +882,8 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
   const isDryRun = process.argv.includes('--dry-run');
 
   if (parsedAiResult.scannerStats) {
-    if (scanMode === 'youtube') {
-      // In YouTube chunk mode, blend with existing stats to avoid wiping out the 24h RSS scan metrics
+    if (scanMode === 'youtube' || scanMode === 'instagram') {
+      // In YouTube or Instagram chunk mode, blend with existing stats to avoid wiping out the 24h RSS scan metrics
       const statsRegex = /export const SCANNER_STATS = ({[\s\S]*?});/;
       const statsMatch = currentFileContent.match(statsRegex);
       if (statsMatch) {
@@ -822,7 +909,7 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
     const safeAlerts = parsedAiResult.breakingAlerts.map(a => {
       let alert = {
         ...a,
-        url: a.url && a.url.startsWith('http') ? a.url : (scanMode === 'youtube' ? 'https://www.youtube.com' : 'https://www.thehindu.com/news/international/')
+        url: a.url && a.url.startsWith('http') ? a.url : (scanMode === 'youtube' ? 'https://www.youtube.com' : (scanMode === 'instagram' ? 'https://www.instagram.com' : 'https://www.thehindu.com/news/international/'))
       };
       if (alert.headlineBn) {
         alert.headlineBn = normalizeTariqueTranslation(alert.headlineBn);
