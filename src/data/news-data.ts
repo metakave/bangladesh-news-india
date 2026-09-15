@@ -226,7 +226,9 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Kolkata",
       "Bangladesh Minorities",
       "West Bengal Politics",
-      "Syama Prasad Mookerjee"
+      "Syama Prasad Mookerjee",
+      "ওপার বাংলা",
+      "Opar Bangla"
     ],
     "isLeadStory": false,
     "isTrending": true

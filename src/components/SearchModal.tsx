@@ -9,8 +9,8 @@ import { formatArticleTimestamp } from '@/utils/date';
 import SentimentBadge from './SentimentBadge';
 import { Search, X, ExternalLink, Sparkles, Languages } from 'lucide-react';
 
-const POPULAR_TAGS_BN = ['শেখ হাসিনা', 'আওয়ামী লীগ', 'তিস্তা নদী', 'পেট্রাপোল', 'বিএসএফ', 'ভিসা', 'ইলিশ', 'আদানি পাওয়ার'];
-const POPULAR_TAGS_EN = ['Sheikh Hasina', 'Awami League', 'Teesta River', 'Petrapole', 'BSF', 'Visas', 'Hilsa', 'Adani Power'];
+const POPULAR_TAGS_BN = ['শেখ হাসিনা', 'আওয়ামী লীগ', 'ওপার বাংলা', 'তিস্তা নদী', 'পেট্রাপোল', 'বিএসএফ', 'ভিসা', 'ইলিশ', 'আদানি পাওয়ার'];
+const POPULAR_TAGS_EN = ['Sheikh Hasina', 'Awami League', 'Opar Bangla', 'Teesta River', 'Petrapole', 'BSF', 'Visas', 'Hilsa', 'Adani Power'];
 
 export default function SearchModal() {
   const { isSearchOpen, closeSearch, lang } = useApp();
