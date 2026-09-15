@@ -2328,7 +2328,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-09T17:48:11.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "imageUrl": "/images/saima-wazed-who.jpg",
     "tags": [
       "Sheikh Hasina",
       "Saima Wazed",

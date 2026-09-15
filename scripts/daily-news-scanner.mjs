@@ -428,34 +428,197 @@ function parseRssXml(xmlText) {
   return items;
 }
 
-async function fetchFeed(feed) {
+// ==============================================================================
+// SAFEGUARD & ANTI-BAN CLIENT INFRASTRUCTURE
+// ==============================================================================
+
+/**
+ * Curated pool of realistic, modern desktop browser profiles.
+ * Rotating user agents and corresponding Sec-Ch-Ua client hints prevents
+ * bot fingerprinting and automated scraper detection.
+ */
+const BROWSER_PROFILES = [
+  {
+    ua: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+    platform: '"macOS"',
+    secChUa: '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"'
+  },
+  {
+    ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+    platform: '"Windows"',
+    secChUa: '"Not(A:Brand";v="99", "Google Chrome";v="133", "Chromium";v="133"'
+  },
+  {
+    ua: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:135.0) Gecko/20100101 Firefox/135.0',
+    platform: '"macOS"',
+    secChUa: null
+  },
+  {
+    ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0',
+    platform: '"Windows"',
+    secChUa: null
+  },
+  {
+    ua: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36 Edg/133.0.0.0',
+    platform: '"Windows"',
+    secChUa: '"Not(A:Brand";v="99", "Microsoft Edge";v="133", "Chromium";v="133"'
+  },
+  {
+    ua: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15',
+    platform: '"macOS"',
+    secChUa: null
+  }
+];
+
+function getRandomBrowserHeaders() {
+  const profile = BROWSER_PROFILES[Math.floor(Math.random() * BROWSER_PROFILES.length)];
+  const headers = {
+    'User-Agent': profile.ua,
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept-Language': 'en-US,en;q=0.9,bn;q=0.8,hi;q=0.7',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'DNT': '1',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Cache-Control': 'max-age=0'
+  };
+  if (profile.secChUa) {
+    headers['sec-ch-ua'] = profile.secChUa;
+    headers['sec-ch-ua-mobile'] = '?0';
+    headers['sec-ch-ua-platform'] = profile.platform;
+  }
+  return headers;
+}
+
+/**
+ * Circuit Breaker registry:
+ * If a domain returns 429 (Too Many Requests) or 403 (Forbidden), we halt further
+ * requests to that domain for the remainder of the session to prevent escalation to an IP ban.
+ */
+const TRIPPED_DOMAINS = new Set();
+
+/**
+ * Domain-specific cooldown trackers to ensure requests to the same host
+ * are never sent simultaneously and respect polite spacing.
+ */
+const DOMAIN_LAST_REQUEST_TIME = new Map();
+const MIN_SAME_DOMAIN_INTERVAL_MS = 1800; // minimum 1.8s between hits to the same domain
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function fetchFeedWithSafeguards(feed) {
+  let domain = 'unknown';
   try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 9000);
-    const res = await fetch(feed.url, {
-      signal: controller.signal,
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-      }
-    });
-    clearTimeout(timeoutId);
-    if (!res.ok) return [];
-    const text = await res.text();
-    const parsed = parseRssXml(text);
-    return parsed.map(item => {
-      const srcName = item.detectedSource || feed.name;
-      const { bureau, language } = getBureauAndLanguage(srcName, item.title, feed.bureau, feed.language);
-      return {
-        ...item,
-        sourceName: srcName,
-        sourceBureau: bureau,
-        sourceLanguage: language,
-        fallbackWebUrl: feed.webUrl
-      };
-    });
-  } catch (err) {
+    const urlObj = new URL(feed.url);
+    domain = urlObj.hostname;
+  } catch (e) {
+    domain = 'unknown';
+  }
+
+  // 1. Circuit breaker check: If this domain already gave 429/403, do not poke it again!
+  if (TRIPPED_DOMAINS.has(domain)) {
+    console.warn(`🛡️ [Anti-Ban Circuit Breaker] Skipping feed "${feed.name}" on domain "${domain}" to protect IP reputation.`);
     return [];
   }
+
+  // 2. Domain-level pacing / rate limit: enforce minimum delay between requests to same domain
+  const now = Date.now();
+  const lastTime = DOMAIN_LAST_REQUEST_TIME.get(domain) || 0;
+  const elapsed = now - lastTime;
+  if (elapsed < MIN_SAME_DOMAIN_INTERVAL_MS) {
+    const waitTime = MIN_SAME_DOMAIN_INTERVAL_MS - elapsed + Math.floor(Math.random() * 500);
+    await sleep(waitTime);
+  }
+  DOMAIN_LAST_REQUEST_TIME.set(domain, Date.now());
+
+  // 3. Retry loop with exponential backoff & jitter (max 2 attempts)
+  const maxAttempts = 2;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 12000);
+
+      const headers = getRandomBrowserHeaders();
+      const res = await fetch(feed.url, {
+        signal: controller.signal,
+        headers
+      });
+      clearTimeout(timeoutId);
+
+      // Handle rate limits / blocks gracefully
+      if (res.status === 429) {
+        console.warn(`⚠️ [Rate Limited 429] "${domain}" returned HTTP 429. Tripping circuit breaker to prevent IP ban.`);
+        TRIPPED_DOMAINS.add(domain);
+        return [];
+      }
+
+      if (res.status === 403) {
+        console.warn(`⚠️ [Forbidden 403] "${domain}" returned HTTP 403. Tripping circuit breaker for this domain.`);
+        TRIPPED_DOMAINS.add(domain);
+        return [];
+      }
+
+      if (!res.ok) {
+        if (attempt < maxAttempts && res.status >= 500) {
+          // Temporary server error, wait with jitter before retrying
+          await sleep(1000 * attempt + Math.floor(Math.random() * 800));
+          continue;
+        }
+        return [];
+      }
+
+      const text = await res.text();
+      const parsed = parseRssXml(text);
+      return parsed.map(item => {
+        const srcName = item.detectedSource || feed.name;
+        const { bureau, language } = getBureauAndLanguage(srcName, item.title, feed.bureau, feed.language);
+        return {
+          ...item,
+          sourceName: srcName,
+          sourceBureau: bureau,
+          sourceLanguage: language,
+          fallbackWebUrl: feed.webUrl
+        };
+      });
+    } catch (err) {
+      if (attempt < maxAttempts) {
+        await sleep(1200 + Math.floor(Math.random() * 800));
+      } else {
+        return [];
+      }
+    }
+  }
+
+  return [];
+}
+
+/**
+ * Scans feeds using a controlled concurrency queue (max 3 concurrent requests)
+ * with inter-request jitter to avoid bot traffic spikes and protect the IP.
+ */
+async function scanFeedsWithSafeguards(feeds, maxConcurrency = 3) {
+  const results = [];
+  const queue = [...feeds];
+
+  async function worker() {
+    while (queue.length > 0) {
+      const feed = queue.shift();
+      if (!feed) break;
+      // Add random jitter delay between 250ms - 650ms to break regular rhythmic intervals
+      await sleep(250 + Math.floor(Math.random() * 400));
+      const items = await fetchFeedWithSafeguards(feed);
+      results.push(...items);
+    }
+  }
+
+  const workers = Array.from({ length: Math.min(maxConcurrency, feeds.length) }, () => worker());
+  await Promise.all(workers);
+  return results;
 }
 
 async function runDailyNewsScanner() {
@@ -498,11 +661,10 @@ async function runDailyNewsScanner() {
   console.log(`📌 Operational Mode: [${scanMode.toUpperCase()}] -> ${chunkDescription}`);
   console.log('====================================================\n');
 
-  console.log(`📡 Step 1: Scanning ${activeFeeds.length} media feeds...`);
-  const feedPromises = activeFeeds.map(fetchFeed);
-  const feedResults = await Promise.all(feedPromises);
-  const allScannedArticles = feedResults.flat();
-  console.log(`✅ Scanned ${allScannedArticles.length} total news items across ${activeFeeds.length} media outlets.`);
+  console.log(`📡 Step 1: Scanning ${activeFeeds.length} media feeds with IP anti-ban safeguards...`);
+  console.log(`🛡️ Anti-Ban Protections: max 3 concurrent requests | randomized timing jitter | same-domain cooldown | automatic circuit breaker`);
+  const allScannedArticles = await scanFeedsWithSafeguards(activeFeeds, 3);
+  console.log(`✅ Scanned ${allScannedArticles.length} total news items across ${activeFeeds.length} media outlets safely without rate limits.`);
 
   // Filter articles specifically related to Bangladesh with false-positive protection
   const matchedArticles = allScannedArticles.filter(art => {
