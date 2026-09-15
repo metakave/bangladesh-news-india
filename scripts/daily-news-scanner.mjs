@@ -26,6 +26,35 @@ function loadEnv() {
 
 loadEnv();
 
+/**
+ * Normalizes any timestamp/date string into a valid ISO-8601 string.
+ * Handles dates with trailing 'GMT', invalid formats, etc.
+ */
+function normalizeIsoDate(dateStr) {
+  if (!dateStr) return new Date().toISOString();
+  let sanitized = String(dateStr).trim();
+  if (sanitized.endsWith('GMT')) {
+    sanitized = sanitized.replace(/GMT$/, 'Z');
+  }
+  const parsed = new Date(sanitized);
+  return isNaN(parsed.getTime()) ? new Date().toISOString() : parsed.toISOString();
+}
+
+/**
+ * Verifies if an image URL is valid and not a synthetic/hallucinated placeholder.
+ */
+function isValidNewsImage(url) {
+  if (!url || typeof url !== 'string') return false;
+  const u = url.trim().toLowerCase();
+  if (u.startsWith('/images/')) return true;
+  if (u.startsWith('https://images.unsplash.com/')) return true;
+  if (u.startsWith('https://upload.wikimedia.org/')) return true;
+  if (u.includes('.cms') || u.includes('123456') || u.includes('example.com') || u.includes('/wp-content/uploads/2026/')) {
+    return false;
+  }
+  return u.startsWith('http://') || u.startsWith('https://');
+}
+
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || 'sk-cdc9e55a7d534a8e88338cd28b31342c';
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
 
@@ -574,7 +603,7 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         } else {
           item.isLeadStory = false;
         }
-        if (!item.imageUrl || (!item.imageUrl.startsWith('http') && !item.imageUrl.startsWith('/')) || item.imageUrl.includes('123456') || item.imageUrl.includes('.cms') || item.imageUrl.includes('example.com')) {
+        if (!isValidNewsImage(item.imageUrl)) {
           item.imageUrl = CATEGORY_DEFAULT_IMAGES[item.category] || '/images/bangladesh-ministry-of-foreign-affairs.jpg';
         }
         mergedList.push(item);
@@ -589,6 +618,9 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         registerItem(oldItem);
         oldItem.id = String(mergedList.length + 1);
         oldItem.isLeadStory = false;
+        if (!isValidNewsImage(oldItem.imageUrl)) {
+          oldItem.imageUrl = CATEGORY_DEFAULT_IMAGES[oldItem.category] || '/images/bangladesh-ministry-of-foreign-affairs.jpg';
+        }
         mergedList.push(oldItem);
       } else {
         console.log(`⚠️ Removed existing duplicate item: "${oldItem.title}" [${oldItem.source?.name}]`);

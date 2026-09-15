@@ -68,162 +68,340 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1142,
-  "bangladeshMatches": 296,
+  "totalScanned24h": 1742,
+  "bangladeshMatches": 303,
   "sentimentDistribution": {
-    "positive": 1,
-    "neutral": 3,
-    "negative": 2
+    "positive": 42,
+    "neutral": 168,
+    "negative": 93
   },
   "bureauDistribution": {
-    "delhi": 4,
-    "kolkata": 2
+    "delhi": 231,
+    "kolkata": 72
   },
   "languageDistribution": {
-    "english": 4,
-    "bengali": 2,
-    "hindi": 0
+    "english": 189,
+    "bengali": 84,
+    "hindi": 30
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "alert-001",
-    "headlineBn": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
-    "headlineEn": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "id": "ba-001",
+    "headlineBn": "বাংলাদেশের মন্ত্রীর মন্তব্যে বিতর্ক: 'ভারতের প্রতি মুগ্ধতা শেষ হওয়া উচিত'",
+    "headlineEn": "Bangladesh minister sparks row: 'Fascination with India must end'",
     "timeAgoBn": "২ ঘণ্টা আগে",
     "timeAgoEn": "2 hours ago",
-    "sourceName": "Times of India World",
+    "sourceName": "The Indian Express World",
     "sourceBureau": "Delhi",
     "sentiment": "negative",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms"
+    "url": "https://indianexpress.com/article/world/bangladesh-minister-humaiun-kobir-india-ties-reset-tarique-rahman-unga-10877038/"
   },
   {
-    "id": "alert-002",
-    "headlineBn": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: উল্টো স্রোত",
-    "headlineEn": "UNO reverse: India is now sending hilsa to Bangladesh",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "India Today",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss"
-  },
-  {
-    "id": "alert-003",
-    "headlineBn": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
-    "headlineEn": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
-    "timeAgoBn": "৬ দিন আগে",
-    "timeAgoEn": "6 days ago",
-    "sourceName": "NDTV",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5"
-  },
-  {
-    "id": "alert-004",
-    "headlineBn": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
-    "headlineEn": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "The Indian Express",
+    "id": "ba-002",
+    "headlineBn": "ব্রিকস শীর্ষ সম্মেলনে ঢাকার প্রতিনিধিত্ব নেই, তারেক রহমানের সফর বাতিল",
+    "headlineEn": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
+    "timeAgoBn": "৪ দিন আগে",
+    "timeAgoEn": "4 days ago",
+    "sourceName": "The Indian Express World",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5"
+    "url": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/"
+  },
+  {
+    "id": "ba-003",
+    "headlineBn": "শেখ হাসিনার কন্যা সায়মা ডব্লিউএইচও পদ ছাড়লেন, প্রত্যাহারের সুপারিশের একদিন পর",
+    "headlineEn": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
+    "timeAgoBn": "৫ দিন আগে",
+    "timeAgoEn": "5 days ago",
+    "sourceName": "The Indian Express World",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://indianexpress.com/article/world/bangladesh-saima-wazed-sheikh-hasina-daughter-fraud-allegation-resigns-who-post-10871087/"
+  },
+  {
+    "id": "ba-004",
+    "headlineBn": "দুর্গাপূজার আগে হিন্দু সংখ্যালঘুদের নিরাপত্তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
+    "headlineEn": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
+    "timeAgoBn": "৬ দিন আগে",
+    "timeAgoEn": "6 days ago",
+    "sourceName": "The Indian Express World",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://indianexpress.com/article/world/durga-puja-bangladesh-government-promises-support-safety-hindu-minorities-10868001/"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
     "id": "1",
-    "slug": "dhaka-university-jinnah-photo-row",
-    "title": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
-    "englishTitle": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
-    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
-    "summaryBn": "ঢাকা বিশ্ববিদ্যালয়ের সংগ্রশালা থেকে জিন্নাহ ও জামায়াতের সাবেক প্রধান আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক সৃষ্টি হয়েছে। বিশ্ববিদ্যালয় কর্তৃপক্ষ তিনটি ঘটনা তদন্তে তিনটি কমিটি গঠন করেছে।",
-    "summaryEn": "A controversy has erupted at Dhaka University over the removal of portraits of Jinnah and former Jamaat chief Abdul Malek from the museum. The university has formed three committees to investigate three incidents.",
+    "slug": "bangladesh-minister-india-fascination-reset-ties",
+    "title": "Bangladesh minister says 'fascination with India must end', seeks reset of ties",
+    "englishTitle": "Bangladesh minister says 'fascination with India must end', seeks reset of ties",
+    "banglaTitle": "বাংলাদেশের মন্ত্রী বললেন 'ভারতের প্রতি মুগ্ধতা শেষ হোক', সম্পর্ক পুনর্গঠনের আহ্বান",
+    "summaryBn": "বাংলাদেশের মন্ত্রী হুমায়ুন কবির বলেছেন, ভারতের প্রতি অতিরিক্ত মুগ্ধতা বন্ধ করে ঢাকার উচিত স্বাভাবিক দ্বিপাক্ষিক সম্পর্ক গড়ে তোলা। তিনি তারেক রহমানের জাতিসংঘ সফর বাতিলের প্রসঙ্গে বলেন, বাংলাদেশ এখন স্বাধীন পররাষ্ট্রনীতি অনুসরণ করছে।",
+    "summaryEn": "Bangladesh minister Humaiun Kobir said Dhaka must end its 'excessive preoccupation' with India and approach ties as 'just another country'. He linked the reset to Bangladesh ruling out Tarique Rahman's UN visit, signaling a shift in foreign policy.",
     "keyPointsBn": [
-      "সংগ্রশালা থেকে জিন্নাহ ও আব্দুল মালেকের ছবি টানানো হয়",
-      "শিক্ষক মূল্যায়ন ও 'নির্ভীক জুলাই' স্মৃতিসৌধ নিয়েও বিতর্ক",
-      "তদন্তে তিন কমিটি গঠন"
+      "ভারতের প্রতি মুগ্ধতা বন্ধের আহ্বান জানিয়েছেন বাংলাদেশের মন্ত্রী হুমায়ুন কবির",
+      "তারেক রহমানের জাতিসংঘ সফর বাতিলের সিদ্ধান্তের সঙ্গে সম্পর্ক পুনর্গঠনের যোগসূত্র",
+      "বাংলাদেশ এখন স্বাধীন ও ভারসাম্যপূর্ণ পররাষ্ট্রনীতি অনুসরণ করছে বলে দাবি"
     ],
     "keyPointsEn": [
-      "Portraits of Jinnah and Abdul Malek removed from museum",
-      "Controversy also over teacher evaluation and 'Nirbhik July' memorial",
-      "Three committees formed to investigate"
+      "Bangladesh minister Humaiun Kobir calls for ending 'fascination with India'",
+      "Links reset to Dhaka ruling out Tarique Rahman's UN visit",
+      "Claims Bangladesh now follows an independent, balanced foreign policy"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই মন্তব্যকে 'বিতর্ক' হিসেবে চিহ্নিত করে ঢাকার 'ভারত-বিমুখ' অবস্থানকে নেতিবাচকভাবে ফ্রেম করেছে। সম্পর্ক পুনর্গঠনের আহ্বানকে ভারত-বিরোধী মনোভাব হিসেবে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Indian media framed the statement as a 'row' and highlighted Dhaka's 'anti-India' posture, portraying the reset call negatively. The coverage emphasizes a drift in ties rather than constructive diplomacy.",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/bangladesh-minister-humaiun-kobir-india-ties-reset-tarique-rahman-unga-10877038/",
+      "originalHeadline": "'Fascination with India must end': Bangladesh minister sparks row",
+      "scannedAt": "2026-09-15T08:00:00.000Z"
+    },
+    "publishedAt": "2026-09-14T07:36:41.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "Bangladesh",
+      "India",
+      "diplomacy",
+      "foreign policy",
+      "Tarique Rahman"
+    ],
+    "isLeadStory": true
+  },
+  {
+    "id": "2",
+    "slug": "bangladesh-brics-summit-no-dhaka-representation",
+    "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
+    "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
+    "banglaTitle": "ব্রিকস শীর্ষ সম্মেলনে ঢাকার প্রতিনিধিত্ব নেই, তারেক রহমানের সফর বাতিল",
+    "summaryBn": "বাংলাদেশ ব্রিকস শীর্ষ সম্মেলনে যোগ দিচ্ছে না এবং তারেক রহমানের ভারত সফরের সম্ভাবনা নাকচ করেছে। ঢাকার এই সিদ্ধান্তকে ভারতীয় মিডিয়া দ্বিপাক্ষিক সম্পর্কের শীতলতার লক্ষণ হিসেবে দেখছে।",
+    "summaryEn": "Bangladesh will not attend the BRICS Summit and has ruled out Tarique Rahman's visit to India. Indian media interprets this as a sign of cooling bilateral ties and Dhaka's recalibration of foreign policy.",
+    "keyPointsBn": [
+      "ব্রিকস শীর্ষ সম্মেলনে বাংলাদেশের অনুপস্থিতি",
+      "তারেক রহমানের ভারত সফর বাতিলের ঘোষণা",
+      "ভারত-বাংলাদেশ সম্পর্কের শীতলতার ইঙ্গিত"
+    ],
+    "keyPointsEn": [
+      "Bangladesh absent from BRICS Summit",
+      "Dhaka rules out Tarique Rahman's India visit",
+      "Signals cooling of India-Bangladesh ties"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া ঘটনাটিকে নিরপেক্ষভাবে রিপোর্ট করেছে, তবে সম্পর্কের অবনতির ইঙ্গিত দিয়েছে। কোনো পক্ষকে দোষারোপ না করে কূটনৈতিক দূরত্বের বর্ণনা দিয়েছে।",
+    "sentimentReasonEn": "Indian media reported the event neutrally, noting the diplomatic distance without assigning blame. The tone is factual, highlighting a shift in Bangladesh's engagement.",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/",
+      "originalHeadline": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
+      "scannedAt": "2026-09-15T08:00:00.000Z"
+    },
+    "publishedAt": "2026-09-10T12:33:25.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/brics-summit.jpg",
+    "tags": [
+      "Bangladesh",
+      "BRICS",
+      "Tarique Rahman",
+      "diplomacy"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "3",
+    "slug": "saima-wazed-quits-who-post",
+    "title": "Sheikh Hasina's daughter Saima quits WHO post after termination recommendation",
+    "englishTitle": "Sheikh Hasina's daughter Saima quits WHO post after termination recommendation",
+    "banglaTitle": "শেখ হাসিনার কন্যা সায়মা ডব্লিউএইচও পদ ছাড়লেন, প্রত্যাহারের সুপারিশের একদিন পর",
+    "summaryBn": "শেখ হাসিনার কন্যা সায়মা ওয়াজেদ ডব্লিউএইচও-র পদ থেকে পদত্যাগ করেছেন, সংস্থাটি তার বিরুদ্ধে প্রতারণার অভিযোগে পদ বাতিলের সুপারিশ করার একদিন পর। ভারতীয় মিডিয়া এটিকে হাসিনা পরিবারের রাজনৈতিক পতনের ধারাবাহিকতা হিসেবে দেখছে।",
+    "summaryEn": "Saima Wazed, daughter of Sheikh Hasina, resigned from her WHO post a day after the agency recommended her termination over fraud allegations. Indian media frames this as a continuation of the Hasina family's political downfall.",
+    "keyPointsBn": [
+      "প্রতারণার অভিযোগে ডব্লিউএইচও-র সুপারিশের পর সায়মার পদত্যাগ",
+      "হাসিনা পরিবারের রাজনৈতিক প্রভাব হ্রাসের ইঙ্গিত",
+      "আন্তর্জাতিক সংস্থায় বাংলাদেশের ভাবমূর্তি প্রশ্নবিদ্ধ"
+    ],
+    "keyPointsEn": [
+      "Saima resigns after WHO recommends termination over fraud",
+      "Signals declining political influence of Hasina family",
+      "Raises questions about Bangladesh's image in international bodies"
     ],
     "category": "politics",
     "categoryLabelBn": "রাজনীতি ও নির্বাচন",
     "categoryLabelEn": "Politics & Governance",
     "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে বাংলাদেশে সাম্প্রদায়িক ও রাজনৈতিক উত্তেজনা হিসেবে উপস্থাপন করছে, যা নেতিবাচক ছবি তৈরি করে।",
-    "sentimentReasonEn": "Indian media frames this as communal and political tension in Bangladesh, creating a negative image.",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া হাসিনা পরিবারের বিরুদ্ধে দুর্নীতির অভিযোগকে গুরুত্ব দিয়ে নেতিবাচকভাবে উপস্থাপন করেছে। সায়মার পদত্যাগকে রাজনৈতিক পতনের প্রতীক হিসেবে দেখানো হয়েছে।",
+    "sentimentReasonEn": "Indian media highlighted the fraud allegations against the Hasina family, framing Saima's resignation as a symbol of political downfall. The coverage is critical and negative.",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/bangladesh-saima-wazed-sheikh-hasina-daughter-fraud-allegation-resigns-who-post-10871087/",
+      "originalHeadline": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
+      "scannedAt": "2026-09-15T08:00:00.000Z"
+    },
+    "publishedAt": "2026-09-10T03:36:07.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/saima-wazed.jpg",
+    "tags": [
+      "Sheikh Hasina",
+      "Saima Wazed",
+      "WHO",
+      "Bangladesh",
+      "fraud"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "4",
+    "slug": "bangladesh-durga-puja-hindu-safety",
+    "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
+    "englishTitle": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
+    "banglaTitle": "দুর্গাপূজার আগে হিন্দু সংখ্যালঘুদের নিরাপত্তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
+    "summaryBn": "দুর্গাপূজার আগে বাংলাদেশ সরকার হিন্দু সংখ্যালঘুদের নিরাপত্তা ও সহায়তার প্রতিশ্রুতি দিয়েছে। ভারতীয় মিডিয়া এই প্রতিশ্রুতিকে স্বাগত জানালেও সংখ্যালঘু নিরাপত্তা নিয়ে সন্দেহ প্রকাশ করেছে।",
+    "summaryEn": "Ahead of Durga Puja, the Bangladesh government promised support and safety for the Hindu minority. Indian media welcomed the assurance but expressed skepticism about the ground reality of minority security.",
+    "keyPointsBn": [
+      "দুর্গাপূজার আগে হিন্দুদের নিরাপত্তার প্রতিশ্রুতি",
+      "ভারতীয় মিডিয়ার স্বাগত জানানো, তবে সন্দেহ প্রকাশ",
+      "সংখ্যালঘু নিরাপত্তা নিয়ে উদ্বেগ অব্যাহত"
+    ],
+    "keyPointsEn": [
+      "Bangladesh promises safety for Hindus ahead of Durga Puja",
+      "Indian media welcomes but remains skeptical",
+      "Concerns over minority security persist"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
+    "categoryLabelEn": "Culture & Arts",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া সরকারের প্রতিশ্রুতিকে ইতিবাচকভাবে রিপোর্ট করেছে, যদিও সতর্কতা রয়েছে। সংখ্যালঘু নিরাপত্তার বিষয়ে আশাবাদ প্রকাশ করা হয়েছে।",
+    "sentimentReasonEn": "Indian media reported the government's assurance positively, though with caution. The coverage expresses hope for minority safety during the festival.",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/durga-puja-bangladesh-government-promises-support-safety-hindu-minorities-10868001/",
+      "originalHeadline": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
+      "scannedAt": "2026-09-15T08:00:00.000Z"
+    },
+    "publishedAt": "2026-09-08T05:20:43.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Durga Puja",
+      "Hindu minority",
+      "Bangladesh",
+      "minority safety"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "5",
+    "slug": "india-sends-hilsa-to-bangladesh",
+    "title": "UNO reverse: India is now sending hilsa to Bangladesh",
+    "englishTitle": "UNO reverse: India is now sending hilsa to Bangladesh",
+    "banglaTitle": "ভারত থেকে বাংলাদেশে ইলিশ আমদানি: উল্টো ছবি",
+    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩.৫২ লাখ কেজির বেশি ইলিশ আমদানি হয়েছে। ভারতীয় মিডিয়া এটিকে 'উল্টো ছবি' বলে উল্লেখ করেছে, কারণ ঐতিহ্যগতভাবে বাংলাদেশ ভারতকে ইলিশ রপ্তানি করত।",
+    "summaryEn": "In the first two months of the fiscal year, Bangladesh imported over 352,000 kg of hilsa from India. Indian media calls it a 'UNO reverse' as Bangladesh traditionally exported hilsa to India.",
+    "keyPointsBn": [
+      "জুলাই-আগস্টে ভারত থেকে ৩.৫২ লাখ কেজি ইলিশ আমদানি",
+      "ঐতিহ্যগতভাবে বাংলাদেশ ভারতকে ইলিশ রপ্তানি করত",
+      "ভারতীয় মিডিয়া এটিকে 'উল্টো ছবি' বলে অভিহিত করেছে"
+    ],
+    "keyPointsEn": [
+      "Bangladesh imports 352,000 kg hilsa from India in July-August",
+      "Traditionally Bangladesh exported hilsa to India",
+      "Indian media calls it a 'UNO reverse'"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া হালকা মেজাজে এই বাণিজ্য পরিবর্তনকে ইতিবাচকভাবে উপস্থাপন করেছে। এটি দ্বিপাক্ষিক বাণিজ্যের স্বাভাবিক প্রবাহের অংশ হিসেবে দেখা হচ্ছে।",
+    "sentimentReasonEn": "Indian media presented the trade shift in a light-hearted, positive manner. It is viewed as part of normal bilateral trade flows.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14",
+      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
+      "scannedAt": "2026-09-15T08:00:00.000Z"
+    },
+    "publishedAt": "2026-09-14T21:50:17.000Z",
+    "readTimeBn": "১ মিনিট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "hilsa",
+      "trade",
+      "India-Bangladesh",
+      "import"
+    ],
+    "isLeadStory": false
+  },
+  {
+    "id": "6",
+    "slug": "dhaka-university-jinnah-jamaat-photos-row",
+    "title": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "englishTitle": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
+    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি নিয়ে বিতর্ক",
+    "summaryBn": "ঢাকা বিশ্ববিদ্যালয়ের সংগ্রাহশালায় জিন্নাহ ও জামায়াতের সাবেক প্রধান আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক সৃষ্টি হয়েছে। তিনটি কমিটি তদন্ত করছে, যা বাংলাদেশের রাজনৈতিক মেরুকরণের ইঙ্গিত দেয়।",
+    "summaryEn": "A row erupted at Dhaka University over the hanging of photos of Jinnah and former Jamaat chief Abdul Malek in the museum. Three committees are investigating, signaling political polarization in Bangladesh.",
+    "keyPointsBn": [
+      "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও আব্দুল মালেকের ছবি টানানো নিয়ে বিতর্ক",
+      "তিনটি তদন্ত কমিটি গঠন",
+      "বাংলাদেশের রাজনৈতিক মেরুকরণের ইঙ্গিত"
+    ],
+    "keyPointsEn": [
+      "Row over hanging of Jinnah and Abdul Malek photos at Dhaka University",
+      "Three committees formed to investigate",
+      "Signals political polarization in Bangladesh"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে বাংলাদেশের অভ্যন্তরীণ রাজনৈতিক অস্থিরতা ও মেরুকরণের লক্ষণ হিসেবে নেতিবাচকভাবে উপস্থাপন করেছে।",
+    "sentimentReasonEn": "Indian media framed the incident negatively as a sign of internal political instability and polarization in Bangladesh.",
     "source": {
       "name": "Times of India World",
       "bureau": "Delhi",
       "language": "English",
       "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms",
       "originalHeadline": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
-      "scannedAt": "2026-09-15T07:17:45+05:30"
+      "scannedAt": "2026-09-15T08:00:00.000Z"
     },
-    "publishedAt": "2026-09-15T07:17:45+05:30",
+    "publishedAt": "2026-09-15T07:17:45.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://timesofindia.indiatimes.com/photo/134249657.cms",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
     "tags": [
       "Dhaka University",
       "Jinnah",
       "Jamaat",
-      "controversy"
-    ],
-    "isLeadStory": true
-  },
-  {
-    "id": "2",
-    "slug": "india-hilsa-export-bangladesh",
-    "title": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: উল্টো স্রোত",
-    "englishTitle": "UNO reverse: India is now sending hilsa to Bangladesh",
-    "banglaTitle": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: উল্টো স্রোত",
-    "summaryBn": "চলতি অর্থবছরের প্রথম দুই মাসে ভারত থেকে বাংলাদেশে ৩ লাখ ৫২ হাজার ৪৮৪ কেজি ইলিশ আমদানি হয়েছে। সাধারণত বাংলাদেশ ভারতকে ইলিশ রপ্তানি করে, কিন্তু এবার উল্টো চিত্র দেখা যাচ্ছে।",
-    "summaryEn": "In the first two months of the current fiscal year, Bangladesh imported 352,484 kg of hilsa from India. Usually Bangladesh exports hilsa to India, but this time the trend has reversed.",
-    "keyPointsBn": [
-      "জুলাই-আগস্টে ৩.৫২ লাখ কেজি ইলিশ আমদানি",
-      "সাধারণত বাংলাদেশ ভারতকে ইলিশ রপ্তানি করে",
-      "ভারতীয় মিডিয়া এটিকে 'উল্টো স্রোত' বলে অভিহিত করেছে"
-    ],
-    "keyPointsEn": [
-      "352,484 kg hilsa imported in July-August",
-      "Usually Bangladesh exports hilsa to India",
-      "Indian media calls it a 'reverse trend'"
-    ],
-    "category": "trade",
-    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
-    "categoryLabelEn": "Cross-Border Trade",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে হালকা মজার ছলে উপস্থাপন করেছে, যা দ্বিপাক্ষিক বাণিজ্যের ইতিবাচক দিক তুলে ধরে।",
-    "sentimentReasonEn": "Indian media presents this in a light-hearted manner, highlighting a positive aspect of bilateral trade.",
-    "source": {
-      "name": "India Today",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss",
-      "originalHeadline": "UNO reverse: India is now sending hilsa to Bangladesh",
-      "scannedAt": "2026-09-14T21:50:17+05:30"
-    },
-    "publishedAt": "2026-09-14T21:50:17+05:30",
-    "readTimeBn": "১ মিনিট",
-    "readTimeEn": "1 min read",
-    "imageUrl": "https://www.indiatoday.in/photo/2994581.cms",
-    "tags": [
-      "hilsa",
-      "trade",
-      "Bangladesh",
-      "India"
+      "Bangladesh politics"
     ],
     "isLeadStory": false
   },
   {
-    "id": "3",
+    "id": "7",
     "slug": "hasina-daughter-resigns-who",
     "title": "শেখ হাসিনার কন্যা জরিমানা ও জালিয়াতির অভিযোগে ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ",
     "englishTitle": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
@@ -267,7 +445,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "4",
+    "id": "8",
     "slug": "india-bangladesh-ties-tarique-rahman",
     "title": "তরিক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
     "englishTitle": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
@@ -310,7 +488,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "5",
+    "id": "9",
     "slug": "bangladesh-hilsa-import-india",
     "title": "ভারত থেকে বাংলাদেশে টনে টনে ইলিশ আমদানি কেন হচ্ছে",
     "englishTitle": "Why Bangladesh is importing tonnes of hilsa from India",
@@ -354,7 +532,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "6",
+    "id": "10",
     "slug": "bangladesh-child-marriage-crackdown-bongaon",
     "title": "বনগাঁয় নাবালিকা বিয়ে: মুখ্যমন্ত্রীর নির্দেশে স্বামী-শ্বশুর-শাশুড়ি গ্রেপ্তার",
     "englishTitle": "Bongaon child marriage crackdown: Husband, in-laws arrested after CM's warning",
@@ -398,7 +576,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "7",
+    "id": "11",
     "slug": "ndtv-bangladesh-minister-recalibration-ties-with-india",
     "title": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
     "englishTitle": "In Comments Of Bangladesh Minister, A Hint Of Recalibration Of Ties With India",
@@ -444,7 +622,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isTrending": true
   },
   {
-    "id": "8",
+    "id": "12",
     "slug": "india-today-gujarat-bomb-threat-probe-bangladesh-link",
     "title": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
     "englishTitle": "Gujarat Bomb Threat Probe Reveals Bangladesh Link: Two Arrested With 5 Lakh Email IDs",
@@ -490,7 +668,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isTrending": true
   },
   {
-    "id": "9",
+    "id": "13",
     "slug": "india-today-bangladesh-tribunal-seven-awami-league-leaders",
     "title": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
     "englishTitle": "Bangladesh Tribunal To Rule On Seven Awami League Leaders Over July Uprising: India Today Report",
@@ -535,7 +713,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "10",
+    "id": "14",
     "slug": "india-today-womens-asia-cup-semi-final-india-crush-bangladesh",
     "title": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
     "englishTitle": "Dominant India Outplay Bangladesh To Storm Into Women's Asia Cup Final",
@@ -580,7 +758,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "11",
+    "id": "15",
     "slug": "india-today-india-bangladesh-defence-ties-training-talks",
     "title": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
     "englishTitle": "India, Bangladesh Reaffirm Defence Ties With Bilateral Training And Security Talks",
@@ -625,7 +803,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "12",
+    "id": "16",
     "slug": "wion-bangladesh-foreign-policy-reset-south-asia",
     "title": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
     "englishTitle": "Strategic Realignment: How Bangladesh's Foreign Policy Reset Is Reshaping South Asian Geopolitics",
@@ -670,7 +848,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "13",
+    "id": "17",
     "slug": "india-today-bangladesh-reset-ties-bilateral-diplomacy",
     "title": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
     "englishTitle": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
@@ -715,7 +893,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "14",
+    "id": "18",
     "slug": "times-now-bangladesh-cross-border-connectivity-security-scrutiny",
     "title": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
     "englishTitle": "Frontier Security & Transit: Indian Strategic Circles Assess New Framework For Bangladesh Border Corridor",
@@ -760,7 +938,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "15",
+    "id": "19",
     "slug": "republic-tv-bangladesh-minority-rights-interim-governance-debate",
     "title": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
     "englishTitle": "High Decibel Scrutiny: Indian Media Tracks Developments Surrounding Minority Protections In Bangladesh",
@@ -805,7 +983,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "16",
+    "id": "20",
     "slug": "abp-ananda-petrapole-benapole-trade-transporter-talks",
     "title": "পেট্রাপোল-বেনাপোল বাণিজ্যে গতি ফেরাতে তৎপর দুই দেশের সীমান্ত কর্তৃপক্ষ ও রফতানিকারকরা",
     "englishTitle": "Petrapole-Benapole Border Trade: Joint Steps Initiated To Expedite Cargo Movement And Clearance",
@@ -850,7 +1028,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "isLeadStory": false
   },
   {
-    "id": "17",
+    "id": "21",
     "slug": "bangladesh-india-reset-ties-bilateral-discussions",
     "title": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
     "englishTitle": "Bangladesh wants to 'reset' ties with India, should be done through bilateral discussions: State Minister",
@@ -936,7 +1114,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Dhaka",
       "Bilateral Ties"
     ],
-    "id": "18",
+    "id": "22",
     "isLeadStory": false
   },
   {
@@ -981,7 +1159,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Kolkata",
       "Petrapole"
     ],
-    "id": "19",
+    "id": "23",
     "isLeadStory": false
   },
   {
@@ -1026,7 +1204,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Legal",
       "Human Rights"
     ],
-    "id": "20",
+    "id": "24",
     "isLeadStory": false
   },
   {
@@ -1071,7 +1249,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Strategic",
       "Security"
     ],
-    "id": "21",
+    "id": "25",
     "isLeadStory": false
   },
   {
@@ -1116,7 +1294,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Rescue",
       "Ganga"
     ],
-    "id": "22",
+    "id": "26",
     "isLeadStory": false
   },
   {
@@ -1161,7 +1339,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Afghanistan",
       "UAE"
     ],
-    "id": "23",
+    "id": "27",
     "isLeadStory": false
   },
   {
@@ -1206,7 +1384,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "River",
       "Diplomacy"
     ],
-    "id": "24",
+    "id": "28",
     "isLeadStory": false
   },
   {
@@ -1251,7 +1429,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Bangladesh Bank",
       "Energy"
     ],
-    "id": "25",
+    "id": "29",
     "isLeadStory": false
   },
   {
@@ -1296,7 +1474,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Logistics"
     ],
-    "id": "26",
+    "id": "30",
     "isLeadStory": false
   },
   {
@@ -1341,7 +1519,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Students",
       "Healthcare"
     ],
-    "id": "27",
+    "id": "31",
     "isLeadStory": false
   },
   {
@@ -1386,7 +1564,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Trade",
       "Rural Economy"
     ],
-    "id": "28",
+    "id": "32",
     "isLeadStory": false
   },
   {
@@ -1431,56 +1609,11 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Culture",
       "Publishers"
     ],
-    "id": "29",
+    "id": "33",
     "isLeadStory": false
   },
   {
-    "id": "30",
-    "slug": "bangladesh-minister-fascination-with-india-row",
-    "title": "'Fascination with India must end': Bangladesh minister sparks row",
-    "englishTitle": "'Fascination with India must end': Bangladesh minister sparks row",
-    "banglaTitle": "'ভারতের প্রতি মুগ্ধতা শেষ হতে হবে': বাংলাদেশের মন্ত্রীর মন্তব্যে বিতর্ক",
-    "summaryBn": "বাংলাদেশের পররাষ্ট্র প্রতিমন্ত্রী হুমায়ুন কবিরের 'ভারতের প্রতি মুগ্ধতা শেষ করতে হবে' মন্তব্য নিয়ে বিতর্ক সৃষ্টি হয়েছে। তিনি বলেন, ভারত এখন কেবল আরেকটি দেশ যার সঙ্গে ভালো দ্বিপাক্ষিক সম্পর্ক চায় বাংলাদেশ।",
-    "summaryEn": "Bangladesh State Minister for Foreign Affairs Humaiun Kobir's remark that 'fascination with India must end' has sparked a row. He stated that India is just another country with which Bangladesh wants a good bilateral relationship, signaling a shift in Dhaka's diplomatic posture.",
-    "keyPointsBn": [
-      "পররাষ্ট্র প্রতিমন্ত্রীর মন্তব্যে কূটনৈতিক বিতর্ক",
-      "ভারতকে 'আরেকটি দেশ' হিসেবে উল্লেখ",
-      "বাংলাদেশের পররাষ্ট্রনীতিতে পরিবর্তনের ইঙ্গিত"
-    ],
-    "keyPointsEn": [
-      "State Minister's remark sparks diplomatic row",
-      "Describes India as 'just another country'",
-      "Signals shift in Bangladesh's foreign policy"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই মন্তব্যকে বাংলাদেশের 'ভারত-বিরোধী' মনোভাবের প্রকাশ হিসেবে চিত্রিত করেছে, যা নেতিবাচক সুর তৈরি করেছে। সংবাদে বিতর্ক ও সম্পর্কের টানাপোড়েনের দিকটি গুরুত্ব পেয়েছে।",
-    "sentimentReasonEn": "Indian media portrays the remark as indicative of an 'anti-India' sentiment in Bangladesh, creating a negative tone. The coverage emphasizes the controversy and strain in bilateral ties.",
-    "source": {
-      "name": "The Indian Express World",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/world/bangladesh-minister-humaiun-kobir-india-ties-reset-tarique-rahman-unga-10877038/",
-      "originalHeadline": "'Fascination with India must end': Bangladesh minister sparks row",
-      "scannedAt": "2026-09-14T20:00:00+05:30"
-    },
-    "publishedAt": "2026-09-14T07:36:41+00:00",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/bangladesh-minister.jpg",
-    "tags": [
-      "Bangladesh",
-      "India",
-      "Diplomacy",
-      "Controversy",
-      "Humaiun Kobir"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "31",
+    "id": "34",
     "slug": "madrassas-mushrooming-near-bangladesh-border-giriraj-singh",
     "title": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
     "englishTitle": "Madrassas mushrooming near Bangladesh border: Giriraj Singh",
@@ -1521,141 +1654,6 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Security",
       "Madrassas",
       "Giriraj Singh"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "32",
-    "slug": "no-dhaka-representation-brics-summit-tarique-rahman",
-    "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
-    "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
-    "banglaTitle": "ব্রিকস শীর্ষ সম্মেলনে ঢাকার কোনো প্রতিনিধি নেই, তারেক রহমানের সফর বাতিল",
-    "summaryBn": "বাংলাদেশ ব্রিকস শীর্ষ সম্মেলনে যোগ দেবে না বলে জানিয়েছে, কারণ প্রধানমন্ত্রী তারেক রহমানের দিল্লি সফর বাতিল হয়েছে। এই সিদ্ধান্ত দ্বিপাক্ষিক সম্পর্কের টানাপোড়েনের ইঙ্গিত দেয়।",
-    "summaryEn": "Bangladesh has ruled out Prime Minister Tarique Rahman's visit to the BRICS Summit in Delhi, meaning no Dhaka representation at the event. The decision signals ongoing strain in bilateral relations.",
-    "keyPointsBn": [
-      "ব্রিকস সম্মেলনে বাংলাদেশের অনুপস্থিতি",
-      "তারেক রহমানের দিল্লি সফর বাতিল",
-      "দ্বিপাক্ষিক সম্পর্কে টানাপোড়েনের ইঙ্গিত"
-    ],
-    "keyPointsEn": [
-      "Bangladesh absent from BRICS Summit",
-      "Tarique Rahman's Delhi visit ruled out",
-      "Signals strain in bilateral ties"
-    ],
-    "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
-    "categoryLabelEn": "Diplomacy & Water",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই সিদ্ধান্তকে দ্বিপাক্ষিক সম্পর্কের অবনতির লক্ষণ হিসেবে দেখছে। সংবাদে বাংলাদেশের 'দূরত্ব' বজায় রাখার প্রবণতা তুলে ধরা হয়েছে, যা নেতিবাচক সুর তৈরি করেছে।",
-    "sentimentReasonEn": "Indian media views the decision as a sign of deteriorating bilateral ties. The coverage highlights Bangladesh's tendency to maintain distance, creating a negative tone.",
-    "source": {
-      "name": "The Indian Express World",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/",
-      "originalHeadline": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
-      "scannedAt": "2026-09-14T20:00:00+05:30"
-    },
-    "publishedAt": "2026-09-10T12:33:25+00:00",
-    "readTimeBn": "৩ মিনিট",
-    "readTimeEn": "3 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/brics-summit.jpg",
-    "tags": [
-      "Bangladesh",
-      "BRICS",
-      "Tarique Rahman",
-      "Diplomacy",
-      "Delhi"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "33",
-    "slug": "sheikh-hasina-daughter-saima-quits-who-post",
-    "title": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
-    "englishTitle": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
-    "banglaTitle": "শেখ হাসিনার মেয়ে সায়মা ডব্লিউএইচওর পদ থেকে পদত্যাগ করলেন, একদিন আগে পদ অবসানের সুপারিশ",
-    "summaryBn": "শেখ হাসিনার মেয়ে সায়মা ওয়াজেদ ডব্লিউএইচওর আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন। জালিয়াতির অভিযোগ ওঠার পর সংস্থাটি তার পদ অবসানের সুপারিশ করেছিল।",
-    "summaryEn": "Saima Wazed, daughter of Sheikh Hasina, resigned from her post as WHO Regional Director a day after the organization recommended her termination following fraud allegations. The development adds to the political turmoil surrounding the Hasina family.",
-    "keyPointsBn": [
-      "শেখ হাসিনার মেয়ের পদত্যাগ",
-      "জালিয়াতির অভিযোগে ডব্লিউএইচওর সুপারিশ",
-      "হাসিনা পরিবারের রাজনৈতিক সংকট গভীরতর"
-    ],
-    "keyPointsEn": [
-      "Sheikh Hasina's daughter resigns",
-      "WHO recommended termination over fraud charges",
-      "Deepens political crisis for Hasina family"
-    ],
-    "category": "politics",
-    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
-    "categoryLabelEn": "Politics & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই ঘটনাকে হাসিনা পরিবারের ভাবমূর্তি ক্ষুণ্নকারী হিসেবে উপস্থাপন করেছে। জালিয়াতির অভিযোগ ও পদত্যাগের বিষয়টি নেতিবাচক আলোচনার জন্ম দিয়েছে।",
-    "sentimentReasonEn": "Indian media presents this as damaging to the Hasina family's image. The fraud allegations and resignation generate negative discourse.",
-    "source": {
-      "name": "The Indian Express World",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/world/bangladesh-saima-wazed-sheikh-hasina-daughter-fraud-allegation-resigns-who-post-10871087/",
-      "originalHeadline": "Sheikh Hasina's daughter Saima quits WHO post, a day after it recommended her termination",
-      "scannedAt": "2026-09-14T20:00:00+05:30"
-    },
-    "publishedAt": "2026-09-10T03:36:07+00:00",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/saima-wazed.jpg",
-    "tags": [
-      "Bangladesh",
-      "Sheikh Hasina",
-      "Saima Wazed",
-      "WHO",
-      "Fraud"
-    ],
-    "isLeadStory": false
-  },
-  {
-    "id": "34",
-    "slug": "durga-puja-bangladesh-government-promises-safety-hindu-minority",
-    "title": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
-    "englishTitle": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
-    "banglaTitle": "দুর্গাপূজার আগে হিন্দু সংখ্যালঘুদের সহায়তা ও নিরাপত্তার প্রতিশ্রুতি বাংলাদেশ সরকারের",
-    "summaryBn": "দুর্গাপূজার আগে বাংলাদেশ সরকার হিন্দু সংখ্যালঘুদের নিরাপত্তা ও সহায়তার প্রতিশ্রুতি দিয়েছে। এই পদক্ষেপ ধর্মীয় সম্প্রীতি বজায় রাখার প্রচেষ্টার অংশ।",
-    "summaryEn": "Ahead of Durga Puja, the Bangladesh government has promised support and safety for the Hindu minority. The move is seen as an effort to maintain religious harmony amid political tensions.",
-    "keyPointsBn": [
-      "দুর্গাপূজার আগে নিরাপত্তা প্রতিশ্রুতি",
-      "হিন্দু সংখ্যালঘুদের সুরক্ষার আশ্বাস",
-      "ধর্মীয় সম্প্রীতি বজায় রাখার প্রচেষ্টা"
-    ],
-    "keyPointsEn": [
-      "Safety assurance ahead of Durga Puja",
-      "Promise to protect Hindu minority",
-      "Effort to maintain religious harmony"
-    ],
-    "category": "culture",
-    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
-    "categoryLabelEn": "Culture & Arts",
-    "sentiment": "positive",
-    "sentimentReasonBn": "ভারতীয় মিডিয়া এই পদক্ষেপকে ইতিবাচকভাবে দেখছে, কারণ এটি সংখ্যালঘুদের সুরক্ষা ও ধর্মীয় সহনশীলতার বার্তা দেয়। সংবাদে সরকারের উদ্যোগের প্রশংসা করা হয়েছে।",
-    "sentimentReasonEn": "Indian media views this positively as it conveys a message of minority protection and religious tolerance. The coverage appreciates the government's initiative.",
-    "source": {
-      "name": "The Indian Express World",
-      "bureau": "Delhi",
-      "language": "English",
-      "originalUrl": "https://indianexpress.com/article/world/durga-puja-bangladesh-government-promises-support-safety-hindu-minorities-10868001/",
-      "originalHeadline": "Ahead of Durga Puja, Bangladesh government promises support, safety for Hindu minority",
-      "scannedAt": "2026-09-14T20:00:00+05:30"
-    },
-    "publishedAt": "2026-09-08T05:20:43+00:00",
-    "readTimeBn": "২ মিনিট",
-    "readTimeEn": "2 min read",
-    "imageUrl": "https://indianexpress.com/wp-content/uploads/2026/09/durga-puja-bangladesh.jpg",
-    "tags": [
-      "Bangladesh",
-      "Durga Puja",
-      "Hindu Minority",
-      "Religious Harmony",
-      "Culture"
     ],
     "isLeadStory": false
   },
