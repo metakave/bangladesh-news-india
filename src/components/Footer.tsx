@@ -6,7 +6,7 @@ import { useApp } from '@/context/ThemeContext';
 import { CATEGORIES } from '@/data/news-data';
 import { TRANSLATIONS } from '@/data/translations';
 import NarrativeCompassLogo from '@/components/NarrativeCompassLogo';
-import { Globe, Shield, Rss, ArrowUp, Calendar, Bookmark, Moon, Sun, Archive } from 'lucide-react';
+import { Globe, Shield, ArrowUp, Calendar, Bookmark, Moon, Sun, Archive } from 'lucide-react';
 import VisitorCounter from '@/components/VisitorCounter';
 
 export default function Footer() {
@@ -256,7 +256,6 @@ export default function Footer() {
               <li><a href="#ethics" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Code of Ethics'}</a></li>
               <li><a href="#corrections" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'সংশোধনী ও স্পষ্টীকরণ' : 'Corrections & Clarifications'}</a></li>
               <li><a href="#factcheck" style={{ color: 'var(--text-secondary)' }}>{lang === 'bn' ? 'তথ্য যাচাই নীতিমালা' : 'Fact-Checking Policy'}</a></li>
-              <li><a href="#rss" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', color: 'var(--brand-gold)' }}><Rss size={12} /> {lang === 'bn' ? 'আরএসএস ফিড' : 'RSS Feeds'}</a></li>
             </ul>
           </div>
         </div>
