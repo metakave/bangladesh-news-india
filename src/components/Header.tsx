@@ -320,7 +320,7 @@ export default function Header() {
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 fontWeight: pathname === '/' ? 800 : 600,
-                fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
+                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
                 color: pathname === '/' ? 'var(--brand-primary)' : 'var(--text-primary)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.05em',
@@ -340,7 +340,7 @@ export default function Header() {
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{
                     fontWeight: active ? 800 : 600,
-                    fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
+                    fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
                     color: active ? 'var(--brand-primary)' : 'var(--text-primary)',
                     textTransform: lang === 'bn' ? 'none' : 'uppercase',
                     letterSpacing: lang === 'bn' ? '0' : '0.05em',
@@ -358,7 +358,7 @@ export default function Header() {
               className={lang === 'bn' ? 'font-bengali' : ''}
               style={{
                 fontWeight: pathname === '/bangladesh-indian-news-media' ? 800 : 600,
-                fontSize: lang === 'bn' ? 'calc(0.88rem - 1pt)' : '0.84rem',
+                fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',
                 color: pathname === '/bangladesh-indian-news-media' ? 'var(--brand-primary)' : 'var(--text-primary)',
                 textTransform: lang === 'bn' ? 'none' : 'uppercase',
                 letterSpacing: lang === 'bn' ? '0' : '0.05em',
