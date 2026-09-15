@@ -45,19 +45,19 @@
 }
 
 [data-theme='dark'] {
-  --bg-primary: #2c2c54;
-  --bg-secondary: #222244;
-  --bg-card: #2c2c54;
-  --bg-accent: #383868;
-  --bg-highlight: #3c385c;
+  --bg-primary: #2C3A47;
+  --bg-secondary: #212C36;
+  --bg-card: #2C3A47;
+  --bg-accent: #374858;
+  --bg-highlight: #3F5163;
 
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
   --text-muted: #94a3b8;
-  --text-inverse: #2c2c54;
+  --text-inverse: #2C3A47;
 
-  --border-primary: #454572;
-  --border-subtle: #37375c;
+  --border-primary: #435465;
+  --border-subtle: #354554;
   --border-bold: #f8fafc;
 
   --brand-primary: #ff7043;
