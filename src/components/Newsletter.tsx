@@ -49,8 +49,8 @@ export default function Newsletter() {
         <h2
           className={lang === 'bn' ? 'font-bengali' : 'font-masthead'}
           style={{
-            fontSize: lang === 'bn' ? 'clamp(1.3rem, 2.6vw, 1.95rem)' : 'clamp(1.45rem, 2.8vw, 2.15rem)',
-            fontWeight: 900,
+            fontSize: lang === 'bn' ? 'clamp(1.05rem, 2.1vw, 1.65rem)' : 'clamp(1.3rem, 2.5vw, 1.98rem)',
+            fontWeight: 600,
             color: 'var(--text-primary)',
             marginBottom: '0.75rem',
             lineHeight: 1.3
