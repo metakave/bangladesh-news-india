@@ -116,7 +116,7 @@ const RSS_FEEDS = [
     name: 'Bengali Media - Bangladesh Tracker', 
     bureau: 'Kolkata', 
     language: 'Bengali', 
-    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('বাংলাদেশ (site:anandabazar.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:bengali.news18.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('বাংলাদেশ (site:thewall.in OR site:anandabazar.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:bengali.news18.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
     webUrl: 'https://news.google.com' 
   },
   { 
@@ -125,16 +125,44 @@ const RSS_FEEDS = [
     language: 'Hindi', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('बांग्लादेश (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:ndtv.in OR site:hindi.news18.com OR site:zeenews.india.com OR site:tv9hindi.com OR site:indiatvnews.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
     webUrl: 'https://news.google.com' 
+  },
+
+  // 6. Dedicated High-Priority Political Tracker: Sheikh Hasina
+  { 
+    name: 'Indian Media - Sheikh Hasina Priority Wire', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("Sheikh Hasina" OR "Hasina") (site:thehindu.com OR site:indianexpress.com OR site:timesofindia.indiatimes.com OR site:hindustantimes.com OR site:ndtv.com OR site:thewall.in OR site:anandabazar.com OR site:news18.com OR site:indiatoday.in) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Bengali Media - Sheikh Hasina Priority Tracker', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("শেখ হাসিনা" OR "হাসিনা") (site:thewall.in OR site:anandabazar.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://news.google.com' 
   }
 ];
 
 const BANGLADESH_KEYWORDS = [
-  'bangladesh', 'dhaka', 'chittagong', 'sylhet', 'yunus', 'tarique', 'sheikh hasina', 
+  'bangladesh', 'dhaka', 'chittagong', 'sylhet', 'yunus', 'tarique', 'sheikh hasina', 'hasina',
   'awami league', 'bnp', 'teesta', 'benapole', 'rohingya', 'bgb',
   'maitree express', 'bandhan express', 'mitali express', 'adani power',
-  'বাংলাদেশ', 'ঢাকা', 'চট্টগ্রাম', 'সিলেট', 'ইউনূস', 'তারেক রহমান', 'শেখ হাসিনা', 'আওয়ামী লীগ', 'আওয়ামী লীগ', 'বিএনপি', 'তিস্তা', 'বেনাপোল', 'বিজিবি',
-  'बांग्लादेश', 'ढाका', 'हसीना', 'यूनुस', 'तारिक', 'तीस्ता'
+  'বাংলাদেশ', 'ঢাকা', 'চট্টগ্রাম', 'সিলেট', 'ইউনূস', 'তারেক রহমান', 'শেখ হাসিনা', 'হাসিনা', 'আওয়ামী লীগ', 'আওয়ামী লীগ', 'বিএনপি', 'তিস্তা', 'বেনাপোল', 'বিজিবি',
+  'बांग्लादेश', 'ढाका', 'हसीना', 'यूनुस', 'तारिक', 'तीस्ता', 'शेख हसीना'
 ];
+
+/**
+ * Priority keywords that must be prioritized for pickup during news scanning.
+ */
+const PRIORITY_KEYWORDS = [
+  'শেখ হাসিনা', 'হাসিনা', 'sheikh hasina', 'hasina', 'शेख हसीना'
+];
+
+function isPriorityKeyword(title, desc) {
+  const text = ((title || '') + ' ' + (desc || '')).toLowerCase();
+  return PRIORITY_KEYWORDS.some(kw => text.includes(kw.toLowerCase()));
+}
 
 /**
  * Robust filter to eliminate false positives:
@@ -143,6 +171,11 @@ const BANGLADESH_KEYWORDS = [
  */
 function isTrulyBangladeshRelated(title, desc) {
   const text = ((title || '') + ' ' + (desc || '')).toLowerCase();
+
+  // Explicit priority check: Sheikh Hasina news is always Bangladesh-related
+  if (isPriorityKeyword(title, desc)) {
+    return true;
+  }
 
   // 1. Negative exclusion list: Local Indian domestic affairs that have no Bangladesh connection
   const domesticExclusions = [
@@ -302,7 +335,21 @@ async function runDailyNewsScanner() {
     return isTrulyBangladeshRelated(art.title, art.desc);
   });
 
-  console.log(`🎯 Identified ${matchedArticles.length} articles specifically related to Bangladesh / Dhaka.`);
+  // Sort candidate articles so that Sheikh Hasina priority items are at the very top,
+  // followed by newest publication date.
+  matchedArticles.sort((a, b) => {
+    const aPriority = isPriorityKeyword(a.title, a.desc) ? 1 : 0;
+    const bPriority = isPriorityKeyword(b.title, b.desc) ? 1 : 0;
+    if (aPriority !== bPriority) {
+      return bPriority - aPriority; // Priority items first!
+    }
+    const timeA = new Date(a.pubDate || 0).getTime() || 0;
+    const timeB = new Date(b.pubDate || 0).getTime() || 0;
+    return timeB - timeA;
+  });
+
+  const priorityMatches = matchedArticles.filter(art => isPriorityKeyword(art.title, art.desc));
+  console.log(`🎯 Identified ${matchedArticles.length} articles specifically related to Bangladesh / Dhaka (${priorityMatches.length} priority "শেখ হাসিনা / Sheikh Hasina" items).`);
 
   console.log('\n🧠 Step 2: Querying DeepSeek API to synthesize intelligence & translate...');
   
@@ -312,8 +359,12 @@ Your goal is to evaluate the provided candidate news headlines/reports, filter a
 
 CRITICAL RELEVANCE & ANTI-FALSE-POSITIVE RULES:
 1. Every single selected story MUST be substantively about Bangladesh (its government, political parties like Awami League/BNP/Jamaat, economy, society, cricket, people) or direct India-Bangladesh bilateral relations (border trade, diplomacy, water sharing, shared transit).
-2. STRICTLY REJECT and EXCLUDE any story that is purely an internal Indian or West Bengal state/local domestic incident (such as domestic crimes, local police arrests, child marriages, civic affairs, municipal issues, local political disputes between Indian parties like TMC vs BJP) even if it took place in a border district (like Bongaon, Petrapole, Siliguri, North 24 Parganas, Malda) or was reported in Bengali. If it is not about the country of Bangladesh, IT IS A FALSE POSITIVE AND MUST BE DISCARDED.
-3. NEVER fabricate or hallucinate a connection to Bangladesh if the source article does not explicitly concern Bangladesh.
+2. TOP EDITORIAL PRIORITY KEYWORD DIRECTIVE:
+   - "শেখ হাসিনা" / "Sheikh Hasina" is a designated TOP EDITORIAL PRIORITY KEYWORD.
+   - Any candidate reports, statements, interviews, exiled leadership coordination in Kolkata/Delhi, extradition proceedings, legal cases at ICT, and Dhaka-Delhi diplomatic friction concerning Sheikh Hasina MUST BE GIVEN HIGHEST PRIORITY for selection in newScannedItems and breakingAlerts.
+   - If any candidate items mention Sheikh Hasina, ensure they are prioritized in your editorial curation.
+3. STRICTLY REJECT and EXCLUDE any story that is purely an internal Indian or West Bengal state/local domestic incident (such as domestic crimes, local police arrests, child marriages, civic affairs, municipal issues, local political disputes between Indian parties like TMC vs BJP) even if it took place in a border district (like Bongaon, Petrapole, Siliguri, North 24 Parganas, Malda) or was reported in Bengali. If it is not about the country of Bangladesh, IT IS A FALSE POSITIVE AND MUST BE DISCARDED.
+4. NEVER fabricate or hallucinate a connection to Bangladesh if the source article does not explicitly concern Bangladesh.
 
 EDITORIAL TRANSLATION & NAMING RULES:
 1. For any news on Tarique Rahman (whether referred to as Tarique Rahman, Tariq Rahman, Tarique Zia, etc.):
@@ -490,22 +541,24 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
     throw new Error(`Unable to recover JSON from AI response (${cleaned.length} characters).`);
   }
 
-  // Select diverse and relevant top candidate items to send to the AI (optimized to prevent context bloat)
-  const sampleCandidates = matchedArticles.slice(0, 16).map(m => ({
+  // Select diverse and relevant top candidate items to send to the AI (up to 24 items, with all priority items first)
+  const sampleCandidates = matchedArticles.slice(0, 24).map(m => ({
     title: m.title,
-    description: (m.desc || '').slice(0, 120),
+    description: (m.desc || '').slice(0, 140),
     sourceName: m.sourceName,
     bureau: m.sourceBureau,
     language: m.sourceLanguage,
     url: m.link || m.fallbackWebUrl,
-    pubDate: m.pubDate
+    pubDate: m.pubDate,
+    priorityPickup: isPriorityKeyword(m.title, m.desc)
   }));
 
-  const userPrompt = `Here are the latest candidate articles scanned from Indian media (${matchedArticles.length} total matches found):\n` +
+  const userPrompt = `Here are the latest candidate articles scanned from Indian media (${matchedArticles.length} total matches found, including ${priorityMatches.length} high-priority Sheikh Hasina / শেখ হাসিনা items):\n` +
     (sampleCandidates.length > 0 
       ? JSON.stringify(sampleCandidates, null, 2)
       : 'No direct RSS matches in this cycle. Please generate 5 top realistic current news items reflecting ongoing major Indian media coverage on Bangladesh.') +
     `\n\nPlease output 4-6 high-impact synthesized news items and 4 breaking alerts in the required JSON format reflecting the most critical Bangladesh and Dhaka developments reported by Indian media.
+CRITICAL EDITORIAL PRIORITY: Items flagged with "priorityPickup": true or concerning "শেখ হাসিনা" / "Sheikh Hasina" must be prioritized in your editorial selection and featured prominently.
 Keep summaries concise (2-3 sentences max) and keyPoints to 3 clear bullets each to ensure complete and valid output within token limits.
 Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
 
@@ -561,6 +614,19 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
           item.keyPointsBn = item.keyPointsBn.map(normalizeTariqueTranslation);
         }
       }
+
+      // Ensure Sheikh Hasina priority items receive high visibility and proper tags
+      if (isPriorityKeyword(item.title, (item.summaryBn || '') + ' ' + (item.summaryEn || ''))) {
+        item.isTrending = true;
+        if (!Array.isArray(item.tags)) item.tags = [];
+        if (!item.tags.some(t => t.toLowerCase().includes('hasina'))) {
+          item.tags.push('Sheikh Hasina');
+        }
+        if (!item.tags.some(t => t.includes('শেখ হাসিনা'))) {
+          item.tags.push('শেখ হাসিনা');
+        }
+      }
+
       return item;
     });
   } else {
