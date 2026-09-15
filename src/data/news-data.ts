@@ -68,25 +68,36 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1943,
-  "bangladeshMatches": 354,
+  "totalScanned24h": 1952,
+  "bangladeshMatches": 355,
   "sentimentDistribution": {
     "positive": 1,
     "neutral": 9,
-    "negative": 4
+    "negative": 5
   },
   "bureauDistribution": {
     "delhi": 7,
-    "kolkata": 7
+    "kolkata": 8
   },
   "languageDistribution": {
     "english": 7,
-    "bengali": 7,
+    "bengali": 8,
     "hindi": 0
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-008",
+    "headlineBn": "‘হিন্দু বাঙালিদের অবস্থা হতে পারত চিন্ময়কৃষ্ণের মতো’: বাংলাদেশে পরিস্থিতি নিয়ে সরব শুভেন্দু অধিকারী",
+    "headlineEn": "'Condition of Hindu Bengalis could have been like Chinmoy Krishna': Suvendu Adhikari on Bangladesh crisis",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "Ei Samay",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://eisamay.com/west-bengal-news/kolkata-news/cm-suvendu-adhikari-reaction-over-bangladesh-chinmay-krishna-current-situation/200541925.cms"
+  },
   {
     "id": "alert-006",
     "headlineBn": "কাদেরসহ আওয়ামী লীগের ৭ শীর্ষ নেতার বিরুদ্ধে আজ ট্রাইব্যুনালের রায় ঘোষণা",
@@ -167,6 +178,59 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "43",
+    "slug": "ei-samay-suvendu-adhikari-chinmoy-krishna-bangladesh-hindus",
+    "title": "‘হিন্দু বাঙালিদের অবস্থা হতে পারত চিন্ময়কৃষ্ণের মতো’: শুভেন্দু অধিকারী",
+    "englishTitle": "'Condition of Hindu Bengalis Could Have Been Like Chinmoy Krishna': Suvendu Adhikari on Bangladesh Crisis",
+    "banglaTitle": "‘হিন্দু বাঙালিদের অবস্থা হতে পারত চিন্ময়কৃষ্ণের মতো’: বাংলাদেশে পরিস্থিতি নিয়ে সরব শুভেন্দু অধিকারী",
+    "summaryBn": "কলকাতার নিউ টাউনে গণেশ পুজোর উদ্বোধনী অনুষ্ঠানে পশ্চিমবঙ্গের বিরোধী দলনেতা শুভেন্দু অধিকারী বাংলাদেশে চিন্ময় কৃষ্ণ দাসের কারাবন্দিত্ব এবং তাঁর মায়ের শেষকৃত্যে কান্নায় ভেঙে পড়ার প্রসঙ্গ টেনে তীব্র প্রতিক্রিয়া ব্যক্ত করেছেন। তিনি বলেন, দেশভাগের সময় শ্যামাপ্রসাদ মুখোপাধ্যায় ও স্বামী প্রণবানন্দ মহারাজের লড়াই না থাকলে এ পারের হিন্দু বাঙালিদের অবস্থাও আজ চিন্ময়কৃষ্ণের মতো হতো। তিনি নিজের পরিবারের বরিশাল থেকে দেশত্যাগের স্মৃতি তুলে ধরে ওপার বাংলার হিন্দুদের পাশে দাঁড়ানোর আহ্বান জানান। অন্যদিকে সিপিএম ও বিরোধী দলগুলো বিজেপির এই অবস্থানকে বিভাজনের রাজনীতি হিসেবে চিহ্নিত করেছে।",
+    "summaryEn": "Speaking at a Ganesh Puja inauguration in New Town, Kolkata, West Bengal Opposition Leader Suvendu Adhikari invoked the ongoing incarceration of Hindu monk Chinmoy Krishna Das in Bangladesh and his breakdown during his mother's funeral in Chattogram. Adhikari asserted that had it not been for Syama Prasad Mookerjee and Swami Pranavananda fighting to keep West Bengal within India during Partition, Hindu Bengalis in West Bengal would have faced a similar fate. Invoking his own family's displacement from Barishal, he called for cultural awakening, while Left leaders criticized his statements as communal polarization.",
+    "keyPointsBn": [
+      "কলকাতার নিউ টাউনে শুভেন্দু অধিকারী বলেন, ওপার বাংলার চিন্ময় প্রভুর চোখের জল বিশ্বজুড়ে সনাতনীদের হৃদয় নাড়িয়ে দিয়েছে",
+      "তিনি দাবি করেন, শ্যামাপ্রসাদ মুখোপাধ্যায়ের লড়াইয়ের কারণেই পশ্চিমবঙ্গ ভারতের অংশ হয়েছিল, নতুবা এখানকার হিন্দুদের পরিণতিও একই হতো",
+      "দেশভাগের স্মৃতিচারণ করে তিনি জানান, হিন্দু হওয়ার কারণেই তাঁর নিজের পরিবারকেও বরিশাল থেকে ভারতে আশ্রয় নিতে হয়েছিল",
+      "সিপিএম নেতা কলতান দাশগুপ্ত ও আইএসএফ বিধায়ক নওশাদ সিদ্দিকি এই বক্তব্যের পাল্টায় মানবাধিকার ও রাজনৈতিক দ্বিমুখীনতার অভিযোগ তুলেছেন"
+    ],
+    "keyPointsEn": [
+      "Suvendu Adhikari stated in Kolkata that Chinmoy Krishna Das's tears at his mother's funeral moved the conscience of millions across the region",
+      "He asserted that Syama Prasad Mookerjee's Partition-era movement prevented West Bengal from suffering the current fate of Bangladeshi minorities",
+      "Adhikari shared his family's personal trauma during Partition, recalling his mother's forced migration from Barishal",
+      "Opposition politicians including CPIM's Kaltan Dasgupta and ISF MLA Naushad Siddiqui debated the human rights and political dimensions of the remarks"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "এই সময় পশ্চিমবঙ্গের রাজনীতিতে বাংলাদেশের সংখ্যালঘু ইস্যু, চিন্ময় কৃষ্ণ দাসের বন্দিত্ব এবং দেশভাগের স্মৃতি নিয়ে শুভেন্দু অধিকারীর আক্রমণাত্মক বক্তব্য বিশ্লেষণ করেছে।",
+    "sentimentReasonEn": "Ei Samay covers West Bengal Opposition Leader Suvendu Adhikari's sharp political rhetoric linking the plight of Bangladesh minorities and Chinmoy Krishna Das to Partition politics.",
+    "source": {
+      "name": "Ei Samay",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://eisamay.com/west-bengal-news/kolkata-news/cm-suvendu-adhikari-reaction-over-bangladesh-chinmay-krishna-current-situation/200541925.cms",
+      "originalHeadline": "‘হিন্দু বাঙালিদের অবস্থা হতে পারত চিন্ময়কৃষ্ণের মতো’, সরব মুখ্যমন্ত্রী",
+      "scannedAt": "2026-09-15T06:35:00.000Z"
+    },
+    "publishedAt": "2026-09-13T08:05:03+05:30",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/suvendu-adhikari-chinmoy-bangladesh.jpg",
+    "tags": [
+      "Ei Samay",
+      "এই সময়",
+      "Chinmoy Krishna Das",
+      "চিন্ময় কৃষ্ণ দাস",
+      "Suvendu Adhikari",
+      "শুভেন্দু অধিকারী",
+      "Kolkata",
+      "Bangladesh Minorities",
+      "West Bengal Politics",
+      "Syama Prasad Mookerjee"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
   {
     "id": "38",
     "slug": "dhaka-tribunal-verdict-obaidul-quader-seven-awami-league-leaders",
