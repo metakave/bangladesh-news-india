@@ -69,19 +69,19 @@ export const CATEGORIES = [
 
 export const SCANNER_STATS = {
   "totalScanned24h": 1943,
-  "bangladeshMatches": 352,
+  "bangladeshMatches": 354,
   "sentimentDistribution": {
     "positive": 1,
-    "neutral": 8,
-    "negative": 3
+    "neutral": 9,
+    "negative": 4
   },
   "bureauDistribution": {
-    "delhi": 6,
-    "kolkata": 6
+    "delhi": 7,
+    "kolkata": 7
   },
   "languageDistribution": {
-    "english": 6,
-    "bengali": 6,
+    "english": 7,
+    "bengali": 7,
     "hindi": 0
   }
 };
@@ -108,6 +108,17 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceBureau": "Kolkata",
     "sentiment": "neutral",
     "url": "https://www.bbc.com/bengali/articles/c046rvwk2pvo"
+  },
+  {
+    "id": "alert-007",
+    "headlineBn": "মায়ের শেষকৃত্যে যোগ দিতে চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার বিশেষ প্যারোল মঞ্জুর",
+    "headlineEn": "Chinmoy Krishna Das Granted 5-Hour Parole to Attend Mother's Last Rites",
+    "timeAgoBn": "৫ দিন আগে",
+    "timeAgoEn": "5 days ago",
+    "sourceName": "The Wall",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://www.thewall.in/bangladesh/chinmay-krishnas-mother-departed-with-the-unfulfilled-wish-of-seeing-her-son-will-tareq-sarkar-grant-parole-to-the-imprisoned-monk/tid/204451"
   },
   {
     "id": "alert-001",
@@ -307,6 +318,107 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Sheikh Hasina",
       "শেখ হাসিনা",
       "Kolkata Bureau"
+    ],
+    "isLeadStory": false,
+    "isTrending": false
+  },
+  {
+    "id": "41",
+    "slug": "chinmoy-krishna-das-mother-demise-parole-plea-the-wall",
+    "title": "ছেলেকে দেখার ইচ্ছা বুকে চেপে চলে গেলেন চিন্ময়কৃষ্ণের মা: প্যারোলে মুক্তি নিয়ে আলোচনা",
+    "englishTitle": "Chinmoy Krishna's Mother Passes Away with Unfulfilled Wish to See Son: Debate Over Parole in Bangladesh",
+    "banglaTitle": "ছেলেকে দেখার ইচ্ছা বুকে চেপে চলে গেলেন চিন্ময়কৃষ্ণের মা: প্যারোলে মুক্তি নিয়ে আলোচনা",
+    "summaryBn": "চট্টগ্রাম কারাগারে বন্দি সনাতন জাগরণ মঞ্চের মুখপাত্র চিন্ময় কৃষ্ণ দাস ব্রহ্মচারীর মা সন্ধ্যা রানি ধর (৭০) ক্যান্সারের সাথে দীর্ঘ লড়াই শেষে শ্রীশ্রী পুণ্ডরীক ধাম আশ্রমে শেষ নিঃশ্বাস ত্যাগ করেছেন। মায়ের শেষকৃত্যে অংশ নিতে তাঁর আইনজীবীরা চট্টগ্রামের জেলা প্রশাসনের কাছে প্যারোলে মুক্তির জোর আবেদন জানিয়েছেন। দীর্ঘ কারাবাস ও অসুস্থতার কারণে ছেলের সাথে শেষ দেখা না হওয়ায় গভীর শোক ও ক্ষোভ প্রকাশ করেছে তাঁর পরিবার ও ভক্তসমাজ।",
+    "summaryEn": "Sandhya Rani Dhar (70), mother of imprisoned Sanatan Jagaran Mancha spokesperson Chinmoy Krishna Das, passed away at Sri Sri Pundarik Dham Ashram in Chattogram following a prolonged battle with cancer. As his legal counsel petitioned the Chattogram district administration for temporary parole to permit his participation in her final rites, family members and community leaders expressed profound grief over her passing without being able to see her detained son.",
+    "keyPointsBn": [
+      "ক্যান্সারে আক্রান্ত সন্ধ্যা রানি ধর চিকিৎসকদের পরামর্শে জীবনের শেষ দিনগুলো হাটহাজারীর পুণ্ডরীক ধাম আশ্রমে কাটিয়ে শেষ নিঃশ্বাস ত্যাগ করেন",
+      "চট্টগ্রাম কেন্দ্রীয় কারাগারে বন্দি চিন্ময় কৃষ্ণের শারীরিক অবনতি ও লিভার জটিলতার কথা বিবেচনা করে আগে মায়ের গুরুতর অসুস্থতার খবর গোপন রাখা হয়েছিল",
+      "আইনজীবী অপূর্ব ভট্টাচার্য মায়ের অন্ত্যেষ্টিক্রিয়া ও পারলৌকিক শ্রাদ্ধানুষ্ঠানে যোগ দেওয়ার জন্য চট্টগ্রাম প্রশাসনের কাছে জরুরি প্যারোলের আবেদন দাখিল করেন",
+      "হাইকোর্টে ৪টি মামলায় জামিন পেলেও দুটি মামলায় জামিন না হওয়ায় তাঁর স্থায়ী মুক্তির পথ এখনও আটকে রয়েছে"
+    ],
+    "keyPointsEn": [
+      "Sandhya Rani Dhar breathed her last at Hathazari's Pundarik Dham Ashram after battling advanced-stage cancer",
+      "Defense counsel Apurba Bhattacharya revealed that details of his mother's critical state were initially withheld due to Chinmoy's own deteriorating health in jail",
+      "A formal parole petition was submitted to the Chattogram district magistrate seeking temporary release to conduct the Hindu cremation rituals",
+      "While the Bangladesh High Court granted bail in four of six cases, two pending charges continue to delay his formal release"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "কলকাতার দ্য ওয়াল কারাবন্দি হিন্দু সন্ন্যাসীর মায়ের প্রয়াণ ও প্যারোলে মুক্তির মানবিক সংকটকে স্পর্শকাতর ও সহানুভূতিশীল দৃষ্টিতে তুলে ধরেছে।",
+    "sentimentReasonEn": "The Wall highlights the emotional human rights dimensions surrounding the monk's mother passing away without seeing her detained son.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/chinmay-krishnas-mother-departed-with-the-unfulfilled-wish-of-seeing-her-son-will-tareq-sarkar-grant-parole-to-the-imprisoned-monk/tid/204451",
+      "originalHeadline": "ছেলেকে দেখার ইচ্ছা বুকে চেপে চলে গেলেন চিন্ময়কৃষ্ণের মা, কারাবন্দি সাধুকে কি প্যারোলে মুক্তি দেবে তারেক সরকার",
+      "scannedAt": "2026-09-15T05:40:00.000Z"
+    },
+    "publishedAt": "2026-09-10T07:11:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/chinmoy-krishna-das.jpg",
+    "tags": [
+      "Chinmoy Krishna Das",
+      "চিন্ময় কৃষ্ণ দাস",
+      "The Wall",
+      "Chattogram",
+      "Pundarik Dham",
+      "Minorities",
+      "Human Rights",
+      "Kolkata Bureau"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
+  {
+    "id": "42",
+    "slug": "ndtv-chinmoy-krishna-das-granted-five-hour-parole-mother-funeral",
+    "title": "মায়ের শেষকৃত্যে যোগ দিতে চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার প্যারোল মঞ্জুর: এনডিটিভির প্রতিবেদন",
+    "englishTitle": "Chinmoy Krishna Das Granted 5-Hour Parole for Mother's Last Rites in Chattogram: NDTV Report",
+    "banglaTitle": "মায়ের শেষকৃত্যে যোগ দিতে চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার প্যারোল মঞ্জুর: এনডিটিভির প্রতিবেদন",
+    "summaryBn": "ভারতের শীর্ষ সংবাদমাধ্যম এনডিটিভির প্রতিবেদনে জানানো হয়েছে, মা সন্ধ্যা রানি ধরের শেষকৃত্যানুষ্ঠানে যোগ দেওয়ার জন্য সনাতন জাগরণ মঞ্চের নেতা চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার শর্তসাপেক্ষ প্যারোল মঞ্জুর করে চট্টগ্রাম জেলা প্রশাসন। কড়া পুলিশি নিরাপত্তায় পুণ্ডরীক ধামে পৌঁছানোর পর তিনি ধর্মীয় আচার সম্পন্ন করেন এবং নির্ধারিত সময় শেষে পুনরায় চট্টগ্রাম কারাগারে ফিরে যান। নয়াদিল্লির পর্যবেক্ষক ও সামাজিক মাধ্যমগুলোতে ঘটনাটি নিয়ে গভীর আগ্রহ দেখা গেছে।",
+    "summaryEn": "Leading Indian broadcaster NDTV reported that Bangladeshi Hindu monk Chinmoy Krishna Das was granted five hours of conditional parole by the Chattogram district administration to perform the final rites for his mother, Sandhya Rani Dhar. Escorted under heavy police security to Pundarik Dham, he completed the religious rituals before returning to Chattogram Central Jail, amid close observation from civil society and diplomatic circles in New Delhi.",
+    "keyPointsBn": [
+      "চট্টগ্রাম জেলা প্রশাসকের অনুমোদনে ৫ ঘণ্টার বিশেষ প্যারোলে মুক্তি পেয়ে পুণ্ডরীক ধামে মায়ের মরদেহে শেষ শ্রদ্ধা জানান চিন্ময় কৃষ্ণ দাস",
+      "কঠোর পুলিশি প্রহরার মধ্যে ধর্মীয় আনুষ্ঠানিকতা শেষ হওয়ার পরপরই তাঁকে পুনরায় চট্টগ্রাম কেন্দ্রীয় কারাগারে নিয়ে যাওয়া হয়",
+      "ভারতীয় গণমাধ্যমে তাঁর স্বাস্থ্যগত অবস্থা এবং সংখ্যালঘু সম্প্রদায়ের সুরক্ষা ও নিরাপত্তা নিয়ে অব্যাহত উদ্বেগ প্রকাশ করা হয়েছে",
+      "নয়াদিল্লির কূটনৈতিক মহল ঘটনাপ্রবাহ এবং বাংলাদেশে মানবাধিকার ও আইনি প্রক্রিয়ার স্বচ্ছতা নিবিড়ভাবে পর্যবেক্ষণ করছে"
+    ],
+    "keyPointsEn": [
+      "Chattogram District Deputy Commissioner granted 5 hours of conditional parole allowing Chinmoy Krishna to attend the funeral ceremony",
+      "Accompanied by rigorous security detachments, he performed Hindu funerary customs at Pundarik Dham before returning to custody",
+      "Indian national outlets continue to highlight his health condition and emphasize equitable treatment for minority religious leaders",
+      "Diplomatic observers in New Delhi continue to closely track the legal trajectory and human rights protections in Bangladesh"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "এনডিটিভি প্যারোল প্রক্রিয়া, আইনি ব্যবস্থাপনা ও ধর্মীয় আচার পালনের তথ্যনিষ্ঠ বিবরণ দিয়েছে।",
+    "sentimentReasonEn": "NDTV provides a balanced and factual report covering the district administration's parole decision and security measures.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/world-news/bangladesh-hindu-monk-chinmoy-krishna-das-granted-five-hours-parole-to-attend-mothers-funeral-653210",
+      "originalHeadline": "Bangladeshi Hindu monk Chinmoy Krishna Das granted five hours parole to perform mother's last rites",
+      "scannedAt": "2026-09-15T05:45:00.000Z"
+    },
+    "publishedAt": "2026-09-10T12:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/chinmoy-krishna-das.jpg",
+    "tags": [
+      "Chinmoy Krishna Das",
+      "NDTV",
+      "Chattogram",
+      "Parole",
+      "Human Rights",
+      "Delhi Bureau",
+      "Minorities"
     ],
     "isLeadStory": false,
     "isTrending": false
