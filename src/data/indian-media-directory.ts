@@ -3,13 +3,14 @@ export interface IndianMediaOutlet {
   name: string;
   nameBn?: string;
   language: 'English' | 'Bengali' | 'Hindi' | 'Malayalam' | 'Tamil' | 'Telugu' | 'Marathi' | 'Gujarati';
-  type: 'Print/Digital' | 'Broadcast/Digital' | 'Digital' | 'Magazine/Digital';
+  type: 'Print/Digital' | 'Broadcast/Digital' | 'Digital' | 'Magazine/Digital' | 'Broadcast/YouTube';
   headOffice: string;
   headOfficeBn?: string;
   websiteUrl: string;
   domain: string;
   bangladeshUrl: string;
   rssFeedUrl?: string;
+  youtubeChannelUrl?: string;
 }
 
 export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
@@ -864,6 +865,20 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     domain: 'bengali.oneindia.com',
     bangladeshUrl: 'https://bengali.oneindia.com/topic/bangladesh',
     rssFeedUrl: 'https://bengali.oneindia.com/rss/',
+  },
+  {
+    id: 'bnt-bangla-news',
+    name: 'BNT Bangla News',
+    nameBn: 'বিএনটি বাংলা খবর',
+    language: 'Bengali',
+    type: 'Broadcast/YouTube',
+    headOffice: 'Kolkata, West Bengal',
+    headOfficeBn: 'কলকাতা, পশ্চিমবঙ্গ',
+    websiteUrl: 'https://www.youtube.com/@bntbanglanews',
+    domain: 'youtube.com/@bntbanglanews',
+    bangladeshUrl: 'https://www.youtube.com/@bntbanglanews',
+    youtubeChannelUrl: 'https://www.youtube.com/@bntbanglanews',
+    rssFeedUrl: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCpN7pRE07V0CsX1kYcVX5cw',
   },
 
   // ==========================================

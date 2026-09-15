@@ -68,25 +68,36 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1952,
-  "bangladeshMatches": 355,
+  "totalScanned24h": 1960,
+  "bangladeshMatches": 356,
   "sentimentDistribution": {
     "positive": 1,
     "neutral": 9,
-    "negative": 5
+    "negative": 6
   },
   "bureauDistribution": {
     "delhi": 7,
-    "kolkata": 8
+    "kolkata": 9
   },
   "languageDistribution": {
     "english": 7,
-    "bengali": 8,
+    "bengali": 9,
     "hindi": 0
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-009",
+    "headlineBn": "‘আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল’: শুভেন্দু অধিকারী (ভিডিও রিপোর্ট)",
+    "headlineEn": "'My mother had to flee Opar Bangla in a single cloth': Suvendu Adhikari (Video Dispatch)",
+    "timeAgoBn": "ভিডিও রিপোর্ট",
+    "timeAgoEn": "Video Dispatch",
+    "sourceName": "BNT Bangla (YouTube)",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://www.youtube.com/watch?v=0WrRFhIezuc"
+  },
   {
     "id": "alert-008",
     "headlineBn": "‘হিন্দু বাঙালিদের অবস্থা হতে পারত চিন্ময়কৃষ্ণের মতো’: বাংলাদেশে পরিস্থিতি নিয়ে সরব শুভেন্দু অধিকারী",
@@ -178,6 +189,59 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "44",
+    "slug": "bnt-bangla-suvendu-adhikari-opar-bangla-mother-refugee-chinmoy-krishna",
+    "title": "আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল শুধু হিন্দু বলে: শুভেন্দু অধিকারী",
+    "englishTitle": "'My Mother Had to Flee Opar Bangla in a Single Cloth Just Because She Was Hindu': Suvendu Adhikari on Bangladesh Crisis",
+    "banglaTitle": "‘আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল শুধু হিন্দু বলে’: শুভেন্দু অধিকারী",
+    "summaryBn": "বিএনটি বাংলা নিউজের ভিডিও প্রতিবেদনে পশ্চিমবঙ্গের বিরোধী দলনেতা শুভেন্দু অধিকারীর একটি আবেগঘন রাজনৈতিক বক্তব্য প্রকাশিত হয়েছে। নিউ টাউনে দেওয়া ওই ভাষণে তিনি জানান, বিভীষিকাময় দেশভাগের শিকার হয়ে শুধু হিন্দু হওয়ার কারণে তাঁর মাকেও এক কাপড়ে ওপার বাংলা (বরিশাল) থেকে পালিয়ে আসতে হয়েছিল। বাংলাদেশে ইসকন সন্ন্যাসী চিন্ময় কৃষ্ণ দাসের মায়ের শেষকৃত্যে প্যারোলে মুক্তি ও তাঁর কান্নার দৃশ্য তুলে ধরে তিনি বলেন, শ্যামাপ্রসাদ মুখোপাধ্যায়ের নেতৃত্বে ভারতভুক্তি না হলে পশ্চিমবঙ্গের হিন্দুদেরও আজ একই পরিণতি বরণ করতে হতো।",
+    "summaryEn": "In a video report broadcast by BNT Bangla News, West Bengal Opposition Leader Suvendu Adhikari recounted his family's refugee history during the Partition, stating that his mother had to flee Opar Bangla (Barishal) in a single cloth solely for being Hindu. Linking his personal memory to the ongoing crisis in Bangladesh and the grief of incarcerated monk Chinmoy Krishna Das at his mother's funeral in Chattogram, Adhikari asserted that Syama Prasad Mookerjee's movement safeguarded Bengali Hindus in West Bengal from a similar fate.",
+    "keyPointsBn": [
+      "বিএনটি বাংলা নিউজের ভিডিওতে শুভেন্দু অধিকারী জানান, দেশভাগের সময় তাঁর মাকেও এক কাপড়ে ওপার বাংলা (বরিশাল) থেকে পালিয়ে ভারতে আসতে হয়েছিল",
+      "বাংলাদেশে সন্ন্যাসী চিন্ময় কৃষ্ণ দাসের মায়ের শেষকৃত্যে ৫ ঘণ্টার প্যারোলে কান্না ও বন্দিদশার প্রসঙ্গ টেনে তীব্র ক্ষোভ প্রকাশ করেন",
+      "তিনি দাবি করেন, শ্যামাপ্রসাদ মুখোপাধ্যায় না থাকলে এ পারের হিন্দু বাঙালিদেরও আজ ওপার বাংলার মতো নিপীড়নের মুখে পড়তে হতো",
+      "সামাজিক যোগাযোগমাধ্যম ও ইউটিউবে ছড়িয়ে পড়া এই ভিডিও পশ্চিমবঙ্গে ব্যাপক রাজনৈতিক আলোচনার জন্ম দিয়েছে"
+    ],
+    "keyPointsEn": [
+      "In the BNT Bangla News dispatch, Suvendu Adhikari recounted his mother's forced flight from East Bengal in a single cloth during Partition",
+      "He expressed deep anguish over monk Chinmoy Krishna Das weeping during his 5-hour parole for his mother's cremation in Chattogram",
+      "Adhikari asserted that Syama Prasad Mookerjee's legacy prevented West Bengal's Hindus from suffering the same vulnerability",
+      "The video dispatch has circulated extensively across Bengali digital news media and YouTube platforms"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "বিএনটি বাংলা নিউজের ভিডিও প্রতিবেদনে শুভেন্দু অধিকারীর ওপার বাংলা সংক্রান্ত পারিবারিক দেশভাগের ইতিহাস ও বর্তমান বাংলাদেশের পরিস্থিতি নিয়ে বক্তব্য প্রকাশিত হয়েছে।",
+    "sentimentReasonEn": "BNT Bangla News video dispatch captures West Bengal Opposition Leader Suvendu Adhikari's address recounting his family's refugee history from East Bengal and current developments concerning Bangladeshi minorities.",
+    "source": {
+      "name": "BNT Bangla News (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=0WrRFhIezuc",
+      "originalHeadline": "আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছে শুধু হিন্দু বলে।শুভেন্দু অধিকারী #BJPbengal",
+      "scannedAt": "2026-09-15T06:42:00.000Z"
+    },
+    "publishedAt": "2026-09-12T16:10:26.000Z",
+    "readTimeBn": "২ মিনিট ভিডিও",
+    "readTimeEn": "2 min video",
+    "imageUrl": "/images/yt-suvendu-opar-bangla-chinmoy.jpg",
+    "tags": [
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "ওপার বাংলা",
+      "Opar Bangla",
+      "Suvendu Adhikari",
+      "শুভেন্দু অধিকারী",
+      "Chinmoy Krishna Das",
+      "চিন্ময় কৃষ্ণ দাস",
+      "BNT Bangla News",
+      "Kolkata Bureau"
+    ],
+    "isLeadStory": false,
+    "isTrending": true
+  },
   {
     "id": "43",
     "slug": "ei-samay-suvendu-adhikari-chinmoy-krishna-bangladesh-hindus",

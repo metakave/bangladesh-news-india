@@ -148,6 +148,34 @@ const RSS_FEEDS = [
     language: 'Bengali', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("ওপার বাংলা" OR "ওপার বাংলায়" OR "ওপার বাংলার") (site:thewall.in OR site:anandabazar.com OR site:eisamay.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
     webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'BNT Bangla News (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCpN7pRE07V0CsX1kYcVX5cw', 
+    webUrl: 'https://www.youtube.com/@bntbanglanews' 
+  },
+  { 
+    name: 'ABP Ananda (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCv3rFzn-GHGtqzXiaq3sWNg', 
+    webUrl: 'https://www.youtube.com/@abpanandatv' 
+  },
+  { 
+    name: 'Republic Bangla (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCajVjEHDoVn_AHsunUZz_EQ', 
+    webUrl: 'https://www.youtube.com/@RepublicBangla' 
+  },
+  { 
+    name: 'Indian Media YouTube Video Dispatch Tracker', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("বাংলাদেশ" OR "ওপার বাংলা" OR "শেখ হাসিনা" OR "চিন্ময় কৃষ্ণ" OR "Bangladesh") when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com' 
   }
 ];
 
@@ -270,8 +298,9 @@ function getBureauAndLanguage(sourceName, title, fallbackBureau = 'Delhi', fallb
 
 function parseRssXml(xmlText) {
   const items = [];
+
+  // 1. Standard RSS <item> parsing
   const itemMatches = xmlText.match(/<item[\s\S]*?<\/item>/gi) || [];
-  
   for (const itemXml of itemMatches) {
     const titleMatch = itemXml.match(/<title>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/title>/i);
     const linkMatch = itemXml.match(/<link>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/link>/i);
@@ -290,9 +319,34 @@ function parseRssXml(xmlText) {
         const parts = title.split(' - ');
         detectedSource = parts[parts.length - 1].trim();
       }
-      items.push({ title, link, desc, pubDate, detectedSource });
+      items.push({ title, link, desc, pubDate, detectedSource, isVideo: link.includes('youtube.com') });
     }
   }
+
+  // 2. Atom XML <entry> parsing (Direct YouTube channel feeds)
+  const entryMatches = xmlText.match(/<entry[\s\S]*?<\/entry>/gi) || [];
+  for (const entryXml of entryMatches) {
+    const titleMatch = entryXml.match(/<title[^>]*>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/title>/i);
+    const linkMatch = entryXml.match(/<link[^>]*href=["']([^"']+)["']/i) || entryXml.match(/<link>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/link>/i);
+    const descMatch = entryXml.match(/<media:description>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/media:description>/i) ||
+                      entryXml.match(/<summary>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/summary>/i);
+    const pubDateMatch = entryXml.match(/<published>([^<]+)<\/published>/i) ||
+                         entryXml.match(/<updated>([^<]+)<\/updated>/i);
+    const authorMatch = entryXml.match(/<author>[\s\S]*?<name>(?:<!\[CDATA\[([\s\S]*?)\]\]>|([\s\S]*?))<\/name>/i);
+    const thumbMatch = entryXml.match(/<media:thumbnail[^>]*url=["']([^"']+)["']/i);
+
+    let title = decodeHtmlEntities((titleMatch ? (titleMatch[1] || titleMatch[2] || '') : '').trim());
+    let link = (linkMatch ? (linkMatch[1] || linkMatch[2] || '') : '').trim();
+    let desc = decodeHtmlEntities((descMatch ? (descMatch[1] || descMatch[2] || '') : '').trim().replace(/<[^>]+>/g, ''));
+    let pubDate = (pubDateMatch ? (pubDateMatch[1] || pubDateMatch[2] || '') : '').trim();
+    let detectedSource = decodeHtmlEntities((authorMatch ? (authorMatch[1] || authorMatch[2] || '') : '').trim());
+    let thumbnail = (thumbMatch ? thumbMatch[1] : '').trim();
+
+    if (title) {
+      items.push({ title, link, desc, pubDate, detectedSource, thumbnail, isVideo: true });
+    }
+  }
+
   return items;
 }
 
@@ -374,6 +428,7 @@ CRITICAL RELEVANCE & ANTI-FALSE-POSITIVE RULES:
    - If candidate items mention Sheikh Hasina, Awami League, or ওপার বাংলা, ensure they are prioritized in your editorial curation.
 3. STRICTLY REJECT and EXCLUDE any story that is purely an internal Indian or West Bengal state/local domestic incident (such as domestic crimes, local police arrests, child marriages, civic affairs, municipal issues, local political disputes between Indian parties like TMC vs BJP) even if it took place in a border district (like Bongaon, Petrapole, Siliguri, North 24 Parganas, Malda) or was reported in Bengali. If it is not about the country of Bangladesh, IT IS A FALSE POSITIVE AND MUST BE DISCARDED.
 4. NEVER fabricate or hallucinate a connection to Bangladesh if the source article does not explicitly concern Bangladesh.
+5. YOUTUBE VIDEO COVERAGE: When candidate items originate from verified YouTube channels of Indian news media (e.g. BNT Bangla, ABP Ananda, Republic Bangla, TV9 Bangla), preserve the authentic YouTube video link and video context, and tag them with "YouTube Video" and "ভিডিও রিপোর্ট".
 
 EDITORIAL TRANSLATION & NAMING RULES:
 1. For any news on Tarique Rahman (whether referred to as Tarique Rahman, Tariq Rahman, Tarique Zia, etc.):
@@ -559,6 +614,8 @@ Return ONLY a valid JSON object with the exact following schema (no markdown fen
     language: m.sourceLanguage,
     url: m.link || m.fallbackWebUrl,
     pubDate: m.pubDate,
+    thumbnail: m.thumbnail || '',
+    isVideo: Boolean(m.isVideo),
     priorityPickup: isPriorityKeyword(m.title, m.desc)
   }));
 
@@ -641,6 +698,15 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
           if (!item.tags.some(t => t.toLowerCase().includes('opar bangla'))) item.tags.push('Opar Bangla');
           if (!item.tags.some(t => t.includes('ওপার বাংলা'))) item.tags.push('ওপার বাংলা');
         }
+      }
+
+      // Detect YouTube video reports and apply appropriate tags and formats
+      if (item.source?.originalUrl?.includes('youtube.com') || item.source?.name?.includes('YouTube') || combinedText.includes('youtube')) {
+        if (!Array.isArray(item.tags)) item.tags = [];
+        if (!item.tags.some(t => t.toLowerCase().includes('youtube'))) item.tags.push('YouTube Video');
+        if (!item.tags.some(t => t.includes('ভিডিও'))) item.tags.push('ভিডিও রিপোর্ট');
+        if (!item.readTimeBn) item.readTimeBn = 'ভিডিও রিপোর্ট';
+        if (!item.readTimeEn) item.readTimeEn = 'Video Dispatch';
       }
 
       return item;
