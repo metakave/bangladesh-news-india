@@ -1096,7 +1096,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T16:10:00+05:30",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/indian-visa-application-center-dhaka.jpg",
     "tags": [
       "Visa",
       "High Commission",
@@ -1276,7 +1276,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T13:15:00+05:30",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/teesta-river-barrage-jrc.jpg",
     "tags": [
       "Teesta",
       "Water Sharing",
