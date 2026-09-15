@@ -264,13 +264,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#ethics"
+                <Link
+                  href="/editorial-policy"
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ color: 'var(--text-secondary)' }}
                 >
-                  {lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Code of Ethics'}
-                </a>
+                  {lang === 'bn' ? 'সম্পাদনা নীতিমালা' : 'Editorial Policy'}
+                </Link>
               </li>
               <li>
                 <a

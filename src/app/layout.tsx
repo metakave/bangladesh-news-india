@@ -151,9 +151,9 @@ const jsonLdOrg = {
   },
   sameAs: [],
   description: 'Independent news narrative monitor and journal of record tracking Indian media reporting on Bangladesh.',
-  publishingPrinciples: `${SITE_URL}/about#ethics`,
+  publishingPrinciples: `${SITE_URL}/editorial-policy`,
   diversityPolicy: `${SITE_URL}/about#standards`,
-  ethicsPolicy: `${SITE_URL}/about#ethics`,
+  ethicsPolicy: `${SITE_URL}/editorial-policy`,
   factCheckingPolicy: `${SITE_URL}/about#factcheck`,
   correctionsPolicy: `${SITE_URL}/about#corrections`,
 };
