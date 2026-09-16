@@ -236,7 +236,7 @@ export default function EditorialPolicyPage() {
               {
                 step: '01',
                 title: lang === 'bn' ? '৪-চ্যানেল তথ্য সংগ্রহ' : '4-Channel Ingestion',
-                desc: lang === 'bn' ? 'আরএসএস, ওয়েবসাইট, ইউটিউব ও ইনস্টাগ্রাম থেকে নিরবচ্ছিন্ন কাঁচা ডেটা গ্রহণ' : 'Raw content synced from RSS feeds, portals, YouTube & Instagram desks',
+                desc: lang === 'bn' ? 'আরএসএস, ওয়েবসাইট, ইউটিউব ও ইনস্টাগ্রাম থেকে নিরবচ্ছিন্ন RAW ডেটা গ্রহণ' : 'Raw content synced from RSS feeds, portals, YouTube & Instagram desks',
                 icon: <Layers size={20} color="#2563eb" />,
               },
               {
