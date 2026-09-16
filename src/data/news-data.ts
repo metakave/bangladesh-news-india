@@ -301,7 +301,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T11:37:05.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/gauhati-high-court.jpg",
+    "imageUrl": "/images/india-bangladesh-border-fence.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -348,7 +348,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T08:00:00.000Z",
     "readTimeBn": "১ মিনিট",
     "readTimeEn": "1 min read",
-    "imageUrl": "/images/gauhati-high-court.jpg",
+    "imageUrl": "/images/india-bangladesh-border-fence.jpg",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
