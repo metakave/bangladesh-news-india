@@ -2587,7 +2587,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T11:45:00+05:30",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/bsf-ganga-river-rescue.jpg",
     "tags": [
       "BSF",
       "Border",
