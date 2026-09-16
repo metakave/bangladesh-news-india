@@ -294,7 +294,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Siliguri Times",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com/watch?v=siliguri-times-kharibari-detain",
+      "originalUrl": "https://www.youtube.com/@SILIGURITIMES",
       "originalHeadline": "Two Bangladeshi nationals detained near Indo-Nepal border in Kharibari",
       "scannedAt": "2026-09-16T16:30:00.000Z"
     },
@@ -435,7 +435,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News Vanguard",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com/watch?v=news-vanguard-bangladesh-unrest",
+      "originalUrl": "https://www.youtube.com/@NewsVanguardTripura24X7",
       "originalHeadline": "বাংলাদেশে চরম অশান্তি ও উত্তেজনার বাতাবরণ",
       "scannedAt": "2026-09-16T18:00:00.000Z"
     },
