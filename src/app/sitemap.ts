@@ -36,13 +36,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/about`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/about-us`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
     },
     {
       url: `${SITE_URL}/editorial-policy`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/fact-checking-policy`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${SITE_URL}/corrections-and-clarifications`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.75,
     },
   ];
 

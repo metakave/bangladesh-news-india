@@ -1,50 +1,30 @@
-import { Metadata } from 'next';
-
-const SITE_URL = 'https://bangladesh-news-india.vercel.app';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Bangladesh in Indian News Media: 100+ Verified Direct Despatches & Live Portals',
-  description: 'Comprehensive directory of 100+ top Indian media outlets with dedicated Bangladesh coverage sections across Delhi, Kolkata, and regional bureaus in English, Bengali, Hindi, and Northeast languages.',
+  title: 'Indian Media Directory | 120+ Outlets Reporting Bangladesh',
+  description: 'Complete catalog of 120+ Indian newspapers, television news channels, and digital media portals in Delhi, West Bengal, Tripura, and Assam reporting on Bangladesh.',
   keywords: [
-    'Indian Media Directory Bangladesh',
-    'Bangladesh News in Indian Media',
-    'Kolkata Media Bangladesh',
-    'Delhi Media Bangladesh Despatches',
-    'Anandabazar Patrika Bangladesh',
-    'The Hindu Bangladesh',
-    'Indian Express Dhaka Bureau',
-    'Amar Ujala Bangladesh',
-    'Sangbad Pratidin Bangladesh'
+    'Bangladeshi News in India',
+    'Reporting Bangladesh',
+    'Indian News Monitoring',
+    'News Scanner for Bangladeshi News',
+    'भारतीय মিডিয়ায় বাংলাদেশের খবর',
+    'বাংলাদেশ সম্পর্কিত সংবাদ পর্যবেক্ষণ',
+    'ভারতীয় গণমাধ্যম ট্র্যাকিং',
+    'বাংলাদেশ বিষয়ক সংবাদ স্ক্যানার',
+    'Indian Media Directory',
+    'Anandabazar Patrika',
+    'Tripura Times',
+    'The Assam Tribune',
+    'Uttarbanga Sambad'
   ],
-  alternates: {
-    canonical: `${SITE_URL}/bangladesh-indian-news-media`,
-  },
   openGraph: {
-    title: 'Bangladesh in Indian News Media: 100+ Verified Sources & Direct Despatches',
-    description: 'Explore 100+ leading Indian print, digital, broadcast, and think-tank portals publishing dedicated reporting on Bangladesh.',
-    url: `${SITE_URL}/bangladesh-indian-news-media`,
-    type: 'website',
-    images: [
-      {
-        url: '/images/brics-summit-2026-card.png',
-        width: 1200,
-        height: 675,
-        alt: 'Bangladesh in Indian News Media Directory',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Bangladesh in Indian News Media Directory',
-    description: '100+ verified Indian news sources with direct links to Bangladesh sections.',
-    images: ['/images/brics-summit-2026-card.png'],
+    title: '120+ Indian Outlets Reporting Bangladesh | Narrative Compass Directory',
+    description: 'Explore the complete directory of Indian news outlets monitored for coverage of Bangladesh.',
+    url: 'https://bangladesh-news-india.vercel.app/bangladesh-indian-news-media',
   },
 };
 
-export default function MediaDirectoryLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return children;
+export default function DirectoryLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
 }

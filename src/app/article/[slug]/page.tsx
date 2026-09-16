@@ -35,7 +35,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title,
     description,
-    keywords: [...article.tags, article.source.name, 'Bangladesh News', 'India Media Scanner'],
+    keywords: [
+      ...article.tags,
+      article.source.name,
+      'Bangladeshi News in India',
+      'Reporting Bangladesh',
+      'Indian News Monitoring',
+      'News Scanner for Bangladeshi News',
+      'ভারতীয় মিডিয়ায় বাংলাদেশের খবর',
+      'বাংলাদেশ সম্পর্কিত সংবাদ পর্যবেক্ষণ',
+      'ভারতীয় গণমাধ্যম ট্র্যাকিং',
+      'বাংলাদেশ বিষয়ক সংবাদ স্ক্যানার'
+    ],
     authors: [{ name: `${article.source.name} (${article.source.bureau} Bureau)` }],
     alternates: {
       canonical: url,

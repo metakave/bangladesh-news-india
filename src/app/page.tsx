@@ -33,6 +33,11 @@ export default function HomePage() {
 
   return (
     <div>
+      {/* Semantic H1 for SEO & AEO Crawlers */}
+      <h1 className="sr-only">
+        Narrative Compass — Indian News Monitoring &amp; News Scanner for Bangladeshi News | Reporting Bangladesh across Indian Media (ভারতীয় মিডিয়ায় বাংলাদেশের খবর, বাংলাদেশ সম্পর্কিত সংবাদ পর্যবেক্ষণ ও ভারতীয় গণমাধ্যম ট্র্যাকিং)
+      </h1>
+
       {/* 1. Live Sentiment & Bureau Filter Bar */}
       <SentimentTrackerBar
         selectedSentiment={selectedSentiment}

@@ -1,0 +1,27 @@
+# Narrative Compass (ন্যারেটিভ কম্পাস)
+> Real-Time Indian Media Scanner & Sentiment Monitor for Bangladeshi News
+
+Narrative Compass is an automated media intelligence platform and journal of record that continuously scans, indexes, and analyzes coverage of Bangladesh across 120+ top Indian newspaper websites, television news channels, and digital media outlets in Kolkata, West Bengal, Tripura, Assam, and New Delhi.
+
+## Core Capabilities & Services
+- **Indian News Monitoring for Bangladesh**: Automated real-time scanning of major national and regional Indian news outlets covering Bangladesh (in English, Bengali, and Hindi).
+- **3-Marker Sentiment Analysis**: Objective sentiment tracking for every scanned story across three key dimensions: Pro-Bangladesh (ইতিবাচক), Balanced/Neutral (নিরপেক্ষ), and Critical/Skeptical (নেতিবাচক/সমালোচনামূলক).
+- **Original Source Verification**: Direct link indexing, archived headline preservation, original quotes, and authentic Bengali translations.
+- **Regional News Scanner**: Coverage of border regions including West Bengal (Anandabazar Patrika, Uttarbanga Sambad, Siliguri Times), Tripura (Dainik Sambad, Syandan Patrika, Tripura Times, News Vanguard), and Assam/Barak Valley (The Assam Tribune, Barak Bulletin).
+
+## Primary Topics & Keywords
+- Bangladeshi News in India / ভারতীয় মিডিয়ায় বাংলাদেশের খবর
+- Reporting Bangladesh in Indian Press / বাংলাদেশ সম্পর্কিত সংবাদ পর্যবেক্ষণ
+- Indian News Monitoring & Media Analytics / ভারতীয় গণমাধ্যম ট্র্যাকিং
+- News Scanner for Bangladeshi News / বাংলাদেশ বিষয়ক সংবাদ স্ক্যানার
+- India-Bangladesh Bilateral Relations & Border Trade
+- Teesta Water Sharing, Benapole-Petrapole Border & Regional Security
+
+## Key Pages & Documentation
+- [Homepage](https://bangladesh-news-india.vercel.app/): Latest live news scanner feed and sentiment dashboard.
+- [Indian Media Directory](https://bangladesh-news-india.vercel.app/bangladesh-indian-news-media): Complete catalog of 120+ Indian news sources monitored across New Delhi, West Bengal, Tripura, and Assam.
+- [News Archive](https://bangladesh-news-india.vercel.app/archive): Searchable chronological database of all indexed Bangladesh-related reports.
+- [Editorial Policy](https://bangladesh-news-india.vercel.app/editorial-policy): Information on raw data ingestion, automated translation standards, and neutral reporting principles.
+- [Fact-Checking Policy](https://bangladesh-news-india.vercel.app/fact-checking-policy): Guidelines on source reliance, reader verification, and media narrative awareness.
+- [Corrections & Clarifications](https://bangladesh-news-india.vercel.app/corrections-and-clarifications): Reader reporting form for misrepresentations, technical glitches, and 24-48h SLA response window.
+- [About Us](https://bangladesh-news-india.vercel.app/about): Mission, founder details (Sadiq M. Alam), methodology, and platform architecture.
