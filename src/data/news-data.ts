@@ -88,6 +88,17 @@ export const SCANNER_STATS = {
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
+    "id": "alert-014",
+    "headlineBn": "ট্রাইব্যুনালের রায়ের প্রতিবাদে আওয়ামী লীগের জেলা কমিটির ইনস্টাগ্রাম ফটো ডিসপ্যাচ ও সোশ্যাল মিডিয়ায় আলোড়ন",
+    "headlineEn": "Awami League district units post Instagram visual dispatches rejecting ICT death sentence verdict",
+    "timeAgoBn": "১ মিনিট পোস্ট",
+    "timeAgoEn": "1 min post",
+    "sourceName": "Indian Media (Instagram)",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.instagram.com"
+  },
+  {
     "id": "alert-010",
     "headlineBn": "জুলাই গণ-অভ্যুত্থানে মানবতাবিরোধী অপরাধ: ওবায়দুল কাদেরসহ আওয়ামী লীগের ৭ নেতার মৃত্যুদণ্ডের রায় আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের",
     "headlineEn": "Bangladesh tribunal sentences 7 senior Awami League leaders to death over 'July uprising'",
@@ -233,6 +244,56 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "ig-005",
+    "slug": "instagram-awami-league-madaripur-protest-ict-death-sentence-verdict",
+    "title": "আওয়ামী লীগ নেতাদের মৃত্যুদণ্ডের রায়ের প্রতিবাদে মাদারীপুর জেলা আওয়ামী লীগের ইনস্টাগ্রাম বার্তা",
+    "englishTitle": "Madaripur Awami League Issues Instagram Visual Post Rejecting ICT Verdict Against Party Leaders",
+    "banglaTitle": "আওয়ামী লীগ নেতাদের মৃত্যুদণ্ডের রায়ের প্রতিবাদে মাদারীপুর জেলা আওয়ামী লীগের ইনস্টাগ্রাম বার্তা",
+    "summaryBn": "আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল কর্তৃক ওবায়দুল কাদের ও আ ফ ম বাহাউদ্দিন নাছিমসহ সাত আওয়ামী লীগ নেতার বিরুদ্ধে মৃত্যুদণ্ডের রায় ঘোষণার পর সামাজিক মাধ্যম ইনস্টাগ্রামে দলের বিভিন্ন স্তরের নেতাকর্মীদের প্রতিবাদ ফটো বার্তা প্রকাশিত হয়েছে। মাদারীপুর জেলা আওয়ামী লীগের ইনস্টাগ্রাম হ্যান্ডেলে এ রায়কে প্রত্যাখান করে দলটির জেলা ও সহযোগী সংগঠনগুলোর অবস্থানের চিত্র তুলে ধরা হয়, যা নেটদুনিয়ায় ব্যাপকভাবে ছড়িয়ে পড়েছে।",
+    "summaryEn": "Following the International Crimes Tribunal's death sentence ruling against seven former Awami League ministers and leaders—including Obaidul Quader and AFM Bahauddin Nasim—protest photo dispatches and visual graphics were circulated across official and grassroots Instagram accounts. The posts, highlighting rejection of the tribunal's verdict by Madaripur district Awami League units, gained notable traction across digital networks.",
+    "keyPointsBn": [
+      "ট্রাইব্যুনালের রায়ের পরপরই ইনস্টাগ্রামে বাংলাদেশ আওয়ামী লীগের তৃণমূল ও জেলা কমিটির ভিজ্যুয়াল পোস্ট প্রকাশ",
+      "ওবায়দুল কাদের ও বাহাউদ্দিন নাছিমের ছবি সম্বলিত প্রতিবাদী ব্যানার ইনস্টাগ্রাম ফিডে ভাইরাল",
+      "সামাজিক মাধ্যমে ওপার বাংলা ও বাংলাদেশের নেটিজেনদের মধ্যে নতুন করে পোস্টটি নিয়ে দ্বিপাক্ষিক আলোচনা",
+      "ইনস্টাগ্রাম ভিজ্যুয়াল জার্নালিজম বিভাগে ১ মিনিট পোস্ট পাঠ হিসেবে অন্তর্ভুক্ত"
+    ],
+    "keyPointsEn": [
+      "Grassroots and district Awami League units release Instagram visual dispatches following ICT verdict",
+      "Banners and statements regarding Obaidul Quader and Bahauddin Nasim shared across Instagram feeds",
+      "Triggered digital commentary among cross-border online communities",
+      "Archived under Instagram Post and Visual Journalism tags for readers"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "ইনস্টাগ্রাম ও রাজনীতি",
+    "categoryLabelEn": "Instagram & Visual Politics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ইনস্টাগ্রাম ডিসপ্যাচে ট্রাইব্যুনালের রায়ের প্রতিক্রিয়া ও আওয়ামী লীগের তৃণমূল অসন্তোষ ফুটে উঠেছে।",
+    "sentimentReasonEn": "Instagram dispatch highlights political friction and protests surrounding the ICT tribunal's verdict.",
+    "source": {
+      "name": "Indian Media (Instagram)",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.instagram.com",
+      "originalHeadline": "আওয়ামী লীগ নেতাদের বিরুদ্ধে মৃত্যুদণ্ডের রায়ের প্রতিবাদে জেলা আওয়ামী লীগের ইনস্টাগ্রাম পোস্ট",
+      "scannedAt": "2026-09-16T10:32:00.000Z"
+    },
+    "publishedAt": "2026-09-15T18:46:30.000Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/suvendu-adhikari-chinmoy-bangladesh.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Instagram Post",
+      "Visual Journalism",
+      "Awami League",
+      "Madaripur",
+      "Delhi Bureau",
+      "ICT Verdict",
+      "#InstagramNews"
+    ]
+  },
   {
     "id": "news-20260916-001",
     "slug": "bangladesh-tribunal-sentences-seven-awami-league-leaders-death-july-uprising-times-of-india",
