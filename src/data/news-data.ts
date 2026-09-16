@@ -281,7 +281,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-15T18:46:30.000Z",
     "readTimeBn": "১ মিনিট পোস্ট",
     "readTimeEn": "1 min read",
-    "imageUrl": "/images/suvendu-adhikari-chinmoy-bangladesh.jpg",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
