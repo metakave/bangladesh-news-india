@@ -702,7 +702,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T14:45:00.000Z",
     "readTimeBn": "১ মিনিট পোস্ট",
     "readTimeEn": "1 min read",
-    "imageUrl": "/images/suvendu-adhikari-chinmoy-bangladesh.jpg",
+    "imageUrl": "/images/chinmoy-krishna-das.jpg",
     "tags": [
       "Instagram Post",
       "Visual Journalism",
