@@ -32,16 +32,35 @@ export default function CorrectionsPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate submission processing
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setErrorMessage('');
+
+    try {
+      const res = await fetch('/api/corrections', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Failed to send submission. Please try again.');
+      }
+
       setIsSubmitted(true);
-    }, 800);
+    } catch (err: any) {
+      console.error('Error submitting form:', err);
+      setErrorMessage(err?.message || 'An unexpected error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleReset = () => {
@@ -52,6 +71,7 @@ export default function CorrectionsPage() {
       issueType: '',
       description: '',
     });
+    setErrorMessage('');
     setIsSubmitted(false);
   };
 
@@ -453,6 +473,26 @@ export default function CorrectionsPage() {
                     className={lang === 'bn' ? 'font-bengali' : ''}
                   />
                 </div>
+
+                {errorMessage && (
+                  <div
+                    style={{
+                      backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                      border: '1px solid rgba(239, 68, 68, 0.3)',
+                      color: '#dc2626',
+                      borderRadius: '8px',
+                      padding: '0.75rem 1rem',
+                      fontSize: '0.85rem',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                    }}
+                    className={lang === 'bn' ? 'font-bengali' : ''}
+                  >
+                    <AlertCircle size={16} />
+                    <span>{errorMessage}</span>
+                  </div>
+                )}
 
                 <div>
                   <button

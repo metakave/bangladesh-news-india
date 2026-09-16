@@ -1,11 +1,11 @@
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';
 
-const SMTP_HOST = process.env.SMTP_HOST || 'smtp.gmail.com';
+const SMTP_HOST = process.env.SMTP_HOST || 'smtp.zoho.com';
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || '465', 10);
 const SMTP_SECURE = process.env.SMTP_SECURE !== 'false';
-const SMTP_USER = process.env.SMTP_USER || 'sadiqmalam2026@gmail.com';
-const SMTP_PASS = process.env.SMTP_PASS || 'lqbekrhxjwwnccfb';
+const SMTP_USER = process.env.SMTP_USER || 'hello@sadiqalam.com';
+const SMTP_PASS = process.env.SMTP_PASS || 'yp9AiD51NNwm';
 const SMTP_FROM = process.env.SMTP_FROM || `"Narrative Compass" <${SMTP_USER}>`;
 const AUTH_SECRET = process.env.AUTH_SECRET || 'narrative_compass_secret_key_2026_secure';
 
@@ -166,3 +166,95 @@ export async function sendVerificationEmail({
     return { success: false, error: error?.message || 'Failed to send email' };
   }
 }
+
+export interface CorrectionReportData {
+  name: string;
+  email: string;
+  articleUrl: string;
+  issueType: string;
+  description: string;
+  userAgent?: string;
+  ip?: string;
+}
+
+// Send Correction & Clarification Report Email via SMTP
+export async function sendCorrectionReportEmail(data: CorrectionReportData): Promise<{ success: boolean; messageId?: string; error?: string }> {
+  try {
+    const transporter = getMailerTransporter();
+
+    const htmlContent = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>New Correction & Clarification Report</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #f8fafc; color: #1e293b; padding: 20px; }
+    .card { background: #ffffff; max-width: 600px; margin: 0 auto; border-radius: 12px; border: 1px solid #e2e8f0; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .header { border-bottom: 2px solid #2563eb; padding-bottom: 12px; margin-bottom: 20px; }
+    .header h2 { margin: 0; color: #0f172a; font-size: 20px; }
+    .field { margin-bottom: 16px; }
+    .label { font-weight: 700; font-size: 12px; text-transform: uppercase; color: #64748b; margin-bottom: 4px; }
+    .value { font-size: 15px; color: #0f172a; word-break: break-word; }
+    .box { background: #f1f5f9; border-left: 4px solid #2563eb; padding: 12px 16px; border-radius: 4px; font-size: 14px; line-height: 1.6; white-space: pre-wrap; }
+    .footer { font-size: 12px; color: #94a3b8; border-top: 1px solid #e2e8f0; margin-top: 24px; padding-top: 12px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <h2>🧭 Narrative Compass — New Reader Correction Report</h2>
+    </div>
+    
+    <div class="field">
+      <div class="label">Reporter Name</div>
+      <div class="value">${data.name}</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Reporter Email</div>
+      <div class="value"><a href="mailto:${data.email}">${data.email}</a></div>
+    </div>
+
+    <div class="field">
+      <div class="label">Reported Article Link / Headline</div>
+      <div class="value">${data.articleUrl}</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Issue Classification</div>
+      <div class="value" style="font-weight: 700; color: #dc2626;">${data.issueType}</div>
+    </div>
+
+    <div class="field">
+      <div class="label">Detailed Description</div>
+      <div class="box">${data.description}</div>
+    </div>
+
+    ${data.ip ? `<div class="field"><div class="label">IP Address</div><div class="value">${data.ip}</div></div>` : ''}
+
+    <div class="footer">
+      This notification was automatically sent from the Narrative Compass platform form.<br>
+      SLA Response Commitment: Please allow 24 to 48 hours to review and respond.
+    </div>
+  </div>
+</body>
+</html>
+    `;
+
+    const info = await transporter.sendMail({
+      from: SMTP_FROM,
+      to: 'hello@sadiqalam.com',
+      replyTo: `"${data.name}" <${data.email}>`,
+      subject: `[Narrative Compass Report] ${data.issueType}: ${data.name}`,
+      html: htmlContent,
+      text: `New Correction Report from ${data.name} (${data.email}):\n\nArticle: ${data.articleUrl}\nIssue Type: ${data.issueType}\n\nDescription:\n${data.description}`,
+    });
+
+    return { success: true, messageId: info.messageId };
+  } catch (error: any) {
+    console.error('Error sending correction report email:', error);
+    return { success: false, error: error?.message || 'Failed to send report email' };
+  }
+}
+
