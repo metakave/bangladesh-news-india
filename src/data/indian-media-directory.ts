@@ -319,7 +319,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
   {
     id: 'wion',
     name: 'WION',
-    nameBn: 'ওয়িয়ন (WION)',
+    nameBn: 'উইওন (WION)',
     language: 'English',
     type: 'Broadcast/Digital',
     headOffice: 'Noida, Uttar Pradesh',

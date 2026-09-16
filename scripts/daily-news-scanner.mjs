@@ -1068,6 +1068,19 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
                .replace(/তারিক\s*রহমান/g, 'তারেক রহমান');
   };
 
+  const normalizeWionTranslation = (text) => {
+    if (typeof text !== 'string') return text;
+    return text.replace(/ওয়িয়ন/g, 'উইওন')
+               .replace(/ওয়িয়ন/g, 'উইওন')
+               .replace(/ওয়াইঅন/g, 'উইওন')
+               .replace(/ওয়াইঅন/g, 'উইওন')
+               .replace(/উইঅন/g, 'উইওন');
+  };
+
+  const applyBengaliNormalization = (text) => {
+    return normalizeWionTranslation(normalizeTariqueTranslation(text));
+  };
+
   // Validate array structures and enforce translation rules
   if (Array.isArray(parsedAiResult.newScannedItems)) {
     parsedAiResult.newScannedItems = parsedAiResult.newScannedItems.filter(item => 
@@ -1075,13 +1088,13 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
     ).map(item => {
       const isOriginalBengali = (item.source?.language || '').toLowerCase() === 'bengali';
       if (!isOriginalBengali) {
-        // Enforce Tarique Rahman translation on translated Bengali fields
-        if (item.title) item.title = normalizeTariqueTranslation(item.title);
-        if (item.banglaTitle) item.banglaTitle = normalizeTariqueTranslation(item.banglaTitle);
-        if (item.summaryBn) item.summaryBn = normalizeTariqueTranslation(item.summaryBn);
-        if (item.sentimentReasonBn) item.sentimentReasonBn = normalizeTariqueTranslation(item.sentimentReasonBn);
+        // Enforce translation rules on translated Bengali fields
+        if (item.title) item.title = applyBengaliNormalization(item.title);
+        if (item.banglaTitle) item.banglaTitle = applyBengaliNormalization(item.banglaTitle);
+        if (item.summaryBn) item.summaryBn = applyBengaliNormalization(item.summaryBn);
+        if (item.sentimentReasonBn) item.sentimentReasonBn = applyBengaliNormalization(item.sentimentReasonBn);
         if (Array.isArray(item.keyPointsBn)) {
-          item.keyPointsBn = item.keyPointsBn.map(normalizeTariqueTranslation);
+          item.keyPointsBn = item.keyPointsBn.map(applyBengaliNormalization);
         }
       }
 
