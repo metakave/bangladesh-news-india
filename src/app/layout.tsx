@@ -155,7 +155,7 @@ const jsonLdOrg = {
   diversityPolicy: `${SITE_URL}/about#standards`,
   ethicsPolicy: `${SITE_URL}/editorial-policy`,
   factCheckingPolicy: `${SITE_URL}/fact-checking-policy`,
-  correctionsPolicy: `${SITE_URL}/about#corrections`,
+  correctionsPolicy: `${SITE_URL}/corrections-and-clarifications`,
 };
 
 const jsonLdWebSite = {

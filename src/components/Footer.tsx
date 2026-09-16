@@ -273,13 +273,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#corrections"
+                <Link
+                  href="/corrections-and-clarifications"
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ color: 'var(--text-secondary)' }}
                 >
                   {lang === 'bn' ? 'সংশোধনী ও স্পষ্টীকরণ' : 'Corrections & Clarifications'}
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
