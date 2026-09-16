@@ -55,6 +55,9 @@ function isValidNewsImage(url) {
   return u.startsWith('http://') || u.startsWith('https://');
 }
 
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || '';
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || 'sk-cdc9e55a7d534a8e88338cd28b31342c';
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
 
@@ -654,10 +657,26 @@ async function runDailyNewsScanner() {
     chunkDescription = 'Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)';
   }
 
+  // Detect AI provider (gemini or deepseek)
+  const providerArg = process.argv.find(arg => arg.startsWith('--provider='));
+  let aiProvider = process.env.AI_PROVIDER || '';
+  if (providerArg) {
+    aiProvider = providerArg.split('=')[1].trim().toLowerCase();
+  }
+  if (!aiProvider) {
+    if (GEMINI_API_KEY) {
+      aiProvider = 'gemini';
+    } else {
+      aiProvider = 'deepseek';
+    }
+  }
+
+  const activeModelName = aiProvider === 'gemini' ? GEMINI_MODEL : DEEPSEEK_MODEL;
+
   console.log('====================================================');
-  console.log('🚀 NARRATIVE COMPASS - DAILY DEEPSEEK NEWS SCANNER');
+  console.log('🚀 NARRATIVE COMPASS - DAILY NEWS SCANNER');
   console.log('⏰ Time (Local):', new Date().toLocaleString());
-  console.log('🤖 AI Engine: DeepSeek API (' + DEEPSEEK_MODEL + ')');
+  console.log(`🤖 AI Engine: ${aiProvider.toUpperCase()} API (${activeModelName})`);
   console.log(`📌 Operational Mode: [${scanMode.toUpperCase()}] -> ${chunkDescription}`);
   console.log('====================================================\n');
 
@@ -943,31 +962,87 @@ Keep summaries concise (2-3 sentences max) and keyPoints to 3 clear bullets each
 Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, bangladeshMatches: ${matchedArticles.length}.`;
   }
 
-  const deepseekRes = await fetch('https://api.deepseek.com/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
-    },
-    body: JSON.stringify({
-      model: DEEPSEEK_MODEL,
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: userPrompt }
-      ],
-      temperature: 0.2,
-      max_tokens: 8192,
-      response_format: { type: 'json_object' }
-    })
-  });
+  let rawContent = '';
+  if (aiProvider === 'gemini') {
+    if (!GEMINI_API_KEY) {
+      throw new Error('Gemini API provider selected, but GEMINI_API_KEY (or GOOGLE_API_KEY) is not set in environment or .env.local');
+    }
+    console.log(`🤖 Requesting intelligence synthesis via Gemini API (${GEMINI_MODEL})...`);
+    
+    // Attempt Gemini OpenAI-compatible endpoint
+    const geminiRes = await fetch('https://generativelanguage.googleapis.com/v1beta/openai/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${GEMINI_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: GEMINI_MODEL,
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: userPrompt }
+        ],
+        temperature: 0.2,
+        response_format: { type: 'json_object' }
+      })
+    });
 
-  if (!deepseekRes.ok) {
-    const errorText = await deepseekRes.text();
-    throw new Error(`DeepSeek API failed [${deepseekRes.status}]: ${errorText}`);
+    if (!geminiRes.ok) {
+      // Fallback to Native Gemini generateContent API
+      const nativeRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          system_instruction: { parts: [{ text: systemPrompt }] },
+          contents: [{ role: 'user', parts: [{ text: userPrompt }] }],
+          generationConfig: {
+            responseMimeType: 'application/json',
+            temperature: 0.2
+          }
+        })
+      });
+
+      if (!nativeRes.ok) {
+        const errorText = await nativeRes.text();
+        throw new Error(`Gemini API failed [${nativeRes.status}]: ${errorText}`);
+      }
+
+      const nativeData = await nativeRes.json();
+      rawContent = nativeData.candidates?.[0]?.content?.parts?.[0]?.text;
+    } else {
+      const geminiData = await geminiRes.json();
+      rawContent = geminiData.choices?.[0]?.message?.content;
+    }
+  } else {
+    // DeepSeek API
+    console.log(`🤖 Requesting intelligence synthesis via DeepSeek API (${DEEPSEEK_MODEL})...`);
+    const deepseekRes = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${DEEPSEEK_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: DEEPSEEK_MODEL,
+        messages: [
+          { role: 'system', content: systemPrompt },
+          { role: 'user', content: userPrompt }
+        ],
+        temperature: 0.2,
+        max_tokens: 8192,
+        response_format: { type: 'json_object' }
+      })
+    });
+
+    if (!deepseekRes.ok) {
+      const errorText = await deepseekRes.text();
+      throw new Error(`DeepSeek API failed [${deepseekRes.status}]: ${errorText}`);
+    }
+
+    const deepseekData = await deepseekRes.json();
+    rawContent = deepseekData.choices?.[0]?.message?.content;
   }
 
-  const deepseekData = await deepseekRes.json();
-  const rawContent = deepseekData.choices?.[0]?.message?.content;
   const parsedAiResult = cleanAndParseJson(rawContent);
 
   // Programmatic enforcement of translation rules for Tarique Rahman:
