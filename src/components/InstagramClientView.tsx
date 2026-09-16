@@ -1000,7 +1000,7 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
                 textDecoration: 'none',
               }}
             >
-              <span>{lang === 'bn' ? '১১০+ সংবাদমাধ্যমের সম্পূর্ণ ডিরেক্টরি দেখুন' : 'Explore 110+ Newsroom Directory'}</span>
+              <span>{lang === 'bn' ? '১২০+ সংবাদমাধ্যমের সম্পূর্ণ ডিরেক্টরি দেখুন' : 'Explore 120+ Newsroom Directory'}</span>
               <ArrowRight size={13} />
             </Link>
           </div>

@@ -45,8 +45,8 @@ export const TRANSLATIONS = {
     mediaDirectory: {
       navTitle: 'ভারতীয় মিডিয়ায় বাংলাদেশ',
       pageTitle: 'ভারতীয় নিউজ মিডিয়ায় বাংলাদেশ',
-      pageTagline: 'ভারতের শীর্ষ ১১০+ জাতীয় ও আঞ্চলিক সংবাদমাধ্যম এবং টিভি চ্যানেলের বাংলাদেশ ডেস্ক, ক্যাটাগরি ও সংবাদ আর্কাইভ ডিরেক্টরি',
-      badge: '১১০+ শীর্ষ ভারতীয় সংবাদ ও টিভি মাধ্যম',
+      pageTagline: 'ভারতের শীর্ষ ১২০+ জাতীয় ও আঞ্চলিক সংবাদমাধ্যম এবং টিভি চ্যানেলের বাংলাদেশ ডেস্ক, ক্যাটাগরি ও সংবাদ আর্কাইভ ডিরেক্টরি',
+      badge: '১২০+ শীর্ষ ভারতীয় সংবাদ ও টিভি মাধ্যম',
       all: 'সকল মিডিয়া',
       english: 'ইংরেজি মিডিয়া',
       bengali: 'বাংলা মিডিয়া',
@@ -279,8 +279,8 @@ export const TRANSLATIONS = {
     mediaDirectory: {
       navTitle: 'Bangladesh in Indian Media',
       pageTitle: 'Bangladesh in Indian News Media',
-      pageTagline: 'Curated directory of top 110+ Indian national and regional newsrooms & TV channels with direct links to their Bangladesh news desks & tags',
-      badge: '110+ Top Indian Media & TV Networks',
+      pageTagline: 'Curated directory of top 120+ Indian national and regional newsrooms & TV channels with direct links to their Bangladesh news desks & tags',
+      badge: '120+ Top Indian Media & TV Networks',
       all: 'All Media',
       english: 'English First',
       bengali: 'Bengali Second',

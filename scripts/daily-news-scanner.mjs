@@ -154,6 +154,21 @@ const STANDARD_RSS_FEEDS = [
     language: 'Bengali', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("ওপার বাংলা" OR "ওপার বাংলায়" OR "ওপার বাংলার") (site:thewall.in OR site:anandabazar.com OR site:eisamay.com OR site:sangbadpratidin.in OR site:bartamanpatrika.com OR site:bengali.abplive.com OR site:tv9bangla.com) when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
     webUrl: 'https://news.google.com' 
+  },
+
+  // 7. North Bengal, Tripura & Assam Regional Wire Tracker
+  { name: 'Uttarbanga Sambad (Feed)', bureau: 'Kolkata', language: 'Bengali', url: 'https://uttarbangasambad.in/feed/', webUrl: 'https://uttarbangasambad.in' },
+  { name: 'Syandan Patrika (Feed)', bureau: 'Kolkata', language: 'Bengali', url: 'https://syandanpatrika.com/feed/', webUrl: 'https://syandanpatrika.com' },
+  { name: 'Dainik Sambad Tripura (Feed)', bureau: 'Kolkata', language: 'Bengali', url: 'https://www.dainiksambadnews.in/feed/', webUrl: 'https://www.dainiksambadnews.in' },
+  { name: 'Tripura Times (Feed)', bureau: 'Kolkata', language: 'English', url: 'https://tripuratimes.com/feed/', webUrl: 'https://tripuratimes.com' },
+  { name: 'Barak Bulletin (Feed)', bureau: 'Kolkata', language: 'English', url: 'https://barakbulletin.com/feed/', webUrl: 'https://barakbulletin.com' },
+  { name: 'Samayik Prasanga (Feed)', bureau: 'Kolkata', language: 'Bengali', url: 'https://samayikprasanga.in/feed/', webUrl: 'https://samayikprasanga.in' },
+  { 
+    name: 'North East & North Bengal - Bangladesh Wire Tracker', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('Bangladesh (site:uttarbangasambad.in OR site:dainiksambadnews.in OR site:syandanpatrika.com OR site:tripuratimes.com OR site:dailydesherkatha.com OR site:assamtribune.com OR site:barakbulletin.com OR site:samayikprasanga.in) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://news.google.com' 
   }
 ];
 
@@ -188,6 +203,34 @@ const YOUTUBE_FEEDS = [
     language: 'Bengali', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("বাংলাদেশ" OR "ওপার বাংলা" OR "শেখ হাসিনা" OR "চিন্ময় কৃষ্ণ" OR "Bangladesh") when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
     webUrl: 'https://www.youtube.com' 
+  },
+  { 
+    name: 'Siliguri Times (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@SILIGURITIMES" Bangladesh when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@SILIGURITIMES' 
+  },
+  { 
+    name: 'News Vanguard Tripura (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@NewsVanguardTripura24X7" Bangladesh when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@NewsVanguardTripura24X7' 
+  },
+  { 
+    name: 'PB24 News Tripura (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@pb24news" Bangladesh when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@pb24news' 
+  },
+  { 
+    name: 'News18 Assam/Northeast (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@News18AssamNortheastLive" Bangladesh when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@News18AssamNortheastLive' 
   }
 ];
 

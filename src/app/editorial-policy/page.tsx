@@ -782,7 +782,7 @@ export default function EditorialPolicyPage() {
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ fontWeight: 700, color: 'var(--text-primary)', display: 'block', fontSize: '0.95rem' }}
                 >
-                  {lang === 'bn' ? 'ভারতের ১১০+ শীর্ষ মিডিয়া ও বাংলাদেশ ডেস্ক ডিরেক্টরি' : 'Explore the 110+ Top Indian Media Outlets & Bangladesh Desks Directory'}
+                  {lang === 'bn' ? 'ভারতের ১২০+ শীর্ষ মিডিয়া ও বাংলাদেশ ডেস্ক ডিরেক্টরি' : 'Explore the 120+ Top Indian Media Outlets & Bangladesh Desks Directory'}
                 </span>
                 <span
                   className={lang === 'bn' ? 'font-bengali' : ''}

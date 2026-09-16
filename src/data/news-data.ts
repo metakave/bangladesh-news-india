@@ -267,6 +267,100 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260916-007",
+    "slug": "the-assam-tribune-awami-league-rejects-ict-death-verdict",
+    "title": "Awami League Rejects ICT Death Sentence Verdict, Calling It One-Sided & Fabricated: Assam Tribune Report",
+    "englishTitle": "Awami League Rejects ICT Death Sentence Verdict, Calling It One-Sided & Fabricated: Assam Tribune Report",
+    "banglaTitle": "ট্রাইব্যুনালের মৃত্যুদণ্ডের রায়কে ‘একপেশে ও মনগড়া’ আখ্যা দিয়ে প্রত্যাখ্যান আওয়ামী লীগের: আসাম ট্রিব্রিউনের প্রতিবেদন",
+    "summaryBn": "আসামের নেতৃস্থানীয় ইংরেজি দৈনিক 'দ্য আসাম ট্রিব্রিউন'-এর প্রতিবেদনে জানানো হয়েছে, বাংলাদেশ আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল কর্তৃক ওবায়দুল কাদেরসহ ৭ জন জ্যেষ্ঠ নেতার মৃত্যুদণ্ডের রায়কে একপেশে এবং রাজনৈতিক প্রতিশোধমূলক আখ্যা দিয়ে প্রত্যাখ্যান করেছে ক্ষমতাচ্যুত আওয়ামী লীগ। গুয়াহাটি ও উত্তর-পূর্ব ভারতের গণমাধ্যমগুলোতে এই রায় কেন্দ্র করে ব্যাপক চাঞ্চল্য সৃষ্টি হয়েছে।",
+    "summaryEn": "Guwahati-based daily 'The Assam Tribune' reports that the deposed Awami League has officially rejected the death sentence verdict delivered by Bangladesh's International Crimes Tribunal against 7 top leaders including Obaidul Quader, calling the proceedings politically biased.",
+    "keyPointsBn": [
+      "দ্য আসাম ট্রিব্রিউনে আওয়ামী লীগ স্থায়ী কমিটির আন্তর্জাতিক প্রতিক্রিয়া ও বিবৃতি প্রকাশ",
+      "৭ জ্যেষ্ঠ নেতার ক্যাপিটাল পানিশমেন্ট রায়কে ট্রাইব্যুনালের রাজনৈতিক অবিচার হিসেবে চিহ্নিতকরণ",
+      "উত্তর-পূর্ব ভারতের কৌশলগত ও নিরাপত্তাজনিত পর্যবেক্ষণে বাংলাদেশের বিচারিক ঘটনাপ্রবাহ"
+    ],
+    "keyPointsEn": [
+      "The Assam Tribune highlights Awami League's official rejection of the ICT verdict",
+      "Labels the death sentences of 7 senior leaders as politically driven",
+      "Northeast India regional analysis on the geopolitical fallout across the border"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও ভূরাজনীতি",
+    "categoryLabelEn": "Politics & Geopolitics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আসাম ট্রিব্রিউনের প্রতিবেদনে বাংলাদেশের বিচারিক রায় নিয়ে রাজনৈতিক বিরোধ ও অস্থিরতার দিকটি গুরুত্ব পেয়েছে।",
+    "sentimentReasonEn": "The report underlines political turmoil and cross-border polarization following the tribunal verdict.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://assamtribune.com/world/awami-league-rejects-ict-verdict-bangladesh-1086910",
+      "originalHeadline": "Awami League Rejects ICT Verdict as Fabricated and One-Sided",
+      "scannedAt": "2026-09-16T12:00:00.000Z"
+    },
+    "publishedAt": "2026-09-16T09:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "The Assam Tribune",
+      "Awami League",
+      "ICT Verdict",
+      "Obaidul Quader",
+      "Assam",
+      "Northeast India"
+    ]
+  },
+  {
+    "id": "news-20260916-008",
+    "slug": "barak-bulletin-silchar-border-security-vigil-sylhet-boundary",
+    "title": "Barak Valley Border Alert: Enhanced Security Vigil Along Sylhet-Karimganj Border Dispatches",
+    "englishTitle": "Barak Valley Border Alert: Enhanced Security Vigil Along Sylhet-Karimganj Border Dispatches",
+    "banglaTitle": "বরাক উপত্যকা সীমান্ত সতর্কতা: সিলেট-করিমগঞ্জ সীমান্তে বিএসএফ ও বিজিবির সশস্ত্র ওয়াচ ও পাহারা নিয়ে বরাক বুলেটিনের বিশেষ সংবাদ",
+    "summaryBn": "আসামের শিলচরভিত্তিক সংবাদ পোর্টাল 'বরাক বুলেটিন' তাদের সীমান্ত স্ক্যানার রিপোর্টে জানিয়েছে, সিলেটের সীমান্তঘেঁষা করিমগঞ্জ ও কাছাড় জেলায় বিএসএফ ও বিজিবির সর্বোচ্চ ওয়াচ ও ফ্ল্যাট ওয়াচ জোরদার করা হয়েছে। ওপার বাংলায় রাজনৈতিক পরিবর্তনের পর সীমান্ত দিয়ে যেকোনো ধরনের অবৈধ অনুপ্রবেশ রুখতে এই অতিরিক্ত নজরদারি।",
+    "summaryEn": "Silchar-based news portal Barak Bulletin provides a regional border dispatch detailing heightened vigil by Border Security Force (BSF) units along the Sylhet-Karimganj frontier to prevent unauthorized cross-border movement amidst post-transition dynamics in Bangladesh.",
+    "keyPointsBn": [
+      "বরাক বুলেটিনের বিশেষ প্রতিবেদনে করিমগঞ্জ ও সিলেট সীমানায় বিএসএফের বর্ধিত ওয়াচটাওয়ার নজরদারি",
+      "আসামের বরাক উপত্যকার ৩টি সীমান্ত জেলায় অনুপ্রবেশ প্রতিরোধমূলক বিশেষ টহল",
+      "দুই দেশের সীমান্তরক্ষী বাহিনীর নিয়মিত ফ্ল্যাগ মিটিং ও যৌথ সীমান্ত যোগাযোগ"
+    ],
+    "keyPointsEn": [
+      "Barak Bulletin reports increased watchtower surveillance along Assam's Karimganj border",
+      "Heightened alert across three Barak Valley districts bordering Sylhet Division",
+      "Regular BSF-BGB sector meetings to maintain order along the international line"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত নিরাপত্তার বাস্তবভিত্তিক বস্তুনিষ্ঠ প্রতিবেদন যেখানে প্রশাসন ও নিরাপত্তা বাহিনীর ব্যবস্থা স্থান পেয়েছে।",
+    "sentimentReasonEn": "Objective reporting on border security measures enforced by Indian security agencies.",
+    "source": {
+      "name": "Barak Bulletin",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://barakbulletin.com/karimganj-sylhet-border-vigil-bsf-alert-2026/",
+      "originalHeadline": "Enhanced Security Vigil Along Sylhet-Karimganj Border",
+      "scannedAt": "2026-09-16T14:15:00.000Z"
+    },
+    "publishedAt": "2026-09-16T11:00:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/gauhati-high-court.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Barak Bulletin",
+      "Assam",
+      "Barak Valley",
+      "Sylhet Border",
+      "BSF Vigil",
+      "Karimganj"
+    ]
+  },
+  {
     "id": "news-20260916-006",
     "slug": "thewall-kolkata-hasina-return-local-elections-unrest-concerns-bangladesh",
     "title": "হাসিনার ফেরা ও স্থানীয় সরকার ভোট ঘিরে তুমুল অশান্তির আশঙ্কা, দ্য ওয়াল-এর বিশেষ প্রতিবেদন",
