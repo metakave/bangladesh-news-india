@@ -267,6 +267,240 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260916-009",
+    "slug": "siliguri-times-two-bangladeshi-nationals-detained-kharibari-border",
+    "title": "Two Bangladeshi nationals detained near Indo-Nepal border in Kharibari",
+    "englishTitle": "Two Bangladeshi Nationals Detained Near Indo-Nepal Border in Kharibari: Siliguri Times",
+    "banglaTitle": "খড়িবাড়িতে ভারত-নেপাল সীমান্তের কাছে ২ বাংলাদেশি নাগরিক আটক: শিলিগুড়ি টাইমসের বিশেষ প্রতিবেদন",
+    "summaryBn": "উত্তরবঙ্গের শিলিগুড়িভিত্তিক প্রধান ডিজিটাল সংবাদ মাধ্যম 'শিলিগুড়ি টাইমস'-এর ভিডিও প্রতিবেদনে প্রকাশ, দার্জিলিং জেলার খড়িবাড়ি থানা এলাকার ভারত-নেপাল সীমান্ত সংলগ্ন অঞ্চল থেকে ২ জন বাংলাদেশি নাগরিককে আটক করেছে পুলিশ ও বিএসএফ। ধৃতদের কাছে থেকে ভুয়া ভারতীয় নথি উদ্ধারের পর তদন্ত শুরু হয়েছে।",
+    "summaryEn": "Siliguri-based digital outlet Siliguri Times reports that two Bangladeshi nationals were apprehended by local police and BSF personnel near the Indo-Nepal border area in Kharibari, Darjeeling district, while attempting illegal transit with forged identity cards.",
+    "keyPointsBn": [
+      "শিলিগুড়ি টাইমসের ভিডিও ডিসপ্যাচে খড়িবাড়ি ভারত-নেপাল সীমান্তে বিএসএফ ও পুলিশের যৌথ অভিযান",
+      "ভুয়া ভারতীয় আধার ও পরিচিতিপত্রসহ ২ বাংলাদেশি নাগরিককে আটক",
+      "উত্তরবঙ্গের সীমান্ত নিরাপত্তা ও ইমিগ্রেশন চেকপোস্টে বাড়তি সতর্কতা জারি"
+    ],
+    "keyPointsEn": [
+      "Siliguri Times video dispatch details joint BSF-police raid at Kharibari near Indo-Nepal line",
+      "Two Bangladeshi nationals apprehended carrying fake Indian identity documents",
+      "High alertness enforced across North Bengal transit and immigration corridors"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তে অনুপ্রবেশ ও ভুয়া নথিপত্র উদ্ধারের ঘটনা নিরাপত্তা ঝুঁকির ইঙ্গিত দেয়।",
+    "sentimentReasonEn": "Coverage highlights security challenges associated with illegal cross-border transit.",
+    "source": {
+      "name": "Siliguri Times",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=siliguri-times-kharibari-detain",
+      "originalHeadline": "Two Bangladeshi nationals detained near Indo-Nepal border in Kharibari",
+      "scannedAt": "2026-09-16T16:30:00.000Z"
+    },
+    "publishedAt": "2026-09-16T11:37:05.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/gauhati-high-court.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Siliguri Times",
+      "Siliguri",
+      "North Bengal",
+      "Kharibari",
+      "Border Security",
+      "Bangladesh"
+    ]
+  },
+  {
+    "id": "news-20260916-010",
+    "slug": "tripura-times-indian-citizen-detained-at-bangladesh-border-illegal-entry",
+    "title": "Indian Citizen Detained at Bangladesh Border During Illegal Entry",
+    "englishTitle": "Indian Citizen Detained at Bangladesh Border During Illegal Entry: Tripura Times Report",
+    "banglaTitle": "বাংলাদেশ সীমান্তে অবৈধ অনুপ্রবেশের সময় ভারতীয় নাগরিক আটক: ত্রিপুরা টাইমসের সংবাদ",
+    "summaryBn": "ত্রিপুরা রাজ্য থেকে প্রকাশিত দীর্ঘতম ঐতিহ্যবাহী ইংরেজি দৈনিক 'ত্রিপুরা টাইমস'-এর প্রতিবেদনে জানানো হয়েছে, আগরতলা সীমান্ত দিয়ে ওপার বাংলায় প্রবেশের চেষ্টাকালে বিএসএফ টহল দল এক ভারতীয় নাগরিককে গ্রেপ্তার করেছে। সীমান্ত আইন ভঙ্গ ও জিরো পয়েন্টে অনুপ্রবেশ নিয়ে ত্রিপুরা পুলিশ মামলা দায়ের করেছে।",
+    "summaryEn": "Agartala-based daily Tripura Times reports that BSF patrol units intercepted and detained an Indian national attempting unauthorized transit along the Agartala zero-point border line, with local authorities registering a boundary violation case.",
+    "keyPointsBn": [
+      "ত্রিপুরা টাইমসে আগরতলা জিরো পয়েন্ট সীমান্ত টহলের খবর প্রকাশ",
+      "সীমান্ত দিয়ে বেআইনি চলাচলের অভিযোগে ভারতীয় নাগরিক বিএসএফের হাতে সোপর্দ",
+      "ত্রিপুরা-বাংলাদেশ সীমান্তে নিয়মিত যৌথ কড়া পাহারা অব্যাহতির তথ্য"
+    ],
+    "keyPointsEn": [
+      "Tripura Times reports border patrol interception near Agartala zero point",
+      "Indian citizen detained by BSF for unauthorized movement across boundary line",
+      "Enforced surveillance maintained across Tripura-Bangladesh border posts"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্তে দায়িত্বপ্রাপ্ত বাহিনীর নিয়মিত নিরাপত্তা কার্যক্রমের বস্তুনিষ্ঠ উপস্থাপন।",
+    "sentimentReasonEn": "Fact-based reporting on routine border enforcement by BSF personnel.",
+    "source": {
+      "name": "Tripura Times",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://tripuratimes.com/news/indian-citizen-detained-at-bangladesh-border-10842",
+      "originalHeadline": "Indian Citizen Detained at Bangladesh Border During Illegal Entry",
+      "scannedAt": "2026-09-16T15:00:00.000Z"
+    },
+    "publishedAt": "2026-09-16T08:00:00.000Z",
+    "readTimeBn": "১ মিনিট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/gauhati-high-court.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Tripura Times",
+      "Agartala",
+      "Tripura",
+      "Border Patrol",
+      "BSF",
+      "Bangladesh"
+    ]
+  },
+  {
+    "id": "news-20260916-011",
+    "slug": "assam-tribune-dhaka-university-jinnah-portrait-controversy",
+    "title": "Jinnah portrait at Dhaka University draws ‘grave insult’ criticism",
+    "englishTitle": "Jinnah portrait at Dhaka University draws ‘grave insult’ criticism: The Assam Tribune",
+    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহর প্রতিকৃতি স্থাপনকে ‘গুরুতর অপমান’ হিসেবে বর্ণনা: আসাম ট্রিব্রিউনের বিশ্লেষণ",
+    "summaryBn": "আসাম ট্রিব্রিউন-এর আন্তর্জাতিক ডেস্কে প্রকাশিত প্রতিবেদনে ঢাকা বিশ্ববিদ্যালয় ডাকসু হলে মুহাম্মদ আলী জিন্নাহর ছবি পুনঃস্থাপনের ঘটনা নিয়ে বাংলাদেশের বুদ্ধিজীবী ও শিক্ষক সমাজের ক্ষোভ তুলে ধরা হয়েছে। বিশ্ববিদ্যালয় শিক্ষক নেটওয়ার্ক এটিকে বাহান্নোর ভাষা আন্দোলন ও একাত্তরের মুক্তিযুদ্ধের মহান শহিদদের প্রতি চরম অবমাননা বলে মন্তব্য করেছে।",
+    "summaryEn": "Guwahati's leading daily The Assam Tribune covers cross-border reactions to the installation of Muhammad Ali Jinnah's portrait at Dhaka University Central Students' Union (DUCSU), highlighting widespread criticism from academics who dubbed it a grave insult to Bangladesh's liberation history.",
+    "keyPointsBn": [
+      "আসাম ট্রিব্রিউনে ঢাকা বিশ্ববিদ্যালয় ডাকসু সংগ্রাহশালার বিতর্ক নিয়ে বিশ্লেষণ",
+      "বিশ্ববিদ্যালয় শিক্ষক নেটওয়ার্কের তীব্র প্রতিবাদ ও ভাষা আন্দোলনের চেতনার স্মারক রক্ষা দাবি",
+      "উত্তর-পূর্ব ভারতে সুশীল সমাজের মধ্যে ওপার বাংলার ঐতিহাসিক বয়ান পরিবর্তন নিয়ে তীব্র আলোচনা"
+    ],
+    "keyPointsEn": [
+      "The Assam Tribune analyzes controversial portrait installation at DUCSU hall in Dhaka",
+      "University Teachers' Network raises strong objections invoking Bangladesh language movement legacy",
+      "Northeast Indian media commentary on shifting historical narratives in Dhaka academic circles"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও ইতিহাস",
+    "categoryLabelEn": "Culture & History",
+    "sentiment": "negative",
+    "sentimentReasonBn": "প্রতিবেদনে ঐতিহাসিক বিতর্ক ও ভাষা আন্দোলনের ঐতিহ্যের প্রতি অমর্যাদার ক্ষোভ ফুটে উঠেছে।",
+    "sentimentReasonEn": "Coverage highlights intense disagreement and academic controversy over historical iconography in Dhaka.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://assamtribune.com/world/jinnah-portrait-dhaka-university-criticism-1086915",
+      "originalHeadline": "Jinnah portrait at Dhaka University draws ‘grave insult’ criticism",
+      "scannedAt": "2026-09-16T17:15:00.000Z"
+    },
+    "publishedAt": "2026-09-16T09:17:09.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "The Assam Tribune",
+      "Dhaka University",
+      "DUCSU",
+      "Dhaka",
+      "Jinnah Portrait",
+      "Assam"
+    ]
+  },
+  {
+    "id": "news-20260916-012",
+    "slug": "news-vanguard-tripura-bangladesh-political-tension-border-briefing",
+    "title": "বাংলাদেশে চরম অশান্তি ও উত্তেজনার বাতাবরণ",
+    "englishTitle": "Atmosphere of Extreme Unrest & Tension in Bangladesh: News Vanguard Tripura 24x7",
+    "banglaTitle": "বাংলাদেশে চরম অশান্তি ও উত্তেজনার বাতাবরণ: নিউজ ভ্যানগার্ড ত্রিপুরা ২৪x৭-এর বিশেষ সম্প্রচার",
+    "summaryBn": "ত্রিপুরা রাজ্যের প্রধান সংবাদ টিভি চ্যানেল 'নিউজ ভ্যানগার্ড'-এর সাম্প্রতিক লাইভ সম্প্রচারে বাংলাদেশে বিচারিক রায় ও রাজনৈতিক দলগুলোর উত্তপ্ত মুখোমুখি অবস্থান নিয়ে কভারেজ দেওয়া হয়। সীমান্ত রাজ্য ত্রিপুরাতে আগরতলা থেকে মেলাঘর পর্যন্ত পুলিশ ও বিএসএফ আউটপোস্টে বিশেষ সতর্কতা নিশ্চিত করা হয়েছে।",
+    "summaryEn": "Agartala-based 24x7 news channel News Vanguard reports on heightened political friction in Bangladesh, emphasizing border security readiness enforced across Tripura's international boundary posts from Agartala to Melaghar.",
+    "keyPointsBn": [
+      "নিউজ ভ্যানগার্ড ত্রিপুরায় বাংলাদেশে রাজনৈতিক উত্তাপ নিয়ে লাইভ টিভি আপডেট",
+      "ত্রিপুরা সীমান্ত সংলগ্ন জেলাগুলোতে রাজ্য পুলিশ ও বিএসএফের সর্বোচ্চ সজাগ দৃষ্টি",
+      "সীমান্তবর্তী বাণিজ্য ও যাত্রী পারাপারে কঠোর তল্লাশি বজায়"
+    ],
+    "keyPointsEn": [
+      "News Vanguard Tripura live report on political friction in neighboring Bangladesh",
+      "Maximum readiness by BSF and Tripura police along boundary districts",
+      "Heightened checks enforced at border trade and transit check posts"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও সীমান্ত",
+    "categoryLabelEn": "Politics & Border",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক উত্তেজনা ও সীমান্ত নিরাপত্তার ঝুঁকি চ্যানেলটিতে অগ্রাধিকার পেয়েছে।",
+    "sentimentReasonEn": "Focuses on potential cross-border volatility and security vigilance.",
+    "source": {
+      "name": "News Vanguard",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=news-vanguard-bangladesh-unrest",
+      "originalHeadline": "বাংলাদেশে চরম অশান্তি ও উত্তেজনার বাতাবরণ",
+      "scannedAt": "2026-09-16T18:00:00.000Z"
+    },
+    "publishedAt": "2026-09-16T14:26:53.000Z",
+    "readTimeBn": "১ মিনিট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "/images/gauhati-high-court.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "News Vanguard",
+      "Tripura",
+      "Agartala",
+      "Bangladesh Unrest",
+      "Border Security"
+    ]
+  },
+  {
+    "id": "news-20260916-013",
+    "slug": "barak-bulletin-katigorah-indo-bangladesh-border-trespass-tension",
+    "title": "Tension At Indo-Bangladesh Border In Katigorah over Trespass; Alleged Attack on Indian Farmers",
+    "englishTitle": "Tension At Indo-Bangladesh Border In Katigorah Over Trespass: Barak Bulletin",
+    "banglaTitle": "কাটিগড়ায় ভারত-বাংলাদেশ সীমান্তে অনুপ্রবেশ ও ভারতীয় কৃষকদের ওপর হামলার অভিযোগ: বরাক বুলেটিন",
+    "summaryBn": "আসামের কাছাড় জেলার কাটিগড়া সীমান্তে জিরো পয়েন্টে অনুপ্রবেশ নিয়ে স্থানীয় উত্তেজনা সৃষ্টি হওয়া সংক্রান্ত বরাক বুলেটিনের বিশদ প্রতিবেদন। শূন্যরেখার কাছে কৃষিকাজ করার সময় দুষ্কৃতীদের হামলার চেষ্টা বিএসএফ জওয়ানদের সময়োচিত পদক্ষেপে বানচাল করা হয় এবং করিমগঞ্জ সেক্টরে সেক্টর কমান্ডার স্তরে আলোচনা হয়েছে।",
+    "summaryEn": "Barak Bulletin reports localized tension along the Katigorah border in Assam's Cachar district following an attempted trespassing incident near the zero line targeting local farmers, which was repelled by swift BSF border guard patrols.",
+    "keyPointsBn": [
+      "বরাক বুলেটিনে কাটিগড়া ভারত-বাংলাদেশ সীমান্ত পরিস্থিতি নিয়ে বিশদ সংবাদ",
+      "জিরো লাইনে কৃষিকাজের সময়ে নিরাপত্তা নিশ্চিতকরণ ও বিএসএফ টহল বৃদ্ধি",
+      "বরাক উপত্যকার সীমান্ত এলাকায় স্থানীয় অধিবাসীদের নিরাপত্তা নিশ্চিতের পদক্ষেপ"
+    ],
+    "keyPointsEn": [
+      "Barak Bulletin coverage of Katigorah Indo-Bangladesh border situation in Cachar",
+      "Immediate BSF patrol deployment ensuring safety for farmers near zero line",
+      "Sector commander talks initiated to preserve peace along Barak Valley frontier"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তে দুষ্কৃতীদের তৎপরতা ও উত্তেজনার ঘটনা তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Reports local security concern along border farming areas.",
+    "source": {
+      "name": "Barak Bulletin",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://barakbulletin.com/tension-at-indo-bangladesh-border-in-katigorah-over-trespass/",
+      "originalHeadline": "Tension At Indo-Bangladesh Border In Katigorah over Trespass; Alleged Attack on Indian Farmers",
+      "scannedAt": "2026-09-16T17:45:00.000Z"
+    },
+    "publishedAt": "2026-09-16T12:00:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/gauhati-high-court.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Barak Bulletin",
+      "Assam",
+      "Katigorah",
+      "Cachar",
+      "Border Tension",
+      "BSF"
+    ]
+  },
+  {
     "id": "news-20260916-007",
     "slug": "the-assam-tribune-awami-league-rejects-ict-death-verdict",
     "title": "Awami League Rejects ICT Death Sentence Verdict, Calling It One-Sided & Fabricated: Assam Tribune Report",
