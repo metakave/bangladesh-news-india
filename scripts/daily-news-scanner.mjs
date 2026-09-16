@@ -1154,6 +1154,45 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         }
       }
 
+      // Programmatic URL Binding Safeguard: Ensure originalUrl links back to scanned feed candidate link
+      const matchedCand = matchedArticles.find(cand => 
+        (cand.title && item.source?.originalHeadline && cand.title.toLowerCase().includes(item.source.originalHeadline.toLowerCase().substring(0, 15))) ||
+        (cand.title && item.title && cand.title.toLowerCase().includes(item.title.toLowerCase().substring(0, 15))) ||
+        (cand.title && item.englishTitle && cand.title.toLowerCase().includes(item.englishTitle.toLowerCase().substring(0, 15)))
+      );
+      if (matchedCand && matchedCand.link) {
+        if (!item.source) item.source = {};
+        if (!item.source.originalUrl || item.source.originalUrl.includes('0WrRFhIezuc') || item.source.originalUrl === 'https://www.youtube.com') {
+          item.source.originalUrl = matchedCand.link;
+        }
+      }
+
+      // Programmatic Image Safeguard: Validate image relevance and apply fallback resolvers
+      const categoryDefaultImages = {
+        diplomacy: '/images/delhi-dhaka-bilateral-summit.jpg',
+        trade: '/images/hilsa-fish-market-trade.jpg',
+        border: '/images/indian-visa-application-center-dhaka.jpg',
+        politics: '/images/international-crimes-tribunal-dhaka.jpg',
+        economy: '/images/bank-bangladesh-economy.jpg',
+        sports: '/images/brics-summit-2026-card.png',
+        culture: '/images/dhakeshwari-national-temple-dhaka.jpg'
+      };
+
+      const hasInvalidImage = !isValidNewsImage(item.imageUrl) || 
+        (item.imageUrl.includes('suvendu-adhikari') && !combinedText.includes('suvendu') && !combinedText.includes('শুভেন্দু') && !combinedText.includes('অধিকারী'));
+
+      if (hasInvalidImage) {
+        if (combinedText.includes('tribunal') || combinedText.includes('ট্রাইব্যুনাল') || combinedText.includes('verdict') || combinedText.includes('মৃত্যুদণ্ড') || combinedText.includes('কাদের')) {
+          item.imageUrl = '/images/international-crimes-tribunal-dhaka.jpg';
+        } else if (combinedText.includes('hilsa') || combinedText.includes('ইলিশ') || combinedText.includes('রপ্তানি') || combinedText.includes('বন্দর')) {
+          item.imageUrl = '/images/hilsa-fish-market-trade.jpg';
+        } else if (combinedText.includes('tarique') || combinedText.includes('তারেক') || combinedText.includes('hasina') || combinedText.includes('হাসিনা')) {
+          item.imageUrl = '/images/delhi-dhaka-bilateral-summit.jpg';
+        } else {
+          item.imageUrl = categoryDefaultImages[item.category] || '/images/delhi-dhaka-bilateral-summit.jpg';
+        }
+      }
+
       return item;
     });
   } else {
