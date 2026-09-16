@@ -282,13 +282,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#factcheck"
+                <Link
+                  href="/fact-checking-policy"
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ color: 'var(--text-secondary)' }}
                 >
                   {lang === 'bn' ? 'তথ্য যাচাই নীতিমালা' : 'Fact-Checking Policy'}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
