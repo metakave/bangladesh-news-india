@@ -140,7 +140,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Politics Tv (YouTube)",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.youtube.com/watch?v=0WrRFhIezuc"
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EOVRXeFpaQTdpVTlSM3pIUGx4ZHhSc3FuWG1JQXFMUDh5UXVGdzNlQUgwNFBKWjVLZmVHazFxSl9FWUV5Mnd2bkFyMUFWWFZQdWtyVGhn?oc=5"
   },
   {
     "id": "alert-009",
@@ -473,7 +473,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Politics Tv (YouTube)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com/watch?v=0WrRFhIezuc",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EOVRXeFpaQTdpVTlSM3pIUGx4ZHhSc3FuWG1JQXFMUDh5UXVGdzNlQUgwNFBKWjVLZmVHazFxSl9FWUV5Mnd2bkFyMUFWWFZQdWtyVGhn?oc=5",
       "originalHeadline": "হাসিনার দিল্লি মিটিং এবং ফেরার ৩ প্ল্যান | Sheikh Hasina | Politics Tv",
       "scannedAt": "2026-09-16T09:50:00.000Z"
     },
