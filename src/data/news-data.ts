@@ -88,6 +88,17 @@ export const SCANNER_STATS = {
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
+    "id": "alert-016",
+    "headlineBn": "‘হাসিনার ফেরা ও স্থানীয় সরকার নির্বাচন ঘিরে রাজনৈতিক উত্তাপের আশঙ্কা’: দ্য ওয়াল-এর প্রতিবেদন",
+    "headlineEn": "Fears of political unrest over Hasina's exile return and local polls: Kolkata portal The Wall",
+    "timeAgoBn": "রাত ৯টা",
+    "timeAgoEn": "9:00 PM",
+    "sourceName": "The Wall",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNcG05OE9nNXFhclZudmtCcE1Pa09BSU1jblZkSHJIUmdIcUdrNGpudGRnSnh5UmQ4S0Q4YTlUeEFVY2xoYm4takZjYVk3a2tSdVpPTVl1OTJJeGZvb3NEX2xUZGhTbjgyNUM5REZicnBUT0J6LVo3bHZpeklYOXBhQzBRVFZ6VjJKbmtGZzlXSHNFVVdaMm1KbEVJX05HTzEzMWVnOERsWVFCTTA4RkxKWlVaVWlacjRGdENkTXNQakVaR0dkU2J0eGVTcUN6dFVTbG9JekJGTDJfbmJKUmpMaVdCNUU5emc5MDAxeWhIcWxnejNYZVdRcVV5MXUxNWFzS1J6Mm55QTAxNkpCNWdkUNIBlgJBVV95cUxOaDMxdjFuSmZUUFQtX21HRkI4X1BaSTNJcHJadlpxY0RLanRtYURNN0ZlVUJ0OEFiNW43aWpqczFfcXRNRmE3NnlzcjNWV3ZGODhzSnR6SmUzREpOd0NKblNWajkyMjBQaEduM0NLaDhsN1k2c05WbGtnSDYtVFRBN1hDTnAxdFRvVE1SY1Q2MmNYWjNTVy1uVmxDaVIwNGJwSnhnaG9HcUZ5MHg4NHNSV2R0Tl9vQmF1ejI0dHo2elBsME9yQURYUEkzVzJ3T01RbFpOa05mX2RRN3NzdDhZOTJKR3Q4Ri0xdEtKd1VvX192RTRGVDh0ZFZSUXFsWENQTHE5WUJYQjlpbkZEZ3dDdko4UHI4UQ?oc=5"
+  },
+  {
     "id": "alert-015",
     "headlineBn": "‘হাসিনার প্রত্যাবর্তন থেকে মক্কা চুক্তি: বহু প্রশ্ন উত্তরহীন বাংলাদেশে’: কলকাতা সংবাদ প্রতিদিনের বিশেষ সম্পাদকীয় বিশ্লেষণ",
     "headlineEn": "Sangbad Pratidin Editorial: Unanswered economic & security questions in Bangladesh amid Hasina return debates",
@@ -255,6 +266,55 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260916-006",
+    "slug": "thewall-kolkata-hasina-return-local-elections-unrest-concerns-bangladesh",
+    "title": "হাসিনার ফেরা ও স্থানীয় সরকার ভোট ঘিরে তুমুল অশান্তির আশঙ্কা, দ্য ওয়াল-এর বিশেষ প্রতিবেদন",
+    "englishTitle": "Fears of Unrest Over Hasina's Return & Local Elections: Kolkata Portal The Wall Reports",
+    "banglaTitle": "হাসিনার ফেরা ও স্থানীয় সরকার ভোট ঘিরে তুমুল অশান্তির আশঙ্কা, দ্য ওয়াল-এর বিশেষ প্রতিবেদন",
+    "summaryBn": "কলকাতা-ভিত্তিক জনপ্রিয় ডিজিটাল সংবাদ মাধ্যম 'দ্য ওয়াল'-এর বিশেষ সংবাদ প্রতিবেদনে জানানো হয়েছে, ভারতে অবস্থানরত সাবেক প্রধানমন্ত্রী শেখ হাসিনার সম্ভাব্য ফেরা এবং ওপার বাংলায় আসন্ন স্থানীয় সরকার নির্বাচনকে কেন্দ্র করে রাজনৈতিক উত্তাপ ছড়িয়ে পড়েছে। প্রতিবেদনে আইনশৃঙ্খলা পরিস্থিতি রক্ষা ও প্রশাসনিক চ্যালেঞ্জ নিয়ে বিশ্লেষকদের মতামত তুলে ধরা হয়।",
+    "summaryEn": "In a detailed report by Kolkata-based news outlet The Wall, political correspondents chart emerging security concerns in Bangladesh surrounding discussions over former PM Sheikh Hasina's exile movements and upcoming local government polls. The report notes heightened administrative alertness across border districts.",
+    "keyPointsBn": [
+      "দ্য ওয়াল-এর প্রতিবেদনে বাংলাদেশ স্থানীয় সরকার নির্বাচন ও রাজনৈতিক উত্তাপের বিশ্লেষণ",
+      "শেখ হাসিনার প্রত্যর্পণ বার্তা ও রাজনৈতিক দলগুলোর পাল্টাপাল্টি অবস্থানের চিত্র",
+      "কলকাতা প্রেস ডেস্ক থেকে সীমান্ত জেলাগুলোতে প্রশাসনিক নজরদারির আপডেট",
+      "কূটনীতি ও আঞ্চলিক রাজনীতি ক্যাটাগরিতে সংগৃহীত"
+    ],
+    "keyPointsEn": [
+      "The Wall Kolkata report details political friction ahead of local government elections",
+      "Evaluates security dynamics surrounding Sheikh Hasina's exile political messaging",
+      "Monitored by Kolkata bureau as a key regional political stability report",
+      "Archived under Politics & Border Security dispatches"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Politics & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "দ্য ওয়াল-এর প্রতিবেদনে নির্বাচনী পরিস্থিতি ও রাজনৈতিক উত্তাপ বৃদ্ধির আশঙ্কার চিত্র উঠে এসেছে।",
+    "sentimentReasonEn": "The Wall report highlights political friction and security concerns regarding elections.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNcG05OE9nNXFhclZudmtCcE1Pa09BSU1jblZkSHJIUmdIcUdrNGpudGRnSnh5UmQ4S0Q4YTlUeEFVY2xoYm4takZjYVk3a2tSdVpPTVl1OTJJeGZvb3NEX2xUZGhTbjgyNUM5REZicnBUT0J6LVo3bHZpeklYOXBhQzBRVFZ6VjJKbmtGZzlXSHNFVVdaMm1KbEVJX05HTzEzMWVnOERsWVFCTTA4RkxKWlVaVWlacjRGdENkTXNQakVaR0dkU2J0eGVTcUN6dFVTbG9JekJGTDJfbmJKUmpMaVdCNUU5emc5MDAxeWhIcWxnejNYZVdRcVV5MXUxNWFzS1J6Mm55QTAxNkpCNWdkUNIBlgJBVV95cUxOaDMxdjFuSmZUUFQtX21HRkI4X1BaSTNJcHJadlpxY0RLanRtYURNN0ZlVUJ0OEFiNW43aWpqczFfcXRNRmE3NnlzcjNWV3ZGODhzSnR6SmUzREpOd0NKblNWajkyMjBQaEduM0NLaDhsN1k2c05WbGtnSDYtVFRBN1hDTnAxdFRvVE1SY1Q2MmNYWjNTVy1uVmxDaVIwNGJwSnhnaG9HcUZ5MHg4NHNSV2R0Tl9vQmF1ejI0dHo2elBsME9yQURYUEkzVzJ3T01RbFpOa05mX2RRN3NzdDhZOTJKR3Q4Ri0xdEtKd1VvX192RTRGVDh0ZFZSUXFsWENQTHE5WUJYQjlpbkZEZ3dDdko4UHI4UQ?oc=5",
+      "originalHeadline": "হাসিনার ফেরা ও স্থানীয় সরকার ভোট ঘিরে তুমুল অশান্তির আশঙ্কা - TheWall",
+      "scannedAt": "2026-09-16T21:30:29.000Z"
+    },
+    "publishedAt": "2026-09-16T10:38:47.000Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "The Wall",
+      "Kolkata Bureau",
+      "Sheikh Hasina",
+      "Local Elections",
+      "Politics",
+      "#TheWallNews"
+    ]
+  },
   {
     "id": "news-20260916-005",
     "slug": "sangbad-pratidin-kolkata-editorial-hasina-return-mecca-pact-bangladesh-crisis",
