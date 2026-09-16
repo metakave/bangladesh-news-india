@@ -88,6 +88,17 @@ export const SCANNER_STATS = {
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
+    "id": "alert-015",
+    "headlineBn": "‘হাসিনার প্রত্যাবর্তন থেকে মক্কা চুক্তি: বহু প্রশ্ন উত্তরহীন বাংলাদেশে’: কলকাতা সংবাদ প্রতিদিনের বিশেষ সম্পাদকীয় বিশ্লেষণ",
+    "headlineEn": "Sangbad Pratidin Editorial: Unanswered economic & security questions in Bangladesh amid Hasina return debates",
+    "timeAgoBn": "আজ বিকেলে",
+    "timeAgoEn": "This afternoon",
+    "sourceName": "Sangbad Pratidin",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://www.sangbadpratidin.in/editorial/from-hasinas-return-to-the-mecca-pact-many-questions-remain-unanswered-in-bangladesh/pid/1341406/"
+  },
+  {
     "id": "alert-014",
     "headlineBn": "ট্রাইব্যুনালের রায়ের প্রতিবাদে আওয়ামী লীগের জেলা কমিটির ইনস্টাগ্রাম ফটো ডিসপ্যাচ ও সোশ্যাল মিডিয়ায় আলোড়ন",
     "headlineEn": "Awami League district units post Instagram visual dispatches rejecting ICT death sentence verdict",
@@ -244,6 +255,56 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260916-005",
+    "slug": "sangbad-pratidin-kolkata-editorial-hasina-return-mecca-pact-bangladesh-crisis",
+    "title": "হাসিনার প্রত্যাবর্তন থেকে মাক্কা চুক্তি: বাংলাদেশে অর্থনীতি ও নিরাপত্তা সংকটের বহু প্রশ্ন উত্তরহীন, সংবাদ প্রতিদিনের সম্পাদকীয়",
+    "englishTitle": "From Hasina's Return to the Mecca Pact: Economic & Security Questions Unanswered in Bangladesh, Sangbad Pratidin Editorial",
+    "banglaTitle": "হাসিনার প্রত্যাবর্তন থেকে মাক্কা চুক্তি: বাংলাদেশে অর্থনীতি ও নিরাপত্তা সংকটের বহু প্রশ্ন উত্তরহীন, সংবাদ প্রতিদিনের সম্পাদকীয়",
+    "summaryBn": "পশ্চিমবঙ্গের অন্যতম শীর্ষ স্থানীয় দৈনিক 'সংবাদ প্রতিদিন'-এর আজকের বিশেষ সম্পাদকীয়তে বাংলাদেশের বর্তমান অর্থনৈতিক ও রাজনৈতিক পরিস্থিতি নিয়ে গভীর উদ্বেগ প্রকাশ করা হয়েছে। প্রতিবেদনে উল্লেখ করা হয়, ওপার বাংলায় গ্যাসের সংকটে কলকারখানা বন্ধ হওয়া, তীব্র বেকারত্ব এবং আইনশৃঙ্খলা পরিস্থিতির অবক্ষয়ের মাঝেই প্রাক্তন প্রধানমন্ত্রী শেখ হাসিনার প্রত্যাবর্তন ও আন্তর্জাতিক নানা কূটনৈতিক চুক্তি ঘিরে প্রশ্ন তৈরি হয়েছে।",
+    "summaryEn": "In a lead editorial published by Kolkata daily Sangbad Pratidin, regional analysts examine the growing economic and security challenges confronting Bangladesh post-August. The article highlights widespread industrial shutdowns caused by gas shortages, surging unemployment, deteriorating law enforcement, and emerging geopolitical questions surrounding former PM Sheikh Hasina's exile strategy and regional diplomacy.",
+    "keyPointsBn": [
+      "সংবাদ প্রতিদিনের সম্পাদকীয়তে বাংলাদেশের বর্তমান গ্যাস সংকট ও শিল্প কারখানা বন্ধের তথ্যানুসন্ধান",
+      "বেকারত্ব বৃদ্ধি এবং অপরাধ ও নিরাপত্তাহীনতা বেড়ে যাওয়া নিয়ে কলকাতা প্রেস ডেসকের গভীর বিশ্লেষণ",
+      "শেখ হাসিনার সম্ভাব্য রাজনৈতিক প্রত্যাবর্তন ও আঞ্চলিক ভূ-রাজনীতির মোড় নিয়ে বিশ্লেষণ",
+      "কলকাতা ব্যুরো থেকে পরিবেশিত দক্ষিণ এশীয় নিরাপত্তা বিষয়ক বিশেষ প্রতিবেদন"
+    ],
+    "keyPointsEn": [
+      "Sangbad Pratidin lead editorial charts energy crunches and industrial slowdowns in Bangladesh",
+      "Detailed analysis by Kolkata desk on rising unemployment and internal security concerns",
+      "Evaluates geopolitical questions surrounding Sheikh Hasina's political signaling from Delhi",
+      "Archived under Diplomacy & Regional Security for cross-border policy monitoring"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও আঞ্চলিক নিরাপত্তা",
+    "categoryLabelEn": "Diplomacy & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সংবাদ প্রতিদিনের সম্পাদকীয়তে বাংলাদেশে জ্বালানি সংকট, শিল্পকারখানা বন্ধ ও অর্থনৈতিক উদ্বেগের চিত্র উঠে এসেছে।",
+    "sentimentReasonEn": "Sangbad Pratidin editorial details severe gas shortages, industrial stagnation, and security concerns.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.sangbadpratidin.in/editorial/from-hasinas-return-to-the-mecca-pact-many-questions-remain-unanswered-in-bangladesh/pid/1341406/",
+      "originalHeadline": "হাসিনার প্রত্যাবর্তন থেকে মাক্কা চুক্তি, বহু প্রশ্ন উত্তরহীন ভেসে বেড়াচ্ছে বাংলাদেশে - Sangbad Pratidin",
+      "scannedAt": "2026-09-16T14:53:30.000Z"
+    },
+    "publishedAt": "2026-09-16T07:50:02.000Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Sangbad Pratidin",
+      "Kolkata Bureau",
+      "Sheikh Hasina",
+      "Economy",
+      "Diplomacy",
+      "Opar Bangla",
+      "#KolkataPress"
+    ]
+  },
   {
     "id": "ig-005",
     "slug": "instagram-awami-league-madaripur-protest-ict-death-sentence-verdict",
