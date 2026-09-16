@@ -706,7 +706,21 @@ async function runDailyNewsScanner() {
   const priorityMatches = matchedArticles.filter(art => isPriorityKeyword(art.title, art.desc));
   console.log(`🎯 Identified ${matchedArticles.length} articles specifically related to Bangladesh / Dhaka (${priorityMatches.length} priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).`);
 
-  console.log('\n🧠 Step 2: Querying DeepSeek API to synthesize intelligence & translate...');
+  if (process.argv.includes('--dump-candidates')) {
+    const scratchDir = path.join(rootDir, 'scratch');
+    if (!fs.existsSync(scratchDir)) fs.mkdirSync(scratchDir, { recursive: true });
+    const candidateDumpPath = path.join(scratchDir, 'candidates.json');
+    fs.writeFileSync(candidateDumpPath, JSON.stringify({
+      totalScanned: allScannedArticles.length,
+      matchedCount: matchedArticles.length,
+      priorityCount: priorityMatches.length,
+      candidates: matchedArticles.slice(0, 30)
+    }, null, 2));
+    console.log(`✅ Candidate articles dumped successfully to ${candidateDumpPath}`);
+    return;
+  }
+
+  console.log('\n🧠 Step 2: Querying AI API to synthesize intelligence & translate...');
   
   const systemPrompt = `You are the lead intelligence analyst and bilingual editor for "Narrative Compass" (ন্যারেটিভ কম্পাস), an editorial platform monitoring and analyzing how Indian news media (Delhi, Kolkata bureaus in English, Bengali, Hindi) covers Bangladesh, Dhaka, and bilateral relations.
 

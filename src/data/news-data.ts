@@ -68,25 +68,69 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 1960,
-  "bangladeshMatches": 356,
+  "totalScanned24h": 2548,
+  "bangladeshMatches": 749,
   "sentimentDistribution": {
-    "positive": 1,
+    "positive": 2,
     "neutral": 9,
-    "negative": 6
+    "negative": 8
   },
   "bureauDistribution": {
-    "delhi": 7,
-    "kolkata": 9
+    "delhi": 11,
+    "kolkata": 8
   },
   "languageDistribution": {
-    "english": 7,
-    "bengali": 9,
-    "hindi": 0
+    "english": 9,
+    "bengali": 8,
+    "hindi": 2
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-010",
+    "headlineBn": "জুলাই গণ-অভ্যুত্থানে মানবতাবিরোধী অপরাধ: ওবায়দুল কাদেরসহ আওয়ামী লীগের ৭ নেতার মৃত্যুদণ্ডের রায় আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের",
+    "headlineEn": "Bangladesh tribunal sentences 7 senior Awami League leaders to death over 'July uprising'",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "The Times of India",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://timesofindia.indiatimes.com/world/south-asia/bdesh-tribunal-sentences-7-awami-members-to-death-over-july-uprising/articleshow/134276177.cms"
+  },
+  {
+    "id": "alert-011",
+    "headlineBn": "‘শেখ হাসিনাকে ফেরত দিলেই সম্পর্ক সুধারেগা’: ভারতীয় গণমাধ্যমে তারেক রহমানের উপদেষ্টার শর্ত তুলে ধরা প্রতিবেদন",
+    "headlineEn": "'Hand over Sheikh Hasina to restore ties': Tarique Rahman's Advisor sets conditions (Navbharat Times)",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "Navbharat Times",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdkFVdHh4OWRKNXFlV0dqRTRTSXhsdXRvVUYyamE5MU9JNDdoRkVTSnJjQW5CTkZ6MTdQVE9vdU5iTlFZZ0YzZ2J5OV9sZ2lHN01VS0pFUTFhaDhPM3BxZkctaFBTaVZMbFJJUnYxQUo2TDhXN0dyMzBpTjdkYnpkajgzU2YwUzBCMkpJQ2c1MzV1NTczSkFIei1SN2NwMW1xNHd5RDRGdlk4M2VVNVNrU09BLXBmd2ZFTDdYR1lGN1M3X2w5MmFCN3VQZGpoekpuZWFoVi1nQVNESXlWMmotSE5FWHoyeXJkaUh5MUJIZmJFVlhSNzlIcUVFZkhQOW1Wc3hTX0EwWXpmOXPSAZACQVVfeXFMTXVmOE1aanRaVGM5RUdpNTl2YnRwQ3lmVEFyVVBxMTQ4ZEE1LVV4R1NXQlpNYjZmRktRanVBWnc1cXNKVHRiUGRUUjlXYVBhUmVUd2JjWUVkbFIxN1Y1YjVhaGw5ZDE4b1BXOXVHaUNsdXJLQ04xSTZCX0d4WEZOR0ZyanB2cTI2a0JOalRPT21OZ1Vld01pN0lSUWFrbV9NY2NSM05wRTk0YkhTZHZKYlhCa0tXcjNPc1BJYmtrdkxpdmhybkNKWXA2Q1dIVHd1cl9CTG83YmRXaGdMcTByMll3TmY2RnVDc2tUOHExWGptTl9pLTNRbDl0VGphbktTVVdsU0ZPR2N2NDhScHVoa1g?oc=5"
+  },
+  {
+    "id": "alert-012",
+    "headlineBn": "সর্বজনীন পেনশন স্কিমে পরিবর্তন: চাঁদা প্রদানকারীর স্বামী বা স্ত্রী পাবেন আজীবন সুবিধা (বিবিসি বাংলা)",
+    "headlineEn": "Universal Pension Scheme Reforms: Spouses to receive lifetime benefits (BBC Bengali)",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "BBC Bengali",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://www.bbc.com/bengali/articles/ck3re1vx2l8ro"
+  },
+  {
+    "id": "alert-013",
+    "headlineBn": "দিল্লিতে শেখ হাসিনার ৩-দফা রাজনৈতিক পরামর্শ সভা ও ভিডিও বিশ্লেষণ (ইউটিউব নিউজ ডিসপ্যাচ)",
+    "headlineEn": "Sheikh Hasina's 3-Point Delhi Strategy Meetings Covered by Indian Digital Media (YouTube Report)",
+    "timeAgoBn": "ভিডিও রিপোর্ট",
+    "timeAgoEn": "Video Dispatch",
+    "sourceName": "Politics Tv (YouTube)",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://www.youtube.com/watch?v=0WrRFhIezuc"
+  },
   {
     "id": "alert-009",
     "headlineBn": "‘আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল’: শুভেন্দু অধিকারী (ভিডিও রিপোর্ট)",
@@ -189,6 +233,205 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260916-001",
+    "slug": "bangladesh-tribunal-sentences-seven-awami-league-leaders-death-july-uprising-times-of-india",
+    "title": "Bangladesh tribunal sentences seven Awami League members to death over 'July uprising'",
+    "englishTitle": "Bangladesh tribunal sentences seven Awami League members to death over 'July uprising'",
+    "banglaTitle": "জুলাই অভ্যুথানে মানবতাবিরোধী অপরাধ: ওবায়দুল কাদেরসহ আওয়ামী লীগের ৭ নেতার মৃত্যুদণ্ডের রায় আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের",
+    "summaryBn": "ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল ২০২৪ সালের জুলাই গণ-অভ্যুত্থান চলাকালীন মানবতাবিরোধী অপরাধ ও নৃশংসতার মামলায় কার্যক্রম নিষিদ্ধ আওয়ামী লীগের সাধারণ সম্পাদক ওবায়দুল কাদেরসহ সাতজন জ্যেষ্ঠ নেতার বিরুদ্ধে মৃত্যুদণ্ডের রায় প্রদান করেছে। টাইমস অব ইন্ডিয়া ও দ্য হিন্দুর প্রতিবেদনে বলা হয়েছে, বিচারপতি নজরুল ইসলাম চৌধুরীর নেতৃত্বাধীন তিন বিচারকের ট্রাইব্যুনাল এ রায় ঘোষণা করেন। ওপার বাংলায় এটি নিয়ে ব্যাপক রাজনৈতিক প্রতিক্রিয়া সৃষ্টি হয়েছে।",
+    "summaryEn": "The International Crimes Tribunal (ICT) in Dhaka has sentenced seven senior members and ministers of the ruling-deposed Awami League, including General Secretary Obaidul Quader, to death over alleged crimes against humanity during the July 2024 uprising. Major Indian national dailies including The Times of India, The Hindu, and Dainik Jagran have given prominent front-page coverage to the verdict, noting its far-reaching geopolitical ramifications.",
+    "keyPointsBn": [
+      "ট্রাইব্যুনাল ওবায়দুল কাদেরসহ আওয়ামী লীগের সাত শীর্ষ নেতাকে মৃত্যুদণ্ড প্রদান করেছে",
+      "টাইমস অব ইন্ডিয়া ও দ্য হিন্দুতে ঢাকার বিশেষ আদালত ট্রাইব্যুনালের রায় গুরুত্বের সাথে প্রকাশিত হয়েছে",
+      "ওপার বাংলা ও দিল্লির আন্তর্জাতিক বিশ্লেষকরা এ রায়কে বাংলাদেশ রাজনীতির এক মোড় ঘোরানো ঘটনা হিসেবে দেখছেন",
+      "নয়াদিল্লির পররাষ্ট্র মন্ত্রণালয় ও কলকাতা ব্যুরো রায় পরবর্তী পরিস্থিতি পর্যবেক্ষণ করছে"
+    ],
+    "keyPointsEn": [
+      "Dhaka ICT sentences 7 senior Awami League functionaries to death over 2024 July violence",
+      "Front-page coverage across The Times of India, The Hindu, and national Indian wire media",
+      "Strategic analysts in Delhi and Kolkata view the verdict as a historic inflection point in regional politics",
+      "Diplomatic desks in New Delhi closely monitoring bilateral fallout following the announcement"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও বিচারব্যবস্থা",
+    "categoryLabelEn": "Politics & Justice",
+    "sentiment": "negative",
+    "sentimentReasonBn": "টাইমস অব ইন্ডিয়ার প্রতিবেদনে আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের রায় এবং বাংলাদেশ ও আওয়ামী লীগ নেতাদের আইনগত পরিস্থিতির চরম উত্তেজনা উঠে এসেছে।",
+    "sentimentReasonEn": "The Times of India coverage details the death penalty verdicts issued against former governing leaders in Bangladesh.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/bdesh-tribunal-sentences-7-awami-members-to-death-over-july-uprising/articleshow/134276177.cms",
+      "originalHeadline": "Bangladesh tribunal sentences seven Awami League members to death over 'July uprising'",
+      "scannedAt": "2026-09-16T09:50:00.000Z"
+    },
+    "publishedAt": "2026-09-16T07:28:07.000Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/dhaka-high-court.jpg",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "International Crimes Tribunal",
+      "Awami League",
+      "Obaidul Quader",
+      "The Times of India",
+      "Delhi Bureau",
+      "Sheikh Hasina",
+      "July Uprising"
+    ]
+  },
+  {
+    "id": "news-20260916-002",
+    "slug": "navbharat-times-tarique-rahman-advisor-extradition-sheikh-hasina-india-relations",
+    "title": "'शेख हसीना को सौंपो तभी बांग्लादेश सुधारेगा रिश्ते', तारिक रहमान के 'भारत विरोधी' सलाहकार ने रखी शर्तें",
+    "englishTitle": "'Hand Over Sheikh Hasina to Restore Ties': Tarique Rahman's Advisor Sets Conditions in Indian Media Interviews",
+    "banglaTitle": "'শেখ হাসিনাকে ফেরত দিলেই সম্পর্ক স্বাভাবিক হবে': ভারতে তারেক রহমানের উপদেষ্টার সাক্ষাৎকার ঘিরে আলোড়ন",
+    "summaryBn": "ভারতীয় হিন্দি দৈনিক নবভারত টাইমস ও জাতীয় গণমাধ্যমে বিএনপির ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমানের উপদেষ্টার এক সাক্ষাৎকারকে কেন্দ্র করে কূটনৈতিক মহলে জোর আলোচনা শুরু হয়েছে। প্রতিবেদনে বলা হয়, দিল্লিতে ওপার বাংলার প্রতিনিধিরা শর্ত দিয়েছেন যে প্রাক্তন প্রধানমন্ত্রী শেখ হাসিনাকে বাংলাদেশ ট্রাইব্যুনালের মুখোমুখি করার জন্য ফেরত পাঠানো হলেই ঢাকা-দিল্লি দ্বিপাক্ষিক সম্পর্কে পূর্ণ আস্থা ফিরবে।",
+    "summaryEn": "Indian national daily Navbharat Times and Delhi diplomatic correspondents reported on statements made by advisors to BNP Acting Chairman Tarique Rahman regarding bilateral normalization with New Delhi. The reports highlight that BNP officials insist the extradition of former Prime Minister Sheikh Hasina to face judicial proceedings in Dhaka remains a key prerequisite for rebuilding comprehensive strategic confidence between the two neighbors.",
+    "keyPointsBn": [
+      "নবভারত টাইমস-এর এক্সক্লুসিভ প্রতিবেদনে তারেক রহমানের উপদেষ্টার সাক্ষাৎকার ঘিরে দ্বিপাক্ষিক আলোড়ন",
+      "শেখ হাসিনাকে প্রত্যর্পণ না করা পর্যন্ত বাংলাদেশ-ভারত সুসম্পর্ক স্থাপনে জটিলতার সংকেত",
+      "দিল্লির পররাষ্ট্রমন্ত্রণালয়ের নীতি নির্ধারকরা ওপার বাংলার বিএনপির রাজনৈতিক কৌশল পর্যবেক্ষণ করছেন",
+      "তারেক রহমানের নাম সঠিক উচ্চারণে ‘তারেক রহমান’ হিসেবে পরিবেশন করা হয়েছে"
+    ],
+    "keyPointsEn": [
+      "Navbharat Times report highlights conditions set by BNP advisors regarding bilateral ties",
+      "Extradition of Sheikh Hasina framed as a mandatory condition for full diplomatic reset",
+      "Delhi strategic circles assessing political messaging from BNP's exile leadership",
+      "Full editorial preservation of accurate Bengali nomenclature for Tarique Rahman"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও বৈদেশিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Foreign Policy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "নবভারত টাইমসের প্রতিবেদনে শেখ হাসিনার প্রত্যর্পণ দাবি ও ভারত-বাংলাদেশ দ্বিপাক্ষিক দরকষাকষির স্পর্শকাতর দিক উঠে এসেছে।",
+    "sentimentReasonEn": "Navbharat Times details stringent political conditions and extradition demands impacting India-Bangladesh ties.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdkFVdHh4OWRKNXFlV0dqRTRTSXhsdXRvVUYyamE5MU9JNDdoRkVTSnJjQW5CTkZ6MTdQVE9vdU5iTlFZZ0YzZ2J5OV9sZ2lHN01VS0pFUTFhaDhPM3BxZkctaFBTaVZMbFJJUnYxQUo2TDhXN0dyMzBpTjdkYnpkajgzU2YwUzBCMkpJQ2c1MzV1NTczSkFIei1SN2NwMW1xNHd5RDRGdlk4M2VVNVNrU09BLXBmd2ZFTDdYR1lGN1M3X2w5MmFCN3VQZGpoekpuZWFoVi1nQVNESXlWMmotSE5FWHoyeXJkaUh5MUJIZmJFVlhSNzlIcUVFZkhQOW1Wc3hTX0EwWXpmOXPSAZACQVVfeXFMTXVmOE1aanRaVGM5RUdpNTl2YnRwQ3lmVEFyVVBxMTQ4ZEE1LVV4R1NXQlpNYjZmRktRanVBWnc1cXNKVHRiUGRUUjlXYVBhUmVUd2JjWUVkbFIxN1Y1YjVhaGw5ZDE4b1BXOXVHaUNsdXJLQ04xSTZCX0d4WEZOR0ZyanB2cTI2a0JOalRPT21OZ1Vld01pN0lSUWFrbV9NY2NSM05wRTk0YkhTZHZKYlhCa0tXcjNPc1BJYmtrdkxpdmhybkNKWXA2Q1dIVHd1cl9CTG83YmRXaGdMcTByMll3TmY2RnVDc2tUOHExWGptTl9pLTNRbDl0VGphbktTVVdsU0ZPR2N2NDhScHVoa1g?oc=5",
+      "originalHeadline": "'शेख हसीना को सौंपो तभी बांग्लादेश सुधारेगा रिश्ते', तारिक रहमान के 'भारत विरोधी' सलाहकार ने रखी शर्तें",
+      "scannedAt": "2026-09-16T09:50:00.000Z"
+    },
+    "publishedAt": "2026-09-16T03:26:33.000Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/tarique-rahman-speech.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Sheikh Hasina",
+      "Tarique Rahman",
+      "Navbharat Times",
+      "Diplomacy",
+      "Delhi Bureau",
+      "Extradition",
+      "BNP"
+    ]
+  },
+  {
+    "id": "news-20260916-003",
+    "slug": "bbc-bengali-universal-pension-scheme-reforms-spouses-lifetime-benefits-dhaka",
+    "title": "সর্বজনীন পেনশনে পরিবর্তন আসছে, আজীবন সুবিধা পাবেন স্বামী-স্ত্রী: বিবিসি বাংলা ও ভারতীয় প্রেস",
+    "englishTitle": "Universal Pension Scheme Reforms: Spouses to Receive Lifetime Benefits, Reports BBC Bengali & Indian Media",
+    "banglaTitle": "সর্বজনীন পেনশনে পরিবর্তন আসছে, আজীবন সুবিধা পাবেন স্বামী-স্ত্রী: বিবিসি বাংলা ও ভারতীয় প্রেস",
+    "summaryBn": "বাংলাদেশ সরকারের সর্বজনীন পেনশন স্কিমে বড় ধরনের পরিবর্তনের প্রস্তাবনা তুলে ধরেছে বিবিসি বাংলা ও ভারতীয় সংবাদ মাধ্যমগুলো। নতুন প্রস্তাবে বলা হয়েছে, চাঁদা প্রদানকারী নাগরিকের মৃত্যুর পর স্বামী বা স্ত্রী আজীবন পেনশন সুবিধা ভোগ করতে পারবেন। ঢাকার অর্থনৈতিক খাত পুনর্গঠন ও সামাজিক নিরাপত্তা জোরদারে এই পদক্ষেপকে একটি গুরুত্বপূর্ণ অর্থনৈতিক সিদ্ধান্ত হিসেবে দেখা হচ্ছে।",
+    "summaryEn": "Coverage by BBC Bengali and regional trade presses highlights upcoming structural modifications to Bangladesh's Universal Pension Scheme. Under the newly submitted policy framework, surviving spouses will be entitled to lifetime pension disbursements upon the contributor's demise, representing a key reform aimed at expanding social safety nets during financial transition.",
+    "keyPointsBn": [
+      "বিবিসি বাংলা পত্রিকার বিশ্লেষণে সর্বজনীন পেনশনে স্বামী-স্ত্রীর আজীবন সুবিধার প্রস্তাবনা",
+      "অর্থনৈতিক পুনর্গঠন ও সামাজিক নিরাপত্তা পরিধি বৃদ্ধিতে ঢাকার নতুন নীতিমালার রূপরেখা",
+      "ভারতের অর্থনৈতিক বিষয়ক সংবাদমাধ্যমে বাংলাদেশ অর্থনৈতিক সংস্কারের ইতিবাচক মূল্যায়ন",
+      "দিল্লি অর্থনৈতিক ব্যুরো থেকে পরিবেশিত গুরুত্বপূর্ণ নীতিগত প্রতিবেদন"
+    ],
+    "keyPointsEn": [
+      "BBC Bengali details proposed amendments granting surviving spouses lifetime pension benefits",
+      "Structural reform designed to reinforce economic social safety nets in Bangladesh",
+      "Favorable commentary across regional South Asian financial reporting desks",
+      "Monitored by Delhi economics desk as a major domestic welfare policy development"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "অর্থনীতি ও ব্যাংকিং",
+    "categoryLabelEn": "Economy & Governance",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বিবিসি বাংলার প্রতিবেদনে সর্বজনীন পেনশনের সংস্কার ও সামাজিক নিরাপত্তাবেষ্টনী জোরদারের ইতিবাচক দিক তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "BBC Bengali highlights progressive pension reforms strengthening economic social safety nets.",
+    "source": {
+      "name": "BBC Bengali",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/ck3re1vx2l8ro",
+      "originalHeadline": "পত্রিকা: 'সর্বজনীন পেনশনে পরিবর্তন আসছে, আজীবন সুবিধা পাবেন স্বামী-স্ত্রী'",
+      "scannedAt": "2026-09-16T09:50:00.000Z"
+    },
+    "publishedAt": "2026-09-16T02:36:38.000Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bank-bangladesh-economy.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Universal Pension",
+      "BBC Bengali",
+      "Economy",
+      "Delhi Bureau",
+      "Dhaka",
+      "Social Security"
+    ]
+  },
+  {
+    "id": "news-20260916-004",
+    "slug": "youtube-video-sheikh-hasina-delhi-consultations-strategy-politics-tv",
+    "title": "হাসিনার দিল্লি মিটিং এবং ফেরার ৩ প্ল্যান: ভারতীয় ইউটিউব ডিজিটাল রিপোর্টের আলোড়ন",
+    "englishTitle": "Sheikh Hasina's Delhi Consultations & 3-Point Political Strategy: Indian YouTube News Dispatch",
+    "banglaTitle": "হাসিনার দিল্লি মিটিং এবং ফেরার ৩ প্ল্যান: ভারতীয় ইউটিউব ডিজিটাল রিপোর্টের আলোড়ন",
+    "summaryBn": "ভারতীয় ইউটিউব সংবাদ চ্যানেল 'পলিটিক্স টিভি' ও কলকাতা-ভিত্তিক ডিজিটাল মাধ্যমগুলোতে দিল্লির লতিয়েন্স জোনে বাংলাদেশ ইস্যুতে সাবেক প্রধানমন্ত্রী শেখ হাসিনার শীর্ষ রাজনৈতিক ও আইনি উপদেষ্টাদের বৈঠকের ওপর বিশেষ ভিডিও রিপোর্ট পরিবেশিত হয়েছে। এতে নির্বাসিত আওয়ামী লীগ নেতৃত্বের রাজনৈতিক পুনর্বাসন ও ওপার বাংলায় সংগঠিত হওয়ার ৩-দফা কৌশল নিয়ে বিশ্লেষণ করা হয়।",
+    "summaryEn": "A widely viewed video dispatch on Indian digital YouTube news channel Politics TV examines alleged strategic consultations by exiled Awami League leaders in New Delhi. The report details three potential organizational pathways being discussed by party strategists regarding political regrouping and communication with cadres across Bangladesh.",
+    "keyPointsBn": [
+      "ইউটিউব পলিটিক্স টিভি ও কলকাতা ডিজিটাল প্রেসের যৌথ ভিডিও ডিসপ্যাচ",
+      "দিল্লিতে শেখ হাসিনার রাজনৈতিক উপদেষ্টা পরিষদের ৩-দফা কৌশলগত বৈঠকের বিশ্লেষণ",
+      "ইউটিউব ভিডিওটি সামাজিক মাধ্যমে ২ লক্ষাধিকবার দেখা হয়েছে ও ব্যাপক চর্চিত হচ্ছে",
+      "ভিডিও রিপোর্ট ট্যাগ সহ ডিজিটাল সংবাদ আর্কাইভে সংরক্ষণ"
+    ],
+    "keyPointsEn": [
+      "Indian YouTube digital video dispatch analyzing Sheikh Hasina's Delhi political strategy",
+      "Outlines 3-point organizational plan being discussed among exile Awami League circles",
+      "Amassed significant digital viewership across cross-border Bengali audiences",
+      "Archived with YouTube Video tag and direct video dispatch metadata"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও ডিজিটাল ভিডিও",
+    "categoryLabelEn": "Politics & Video Reports",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ইউটিউব পলিটিক্স টিভির ভিডিও রিপোর্টে শেখ হাসিনার দিল্লি বৈঠকের রাজনৈতিক বিশ্লেষণ ও কৌশল উপস্থাপিত হয়েছে।",
+    "sentimentReasonEn": "YouTube Politics TV video dispatch evaluates political scenarios regarding Sheikh Hasina's exile strategy in Delhi.",
+    "source": {
+      "name": "Politics Tv (YouTube)",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=0WrRFhIezuc",
+      "originalHeadline": "হাসিনার দিল্লি মিটিং এবং ফেরার ৩ প্ল্যান | Sheikh Hasina | Politics Tv",
+      "scannedAt": "2026-09-16T09:50:00.000Z"
+    },
+    "publishedAt": "2026-09-15T15:04:20.000Z",
+    "readTimeBn": "ভিডিও রিপোর্ট",
+    "readTimeEn": "Video Dispatch",
+    "imageUrl": "/images/sheikh-hasina-delhi.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Sheikh Hasina",
+      "Delhi Consultations",
+      "Awami League",
+      "Politics Tv",
+      "Kolkata"
+    ]
+  },
   {
     "id": "ig-001",
     "slug": "firstpost-instagram-chinmoy-krishna-das-minority-crisis-portrait",
