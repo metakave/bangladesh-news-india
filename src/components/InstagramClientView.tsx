@@ -270,7 +270,7 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
             <h1
               className={lang === 'bn' ? 'font-bengali' : 'font-serif'}
               style={{
-                fontSize: lang === 'bn' ? '1.85rem' : '2.1rem',
+                fontSize: lang === 'bn' ? '1.85rem' : '1.975rem',
                 fontWeight: 600,
                 color: 'var(--text-primary)',
                 lineHeight: 1.2,
