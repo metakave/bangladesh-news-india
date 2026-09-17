@@ -214,22 +214,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/archive"
-                  className={lang === 'bn' ? 'font-bengali' : ''}
-                  style={{ color: 'var(--brand-primary)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
-                >
-                  <Archive size={13} />
-                  {t.archive.navTitle}
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/instagram"
                   className={lang === 'bn' ? 'font-bengali' : ''}
                   style={{ color: '#E1306C', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
                 >
                   <Instagram size={13} style={{ color: '#E1306C' }} />
                   {t.instagram.navTitle}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/archive"
+                  className={lang === 'bn' ? 'font-bengali' : ''}
+                  style={{ color: 'var(--brand-primary)', fontWeight: 700, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
+                >
+                  <Archive size={13} />
+                  {t.archive.navTitle}
                 </Link>
               </li>
             </ul>
