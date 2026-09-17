@@ -370,7 +370,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-17T07:15:00.000Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -416,7 +416,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-17T06:00:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/diplomatic-meeting-delhi-dhaka.jpg",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
