@@ -68,25 +68,47 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2548,
-  "bangladeshMatches": 749,
+  "totalScanned24h": 2688,
+  "bangladeshMatches": 773,
   "sentimentDistribution": {
-    "positive": 2,
-    "neutral": 9,
-    "negative": 8
+    "positive": 4,
+    "neutral": 12,
+    "negative": 11
   },
   "bureauDistribution": {
-    "delhi": 11,
-    "kolkata": 8
+    "delhi": 15,
+    "kolkata": 12
   },
   "languageDistribution": {
-    "english": 9,
-    "bengali": 8,
+    "english": 14,
+    "bengali": 11,
     "hindi": 2
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-018",
+    "headlineBn": "‘আওয়ামী লীগ আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে অন্তর্বর্তী সরকার’: দ্য ইন্ডিয়ান এক্সপ্রেসের বিশেষ সংবাদ",
+    "headlineEn": "Bangladesh reviewing 101 agreements signed with India during Sheikh Hasina tenure: Indian Express",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "The Indian Express",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/"
+  },
+  {
+    "id": "alert-017",
+    "headlineBn": "‘শেখ হাসিনাকে আশ্রয় দেওয়া নিয়ে টানাপোড়েন ও দ্বিপাক্ষিক কূটনীতিতে নতুন চাপ’: এনডিটিভির বিশেষ বিশ্লেষণ",
+    "headlineEn": "Tensions mount over Sheikh Hasina's exile in India as Bangladesh calls for extradition: NDTV Report",
+    "timeAgoBn": "আজ দুপুরে",
+    "timeAgoEn": "This afternoon",
+    "sourceName": "NDTV World",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.ndtv.com/world-news"
+  },
   {
     "id": "alert-016",
     "headlineBn": "‘হাসিনার ফেরা ও স্থানীয় সরকার নির্বাচন ঘিরে রাজনৈতিক উত্তাপের আশঙ্কা’: দ্য ওয়াল-এর প্রতিবেদন",
@@ -266,6 +288,191 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260917-001",
+    "slug": "bangladesh-reviews-101-india-deals-signed-under-sheikh-hasina-government",
+    "title": "Bangladesh Reviews 101 India Deals Signed Under Sheikh Hasina Government",
+    "englishTitle": "Bangladesh Reviews 101 Bilateral Deals Signed With India Under Sheikh Hasina Regime",
+    "banglaTitle": "শেখ হাসিনা সরকারের আমলে ভারতের সঙ্গে স্বাক্ষরিত ১০১ চুক্তি পুনর্বিবেচনা করছে বাংলাদেশ",
+    "summaryBn": "বাংলাদেশ অন্তর্বর্তী সরকার ও অর্থ-পররাষ্ট্র উপদেষ্টা কমিটি বিগত শেখ হাসিনা সরকারের আমলে ভারতের সঙ্গে স্বাক্ষরিত ১০১টি চুক্তি ও সমঝোতা স্মারক (MoU) পুনর্বিবেচনার প্রক্রিয়া শুরু করেছে। ভারতীয় গণমাধ্যম ও সংবাদ সংস্থাগুলো এই বড় পদক্ষেপকে দ্বিপাক্ষিক অর্থনৈতিক ও কৌশলগত সম্পর্কের ওপর নতুন প্রভাব ফেলার ইঙ্গিত হিসেবে ব্যাখ্যা করছে।",
+    "summaryEn": "The interim administration in Bangladesh has launched a comprehensive legal and financial review of 101 bilateral agreements and Memorandums of Understanding (MoUs) signed with India during Sheikh Hasina's tenure, according to regional media dispatches.",
+    "keyPointsBn": [
+      "হাসিনা সরকারের ১০১টি ভারত কেন্দ্রিক চুক্তি ও সমঝোতা পুনর্মূল্যায়নের কাজ শুরু",
+      "ট্রানজিট, বিদ্যুৎ ক্রয় ও বাণিজ্য চুক্তিগুলোর শর্ত পরীক্ষার জন্য কমিটি গঠন",
+      "ভারতীয় মিডিয়া ট্র্যাকিংয়ে নতুন ভূ-রাজনৈতিক সমীকরণের বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "Bangladesh initiates strategic audit of 101 bilateral MoUs and commercial agreements signed with India",
+      "Advisory committees reviewing transit tariffs, power purchase terms, and infrastructure compacts",
+      "Indian media analysis underlines changing geopolitical dynamics in Dhaka"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক চুক্তির অর্থনৈতিক ও আইনি পর্যালোচনার খবর নিরপেক্ষভাবে পরিবেশন।",
+    "sentimentReasonEn": "Balanced coverage of official policy reviews regarding bilateral trade compacts.",
+    "source": {
+      "name": "Indian Media (Instagram)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pYXBMVnRtaExDRXM0S1AyWTduVjUzSGxqZkxja1hHNDA0TTZQOVNoUU91eHhlVUVwS2ZTYnAtYTRSdUxEVEtDMGszSE9WWGkwNFE?oc=5",
+      "originalHeadline": "Bangladesh Reviews 101 India Deals Signed Under Sheikh Hasina Government",
+      "scannedAt": "2026-09-17T09:56:00.000Z"
+    },
+    "publishedAt": "2026-09-17T08:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "India-Bangladesh Deals",
+      "MoU Review",
+      "Sheikh Hasina",
+      "BNP",
+      "Dhaka Diplomacy",
+      "Trade"
+    ]
+  },
+  {
+    "id": "news-20260917-002",
+    "slug": "international-crimes-tribunal-sentences-seven-awami-league-leaders-to-death",
+    "title": "International Crimes Tribunal Sentences Seven Senior Awami League Leaders to Death in Absentia",
+    "englishTitle": "International Crimes Tribunal Sentences Seven Senior Awami League Leaders to Death: TOI Report",
+    "banglaTitle": "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালে আওয়ামী লীগের ৭ জ্যেষ্ঠ নেতার মৃত্যুদণ্ড: টাইমস অব ইন্ডিয়ার প্রতিবেদন",
+    "summaryBn": "ভারতের শীর্ষ সংবাদমাধ্যম দ্য টাইমস অব ইন্ডিয়া ও এনডিটিভি জানিয়েছে, ২০২৪ সালের জুলাই গণ-অভ্যুত্থানে দমন-পীড়নের মানবতাবিরোধী অপরাধের মামলায় বাংলাদেশ আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল আওয়ামী লীগের সাধারণ সম্পাদক ওবায়দুল কাদেরসহ ৭ জন জ্যেষ্ঠ নেতাকে অনুপস্থিতিতে মৃত্যুদণ্ডের রায় প্রদান করেছে।",
+    "summaryEn": "Leading Indian news outlets including The Times of India and NDTV reported that Bangladesh's International Crimes Tribunal has delivered death sentences in absentia to seven senior Awami League leaders, including party General Secretary Obaidul Quader, over the 2024 uprising crackdown.",
+    "keyPointsBn": [
+      "ওবায়দুল কাদেরসহ ৭ আওয়ামী লীগ নেতার অনুপস্থিতিতে মৃত্যুদণ্ডের রায়",
+      "ভারতীয় জাতীয় মিডিয়ায় বাংলাদেশ ট্রাইব্যুনালের রায় গুরুত্বের সাথে প্রচার",
+      "আওয়ামী লীগ নেতাদের রাজনৈতিক অবস্থান ও ভারতে সম্ভাব্য আশ্রয়ের গুঞ্জন নিয়ে আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Bangladesh tribunal passes death sentence in absentia against 7 top Awami League figures including Obaidul Quader",
+      "Major Indian print and digital platforms prominently cover the tribunal's verdict",
+      "Extensive discussion on regional legal ramifications and political implications"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও বিচার",
+    "categoryLabelEn": "Diplomacy & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক অস্থিরতা ও বিচার প্রক্রিয়ার ওপর আন্তর্জাতিক মিডিয়ার মনোযোগের খবর।",
+    "sentimentReasonEn": "Coverage focuses on heavy judicial verdicts and political unrest.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/bdesh-tribunal-sentences-7-awami-members-to-death-over-july-uprising/articleshow/134276177.cms",
+      "originalHeadline": "Bangladesh’s International Crimes Tribunal sentences seven senior Awami League leaders to death",
+      "scannedAt": "2026-09-17T09:56:00.000Z"
+    },
+    "publishedAt": "2026-09-17T07:15:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "International Crimes Tribunal",
+      "Obaidul Quader",
+      "Awami League",
+      "Times of India",
+      "Dhaka Verdict"
+    ]
+  },
+  {
+    "id": "news-20260917-003",
+    "slug": "bnp-leader-rizvi-accuses-india-over-sheikh-hasina-status",
+    "title": "BNP Senior Leader Rizvi Accuses India of Conspiring Around Sheikh Hasina's Status",
+    "englishTitle": "BNP Leader Rizvi Alleges Indian Maneuvers Regarding Sheikh Hasina: Kolkata Media Dispatches",
+    "banglaTitle": "‘হাসিনাকে নিয়ে ভারত চক্রান্ত করছে’: বিএনপির রুহুল কবির রিজভীর বক্তব্যের ওপর কলকাতার মিডিয়া রিপোর্ট",
+    "summaryBn": "কলকাতাভিত্তিক সংবাদ মাধ্যমগুলোতে বিএনপির জ্যেষ্ঠ যুগ্ম মহাসচিব রুহুল কবির রিজভীর সাম্প্রতিক বক্তব্য নিয়ে প্রতিবেদন প্রকাশ করা হয়েছে। রিজভী অভিযোগ করেছেন যে শেখ হাসিনার আশ্রয় ও রাজনৈতিক অবস্থান নিয়ে দিল্লিতে নানা সমীকরণ চলছে, যা বাংলাদেশ-ভারত সম্পর্কে অনাস্থা তৈরি করতে পারে।",
+    "summaryEn": "Kolkata news bureaus reported on sharp statements by BNP Senior Joint Secretary General Ruhul Kabir Rizvi, who alleged diplomatic maneuvers in Delhi regarding former Prime Minister Sheikh Hasina's stay, urging clear bilateral communication.",
+    "keyPointsBn": [
+      "শেখ হাসিনার দিল্লির অবস্থান ঘিরে বিএনপি নেতার কড়া বক্তব্যের প্রতিবেদন",
+      "কলকাতার আনন্দবাজার ও সংবাদ প্রতিদিনে বাংলাদেশের অভ্যন্তরীণ ও দ্বিপাক্ষিক সম্পর্কের বিশ্লেষণ",
+      "প্রত্যর্পণ ও আঞ্চলিক সুসম্পর্ক পুনর্গঠনে নতুন শর্তারোপের আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Kolkata outlets report on BNP leader's remarks addressing Sheikh Hasina's exile in New Delhi",
+      "Anandabazar and Sangbad Pratidin analyze political fallout in Dhaka-Delhi relations",
+      "Extradition debates remain a sensitive focal point across Eastern India bureaus"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Politics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "দ্বিপাক্ষিক সুসম্পর্ক ও শীর্ষ রাজনৈতিক নেতাদের পাল্টাপাল্টি অভিযোগের বিষয় উপস্থাপন।",
+    "sentimentReasonEn": "Highlights sensitive diplomatic allegations and rhetoric between Dhaka political actors and India.",
+    "source": {
+      "name": "Indian Media (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNY3JQRjBzUjV0bzFmS2tmNHl6Ym1rNVBxdmhrUVlEZHdrTFZDelE4ei1GN01Hbm10d0FiVVVOTTBwbm1zRDFqNUhxNTBVRFdocFdaeHp3?oc=5",
+      "originalHeadline": "শেখ হাসিনাকে কেন্দ্র করে ভারত চক্রান্ত করছে, বিস্ফোরক অভিযোগ রিজভীর | Sheikh Hasina",
+      "scannedAt": "2026-09-17T09:56:00.000Z"
+    },
+    "publishedAt": "2026-09-17T06:00:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/diplomatic-meeting-delhi-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "BNP",
+      "Ruhul Kabir Rizvi",
+      "Sheikh Hasina",
+      "India-Bangladesh Relations",
+      "Kolkata Media"
+    ]
+  },
+  {
+    "id": "news-20260917-004",
+    "slug": "bangladesh-chhatra-league-organizes-international-seminar-on-academic-freedom",
+    "title": "Chhatra League Conducts Special Virtual Seminar Demanding Rights for Students and Faculty",
+    "englishTitle": "Chhatra League Organizes International Virtual Seminar on Academic Freedom: Visual Dispatch",
+    "banglaTitle": "শিক্ষা দিবস উপলক্ষে ছাত্রলীগের আন্তর্জাতিক অনলাইন সেমিনার ও ভিজ্যুয়াল প্রচারণা",
+    "summaryBn": "শিক্ষা দিবস উপলক্ষে আন্তর্জাতিক ছাত্র অধিকার ও শিক্ষাবিদদের প্ল্যাটফর্মে বাংলাদেশ ছাত্রলীগের উদ্যোগে 'A Call to the International Community: Defending Students, Teachers and Academic Freedom in Bangladesh' শীর্ষক অনলাইন সেমিনার ও ইন্সটাগ্রাম ফটো পোস্ট ডিসপ্যাচ পরিচালিত হয়েছে।",
+    "summaryEn": "Visual dispatches monitored across Indian media highlight a digital campaign and international seminar organized under the banner 'A Call to the International Community: Defending Students, Teachers and Academic Freedom in Bangladesh'.",
+    "keyPointsBn": [
+      "শিক্ষা দিবস উপলক্ষে বাংলাদেশ ছাত্রলীগের আন্তর্জাতিক অনলাইন সেমিনারের ভিজ্যুয়াল প্রচার",
+      "শিক্ষার্থী ও শিক্ষকদের একাডেমিক স্বাধীনতা সুরক্ষায় আন্তর্জাতিক সম্প্রদায়ের প্রতি আহ্বান",
+      "সামাজিক যোগাযোগ মাধ্যমে ভারতীয় সংবাদ মাধ্যমের ডিজিটাল ট্র্যাকিং"
+    ],
+    "keyPointsEn": [
+      "Digital dispatch tracks international virtual seminar focusing on academic freedom and student rights",
+      "Appeals made to international human rights bodies regarding campus security",
+      "Social media intelligence monitored across regional news feeds"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও শিক্ষা",
+    "categoryLabelEn": "Culture & Education",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "শিক্ষার্থীদের অধিকার কেন্দ্রিক অনলাইন প্রচারণার বস্তুবিন্যাস সংবাদ উপস্থাপন।",
+    "sentimentReasonEn": "Objective tracking of digital rights dispatches and student body seminars.",
+    "source": {
+      "name": "Indian Media (Instagram)",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NMkRuTXc0QUJTbnNoTGRpQWNTbHFOdTZSRzV2WjNLbGVVMTVvUXBsc2hrZVprSXJlNjdTNFhIVm43NVlJbHVGakF4bm1QTTN0SGc?oc=5",
+      "originalHeadline": "A Call to the International Community: Defending Students, Teachers and Academic Freedom in Bangladesh",
+      "scannedAt": "2026-09-17T09:56:00.000Z"
+    },
+    "publishedAt": "2026-09-17T04:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/dhaka-university-campus-landscape.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Education Day",
+      "Chhatra League",
+      "Academic Freedom",
+      "Instagram Dispatch",
+      "Dhaka University"
+    ]
+  },
   {
     "id": "news-20260916-009",
     "slug": "siliguri-times-two-bangladeshi-nationals-detained-kharibari-border",
