@@ -68,20 +68,20 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2688,
-  "bangladeshMatches": 773,
+  "totalScanned24h": 2791,
+  "bangladeshMatches": 864,
   "sentimentDistribution": {
     "positive": 4,
-    "neutral": 12,
-    "negative": 11
+    "neutral": 13,
+    "negative": 12
   },
   "bureauDistribution": {
-    "delhi": 15,
+    "delhi": 17,
     "kolkata": 12
   },
   "languageDistribution": {
     "english": 14,
-    "bengali": 11,
+    "bengali": 13,
     "hindi": 2
   }
 };
@@ -288,6 +288,98 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260917-005",
+    "slug": "shapla-chattar-case-lawyer-appointment-sheikh-hasina-30-accused",
+    "title": "Shapla Chattar Case: Legal Counsel Appointed for Sheikh Hasina and 30 Accused in Special Tribunal Hearing",
+    "englishTitle": "Legal Counsel Appointed for Sheikh Hasina and 30 Co-Accused in Shapla Chattar Case: News Dispatch",
+    "banglaTitle": "শাপলা চত্বরের মামলায় শেখ হাসিনাসহ ৩০ আসামির পক্ষে আইনজীবী নিয়োগের নির্দেশ: সংবাদ মাধ্যম ইউটিউব ডিসপ্যাচ",
+    "summaryBn": "শাপলা চত্বর ঘটনার পুনর্তদন্ত ও মামলায় প্রাক্তন প্রধানমন্ত্রী শেখ হাসিনাসহ ৩০ জন আসামির পক্ষে আইনি সহায়তা ও আইনজীবী নিয়োগের নির্দেশ দিয়েছে বাংলাদেশ ট্রাইব্যুনাল। এই সংবেদনশীল বিচারিক ঘটনা নিয়ে ভারতীয় নিউজ মিডিয়া ইউটিউব চ্যানেলে বিশেষ ভিডিও কভারেজ ও প্যানেল আলোচনা সম্প্রচার করা হয়েছে।",
+    "summaryEn": "Special news video dispatches across regional YouTube media channels report on the tribunal's directives appointing defense counsel for former Prime Minister Sheikh Hasina and 30 co-accused in the reopened 2013 Shapla Chattar cases.",
+    "keyPointsBn": [
+      "শেখ হাসিনাসহ ৩০ আসামির বিরুদ্ধে শাপলা চত্বর ট্রাইব্যুনাল শুনানিতে আইনি প্রক্রিয়ার নির্দেশ",
+      "ভারতীয় সংবাদ মাধ্যমের ইউটিউব ডিসপ্যাচে বিশেষ ভিডিও সাক্ষাৎকার ও বিশ্লেষণ",
+      "বাংলাদেশের অভ্যন্তরীণ রাজনীতির আইনি গতিপথ নিয়ে শীর্ষ বিশ্লেষকদের মতামত"
+    ],
+    "keyPointsEn": [
+      "Tribunal orders legal counsel appointment for Sheikh Hasina and 30 figures in Shapla Chattar hearings",
+      "Indian media YouTube channels broadcast breaking analysis and panel discussions",
+      "Legal and diplomatic experts weigh in on Dhaka's high-stakes judicial proceedings"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও বিচার",
+    "categoryLabelEn": "Diplomacy & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক ও বিচারিক মামলার স্পর্শকাতর বিষয়বস্তুর ভিডিও সংবাদ উপস্থাপন।",
+    "sentimentReasonEn": "Focuses on complex legal proceedings and political court trials.",
+    "source": {
+      "name": "Indian Media (YouTube)",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com",
+      "originalHeadline": "শাপলা চত্বরের মামলায় শেখ হাসিনাসহ ৩০ আসামির পক্ষে আইনজীবী নিয়োগের নির্দেশ",
+      "scannedAt": "2026-09-17T10:16:00.000Z"
+    },
+    "publishedAt": "2026-09-17T09:15:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Shapla Chattar",
+      "Sheikh Hasina",
+      "YouTube News",
+      "Bangladesh Tribunal",
+      "Legal Trial"
+    ]
+  },
+  {
+    "id": "news-20260917-006",
+    "slug": "rashed-khan-warns-on-state-reform-consensus-sheikh-hasina",
+    "title": "State Reform Consensus Essential to Prevent Political Instability: Rashed Khan Interview on YouTube",
+    "englishTitle": "Rashed Khan Warns Consensus Required to Prevent Political Friction: Media Interview",
+    "banglaTitle": "‘ঐকমত্যের ভিত্তিতে রাষ্ট্র পুনর্গঠন না হলে রাজনৈতিক সুযোগ নেবেন শেখ হাসিনা’: রাশেদ খানের ভিডিও সাক্ষাৎকার",
+    "summaryBn": "বাংলাদেশের বর্তমান রাজনৈতিক প্রেক্ষাপটে ঐক্যবদ্ধ রাষ্ট্র সংস্কার ও নির্বাচন নিয়ে অধিকারকর্মী ও রাজনীতিবিদ রাশেদ খানের বিশেষ মন্তব্য প্রচারিত হয়েছে ইউটিউব নিউজ মিডিয়ায়। তিনি উল্লেখ করেন রাজনৈতিক দলগুলোর ঐকমত্যের গুরুত্ব দ্বিপাক্ষিক ও অভ্যন্তরীণ স্থিতিশীলতার জন্য অপরিহার্য।",
+    "summaryEn": "Video dispatches monitored across regional news channels feature detailed political commentary by Rashed Khan emphasizing the urgency of national consensus on state reforms ahead of upcoming general polls.",
+    "keyPointsBn": [
+      "রাষ্ট্র পুনর্গঠন ও রাজনৈতিক দলগুলোর ঐক্য বিষয়ে রাশেদ খানের সাক্ষাৎকার কভারেজ",
+      "ইউটিউব ডিজিটাল মিডিয়ায় বাংলাদেশ রাজনীতির ভবিষ্যৎ গতিপথের প্রেক্ষিত প্রচার",
+      "অন্তর্বর্তী সরকারের সংস্কার উদ্যোগ ও নির্বাচন রোডম্যাপ নিয়ে আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Video interview highlights perspectives on national state reform and political unity",
+      "Regional YouTube news desks track commentary regarding Dhaka's electoral roadmap",
+      "Focus on bilateral stability and governance transition"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও সংস্কার",
+    "categoryLabelEn": "Politics & Reform",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক মতাদর্শ ও জাতীয় সংস্কার সংক্রান্ত বক্তব্যের বস্তুনিষ্ঠ পরিবেশন।",
+    "sentimentReasonEn": "Balanced coverage of political interviews and reform discussions.",
+    "source": {
+      "name": "Indian Media (YouTube)",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com",
+      "originalHeadline": "ঐকমত্যের ভিত্তিতে রাষ্ট্র পুনর্গঠন না হলে সুযোগ নেবেন শেখ হাসিনা : রাশেদ খাঁন",
+      "scannedAt": "2026-09-17T10:16:00.000Z"
+    },
+    "publishedAt": "2026-09-17T08:45:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Rashed Khan",
+      "State Reform",
+      "YouTube Dispatch",
+      "Bangladesh Politics",
+      "Dhaka"
+    ]
+  },
   {
     "id": "news-20260917-001",
     "slug": "bangladesh-reviews-101-india-deals-signed-under-sheikh-hasina-government",
