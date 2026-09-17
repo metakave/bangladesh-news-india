@@ -59,14 +59,26 @@ function getInstagramOutletInfo(article: NewsItem): { handle: string; url: strin
 function resolveInstagramLink(article: NewsItem): string {
   const url = article.source?.originalUrl || '';
   const outletInfo = getInstagramOutletInfo(article);
-  if (!url || url.includes('news.google.com') || !url.includes('instagram.com/')) {
+
+  // 1. If we have a valid source URL (including Google News RSS redirect to Instagram post), return it
+  if (url && (url.includes('news.google.com') || url.includes('instagram.com/'))) {
+    const fakeSeedCodes = ['DFP82j4T_9x', 'DGH38mPshj1', 'DF7uW_XMo8x', 'DFz8983zH3a'];
+    if (!fakeSeedCodes.some(c => url.includes(c))) {
+      return url;
+    }
+  }
+
+  // 2. Fallback to specific media outlet Instagram profile if matched
+  if (outletInfo.url && outletInfo.url !== 'https://www.instagram.com') {
     return outletInfo.url;
   }
-  const fakeSeedCodes = ['DFP82j4T_9x', 'DGH38mPshj1', 'DF7uW_XMo8x', 'DFz8983zH3a'];
-  if (fakeSeedCodes.some(c => url.includes(c))) {
-    return outletInfo.url;
+
+  // 3. Fallback to Instagram search for the post headline
+  if (article.title) {
+    return `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(article.title.slice(0, 60))}`;
   }
-  return url;
+
+  return 'https://www.instagram.com';
 }
 
 export default function InstagramClientView({ initialArticles }: InstagramClientViewProps) {
