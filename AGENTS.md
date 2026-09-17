@@ -9,6 +9,7 @@
 
 2. **Data Pipeline (`src/data/news-data.ts`)**:
    - Synthesize authentic news items following the exact `NewsItem` schema.
+   - Ensure `originalUrl` ALWAYS preserves the candidate's specific article/video URL (e.g. `https://news.google.com/rss/articles/...` or direct post URL) and NEVER uses generic domain roots like `https://www.youtube.com` or `https://www.instagram.com`.
    - Append new items to `SCANNED_NEWS_ITEMS`, update `BREAKING_NEWS_ALERTS`, and update `SCANNER_STATS` inside [`src/data/news-data.ts`](file:///Users/sadiq/antigravity/bangladesh-news-india/src/data/news-data.ts).
 
 3. **Build & Git Workflow**:

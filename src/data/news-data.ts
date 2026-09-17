@@ -316,7 +316,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (YouTube)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQZjVLUE50MF9nZ1dYWG5IR21aWmR0S3NBcWIzT0w5TjhITE9WdTJBR18teVp2bkg3emxTbW1PVEZvNlJmR3Q5UjlGamRBaThUUDFHckxn?oc=5",
       "originalHeadline": "শাপলা চত্বরের মামলায় শেখ হাসিনাসহ ৩০ আসামির পক্ষে আইনজীবী নিয়োগের নির্দেশ",
       "scannedAt": "2026-09-17T10:16:00.000Z"
     },
@@ -362,7 +362,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (YouTube)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tc0JLT2FxQ0UzUHI0NFgxTTRxdnVCLTNqUndaN0RYWEhzSUVreERzTmRDb054NUt6R29XMUZCQlhTZ3UzR3FLbHhKbTMxZi1HYXJfRnRB?oc=5",
       "originalHeadline": "ঐকমত্যের ভিত্তিতে রাষ্ট্র পুনর্গঠন না হলে সুযোগ নেবেন শেখ হাসিনা : রাশেদ খাঁন",
       "scannedAt": "2026-09-17T10:16:00.000Z"
     },

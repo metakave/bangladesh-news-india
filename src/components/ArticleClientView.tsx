@@ -32,6 +32,19 @@ interface ArticleClientViewProps {
   trendingArticles?: NewsItem[];
 }
 
+function resolveArticleSourceUrl(article: NewsItem): string {
+  const url = (article.source?.originalUrl || '').trim();
+  if (!url || url === 'https://www.youtube.com' || url === 'https://youtube.com' || url === 'https://www.youtube.com/' || url === 'https://youtube.com/') {
+    const query = article.title ? encodeURIComponent(article.title.slice(0, 80)) : 'Bangladesh';
+    return `https://www.youtube.com/results?search_query=${query}`;
+  }
+  if (url === 'https://www.instagram.com' || url === 'https://instagram.com' || url === 'https://www.instagram.com/' || url === 'https://instagram.com/') {
+    const query = article.title ? encodeURIComponent(article.title.slice(0, 60)) : 'Bangladesh';
+    return `https://www.instagram.com/explore/search/keyword/?q=${query}`;
+  }
+  return url;
+}
+
 export default function ArticleClientView({
   article,
   relatedArticles,
@@ -399,7 +412,7 @@ export default function ArticleClientView({
                 </div>
               </div>
               <a
-                href={article.source.originalUrl}
+                href={resolveArticleSourceUrl(article)}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
