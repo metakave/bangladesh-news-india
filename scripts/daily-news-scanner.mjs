@@ -198,11 +198,11 @@ const YOUTUBE_FEEDS = [
     webUrl: 'https://www.youtube.com/@RepublicBangla' 
   },
   { 
-    name: 'Indian Media YouTube Video Dispatch Tracker', 
+    name: 'Zee 24 Ghanta (YouTube)', 
     bureau: 'Kolkata', 
     language: 'Bengali', 
-    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("বাংলাদেশ" OR "ওপার বাংলা" OR "শেখ হাসিনা" OR "চিন্ময় কৃষ্ণ" OR "Bangladesh") when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
-    webUrl: 'https://www.youtube.com' 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@zee24ghanta" Bangladesh when:5d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@zee24ghanta' 
   },
   { 
     name: 'Siliguri Times (YouTube)', 

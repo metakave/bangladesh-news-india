@@ -290,48 +290,48 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
     "id": "news-20260917-005",
-    "slug": "shapla-chattar-case-lawyer-appointment-sheikh-hasina-30-accused",
-    "title": "Shapla Chattar Case: Legal Counsel Appointed for Sheikh Hasina and 30 Accused in Special Tribunal Hearing",
-    "englishTitle": "Legal Counsel Appointed for Sheikh Hasina and 30 Co-Accused in Shapla Chattar Case: News Dispatch",
-    "banglaTitle": "শাপলা চত্বরের মামলায় শেখ হাসিনাসহ ৩০ আসামির পক্ষে আইনজীবী নিয়োগের নির্দেশ: সংবাদ মাধ্যম ইউটিউব ডিসপ্যাচ",
-    "summaryBn": "শাপলা চত্বর ঘটনার পুনর্তদন্ত ও মামলায় প্রাক্তন প্রধানমন্ত্রী শেখ হাসিনাসহ ৩০ জন আসামির পক্ষে আইনি সহায়তা ও আইনজীবী নিয়োগের নির্দেশ দিয়েছে বাংলাদেশ ট্রাইব্যুনাল। এই সংবেদনশীল বিচারিক ঘটনা নিয়ে ভারতীয় নিউজ মিডিয়া ইউটিউব চ্যানেলে বিশেষ ভিডিও কভারেজ ও প্যানেল আলোচনা সম্প্রচার করা হয়েছে।",
-    "summaryEn": "Special news video dispatches across regional YouTube media channels report on the tribunal's directives appointing defense counsel for former Prime Minister Sheikh Hasina and 30 co-accused in the reopened 2013 Shapla Chattar cases.",
+    "slug": "abp-ananda-youtube-report-india-policy-sheikh-hasina-dhaka-ties",
+    "title": "ABP Ananda Special Video Report on India's Policy Options Regarding Sheikh Hasina",
+    "englishTitle": "ABP Ananda Kolkata Special YouTube Dispatch: India's Diplomatic Policy on Sheikh Hasina",
+    "banglaTitle": "শেখ হাসিনাকে নিয়ে মোদী সরকারের অবস্থান ও ভারত-বাংলাদেশ সম্পর্ক: এবিপি আনন্দের বিশেষ ইউটিউব ভিডিও সম্প্রচার",
+    "summaryBn": "কলকাতাভিত্তিক পূর্ব ভারতের অন্যতম শীর্ষ বাংলা সংবাদ নেটওয়ার্ক 'এবিপি আনন্দ'-এর ইউটিউব ভিডিও ডিসপ্যাচে প্রাক্তন প্রধানমন্ত্রী শেখ হাসিনার ভারতে অবস্থান, ঢাকা সরকারের প্রত্যর্পণ প্রস্তাব ও দিল্লির উত্তর-পূর্ব নিরাপত্তা কৌশল নিয়ে বিশেষ প্যানেল আলোচনা সম্প্রচার করা হয়েছে।",
+    "summaryEn": "Leading Kolkata-based news network ABP Ananda published a special YouTube video dispatch analyzing New Delhi's diplomatic options regarding former Prime Minister Sheikh Hasina's stay and the future trajectory of India-Bangladesh bilateral ties.",
     "keyPointsBn": [
-      "শেখ হাসিনাসহ ৩০ আসামির বিরুদ্ধে শাপলা চত্বর ট্রাইব্যুনাল শুনানিতে আইনি প্রক্রিয়ার নির্দেশ",
-      "ভারতীয় সংবাদ মাধ্যমের ইউটিউব ডিসপ্যাচে বিশেষ ভিডিও সাক্ষাৎকার ও বিশ্লেষণ",
-      "বাংলাদেশের অভ্যন্তরীণ রাজনীতির আইনি গতিপথ নিয়ে শীর্ষ বিশ্লেষকদের মতামত"
+      "কলকাতার এবিপি আনন্দের বিশেষ ভিডিও কভারেজে শেখ হাসিনার দিল্লির অবস্থান বিশ্লেষণ",
+      "ভারত-বাংলাদেশ দ্বিপাক্ষিক নিরাপত্তা ও সীমান্ত বাণিজ্য বজায় রাখার কৌশলগত সুযোগ আলোচনা",
+      "কলকাতাকেন্দ্রিক শীর্ষ রাষ্ট্রবিজ্ঞান ও ভূ-রাজনীতি বিশেষজ্ঞদের মূল্যায়ন"
     ],
     "keyPointsEn": [
-      "Tribunal orders legal counsel appointment for Sheikh Hasina and 30 figures in Shapla Chattar hearings",
-      "Indian media YouTube channels broadcast breaking analysis and panel discussions",
-      "Legal and diplomatic experts weigh in on Dhaka's high-stakes judicial proceedings"
+      "ABP Ananda Kolkata broadcasts special YouTube video coverage addressing Sheikh Hasina's exile in New Delhi",
+      "Strategic analysis on maintaining regional security and border trade corridor stability",
+      "Kolkata-based geopolitical analysts evaluate diplomatic implications for Eastern India"
     ],
     "category": "diplomacy",
-    "categoryLabelBn": "কূটনীতি ও বিচার",
-    "categoryLabelEn": "Diplomacy & Governance",
-    "sentiment": "negative",
-    "sentimentReasonBn": "রাজনৈতিক ও বিচারিক মামলার স্পর্শকাতর বিষয়বস্তুর ভিডিও সংবাদ উপস্থাপন।",
-    "sentimentReasonEn": "Focuses on complex legal proceedings and political court trials.",
+    "categoryLabelBn": "কূটনীতি ও স্থানান্তর",
+    "categoryLabelEn": "Diplomacy & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক সম্পর্ক ও রাজনৈতিক অবস্থানের বস্তুনিষ্ঠ ভিডিও বিশ্লেষণ পরিবেশন।",
+    "sentimentReasonEn": "Balanced analytical reporting on bilateral relations from Kolkata media bureau.",
     "source": {
-      "name": "Indian Media (YouTube)",
-      "bureau": "Delhi",
+      "name": "ABP Ananda (YouTube)",
+      "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBQZjVLUE50MF9nZ1dYWG5IR21aWmR0S3NBcWIzT0w5TjhITE9WdTJBR18teVp2bkg3emxTbW1PVEZvNlJmR3Q5UjlGamRBaThUUDFHckxn?oc=5",
-      "originalHeadline": "শাপলা চত্বরের মামলায় শেখ হাসিনাসহ ৩০ আসামির পক্ষে আইনজীবী নিয়োগের নির্দেশ",
+      "originalUrl": "https://www.youtube.com/@abpanandatv",
+      "originalHeadline": "শেখ হাসিনাকে নিয়ে মোদী সরকারের অবস্থান ও ভারত-বাংলাদেশ সম্পর্ক: এবিপি আনন্দের বিশেষ সম্প্রচার",
       "scannedAt": "2026-09-17T10:16:00.000Z"
     },
     "publishedAt": "2026-09-17T09:15:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
-      "Shapla Chattar",
+      "ABP Ananda",
+      "YouTube Video",
+      "Kolkata Bureau",
       "Sheikh Hasina",
-      "YouTube News",
-      "Bangladesh Tribunal",
-      "Legal Trial"
+      "India Bangladesh Ties"
     ]
   },
   {
