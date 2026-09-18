@@ -854,7 +854,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T04:50:00.000Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/petrapole-benapole-border-gate.jpg",
+    "imageUrl": "/images/bsf-border-drone-surveillance.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
