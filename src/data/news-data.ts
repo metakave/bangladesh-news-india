@@ -484,7 +484,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T18:00:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "imageUrl": "/images/thewall-hasina-interview.jpeg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -2653,7 +2653,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-06T11:15:00.000Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "imageUrl": "/images/thewall-hasina-interview.jpeg",
     "tags": [
       "Sheikh Hasina",
       "The Wall",
