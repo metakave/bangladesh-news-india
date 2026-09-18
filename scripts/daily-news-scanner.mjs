@@ -1236,18 +1236,24 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
         culture: '/images/dhakeshwari-national-temple-dhaka.jpg'
       };
 
-      const hasInvalidImage = !isValidNewsImage(item.imageUrl) || 
-        (item.imageUrl.includes('suvendu-adhikari') && !combinedText.includes('suvendu') && !combinedText.includes('শুভেন্দু') && !combinedText.includes('অধিকারী'));
+      // YouTube thumbnail extraction rule: if source is YouTube or URL is a YouTube video link, use high quality YouTube thumbnail
+      const ytMatch = (item.source?.originalUrl || '').match(/(?:youtube\.com\/(?:watch\?v=|embed\/|v\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+      if (ytMatch && ytMatch[1]) {
+        item.imageUrl = `https://i.ytimg.com/vi/${ytMatch[1]}/hqdefault.jpg`;
+      } else {
+        const hasInvalidImage = !isValidNewsImage(item.imageUrl) || 
+          (item.imageUrl.includes('suvendu-adhikari') && !combinedText.includes('suvendu') && !combinedText.includes('শুভেন্দু') && !combinedText.includes('অধিকারী'));
 
-      if (hasInvalidImage) {
-        if (combinedText.includes('tribunal') || combinedText.includes('ট্রাইব্যুনাল') || combinedText.includes('verdict') || combinedText.includes('মৃত্যুদণ্ড') || combinedText.includes('কাদের')) {
-          item.imageUrl = '/images/international-crimes-tribunal-dhaka.jpg';
-        } else if (combinedText.includes('hilsa') || combinedText.includes('ইলিশ') || combinedText.includes('রপ্তানি') || combinedText.includes('বন্দর')) {
-          item.imageUrl = '/images/hilsa-fish-market-trade.jpg';
-        } else if (combinedText.includes('tarique') || combinedText.includes('তারেক') || combinedText.includes('hasina') || combinedText.includes('হাসিনা')) {
-          item.imageUrl = '/images/delhi-dhaka-bilateral-summit.jpg';
-        } else {
-          item.imageUrl = categoryDefaultImages[item.category] || '/images/delhi-dhaka-bilateral-summit.jpg';
+        if (hasInvalidImage) {
+          if (combinedText.includes('tribunal') || combinedText.includes('ট্রাইব্যুনাল') || combinedText.includes('verdict') || combinedText.includes('মৃত্যুদণ্ড') || combinedText.includes('কাদের')) {
+            item.imageUrl = '/images/international-crimes-tribunal-dhaka.jpg';
+          } else if (combinedText.includes('hilsa') || combinedText.includes('ইলিশ') || combinedText.includes('রপ্তানি') || combinedText.includes('বন্দর')) {
+            item.imageUrl = '/images/hilsa-fish-market-trade.jpg';
+          } else if (combinedText.includes('tarique') || combinedText.includes('তারেক') || combinedText.includes('hasina') || combinedText.includes('হাসিনা')) {
+            item.imageUrl = '/images/delhi-dhaka-bilateral-summit.jpg';
+          } else {
+            item.imageUrl = categoryDefaultImages[item.category] || '/images/delhi-dhaka-bilateral-summit.jpg';
+          }
         }
       }
 

@@ -484,7 +484,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T18:00:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/thewall-hasina-interview.jpeg",
+    "imageUrl": "https://i.ytimg.com/vi/q0mOhYcVWXI/hqdefault.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -1037,7 +1037,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-17T09:15:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/3lE0QeO4v1Q/hqdefault.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -1314,7 +1314,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T11:37:05.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/india-bangladesh-border-fence.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/7X-H54GvWQA/hqdefault.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -1455,7 +1455,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T14:26:53.000Z",
     "readTimeBn": "১ মিনিট",
     "readTimeEn": "1 min read",
-    "imageUrl": "/images/gauhati-high-court.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/9V2wN1n1k1o/hqdefault.jpg",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
@@ -2196,7 +2196,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-12T16:10:26.000Z",
     "readTimeBn": "২ মিনিট ভিডিও",
     "readTimeEn": "2 min video",
-    "imageUrl": "/images/yt-suvendu-opar-bangla-chinmoy.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/0WrRFhIezuc/hqdefault.jpg",
     "tags": [
       "YouTube Video",
       "ভিডিও রিপোর্ট",
