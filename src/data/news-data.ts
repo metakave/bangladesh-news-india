@@ -68,25 +68,47 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2791,
-  "bangladeshMatches": 864,
+  "totalScanned24h": 2677,
+  "bangladeshMatches": 719,
   "sentimentDistribution": {
-    "positive": 4,
-    "neutral": 13,
-    "negative": 12
+    "positive": 5,
+    "neutral": 15,
+    "negative": 14
   },
   "bureauDistribution": {
-    "delhi": 17,
-    "kolkata": 12
+    "delhi": 20,
+    "kolkata": 14
   },
   "languageDistribution": {
-    "english": 14,
-    "bengali": 13,
-    "hindi": 2
+    "english": 16,
+    "bengali": 15,
+    "hindi": 3
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-020",
+    "headlineBn": "‘তারেক রহমানের দিল্লি সফর ও দ্বিপাক্ষিক সম্পর্ক পুনর্গঠন নিয়ে পর্যালোচনা’: নবভারত টাইমসের বিশেষ সংবাদ",
+    "headlineEn": "Navbharat Times report on BNP leadership's potential Delhi visit and India-Bangladesh diplomatic reset",
+    "timeAgoBn": "আজ বিকেলে",
+    "timeAgoEn": "This afternoon",
+    "sourceName": "Navbharat Times",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5"
+  },
+  {
+    "id": "alert-019",
+    "headlineBn": "‘বিজয়ের মাসের আগেই শেখ হাসিনার স্বদেশ প্রত্যাবর্তন চর্চা’: কলকাতা সংবাদ প্রতিদিনের বিশেষ এক্সক্লুসিভ রিপোর্ট",
+    "headlineEn": "Sangbad Pratidin report on political strategy and discussions surrounding Hasina's exile return",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "Sangbad Pratidin",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMHR0ZVhXT0EwUFRhRW85dGx2bWN2U296aDR0UnZDWWlFLTZ3U1UtQUZScFhKdVVacmZFb1BBcG9RUGxqMm9LakR1T0ZfR2FVTnN5U3J6ekhFQnhUZnJZekFsQnhiWWRtYWR0ZW5WQnZra25FaldwbFB6Tm5JVjBBcWF3bl9kckt3dFhEaTRoV3R4ODdZTnBlMXlqcFhxNzNHNlV6TC16cjNBenhTc0VUMjhZUlhpRmFm?oc=5"
+  },
   {
     "id": "alert-018",
     "headlineBn": "‘আওয়ামী লীগ আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে অন্তর্বর্তী সরকার’: দ্য ইন্ডিয়ান এক্সপ্রেসের বিশেষ সংবাদ",
@@ -288,6 +310,190 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260918-001",
+    "slug": "navbharat-times-brics-bnp-tarique-rahman-delhi-visit-hasina-talks",
+    "title": "Navbharat Times Report: BNP Leadership's Potential Delhi Visit and Extradition Discussions",
+    "englishTitle": "Navbharat Times Delhi: BNP Leadership's Proposed India Visit & Diplomatic Reset Debates",
+    "banglaTitle": "তারেক রহমানের সম্ভাব্য দিল্লি সফর ও শেখ হাসিনার প্রত্যর্পণ ইস্যু: নবভারত টাইমসের বিশেষ প্রতিবেদন",
+    "summaryBn": "ভারতের প্রধান হিন্দি জাতীয় দৈনিক 'নবভারত টাইমস'-এর বিশেষ প্রতিবেদনে প্রকাশ, অন্তর্বর্তীকালীন মেয়াদের মধ্যে ঢাকা ও দিল্লির দ্বিপাক্ষিক সম্পর্ক পুনর্গঠনে বিএনপি নেতৃত্বের সম্ভাব্য ভারত সফর নিয়ে উচ্চপর্যায়ের আলোচনা শুরু হয়েছে। সাবেক প্রধানমন্ত্রী শেখ হাসিনার আশ্রয় ও হস্তান্তরের আইনি ও প্রশাসনিক ফ্রেমওয়ার্ক নিয়ে নতুন বিশ্লেষণ প্রকাশ করেছে পত্রিকাটি।",
+    "summaryEn": "Leading Hindi national daily Navbharat Times reports on discussions surrounding a potential diplomatic visit to New Delhi by BNP leadership, focusing on extradition talks involving former Prime Minister Sheikh Hasina and bilateral security ties.",
+    "keyPointsBn": [
+      "নবভারত টাইমসে ভারত-বাংলাদেশ শীর্ষ পর্যায়ে নতুন কূটনৈতিক যোগাযোগের বিস্তারিত প্রতিবেদন",
+      "শেখ হাসিনার প্রত্যর্পণ ও দিল্লিতে আশ্রয় সংক্রান্ত আইনি জটিলতা নিয়ে ভারতীয় সংবাদ মাধমের বিশ্লেষণ",
+      "উত্তর-পূর্ব সীমান্ত নিরাপত্তা, ট্রানজিট ও অর্থনৈতিক সহযোগিতা বজায় রাখার যৌথ উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "Navbharat Times details potential high-level diplomatic outreach between New Delhi and Dhaka",
+      "Indian media analysis underlines legal and administrative nuances surrounding Sheikh Hasina's exile",
+      "Joint focus on maintaining North-East border security, transit corridors, and economic ties"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও স্থানান্তরণ",
+    "categoryLabelEn": "Diplomacy & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক সম্পর্ক ও শীর্ষ পর্যায়ের উচ্চ রাজনৈতিক উদ্যোগের বস্তুনিষ্ঠ সংবাদ উপস্থাপন।",
+    "sentimentReasonEn": "Balanced analytical coverage of high-level diplomatic reset discussions.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+      "originalHeadline": "BRICS से कर लिया था किनारा, अब भारत आ रहे तारिक रहमान, क्या शेख हसीना का मुद्दा भी उठाएंगे बांग्लादेशी पीएम?",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T14:30:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "Navbharat Times",
+      "Tarique Rahman",
+      "Delhi Visit",
+      "Sheikh Hasina",
+      "India Bangladesh Ties"
+    ]
+  },
+  {
+    "id": "news-20260918-002",
+    "slug": "sangbad-pratidin-report-hasina-return-strategy-victory-month",
+    "title": "Sangbad Pratidin Insider Report: Awami League Reorganization and Hasina's Return Strategy",
+    "englishTitle": "Sangbad Pratidin Kolkata: Insider Report on Awami League Leadership & Return Discussions",
+    "banglaTitle": "বিজয়ের মাসের আগেই শেখ হাসিনার প্রত্যাবর্তন আলোচনা: কলকাতা সংবাদ প্রতিদিনের বিশেষ খবর",
+    "summaryBn": "কলকাতাভিত্তিক দৈনিক 'সংবাদ প্রতিদিন'-এর বিশেষ প্রতিবেদনে বলা হয়েছে, আন্তর্জাতিক আদালতে আইনি লড়াই ও দেশের অভ্যন্তরে কর্মী-সমর্থকদের চাঙ্গা রাখতে শেখ হাসিনার নেতৃত্বাধীন দল আগামী বিজয় দিবসের আগেই নতুন কৌশলগত বার্তা দেওয়ার প্রস্তুতি নিচ্ছে।",
+    "summaryEn": "Kolkata daily Sangbad Pratidin published an insider report discussing political organizational strategies and debates surrounding Sheikh Hasina's exile return ahead of Bangladesh's Victory Day observances.",
+    "keyPointsBn": [
+      "সংবাদ প্রতিদিনের বিশেষ এক্সক্লুসিভ কভারেজে আওয়ামী লীগের হাইকম্যান্ডের পরিকল্পনা প্রকাশ",
+      "কলকাতাকেন্দ্রিক সংবাদ মাধ্যমে হাসিনার প্রত্যাবর্তন ও যৌথ নেতৃত্বের বিষয়ে তথ্য প্রকাশ",
+      "সীমান্ত পেরিয়ে নতুন প্রচার ও আন্তর্জাতিক মানবাধিকার ফোরামে আবেদনের কৌশল"
+    ],
+    "keyPointsEn": [
+      "Sangbad Pratidin Kolkata details internal high-command strategies regarding party reorganization",
+      "Media analysis on potential joint leadership structures during Sheikh Hasina's exile",
+      "Outreach plans targeting international legal platforms and rights forums"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও সাংগঠনিক কৌশল",
+    "categoryLabelEn": "Politics & Leadership",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক উত্তাপ ও আন্তর্জাতিক বিচারিক প্রক্রিয়ার প্রভাব উপস্থাপন।",
+    "sentimentReasonEn": "Focuses on political friction and exile organizational strategies.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMHR0ZVhXT0EwUFRhRW85dGx2bWN2U296aDR0UnZDWWlFLTZ3U1UtQUZScFhKdVVacmZFb1BBcG9RUGxqMm9LakR1T0ZfR2FVTnN5U3J6ekhFQnhUZnJZekFsQnhiWWRtYWR0ZW5WQnZra25FaldwbFB6Tm5JVjBBcWF3bl9kckt3dFhEaTRoV3R4ODdZTnBlMXlqcFhxNzNHNlV6TC16cjNBenhTc0VUMjhZUlhpRmFm?oc=5",
+      "originalHeadline": "বিজয় দিবসের আগেই ফিরবেন হাসিনা! আর কী জানাচ্ছে দলীয় সূত্র?",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T11:15:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Sangbad Pratidin",
+      "Kolkata Bureau",
+      "Sheikh Hasina",
+      "Awami League",
+      "Victory Day"
+    ]
+  },
+  {
+    "id": "news-20260918-003",
+    "slug": "bbc-bengali-police-patrols-awami-league-activity",
+    "title": "BBC News Bengali Report: Security Forces Enforce Strict Vigilance Over Unauthorized Marches",
+    "englishTitle": "BBC News Bengali: Law Enforcement Heightens Surveillance Across Police Stations",
+    "banglaTitle": "আওয়ামী লীগের ঝটিকা মিছিল ও রাজনৈতিক তৎপরতা রোধে পুলিশের বিশেষ টহল নির্দেশ: বিবিসি বাংলার প্রতিবেদন",
+    "summaryBn": "বিসিবি ও বিবিসি বাংলার বিশেষ প্রতিবেদনে প্রকাশ, নিষিদ্ধ আওয়ামী লীগের ঝটিকা মিছিল ও দেশব্যাপী রাজনৈতিক তৎপরতা রোধে মাঠপর্যায়ে পুলিশ ও আইনশৃঙ্খলা বাহিনীর টহল বাড়ানোসহ নতুন কড়া নির্দেশ জারি করা হয়েছে।",
+    "summaryEn": "BBC News Bengali reports on heightened security monitoring and strict instructions issued across Bangladesh police units to prevent unauthorized political demonstrations.",
+    "keyPointsBn": [
+      "বিবিসি বাংলায় বাংলাদেশের আইনশৃঙ্খলা পরিস্থিতি ও থানা পর্যায়ের নতুন কড়া নির্দেশ কভারেজ",
+      "মাঠপর্যায়ে টহল ও সীমান্ত সংলগ্ন অঞ্চলে অনুপ্রবেশ রোধে বাড়তি নজরদারি",
+      "রাজনৈতিক সংঘাত এড়াতে পুলিশি তৎপরতার বিশেষ বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "BBC Bengali reports on law enforcement directives across Bangladesh district stations",
+      "Increased night patrols and border corridor surveillance enforced",
+      "Analysis of security measures aimed at preventing public disturbance"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Security & Public Order",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আইনশৃঙ্খলা বাহিনীর টহল ও নিরাপত্তা নির্দেশের নিরপেক্ষ আন্তর্জাতিক মিডিয়া পরিবেশন।",
+    "sentimentReasonEn": "Fact-based international reporting on security surveillance.",
+    "source": {
+      "name": "BBC Bengali",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://www.bbc.com/bengali/articles/cklyjz35njvwo",
+      "originalHeadline": "আওয়ামী লীগের তৎপরতা ঘিরে চাপের মুখে পুলিশ",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T09:00:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/india-bangladesh-border-fence.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "BBC Bengali",
+      "Police Patrol",
+      "Bangladesh Security",
+      "Public Order",
+      "Dhaka"
+    ]
+  },
+  {
+    "id": "news-20260918-004",
+    "slug": "geopolitical-youtube-dispatch-tarique-rahman-delhi-visit-russia-talks",
+    "title": "Geopolitical YouTube Dispatch: Regional Analysts Discuss Russia-India-Bangladesh Diplomatic Matrix",
+    "englishTitle": "Regional News YouTube Dispatch: Geopolitical Analysis on Delhi-Dhaka Reset & Foreign Relations",
+    "banglaTitle": "দিল্লি সফর ও আঞ্চলিক শক্তিগুলোর ভূ-রাজনৈতিক প্রভাব নিয়ে ইউটিউব ভিডিও নিউজ কভারেজ",
+    "summaryBn": "কলকাতাকেন্দ্রিক ও ভারতীয় ডিজিটাল সংবাদের ইউটিউব ভিডিও ব্রডকাস্টে দক্ষিণ এশিয়ায় বড় শক্তিগুলোর কৌশলগত অবস্থান, তারেক রহমানের সম্ভাব্য ভারত সফর ও হাসিনার উপস্থিতি নিয়ে বিশিষ্ট সাংবাদিকদের প্যানেল আলোচনা সম্প্রচারিত হয়েছে।",
+    "summaryEn": "Regional YouTube video dispatches analyze geopolitical dynamics and high-level diplomatic contacts between New Delhi and Dhaka.",
+    "keyPointsBn": [
+      "ইউটিউব সংবাদ চ্যানেলে দিল্লি-ঢাকা ভবিষ্যৎ কৌশলগত সম্পর্কের বিস্তারিত কভারেজ",
+      "আঞ্চলিক শক্তিগুলোর আগ্রহ ও বঙ্গোপসাগর ভূ-রাজনীতি নিয়ে বিশ্লেষকদের মতামত",
+      "পূর্ব ভারতের প্রধান সংবাদ মাধ্যমের ভিডিও ডিজিটাল মনিটরিং"
+    ],
+    "keyPointsEn": [
+      "Regional YouTube news desks broadcast panel analysis on Delhi-Dhaka strategic ties",
+      "Geopolitical evaluation regarding Bay of Bengal security corridors",
+      "Digital video tracking across Kolkata news networks"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দক্ষিণ এশিয়া",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভূ-রাজনৈতিক শক্তিগুলোর কৌশলগত সম্পর্কের নিরপেক্ষ ভিডিও কভারেজ।",
+    "sentimentReasonEn": "Balanced video panel analysis on South Asian diplomacy.",
+    "source": {
+      "name": "Indian Media (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1IWGJhVk5VYTZOSVVBWXlUMV8zYUVsMDFNNmdwYTV0cjd1UUVxb3VyQXZVYkNmcnE1ZHpWMXJYX0JzNDI0UloxSzYwYXpSTjFqUnc?oc=5",
+      "originalHeadline": "হঠাৎ কেন দিল্লিতে আসতে চান তারেক রহমান? পুতিন-হাসিনা গোপন বৈঠকেই লুকিয়ে রহস্য",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T07:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/brics-bimstec-summit-delhi.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "YouTube News",
+      "Geopolitics",
+      "Kolkata Desk",
+      "India Bangladesh Reset",
+      "Diplomacy"
+    ]
+  },
   {
     "id": "news-20260917-005",
     "slug": "abp-ananda-youtube-report-india-policy-sheikh-hasina-dhaka-ties",
