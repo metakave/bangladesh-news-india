@@ -3514,7 +3514,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T13:00:00+05:30",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
     "tags": [
       "ABP Ananda",
       "Petrapole",
