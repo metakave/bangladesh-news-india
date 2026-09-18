@@ -9,7 +9,7 @@ import HeroGrid from '@/components/HeroGrid';
 import SentimentTrackerBar from '@/components/SentimentTrackerBar';
 import ArticleCard from '@/components/ArticleCard';
 import Newsletter from '@/components/Newsletter';
-import { Building2, Globe, Shield, Sparkles, Archive, ArrowRight } from 'lucide-react';
+import { Building2, Globe, Shield, Sparkles, Archive, ArrowRight, HelpCircle } from 'lucide-react';
 
 export default function HomePage() {
   const { lang } = useApp();
@@ -82,8 +82,78 @@ export default function HomePage() {
     return false;
   });
 
+  // Structured Data (JSON-LD) for SEO & AEO (Perplexity, SearchGPT, Gemini)
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Latest Scanned News on Bangladesh in Indian Media',
+    description: 'Real-time algorithmically scanned dispatches tracking Bangladesh reporting across Indian newsrooms.',
+    numberOfItems: SCANNED_NEWS_ITEMS.length,
+    itemListElement: SCANNED_NEWS_ITEMS.slice(0, 10).map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'NewsArticle',
+        url: `https://narrativecompass.bd/article/${item.slug}`,
+        headline: item.title,
+        description: item.summaryEn || item.summaryBn,
+        datePublished: item.publishedAt,
+        image: item.imageUrl,
+        author: {
+          '@type': 'Organization',
+          name: item.source.name,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Narrative Compass',
+        },
+      },
+    })),
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: t.aeoHub.q1Title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: t.aeoHub.q1Desc,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: t.aeoHub.q2Title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: t.aeoHub.q2Desc,
+        },
+      },
+      {
+        '@type': 'Question',
+        name: t.aeoHub.q3Title,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: t.aeoHub.q3Desc,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
+      {/* JSON-LD Schemas for Search Engines & Answer Engines */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Semantic H1 for SEO & AEO Crawlers */}
       <h1 className="sr-only">
         Narrative Compass — Indian News Monitoring &amp; News Scanner for Bangladeshi News | Reporting Bangladesh across Indian Media (ভারতীয় মিডিয়ায় বাংলাদেশের খবর, বাংলাদেশ সম্পর্কিত সংবাদ পর্যবেক্ষণ ও ভারতীয় গণমাধ্যম ট্র্যাকিং)
@@ -402,7 +472,71 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Newsletter */}
+      {/* 8. AEO Knowledge Hub (Answer Engine Optimization for Perplexity, SearchGPT, Gemini & Google AI) */}
+      <section style={{ padding: '3rem 0', borderBottom: '1px solid var(--border-primary)', backgroundColor: 'var(--bg-card)' }}>
+        <div className="container">
+          <div style={{ marginBottom: '2rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
+              <HelpCircle size={18} style={{ color: 'var(--brand-primary)' }} />
+              <span className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.78rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--brand-primary)', letterSpacing: '0.06em' }}>
+                {t.aeoHub.badge}
+              </span>
+            </div>
+            <h2 className={lang === 'bn' ? 'font-bengali' : 'font-masthead'} style={{ fontSize: '1.45rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '0.4rem' }}>
+              {t.aeoHub.title}
+            </h2>
+            <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+              {t.aeoHub.subtitle}
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '1.25rem 1.5rem',
+              borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-primary)',
+            }}>
+              <h3 className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem', lineHeight: 1.4 }}>
+                {t.aeoHub.q1Title}
+              </h3>
+              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
+                {t.aeoHub.q1Desc}
+              </p>
+            </div>
+
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '1.25rem 1.5rem',
+              borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-primary)',
+            }}>
+              <h3 className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem', lineHeight: 1.4 }}>
+                {t.aeoHub.q2Title}
+              </h3>
+              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
+                {t.aeoHub.q2Desc}
+              </p>
+            </div>
+
+            <div style={{
+              backgroundColor: 'var(--bg-secondary)',
+              padding: '1.25rem 1.5rem',
+              borderRadius: 'var(--radius-md)',
+              border: '1px solid var(--border-primary)',
+            }}>
+              <h3 className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem', lineHeight: 1.4 }}>
+                {t.aeoHub.q3Title}
+              </h3>
+              <p className={lang === 'bn' ? 'font-bengali' : ''} style={{ fontSize: '0.88rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
+                {t.aeoHub.q3Desc}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. Newsletter */}
       <Newsletter />
     </div>
   );

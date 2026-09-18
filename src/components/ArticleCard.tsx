@@ -48,7 +48,7 @@ export default function ArticleCard({
 
   if (variant === 'lead') {
     return (
-      <article style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <article itemScope itemType="https://schema.org/NewsArticle" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         {showImage && (
           <div style={{
             position: 'relative',
@@ -108,6 +108,7 @@ export default function ArticleCard({
           {/* Primary Headline in Original Script (Always kept in original source language) */}
           <Link href={`/article/${article.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <h2
+              itemProp="headline"
               className={titleFontClass}
               style={{
                 fontSize: isBengaliContent || isHindiContent ? 'clamp(1.45rem, 2.3vw, 2rem)' : 'clamp(1.5rem, 2.2vw, 2.1rem)',
@@ -193,6 +194,7 @@ export default function ArticleCard({
 
           {/* Summary */}
           <p
+            itemProp="description"
             className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
               fontSize: lang === 'bn' ? '1rem' : '0.96rem',
@@ -275,7 +277,7 @@ export default function ArticleCard({
 
   if (variant === 'featured') {
     return (
-      <article style={{
+      <article itemScope itemType="https://schema.org/NewsArticle" style={{
         display: 'flex',
         flexDirection: 'column',
         height: '100%',
@@ -322,6 +324,7 @@ export default function ArticleCard({
           {/* Primary Headline in Original Script */}
           <Link href={`/article/${article.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <h3
+              itemProp="headline"
               className={titleFontClass}
               style={{
                 fontSize: isBengaliContent || isHindiContent ? '1.12rem' : '1.15rem',
@@ -393,6 +396,7 @@ export default function ArticleCard({
           )}
 
           <p
+            itemProp="description"
             className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
               fontSize: lang === 'bn' ? '0.9rem' : '0.86rem',
@@ -460,7 +464,7 @@ export default function ArticleCard({
 
   if (variant === 'horizontal') {
     return (
-      <article style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+      <article itemScope itemType="https://schema.org/NewsArticle" style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
         {showImage && (
           <div style={{
             position: 'relative',
@@ -493,6 +497,7 @@ export default function ArticleCard({
             style={{ textDecoration: 'none', color: 'inherit' }}
           >
             <h4
+              itemProp="headline"
               className={titleFontClass}
               style={{
                 fontSize: isBengaliContent || isHindiContent ? '0.96rem' : '0.98rem',
@@ -524,6 +529,7 @@ export default function ArticleCard({
           )}
 
           <p
+            itemProp="description"
             className={lang === 'bn' ? 'font-bengali' : ''}
             style={{
               fontSize: lang === 'bn' ? '0.84rem' : '0.8rem',
@@ -544,7 +550,7 @@ export default function ArticleCard({
 
   // Compact
   return (
-    <article style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+    <article itemScope itemType="https://schema.org/NewsArticle" style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', flexWrap: 'wrap' }}>
         <SentimentBadge sentiment={article.sentiment} size="sm" />
         <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 600 }}>
@@ -557,6 +563,7 @@ export default function ArticleCard({
         style={{ textDecoration: 'none', color: 'inherit' }}
       >
         <h4
+          itemProp="headline"
           className={titleFontClass}
           style={{
             fontSize: isBengaliContent || isHindiContent ? '1rem' : '1.05rem',
@@ -596,6 +603,7 @@ export default function ArticleCard({
       )}
 
       <p
+        itemProp="description"
         className={lang === 'bn' ? 'font-bengali' : ''}
         style={{
           fontSize: lang === 'bn' ? '0.88rem' : '0.84rem',

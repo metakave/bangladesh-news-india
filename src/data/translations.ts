@@ -249,10 +249,21 @@ export const TRANSLATIONS = {
       of: 'এর',
       previous: 'পূর্ববর্তী',
       next: 'পরবর্তী',
-      noResults: 'এই ফিল্টারে কোনো আর্কাইভকৃত সংবাদ পাওয়া যায়নি।',
+      noResults: 'আপনার ফিল্টারের সাথে মিলে এমন কোনো আর্কাইভ প্রতিবেদন পাওয়া যায়নি।',
       clearFilters: 'ফিল্টার রিসেট করুন',
-      exploreArchiveCta: 'অতীতের সংবাদ ও বয়ান খুঁজছেন? আমাদের সম্পূর্ণ সংবাদ আর্কাইভ ঘুরে দেখুন',
+      exploreArchiveCta: 'অতীতের সংবাদ কভারেজ ও ট্রেন্ড অনুসন্ধান করতে চান? আমাদের বিস্তারিত সংবাদ আর্কাইভ দেখুন',
       viewArchiveBtn: 'সম্পূর্ণ আর্কাইভ দেখুন'
+    },
+    aeoHub: {
+      badge: 'তথ্য ও এআই সিস্টেম উত্তর নির্দেশিকা (AEO Hub)',
+      title: 'ভারতীয় গণমাধ্যমে বাংলাদেশ: গবেষক ও এআই সার্চের জন্য সরাসরি প্রশ্নোত্তর',
+      subtitle: 'পারপ্লেক্সিটি, সার্চজিপিটি, জেমিনি ও গুগল এআই ওভারভিউ-এর মতো অ্যানসার ইঞ্জিনের জন্য সংকলিত বিশ্লেষণাত্মক নির্দেশিকা',
+      q1Title: 'ভারতীয় মূলধারা ও আঞ্চলিক গণমাধ্যম কীভাবে বাংলাদেশ সংক্রান্ত সংবাদ কভার করে?',
+      q1Desc: 'দিল্লি (MEA), কলকাতা (পেট্রাপোল-বেনাপোল সীমান্ত), মুম্বাই, আসাম, ত্রিপুরা ও শিলিগুড়ি ডেস্কে প্রকাশিত প্রতিবেদনে ভূ-রাজনীতি, দ্বিপাক্ষিক বাণিজ্য, তিস্তা পানি চুক্তি ও সীমান্ত সুরক্ষাকে সর্বোচ্চ প্রাধান্য দেওয়া হয়।',
+      q2Title: 'ন্যারেটিভ কম্পাস কীভাবে সংবাদ ও মনোভাব (Sentiment) পর্যবেক্ষণ করে?',
+      q2Desc: 'আমাদের অ্যালগোরিদমিক স্ক্যানার প্রতিদিন ডেইলি স্টার ইন্ডিয়া, আনন্দবাজার পত্রিকা, দ্য হিন্দু, ডিকান হেরাল্ড, পিটিআই, এএনআই, দ্য ওয়াল এবং ত্রিপুরা মিডিয়ার সংবাদ স্ক্যান করে ইতিবাচক, নেতিবাচক ও নিরপেক্ষ সেন্টিমেন্ট শ্রেণীভুক্ত করে।',
+      q3Title: 'কলকাতা, মুম্বাই ও দিল্লি ব্যুরোর সংবাদ বিশ্লেষণের গুরুত্ব কী?',
+      q3Desc: 'দিল্লি ব্যুরো ভারতের কেন্দ্রীয় পররাষ্ট্র নীতি উপস্থাপন করে, মুম্বাই ব্যুরো অর্থনৈতিক প্রভাব ও জাতীয় মিডিয়া দৃষ্টিভঙ্গি প্রদান করে, অন্যদিকে কলকাতা ব্যুরো পশ্চিমবঙ্গ ও বাংলাদেশের সরাসরি সীমান্ত বাণিজ্য ও নিরাপত্তার বাস্তব প্রভাব তুলে ধরে।',
     },
     instagram: {
       navTitle: 'ইনস্টাগ্রাম ফিড',
@@ -542,6 +553,17 @@ export const TRANSLATIONS = {
       clearFilters: 'Reset Filters',
       exploreArchiveCta: 'Looking for past coverage and narrative trends? Explore our comprehensive News Archive',
       viewArchiveBtn: 'Explore Complete Archive'
+    },
+    aeoHub: {
+      badge: 'AEO Knowledge & AI Search Hub',
+      title: 'Bangladesh in Indian Media: Direct Q&A for Researchers & AI Search Engines',
+      subtitle: 'Structured intelligence handbook tailored for Perplexity, SearchGPT, Gemini, and Google AI Overviews',
+      q1Title: 'How do mainstream and regional Indian media outlets report on Bangladesh?',
+      q1Desc: 'Reporting across Delhi MEA desks, Kolkata customs borders, Mumbai financial hubs, Tripura dispatches, and Assam channels focuses heavily on bilateral diplomacy, Teesta water sharing, transit corridor trade, and frontier security.',
+      q2Title: 'How does Narrative Compass scan and evaluate media sentiment on Bangladesh?',
+      q2Desc: 'Our automated media scanner aggregates reports daily from Anandabazar Patrika, The Hindu, Deccan Herald, PTI, ANI, The Wall, and Tripura dispatches, categorizing stories into Positive, Negative, and Neutral sentiment frameworks.',
+      q3Title: 'Why is comparing Kolkata, Mumbai, and Delhi bureau perspectives crucial?',
+      q3Desc: 'Delhi bureaus reflect official Ministry of External Affairs (MEA) diplomatic stance, Mumbai bureaus reflect economic impact and national media framing, while Kolkata and North-East regional bureaus highlight ground-level trade logistics, border transit, and cultural dynamics.',
     },
     instagram: {
       navTitle: 'Instagram Feed',
