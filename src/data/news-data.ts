@@ -2651,7 +2651,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-09T13:22:52.358Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "imageUrl": "/images/sheikh-selim-awami-league.jpg",
     "tags": [
       "Awami League",
       "Sheikh Hasina",
