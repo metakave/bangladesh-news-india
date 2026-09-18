@@ -233,6 +233,13 @@ const YOUTUBE_FEEDS = [
     language: 'English', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@News18AssamNortheastLive" Bangladesh when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
     webUrl: 'https://www.youtube.com/@News18AssamNortheastLive' 
+  },
+  { 
+    name: 'India Global Review (YouTube)', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@IndiaGlobalReview" Bangladesh when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@IndiaGlobalReview' 
   }
 ];
 

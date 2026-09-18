@@ -312,6 +312,53 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260918-016",
+    "slug": "india-global-review-youtube-palki-sharma-bangladesh-diplomatic-reset",
+    "title": "India Global Review (IGR): Strategic Analysis on New Delhi's Foreign Policy Reset with Bangladesh",
+    "englishTitle": "India Global Review Special YouTube Dispatch: Diplomatic Analysis on India-Bangladesh Reset",
+    "banglaTitle": "ভারত-বাংলাদেশ বৈশ্বিক ভূরাজনীতি ও নতুন কূটনৈতিক সমীকরণ: ইন্ডিয়া গ্লোবাল রিভিউ (ইউটিউব বিশ্লেষণ)",
+    "summaryBn": "ভারতের আন্তর্জাতিক বিষয়কমূলক শীর্ষ ডিজিটাল চ্যানেল 'ইন্ডিয়া গ্লোবাল রিভিউ' (IGR)-এর বিশেষ ইউটিউব ব্রডকাস্টে দক্ষিণ এশিয়ার ভূরাজনীতিতে দিল্লির কৌশলগত অবস্থান, দ্বিপাক্ষিক বাণিজ্য ও বাংলাদেশের অন্তর্বর্তী নেতৃত্বের পররাষ্ট্র নীতি নিয়ে গভীর বিশ্লেষণ সম্প্রচার করা হয়েছে।",
+    "summaryEn": "Leading Indian international affairs digital network India Global Review (IGR) published a special YouTube video analysis examining South Asian geopolitical balances, regional trade corridors, and New Delhi's diplomatic engagement with Bangladesh.",
+    "keyPointsBn": [
+      "ইন্ডিয়া গ্লোবাল রিভিউ-এর ইউটিউব ভিডিও বিশ্লেষণে ভারত-বাংলাদেশ দ্বিপাক্ষিক কূটনীতি কভারেজ",
+      "দক্ষিণ এশিয়ায় বড় শক্তিগুলোর কৌশলগত প্রতিযোগিতা ও বঙ্গোপসাগর অঞ্চলের নিরাপত্তা আলোচনা",
+      "উত্তর-পূর্ব ভারত ও বাংলাদেশের মধ্যে দীর্ঘমেয়াদী অর্থনৈতিক করিডোর বজায় রাখার বার্তা"
+    ],
+    "keyPointsEn": [
+      "India Global Review YouTube channel streams strategic analysis on India-Bangladesh diplomatic ties",
+      "Geopolitical evaluation of South Asian power dynamics and Bay of Bengal maritime security",
+      "Focus on maintaining long-term economic corridors and regional stability"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূরাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক কূটনীতি ও দ্বিপাক্ষিক সম্পর্কের বস্তুনিষ্ঠ বিশ্বজনীন ভিডিও বিশ্লেষণ।",
+    "sentimentReasonEn": "Balanced analytical global affairs reporting from India Global Review.",
+    "source": {
+      "name": "India Global Review (YouTube)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=u3uJhAXK__8",
+      "originalHeadline": "India Global Review Special: Bangladesh Foreign Policy Reset & Regional Geopolitics",
+      "scannedAt": "2026-09-18T20:38:00.000Z"
+    },
+    "publishedAt": "2026-09-18T19:00:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://i.ytimg.com/vi/u3uJhAXK__8/hqdefault.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "India Global Review",
+      "YouTube Video",
+      "Palki Sharma",
+      "Delhi Bureau",
+      "Geopolitics",
+      "India Bangladesh Reset"
+    ]
+  },
+  {
     "id": "news-20260918-013",
     "slug": "economic-times-mumbai-rbi-credit-lines-trade-settlement-bangladesh",
     "title": "The Economic Times Mumbai: RBI & Commercial Banks Review Credit Lines and Trade LCs with Bangladesh",
