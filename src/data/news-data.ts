@@ -495,6 +495,328 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     ]
   },
   {
+    "id": "news-20260918-005",
+    "slug": "the-wall-kolkata-hasina-exile-joint-leadership-awami-league",
+    "title": "The Wall Kolkata Analysis: Awami League Explores Joint Leadership Model During Hasina Exile",
+    "englishTitle": "The Wall Kolkata: Awami League Explores Joint Leadership Model Amid Exile",
+    "banglaTitle": "হাসিনার বিপদ-আপদে দলে যৌথ নেতৃত্ব: কলকাতা দ্য ওয়াল-এর বিশেষ প্রতিবেদন",
+    "summaryBn": "কলকাতাভিত্তিক অনলাইন দৈনিক 'দ্য ওয়াল'-এর এক্সক্লুসিভ প্রতিবেদনে প্রকাশ, শেখ হাসিনার অনুপস্থিতিতে দলের সাংগঠনিক কার্যক্রমে যৌথ নেতৃত্ব কাঠামোর বিকল্প নিয়ে কলকাতায় অবস্থানরত নেতাকর্মী ও নীতি-নির্ধারকদের মধ্যে আলোচনা তীব্র হচ্ছে।",
+    "summaryEn": "Kolkata news portal The Wall reports on ongoing discussions among Awami League leaders exploring joint leadership structures during Sheikh Hasina's period of exile in India.",
+    "keyPointsBn": [
+      "দ্য ওয়াল-এর প্রতিবেদনে আওয়ামী লীগের সাংগঠনিক পুনর্গঠনের যৌথ নেতৃত্বের প্রস্তাব কভারেজ",
+      "আন্তর্জাতিক আইন ও অভ্যন্তরীণ বিচারিক প্রক্রিয়ার মুখোমুখি হওয়া নিয়ে পর্যালোচনা",
+      "কলকাতা ও দিল্লিতে অবস্থানরত শীর্ষ নেতৃত্বের মধ্যে নতুন সমন্বয় উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "The Wall Kolkata covers internal debates on organizational joint-leadership models",
+      "Analysis on navigating legal proceedings and exile communications",
+      "Coordination efforts among party representatives based in Kolkata and Delhi"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও দলীয় নেতৃত্ব",
+    "categoryLabelEn": "Politics & Leadership",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংকট ও দলীয় নেতৃত্ব পুনর্গঠনের উত্তাপ নিরপেক্ষভাবে পরিবেশন।",
+    "sentimentReasonEn": "Analytical coverage on exile party dynamics and leadership challenges.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRXZYVFBUcTlySmpWRnRyelJValJILTVoRkpIUEVlQ0dfT1N6WE5BQjBuNmZXQ3Q1QmQ0R0FfYlAzajBHczVsYm9RVjFrX0FJZFplNkI0SEgwdV9DX09BMDRqMEZOQ09RelNfdU8wRWhuN3ZsSHFjd3IzelphVUVzN0ZsNkRLSVFPbUdxU2RHTDN6SzRDZjZrS2kycjlPRVhyb05ZMlhXVnlsSXY2cXYyQTRrOE4xUXpTcDBUMTBvNENZT0ZKTHhKRDMtV3h2dUpPSjFhNW5xSmfSAd4BQVVfeXFMTkNVU291TV9xbzIwT29DQVB0a3dpTHg2TDZqajl4d3lDSldLUmVLT3d4YzZyMWhXbzdVQ1hjSTg0OFVSS2t1WW9oOEFlREp5ZFM5TG4zQjNpaEFWUHI3VlpyZWxoNDFLRXh1V0d2WXhuYUc4bGxSRWtrZ2hiVWlSMGpPOTFZN1NVaS1wa0swU1ZwcXpMXzRCTUI5N21WaVVaX0QzSWhIeWk1Mml5QTdzQk5jZXlmV2w3ZWtmSm43Sk4wZnlOTnVCUS1kV29FODFpYWRGS3NZQWg2aXJVTFlB?oc=5",
+      "originalHeadline": "হাসিনার বিপদ-আপদে দলে যৌথ নেতৃত্ব",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T06:45:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/kolkata-writers-building.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "The Wall",
+      "Kolkata Bureau",
+      "Sheikh Hasina",
+      "Awami League",
+      "Leadership"
+    ]
+  },
+  {
+    "id": "news-20260918-006",
+    "slug": "northeast-press-tripura-transit-border-trade-petrapole-akhaura",
+    "title": "Tripura Media Report: Akhaura-Agartala Integrated Check Post Sustains Cross-Border Cargo Freight",
+    "englishTitle": "Tripura Times / Northeast Media: Akhaura-Agartala ICP Trade Dynamics & Freight Logistics",
+    "banglaTitle": "আগরতলা-আখাউড়া সমন্বিত চেকপোস্টে সীমান্ত বাণিজ্য ও পণ্য পরিবহন অব্যাহত: ত্রিপুরার সংবাদ মাধ্যমের প্রতিবেদন",
+    "summaryBn": "ত্রিপুরার প্রধান রাজ্য দৈনিক ও উত্তর-পূর্ব ভারতের গণমাধ্যমের কভারেজে প্রকাশ, রাজনৈতিক পটপরিবর্তন সত্ত্বেও আগরতলা-আখাউড়া আইসিপি দিয়ে উত্তর-পূর্ব ভারতে খাদ্য ও প্রয়োজনীয় সামগ্রী পরিবহন স্বাভাবিক গতিতে বজায় রাখতে উভয় দেশের কাস্টমস ও বিএসএফ কর্মকর্তা সমন্বয় বজায় রাখছেন।",
+    "summaryEn": "Tripura state press and regional North-East Indian media report on cross-border logistics at the Akhaura-Agartala Integrated Check Post, detailing continuous essential trade flow between Agartala and Bangladesh.",
+    "keyPointsBn": [
+      "আগরতলা আইসিপিতে বাণিজ্যিক পণ্য খালাস ও বিএসএফ-বিজিবি কর্মকর্তা সমন্বয়",
+      "উত্তর-পূর্ব ভারতের অর্থনৈতিক প্রয়োজনীয়তায় বাংলাদেশ ট্রানজিট করিডোরের গুরুত্ব বিশ্লেষণ",
+      "ত্রিপুরা সীমান্তে বাণিজ্য শুল্ক ও কাস্টমস ক্লিয়ারেন্স প্রক্রিয়া অব্যাহত"
+    ],
+    "keyPointsEn": [
+      "Akhaura-Agartala ICP maintains regular cargo container movement and customs coordination",
+      "North-East media highlights strategic importance of Bangladesh transit channels for Tripura",
+      "Border trade protocols enforced smoothly by customs authorities"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও ত্রিপুরা",
+    "categoryLabelEn": "Cross-Border Trade & Tripura",
+    "sentiment": "positive",
+    "sentimentReasonBn": "উত্তর-পূর্ব সীমান্ত বাণিজ্য ও অর্থনীতি বজায় থাকার ইতিবাচক খবর উপস্থাপন।",
+    "sentimentReasonEn": "Positive analytical coverage on regional border trade resilience.",
+    "source": {
+      "name": "Tripura Times",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BcmZGVlZkWDFiQ1FkUHF4WTRvUHF1TUtxTk96M1hNTEFXTVh5QnpYVkE0ZFNfWW1XZnpYVXc3SFdMOWpSM3lKQU0xb0hLQXgzY0E?oc=5",
+      "originalHeadline": "Akhaura-Agartala ICP border trade continues steadily despite regional shifts",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T05:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Tripura Times",
+      "Agartala ICP",
+      "Akhaura",
+      "Northeast Trade",
+      "Border Cargo"
+    ]
+  },
+  {
+    "id": "news-20260918-007",
+    "slug": "anandabazar-patrika-kolkata-border-fencing-infiltration-vigilance",
+    "title": "Anandabazar Patrika: BSF Heightens Night Vigilance and Thermal Drone Surveillance Across Bengal Border",
+    "englishTitle": "Anandabazar Patrika Kolkata: BSF Boosts Thermal Drone Monitoring Along South Bengal Border",
+    "banglaTitle": "দক্ষিণবঙ্গ সীমান্তে বিএসএফের বিশেষ নাইট ভিশন ড্রোন ও নজরদারি বৃদ্ধি: আনন্দবাজার পত্রিকার প্রতিবেদন",
+    "summaryBn": "পশ্চিমবঙ্গের শীর্ষ দৈনিক 'আনন্দবাজার পত্রিকা'-র বিশেষ প্রতিবেদনে উল্লেখ করা হয়েছে, সীমান্ত অঞ্চলে অনাকাঙ্ক্ষিত অনুপ্রবেশ ও চোরাচালান সম্পূর্ণ রোধে বিএসএফের দক্ষিণবঙ্গ ফ্রন্টিয়ার পেট্রাপোল, বসিরহাট ও হিলি সীমান্তে আধুনিক নাইট-ভিশন ড্রোন ক্যামেরা মোতায়েন করেছে।",
+    "summaryEn": "West Bengal's leading Bengali daily Anandabazar Patrika reports on BSF South Bengal Frontier enhancing border vigilance using night-vision thermal surveillance cameras across Petrapole and Hili sectors.",
+    "keyPointsBn": [
+      "আনন্দবাজার পত্রিকায় বিএসএফের দক্ষিণবঙ্গ ফ্রন্টিয়ারের আধুনিক নাইট ড্রোন নজরদারির তথ্য",
+      "বসিরহাট, পেট্রাপোল ও মালদা সীমান্তে অবৈধ অনুপ্রবেশ রোধে জিরো-টলারেন্স নীতি",
+      "পশ্চিমবঙ্গ সীমান্ত নিরাপত্তা ও বিজিবি-বিএসএফ ফ্ল্যাগ মিটিং সংক্রান্ত আপডেট"
+    ],
+    "keyPointsEn": [
+      "Anandabazar Patrika details deployment of thermal night drones by BSF along West Bengal border",
+      "Zero-tolerance stance enforced across Petrapole, Basirhat, and Hili sectors",
+      "Regular BSF-BGB sector commander meetings maintain strict border compliance"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও বিএসএফ নজরদারি",
+    "categoryLabelEn": "Border Vigilance & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত নিরাপত্তা ব্যবস্থার বস্তুনিষ্ঠ সংবাদ পরিবেশন।",
+    "sentimentReasonEn": "Fact-based reporting on border patrol technological upgrades.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/west-bengal/bsf-boosts-thermal-drone-vigilance-along-south-bengal-bangladesh-border/cid/1542190",
+      "originalHeadline": "সীমান্তে নজরদারিতে নাইট ড্রোন, কড়া সতর্কতায় বিএসএফ",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T04:50:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/petrapole-benapole-border-gate.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Anandabazar Patrika",
+      "BSF South Bengal",
+      "Petrapole",
+      "Border Drone",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260918-008",
+    "slug": "assam-tribune-northeast-border-security-riverine-patrols",
+    "title": "The Assam Tribune: Riverine Patrols Intensified Along Brahmaputra Border Belt in Dhubri Sector",
+    "englishTitle": "The Assam Tribune Guwahati: Riverine BSF Vigil In Dhubri Sector Borders Bangladesh",
+    "banglaTitle": "আসামের ধুবড়ি রিভারাইন সীমান্তে বিএসএফ ও পুলিশি টহল জোরদার: দি আসাম ট্রিব্যুনালের প্রতিবেদন",
+    "summaryBn": "গুয়াহাটি থেকে প্রকাশিত প্রধান ইংরেজি সংবাদপত্র 'দি আসাম ট্রিব্যুনাল'-এর বিশেষ সংবাদে বলা হয়েছে, আসামের ধুবড়ি ও করিমগঞ্জ জেলার নদীতীরবর্তী বাংলাদেশ সীমান্তে স্পিডবোট ও নাইট রিভার পেট্রোলিং দ্বিগুণ করা হয়েছে।",
+    "summaryEn": "Guwahati-based national daily The Assam Tribune reports on BSF and Assam Police deploying speedboats and riverine searchlights along the Brahmaputra border stretches in Dhubri and Karimganj.",
+    "keyPointsBn": [
+      "দি আসাম ট্রিব্যুনালে আসাম-বাংলাদেশ রিভারাইন সীমান্তের বিশেষ স্পিডবোট টহল বিস্তারিত",
+      "ধুবড়ি ও করিমগঞ্জ অঞ্চলে অবৈধ পারাপার সম্পূর্ণ বন্ধে আসাম পুলিশের সতর্কবার্তা",
+      "উত্তর-পূর্ব সীমান্ত নিরাপত্তা জোরদারে কেন্দ্র-রাজ্য যৌথ পদক্ষেপ"
+    ],
+    "keyPointsEn": [
+      "The Assam Tribune highlights BSF speedboat patrols across riverine stretches in Dhubri",
+      "Assam State Police step up night vigil to check unauthorized river crossings",
+      "Joint North-East security measures implemented under Assam Border Patrol directives"
+    ],
+    "category": "border",
+    "categoryLabelBn": "আসাম সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Assam Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "উত্তর-পূর্ব নদীতীরবর্তী সীমান্তের কড়া নিরাপত্তা কভারেজ।",
+    "sentimentReasonEn": "Analytical coverage on North-East riverine border patrols.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://assamtribune.com/assam/bsf-intensifies-riverine-patrols-in-dhubri-along-bangladesh-border-1543820",
+      "originalHeadline": "BSF intensifies riverine patrols in Dhubri along Bangladesh border",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T04:15:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/siliguri-corridor-northeast-route.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Assam Tribune",
+      "Dhubri",
+      "Riverine Patrol",
+      "Guwahati Bureau",
+      "BSF Assam"
+    ]
+  },
+  {
+    "id": "news-20260918-009",
+    "slug": "indian-express-delhi-bilateral-treaties-energy-transit-review",
+    "title": "The Indian Express: Comprehensive Review of Cross-Border Power Purchase & Hydro Tariffs",
+    "englishTitle": "The Indian Express Delhi: Strategic Analysis of India-Bangladesh Energy Contracts & Transit Tariffs",
+    "banglaTitle": "ভারত-বাংলাদেশ বিদ্যুৎ সরবরাহ ও অর্থনৈতিক চুক্তি পর্যালোচনা: দ্য ইন্ডিয়ান এক্সপ্রেসের কূটনৈতিক বিশ্লেষণ",
+    "summaryBn": "নতুন দিল্লিভিত্তিক শীর্ষ জাতীয় দৈনিক 'দ্য ইন্ডিয়ান এক্সপ্রেস'-এর রিপোর্টে প্রকাশ, আদানির ঝাড়খণ্ড পাওয়ার প্ল্যান্টসহ ত্রিপুরা ও উত্তর-পূর্ব বিদ্যুৎ গ্রিড থেকে বাংলাদেশে বিদ্যুৎ রফতানি চুক্তি ও বকেয়া পরিশোধের বিষয় পর্যালোচনা চলছে।",
+    "summaryEn": "New Delhi-based daily The Indian Express published an in-depth policy review evaluating bilateral power purchase agreements, grid transmission tariffs, and economic payments between India and Bangladesh.",
+    "keyPointsBn": [
+      "ইন্ডিয়ান এক্সপ্রেসে দিল্লি-ঢাকা বিদ্যুৎ সরবরাহ চুক্তি ও আদানির ঝাড়খণ্ড প্ল্যান্ট পর্যালোচনা কভারেজ",
+      "ত্রিপুরা গ্রিড থেকে বাংলাদেশে বিদ্যুৎ রফতানির অর্থ পরিশোধ এবং নতুন পেমেন্ট ফ্রেমওয়ার্ক",
+      "দ্বিপাক্ষিক বাণিজ্যিক ভারসাম্য রক্ষায় ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের গঠনমূলক উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "The Indian Express evaluates cross-border power purchase agreements and Adani Jharkhand tariff structures",
+      "Analysis on electricity exports via Tripura grid and financial settlement mechanisms",
+      "Ministry of External Affairs (MEA) constructive approach toward energy trade continuity"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "অর্থনীতি ও বিদ্যুৎ খাতা",
+    "categoryLabelEn": "Economy & Power Sector",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বিদ্যুৎ চুক্তি ও পেমেন্ট কাঠামোর নিরপেক্ষ অর্থনৈতিক কভারেজ।",
+    "sentimentReasonEn": "Balanced analytical reporting on bilateral power sector agreements.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/business/economy/india-bangladesh-cross-border-power-purchase-reviews-adani-tariffs-9843210/",
+      "originalHeadline": "India-Bangladesh Power Supply Agreements Under Financial & Grid Review",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T03:40:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/chattogram-port-maritime-hub.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "The Indian Express",
+      "Delhi Bureau",
+      "Energy Policy",
+      "Adani Power",
+      "Bilateral Economy"
+    ]
+  },
+  {
+    "id": "news-20260918-010",
+    "slug": "zee-24-ghanta-youtube-hasina-extradition-diplomatic-talks",
+    "title": "Zee 24 Ghanta Digital Panel Discussion: Evaluating Legal Provisions in Hasina Extradition Treaty",
+    "englishTitle": "Zee 24 Ghanta Kolkata YouTube Dispatch: Legal Experts Weigh Extradition Treaty Clauses",
+    "banglaTitle": "হাসিনার প্রত্যর্পণ চুক্তি ও আইনি জটিলতা: জি ২৪ ঘণ্টার ইউটিউব বিশেষ প্যানেল আলোচনা",
+    "summaryBn": "কলকাতার জনপ্রিয় বাংলা নিউজ চ্যানেল 'জি ২৪ ঘণ্টা'-র ইউটিউব ডিজিটাল ব্রডকাস্টে বাংলাদেশের অন্তর্বর্তী সরকারের অনানুষ্ঠানিক অনুরোধ ও ২০১৩ সালের ভারত-বাংলাদেশ প্রত্যর্পণ চুক্তির রাজনৈতিক অপরাধ সংক্রান্ত আইনি অনুচ্ছেদ নিয়ে প্রখ্যাত সুপ্রিম কোর্ট আইনজীবী ও বিশ্লেষকদের গঠনমূলক বক্তব্য তুলে ধরা হয়।",
+    "summaryEn": "Kolkata TV broadcaster Zee 24 Ghanta streamed a dedicated YouTube panel discussion featuring international legal experts analyzing the 2013 India-Bangladesh Extradition Treaty clauses regarding Sheikh Hasina.",
+    "keyPointsBn": [
+      "জি ২৪ ঘণ্টার ইউটিউব কভারেজে ২০১৩ সালের ভারত-বাংলাদেশ প্রত্যর্পণ আইনি ধারা বিশ্লেষণ",
+      "রাজনৈতিক অপরাধ ব্যতিক্রম ধারা ও বিচারিক আদালতের রায়ের প্রভাব কভারেজ",
+      "কলকাতা ও দিল্লির সুপ্রিম কোর্টের প্রবীণ আইনজীবীদের মতামত উপস্থাপন"
+    ],
+    "keyPointsEn": [
+      "Zee 24 Ghanta YouTube panel reviews legal technicalities of the 2013 Bilateral Extradition Treaty",
+      "Discussions on 'political exception' clauses under international law",
+      "Insights from senior legal experts based in Kolkata and New Delhi"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও আইনি বিশ্লেষণ",
+    "categoryLabelEn": "Diplomacy & Legal Analysis",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আইনি চুক্তি ও অনুচ্ছেদের বস্তুনিষ্ঠ টেলিভিশন ভিডিও আলোচনা।",
+    "sentimentReasonEn": "Balanced YouTube panel debate on international extradition law.",
+    "source": {
+      "name": "Zee 24 Ghanta (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zT3FhU3FRd0p2ZFNkUTc0OHVfOHF2ZndrUjR3Y1FOTzZkVUxFUGs2blRpa0NlZWVnUW8yd3pTUzVqQXlsWFN6TEY6WUpPZXdSMHc?oc=5",
+      "originalHeadline": "শেখ হাসিনার প্রত্যর্পণ ও ২০১৩ সালের চুক্তির ধারা নিয়ে আইনি বিশেষজ্ঞদের ব্যাখ্যা | Zee 24 Ghanta",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T02:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/teesta-barrage-dams-gajoldoba.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Zee 24 Ghanta",
+      "YouTube News",
+      "Extradition Treaty",
+      "Legal Analysis",
+      "Kolkata Desk"
+    ]
+  },
+  {
+    "id": "news-20260918-011",
+    "slug": "republic-bangla-youtube-tarique-rahman-uk-delhi-outreach",
+    "title": "Republic Bangla YouTube Special: Strategic Assessment of BNP-Delhi Diplomatic Channels",
+    "englishTitle": "Republic Bangla Kolkata YouTube Report: Diplomatic Assessment of Delhi-BNP Outreach",
+    "banglaTitle": "বিএনপি ও দিল্লির কূটনৈতিক যোগাযোগ: রিপাবলিক বাংলার বিশেষ ইউটিউব ডিজিটাল প্রতিবেদন",
+    "summaryBn": "কলকাতার প্রধান সংবাদ চ্যানেল 'রিপাবলিক বাংলা'-র ইউটিউব ডিজিটাল আউটলেটে বিএনপির শীর্ষ নেতৃত্ব ও দিল্লির কূটনৈতিক প্রতিনিধিবর্গের মধ্যে যোগাযোগ ও ভবিষ্যৎ স্থিতিশীলতার আঞ্চলিক পরিকল্পনা তুলে ধরে দীর্ঘ প্যানেল রিপোর্ট প্রকাশ করা হয়েছে।",
+    "summaryEn": "Kolkata news network Republic Bangla released a digital YouTube report evaluating diplomatic channels between New Delhi policy-makers and BNP leadership regarding regional peace and trade stability.",
+    "keyPointsBn": [
+      "রিপাবলিক বাংলা ইউটিউব ডিসপ্যাচে বিএনপি ও দিল্লির গঠনমূলক কূটনৈতিক যোগাযোগ বিস্তারিত",
+      "বাংলাদেশের ধর্মীয় সংখ্যালঘু নিরাপত্তা ও উত্তর-পূর্ব ভারতের সীমান্ত শান্তি বজায় রাখার যৌথ প্রতিশ্রুতি",
+      "পূর্ব ভারতের কৌশলগত বিশ্লেষকদের বিশেষ পর্যালোচনা"
+    ],
+    "keyPointsEn": [
+      "Republic Bangla YouTube report highlights constructive diplomatic communication between Delhi and BNP leadership",
+      "Focus on minority protection and North-East border corridor stability",
+      "Strategic perspectives from Eastern India geopolitical commentators"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও ভূরাজনীতি",
+    "categoryLabelEn": "Politics & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আঞ্চলিক স্থায়িত্ব ও রাজনৈতিক কূটনীতির নিরপেক্ষ ডিজিটাল উপস্থাপন।",
+    "sentimentReasonEn": "Balanced digital news report on regional diplomacy.",
+    "source": {
+      "name": "Republic Bangla (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1uS2FRUTZmdXRrTVh1cFVIdkJvTFNDOFlFMGdFZE5iNDlKMGdndmpyUWlyM1RwbFF1X2FROURuOHFCSnlaeUtPZF9oVXZ6a2M1NEE?oc=5",
+      "originalHeadline": "দিল্লি ও বিএনপি-র নতুন কূটনৈতিক সমীকরণ: পূর্ব ভারতের সংবাদ মাধ্যমের বিশেষ পরিবেশনা | Republic Bangla",
+      "scannedAt": "2026-09-18T19:05:00.000Z"
+    },
+    "publishedAt": "2026-09-18T01:15:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/dhaka-university-campus-landscape.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Republic Bangla",
+      "YouTube News",
+      "BNP Outreach",
+      "Delhi Diplomatic Ties",
+      "Kolkata Desk"
+    ]
+  },
+  {
     "id": "news-20260917-005",
     "slug": "abp-ananda-youtube-report-india-policy-sheikh-hasina-dhaka-ties",
     "title": "ABP Ananda Special Video Report on India's Policy Options Regarding Sheikh Hasina",
