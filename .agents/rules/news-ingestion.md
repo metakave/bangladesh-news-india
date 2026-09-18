@@ -1,3 +1,3 @@
 - Always process news updates locally through Antigravity without querying DeepSeek or external paid APIs.
-- Synthesize **10–12 distinct articles per daily scan run** covering Kolkata, Delhi, Assam, Tripura, Siliguri, and YouTube media dispatches.
+- Synthesize **10–12 distinct articles per daily scan run** covering Kolkata, Delhi, Mumbai, Assam, Tripura, Siliguri, and YouTube media dispatches.
 - Dump candidates to `scratch/candidates.json`, synthesize articles locally into `src/data/news-data.ts`, test with `npm run build`, and push to `origin main`.

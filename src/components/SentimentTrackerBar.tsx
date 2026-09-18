@@ -230,6 +230,7 @@ export default function SentimentTrackerBar({
                 <option value="all">{t.allBureaus}</option>
                 <option value="Delhi">{t.delhiBureauOnly}</option>
                 <option value="Kolkata">{t.kolkataBureauOnly}</option>
+                <option value="Mumbai">{(t as any).mumbaiBureauOnly || 'Mumbai Bureaus Only'}</option>
               </select>
             </div>
 

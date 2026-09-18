@@ -1,0 +1,66 @@
+====================================================
+⏰ Local Cron Execution: Wed Sep 16 10:30:00 +06 2026
+====================================================
+./scripts/daily-scanner-cron.sh: line 15: /usr/local/bin/node: No such file or directory
+./scripts/daily-scanner-cron.sh: line 16: /opt/homebrew/bin/node: No such file or directory
+====================================================
+🚀 NARRATIVE COMPASS - DAILY NEWS SCANNER
+⏰ Time (Local): 9/16/2026, 10:30:00 AM
+🤖 AI Engine: DEEPSEEK API (deepseek-chat)
+📌 Operational Mode: [ALL] -> Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)
+====================================================
+
+📡 Step 1: Scanning 39 media feeds with IP anti-ban safeguards...
+🛡️ Anti-Ban Protections: max 3 concurrent requests | randomized timing jitter | same-domain cooldown | automatic circuit breaker
+✅ Scanned 2390 total news items across 39 media outlets safely without rate limits.
+🎯 Identified 745 articles specifically related to Bangladesh / Dhaka (123 priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).
+✅ Candidate articles dumped successfully to /Users/sadiq/antigravity/bangladesh-news-india/scratch/candidates.json
+✅ Candidate scan completed at Wed Sep 16 10:30:25 +06 2026
+====================================================
+⏰ Local Cron Execution: Wed Sep 16 16:01:26 +06 2026
+====================================================
+====================================================
+🚀 NARRATIVE COMPASS - DAILY NEWS SCANNER
+⏰ Time (Local): 9/16/2026, 4:01:26 PM
+🤖 AI Engine: DEEPSEEK API (deepseek-chat)
+📌 Operational Mode: [ALL] -> Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)
+====================================================
+
+📡 Step 1: Scanning 39 media feeds with IP anti-ban safeguards...
+🛡️ Anti-Ban Protections: max 3 concurrent requests | randomized timing jitter | same-domain cooldown | automatic circuit breaker
+✅ Scanned 2613 total news items across 39 media outlets safely without rate limits.
+🎯 Identified 756 articles specifically related to Bangladesh / Dhaka (121 priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).
+✅ Candidate articles dumped successfully to /Users/sadiq/antigravity/bangladesh-news-india/scratch/candidates.json
+✅ Candidate scan completed at Wed Sep 16 16:01:50 +06 2026
+====================================================
+⏰ Local Cron Execution: Thu Sep 17 09:56:13 +06 2026
+====================================================
+====================================================
+🚀 NARRATIVE COMPASS - DAILY NEWS SCANNER
+⏰ Time (Local): 9/17/2026, 9:56:13 AM
+🤖 AI Engine: DEEPSEEK API (deepseek-chat)
+📌 Operational Mode: [ALL] -> Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)
+====================================================
+
+📡 Step 1: Scanning 50 media feeds with IP anti-ban safeguards...
+🛡️ Anti-Ban Protections: max 3 concurrent requests | randomized timing jitter | same-domain cooldown | automatic circuit breaker
+✅ Scanned 2673 total news items across 50 media outlets safely without rate limits.
+🎯 Identified 771 articles specifically related to Bangladesh / Dhaka (129 priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).
+✅ Candidate articles dumped successfully to /Users/sadiq/antigravity/bangladesh-news-india/scratch/candidates.json
+✅ Candidate scan completed at Thu Sep 17 09:56:41 +06 2026
+====================================================
+⏰ Local Cron Execution: Fri Sep 18 12:05:21 +06 2026
+====================================================
+====================================================
+🚀 NARRATIVE COMPASS - DAILY NEWS SCANNER
+⏰ Time (Local): 9/18/2026, 12:05:21 PM
+🤖 AI Engine: DEEPSEEK API (deepseek-chat)
+📌 Operational Mode: [ALL] -> Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)
+====================================================
+
+📡 Step 1: Scanning 50 media feeds with IP anti-ban safeguards...
+🛡️ Anti-Ban Protections: max 3 concurrent requests | randomized timing jitter | same-domain cooldown | automatic circuit breaker
+✅ Scanned 0 total news items across 50 media outlets safely without rate limits.
+🎯 Identified 0 articles specifically related to Bangladesh / Dhaka (0 priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).
+✅ Candidate articles dumped successfully to /Users/sadiq/antigravity/bangladesh-news-india/scratch/candidates.json
+✅ Candidate scan completed at Fri Sep 18 13:06:13 +06 2026

@@ -411,7 +411,7 @@ export default function ArchiveClientView({ initialArticles }: ArchiveClientView
                   <Building2 size={12} />
                   {lang === 'bn' ? 'ব্যুরো:' : 'Bureau:'}
                 </span>
-                {(['all', 'Delhi', 'Kolkata'] as const).map((b) => (
+                {(['all', 'Delhi', 'Kolkata', 'Mumbai'] as const).map((b) => (
                   <button
                     key={b}
                     onClick={() => setSelectedBureau(b)}

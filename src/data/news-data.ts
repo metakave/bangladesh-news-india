@@ -1,6 +1,6 @@
 export type SentimentType = 'positive' | 'negative' | 'neutral';
 export type LanguageType = 'English' | 'Bengali' | 'Hindi';
-export type BureauType = 'Delhi' | 'Kolkata';
+export type BureauType = 'Delhi' | 'Kolkata' | 'Mumbai';
 
 export interface SourceMedia {
   name: string;
@@ -77,7 +77,8 @@ export const SCANNER_STATS = {
   },
   "bureauDistribution": {
     "delhi": 20,
-    "kolkata": 14
+    "kolkata": 14,
+    "mumbai": 8
   },
   "languageDistribution": {
     "english": 16,

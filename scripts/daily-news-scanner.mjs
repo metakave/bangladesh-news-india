@@ -65,18 +65,20 @@ const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
 // 1. STANDARD RSS FEEDS (Chunk 1: Print, Digital, and Wire Media)
 // ==============================================================================
 const STANDARD_RSS_FEEDS = [
-  // 1. National English Outlets
+  // 1. National English & Financial Outlets (Delhi & Mumbai)
   { name: 'The Hindu', bureau: 'Delhi', language: 'English', url: 'https://www.thehindu.com/news/international/feeder/default.rss', webUrl: 'https://www.thehindu.com/news/international/' },
   { name: 'The Hindu Top', bureau: 'Delhi', language: 'English', url: 'https://www.thehindu.com/feeder/default.rss', webUrl: 'https://www.thehindu.com' },
   { name: 'The Indian Express World', bureau: 'Delhi', language: 'English', url: 'https://indianexpress.com/section/world/feed/', webUrl: 'https://indianexpress.com/section/world/' },
   { name: 'The Indian Express India', bureau: 'Delhi', language: 'English', url: 'https://indianexpress.com/section/india/feed/', webUrl: 'https://indianexpress.com/section/india/' },
-  { name: 'Times of India Top', bureau: 'Delhi', language: 'English', url: 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms', webUrl: 'https://timesofindia.indiatimes.com' },
-  { name: 'Times of India World', bureau: 'Delhi', language: 'English', url: 'https://timesofindia.indiatimes.com/rssfeeds/296589292.cms', webUrl: 'https://timesofindia.indiatimes.com/world' },
+  { name: 'Times of India Top', bureau: 'Mumbai', language: 'English', url: 'https://timesofindia.indiatimes.com/rssfeedstopstories.cms', webUrl: 'https://timesofindia.indiatimes.com' },
+  { name: 'Times of India World', bureau: 'Mumbai', language: 'English', url: 'https://timesofindia.indiatimes.com/rssfeeds/296589292.cms', webUrl: 'https://timesofindia.indiatimes.com/world' },
   { name: 'NDTV World', bureau: 'Delhi', language: 'English', url: 'https://feeds.feedburner.com/ndtvnews-world-news', webUrl: 'https://www.ndtv.com/world-news' },
   { name: 'NDTV Top Stories', bureau: 'Delhi', language: 'English', url: 'https://feeds.feedburner.com/ndtvnews-top-stories', webUrl: 'https://www.ndtv.com' },
   { name: 'Hindustan Times World', bureau: 'Delhi', language: 'English', url: 'https://www.hindustantimes.com/rss/world/rssfeed.xml', webUrl: 'https://www.hindustantimes.com/world-news' },
   { name: 'India Today', bureau: 'Delhi', language: 'English', url: 'https://www.indiatoday.in/rss/home', webUrl: 'https://www.indiatoday.in' },
-  { name: 'Business Standard', bureau: 'Delhi', language: 'English', url: 'https://www.business-standard.com/rss/latest.rss', webUrl: 'https://www.business-standard.com/economy' },
+  { name: 'Business Standard', bureau: 'Mumbai', language: 'English', url: 'https://www.business-standard.com/rss/latest.rss', webUrl: 'https://www.business-standard.com/economy' },
+  { name: 'Free Press Journal', bureau: 'Mumbai', language: 'English', url: 'https://www.freepressjournal.in/rss/world.xml', webUrl: 'https://www.freepressjournal.in' },
+  { name: 'Economic Times', bureau: 'Mumbai', language: 'English', url: 'https://economictimes.indiatimes.com/rssfeedstopstories.cms', webUrl: 'https://economictimes.indiatimes.com' },
   { name: 'Deccan Herald World', bureau: 'Bangalore', language: 'English', url: 'https://www.deccanherald.com/rss/international.rss', webUrl: 'https://www.deccanherald.com' },
 
   // 2. Kolkata & Regional Bengali Outlets
@@ -1281,6 +1283,7 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
           if (oldStats.bureauDistribution) {
             parsedAiResult.scannerStats.bureauDistribution.delhi = (oldStats.bureauDistribution.delhi || 0) + (parsedAiResult.scannerStats.bureauDistribution?.delhi || 0);
             parsedAiResult.scannerStats.bureauDistribution.kolkata = (oldStats.bureauDistribution.kolkata || 0) + (parsedAiResult.scannerStats.bureauDistribution?.kolkata || 0);
+            parsedAiResult.scannerStats.bureauDistribution.mumbai = (oldStats.bureauDistribution.mumbai || 0) + (parsedAiResult.scannerStats.bureauDistribution?.mumbai || 0);
           }
         } catch (e) {
           console.warn('Could not blend scannerStats, using generated stats.');
