@@ -985,14 +985,14 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Zee 24 Ghanta (YouTube)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zT3FhU3FRd0p2ZFNkUTc0OHVfOHF2ZndrUjR3Y1FOTzZkVUxFUGs2blRpa0NlZWVnUW8yd3pTUzVqQXlsWFN6TEY6WUpPZXdSMHc?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=HQKHzbPrQ8o",
       "originalHeadline": "শেখ হাসিনার প্রত্যর্পণ ও ২০১৩ সালের চুক্তির ধারা নিয়ে আইনি বিশেষজ্ঞদের ব্যাখ্যা | Zee 24 Ghanta",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
     "publishedAt": "2026-09-18T02:30:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/teesta-barrage-dams-gajoldoba.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/HQKHzbPrQ8o/hqdefault.jpg",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
