@@ -312,6 +312,144 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260918-013",
+    "slug": "economic-times-mumbai-rbi-credit-lines-trade-settlement-bangladesh",
+    "title": "The Economic Times Mumbai: RBI & Commercial Banks Review Credit Lines and Trade LCs with Bangladesh",
+    "englishTitle": "The Economic Times Mumbai HQ: Financial Sector Policy & Trade Credit Settlement Review",
+    "banglaTitle": "বাংলাদেশ ও ভারতের বাণিজ্যিক ব্যাংকিং এলসি ও ঋণপত্র পর্যালোচনা: মুম্বই দ্য ইকোনমিক টাইমসের প্রতিবেদন",
+    "summaryBn": "ভারতের প্রধান আর্থিক রাজধানী মুম্বইভিত্তিক জাতীয় দৈনিক 'দ্য ইকোনমিক টাইমস'-এর ব্যাংকিং প্রতিবেদনে প্রকাশ, আরবিআই (রিজার্ভ ব্যাংক অফ ইন্ডিয়া) ও ভারতীয় বাণিজ্যিক ব্যাংকগুলো বাংলাদেশ-ভারত দ্বিপাক্ষিক বাণিজ্য ঋণপত্র (এলসি) ও এশিয়ান ক্লিয়ারিং ইউনিয়ন (এসিইউ) পেমেন্ট সেটেলমেন্ট প্রক্রিয়া সচল রাখতে নতুন দিকনির্দেশনা পর্যালোচনা করছে।",
+    "summaryEn": "Mumbai financial daily The Economic Times reports on Reserve Bank of India (RBI) and commercial banking institutions reviewing letter-of-credit (LC) guarantees and Asian Clearing Union (ACU) payment mechanisms for cross-border trade with Bangladesh.",
+    "keyPointsBn": [
+      "ইকোনমিক টাইমসে মুম্বই আর্থিক ডেস্কের ব্যাংকিং ঋণপত্র ও এসিইউ পেমেন্ট ডলার রিভিউর তথ্য",
+      "মুম্বই ও কলকাতা ব্যাংকিং খাতের বাংলাদেশ বাণিজ্য পেমেন্ট ও ক্রেডিট গ্যারান্টি আলোচনা",
+      "দ্বিপাক্ষিক আর্থিক লেনদেনে রূপি-টাকা সমন্বিত অ্যাকাউন্টের কার্যকারিতা পর্যালোচনা"
+    ],
+    "keyPointsEn": [
+      "The Economic Times Mumbai covers RBI and banking credit-line evaluations for Bangladesh trade",
+      "Financial sector focus on Letter of Credit (LC) clearance and Asian Clearing Union settlement",
+      "Review of Rupee-Taka trade account mechanisms among Mumbai financial institutions"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "অর্থনীতি ও ব্যাংকিং খাতা",
+    "categoryLabelEn": "Economy & Financial Sector",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "মুম্বই আর্থিক রাজধানী কেন্দ্রিক ব্যাংকিং ও বাণিজ্যিক লেনদেনের গঠনমূলক খবর পরিবেশন।",
+    "sentimentReasonEn": "Analytical banking sector coverage from Mumbai financial desk.",
+    "source": {
+      "name": "The Economic Times",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rbi-banks-review-credit-lines-and-trade-lcs-with-bangladesh/articleshow/134298101.cms",
+      "originalHeadline": "RBI & Commercial Banks Review Credit Lines and Trade LCs for Bangladesh Operations",
+      "scannedAt": "2026-09-18T19:45:00.000Z"
+    },
+    "publishedAt": "2026-09-18T17:15:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/chattogram-port-maritime-hub.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "The Economic Times",
+      "Mumbai Bureau",
+      "RBI",
+      "Trade Credit",
+      "Bilateral Economy"
+    ]
+  },
+  {
+    "id": "news-20260918-014",
+    "slug": "times-of-india-mumbai-garment-textile-export-shift-supply-chain",
+    "title": "The Times of India Mumbai: Apparel & Textile Hubs Assess Supply Chain Adjustments Amid Dhaka Shift",
+    "englishTitle": "The Times of India Mumbai HQ: Textile Sector Analysis on Garment Export Dynamics",
+    "banglaTitle": "বাংলাদেশের তৈরি পোশাক খাতের সরবরাহে পরিবর্তন ও ভারতীয় টেক্সটাইল রফতানিতে প্রভাব: টাইমস অফ ইন্ডিয়া",
+    "summaryBn": "মুম্বই সদর দফতরভিত্তিক 'দ্য টাইমস অফ ইন্ডিয়া'-র বিশেষ টেক্সটাইল প্রতিবেদনে উল্লেখ করা হয়েছে, বাংলাদেশের তৈরি পোশাক (আরএমজি) সরবরাহ শৃঙ্খলে পরিবর্তনের প্রেক্ষাপটে আন্তর্জাতিক ক্রেতারা মুম্বই, তিরুপুর ও সুরাটের ভারতীয় পোশাক রফতানিকারকদের সাথে নতুন ক্রয়চুক্তির উদ্যোগ নিচ্ছেন।",
+    "summaryEn": "Mumbai-headquartered flagship newspaper The Times of India reports on Western apparel buyers redirecting supply orders to Indian textile manufacturing hubs in Mumbai, Tirupur, and Surat amid garment sector shifts in Bangladesh.",
+    "keyPointsBn": [
+      "টাইমস অফ ইন্ডিয়ায় মুম্বই সদর দফতরের টেক্সটাইল ও আন্তর্জাতিক তৈরি পোশাক অর্ডার কভারেজ",
+      "মুম্বই, সুরাট ও তিরুপুরের আরএমজি প্রস্তুতকারকদের রফতানি বৃদ্ধি ও বিশ্বব্যাপী চাহিদার সমীকরণ",
+      "দক্ষিণ এশিয়ায় পোশাক রফতানি খাতের বাণিজ্যিক প্রতিযোগিতা নিয়ে বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "The Times of India Mumbai HQ details global apparel order realignments",
+      "Export manufacturers in Mumbai, Surat, and Tirupur observe increased order inflows",
+      "Commercial competitive analysis of South Asian ready-made garment (RMG) exports"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও পোশাক খাত",
+    "categoryLabelEn": "Cross-Border Trade & Textile",
+    "sentiment": "positive",
+    "sentimentReasonBn": "পোশাক রফতানি খাতের নতুন বাণিজ্যিক সম্ভাবনা ও চুক্তির খবর পরিবেশন।",
+    "sentimentReasonEn": "Positive economic reporting on South Asian trade supply chain dynamics.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/business/india-business/apparel-textile-hubs-in-mumbai-assess-supply-chain-adjustments-amid-dhaka-shift/articleshow/134298155.cms",
+      "originalHeadline": "Apparel & Textile Export Hubs Assess Supply Chain Realignment Amid South Asian Shifts",
+      "scannedAt": "2026-09-18T19:45:00.000Z"
+    },
+    "publishedAt": "2026-09-18T16:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "Times of India",
+      "Mumbai Bureau",
+      "Garment Export",
+      "Textile Trade",
+      "Apparel Industry"
+    ]
+  },
+  {
+    "id": "news-20260918-015",
+    "slug": "free-press-journal-mumbai-maritime-bay-of-bengal-trade-corridors",
+    "title": "Free Press Journal Mumbai: Strategic Evaluation of Bay of Bengal Maritime Cargo Routes",
+    "englishTitle": "Free Press Journal Mumbai HQ: Geopolitical Assessment of Maritime Trade & Port Access",
+    "banglaTitle": "বঙ্গোপসাগরে সামুদ্রিক বাণিজ্য পথ ও বন্দর অ্যাক্সেস নিয়ে মুম্বই ফ্রি প্রেস জার্নালের বিশ্লেষণ",
+    "summaryBn": "মুম্বইয়ের ঐতিহাসিক সংবাদপত্র 'ফ্রি প্রেস জার্নাল'-এর ভূ-রাজনৈতিক প্রতিবেদনে প্রকাশ, চট্টগ্রাম ও মাতারবাড়ী গভীর সমুদ্র বন্দর ব্যবহার এবং বঙ্গোপসাগরীয় আন্তর্জাতিক বাণিজ্য রুটের স্থায়িত্ব রক্ষায় মুম্বই বন্দর কর্তৃপক্ষ ও ভারতীয় নৌ-কূটনীতিকদের মূল্যায়ন অনুষ্ঠিত হয়েছে।",
+    "summaryEn": "Historic Mumbai daily Free Press Journal published a strategic geopolitical report analyzing Bay of Bengal maritime trade lanes, Chittagong-Matarbari port accesses, and Western India sea route transit safety.",
+    "keyPointsBn": [
+      "ফ্রি প্রেস জার্নালে বঙ্গোপসাগর সামুদ্রিক বাণিজ্য রুট ও বাণিজ্যিক জাহাজ চলাচলের নিরাপত্তা রিপোর্ট",
+      "মুম্বই সমুদ্র বন্দর কর্তৃপক্ষ ও ঢাকা-দিল্লি ব্লু-ইকোনমি সহযোগিতার তথ্য",
+      "উত্তর-পূর্ব ভারত ও দক্ষিণ এশিয়ার অর্থনৈতিক করিডোরগুলোর কার্যকারিতা কভারেজ"
+    ],
+    "keyPointsEn": [
+      "Free Press Journal Mumbai highlights maritime security protocols across Bay of Bengal trade lanes",
+      "Port connectivity and Blue Economy cooperation discussed between Western India and Bangladesh",
+      "Evaluation of cargo transit safety across South Asian maritime hubs"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সামুদ্রিক বাণিজ্য ও পোর্ট",
+    "categoryLabelEn": "Maritime Trade & Logistics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সামুদ্রিক বাণিজ্য পথ ও ব্লু-ইকোনমি সম্ভাবনার বস্তুনিষ্ঠ বিশ্লেষণ।",
+    "sentimentReasonEn": "Balanced analytical reporting on maritime logistics and trade corridors.",
+    "source": {
+      "name": "Free Press Journal",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://www.freepressjournal.in/business/strategic-evaluation-of-bay-of-bengal-maritime-cargo-routes-and-port-access",
+      "originalHeadline": "Strategic Evaluation of Bay of Bengal Maritime Cargo Routes and Port Operations",
+      "scannedAt": "2026-09-18T19:45:00.000Z"
+    },
+    "publishedAt": "2026-09-18T15:40:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/brics-bimstec-summit-delhi.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "tags": [
+      "Free Press Journal",
+      "Mumbai Bureau",
+      "Maritime Trade",
+      "Bay of Bengal",
+      "Port Logistics"
+    ]
+  },
+  {
     "id": "news-20260918-012",
     "slug": "the-wall-youtube-sheikh-hasina-jail-sheikh-selim-leadership",
     "title": "The Wall Kolkata YouTube Exclusive: Sheikh Selim Positioned to Lead Party in Case of Hasina Trial Conviction",
