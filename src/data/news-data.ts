@@ -312,6 +312,53 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260918-012",
+    "slug": "the-wall-youtube-sheikh-hasina-jail-sheikh-selim-leadership",
+    "title": "The Wall Kolkata YouTube Exclusive: Sheikh Selim Positioned to Lead Party in Case of Hasina Trial Conviction",
+    "englishTitle": "The Wall Kolkata YouTube Interview: Sheikh Selim Positioned for Party Leadership if Hasina Imprisoned",
+    "banglaTitle": "হাসিনার জেল হলে দল চালাবেন শেখ সেলিম: কলকাতা দ্য ওয়াল-এর বিশেষ ইউটিউব ভিডিও সাক্ষাৎকার",
+    "summaryBn": "কলকাতাভিত্তিক প্রভাবশালী সংবাদ মাধ্যম 'দ্য ওয়াল'-এর ইউটিউব বিশেষ ডিজিটাল সাক্ষাৎকারে প্রকাশ, সাবেক প্রধানমন্ত্রী শেখ হাসিনার আইনি বিচারে সাজা বা কারাদণ্ড হলে আওয়ামী লীগের যৌথ ও অন্তর্বর্তী নেতৃত্ব কাঠামোতে শেখ সেলিমকে দল পরিচালনার প্রধান দায়িত্ব দেওয়ার বিষয়ে হাইকম্যান্ডে পর্যালোচনা চলছে।",
+    "summaryEn": "Kolkata media house The Wall published a special YouTube video interview discussing internal contingency plans within Awami League, placing senior leader Sheikh Selim at the forefront of party management if Sheikh Hasina faces judicial conviction.",
+    "keyPointsBn": [
+      "দ্য ওয়াল-এর ইউটিউব ভিডিও ইন্টারভিউতে আওয়ামী লীগের হাইকমান্ডের বিকল্প নেতৃত্ব পরিকল্পনা প্রকাশ",
+      "শেখ হাসিনার বিচারিক প্রক্রিয়া ও কারাদণ্ডের ক্ষেত্রে শেখ সেলিমের নেতৃত্ব গ্রহণ সম্পর্কিত আলোচনা",
+      "কলকাতা ও দিল্লিতে অবস্থানরত প্রবীণ নেতাদের সাংগঠনিক পুনর্বিন্যাস সংক্রান্ত বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "The Wall Kolkata streams YouTube video interview detailing Awami League leadership contingency plans",
+      "Analysis on senior leader Sheikh Selim stepping in if Sheikh Hasina faces legal conviction",
+      "Strategic organizational assessment among exile leadership based in Kolkata and New Delhi"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও দলীয় নেতৃত্ব",
+    "categoryLabelEn": "Politics & Leadership",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংকট, আইনি বিচারে কারাদণ্ড ও দলীয় পুনর্গঠনের স্পর্শকাতর সংবাদ কভারেজ।",
+    "sentimentReasonEn": "Analytical coverage on exile party contingency plans amid ongoing legal trials.",
+    "source": {
+      "name": "The Wall (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=q0mOhYcVWXI",
+      "originalHeadline": "হাসিনার জেল হলে দল চালাবেন শেখ সেলিম | Bangladesh News | Sheikh Hasina The Wall Interview",
+      "scannedAt": "2026-09-18T19:35:00.000Z"
+    },
+    "publishedAt": "2026-09-18T18:00:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "tags": [
+      "The Wall",
+      "YouTube Video",
+      "Kolkata Bureau",
+      "Sheikh Hasina",
+      "Sheikh Selim",
+      "Awami League"
+    ]
+  },
+  {
     "id": "news-20260918-001",
     "slug": "navbharat-times-brics-bnp-tarique-rahman-delhi-visit-hasina-talks",
     "title": "Navbharat Times Report: BNP Leadership's Potential Delhi Visit and Extradition Discussions",
