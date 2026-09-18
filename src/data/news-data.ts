@@ -478,7 +478,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Free Press Journal",
       "bureau": "Mumbai",
       "language": "English",
-      "originalUrl": "https://www.freepressjournal.in/business/strategic-evaluation-of-bay-of-bengal-maritime-cargo-routes-and-port-access",
+      "originalUrl": "https://www.freepressjournal.in/business/india-restricts-jute-product-imports-from-bangladesh-to-sea-route-only-via-nhava-sheva-port",
       "originalHeadline": "Strategic Evaluation of Bay of Bengal Maritime Cargo Routes and Port Operations",
       "scannedAt": "2026-09-18T19:45:00.000Z"
     },
