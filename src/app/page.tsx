@@ -26,10 +26,61 @@ export default function HomePage() {
     return true;
   });
 
-  const diplomacyReports = filteredArticles.filter((a) => a.category === 'diplomacy');
-  const tradeReports = filteredArticles.filter((a) => a.category === 'trade' || a.category === 'economy');
-  const borderReports = filteredArticles.filter((a) => a.category === 'border');
-  const sportsAndCulture = filteredArticles.filter((a) => a.category === 'sports' || a.category === 'culture');
+  // Track featured IDs in HeroGrid to avoid any duplicates down the home page
+  const leadArticle = SCANNED_NEWS_ITEMS.find((a) => a.isLeadStory) || SCANNED_NEWS_ITEMS[0];
+  const secondaryStories = SCANNED_NEWS_ITEMS.filter((a) => a.id !== leadArticle?.id && a.isTrending).slice(0, 2);
+  const heroUsedIds = new Set<string>();
+  if (leadArticle) heroUsedIds.add(leadArticle.id);
+  secondaryStories.forEach((s) => heroUsedIds.add(s.id));
+
+  const leftColumnStories = SCANNED_NEWS_ITEMS.filter((a) => !heroUsedIds.has(a.id)).slice(0, 3);
+  leftColumnStories.forEach((s) => heroUsedIds.add(s.id));
+
+  const delhiStories = SCANNED_NEWS_ITEMS.filter((a) => !heroUsedIds.has(a.id) && a.source.bureau === 'Delhi').slice(0, 4);
+  delhiStories.forEach((s) => heroUsedIds.add(s.id));
+
+  // Deduplicate category hubs below HeroGrid so no article appears more than once on home page
+  const seenIds = new Set<string>();
+  const isDefaultView = selectedSentiment === 'all' && selectedBureau === 'all' && selectedLanguage === 'all';
+  if (isDefaultView) {
+    heroUsedIds.forEach((id) => seenIds.add(id));
+  }
+
+  const diplomacyReports = filteredArticles.filter((a) => {
+    if (seenIds.has(a.id)) return false;
+    if (a.category === 'diplomacy') {
+      seenIds.add(a.id);
+      return true;
+    }
+    return false;
+  });
+
+  const tradeReports = filteredArticles.filter((a) => {
+    if (seenIds.has(a.id)) return false;
+    if (a.category === 'trade' || a.category === 'economy') {
+      seenIds.add(a.id);
+      return true;
+    }
+    return false;
+  });
+
+  const borderReports = filteredArticles.filter((a) => {
+    if (seenIds.has(a.id)) return false;
+    if (a.category === 'border') {
+      seenIds.add(a.id);
+      return true;
+    }
+    return false;
+  });
+
+  const sportsAndCulture = filteredArticles.filter((a) => {
+    if (seenIds.has(a.id)) return false;
+    if (a.category === 'sports' || a.category === 'culture' || a.category === 'politics') {
+      seenIds.add(a.id);
+      return true;
+    }
+    return false;
+  });
 
   return (
     <div>

@@ -18,9 +18,16 @@ export default function HeroGrid({ articles }: HeroGridProps) {
   const t = TRANSLATIONS[lang];
 
   const leadArticle = articles.find((a) => a.isLeadStory) || articles[0];
-  const secondaryStories = articles.filter((a) => !a.isLeadStory && a.isTrending).slice(0, 2);
-  const leftColumnStories = articles.filter((a) => a.id !== leadArticle?.id && !secondaryStories.some(s => s.id === a.id)).slice(0, 3);
-  const delhiStories = articles.filter((a) => a.source.bureau === 'Delhi');
+  const secondaryStories = articles.filter((a) => a.id !== leadArticle?.id && a.isTrending).slice(0, 2);
+
+  const usedHeroIds = new Set<string>();
+  if (leadArticle) usedHeroIds.add(leadArticle.id);
+  secondaryStories.forEach((s) => usedHeroIds.add(s.id));
+
+  const leftColumnStories = articles.filter((a) => !usedHeroIds.has(a.id)).slice(0, 3);
+  leftColumnStories.forEach((s) => usedHeroIds.add(s.id));
+
+  const delhiStories = articles.filter((a) => !usedHeroIds.has(a.id) && a.source.bureau === 'Delhi').slice(0, 4);
 
   return (
     <section style={{ padding: '1.75rem 0', borderBottom: '1px solid var(--border-primary)' }}>
