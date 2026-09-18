@@ -845,7 +845,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "ABP Ananda (YouTube)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com/@abpanandatv",
+      "originalUrl": "https://www.youtube.com/watch?v=3lE0QeO4v1Q",
       "originalHeadline": "শেখ হাসিনাকে নিয়ে মোদী সরকারের অবস্থান ও ভারত-বাংলাদেশ সম্পর্ক: এবিপি আনন্দের বিশেষ সম্প্রচার",
       "scannedAt": "2026-09-17T10:16:00.000Z"
     },
@@ -1122,7 +1122,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Siliguri Times",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com/@SILIGURITIMES",
+      "originalUrl": "https://www.youtube.com/watch?v=7X-H54GvWQA",
       "originalHeadline": "Two Bangladeshi nationals detained near Indo-Nepal border in Kharibari",
       "scannedAt": "2026-09-16T16:30:00.000Z"
     },
@@ -1263,7 +1263,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News Vanguard",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.youtube.com/@NewsVanguardTripura24X7",
+      "originalUrl": "https://www.youtube.com/watch?v=9V2wN1n1k1o",
       "originalHeadline": "বাংলাদেশে চরম অশান্তি ও উত্তেজনার বাতাবরণ",
       "scannedAt": "2026-09-16T18:00:00.000Z"
     },
