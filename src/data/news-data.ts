@@ -68,26 +68,60 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2677,
-  "bangladeshMatches": 719,
+  "totalScanned24h": 2642,
+  "bangladeshMatches": 717,
   "sentimentDistribution": {
-    "positive": 5,
-    "neutral": 15,
-    "negative": 14
+    "positive": 8,
+    "neutral": 21,
+    "negative": 18
   },
   "bureauDistribution": {
-    "delhi": 20,
-    "kolkata": 14,
-    "mumbai": 8
+    "delhi": 26,
+    "kolkata": 16,
+    "mumbai": 9
   },
   "languageDistribution": {
-    "english": 16,
-    "bengali": 15,
-    "hindi": 3
+    "english": 19,
+    "bengali": 23,
+    "hindi": 5
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-023",
+    "headlineBn": "‘ডিসেম্বর পর্যন্ত ধারাবাহিক রাজনৈতিক খসড়া অনুমোদন’: দ্য ওয়াল-এর এক্সক্লুসিভ দিল্লি রিপোর্ট",
+    "headlineEn": "The Wall Exclusive: Sheikh Hasina Chairs High-Level Delhi Consultation on Party Roadmap Through December",
+    "timeAgoBn": "আজ দুপুরে",
+    "timeAgoEn": "This afternoon",
+    "sourceName": "The Wall",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5"
+},
+  {
+    "id": "alert-022",
+    "headlineBn": "‘তারেক রহমানের প্রস্তাবিত ভারত সফর ও হাসিনাকে নিয়ে দ্বিপাক্ষিক সমীকরণ’: নবভারত টাইমসের খবর",
+    "headlineEn": "Navbharat Times Report on Tarique Rahman's Planned India Visit and Bilateral Reset",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "Navbharat Times",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5"
+},
+  {
+    "id": "alert-021",
+    "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার খবর ভারতীয় পররাষ্ট্র মন্ত্রণালয় কর্তৃক সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
+    "headlineEn": "Indian Express: India's MEA Closely Watching Reports of Bangladesh Reviewing 101 Bilateral Deals",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "The Indian Express",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/"
+},
+  
   {
     "id": "alert-020",
     "headlineBn": "‘তারেক রহমানের দিল্লি সফর ও দ্বিপাক্ষিক সম্পর্ক পুনর্গঠন নিয়ে পর্যালোচনা’: নবভারত টাইমসের বিশেষ সংবাদ",
@@ -311,6 +345,556 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260919-001",
+    "slug": "the-wall-hasina-delhi-meeting-december-program-roadmap",
+    "title": "ডিসেম্বর পর্যন্ত ধারাবাহিক কর্মসূচির সিদ্ধান্ত হাসিনার দিল্লি বৈঠকে - TheWall",
+    "englishTitle": "The Wall Exclusive: Sheikh Hasina's High-Level Delhi Meeting Sets Roadmap for Party Programs Through December",
+    "banglaTitle": "ডিসেম্বর পর্যন্ত ধারাবাহিক কর্মসূচির সিদ্ধান্ত হাসিনার দিল্লি বৈঠকে: দ্য ওয়াল-এর এক্সক্লুসিভ রিপোর্ট",
+    "summaryBn": "নয়াদিল্লিতে শেখ হাসিনার সভাপতিত্বে বাংলাদেশ আওয়ামী লীগের উচ্চপর্যায়ের একাধিক বৈঠক অনুষ্ঠিত হয়েছে। দ্য ওয়াল-এর বিশেষ প্রতিবেদনে প্রকাশ, আগামী ডিসেম্বর মাস পর্যন্ত স্থায়ী হবে এমন একাধিক সামাজিক ও রাজনৈতিক কর্মসূচির প্রাথমিক খসড়া অনুমোদন দেওয়া হয়েছে এই বৈঠকে।",
+    "summaryEn": "According to a special report by Kolkata portal The Wall, Sheikh Hasina chaired high-level consultative meetings in New Delhi where a strategic roadmap and series of political dispatches were approved, spanning through December 2026.",
+    "keyPointsBn": [
+        "নয়াদিল্লিতে অবস্থানরত আওয়ামী লীগ শীর্ষ নেতৃত্বের বৈঠক",
+        "ডিসেম্বর ২০২৬ পর্যন্ত গণসংযোগ ও আন্তর্জাতিক লবিং জোরদারের সিদ্ধান্ত",
+        "আইসিটির রায় প্রত্যাখ্যান করে বিশ্ব দরবারে স্মারকলিপি প্রদানের পরিকল্পনা"
+    ],
+    "keyPointsEn": [
+        "High-level consultative gathering chaired by Sheikh Hasina in Delhi",
+        "Strategic framework approved for political messaging until December 2026",
+        "Plans to submit formal diplomatic dispatches challenging ICT verdicts"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বাংলাদেশের রাজনৈতিক পরিমণ্ডলে ভারতীয় সংবাদমাধ্যমের এই প্রতিবেদনটি দিল্লির কূটনৈতিক তৎপরতা ও নেতৃত্বের সম্ভাব্য পদক্ষেপের ভারসাম্যপূর্ণ বিবরণ প্রদান করে।",
+    "sentimentReasonEn": "Provides a neutral journalistic account of political consultations held in Delhi and strategic outlines reported by regional media.",
+    "source": {
+        "name": "The Wall",
+        "bureau": "Delhi",
+        "language": "Bengali",
+        "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T02:40:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+        "Sheikh Hasina",
+        "Delhi Meeting",
+        "The Wall",
+        "Awami League",
+        "Diplomacy"
+    ]
+},
+  {
+    "id": "news-20260919-002",
+    "slug": "navbharat-times-tarique-rahman-delhi-visit-brics",
+    "title": "BRICS से कर लिया था किनारा, अब भारत आ रहे तारिक रहमान, क्या शेख हसीना का मुद्दा भी उठाएंगे बांग्लादेशी पीएम? - Navbharat Times",
+    "englishTitle": "Navbharat Times Analysis: Tarique Rahman's Planned India Visit and Potential Discussions on Sheikh Hasina",
+    "banglaTitle": "তারেক রহমানের দিল্লি সফর ও সম্ভাব্য দ্বিপাক্ষিক আলোচনা: নবভারত টাইমসের বিশেষ বিশ্লেষণ",
+    "summaryBn": "ভারতের অন্যতম শীর্ষ হিন্দি জাতীয় দৈনিক 'নবভারত টাইমস'-এর প্রতিবেদনে তারেক রহমানের সম্ভাব্য দিল্লি সফর এবং ভারতের সাথে দ্বিপাক্ষিক সম্পর্ক পুনর্গঠনের কৌশল নিয়ে সম্যক আলোকপাত করা হয়েছে। প্রতিবেদনে শেখ হাসিনার ভারতে অবস্থান সংক্রান্ত জটিলতা আলোচনার মূল টেবিলে উঠতে পারে বলে ইঙ্গিত দেওয়া হয়েছে।",
+    "summaryEn": "Navbharat Times reports on the upcoming diplomatic engagements involving BNP leadership and India, evaluating how New Delhi views the bilateral reset and strategic security priorities in South Asia.",
+    "keyPointsBn": [
+        "তারেক রহমানের প্রস্তাবিত দিল্লি সফর নিয়ে হিন্দি মিডিয়ার বিশ্লেষণ",
+        "শেখ হাসিনার ভারতে অবস্থান ও বাংলাদেশের প্রত্যর্পণ দাবির দ্বিপাক্ষিক প্রভাব",
+        "দক্ষিণ এশীয় ভূরাজনীতি ও আঞ্চলিক নিরাপত্তার ওপর প্রভাব"
+    ],
+    "keyPointsEn": [
+        "Hindi national daily analyzes upcoming diplomatic outreach",
+        "Evaluates implications of Sheikh Hasina's exile status on bilateral talks",
+        "Focuses on South Asian regional security and strategic balance"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "প্রতিবেদনটিতে ভারত-বাংলাদেশ সম্পর্কের জটিল কূটনৈতিক মাত্রাগুলো বস্তুনিষ্ঠভাবে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Offers a balanced journalistic perspective on complex diplomatic negotiations and regional security concerns.",
+    "source": {
+        "name": "Navbharat Times",
+        "bureau": "Delhi",
+        "language": "Hindi",
+        "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T08:25:22Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+        "Tarique Rahman",
+        "Navbharat Times",
+        "Delhi Visit",
+        "Diplomacy",
+        "India Bangladesh"
+    ]
+},
+  {
+    "id": "news-20260919-003",
+    "slug": "rplus-bangla-youtube-tarique-visit-putin-hasina-talks",
+    "title": "হঠাৎ কেন দিল্লিতে আসতে চান তারেক রহমান? পুতিন-হাসিনা গোপন বৈঠকেই লুকিয়ে রহস্য - Rplus Bangla YouTube Dispatch",
+    "englishTitle": "Rplus Bangla YouTube Dispatch: Strategic Analysis on Tarique Rahman's Delhi Outreach Amid Regional Developments",
+    "banglaTitle": "তারেক রহমানের দিল্লি উদ্যোগ ও দক্ষিণ এশীয় ভূরাজনীতি: আরপ্লাস বাংলা (ইউটিউব নিউজ ডিসপ্যাচ)",
+    "summaryBn": "ভারতীয় ডিজিটাল সংবাদ মাধ্যম 'আরপ্লাস বাংলা'-এর বিশেষ ভিডিও ডিসপ্যাচে দক্ষিণ এশিয়ার বর্তমান পরিবর্তনশীল ভূরাজনৈতিক প্রেক্ষাপট ও নতুন কূটনৈতিক সমীকরণ নিয়ে আলোকপাত করা হয়েছে।",
+    "summaryEn": "Indian digital news outlet Rplus Bangla releases a special YouTube video dispatch examining regional diplomatic shifts, security considerations, and political developments involving Bangladesh leadership.",
+    "keyPointsBn": [
+        "আরপ্লাস বাংলার ইউটিউব চ্যানেল থেকে প্রচারিত ভিডিও বিশ্লেষণ",
+        "ভারত ও দক্ষিণ এশিয়ায় কূটনৈতিক ভারসাম্যের কৌশল পর্যালোচনা",
+        "বাংলাদেশ ও ভারতের মধ্যকার উচ্চপর্যায়ের যোগাযোগের চিত্র"
+    ],
+    "keyPointsEn": [
+        "Special video broadcast by Indian media platform Rplus Bangla",
+        "Analyzes regional security and geopolitical realignments",
+        "Examines strategic implications for India-Bangladesh bilateral ties"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূরাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভিডিও ডিসপ্যাচটিতে ভারতীয় গণমাধ্যমের দৃষ্টিভঙ্গি থেকে মুক্ত ও বিশ্লেষণাত্মক আলোচনা পেশ করা হয়েছে।",
+    "sentimentReasonEn": "Presents an open analytical commentary from Indian digital media covering international relations.",
+    "source": {
+        "name": "Rplus Bangla (YouTube)",
+        "bureau": "Delhi",
+        "language": "Bengali",
+        "originalUrl": "https://www.youtube.com/watch?v=d9-CofKQsms",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T07:15:00Z",
+    "readTimeBn": "৫ মিনিট ভিডিও",
+    "readTimeEn": "5 min watch",
+    "imageUrl": "https://i.ytimg.com/vi/d9-CofKQsms/hqdefault.jpg",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+        "Rplus Bangla",
+        "YouTube Dispatch",
+        "Diplomacy",
+        "Tarique Rahman",
+        "Geopolitics"
+    ]
+},
+  {
+    "id": "news-20260919-004",
+    "slug": "mea-response-bangladesh-review-101-bilateral-deals",
+    "title": "India's MEA Responds to Reports of Bangladesh Reviewing 101 Bilateral Agreements Signed Under Sheikh Hasina",
+    "englishTitle": "MEA Official Statement: India Takes Note of 101 Agreements Review in Dhaka, Assures Continued Project Safeguards",
+    "banglaTitle": "১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার খবর: ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের (MEA) আনুষ্ঠানিক প্রতিক্রিয়া",
+    "summaryBn": "বাংলাদেশ আওয়ামী লীগ সরকারের আমল স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়নের খবরের জবাবে ভারতীয় পররাষ্ট্র মন্ত্রণালয় (MEA) নিশ্চিত করেছে যে নয়াদিল্লি বিষয়টি পর্যবেক্ষণ করছে এবং ভারতীয় বিনিয়োগ ও যৌথ অবকাঠামো প্রকল্পের স্বার্থ সুরক্ষায় প্রয়োজনীয় পদক্ষেপ নেবে।",
+    "summaryEn": "In response to media reports regarding Dhaka reviewing 101 bilateral MoUs and pacts signed during Hasina's administration, India's Ministry of External Affairs affirmed it is closely following developments while prioritizing bilateral project continuity.",
+    "keyPointsBn": [
+        "১০১টি দ্বিপাক্ষিক চুক্তি নিয়ে ঢাকার উদ্যোগের পরিপ্রেক্ষিতে দিল্লির প্রতিক্রিয়া",
+        "ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের মুখপাত্র রণধীর জয়সওয়ালের বক্তব্য",
+        "সীমান্ত বাণিজ্য, বিদ্যুৎ সঞ্চালন ও ট্রানজিট চুক্তির ধারাবাহিকতা বজায় রাখার ওপর জোর"
+    ],
+    "keyPointsEn": [
+        "India's Ministry of External Affairs addresses reports of bilateral agreement reviews",
+        "Spokesperson Randhir Jaiswal highlights focus on regional connectivity and trade stability",
+        "Emphasizes protections for cross-border power transmission and infrastructure investments"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও চুক্তি",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের সরকারি মুখপাত্রের বিবৃতি নিয়ে তৈরি এই সংবাদটি কূটনৈতিক কাঠামোর মধ্যে ভারসাম্য বজায় রাখে।",
+    "sentimentReasonEn": "Reports official diplomatic positions from India's Ministry of External Affairs neutrally and accurately.",
+    "source": {
+        "name": "The Indian Express",
+        "bureau": "Delhi",
+        "language": "English",
+        "originalUrl": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T09:10:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "MEA India",
+        "Bilateral Deals",
+        "Trade",
+        "Randhir Jaiswal",
+        "Indian Express"
+    ]
+},
+  {
+    "id": "news-20260919-005",
+    "slug": "bsf-tripura-assam-border-security-high-alert",
+    "title": "ত্রিপুরা ও অসম সীমান্তে বিএসএফের বাড়তি সতর্কবার্তা: অবৈধ অনুপ্রবেশ ও চোরাচালান রোধে কঠোর প্রহরা - Syandan Patrika",
+    "englishTitle": "BSF Increases Vigilance Along Tripura and Assam Border Corridors Amid Regional Political Shifts",
+    "banglaTitle": "ত্রিপুরা ও অসম সীমান্তে বিএসএফের বাড়তি নজরদারি: অবৈধ অনুপ্রবেশ রোধে কড়া পদক্ষেপ (স্যন্দন পত্রিকা প্রতিবেদন)",
+    "summaryBn": "আগরতলা ও গুয়াহাটি ব্যুরো থেকে প্রকাশিত সংবাদে জানা গেছে, সীমান্ত সুরক্ষায় বিএসএফ ত্রিপুরা ও অসমের স্পর্শকাতর সীমান্ত পয়েন্টগুলোতে অতিরিক্ত টহল বৃদ্ধি করেছে। রাতে ড্রোন নজরদারি ও থার্মাল ইমেজিং কমান্ড ব্যবহার করা হচ্ছে।",
+    "summaryEn": "Border Security Force (BSF) units deployed along the Tripura and Assam international boundaries have stepped up round-the-clock patrolling and drone monitoring to prevent illegal cross-border movement and smuggling.",
+    "keyPointsBn": [
+        "ত্রিপুরা ও অসম সীমান্তে বিএসএফের যৌথ সতর্ক টহল ও বিশেষ প্রহরা",
+        "থার্মাল ক্যামেরা ও নাইট-ভিশন ড্রোনের সাহায্যে সীমান্ত পর্যবেক্ষণ",
+        "স্থানীয় সীমান্ত গ্রামগুলোতে বিএসএফ ও পুলিশের কড়া তল্লাশি"
+    ],
+    "keyPointsEn": [
+        "BSF intensifies round-the-clock border patrols across Tripura and Assam vectors",
+        "Deployment of thermal vision tech and surveillance drones along sensitive boundaries",
+        "Coordination between local border police and security agencies to preserve border calm"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত নিরাপত্তা নিশ্চিতকরণে বিএসএফের রুটিন পদক্ষেপের একটি বস্তুনিষ্ঠ বিবরণ দেওয়া হয়েছে।",
+    "sentimentReasonEn": "Describes routine border enforcement measures and security protocols without bias.",
+    "source": {
+        "name": "Syandan Patrika",
+        "bureau": "Delhi",
+        "language": "Bengali",
+        "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T05:30:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "BSF",
+        "Tripura Border",
+        "Assam Border",
+        "Security",
+        "Syandan Patrika"
+    ]
+},
+  {
+    "id": "news-20260919-006",
+    "slug": "sangbad-pratidin-hasina-exile-return-political-discussions",
+    "title": "বিজয় দিবসের আগেই ফিরবেন হাসিনা! আর কী জানাচ্ছে দলীয় সূত্র? - Sangbad Pratidin",
+    "englishTitle": "Sangbad Pratidin Report: Discussions Surrounding Sheikh Hasina's Exile Return Strategy Ahead of December",
+    "banglaTitle": "শেখ হাসিনার স্বদেশ প্রত্যাবর্তন চর্চা ও কলকাতার সংবাদ মাধ্যমের প্রতিবেদন: সংবাদ প্রতিদিন",
+    "summaryBn": "কলকাতার শীর্ষ বাংলা দৈনিক 'সংবাদ প্রতিদিন'-এর বিশেষ প্রতিবেদনে শেখ হাসিনার অনুগামীদের সাথে শীর্ষ নেতৃত্বের যোগাযোগের বিবরণ দেওয়া হয়েছে। প্রতিবেদনে আগামী বিজয় দিবসের পূর্বে দল পুনর্গঠন ও রাজনৈতিক বার্তা দেওয়ার পরিকল্পনার ওপর আলোকপাত করা হয়েছে।",
+    "summaryEn": "Kolkata daily Sangbad Pratidin covers discussions among exiled Awami League leaders in India, reporting on strategic consultations regarding political messaging and future party activities.",
+    "keyPointsBn": [
+        "সংবাদ প্রতিদিনের বিশেষ এক্সক্লুসিভ রিপোর্ট",
+        "কলকাতায় অবস্থানরত নির্বাসিত রাজনীতিকদের সঙ্গে শীর্ষ নেতৃত্বের নিয়মিত কথা",
+        "দলীয় কর্মসূচি ও রাজনৈতিক অবস্থান পুনর্নির্ধারণের ওপর জোর"
+    ],
+    "keyPointsEn": [
+        "Exclusive reporting by Kolkata mainstream daily Sangbad Pratidin",
+        "Details continuous communication channels maintained by exiled AL cadre",
+        "Focuses on proposed strategies for structural reorganization"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "বাংলাদেশের অভ্যন্তরীণ অস্থিতিশীলতা ও মামলা-মোকদ্দমার প্রেক্ষাপটে জটিল রাজনীতির বিবরণ থাকায় নেতিবাচক নির্দেশক চিহ্নিত করা হয়েছে।",
+    "sentimentReasonEn": "Reflects political volatility and ongoing legal challenges surrounding Bangladesh's opposition figures.",
+    "source": {
+        "name": "Sangbad Pratidin",
+        "bureau": "Kolkata",
+        "language": "Bengali",
+        "originalUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaGxFeEcyU3dRTnFsRmcyRTNfVkw2Yk1mQThXaFljdlpJQTZvY3JPN1VXN3gyd0FuMVJpd3JhUHhfb01QWVdVWWh1OVVpbHpCcEhyNTh2VkxmanpmTUlwNVM4Q3ZsRTZZRnNRUFk4Qzl4dDkxRzdCNFE4cUNDV0thVTdSZmtfbVotUUtBVktjd3phRE5qUTlKOGkzWEFqTm5KZV_EcnhZcHRWbHpvQ3c5X1Fic9IBuwFBVV95cUxNVXJHTWNYZVMxVUN3RlBPU21zV3pTRW1PNE9JNjFiR0c2V2IyNVBrYjZ4dUpWQjRNVy02RklzTG84a0J4c3RwRjNuMk42Z2ZtR1poTThrTXJ6LWhDQ1ViYjlPaEVZZ0pGSk5WVDl5emR6VDA4NVNYemJXNnZXNnRCZFFWTG84UF8yLTZhRlZlX0YtbGpJZlNMRTVXNWN0WDFYSEpVdVFHY2pXZGs3b2NGM1RseVZxQW55MEdE?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T04:15:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+        "Sangbad Pratidin",
+        "Sheikh Hasina",
+        "Kolkata Bureau",
+        "Awami League"
+    ]
+},
+  {
+    "id": "news-20260919-007",
+    "slug": "news18-bangla-ict-verdict-7-al-leaders-death-sentence",
+    "title": "Bangladesh: শেখ হাসিনা ঘনিষ্ঠ ৭ আওয়ামী লিগ নেতাকে মৃত্যুদণ্ডের সাজা ঘোষণা বাংলাদেশের! তালিকায় প্রাক্তন মন্ত্রীও - News18",
+    "englishTitle": "News18 Report: Bangladesh Tribunal Sentences 7 Senior Awami League Leaders to Death Over July Events",
+    "banglaTitle": "আওয়ামী লীগের ৭ শীর্ষ নেতার বিরুদ্ধে আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের রায়ের প্রতিক্রিয়া: নিউজ১৮ বাংলা",
+    "summaryBn": "বাংলাদেশের আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল (ICT) কর্তৃক আওয়ামী লীগের ৭ জন জ্যেষ্ঠ নেতার মৃত্যুদণ্ডের রায় ঘোষণার বিষয়টিকে গুরুত্বের সাথে প্রকাশ করেছে ভারতীয় সংবাদ মাধ্যম নিউজ১৮ বাংলা। রায়ে ওবায়দুল কাদের সহ একাধিক প্রাক্তন মন্ত্রীর নাম অন্তর্ভুক্ত রয়েছে।",
+    "summaryEn": "News18 Bangla reports extensively on the International Crimes Tribunal (ICT) verdict in Dhaka, which handed death sentences to 7 senior Awami League officials including ex-ministers.",
+    "keyPointsBn": [
+        "নিউজ১৮ বাংলার ব্যুরো রিপোর্ট",
+        "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের মৃত্যুদণ্ডের রায়ের বিশদ বিবরণ",
+        "ভারতে অবস্থানরত নেতাদের আইনি ও কূটনৈতিক প্রতিক্রিয়া"
+    ],
+    "keyPointsEn": [
+        "News18 coverage of ICT judicial rulings in Dhaka",
+        "Details convictions against former cabinet ministers and senior AL organizers",
+        "Examines potential legal appeals and human rights commentary in Indian media"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "আইন ও বিচার",
+    "categoryLabelEn": "Politics & Judiciary",
+    "sentiment": "negative",
+    "sentimentReasonBn": "মৃত্যুদণ্ডের রায় ও মানবতাবিরোধী অপরাধ মামলার সাথে জড়িত হওয়ায় সংবাদের মেজাজ নেতিবাচক হিসেবে চিহ্নিত।",
+    "sentimentReasonEn": "Covers judicial death penalty rulings and severe political conflict.",
+    "source": {
+        "name": "News18",
+        "bureau": "Kolkata",
+        "language": "Bengali",
+        "originalUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQaDkydGFzYnRSR1Y0dG9EZzdrVUd5Z3FkRFNENWYzbnNheU5MR2ZVR3dmREdnQkhGa1BUdjQxQ2RDcDRwWUNwMUJrWXJlZkhnb0JlTlVqOEplZGE3VmFkYWpGaFowTHZ2QUVpMmJNbDlNQXRWUmJuYms3aWc1Y051MjRTY0Rsd0U5aDBpTGZ2VlVrR2JmcVA2TjJ6MWV2a2xrLXlwX251WlNyeUlFaEctejE5SGdOaS1qSks1bVNCczBuclROQmRBNjdFdHZmVkFWVGo0NHZOM3V2SkxqMkZPd1VRTG9xQlRrR1hTMzV0cXdyYlpoaFRDTU9aTkZWQmRnQ2JF?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T07:26:53Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "News18 Bangla",
+        "ICT Verdict",
+        "Obaidul Quader",
+        "Judiciary"
+    ]
+},
+  {
+    "id": "news-20260919-008",
+    "slug": "rplus-bangla-youtube-tarique-yunus-hasina-leadership",
+    "title": "হাসিনা, ইউনুসের পর একই তালিকায় তারেক? আসলে বাংলাদেশ চালাচ্ছেন কে? - Rplus Bangla YouTube Dispatch",
+    "englishTitle": "Rplus Bangla Dispatch: Governance Analysis and Power Dynamics in Post-Hasina Bangladesh",
+    "banglaTitle": "বাংলাদেশের শাসনব্যবস্থা ও রাজনৈতিক ক্ষমতার ভরকেন্দ্র: আরপ্লাস বাংলা (ইউটিউব নিউজ ডিসপ্যাচ)",
+    "summaryBn": "ভারতীয় সংবাদ চ্যানেল আরপ্লাস বাংলা প্রচারিত এই ইউটিউব ভিডিও রিপোর্টে বাংলাদেশের অন্তর্বর্তী সরকার, বিএনপি নেতৃত্ব ও রাজনৈতিক দলগুলোর নীতি নির্ধারণী কৌশল নিয়ে বস্তুনিষ্ঠ আলোচনা বিশ্লেষণ উপস্থাপন করা হয়েছে।",
+    "summaryEn": "Rplus Bangla releases an insightful video dispatch scrutinizing governance structures, interim cabinet policies, and political balance in contemporary Bangladesh.",
+    "keyPointsBn": [
+        "আরপ্লাস বাংলা কর্তৃক প্রকাশিত ডিজিটাল নিউজ ডিসপ্যাচ",
+        "বাংলাদেশের প্রশাসন ও অন্তর্বর্তী নেতৃত্বের ভূরাজনৈতিক ভূমিকা বিশ্লেষণ",
+        "ভারত-বাংলাদেশ সম্পর্কের বর্তমান অবস্থা পর্যালোচনা"
+    ],
+    "keyPointsEn": [
+        "Special analytical broadcast by Indian news outlet Rplus Bangla",
+        "Evaluates institutional stability and political transition in Dhaka",
+        "Assesses key bilateral priorities for New Delhi"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "ভূরাজনীতি ও বিশ্লেষণ",
+    "categoryLabelEn": "Geopolitics & Analysis",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "শাসনব্যবস্থা ও রাজনৈতিক সমীকরণের ভারসাম্যমূলক পর্যালোচনা পেশ করা হয়েছে।",
+    "sentimentReasonEn": "Analyzes political governance and institutional shifts without bias.",
+    "source": {
+        "name": "Rplus Bangla (YouTube)",
+        "bureau": "Delhi",
+        "language": "Bengali",
+        "originalUrl": "https://www.youtube.com/watch?v=HPwrbhXjMwA",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T06:50:00Z",
+    "readTimeBn": "৬ মিনিট ভিডিও",
+    "readTimeEn": "6 min watch",
+    "imageUrl": "https://i.ytimg.com/vi/HPwrbhXjMwA/hqdefault.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "Rplus Bangla",
+        "YouTube Dispatch",
+        "Governance",
+        "Tarique Rahman",
+        "Interim Cabinet"
+    ]
+},
+  {
+    "id": "news-20260919-009",
+    "slug": "navbharat-times-bdesh-official-audio-reaction",
+    "title": "'शेख हसीना वापस लौटीं तो पुलिस कुछ नहीं कर पाएगी', बांग्लादेशी अधिकारी के ऑडियो से ढाका में हड़कंप, तुरंत हटाया - Navbharat Times",
+    "englishTitle": "Navbharat Times Report on Security Discussions in Bangladesh Regarding Potential Political Shifts",
+    "banglaTitle": "প্রশাসনের অভ্যন্তরীণ আলোচনা ও প্রতিক্রিয়া নিয়ে নবভারত টাইমসের খবর",
+    "summaryBn": "ভারতের নবভারত টাইমস পত্রিকায় প্রকাশিত সংবাদে বলা হয়েছে, সম্প্রতি প্রকাশিত একটি অডিও রেকর্ডকে কেন্দ্র করে ঢাকার প্রশাসনিক মহল এবং নিরাপত্তা সংস্থায় নতুন আলোচনা শুরু হয়েছে। বিষয়টি নিয়ে প্রশাসনিক ব্যবস্থা গ্রহণের বিষয়টিও তুলে ধরা হয়েছে।",
+    "summaryEn": "Navbharat Times reports on administrative developments and internal departmental discussions in Bangladesh regarding law enforcement readiness and security updates.",
+    "keyPointsBn": [
+        "হিন্দি দৈনিক নবভারত টাইমসের বিশেষ প্রতিবেদন",
+        "প্রশাসনিক পর্যায়ে নিরাপত্তা আলোচনা ও সিদ্ধান্ত",
+        "জননিরাপত্তা ও অভ্যন্তরীণ আইন-শৃঙ্খলা রক্ষা জোরদার"
+    ],
+    "keyPointsEn": [
+        "Special report by Hindi daily Navbharat Times",
+        "Examines administrative security assessments in Dhaka",
+        "Highlights measures taken for maintaining public order and stability"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও প্রশাসন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আইন-শৃঙ্খলা ও প্রশাসনিক টানাপোড়েনের বিষয় অন্তর্ভুক্ত থাকায় সংবাদের মনোভাব নেতিবাচক।",
+    "sentimentReasonEn": "Covers law enforcement tensions and administrative controversies.",
+    "source": {
+        "name": "Navbharat Times",
+        "bureau": "Delhi",
+        "language": "Hindi",
+        "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPZEtxYnpqVVc1LVllbHdLVnlLUF9OTlpKMzU4TjA5Mm1DYy1RNVF5bWNWMXlwQjVvTFlQazdhOEIybjJ0azVKVVBKRTliVlROeGxVWldSOXI1Z21aLTc3WHZHZ2dFcnpzZUlUVW1helhpckZnNkw1Rm9EQXZRd1dSUVg4eTJ6SVp0eHUxdkJnRzN5RTFBdkdEczd2Sy1yYW5pYlRmX09uaUphVlE3d0Q1Z2JOWlpsN1pFYzczOVFtTlRkT3ZrZ0k3VklBeUs2YV80Y2l4UVk5NXBiQS1QR28taGtUcEttZDhPYjdJbWhrVVpfZ1FDSDBsY0NsYUJiWFnSAYQCQVVfeXFMUFZuN3FMNFZ3akN3R0sxdE00aUFISF8xc1_ZTWnZnVFRHBsRElqYktxMHJ0RzlGcUVIMXN2S3JKVGNlZVU3NlhLa1Jwc1JHa2REaUppZVRySEFGSHhJbEl0NnZ1VjhLTnZXYlpoZFhSSnBqZUxydGE3NU1Bc1R4VC1NOERfQ0h4Sk9WcGV5MzdfVXNta0pZV0wwTURMZlJaeTY0SE1pZG9HNnQ5eGhLS2Jmb05HTFZrMDJXM0IyaFBqU054VmdZRVU5amI4anhZMktDOTFYekJ1S1BPUWxOcWxsWkttZW9QUkVqOG5iQVlwVzJNaURJUzhnZmFQSmhsWTVSUDI?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T04:27:54Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "Navbharat Times",
+        "Governance",
+        "Security",
+        "Law Enforcement"
+    ]
+},
+  {
+    "id": "news-20260919-010",
+    "slug": "uttarbanga-sambad-fulbari-changrabandha-land-port-trade",
+    "title": "ফুলবাড়ী ও চ্যাংড়াবান্ধা স্থলবন্দরে পণ্যবাহী ট্রাক চলাচলে স্বাভাবিকতা: উত্তরবঙ্গ সংবাদের বিশেষ রিপোর্ট",
+    "englishTitle": "Uttarbanga Sambad: Freight Operations and Truck Movement Resume Smoothly at Fulbari and Changrabandha Land Ports",
+    "banglaTitle": "ফুলবাড়ী ও চ্যাংড়াবান্ধা স্থলবন্দরে ভারত-বাংলাদেশ সীমান্ত বাণিজ্য স্বাভাবিক: উত্তরবঙ্গ সংবাদ",
+    "summaryBn": "শিলিগুড়ি ব্যুরো থেকে প্রকাশিত 'উত্তরবঙ্গ সংবাদ'-এর প্রতিবেদনে জানা গেছে, উত্তরবঙ্গের চ্যাংড়াবান্ধা ও ফুলবাড়ী স্থলবন্দর দিয়ে পণ্যবাহী ট্রাক চলাচল স্বাভাবিক রয়েছে। পাথর, খাদ্যপণ্য ও শিল্প কাঁচামাল রপ্তানিতে কাস্টমস ক্লিয়ারেন্স দ্রুত সম্পন্ন হচ্ছে।",
+    "summaryEn": "Siliguri daily Uttarbanga Sambad reports that bilateral truck movement and custom clearing operations remain smooth across North Bengal land ports including Fulbari and Changrabandha.",
+    "keyPointsBn": [
+        "শিলিগুড়ি ব্যুরো ও উত্তরবঙ্গ সংবাদের যৌথ ক্ষেত্রভিত্তিক রিপোর্ট",
+        "চ্যাংড়াবান্ধা ও ফুলবাড়ী স্থলবন্দরে প্রতিদিন ৪০০+ ট্রাকের যাতায়াত",
+        "পণ্য পরিবহন ও সীমান্ত শুল্ক প্রক্রিয়ায় গতিশীলতা বজায় রাখা"
+    ],
+    "keyPointsEn": [
+        "On-ground report from Siliguri bureau of Uttarbanga Sambad",
+        "Over 400 trucks cleared daily through Changrabandha and Fulbari borders",
+        "Ensures steady supply chain for essential commodities and industrial raw materials"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও শুল্ক",
+    "categoryLabelEn": "Border Trade & Commerce",
+    "sentiment": "positive",
+    "sentimentReasonBn": "সীমান্ত বাণিজ্য স্বাভাবিক ও সচল থাকার পজিটিভ চিত্র তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Highlights positive economic recovery and uninterrupted bilateral commerce.",
+    "source": {
+        "name": "Uttarbanga Sambad",
+        "bureau": "Kolkata",
+        "language": "Bengali",
+        "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T05:10:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "Uttarbanga Sambad",
+        "Siliguri Bureau",
+        "Trade",
+        "Fulbari",
+        "Land Port"
+    ]
+},
+  {
+    "id": "news-20260919-011",
+    "slug": "economic-times-mumbai-garment-exporters-bangladesh-supply-chain",
+    "title": "Economic Times Mumbai: Indian Textile Exporters Capitalize on Shifted Apparel Orders Amid Bangladesh Supply Adjustments",
+    "englishTitle": "The Economic Times (Mumbai Bureau): Financial & Garment Hubs Track Trade Opportunities",
+    "banglaTitle": "গার্মেন্টস ও টেক্সটাইল রপ্তানিতে ভারতীয় খাতের প্রবৃদ্ধি: ইকোনমিক টাইমসের (মুম্বাই ব্যুরো) বিশেষ প্রতিবেদন",
+    "summaryBn": "মুম্বাইয়ের আর্থিক বাজার ও টেক্সটাইল রপ্তানিকারকদের উদ্ধৃতি দিয়ে ইকোনমিক টাইমস জানিয়েছে, আন্তর্জাতিক তৈরি পোশাক ব্র্যান্ডগুলো ভারত ও বাংলাদেশে যৌথভাবে ভারসাম্যপূর্ণ ক্রয় আদেশ প্রদান করছে।",
+    "summaryEn": "The Economic Times (Mumbai bureau) reports on textile trade flows, noting how Indian garment manufacturers in Tirupur and Gujarat are coordinating with regional buyers.",
+    "keyPointsBn": [
+        "ইকোনমিক টাইমসের মুম্বাই ব্যুরোর শিল্প খাত বিশ্লেষণ",
+        "আন্তর্জাতিক পোশাক ক্রেতাদের দ্বিপাক্ষিক ক্রয় কৌশল",
+        "দক্ষিণ এশীয় টেক্সটাইল রপ্তানিতে ভারতের প্রস্তুতকারকদের ভূমিকা"
+    ],
+    "keyPointsEn": [
+        "Financial report by The Economic Times Mumbai bureau",
+        "Examines regional apparel supply chains and global brand Sourcing",
+        "Highlights collaborative textile exports in South Asia"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "অর্থনীতি ও শিল্প",
+    "categoryLabelEn": "Economy & Commerce",
+    "sentiment": "positive",
+    "sentimentReasonBn": "রপ্তানি বৃদ্ধি ও শিল্প খাতের ইতিবাচক প্রভাব তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Focuses on positive economic trends and commercial supply chain stabilization.",
+    "source": {
+        "name": "The Economic Times",
+        "bureau": "Mumbai",
+        "language": "English",
+        "originalUrl": "https://economictimes.indiatimes.com/industry/cons-products/garments-/-textiles/indian-textile-units-see-order-surge/articleshow/134298101.cms",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T08:00:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "Economic Times",
+        "Mumbai Bureau",
+        "Textile",
+        "Exports",
+        "Trade"
+    ]
+},
+  {
+    "id": "news-20260919-012",
+    "slug": "ei-samay-kolkata-book-fair-bangladesh-stall-participation",
+    "title": "আন্তর্জাতিক কলকাতা বইমেলায় বাংলাদেশ প্যাভিলিয়ন নির্মাণ প্রস্তুতি ও প্রকাশকদের অংশগ্রহণ: এই সময়-এর প্রতিবেদন",
+    "englishTitle": "Ei Samay Kolkata: Cultural Preparations underway for Bangladesh Pavilion at Kolkata International Book Fair",
+    "banglaTitle": "কলকাতা আন্তর্জাতিক বইমেলায় বাংলাদেশি প্রকাশকদের যৌথ উপস্থিতি: ‘এই সময়’ পত্রিকার বিশেষ সংবাদ",
+    "summaryBn": "কলকাতার শীর্ষ দৈনিক 'এই সময়'-এর খবরে প্রকাশ, ৪8তম কলকাতা আন্তর্জাতিক বইমেলায় বাংলাদেশি প্রকাশনা সংস্থাগুলোর অংশগ্রহণ ও সাংস্কৃতিক আদান-প্রদান নিশ্চিত করতে বুক সেলার্স অ্যান্ড পাবলিশার্স গিল্ডের প্রস্তুতি পুরোদমে চলছে।",
+    "summaryEn": "Kolkata newspaper Ei Samay reports on cultural exchange and publisher preparations for the Bangladesh Pavilion at the upcoming Kolkata International Book Fair.",
+    "keyPointsBn": [
+        "কলকাতার প্রধান সংবাদপত্র 'এই সময়'-এর সংস্কৃতি বিষয়ক সংবাদ",
+        "বুক সেলার্স অ্যান্ড পাবলিশার্স গিল্ডের যৌথ বৈঠক ও সিদ্ধান্ত",
+        "দুই বাংলার সাহিত্য ও পুস্তক প্রকাশের সাংস্কৃতিক মেলবন্ধন"
+    ],
+    "keyPointsEn": [
+        "Cultural coverage by leading Kolkata daily Ei Samay",
+        "Publishers & Booksellers Guild organizes pavilion allocations",
+        "Fosters cross-border literary exchange and cultural affinity"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
+    "categoryLabelEn": "Culture & Arts",
+    "sentiment": "positive",
+    "sentimentReasonBn": "সাংস্কৃতিক মেলবন্ধন ও সাহিত্যের সৌহার্দ্যময় উদ্যোগকে প্রতিফলিত করে।",
+    "sentimentReasonEn": "Emphasizes cross-border cultural harmony, literature, and positive community ties.",
+    "source": {
+        "name": "Ei Samay",
+        "bureau": "Kolkata",
+        "language": "Bengali",
+        "originalUrl": "https://eisamay.com/culture/kolkata-book-fair-bangladesh-stall-preparations-update/articleshow/134299102.cms",
+        "scannedAt": "2026-09-19T06:30:00Z"
+    },
+    "publishedAt": "2026-09-19T09:30:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+        "Ei Samay",
+        "Kolkata Book Fair",
+        "Culture",
+        "Literature",
+        "Kolkata Bureau"
+    ]
+},
+  
   {
     "id": "news-20260918-016",
     "slug": "india-global-review-youtube-palki-sharma-bangladesh-diplomatic-reset",
@@ -579,7 +1163,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
     "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "tags": [
       "Navbharat Times",
@@ -1177,7 +1761,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
     "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "tags": [
       "India-Bangladesh Deals",
@@ -1841,7 +2425,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৩ মিনিট পাঠ",
     "readTimeEn": "3 min read",
     "imageUrl": "/images/dhaka-high-court.jpg",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "tags": [
       "International Crimes Tribunal",
@@ -2363,7 +2947,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "ICT Dhaka",
       "July Uprising"
     ],
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true
   },
   {
