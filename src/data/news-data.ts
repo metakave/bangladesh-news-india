@@ -68,26 +68,48 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2985,
-  "bangladeshMatches": 818,
+  "totalScanned24h": 3083,
+  "bangladeshMatches": 841,
   "sentimentDistribution": {
-    "positive": 13,
-    "neutral": 28,
-    "negative": 26
+    "positive": 15,
+    "neutral": 34,
+    "negative": 30
   },
   "bureauDistribution": {
-    "delhi": 40,
-    "kolkata": 19,
+    "delhi": 50,
+    "kolkata": 21,
     "mumbai": 10
   },
   "languageDistribution": {
-    "english": 21,
+    "english": 33,
     "bengali": 27,
     "hindi": 18
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-030",
+    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতের কড়া বার্তা: নিজেদের স্বার্থ রক্ষায় যেকোনো পদক্ষেপ নেবে দিল্লি’: টাইমস অব ইন্ডিয়া",
+    "headlineEn": "The Times of India: 'Will Take All Necessary Actions' - India Issues Stern Warning Amid Bangladesh Reviewing 101 Hasina-Era Pacts",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "The Times of India",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaU9GbnZVdWRLb0Q5d3ZGaC1BR216dU15Nm9ITVh2MjNxV25JN1pINUphclBFbUVIOWp2cEpZMEJFLXJZUjBQcV9nYmh3dkFHb2xHbElLeTRaeFZrNmpGZGF3VmRBX0VGeTdBbGNkbDlaYjBBaWJMaXJaVFJXQ0E1NmhaR3BNaC1NM25vREtUOXdnTUZONUt6ZmxPMTA3Ny13RzdWeGRSWGpMSGR3RW4tYUpKVE94SHB4UHljcDdldk9ia3RkWFpKNWs2ZG0tZlZiQmQtYU5hdUxhRGt3OUlhcGpEOVhLWUVFU1NaUms1ZUZUVThPZ3pqUTcxNUpMci1icUFkSlJtT3HSAY4CQVVfeXFMTklpaHo4T1U1T2lSZFdoUjVDM1FkZGNORFI1UHQ4SEdGOE9WYkQ5Mllya0pDUE9leWw3NHlYWkxvcjFPekl6eTZOVEJiNy1XQWczMDg2SEdqbXBoLUJaZHRHRWlhdThkTDBBdzVleDhKVXVmeWY2Yjd3eWtSQVoyYmhRX3RqWW5PYXVvM0xUNm1XQ0ZRaWVJcWx1dXhsZU9nUFlRUDBhMWVfWk1IcEJsYU14d3JqSjd1dW50Z25waElONG1DN21wTnYtMXV4RXp5Z1BzYVhBdkFQLWV5SkMxS19BYnk4WGJlbWpYUUVVY0tTRlJDNGZydmhKNHJ0SVMzQjNLeXRGeVBvQWFEbVJR?oc=5"
+  },
+  {
+    "id": "alert-029",
+    "headlineBn": "‘হাসিনাকে ভারতে আশ্রয় দেওয়া সত্ত্বেও নভেম্বর বা ডিসেম্বরে তারেক রহমানের দিল্লি সফরের জোরালো সম্ভাবনা’: নিউজ১৮",
+    "headlineEn": "News18: Bangladesh Leadership Explores Diplomatic Reset with Delhi Visit in Late 2026 Despite Hasina Exile Factor",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "News18",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMEdkMzF2S1B3SHdsWUdVemxJWWZ1MTVQZkFaYzM4dUN3V0FIb3VQRENLV2VpWElBMnh1WWE0R2xRTFl5ZTIyRUpBc1Q0RDYweDVoT21FWWdIallUQW96bDlBN2plY3FiMnFOZi10djRvOU5fZVJMRE9Idi11RnN0RzF4UnBwSG11bm9HRlUwX1hueVpRaE4yMDNNMlVNdmliWkFHU01fQnVYSk5oVXZWTE1mZzRWNzdXT1FINjlPWE5OMWt0cVVyTWw2a3XSAdIBQVVfeXFMTnh4U2FOV0lEY2VEekdtM2Ixd1VoN3R6VVFVam9US09XckV0MEp4cFdZeWVQa3VlOXYxQUtHV3U1TVh1aG00dTN0RkR4bE1ZdGpHSE53Q3AzaUZ2M092U1pfRDF6TmVuaDhwQUJPMkxCRkRtd0FpZWVHaUxwWHo0QWJMNGFHXzNvSGJ4bUt3RFVsc0E3RW9lcEdZTHloNEZCQTJwbktYNlZ0eVNkZ1U5dnRXT2RhTkh5eTRLekxWREhEN0Z3d04xUWMyYzNmbzd0T2JR?oc=5"
+  },
   {
     "id": "alert-028",
     "headlineBn": "‘ভারত-বাংলাদেশ দ্বিপাক্ষিক চুক্তি বাতিল হবে না, উভয় দেশের স্বার্থ রক্ষা ও কার্যকারিতাই মূল লক্ষ্য’: দৈনিক জাগরণ",
@@ -401,6 +423,539 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260920-025",
+    "slug": "times-of-india-india-warns-bangladesh-over-reviewing-101-hasina-era-pacts",
+    "title": "'Will Take All Necessary Actions': India Issues Stern Warning Amid Reports of Bangladesh Reviewing 101 Hasina-Era Pacts",
+    "englishTitle": "'Will Take All Necessary Actions': India Issues Stern Warning Amid Reports of Bangladesh Reviewing 101 Hasina-Era Pacts",
+    "banglaTitle": "হাসিনা আমলে স্বাক্ষরিত চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতের কড়া বার্তা: নিজেদের স্বার্থ রক্ষায় যেকোনো পদক্ষেপ নেবে দিল্লি",
+    "summaryBn": "টাইমস অব ইন্ডিয়ার শীর্ষ প্রতিবেদনে প্রকাশ, শেখ হাসিনার ১৫ বছরের শাসনামলে ভারতের সঙ্গে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি ও সমঝোতা স্মারক পর্যালোচনার উদ্যোগ নিয়েছে ঢাকার অন্তর্বর্তী সরকার। এর প্রেক্ষিতে ভারতের পররাষ্ট্র মন্ত্রণালয় (MEA) সতর্ক বার্তা দিয়ে জানিয়েছে—দিল্লি এ ধরনের কোনো আনুষ্ঠানিক বিজ্ঞপ্তি এখনও পায়নি, তবে ভারতের জাতীয় ও কৌশলগত স্বার্থ সুরক্ষায় প্রয়োজনীয় সব পদক্ষেপ গ্রহণ করা হবে।",
+    "summaryEn": "The Times of India reports that following announcements in Dhaka regarding a comprehensive review of 101 bilateral pacts signed during Sheikh Hasina's 15-year administration, New Delhi's Ministry of External Affairs has issued a firm diplomatic caution. Spokesperson Randhir Jaiswal stated India has received no formal communication, underscoring that India will take all necessary measures to protect its core strategic and commercial interests.",
+    "keyPointsBn": [
+      "হাসিনা সরকারের আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার সিদ্ধান্তে নয়াদিল্লির কড়া প্রতিক্রিয়া",
+      "ভারতের পররাষ্ট্র মন্ত্রণালয় জানিয়েছে ঢাকার পক্ষ থেকে চুক্তি পুনর্মূল্যায়ন নিয়ে এখনও কোনো আনুষ্ঠানিক চিঠি আসেনি",
+      "বিদ্যুৎ সরবরাহ, রেল ট্রানজিট ও সীমান্ত বাণিজ্য পরিকাঠামো সুরক্ষায় প্রস্তুত ভারত"
+    ],
+    "keyPointsEn": [
+      "New Delhi issues stern response as Dhaka forms committee to scrutinize 101 bilateral treaties signed under Hasina",
+      "MEA affirms no official communication received from Bangladesh regarding cancellation or modification of accords",
+      "India underlines resolve to safeguard cross-border power transmission, transit corridors, and port access rights"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক চুক্তির পর্যালোচনা ও ভারতের দৃঢ় কূটনৈতিক প্রতিক্রিয়ার উভয় পক্ষের অবস্থান বস্তুনিষ্ঠভাবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Balanced diplomatic reportage capturing both Dhaka's administrative review process and New Delhi's firm sovereign safeguards.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaU9GbnZVdWRLb0Q5d3ZGaC1BR216dU15Nm9ITVh2MjNxV25JN1pINUphclBFbUVIOWp2cEpZMEJFLXJZUjBQcV9nYmh3dkFHb2xHbElLeTRaeFZrNmpGZGF3VmRBX0VGeTdBbGNkbDlaYjBBaWJMaXJaVFJXQ0E1NmhaR3BNaC1NM25vREtUOXdnTUZONUt6ZmxPMTA3Ny13RzdWeGRSWGpMSGR3RW4tYUpKVE94SHB4UHljcDdldk9ia3RkWFpKNWs2ZG0tZlZiQmQtYU5hdUxhRGt3OUlhcGpEOVhLWUVFU1NaUms1ZUZUVThPZ3pqUTcxNUpMci1icUFkSlJtT3HSAY4CQVVfeXFMTklpaHo4T1U1T2lSZFdoUjVDM1FkZGNORFI1UHQ4SEdGOE9WYkQ5Mllya0pDUE9leWw3NHlYWkxvcjFPekl6eTZOVEJiNy1XQWczMDg2SEdqbXBoLUJaZHRHRWlhdThkTDBBdzVleDhKVXVmeWY2Yjd3eWtSQVoyYmhRX3RqWW5PYXVvM0xUNm1XQ0ZRaWVJcWx1dXhsZU9nUFlRUDBhMWVfWk1IcEJsYU14d3JqSjd1dW50Z25waElONG1DN21wTnYtMXV4RXp5Z1BzYVhBdkFQLWV5SkMxS19BYnk4WGJlbWpYUUVVY0tTRlJDNGZydmhKNHJ0SVMzQjNLeXRGeVBvQWFEbVJR?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-18T12:51:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "The Times of India",
+      "Sheikh Hasina",
+      "Bilateral Pacts",
+      "MEA India",
+      "Diplomacy",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-026",
+    "slug": "news18-bangladesh-leadership-explores-diplomatic-reset-with-delhi-visit-late-2026",
+    "title": "Bangladesh Leadership Explores Diplomatic Reset with Delhi Visit in Late 2026 Despite Hasina Exile Factor",
+    "englishTitle": "Bangladesh Leadership Explores Diplomatic Reset with Delhi Visit in Late 2026 Despite Hasina Exile Factor",
+    "banglaTitle": "হাসিনাকে ভারতে আশ্রয় দেওয়া সত্ত্বেও নভেম্বর বা ডিসেম্বরে তারেক রহমানের দিল্লি সফরের জোরালো সম্ভাবনা: নিউজ১৮",
+    "summaryBn": "নিউজ১৮-এর এক্সক্লুসিভ কূটনৈতিক রিপোর্টে জানানো হয়েছে, শেখ হাসিনার ভারতে নির্বাসন নিয়ে জনপরিসরে টানাপোড়েন থাকলেও বিএনপি নেতৃত্ব ও অন্তর্বর্তীকালীন সরকার নয়াদিল্লির সাথে সম্পর্ক স্বাভাবিকীকরণে বাস্তবমুখী পদক্ষেপ নিচ্ছে। শীর্ষ সূত্রের বরাত দিয়ে বলা হয়েছে, চলতি বছরের নভেম্বর বা ডিসেম্বরের প্রথমার্ধে শীর্ষ পর্যায়ের একটি প্রতিনিধিদলের দিল্লি সফরের রূপরেখা প্রস্তুত হচ্ছে।",
+    "summaryEn": "An exclusive dispatch by News18 reveals that despite visible political friction regarding former Prime Minister Sheikh Hasina's continued residence in India, Bangladesh's political leadership is actively exploring an official visit to New Delhi in late November or early December 2026 to recalibrate mutual economic, transit, and security engagements.",
+    "keyPointsBn": [
+      "শেখ হাসিনার প্রত্যর্পণ দাবি সত্ত্বেও নয়াদিল্লির সাথে উচ্চপর্যায়ের আনুষ্ঠানিক আলোচনার প্রস্তুতি",
+      "বাণিজ্য, জ্বালানি ও সীমান্ত স্থিতিশীলতা বজায় রাখতে বিএনপির শীর্ষ নেতৃত্বের কূটনৈতিক বাস্তববাদ",
+      "দক্ষিণ এশিয়ার ভূ-রাজনীতিতে ভারতের ভূমিকা বিবেচনায় দ্বিপাক্ষিক অচলাবস্থা কাটানোর প্রয়াস"
+    ],
+    "keyPointsEn": [
+      "Diplomatic channels coordinate potential late-2026 New Delhi consultations for senior Bangladeshi leadership",
+      "Pragmatic recognition of unavoidable economic and energy dependencies supersedes public rhetoric",
+      "Both capitals work behind the scenes to compartmentalize Hasina's asylum from core bilateral cooperation"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "রাজনৈতিক মতপার্থক্য সত্ত্বেও শীর্ষ পর্যায়ের কূটনৈতিক সফর ও সম্পর্ক স্বাভাবিকীকরণের উদ্যোগে ইতিবাচক বার্তা রয়েছে।",
+    "sentimentReasonEn": "Reflects constructive forward-looking engagement and pragmatic intentions to bridge bilateral gaps.",
+    "source": {
+      "name": "News18",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMEdkMzF2S1B3SHdsWUdVemxJWWZ1MTVQZkFaYzM4dUN3V0FIb3VQRENLV2VpWElBMnh1WWE0R2xRTFl5ZTIyRUpBc1Q0RDYweDVoT21FWWdIallUQW96bDlBN2plY3FiMnFOZi10djRvOU5fZVJMRE9Idi11RnN0RzF4UnBwSG11bm9HRlUwX1hueVpRaE4yMDNNMlVNdmliWkFHU01fQnVYSk5oVXZWTE1mZzRWNzdXT1FINjlPWE5OMWt0cVVyTWw2a3XSAdIBQVVfeXFMTnh4U2FOV0lEY2VEekdtM2Ixd1VoN3R6VVFVam9US09XckV0MEp4cFdZeWVQa3VlOXYxQUtHV3U1TVh1aG00dTN0RkR4bE1ZdGpHSE53Q3AzaUZ2M092U1pfRDF6TmVuaDhwQUJPMkxCRkRtd0FpZWVHaUxwWHo0QWJMNGFHXzNvSGJ4bUt3RFVsc0E3RW9lcEdZTHloNEZCQTJwbktYNlZ0eVNkZ1U5dnRXT2RhTkh5eTRLekxWREhEN0Z3d04xUWMyYzNmbzd0T2JR?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-18T07:16:04Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "tags": [
+      "News18",
+      "Tarique Rahman",
+      "Sheikh Hasina",
+      "Delhi Visit",
+      "Diplomatic Reset",
+      "Bilateral Relations"
+    ]
+  },
+  {
+    "id": "news-20260920-027",
+    "slug": "the-hindu-sheikh-hasina-completes-one-year-exile-in-india-election-plans",
+    "title": "Sheikh Hasina Completes A Year In Exile In India As Bangladesh Prepares For General Elections",
+    "englishTitle": "Sheikh Hasina Completes A Year In Exile In India As Bangladesh Prepares For General Elections",
+    "banglaTitle": "ভারতে শেখ হাসিনার রাজনৈতিক নির্বাসনের এক বছর পূর্ণ: বাংলাদেশে সাধারণ নির্বাচনের প্রস্তুতি ও জটিলতা নিয়ে দ্য হিন্দুর প্রতিবেদন",
+    "summaryBn": "ভারতের মর্যাদাপূর্ণ ইংরেজি দৈনিক 'দ্য হিন্দু'-র বিশেষ প্রতিবেদনে তুলে ধরা হয়েছে ভারতে শেখ হাসিনার এক বছরেরও বেশি সময় ধরে অবস্থান এবং বাংলাদেশের আগামী জাতীয় নির্বাচনের জটিল সমীকরণ। প্রতিবেদনে উল্লেখ করা হয়, ঢাকায় অন্তর্বর্তী সরকার যখন নির্বাচন আয়োজনের পথ খুঁজছে, তখন সাবেক প্রধানমন্ত্রীর ভারতে অবস্থান এবং আওয়ামী লীগের তৃণমূল পুনর্গঠন রাজনৈতিক অঙ্গনে প্রধান আলোচ্য বিষয় হয়ে উঠেছে।",
+    "summaryEn": "The Hindu publishes an extensive review analyzing former Prime Minister Sheikh Hasina's extended political exile in New Delhi, the legal deadlock over extradition treaties, and the escalating electoral debates in Bangladesh. The piece assesses how New Delhi is balancing humanitarian commitments to Hasina while managing long-term institutional ties with Dhaka.",
+    "keyPointsBn": [
+      "ভারতে শেখ হাসিনার রাজনৈতিক আশ্রয়ের দীর্ঘমেয়াদী প্রভাব ও দিল্লির ভারসাম্যপূর্ণ পররাষ্ট্রনীতি",
+      "আওয়ামী লীগ নেতাকর্মীদের ভার্চুয়াল ও আঞ্চলিক তৎপরতা পর্যবেক্ষণ করছে ভারতীয় গোয়েন্দা সংস্থাগুলো",
+      "২০২৬ সালের প্রস্তাবিত জাতীয় নির্বাচনে আওয়ামী লীগের অংশগ্রহণ ও আইনি বৈধতা নিয়ে বিতর্ক"
+    ],
+    "keyPointsEn": [
+      "The Hindu analyzes strategic implications of Hasina's safe haven in India on bilateral dynamics",
+      "Examines legal hurdles facing Dhaka's extradition requests under the 2013 bilateral treaty",
+      "Highlights growing polarization surrounding Awami League's electoral status ahead of upcoming polls"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "নির্বাসনের আইনি, ঐতিহাসিক ও রাজনৈতিক দিকগুলো কোনো পক্ষপাত ছাড়াই ভারসাম্যপূর্ণভাবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Provides an impartial, comprehensive overview of exile politics, extradition law, and Bangladesh's evolving party matrix.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNbDNNck9tTEVuSnV2My1odVQ5U1poV3gtbjZfMldMb202RUZ3MVpOeXd1UU15OVROMFFHaWJzbWxudC0tQVU4dloyWVJsR1F6WS1DY1pYN1RMZU9WcC1SV2xETHJhYXZvN2MtcnFpWEQ5QWRNeHk1RV8xdUs5UHVZUXc3d0NEWnBvSFpMZU9tMWQ2QXF3d2taTWhzeEY0M2FUVkF5YlBJSlkxNWVwYnNUQmZoeTMzei1wTjh6WWN4aTdmb3lRUlRqQUJSeHJBUDlJa0dVeW9Xd1JrdGhyTnJjY05KNNIB6gFBVV95cUxPS1MwaE1iYm9DaXplblY4bkFpLWY1ZXZIZFJoem1mRkExcnBPT0dtRndnT1N5cHpYbDlPRW52NEtMOFhvNFFobjIzaTl1UFRBTWNYQlNQeGVsZk5ETGNhTVY4aFVrc3cwRjZKckd6LV9XXzFzQVFfQUx5SHk2LWUxWEIyLWV3d1lrcHcwVXc5X0VhNDdFbXdyc19UYkJuVE1HRE8zQ2RFUm9LN0lVWllvTzBTcXY4c0V2YVRGZ3M4dERNaWIxR1ZZdmcwYkN4ZVVlVDJYZnhnYWYtMUNzdVNZeFBqNWVvcExFcWc?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-17T09:00:00Z",
+    "readTimeBn": "৫ মিনিট পড়া",
+    "readTimeEn": "5 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "isTrending": true,
+    "tags": [
+      "The Hindu",
+      "Sheikh Hasina",
+      "Exile Politics",
+      "Awami League",
+      "Bangladesh Elections",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-028",
+    "slug": "india-today-rare-trade-reversal-india-exports-500-tonnes-hilsa-to-bangladesh",
+    "title": "India Exports 500 Tonnes Of Hilsa To Bangladesh In Rare Cross-Border Trade Reversal",
+    "englishTitle": "India Exports 500 Tonnes Of Hilsa To Bangladesh In Rare Cross-Border Trade Reversal",
+    "banglaTitle": "ঐতিহাসিক বাণিজ্য উল্টোরথ: সরবরাহ সংকটে বাংলাদেশে ৫০০ টন ইলিশ রপ্তানি ভারতের—ইন্ডিয়া টুডে",
+    "summaryBn": "ইন্ডিয়া টুডের প্রতিবেদনে এক ঐতিহাসিক বাণিজ্যিক পরিবর্তনের চিত্র তুলে ধরা হয়েছে। অতীতে দুর্গাপূজার মৌসুমে শেখ হাসিনা সরকারের পক্ষ থেকে ভারতে বিশেষ উপহার হিসেবে পদ্মা-মেঘনার ইলিশ রপ্তানি হতো। তবে বর্তমান অভ্যন্তরীণ ঘাটতি ও চরম বাজার মূল্যের কারণে ভারত থেকেই প্রায় ৫০০ টন সামুদ্রিক ইলিশ বাংলাদেশে রপ্তানি করা হয়েছে।",
+    "summaryEn": "India Today covers a historic economic reversal along the Bengal border. Traditionally, Bangladesh under Sheikh Hasina gifted thousands of tonnes of prized Padma Hilsa to West Bengal for the festive season. In a stark role reversal triggered by local harvest shortages and export restrictions in Dhaka, Indian merchants have exported over 500 tonnes of marine hilsa across the Petrapole border.",
+    "keyPointsBn": [
+      "ঐতিহাসিক 'ইলিশ কূটনীতির' বিপরীতে ভারত থেকে বাংলাদেশে মাছ রপ্তানির বিরল নজির",
+      "ঢাকার বাজারে তীব্র সরবরাহ সংকট ও মূল্যবৃদ্ধির মুখে ভারতীয় সামুদ্রিক ইলিশের ব্যাপক চাহিদা",
+      "পেট্রাপোল-বেনাপোল স্থলবন্দর দিয়ে বিশেষ বাণিজ্য চালানের ছাড়পত্র প্রদান"
+    ],
+    "keyPointsEn": [
+      "Historic reversal of traditional festive fish diplomacy between Kolkata and Dhaka",
+      "Surging domestic retail prices and supply shortages in Bangladesh drive demand for Indian catch",
+      "Land customs stations at Petrapole clear expedited shipments to stabilize retail markets in Dhaka"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও খাদ্য সুরক্ষা",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "সীমান্ত বাণিজ্যের নমনীয়তা এবং পারস্পরিক খাদ্য চাহিদা পূরণে বাণিজ্যিক সহযোগিতার প্রতিফলন থাকায় ইতিবাচক।",
+    "sentimentReasonEn": "Highlights commercial adaptability, market interdependency, and functional border trade continuity.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbmtPd1VacU1IOWliQ1VaRXJEUkRrRHBKSHo3ZFBER0ZqSWxGaF92bHFXUmNITXhsT05BdXZ1YlJYaWhjWWRwakpXcGZYazc3d1NkZnNxN0g3R3JvMU9xWHEzUWUtbkxGcEFQNEdISmg5VzQ1SWFRd1VhaS00cUJZcjBkWUxpSm91bThaV000aHUzMDZmX01LcUEyREFHeFlReHBBY0RFdnI0ODI0SnAxQ3FsRTN4Z3dyVzVsRncwZVhHd2ZOSXlZb00xdmlRbTdoTzYxaGlNUnpGSVQ0ZnZ5Ri03QdIB6AFBVV95cUxQOFNMUGRjQWhxcFNnREdpdXNVcnFXbVFOMTFjYnRsRjQ0ZUxIMzdaQ2lyUzdzMTZ0Wm50bkpCNHJWYkRzZFBaU2tXajFCRTVGWnhOaDR6U1hfRlN2d1FNbVdqS1IwVTd4UU5mdlVMVlB3YS1aWjhCcExkS2VUSXU3bEdOZzFzbVVTS21OMVR1WUx3cF9MRWt0WlBEeDl0U0IyaFFYM01GREsySGwzSjB3YzN6c2txRk1BQzlKVGl3R3lTNVlaVVhMNUlMUV8zUVpVbm93VkNENW14d1JrVXQ0YjUxRF92RUwt?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-13T17:42:21Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1534008757030-27299c4371b6?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "India Today",
+      "Hilsa Trade",
+      "Cross-Border Commerce",
+      "Petrapole",
+      "Food Supply",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-029",
+    "slug": "telegraph-india-envoy-meets-bangladesh-water-ministry-for-fresh-cooperation-push",
+    "title": "Indian Envoy And Bangladesh Water Resources Ministry Seek Fresh Push For Joint River Cooperation",
+    "englishTitle": "Indian Envoy And Bangladesh Water Resources Ministry Seek Fresh Push For Joint River Cooperation",
+    "banglaTitle": "অভিন্ন নদীর পানিবণ্টন ও অববাহিকা ব্যবস্থাপনায় সহযোগিতা জোরদারে ভারতীয় হাইকমিশনার ও ঢাকার পানি মন্ত্রণালয়ের বৈঠক: টেলিগ্রাফ ইন্ডিয়া",
+    "summaryBn": "দ্য টেলিগ্রাফ-এর প্রতিবেদনে জানানো হয়েছে, ভারতের হাইকমিশনার এবং বাংলাদেশের পানিসম্পদ মন্ত্রণালয়ের শীর্ষ কর্মকর্তাদের মধ্যে এক গুরুত্বপূর্ণ দ্বিপাক্ষিক বৈঠক অনুষ্ঠিত হয়েছে। বৈঠকে আকস্মিক বন্যা পূর্বাভাস তথ্য বিনিময়, নদী অববাহিকা খনন এবং ৫৪টি অভিন্ন নদীর টেকসই ব্যবস্থাপনায় যৌথ নদী কমিশন (JRC)-এর কারিগরি কার্যক্রম গতিশীল করার ওপর জোর দেওয়া হয়েছে।",
+    "summaryEn": "The Telegraph reports on productive bilateral consultations between the Indian High Commissioner and Bangladesh's Ministry of Water Resources in Dhaka. The meeting focused on revitalizing institutional data-sharing mechanisms under the Joint Rivers Commission (JRC), improving real-time monsoon flood forecasting, and undertaking coordinated riverbed dredging across shared watersheds.",
+    "keyPointsBn": [
+      "বন্যা পূর্বাভাস ও নদীর নাব্যতা রক্ষায় ভারত ও বাংলাদেশের যৌথ কারিগরি উদ্যোগের পুনরুজ্জীবন",
+      "রাজনৈতিক জটিলতার বাইরে এসে যৌথ নদী কমিশনের বিশেষজ্ঞ পর্যায়ের বৈঠকের তাগিদ",
+      "উভয় দেশের পরিবেশগত সুরক্ষা ও কৃষকদের সেচ নিরাপত্তা নিশ্চিত করার প্রত্যয়"
+    ],
+    "keyPointsEn": [
+      "India and Bangladesh explore renewed technical cooperation through Joint Rivers Commission mechanisms",
+      "Priority placed on real-time monsoon flood telemetry and sediment dredging along shared riverbanks",
+      "Both delegations agree on insulating technical hydrology consultations from broader geopolitical tensions"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও তিস্তা",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বন্যা নিয়ন্ত্রণ ও অভিন্ন নদীর ব্যবস্থাপনায় উভয় দেশের যৌথ সহযোগিতার ইতিবাচক দিক তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Constructive focus on institutional river management, flood early warning telemetry, and mutual riparian welfare.",
+    "source": {
+      "name": "The Telegraph India",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSElFSWt2NVdFVE9sNjhSMUZobUtxV2VrRVZmNWFDLTVzUWtYVHZrUXllRjQ4b1BQNWYwNVl3bm40aEdKVHRxcWZsQXF1RTAtVV9kbUYtbDNoTjBGSlcyTlNiY0J3c1Q1bEVaZ21LQTd3ZnoyMC1vWk81OFR6RTJlMWN4YnBVTUtvVDlrUUdwZWUyZ0JTc1JJZmV2V0hCczNWeFlmWExhZ2VIekp0RUVCZnRhcV91WVBkb2UtQmJ4dHY1Ulp1OHNEcnh1QXdOZmxvN0FteUlYdWEtVEpPbzVKb3Y4eHZoWWVicUZZ0gHwAUFVX3lxTE9OZ1pVQmVXcUdnN25vZDR5eEVtUzVucGlYRV9GdGdmS0VCZWhNWXdNQkxWRFhmZ1lkS0tsakQ3VmN0djZNdVNFcS1QUDQtMGxFcE9hRURBVUlCdEx2MEJqMGFBdFlRblhnQWY3cUZHV0dTUl92XzF5MTJwYkJNb3g1ZUpKWWpMM0tWdFd4cVFDYk9aeDBTb0I0dmVrYjlYaWpOVktUUC1IbmNnSTFLa2l5bXRFeWZpSmd4TUJlamRmdXJpUWdBcjlueVliN2tBSFd4TE9aOHBORjlOMkpMd0s1TkF1UE95TXc2ZFZLelJvdA?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-13T14:41:59Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "The Telegraph",
+      "Water Diplomacy",
+      "Joint Rivers Commission",
+      "Teesta",
+      "Flood Forecasting",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-030",
+    "slug": "indian-express-durga-puja-bangladesh-government-promises-support-minority-safety",
+    "title": "Ahead Of Durga Puja, Bangladesh Interim Administration Vows Multi-Tier Protection For Hindu Minority",
+    "englishTitle": "Ahead Of Durga Puja, Bangladesh Interim Administration Vows Multi-Tier Protection For Hindu Minority",
+    "banglaTitle": "আসন্ন দুর্গাপূজায় সংখ্যালঘু সনাতন ধর্মাবলম্বীদের নিরাপত্তায় সমন্বিত পদক্ষেপের অঙ্গীকার ঢাকার: ইন্ডিয়ান এক্সপ্রেসের নজরদারি",
+    "summaryBn": "ইন্ডিয়ান এক্সপ্রেসের প্রতিবেদনে প্রকাশ, শারদীয় দুর্গাপূজা নির্বিঘ্নে উদযাপনের লক্ষ্যে বাংলাদেশে পূজা মণ্ডপগুলোতে সার্বক্ষণিক নিরাপত্তা এবং বিশেষ কুইক রেসপন্স টিম মোতায়েনের প্রতিশ্রুতি দিয়েছে অন্তর্বর্তীকালীন সরকার। ধর্মীয় সংখ্যালঘুদের নিরাপত্তা নিশ্চিতে সেনাবাহিনীর টহল এবং সিসিটিভি ক্যামেরা নজরদারি জোরদার করার বিষয়টি নয়াদিল্লির কূটনৈতিক মহলে নিবিড়ভাবে পর্যবেক্ষিত হচ্ছে।",
+    "summaryEn": "The Indian Express highlights security guarantees extended by Bangladesh's interim administration to Hindu minority leaders ahead of the major Durga Puja festival. Law enforcement agencies have rolled out integrated command centers, deployed army patrols, and mandated digital surveillance across thousands of pandals nationwide, a matter tracked closely by Indian civil society and policy circles.",
+    "keyPointsBn": [
+      "শারদীয় দুর্গোৎসব ঘিরে দেশব্যাপী ৩২ হাজারের বেশি মণ্ডপে বিশেষ নিরাপত্তা ব্যবস্থা গ্রহণ",
+      "কোনো প্রকার বিশৃঙ্খলা বা সাম্প্রদায়িক উসকানি ঠেকাতে সেনাবাহিনীর কঠোর অবস্থানের বার্তা",
+      "সংখ্যালঘুদের সুরক্ষা ও ধর্মীয় সম্প্রীতি রক্ষায় ঢাকার পদক্ষেপে নজর রাখছে ভারতীয় পর্যবেক্ষক মহল"
+    ],
+    "keyPointsEn": [
+      "Bangladesh government deploys multi-tier security coordination across over 32,000 Durga Puja venues",
+      "Armed forces and local administration establish rapid response teams to deter communal incidents",
+      "Cross-border civil society in West Bengal and MEA maintain active monitoring of minority welfare"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও জননিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "নিরাপত্তা ব্যবস্থা ও উৎসব পালনের প্রশাসনিক প্রস্তুতির ভারসাম্যপূর্ণ বিবরণ প্রদান করা হয়েছে।",
+    "sentimentReasonEn": "Objective reporting on administrative safeguards, minority community representation, and cross-border sentiment.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/durga-puja-bangladesh-government-promises-support-safety-hindu-minorities-10868001/",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-08T05:20:43Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Indian Express",
+      "Durga Puja",
+      "Minority Rights",
+      "Security Protocols",
+      "Communal Harmony",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-031",
+    "slug": "ndtv-delhi-monitors-dhaka-beijing-teesta-talks-defense-deal",
+    "title": "New Delhi Closely Monitors Dhaka-Beijing Engagement Over Teesta Basin Project And Defense Talks",
+    "englishTitle": "New Delhi Closely Monitors Dhaka-Beijing Engagement Over Teesta Basin Project And Defense Talks",
+    "banglaTitle": "তিস্তা নদী প্রকল্প ও সামরিক চুক্তি নিয়ে ঢাকা-বেইজিং তৎপরতায় দিল্লির সতর্ক পর্যবেক্ষণ: এনডিটিভি",
+    "summaryBn": "এনডিটিভির কৌশলগত প্রতিবেদনে জানানো হয়েছে, তিস্তা নদী সমন্বিত ব্যবস্থাপনা প্রকল্প বাস্তবায়ন এবং অত্যাধুনিক সামরিক সরঞ্জাম ক্রয়ের বিষয়ে ঢাকা ও বেইজিংয়ের মধ্যে নতুন করে অগ্রগতি নিয়ে গভীর নজর রাখছে ভারতের নিরাপত্তা এস্টাবলিশমেন্ট। শিলিগুড়ি করিডোর বা 'চিকেনস নেক'-এর সন্নিকটে কোনো চীনা প্রকৌশলীদের উপস্থিতি দিল্লির কৌশলগত রেড লাইন হিসেবে বিবেচিত।",
+    "summaryEn": "NDTV reports that India's national security apparatus is closely tracking ongoing technical dialogues between Dhaka and Beijing concerning the comprehensive Teesta River Basin Restoration Project and prospective defense procurements. New Delhi views high-density foreign presence near the sensitive Siliguri Corridor ('Chicken's Neck') with critical strategic concern.",
+    "keyPointsBn": [
+      "তিস্তা নদীর খনন ও তীর সংরক্ষণ প্রকল্পে চীনা অর্থায়নের সম্ভাবনা নিয়ে দিল্লির কঠোর নজরদারি",
+      "শিলিগুড়ি করিডোরের নিরাপত্তা সংবেদনশীলতার কারণে তিস্তা প্রকল্পে ভারতের সরাসরি আগ্রহ বিদ্যমান",
+      "দক্ষিণ এশিয়ায় আঞ্চলিক ভারসাম্য বজায় রাখতে ঢাকার ভারসাম্যমূলক পররাষ্ট্রনীতির প্রয়োজনীয়তা"
+    ],
+    "keyPointsEn": [
+      "Indian defense analysts examine implications of Chinese involvement in Teesta basin projects",
+      "Geographic proximity to the vital Siliguri Corridor reinforces New Delhi's strategic sensitivity",
+      "Diplomatic circles urge Dhaka to factor in reciprocal core security interests across the border"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নিরাপত্তা",
+    "categoryLabelEn": "Diplomacy & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তের কৌশলগত এলাকায় তৃতীয় পক্ষের সামরিক ও অবকাঠামোগত উপস্থিতি নিয়ে উদ্বেগের সুর প্রতিফলিত।",
+    "sentimentReasonEn": "Highlights strategic apprehensions and security frictions surrounding big-power influence near India's border.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRWJiZ1FNUmIxUEhuNGJpU2c1NG1udW1QQlpCQjY1Zl9oV1czaU9iak8zckozaGxiRV9aanZWUkpqRGt6Mjk4bUZEVWR4SnV3R0s0bDZJMS1pMWt4NFBsT0RtM0hna0NhMlFiQ1pQV1ZJellsbFcwVGRwQzFra1dEQ0lWZTNEQzBSRG1hczhFdWRTMVJmdWhxOU04RHRwa09KRHFoc2FaU2V0Tkk3ZnltVkF30gG6AUFVX3lxTE16MWJhcGhkb3phbzl4WFZ1N1RndmxkeXY4U19HeVp3VUVuUzZ4SFlqQ0NaLTFMLS1UeXdQV2puaThhZU5CcDlEcUNUUEx4LWF4VC1FRm1RZ3BfSTdFYWEtZ0lvMDRySXY0UmlMQ25CX3FtVEFKT1lSaC1ZYndjS2lIUmdTMTB0R2FsMFBHbjZlQm9mRDZRMkZ1R0QwaEltaVpIbTRWZF91NmlNMjhoWFNXeWtGS2JxeVFLQQ?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-01T07:00:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "NDTV",
+      "Teesta River",
+      "Geopolitics",
+      "Siliguri Corridor",
+      "National Security",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-032",
+    "slug": "times-of-india-bangladesh-tribunal-extends-arrest-warrants-sheikh-hasina",
+    "title": "Special Tribunal Extends Extradition Demands and Warrants Against Ousted PM Sheikh Hasina",
+    "englishTitle": "Special Tribunal Extends Extradition Demands and Warrants Against Ousted PM Sheikh Hasina",
+    "banglaTitle": "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের গ্রেফতারি পরোয়ানা ও হাসিনাকে ফেরানোর দাবি: দিল্লির আইনি বিশ্লেষণ—টাইমস অব ইন্ডিয়া",
+    "summaryBn": "টাইমস অব ইন্ডিয়ার আইনি বিশ্লেষণে প্রকাশ, ঢাকায় আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল ভারতে অবস্থানরত ক্ষমতাচ্যুত সাবেক প্রধানমন্ত্রী শেখ হাসিনার বিরুদ্ধে পরোয়ানা পুনর্ব্যক্ত করে ইন্টারপোলের রেড নোটিশ জারির তৎপরতা অব্যাহত রেখেছে। ভারতীয় আন্তর্জাতিক আইন বিশেষজ্ঞরা উল্লেখ করেছেন, ২০১৩ সালের প্রত্যর্পণ চুক্তির রাজনৈতিক অপরাধ সংক্রান্ত অনুচ্ছেদের কারণে দিল্লির ওপর কোনো তাৎক্ষণিক বাধ্যবাধকতা নেই।",
+    "summaryEn": "The Times of India assesses the legal deadlock surrounding repeated arrest warrants and extradition demands issued by Dhaka's Special Tribunal against exiled leader Sheikh Hasina. Indian legal authorities note that the 2013 India-Bangladesh Extradition Treaty contains explicit exception clauses regarding offenses of an overwhelmingly political character.",
+    "keyPointsBn": [
+      "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের পরোয়ানা ও ইন্টারপোল নোটিশ নিয়ে ঢাকায় সরকারি তৎপরতা",
+      "২০১৩ সালের ভারত-বাংলাদেশ প্রত্যর্পণ চুক্তির রাজনৈতিক অপরাধ ধারা নিয়ে ভারতীয় বিশেষজ্ঞদের মত",
+      "দীর্ঘমেয়াদী নির্বাসন ও নিরাপত্তা প্রটোকল নিয়ে দিল্লির স্বরাষ্ট্র ও পররাষ্ট্র মন্ত্রণালয়ের সমন্বিত অবস্থান"
+    ],
+    "keyPointsEn": [
+      "Dhaka tribunals pursue international red notice procedures targeting exiled Awami League leadership",
+      "Jurists highlight Article 6 and 8 exceptions in the 2013 Extradition Treaty protecting political refugees",
+      "New Delhi maintains firm institutional posture providing safe harbor amidst shifting regional dynamics"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "আইন ও বিচার",
+    "categoryLabelEn": "Politics & Legal Issues",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক উদ্দেশ্যে দায়েরকৃত মামলা ও প্রত্যর্পণ নিয়ে দ্বিপাক্ষিক কূটনৈতিক টানাপোড়েনের কারণে নেতিবাচক।",
+    "sentimentReasonEn": "Reflects continuing bilateral friction, legal impasses, and political polarization over high-profile trials.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaldNQTdfSmFoYTRpZktMV2hMOXo2emJ2MVVqNTFTeGpPLVlwZHlQeXdRc0FhUG5hYTBtbU5FVk9aNkJnUXRaRVoxODVrZWRUUTNzX2pEM0J6Y3VoTzdQU2NpMUFhQUQzMjVaTGlwR2FJUmh5a1pnVjZHcDhkQ3ZIbjc3NGc3TE1fY1BXbjhydDJrLW5OeHU3dEIzWFRSRmpVczFET2xlZWx1bHhUdEN1ZUtSSjNWanB6Y2pUZXJCenNYaUN0a2hKM0N4M0hZQTEzTmdj0gHYAUFVX3lxTE84QzFfUm5BWGVEZVV6dC1QcTNxSWF2bEFYTUZtZ2RaY1RTNWF1bDlVbjZwMGRINFBoUXV1aWNvZm02NDFNNGNZbU85UEl6bWVBQnQ0MUxoNWozcjBfRTVDSm9qVTAtR3hyWm1iN0pocDhjSEJ3RHYxc01uTWRlQjdjc0xxMEhYT1pQZDV6VzZhQjVvaFRJUDhuYzRHNy1lY0RaRFBobW5ZN0RSeXRVRldCU3JPTHJqVjRhMVhkdW1nUEYyc0k1UU1XNzZqaEZscTc1VGtrTlhNQQ?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-07T08:00:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "tags": [
+      "The Times of India",
+      "Sheikh Hasina",
+      "Extradition Treaty",
+      "ICT Tribunal",
+      "Red Notice",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-033",
+    "slug": "news18-bangladesh-seeks-end-to-india-fascination-economic-dependencies",
+    "title": "'Just Another Country': Bangladesh Seeks End To 'India Fascination' While Acknowledging Economic Dependencies",
+    "englishTitle": "'Just Another Country': Bangladesh Seeks End To 'India Fascination' While Acknowledging Economic Dependencies",
+    "banglaTitle": "‘ভারত মোহ কাটানোর তাগিদ’: ঢাকার পররাষ্ট্র নীতিতে সমমর্যাদার বয়ান ও অর্থনৈতিক বাস্তবতার দ্বন্দ্ব—নিউজ১৮",
+    "summaryBn": "নিউজ১৮-এর বিশ্লেষণে বলা হয়েছে, অন্তর্বর্তী সরকারের নীতি-নির্ধারকরা পররাষ্ট্রনীতিতে 'ভারত নির্ভরতার মানসিকতা' থেকে বেরিয়ে সমমর্যাদার সম্পর্ক গড়ার কথা বলছেন। তবে একই সাথে বিশ্লেষকরা স্বীকার করছেন—নিত্যপ্রয়োজনীয় খাদ্য, বিদ্যুৎ সংযোগ ও ট্রানজিটের মতো জরুরি বিষয়গুলোতে ভারতের বিকল্প তৈরি করা ঢাকার পক্ষে অবাস্তব।",
+    "summaryEn": "News18 examines evolving political discourse in Dhaka advocating for treating India as 'just another neighbor' rather than an overarching focal point. However, seasoned economists and diplomatic analysts caution that absolute reliance on Indian electricity lines, onion and wheat imports, and land-route transit imposes natural limits on any radical decoupling.",
+    "keyPointsBn": [
+      "ঢাকার রাজনৈতিক মহলে সমমর্যাদাভিত্তিক স্বাধীন পররাষ্ট্রনীতির বয়ান প্রতিষ্ঠা করার চেষ্টা",
+      "অর্থনৈতিক বিশ্লেষকদের মতে ভারতের সাথে বাণিজ্য ও জ্বালানি সংযোগ ছিন্ন করা আত্মঘাতী হবে",
+      "নয়াদিল্লি ঢাকার অভ্যন্তরীণ বক্তব্যকে স্বাভাবিক গণতান্ত্রিক রূপান্তর হিসেবে পর্যবেক্ষণ করছে"
+    ],
+    "keyPointsEn": [
+      "Dhaka policy rhetoric seeks to reframe bilateral engagement around strict reciprocal sovereignty",
+      "Trade specialists underline deep supply chain entanglement across food staples and grid electricity",
+      "New Delhi adopts strategic patience, monitoring pragmatic policy adjustments on the ground"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Foreign Policy & Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক বয়ান ও অর্থনৈতিক বাস্তবতার মধ্যকার ভারসাম্যপূর্ণ দ্বন্দ্ব তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Balanced appraisal of political sovereignty aspirations juxtaposed against stark economic dependencies.",
+    "source": {
+      "name": "News18",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOG54YXdnR0hCeDd2UGN5RThQdEt4bjhhTk9heTdIbFhLWHphWWdONFkzblFvUWE5RGxtajVJNm81QTJocTVubFZNNTAtZG5fckpqTldqWnUyeDF5RFRqQkdUS1FZRHItOWVtbkpNLXE1cDNnQkJvbHB2NEZrRThrWDVZYWpNTW1Bbk0tS083R0lhbUZQQUdlck9BaC1kUTFHQlVzYXZOenAwZmZFTGdmRUgxTzRXY0hTNjNFY0ZrbU1fQmpIMUJLNG9R0gHPAUFVX3lxTFBnel9hTXFMY2JxdTM1cGUzYUwzaU1lM0ZvRzEwVm9LR28tdkpUU0VRSmd4VE1WMnlHbmlpOEw4Wk9yUURXZFlxOHpvQ3QydmVybmpwdDR0TWhCOWJuYW5WOXA4VWQ4aG1MeUhpOUVfaUNBTDdVXzFIbG5UcXdCVUtZbklzMHFINmtkLVhiWXhYbEw1YzRnSWdsUlJtZDVFRjNlMnpieXZwQzRRVG10Y1ZiYS0yRmVibVE1UU1oSW9HaElJNnpjOHlYblBaUzBETQ?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-13T17:09:50Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
+    "tags": [
+      "News18",
+      "Bilateral Reset",
+      "Foreign Policy",
+      "Trade Dependence",
+      "Economic Realities",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-034",
+    "slug": "the-hindu-clarification-on-brics-and-bimstec-summit-invitations-dhaka",
+    "title": "Diplomatic Clarifications Issued Over Bangladesh Representation At Multilateral Summits",
+    "englishTitle": "Diplomatic Clarifications Issued Over Bangladesh Representation At Multilateral Summits",
+    "banglaTitle": "বহুপাক্ষিক সম্মেলনে বাংলাদেশের প্রতিনিধিত্ব ও আমন্ত্রণ নিয়ে কূটনৈতিক বিভ্রান্তি নিরসনের ব্যাখ্যা: দ্য হিন্দু",
+    "summaryBn": "দ্য হিন্দুর কূটনৈতিক বিশ্লেষণে বলা হয়েছে, ব্রিকস (BRICS) আউটরিচ সম্মেলনে বাংলাদেশের আমন্ত্রণ নিয়ে তৈরি হওয়া কূটনৈতিক বিতর্কের অবসান ঘটিয়েছে ঢাকা। পররাষ্ট্র মন্ত্রণালয় স্পষ্ট করেছে যে আমন্ত্রণটি নির্দিষ্ট কোনো ব্যক্তি নয় বরং বিমসটেকের বর্তমান প্রাতিষ্ঠানিক কাঠামোর আওতায় পাঠানো হয়েছিল।",
+    "summaryEn": "The Hindu clarifies protocol controversies regarding Bangladesh's representation at recent multilateral summits. Dhaka's foreign office clarified that multilateral invitations extended through regional groupings like BIMSTEC are institutional rather than bilateral, quelling speculation over diplomatic snubs.",
+    "keyPointsBn": [
+      "ব্রিকস সম্মেলনে বাংলাদেশের অংশগ্রহণ সংক্রান্ত ভুল বোঝাবুঝি অবসানে পররাষ্ট্র মন্ত্রণালয়ের ব্যাখ্যা",
+      "বিমসটেক ও সার্কের মতো আঞ্চলিক মঞ্চে উভয় দেশের বহুপাক্ষিক সম্পৃক্ততা অব্যাহত রাখার তাগিদ",
+      "দক্ষিণ এশীয় সংযোগ জোরদারে বহুপাক্ষিক কূটনীতির গুরুত্ব তুলে ধরেছেন বিশ্লেষকরা"
+    ],
+    "keyPointsEn": [
+      "Dhaka issues clarification establishing that multilateral invites adhere to institutional BIMSTEC chairs",
+      "Dispels rumors of deliberate diplomatic friction regarding high-level delegation representation",
+      "Underlines importance of maintaining functional multilateral platforms across the Bay of Bengal"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও বহুপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Multilateral Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কূটনৈতিক ভুল বোঝাবুঝি নিরসন ও প্রটোকলের ব্যাখ্যা নিরপেক্ষভাবে উপস্থাপন করা হয়েছে।",
+    "sentimentReasonEn": "Fact-based clarification defusing political speculation over international summit invitations.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOFhCLVdCZGNwSDlUbFpvZXVoUV9IWFFGNktQOWVJWlg5Y3BwbUdISFlRajQ5NktXQ2xUSHFVU0RFV0JIbGRZQmVUeWI0dGNhdjJSTlZYaktoRVVVWHlTbnlBVDVWXzdocGtaNDhMbHJEdFd2WXp0NEJlS1U5NXRITldTMWdLWGo1MXMxNW1aZVZic08wQTdNT1FWZEhVS09nN0xfTzA3cUtKSXNmRmN3UHpOYWs4bnlsOGsyMzQ4a01RRllWdzhDd01BZHZZQ3ZsYWZaTTJCZjRhUTM2Yjh3WHZxaXnSAesBQVVfeXFMTzdtalgyU042UVZiYjJ3cmVQQ25HUXM3VXFMbEc1ZFBWaW5UMGV0MXRCUjRLYzdlaWpkQWl4Smt6aWU1QkJaTDRfUWhpLWpqQ3NmdG5sOXoxRnhST0tmTUQzTC10bjRiTFZuYUkyektiLUppX3RJZVhNR2R4djJET0JvSjBHYURPTWhtMGxtV19PaHcxV29rNThIdVc4dnFkSjBlMXpwTEhaUVlwbzZfOVlHcXZmdE5iWTJPdzQtYVBsUVhyeVJCZVB0Mjg4bmlMb2xRTGRsa1NtTGkxZ1EyTDJIUWZqOFVoQzMtcw?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-11T07:00:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Hindu",
+      "BIMSTEC",
+      "BRICS Summit",
+      "Multilateral Diplomacy",
+      "Protocol",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-035",
+    "slug": "ndtv-in-flight-brawl-on-biman-bangladesh-london-flight-cabin-safety",
+    "title": "Civil Aviation Safety Under Spotlight After In-Flight Brawl On Dhaka-London Route",
+    "englishTitle": "Civil Aviation Safety Under Spotlight After In-Flight Brawl On Dhaka-London Route",
+    "banglaTitle": "বিমান বাংলাদেশ এয়ারলাইন্সের লন্ডন ফ্লাইটে মাঝআকাশে যাত্রীদের মারামারির ভিডিও ভাইরাল: এভিয়েশন নিরাপত্তা পর্যালোচনা—এনডিটিভি",
+    "summaryBn": "এনডিটিভি ও ইন্ডিয়ান এক্সপ্রেসের প্রতিবেদনে ভাইরাল হওয়া একটি ঘটনার বিশদ বিবরণ দেওয়া হয়েছে, যেখানে বিমান বাংলাদেশ এয়ারলাইন্সের ঢাকা থেকে লন্ডনগামী ফ্লাইটে দুই যাত্রীর মধ্যে তুমুল হাতাহাতি ও মারামারির ঘটনা ঘটে। উড়ন্ত বিমানে যাত্রীদের এ ধরনের অপ্রীতিকর আচরণ এবং কেবিন ক্রুদের তাৎক্ষণিক নিয়ন্ত্রণ ব্যবস্থা আন্তর্জাতিক এভিয়েশন সুরক্ষা পরিমণ্ডলে আলোচিত হচ্ছে।",
+    "summaryEn": "NDTV covers the viral altercation aboard Biman Bangladesh Airlines flight BG201 en route from Dhaka to London Heathrow. Footage showing passengers exchanging blows mid-air drew extensive international commentary on cabin crew de-escalation protocols, passenger restraint measures, and strict aviation penalties for unruly behavior.",
+    "keyPointsBn": [
+      "মাঝআকাশে আসন নিয়ে বাকবিতণ্ডার জেরে বিমানে সহিংস মারামারির ভিডিও সামাজিক মাধ্যমে তোলপাড়",
+      "হিথ্রো বিমানবন্দরে অবতরণের পর সংশ্লিষ্ট যাত্রী ও আইনগত ব্যবস্থা গ্রহণ নিয়ে বেসামরিক বিমান চলাচল কর্তৃপক্ষের বিবৃতি",
+      "আন্তর্জাতিক রুটে যাত্রী নিরাপত্তা নিশ্চিত করতে কঠোর নিরাপত্তা নজরদারির তাগিদ"
+    ],
+    "keyPointsEn": [
+      "Viral mid-air confrontation aboard long-haul flight triggers civil aviation safety reviews",
+      "Biman Bangladesh cabin crew intervention and subsequent handover to airport law enforcement",
+      "Highlights global focus on airline passenger conduct enforcement and unruly flyer regulations"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও জনজীবন",
+    "categoryLabelEn": "Aviation & Society",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আন্তর্জাতিক রুটে যাত্রীদের বিশৃঙ্খল আচরণ এবং বিমানের সার্বিক সুনামে আঘাত হানার কারণে সুর নেতিবাচক।",
+    "sentimentReasonEn": "Focuses on unruly passenger conduct, in-flight safety disruptions, and regulatory repercussions.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcjQxb2twZzF6TjFDZjBHbjNTbkRvNlpOZl9nVjBOb2E4dXZrUF9tbnFOOFBrNnhBTGtSdzlUUEo1Znh6YUhwSGoxMFFQMVVMSlV4ZFNzZTZRU2VSd2VYeGplV3JoSDNTVWZqVHNVdnBMME16WUd3eUNJSHZfekZwYXNmbmYyX3hSVEFpMHNLR0dkb1V6aHJSVkJiNk10SzdyQ3pqTURLaDBYNjBMWHdVMUQ5Y0kxZndRV1Jv0gHDAUFVX3lxTE5CeTdKMkItaDhiY1J4SXhrckU3SF9FVURPRFRvZ1ozaDIzODZoSFRKU25CZXF1aHB6R3AwOUpnYVhMeDVoRDVxRDktYVYwWFhfLTY0VWtxdGtFRHBpdFQyR3AzQUJFZmdlaDFwaFNGT1oxbU1fN05BYi1Sdk5raUEtc1BaLVMxc0U4RENqd0psYS1JRUs1NHdndTNMaFFfOFRQb3FnLThfaTFrUWdqdzJCd1owb2dPOERzcDZLN2pGMUhiMA?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-18T06:46:18Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "NDTV",
+      "Aviation Safety",
+      "Biman Bangladesh",
+      "London Flight",
+      "Viral News",
+      "Civil Security"
+    ]
+  },
+  {
+    "id": "news-20260920-036",
+    "slug": "the-hindu-suspected-cross-border-infiltrator-held-near-strategic-naval-academy",
+    "title": "Intelligence Interception Of Suspected Cross-Border Infiltrator Prompts Security Advisory Along Key Corridors",
+    "englishTitle": "Intelligence Interception Of Suspected Cross-Border Infiltrator Prompts Security Advisory Along Key Corridors",
+    "banglaTitle": "কৌশলগত ঘাঁটির সন্নিকটে সন্দেহভাজন অনুপ্রবেশকারী আটক: পূর্ব ও দক্ষিণ সীমান্তে যৌথ নিরাপত্তা সতর্কবার্তা—দ্য হিন্দু",
+    "summaryBn": "দ্য হিন্দু জানিয়েছে, ভারতীয় কৌশলগত প্রতিরক্ষা স্থাপনার সন্নিকটে জাল পরিচয়পত্র ব্যবহার করে কর্মরত থাকা এক সন্দেহভাজন অবৈধ অনুপ্রবেশকারীকে আটক করেছে কেন্দ্রীয় গোয়েন্দা ও নিরাপত্তা বাহিনী। এই ঘটনার প্রেক্ষাপটে পূর্বাঞ্চলীয় সীমান্তসহ গুরুত্বপূর্ণ স্থলবন্দর ও সীমান্তবর্তী স্পর্শকাতর এলাকাগুলোতে নজরদারি আরও কঠোর করার নির্দেশনা জারি করা হয়েছে।",
+    "summaryEn": "The Hindu reports that joint central intelligence agencies apprehended an undocumented cross-border national operating under forged credentials near a major Indian strategic training establishment. The security breach has prompted central agencies to issue heightened counter-infiltration advisories across coastal and land border entry stations.",
+    "keyPointsBn": [
+      "সংবেদনশীল প্রতিরক্ষা স্থাপনার আশপাশে নজরদারি জোরদার এবং জাল নথি যাচাইকরণ অভিযান",
+      "সীমান্তবর্তী আন্তর্জাতিক চেকপোস্টগুলোতে ডিজিটাল বায়োমেট্রিক শনাক্তকরণ ব্যবস্থা কড়াকড়ি",
+      "অবৈধ মানবপাচার চক্রের বিরুদ্ধে যৌথ অভিযান পরিচালনার ঘোষণা গোয়েন্দা সংস্থাগুলোর"
+    ],
+    "keyPointsEn": [
+      "Intelligence agencies apprehend undocumented individual utilizing counterfeit identity papers near strategic zones",
+      "Comprehensive verification drives launched targeting fraudulent documentation networks along border transit belts",
+      "Heightened vigilance mandated for coastal and land customs checkposts to prevent irregular crossings"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও নজরদারি",
+    "categoryLabelEn": "Border & Counter-Infiltration",
+    "sentiment": "negative",
+    "sentimentReasonBn": "নিরাপত্তা হুমকি, অনুপ্রবেশ এবং কৌশলগত স্থাপনায় নজরদারি বৃদ্ধির প্রয়োজনীয়তা তুলে ধরায় সুর নেতিবাচক।",
+    "sentimentReasonEn": "Covers national security alerts, fraudulent cross-border documentation networks, and counter-infiltration vigilance.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaF9NQmJjR0J5Y3c0cmFTaE5CSWF2Y2hHWTBXU1MweFFkYlJ4VHFLaVVoTmNGYXIwNkRMX2ZqT1NRZ0RzblByM2x0VGkzdjczX1AwUjNzNHF6Nzk3ZjB1RndVQ3ZHQzlxWlZWVjN0UmZtclJGWmtDTUs3MWxyOV9GWGFaQm16c3BIWlF1LXdVeDdhUm95NGlVeHVVSTdDNVRQcUZQdGdFSW1EdUw2Q3hDa09xNzVhU0Z2NTFlb2xB0gHEAUFVX3lxTFBMRDRiTXkyT3N2OXBZX25feWpvbUFUT0N5eG5jamZRM3N3YlRUM3hMSFhpME82dDdEUlhqVklrbUhtdkRWR1Z2T3BPNGdNYy05aEdZclBYU2R2UW1JSjRyRjJjMU1ESUVDSnhzNFlJZ1htZ1Q5ZUFOY1hpVXRUbkhDZVRkbC1kRUJmZHQ4Mm9ab2ZiVjBYaXA1cVZKWUFxX1phSndKY2lnTW1LWVFYVWwxd1prNS1IRVRJZ0ZFaU80RjVpbTc?oc=5",
+      "scannedAt": "2026-09-20T02:04:00Z"
+    },
+    "publishedAt": "2026-09-18T14:27:53Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Hindu",
+      "Border Security",
+      "Intelligence Alert",
+      "Infiltration",
+      "National Security",
+      "Delhi Bureau"
+    ]
+  },
+  {
     "id": "news-20260920-013",
     "slug": "dainik-jagran-india-bangladesh-pacts-will-not-be-cancelled-focus-mutual-benefit",
     "title": "भारत-बांग्लादेश समझौते रद नहीं होंगे, दोनों देशों के लिए लाभकारी बनाना लक्ष्य - jagran.com",
@@ -435,7 +990,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [

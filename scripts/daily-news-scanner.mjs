@@ -157,7 +157,14 @@ const STANDARD_RSS_FEEDS = [
     name: 'Indian Media - Sheikh Hasina & Awami League Priority Wire', 
     bureau: 'Delhi', 
     language: 'English', 
-    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("Sheikh Hasina" OR "Awami League" OR "Hasina") (site:thehindu.com OR site:indianexpress.com OR site:timesofindia.indiatimes.com OR site:hindustantimes.com OR site:ndtv.com OR site:thewall.in OR site:anandabazar.com OR site:news18.com OR site:indiatoday.in) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("Sheikh Hasina" OR "Awami League" OR "Hasina") (site:thehindu.com OR site:indianexpress.com OR site:timesofindia.indiatimes.com OR site:hindustantimes.com OR site:ndtv.com OR site:thewall.in OR site:anandabazar.com OR site:news18.com OR site:indiatoday.in OR site:wionews.com OR site:theprint.in OR site:firstpost.com) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'English Media - Bangladesh & Sheikh Hasina Intelligence Wire', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("Sheikh Hasina" OR "Hasina" OR "Dhaka") (site:thehindu.com OR site:indianexpress.com OR site:timesofindia.indiatimes.com OR site:hindustantimes.com OR site:ndtv.com OR site:wionews.com OR site:deccanherald.com OR site:telegraphindia.com) when:5d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
     webUrl: 'https://news.google.com' 
   },
   { 
@@ -808,15 +815,21 @@ async function runDailyNewsScanner() {
     if (!fs.existsSync(scratchDir)) fs.mkdirSync(scratchDir, { recursive: true });
     const candidateDumpPath = path.join(scratchDir, 'candidates.json');
     const hindiCandidates = matchedArticles.filter(art => art.sourceLanguage === 'Hindi' || /[\u0900-\u097F]/.test(art.title));
+    const englishHasinaCandidates = matchedArticles.filter(art => {
+      const text = ((art.title || '') + ' ' + (art.desc || '')).toLowerCase();
+      const isEnglish = art.sourceLanguage === 'English' || (!/[\u0980-\u09FF]/.test(art.title) && !/[\u0900-\u097F]/.test(art.title));
+      return isEnglish && (text.includes('hasina') || text.includes('sheikh hasina') || text.includes('awami') || text.includes('bangladesh') || text.includes('dhaka'));
+    });
     fs.writeFileSync(candidateDumpPath, JSON.stringify({
       totalScanned: allScannedArticles.length,
       matchedCount: matchedArticles.length,
       priorityCount: priorityMatches.length,
       hindiCount: hindiCandidates.length,
-      hindiCandidates: hindiCandidates,
-      candidates: matchedArticles.slice(0, 300)
+      englishHasinaCount: englishHasinaCandidates.length,
+      englishHasinaCandidates: englishHasinaCandidates,
+      candidates: matchedArticles.slice(0, 350)
     }, null, 2));
-    console.log(`✅ Candidate articles dumped successfully (${hindiCandidates.length} Hindi candidates) to ${candidateDumpPath}`);
+    console.log(`✅ Candidate articles dumped successfully (${englishHasinaCandidates.length} English Hasina/BD candidates) to ${candidateDumpPath}`);
     return;
   }
 
