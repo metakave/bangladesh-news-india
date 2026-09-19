@@ -68,26 +68,48 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2686,
-  "bangladeshMatches": 701,
+  "totalScanned24h": 2985,
+  "bangladeshMatches": 818,
   "sentimentDistribution": {
-    "positive": 10,
-    "neutral": 24,
-    "negative": 21
+    "positive": 13,
+    "neutral": 28,
+    "negative": 26
   },
   "bureauDistribution": {
-    "delhi": 28,
+    "delhi": 40,
     "kolkata": 19,
     "mumbai": 10
   },
   "languageDistribution": {
     "english": 21,
     "bengali": 27,
-    "hindi": 6
+    "hindi": 18
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-028",
+    "headlineBn": "‘ভারত-বাংলাদেশ দ্বিপাক্ষিক চুক্তি বাতিল হবে না, উভয় দেশের স্বার্থ রক্ষা ও কার্যকারিতাই মূল লক্ষ্য’: দৈনিক জাগরণ",
+    "headlineEn": "Dainik Jagran: India-Bangladesh Treaties Will Not Be Scrapped, Focus on Mutual Benefit and Reciprocal Economic Continuity",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "Dainik Jagran",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONTJfT3ItMmhSZGpZV1NFRVVJYUs2M3dGQWMyNEdsSl83ZUVBcDdVaWlBTGxIV2dodzRpRVkzdUwxSnFHbkJlVDBoTkRCVEhZbkdieEw0UTdRZ1RHRThhaXpGT1ZDTGhXYzFTTHRHMDZmelhmT245aHo0RkdQcmZySHhScGF4UmxsSWVLVWd1NlJZUk5CQjJIU0l1RmExWEU?oc=5"
+  },
+  {
+    "id": "alert-027",
+    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার নেপথ্য কারণ স্পষ্ট করলেন তারেক রহমানের উপদেষ্টা’: নবভারত টাইমস",
+    "headlineEn": "Navbharat Times: Tarique Rahman's Aide Explains Real Intent Behind Review of 101 Hasina-Era Bilateral Accords",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "Navbharat Times",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdFIwTkNoempGUGlDM2E0cGVOVHFZZ3IxNWZqRzFCalU0YjFOcHgzV3hiUE9rOUFjY2VPUVplNzd4dFpUUDFBUFQwdWdwY293dDhSTVNDN2YwZ0hrVjBSelZEaW9CMGdqYWM1RjNsd2tLSWdhYmw5S0lxVHozVHFwczBJc213S2pJM0VwX1RUN1hVakpMSk1xM3Q1a0Z1elI0TWk4UDY5UFpyRjhRTWNVcXhoY1FfOHBpaVY4V1FPd3o3bGJsRlNjOFI4Vld5R3hPM1c3VTJmczhLa1lJRTFTZ19XUFBZajJiMnlDRUpVRnRMS1lRTnJ30gH8AUFVX3lxTFBhVDdJVExoZzVyaU9fclJjaWJhOFQ0aGwxSEJIYnpoUnBxU0tHZEQ0Z3pMVVBhT3YzWHMwTjRxR2FvRjRnT1FKUktzRjEwTlNBdVZlMFhmZ1NTUTNLRktKQlhXVmVzVXVXWlBZaWFlRWx1cnNWY0x6TXd4Ujh6T19CNTMtV0x5d042bHlNVHA1dHB0OC1wT3ZkWEVvdVVOTGhRbDIyVlV2SDZIZS1HNEJLbHV2LTg0bFliMVJaX2tqMFdkd0RNdE5FQ0dPZzg1aXBxdENaZnlDT0RQUGxRWmJuWktxb0ozRVNWcDFlWVVtQ2lKWGJ4WjJYcmdtbA?oc=5"
+  },
   {
       "id": "alert-026",
       "headlineBn": "‘হাসিনার দেশে ফেরার ঘোষণায় ঢাকায় মিছিল ও ব্যাপক ধরপাকড়, ৫০০-র বেশি গ্রেপ্তার’: কলকাতার সংবাদ প্রতিদিন",
@@ -379,6 +401,539 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260920-013",
+    "slug": "dainik-jagran-india-bangladesh-pacts-will-not-be-cancelled-focus-mutual-benefit",
+    "title": "भारत-बांग्लादेश समझौते रद नहीं होंगे, दोनों देशों के लिए लाभकारी बनाना लक्ष्य - jagran.com",
+    "englishTitle": "Dainik Jagran: India-Bangladesh Accords Will Not Be Scrapped, Focus on Mutual Benefit & Economic Continuity",
+    "banglaTitle": "ভারত-বাংলাদেশ চুক্তি বাতিল হবে না, উভয় দেশের স্বার্থ রক্ষা ও কার্যকারিতাই মূল লক্ষ্য: দৈনিক জাগরণ",
+    "summaryBn": "ভারতের শীর্ষ হিন্দি দৈনিক 'দৈনিক জাগরণ'-এর দিল্লি ব্যুরোর বিশেষ প্রতিবেদনে প্রকাশ, অন্তর্বর্তী সরকার পূর্ববর্তী সরকারের আমলে স্বাক্ষরিত দ্বিপাক্ষিক চুক্তিগুলো পুনর্মূল্যায়ন করলেও তা পাইকারি হারে বাতিল করা হবে না। বরং ট্রানজিট, বিদ্যুৎ সরবরাহ ও বাণিজ্যের মতো গুরুত্বপূর্ণ খাতগুলোতে উভয় দেশের পারস্পরিক অর্থনৈতিক স্বার্থ রক্ষা করে চুক্তিগুলোকে আরও কার্যকর রূপ দেওয়াই বর্তমান কূটনৈতিক প্রক্রিয়ার লক্ষ্য।",
+    "summaryEn": "New Delhi bureau of leading Hindi daily Dainik Jagran reports that bilateral agreements signed during the previous tenure will not be scrapped unilaterally by Dhaka. Instead, ongoing diplomatic consultations focus on recalibrating transit, electricity transmission, and cross-border commercial pacts to ensure they remain mutually beneficial and pragmatically operational for both nations.",
+    "keyPointsBn": [
+      "ভারতের সাথে পূর্ববর্তী সরকারের স্বাক্ষরিত চুক্তিগুলো একতরফা বাতিল না করে কার্যকারিতা বৃদ্ধির পর্যালোচনা",
+      "রেল ট্রানজিট, জ্বালানি সরবরাহ এবং বন্দর ব্যবহার সংক্রান্ত চুক্তিতে উভয় দেশের বাণিজ্যিক সুবিধার ওপর জোর",
+      "দিল্লির কূটনৈতিক মহলে ঢাকার সাথে গঠনমূলক অর্থনৈতিক অংশীদারিত্ব বজায় রাখার আশাবাদ ব্যক্ত"
+    ],
+    "keyPointsEn": [
+      "Dainik Jagran reports bilateral treaties signed under previous regimes will undergo recalibration rather than unilateral cancellation",
+      "High priority placed on preserving cross-border rail transit, electricity wheeling, and port logistics",
+      "Diplomatic circles in New Delhi express optimism for pragmatic, mutually beneficial economic relations"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "চুক্তি বাতিল নয় বরং দ্বিপাক্ষিক অর্থনৈতিক সংযোগ ও পারস্পরিক স্বার্থ সুরক্ষার ওপর গুরুত্ব দেওয়ায় ইতিবাচক মনোভাব প্রকাশিত হয়েছে।",
+    "sentimentReasonEn": "Emphasizes constructive economic engagement and continuation of bilateral connectivity rather than cancellation of pacts.",
+    "source": {
+      "name": "Dainik Jagran",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONTJfT3ItMmhSZGpZV1NFRVVJYUs2M3dGQWMyNEdsSl83ZUVBcDdVaWlBTGxIV2dodzRpRVkzdUwxSnFHbkJlVDBoTkRCVEhZbkdieEw0UTdRZ1RHRThhaXpGT1ZDTGhXYzFTTHRHMDZmelhmT245aHo0RkdQcmZySHhScGF4UmxsSWVLVWd1NlJZUk5CQjJIU0l1RmExWEU?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T16:56:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Dainik Jagran",
+      "Bilateral Agreements",
+      "Hindi Media",
+      "Cross-Border Trade",
+      "Transit Accords",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-014",
+    "slug": "amar-ujala-bsf-steps-up-border-surveillance-expedites-fencing-indo-bangla-frontier",
+    "title": "भारत-बांग्लादेश बॉर्डर: सीमावर्ती इलाकों में अतिक्रमण और अवैध प्रवासियों पर बीएसएफ की नजर, तेजी से लगेगी बाड़ - Amar Ujala",
+    "englishTitle": "Amar Ujala: BSF Intensifies Surveillance Against Border Encroachments & Illegal Infiltration, Speeds Up Smart Fencing",
+    "banglaTitle": "ভারত-বাংলাদেশ সীমান্ত: অনুপ্রবেশ ও দখলদারি রুখতে বিএসএফের নজরদারি জোরদার, দ্রুত কাঁটাতারের বেড়া দেওয়ার নির্দেশ: অমর উজালা",
+    "summaryBn": "হিন্দি দৈনিক 'অমর উজালা' জানিয়েছে, ভারত-বাংলাদেশ আন্তর্জাতিক সীমান্তের অরক্ষিত এলাকায় অবৈধ অনুপ্রবেশ ও সীমান্ত অপরাধ কঠোরভাবে দমনে বর্ডার সিকিউরিটি ফোর্স (বিএসএফ) আধুনিক স্মার্ট ফেন্সিং নির্মাণের গতি বাড়িয়েছে। নদীমাতৃক ও দুর্গম সীমান্ত অঞ্চলে অতিরিক্ত নজরদারি চৌকি এবং ড্রোন টহল বৃদ্ধির নির্দেশনা দেওয়া হয়েছে।",
+    "summaryEn": "Leading Hindi daily Amar Ujala reports that the Border Security Force (BSF) has expedited the installation of smart composite fencing along vulnerable and unfenced stretches of the Indo-Bangladesh international frontier, deploying thermal night-vision sensors and aerial surveillance to curb illegal infiltration and cross-border encroachment.",
+    "keyPointsBn": [
+      "ভারত-বাংলাদেশ সীমান্তের অরক্ষিত অংশে স্মার্ট ফেন্সিং ও থার্মাল ইমেজিং ক্যামেরা স্থাপনের গতি বৃদ্ধি",
+      "সীমান্ত এলাকায় অপরাধ চক্র ও অনুপ্রবেশ ঠেকাতে ভারতীয় সীমান্তরক্ষী বাহিনীর বিশেষ সতর্কতা জারি",
+      "স্থানীয় বাসিন্দা ও বিজিবির সঙ্গে নিয়মিত ফ্ল্যাগ মিটিং ও সমন্বয় অব্যাহত রাখার নির্দেশ"
+    ],
+    "keyPointsEn": [
+      "Amar Ujala reports BSF accelerating smart composite fencing across unfenced riverine and overland stretches",
+      "Heightened vigilance deployed along Assam, West Bengal, and Tripura borders to curb illicit migration",
+      "Focus placed on coordinated border patrol mechanisms and institutional flag meetings with BGB"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্তে নজরদারি বৃদ্ধি ও অবকাঠামোগত নিরাপত্তা জোরদারের প্রশাসনিক ও কৌশলগত পদক্ষেপের বস্তুনিষ্ঠ বিবরণ।",
+    "sentimentReasonEn": "Factual reportage detailing border security enhancements, infrastructure upgrades, and anti-smuggling protocol enforcement.",
+    "source": {
+      "name": "Amar Ujala",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTEw3TVZNNV9ZTlBhLTZONXNtMW01UmwwTjF1ZUFPNU5uM1ZGZTFTWkFSSUhnYmp2RTFnYW5BMjVfQlljeW9pbERNMU9JSGs1LWlQRnhENzFVOVY0N1BPb0FEQVBSTHZwNXZYR3M1R1FndlczWjMzcHo5bWw5a2o1LXZITXpDU0Fsbnp1YmNhUVFWSVhGV2VWbXJCNDl5NzZ1RERsTXFHZG92OVdzWHUwb0JobDdMRllLYlp2Qk5IN1N1UGJ5LXVIWXVQZXlNczNUeUdMd081MHdyZFJwWFVwRmVn0gHnAUFVX3lxTE1kYzg0RlhGM1pZWEZqeHgxd1k1UUFRN3BZY3ZlZUhTUkdneGlEQWRoSnJrM1V2ODFYZ1NMTDVEOWlmdFVUcVJuTUx5SmpacmMyeDhRRklwV3F6dGYtWWttMmZWRkN0OXdURnQ5QW9NcGdSZVFkSHJwYnUwSXNYZlljWWdIT1dZb3VMOE1HZHdsLUs2eTlxYm5xWlJmR3BuVHE4WHY3end4ZFVsWjRPY05MRWwwb3k3VXg0VGxkNjJ1RUVhUEg1NVZva0JRbU9uSDdzSDRsSEJZZk56ZzdqSkgtZ2M2MVJsZw?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T11:27:14Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "tags": [
+      "Amar Ujala",
+      "BSF",
+      "Border Security",
+      "Hindi Media",
+      "Smart Fencing",
+      "Indo-Bangla Border"
+    ]
+  },
+  {
+    "id": "news-20260920-015",
+    "slug": "live-hindustan-transboundary-water-sharing-teesta-ganges-treaty-complexities",
+    "title": "पाकिस्तान के बाद अब बांग्लादेश को भारी पड़ सकता है पानी का मुद्दा - Hindustan",
+    "englishTitle": "Live Hindustan: Water Diplomacy Dilemma - How Geopolitical Posturing on Teesta & Ganges Accords Impacts Dhaka",
+    "banglaTitle": "অভিন্ন নদীর পানিবন্টন ইস্যু: তিস্তা ও গঙ্গা চুক্তি নিয়ে ভূ-রাজনৈতিক টানাপোড়েনে ঢাকার চ্যালেঞ্জ নিয়ে লাইভ হিন্দুস্তানের বিশ্লেষণ",
+    "summaryBn": "ভারতের শীর্ষস্থানীয় হিন্দি প্রকাশনা 'লাইভ হিন্দুস্তান'-এর বিশেষ বিশ্লেষণী নিবন্ধে বলা হয়েছে, পাকিস্তান সিন্ধু চুক্তি নিয়ে যে জটিলতায় পড়েছে, অভিন্ন নদীর পানিবন্টন নিয়ে রাজনৈতিক বক্তব্যের কারণে ঢাকাও একই ধরনের ভূ-রাজনৈতিক চ্যালেঞ্জের মুখে পড়তে পারে। ২০২৬ সালে ঐতিহাসিক গঙ্গা পানিবন্টন চুক্তি নবায়নের প্রাক্কালে বাস্তববাদী কূটনৈতিক সমঝোতার প্রয়োজনীয়তা তুলে ধরা হয়েছে।",
+    "summaryEn": "A detailed geopolitical analysis in Live Hindustan argues that escalating rhetorical confrontations over shared river systems risk complicating Dhaka's long-term water and irrigation security. With the landmark 1996 Ganges Water Sharing Treaty up for renewal in 2026, New Delhi strategists emphasize technical basin hydrology over adversarial geopolitical positioning.",
+    "keyPointsBn": [
+      "৫৪টি অভিন্ন নদীর পানি বন্টন ও ২০২৬ সালে গঙ্গা চুক্তি নবায়নের প্রাক্কালে কূটনৈতিক জটিলতা তৈরি",
+      "তিস্তা মহা-পরিকল্পনায় তৃতীয় পক্ষের অন্তর্ভুক্তি দিল্লির কৌশলগত উদ্বেগের অন্যতম কারণ হিসেবে চিহ্নিত",
+      "বাস্তবসম্মত কারিগরি সমঝোতা ছাড়া পানি ইস্যুতে রাজনৈতিক বক্তব্য ঢাকার জলবায়ু নিরাপত্তায় প্রভাব ফেলার আশঙ্কা"
+    ],
+    "keyPointsEn": [
+      "Live Hindustan examines stakes surrounding 54 shared transboundary rivers and the upcoming 2026 Ganges Treaty renewal",
+      "New Delhi views potential third-party involvement in Teesta river projects with strategic caution",
+      "Analysis stresses that technical river-basin hydrology must precede political rhetoric to protect agrarian yields"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও তিস্তা",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "negative",
+    "sentimentReasonBn": "অভিন্ন নদীর পানিবন্টন নিয়ে রাজনৈতিক টানাপোড়েন এবং ঢাকার অভ্যন্তরীণ কৃষি ও সেচ ব্যবস্থার ঝুঁকির দিকটি বিশ্লেষিত হয়েছে।",
+    "sentimentReasonEn": "Highlights risks of geopolitical stalemate over shared transboundary waters impacting regional agricultural and water security.",
+    "source": {
+      "name": "Hindustan (Live Hindustan)",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTldqbjZERXcyMS0xTjNfb09KUWI5d3FjQnBfQlZaVlZMTzV4OXFUYVJRc3lnN25tOXQzbFBvSkdPSnpYUUpfanRmQzFEZ3RYcUJzZXJJZzdOdVc0ejVUQjQyczBuWFg4OExWclRTeWxRZnRsb1JkVUo0WUxaR0RQVGRBMlQwRWtmS2NuaEh2SUE0UXI5WHZqVjlES1FIVjhKZjctZk9DUGNwZ0FuUWx0V0ZmaGJUMjk2TloyS3J4ZWkxTUtsTUlqTGNnVEFBc1RaU3fSAdcBQVVfeXFMTWJCMVhZRUROS052QnQ0Q2lURzZzU0JheUdOaXNzSGdPaThVT1V1eTRydWdDQ1BLWFdYTjIzWXJUalRVRzFfclZic2ZHR1FXT3VTcGx6NkJXdTQ1YVhRbkJwV2MzTEVBV0VMY2NaWWozYWgtc09SbE5Sb1FkU3UwQUYxMkRMYTl2b3ZOQk4wdDYwY0NBZXR6NjlMU2dYRzgzOWpla3VUc3IyUVpZbDlHMTBOT3JlcVhicWxfb0w3Q20waUo0c3JHdjBjVm9xNk10NlUxdFU5cEk?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T12:22:48Z",
+    "readTimeBn": "৫ মিনিট পড়া",
+    "readTimeEn": "5 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "Live Hindustan",
+      "Teesta Water",
+      "Ganges Treaty 2026",
+      "Water Diplomacy",
+      "Hindi Media",
+      "Transboundary Rivers"
+    ]
+  },
+  {
+    "id": "news-20260920-016",
+    "slug": "navbharat-times-bangladesh-review-101-india-deals-tarique-rahman-adviser-clarification",
+    "title": "हसीना सरकार में भारत से हुए 101 समझौते रद्द करेगा बांग्लादेश? तारिक के करीबी ने बताया समीक्षा का मकसद - Navbharat Times",
+    "englishTitle": "Navbharat Times: Will Bangladesh Scrap 101 India Deals? Tarique Rahman's Aide Clarifies Review Objectives",
+    "banglaTitle": "হাসিনা আমলে ভারতের সাথে হওয়া ১০১ চুক্তি কি বাতিল করবে বাংলাদেশ? পর্যালোচনার উদ্দেশ্য স্পষ্ট করলেন তারেক রহমানের ঘনিষ্ঠ মহল",
+    "summaryBn": "হিন্দি দৈনিক 'নবভারত টাইমস'-এর প্রতিবেদনে বিএনপির ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমানের পররাষ্ট্র বিষয়ক ঘনিষ্ঠ পরামর্শকদের বক্তব্য তুলে ধরা হয়েছে। তারা জানিয়েছেন, অন্তর্বর্তী সরকারের চুক্তি পর্যালোচনার অর্থ সব দ্বিপাক্ষিক চুক্তি বাতিল করা নয়; বরং বিদ্যুৎ ও ট্রানজিটের বাণিজ্যিক শর্তগুলোকে আরও স্বচ্ছ ও ভারসাম্যপূর্ণ করাই এর মূল লক্ষ্য।",
+    "summaryEn": "Navbharat Times reports that foreign policy advisers close to BNP acting chairman Tarique Rahman have clarified that the comprehensive review of 101 bilateral treaties signed during Hasina's tenure is not intended to scrap partnerships, but rather to re-evaluate financial tariffs on power imports and ensure transparent terms aligned with Bangladesh's domestic interests.",
+    "keyPointsBn": [
+      "তারেক রহমানের রাজনৈতিক উপদেষ্টারা স্পষ্ট করেছেন যে পাইকারি হারে সব দ্বিপাক্ষিক চুক্তি বাতিলের কোনো সিদ্ধান্ত হয়নি",
+      "বিদ্যুৎ আমদানি ও অর্থনৈতিক ট্রানজিটের মতো জরুরি বিষয়গুলোতে জাতীয় স্বার্থের ভারসাম্য রক্ষাই পর্যালোচনার উদ্দেশ্য",
+      "আগামী নির্বাচনে সম্ভাব্য ক্ষমতায় যাওয়ার আগে নয়াদিল্লির সাথে যোগাযোগ চ্যানেল কার্যকর রাখার ইঙ্গিত"
+    ],
+    "keyPointsEn": [
+      "Close aides of Tarique Rahman clarify that the review panel does not intend wholesale scrapping of bilateral accords",
+      "Review focuses on renegotiating terms of power purchase tariffs and cross-border commercial transit protocols",
+      "Signifies pragmatic calculations within BNP to maintain open diplomatic communication lines with New Delhi"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "চুক্তি বাতিল বনাম কার্যকারিতা পুনর্নির্ধারণ নিয়ে বিএনপি নেতৃত্ব ও তারেক রহমানের উপদেষ্টাদের কৌশলী অবস্থানের বিশ্লেষণ।",
+    "sentimentReasonEn": "Balanced investigative report detailing the strategic motivations behind reviewing bilateral treaties while managing domestic political expectations.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdFIwTkNoempGUGlDM2E0cGVOVHFZZ3IxNWZqRzFCalU0YjFOcHgzV3hiUE9rOUFjY2VPUVplNzd4dFpUUDFBUFQwdWdwY293dDhSTVNDN2YwZ0hrVjBSelZEaW9CMGdqYWM1RjNsd2tLSWdhYmw5S0lxVHozVHFwczBJc213S2pJM0VwX1RUN1hVakpMSk1xM3Q1a0Z1elI0TWk4UDY5UFpyRjhRTWNVcXhoY1FfOHBpaVY4V1FPd3o3bGJsRlNjOFI4Vld5R3hPM1c3VTJmczhLa1lJRTFTZ19XUFBZajJiMnlDRUpVRnRMS1lRTnJ30gH8AUFVX3lxTFBhVDdJVExoZzVyaU9fclJjaWJhOFQ0aGwxSEJIYnpoUnBxU0tHZEQ0Z3pMVVBhT3YzWHMwTjRxR2FvRjRnT1FKUktzRjEwTlNBdVZlMFhmZ1NTUTNLRktKQlhXVmVzVXVXWlBZaWFlRWx1cnNWY0x6TXd4Ujh6T19CNTMtV0x5d042bHlNVHA1dHB0OC1wT3ZkWEVvdVVOTGhRbDIyVlV2SDZIZS1HNEJLbHV2LTg0bFliMVJaX2tqMFdkd0RNdE5FQ0dPZzg1aXBxdENaZnlDT0RQUGxRWmJuWktxb0ozRVNWcDFlWVVtQ2lKWGJ4WjJYcmdtbA?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T06:17:43Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "tags": [
+      "Navbharat Times",
+      "Tarique Rahman",
+      "Bilateral Pacts",
+      "BNP",
+      "Hindi Media",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-017",
+    "slug": "news18-hindi-dhaka-security-alert-crude-bomb-blasts-unrest-protests",
+    "title": "बांग्लादेश में 7 भयानक ब्लास्ट के बाद दहशत का माहौल, 200 जगहों की सासें थमीं, देसी बमों का आंतक - News18 Hindi",
+    "englishTitle": "News18 Hindi: Security Panic in Dhaka After Crude Explosions, High Alert Across 200 Intersections Amid Political Rallies",
+    "banglaTitle": "ঢাকায় হাতবোমা বিস্ফোরণ ও সংঘর্ষে আতঙ্ক, দুই শতাধিক স্থানে নিরাপত্তা জোরদার: নিউজ১৮ হিন্দি",
+    "summaryBn": "ভারতের শীর্ষ হিন্দি নিউজ চ্যানেল 'নিউজ১৮ হিন্দি'-র প্রতিবেদনে প্রকাশ, ঢাকায় রাজনৈতিক সমাবেশ ও বিক্ষোভকে ঘিরে একাধিক এলাকায় ককটেল ও হাতবোমা বিস্ফোরণের ঘটনা ঘটেছে। উদ্ভূত পরিস্থিতিতে রাজধানীর দুই শতাধিক গুরুত্বপূর্ণ পয়েন্টে অতিরিক্ত পুলিশ ও বিজিবি মোতায়েন করে নিরাপত্তা জোরদার করা হয়েছে।",
+    "summaryEn": "News18 Hindi reports intense security tensions in Dhaka following several crude bomb explosions and clashes between opposing political factions. Bangladesh security agencies have fortified over 200 sensitive intersections across the capital with rapid-deployment anti-riot battalions to contain escalating street violence.",
+    "keyPointsBn": [
+      "ঢাকায় আওয়ামী লীগের ঝটিকা মিছিল ও বিএনপির পাল্টা প্রতিরোধ সমাবেশকে ঘিরে একাধিক স্থানে ককটেল বিস্ফোরণ",
+      "পুলিশ ও র্যাব সদস্যদের অতিরিক্ত টহল এবং রাজধানীর ২০০টিরও বেশি প্রবেশমুখে তল্লাশি চৌকি স্থাপন",
+      "রাজনৈতিক অস্থিরতা দীর্ঘায়িত হলে সীমান্তবর্তী জেলাগুলোতে এর প্রভাব পড়ার বিষয়ে ভারতীয় গণমাধ্যমের সতর্কতা"
+    ],
+    "keyPointsEn": [
+      "Several crude bomb explosions reported in commercial zones of Dhaka amid rival street mobilizations",
+      "Law enforcement deploys reinforced cordons and vehicle checkpoints across major Dhaka entry corridors",
+      "Indian media coverage flags broader security spillover concerns along neighboring border corridors"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজধানীতে ককটেল বিস্ফোরণ, রাজনৈতিক উত্তেজনা এবং সাধারণ মানুষের নিরাপত্তার ঝুঁকি নিয়ে শঙ্কার কারণে সুর নেতিবাচক।",
+    "sentimentReasonEn": "Emphasizes security deterioration, public apprehension, and street violence triggered by political showdowns in Dhaka.",
+    "source": {
+      "name": "News18 Hindi",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPNmZUaTRELXpnRDRFMWlCYXFyTUstNnVEdW9nOGhDRGgyeUl1bTRXTUtFcllwakZqQk82aklrVWdGcy1wbjBXdElZaW9tX1B0N3JPMEQ4YW5ndTVRc0Vrb0ZaSzZVcERTVlhBcEp2ZXZ5d0dZYmRIdmpmeTU0OVBLRUpiSGxuMVdwb2NLeVNadUV5RGJDb1RvdlRNSDdTMllXSXQwUzNHemdObjNpZURUcUJWdFVBMmdaX1kxS3RZUnpzbEYwbGgzcmVmb0dhOTY1SF9ra3Q5TGhpb2MweWdHYWdRalBEdUtZTE9kZzFuemVLdURSU0xlTkpWMU1fLWoxT1RuU0JHWlc5T3E3VTItb9IBkAJBVV95cUxPNmZUaTRELXpnRDRFMWlCYXFyTUstNnVEdW9nOGhDRGgyeUl1bTRXTUtFcllwakZqQk82aklrVWdGcy1wbjBXdElZaW9tX1B0N3JPMEQ4YW5ndTVRc0Vrb0ZaSzZVcERTVlhBcEp2ZXZ5d0dZYmRIdmpmeTU0OVBLRUpiSGxuMVdwb2NLeVNadUV5RGJDb1RvdlRNSDdTMllXSXQwUzNHemdObjNpZURUcUJWdFVBMmdaX1kxS3RZUnpzbEYwbGgzcmVmb0dhOTY1SF9ra3Q5TGhpb2MweWdHYWdRalBEdUtZTE9kZzFuemVLdURSU0xlTkpWMU1fLWoxT1RuU0JHWlc5T3E3VTItbw?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T11:32:07Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "tags": [
+      "News18 Hindi",
+      "Dhaka Unrest",
+      "Crude Blasts",
+      "Hindi Media",
+      "Security Alert",
+      "Political Clashes"
+    ]
+  },
+  {
+    "id": "news-20260920-018",
+    "slug": "navbharat-times-viral-police-audio-sheikh-hasina-return-dhaka-administrative-fallout",
+    "title": "'शेख हसीना वापस लौटीं तो पुलिस कुछ नहीं कर पाएगी', बांग्लादेशी अधिकारी के ऑडियो से ढाका में हड़कंप, तुरंत हटाया - Navbharat Times",
+    "englishTitle": "Navbharat Times: 'Police Powerless If Hasina Returns' - Viral Audio by Police Official Triggers Shakeup in Dhaka",
+    "banglaTitle": "‘শেখ হাসিনা ফিরলে পুলিশ কিছুই করতে পারবে না’: ভাইরাল অডিও নিয়ে ঢাকায় তোলপাড়, বরখাস্ত শীর্ষ কর্মকর্তা—নবভারত টাইমস",
+    "summaryBn": "নবভারত টাইমসের বিশেষ প্রতিবেদনে বলা হয়েছে, সাবেক প্রধানমন্ত্রী শেখ হাসিনা দেশে ফিরলে পুলিশের পক্ষে পরিস্থিতি নিয়ন্ত্রণ করা অসম্ভব হতে পারে বলে মন্তব্য করা এক জ্যেষ্ঠ পুলিশ কর্মকর্তার গোপন অডিও ফাঁস হয়ে সামাজিক মাধ্যমে আলোড়ন সৃষ্টি করেছে। এই ঘটনার পরপরই সংশ্লিষ্ট কর্মকর্তাকে তাত্ক্ষণিকভাবে দায়িত্ব থেকে সরিয়ে দেওয়া হয়েছে।",
+    "summaryEn": "Navbharat Times covers the administrative fallout in Dhaka following the leak of an audio recording in which a senior Bangladeshi police official candidly acknowledged that law enforcement personnel would be powerless to contain public crowds if Sheikh Hasina returned. The official was summarily relieved of his command.",
+    "keyPointsBn": [
+      "সাবেক প্রধানমন্ত্রীর প্রত্যাবর্তনে লাখো মানুষের ঢল নামলে তা নিয়ন্ত্রণে পুলিশের সীমাবদ্ধতা স্বীকার করা অডিও ফাঁস",
+      "অডিও সামাজিক মাধ্যমে ছড়িয়ে পড়ার পরপরই অভিযুক্ত পুলিশ কর্মকর্তাকে দায়িত্ব থেকে অব্যাহতি",
+      "মাঠপর্যায়ের পুলিশ বাহিনীর মনোবল ও প্রশাসনিক নিরপেক্ষতা নিয়ে ঢাকায় রাজনৈতিক বিতর্ক তুঙ্গে"
+    ],
+    "keyPointsEn": [
+      "Leaked recording captures senior officer admitting police would be overwhelmed by spontaneous crowds if Hasina returns",
+      "Ministry of Home Affairs in Dhaka summarily sacks the official following public and social media uproar",
+      "Highlights acute concerns over administrative neutrality and the fragility of law enforcement morale"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Law",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আইন-শৃঙ্খলা বাহিনীর নৈতিক দুর্বলতা এবং রাজনৈতিক চাপে শীর্ষ কর্মকর্তাদের অপসরণের ঘটনাকে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Covers institutional friction, police demoralization, and high-profile administrative reshuffling in Dhaka.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPZEtxYnpqVVc1LVllbHdLVnlLUF9OTlpKMzU4TjA5Mm1DYy1RNVF5bWNWMXlwQjVvTFlQazdhOEIybjJ0azVKVVBKRTliVlROeGxVWldSOXI1Z21aLTc3WHZHZ2dFcnpzZUlUVW1helhpckZnNkw1Rm9EQXZRd1dSUVg4eTJ6SVp0eHUxdkJnRzN5RTFBdkdEczd2Sy1yYW5pYlRmX09uaUphVlE3d0Q1Z2JOWlpsN1pFYzczOVFtTlRkT3ZrZ0k3VklBeUs2YV80Y2l4UVk5NXBiQS1QR28taGtUcEttZDhPYjdJbWhrVVpfZ1FDSDBsY0NsYUJiWFnSAYQCQVVfeXFMUFZuN3FMNFZ3akN3R0sxdE00aUFISF8xc19ZTW4yNnVFRzBsRElqYktxMHJ0RzlGcUVIMXN2S3JKVGNlZVU3NlhLa1Jwc1JHa2REaUppZVRySEFGSHhJbEl0NnZ1VjhLTnZXYlpoZFhSSnBqZUxydGE3NU1Bc1R4VC1NOERfQ0h4Sk9WcGV5MzdfVXNta0pZV0wwTURMZlJaeTY0SE1pZG9HNnQ5eGhLS2Jmb05HTFZrMDJXM0IyaFBqU054VmdZRVU5amI4anhZMktDOTFYekJ1S1BPUWxOcWxsWkttZW9QUkVqOG5iQVlwVzJNaURJUzhnZmFQSmhsWTVSUDI?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-18T04:27:54Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Navbharat Times",
+      "Sheikh Hasina",
+      "Dhaka Police",
+      "Leaked Audio",
+      "Hindi Media",
+      "Political Crisis"
+    ]
+  },
+  {
+    "id": "news-20260920-019",
+    "slug": "news18-hindi-bangladesh-supreme-court-advocate-questions-constitutional-power-transfer",
+    "title": "जब शेख हसीना ने इस्तीफा दिया ही नहीं, तो सत्ता हस्तांतरण कैसे हुआ? जांच हो: बांग्लादेश SC एडवोकेट, मोहसिन रशीद - News18 Hindi",
+    "englishTitle": "News18 Hindi: 'If Hasina Never Resigned, How Was Power Transferred?' - Bangladesh SC Advocate Demands Judicial Inquiry",
+    "banglaTitle": "‘শেখ হাসিনা পদত্যাগপত্র না দিলে ক্ষমতা হস্তান্তর কীভাবে বৈধ?’: সুপ্রিম কোর্টের সিনিয়র আইনজীবীর বক্তব্যে দিল্লির সংবাদমাধ্যমে আলোড়ন",
+    "summaryBn": "নিউজ১৮ হিন্দির প্রতিবেদনে প্রকাশ, বাংলাদেশ সুপ্রিম কোর্টের প্রবীণ আইনজীবী অ্যাডভোকেট মহসিন রশীদ এক সাক্ষাৎকারে দাবি করেছেন—যেহেতু শেখ হাসিনা আনুষ্ঠানিকভাবে লিখিত পদত্যাগপত্র রাষ্ট্রপতির কাছে জমা দেননি, সেহেতু ২০২৪ সালের ক্ষমতা হস্তান্তর সাংবিধানিক কাঠামোর মধ্যে হয়নি। এ বিষয়ে একটি স্বাধীন বিচার বিভাগীয় তদন্তের দাবি তুলেছেন তিনি।",
+    "summaryEn": "News18 Hindi features arguments from senior Bangladesh Supreme Court advocate Mohsin Rashid, who asserts that since former Prime Minister Sheikh Hasina never tendered an official written instrument of resignation to the President, the subsequent transfer of executive power lacks clear constitutional grounding, demanding a thorough judicial examination.",
+    "keyPointsBn": [
+      "বাংলাদেশ সুপ্রিম কোর্টের জ্যেষ্ঠ আইনজীবী মহসিন রশীদের আইনি পর্যবেক্ষণ ভারতীয় গণমাধ্যমে গুরুত্ব সহকারে প্রচার",
+      "সংবিধান অনুযায়ী লিখিত পদত্যাগপত্র রাষ্ট্রপতির কাছে আনুষ্ঠানিকভাবে হস্তান্তরের প্রমাণ না থাকা নিয়ে বিতর্ক",
+      "অন্তর্বর্তীকালীন ব্যবস্থার সাংবিধানিক ভিত্তি নিয়ে উচ্চ আদালতে চলমান আইনি বিতর্ক দিল্লির পর্যবেক্ষকদের নজরে"
+    ],
+    "keyPointsEn": [
+      "News18 Hindi highlights arguments by prominent jurist Mohsin Rashid challenging constitutional validity of 2024 succession",
+      "Absence of formally tendered written resignation to the President of Bangladesh sparks fierce legal discourse",
+      "New Delhi constitutional observers monitor proceedings testing the long-term institutional tenure of interim structures"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "আইন ও সংবিধান",
+    "categoryLabelEn": "Constitutional Law",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সংবিধান বিশেষজ্ঞের বক্তব্য ও আইনি প্রক্রিয়ার নিরপেক্ষ বিশ্লেষণ তুলে ধরায় সুর ভারসাম্যপূর্ণ।",
+    "sentimentReasonEn": "Objective presentation of constitutional and legal arguments raised by leading jurists regarding regime succession.",
+    "source": {
+      "name": "News18 Hindi",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMWxlamlGQlptelpVem5PLWJpcUlYVkJQX1FUbEp2MjlNUUZuajhFUFkwZzRmVlBSSy1wbk83LUxydnBlcnJlaFIxa0VZdkdKcXhCMFFzaXg4WnRLVjBmMHVVWFJDZVU1NV9INHFLWEN1dE5CejNyOG9hNi1QWmxSMERNU1FCeVB5WG54SDl5TDJhdEFobE1lVm1DbFFnZWRJX3hqSFQ3WWNzbWU2VmQ00gGvAUFVX3lxTE0xbGVqaUZCWm16WlV6bk8tYmlxSVhWQlBfUVRsSnYyOU1RRm5qOEVQWTBnNGZWUFJLLXBuTzctTHJ2cGVycmVoUjFrRVl2R0pxeEIwUXNpeDhadEtWMGYwdVVYUkNlVTU1X0g0cUtYQ3V0TkJ6M3I4b2E2LVBabFIwRE1TUUJ5UHlYbnhIOXlMMmF0QWhsTWVWbUNsUWdlZElfeGpIVDdZY3NtZTZWZDQ?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-17T08:12:57Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "News18 Hindi",
+      "Supreme Court",
+      "Constitutional Law",
+      "Sheikh Hasina",
+      "Hindi Media",
+      "Legal Inquiry"
+    ]
+  },
+  {
+    "id": "news-20260920-020",
+    "slug": "aaj-tak-ict-sentences-7-awami-league-leaders-to-death-delhi-scrutiny",
+    "title": "बांग्लादेश में अवामी लीग के 7 नेताओं को मौत की सजा, 2024 हिंसा मामले में दोषी करार - AajTak",
+    "englishTitle": "Aaj Tak: Bangladesh Special Tribunal Sentences 7 Senior Awami League Leaders to Death Over 2024 Turmoil",
+    "banglaTitle": "২০২৪ সালের ঘটনায় আওয়ামী লীগের ৭ নেতাকে ট্রাইব্যুনালের মৃত্যুদণ্ডের রায়: কড়া পর্যবেক্ষণে আজতক",
+    "summaryBn": "ভারতের প্রধান হিন্দি সংবাদমাধ্যম 'আজতক'-এর বিশেষ প্রতিবেদনে জানানো হয়েছে, আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল ২০২৪ সালের জুলাই আন্দোলনের ঘটনায় ক্ষমতাচ্যুত আওয়ামী লীগের সাবেক মন্ত্রী ও জ্যেষ্ঠ সাত নেতাকে মৃত্যুদণ্ডের সাজা ঘোষণা করেছে। রায় ঘোষণার পর নয়াদিল্লির আন্তর্জাতিক সম্পর্ক ও মানবাধিকার বিশেষজ্ঞরা বিচার প্রক্রিয়ার স্বচ্ছতা নিয়ে প্রশ্ন তুলেছেন।",
+    "summaryEn": "Aaj Tak reports that Bangladesh's International Crimes Tribunal has handed down capital punishment sentences to seven senior Awami League figures, including former cabinet ministers, in connection with the July 2024 unrest. Legal analysts in New Delhi closely monitor the proceedings, highlighting international human rights concerns over trial fairness.",
+    "keyPointsBn": [
+      "আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল কর্তৃক আওয়ামী লীগের ৭ শীর্ষ নেতার বিরুদ্ধে মৃত্যুদণ্ড ঘোষণার রায় প্রচার",
+      "বিচারিক মান ও আত্মপক্ষ সমর্থনের আন্তর্জাতিক সুযোগ নিয়ে ভারতীয় আইন বিশেষজ্ঞদের সংশয়",
+      "বিরোধী রাজনীতির ওপর এ ধরনের কঠোর রায় দেশে প্রতিহিংসামূলক সহিংসতার নতুন চক্র তৈরি করতে পারে বলে সতর্কতা"
+    ],
+    "keyPointsEn": [
+      "Special Tribunal hands down controversial death sentences to seven senior Awami League officials",
+      "Legal analysts in New Delhi raise due process and fair trial concerns regarding political expedited trials",
+      "Indian commentators caution that aggressive punitive verdicts risk hardening political polarization and retaliatory unrest"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Judiciary",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক নেতাদের বিতর্কিত মৃত্যুদণ্ড এবং বিচারিক প্রক্রিয়ার রাজনৈতিকীকরণের আশঙ্কায় সুর নেতিবাচক।",
+    "sentimentReasonEn": "Criticizes aggressive judicial retribution, capital punishment against political figures, and potential domestic fallout.",
+    "source": {
+      "name": "Aaj Tak",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcDlPR21IZjQ1VEVvN2lKVVZ3OGNOUmg4M3VHQTNvTmhhcjJTTjA5aDZOWW9vdXJGOGNtMDdab25FSnVBZ0JaeE45ZnU4VVd5MlMwVklNb2JRQU5zTm02T2FOTVFHbmZUR0I1b2VidTlJODk3NkdhTlBtUk9kZFpaU2R2WjdYem93S1NlOFNEYXJxNTRySmhXaGJKeV9MelpQd2xJaGd0SHZ4c1RUM2dTSFdoTzdUMXNHdlNSVE9QZjFXSVdlc2VQRlkyN0RSYU14dmfSAdcBQVVfeXFMTnRqQWV6b2xONVZ6cXNQQzFPQVNScGNhcFE3RjFqR0d2cFlQZHdXeVhDR01uX3A2VG5rUGdWNlk4ajRsdDlkaFNmTGRjVHJIREEwV1R5dUF5cXQ0RDZlSHFJamdEZ2t6WFZiTjAtdFVGdXJiSnJZWmtVYWhYVjNOdno0SWxnMDk4cU50cFZ0RVAweHNVeWttWWZXNlZXbDNBSEFQQjl3eFVobTYzOEZJSHUtcnpWRVpPWHNITHNOYUFaNGM0U0ZteG92dDVzRVdxZEZXZE91XzQ?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-15T09:20:01Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "tags": [
+      "Aaj Tak",
+      "ICT Tribunal",
+      "Awami League",
+      "Death Penalty",
+      "Hindi Media",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-021",
+    "slug": "aaj-tak-dhaka-pragmatic-push-to-reset-relations-with-india",
+    "title": "बांग्लादेश को आई अक्ल! शेख हसीना को भूल अब भारत के साथ रिश्ते 'रीसेट' करने की तैयारी - AajTak",
+    "englishTitle": "Aaj Tak: Dhaka Realizes Regional Realities - Pragmatic Push to 'Reset' Relations with India Beyond Exiled Leadership",
+    "banglaTitle": "বাস্তবতার মুখোমুখি ঢাকা: শেখ হাসিনা ইস্যুর বাইরে ভারতের সাথে সম্পর্ক ‘রিসেট’ করার উদ্যোগ—আজতকের পর্যালোচনা",
+    "summaryBn": "আজতকের এক কূটনৈতিক বিশ্লেষণে দাবি করা হয়েছে, আবেগঘন বয়ান ও রাজনৈতিক তিক্ততার বাইরে এসে নয়াদিল্লির সাথে দ্বিপাক্ষিক সম্পর্ক পুনর্গঠনে জোর দিচ্ছে ঢাকা। ভৌগোলিক অবস্থান, বিদ্যুৎ গ্রিড সংযোগ এবং খাদ্যপণ্য সরবরাহে ভারতের অপরিহার্যতা অনুধাবন করে বাণিজ্য ও কূটনৈতিক যোগাযোগ স্বাভাবিক করার পথ খুঁজছে অন্তর্বর্তীকালীন প্রশাসন।",
+    "summaryEn": "An in-depth diplomatic feature by Aaj Tak underscores a marked calibration in Dhaka's posture, moving from adversarial rhetoric towards a pragmatic desire to reset relations with New Delhi. Strategic planners recognize that geographical adjacency, uninterrupted electrical transmission, and trade lifelines necessitate stable institutional engagement.",
+    "keyPointsBn": [
+      "ভারতীয় বিদ্যুৎ, নিত্যপ্রয়োজনীয় পণ্য ও ট্রানজিটের গুরুত্ব অনুধাবন করে তিক্ততা কমানোর তাগিদ ঢাকার নীতি-নির্ধারকদের",
+      "শেখ হাসিনার অবস্থান নিয়ে প্রকাশ্য অভিযোগ সত্ত্বেও কূটনৈতিকভাবে দিল্লিকে পাশে পাওয়ার চেষ্টা",
+      "দক্ষিণ এশিয়ায় ভারতের অর্থনৈতিক প্রভাব এড়িয়ে একাকী চলার সীমাবদ্ধতা নিয়ে ভারতীয় বিশ্লেষকদের অভিমত"
+    ],
+    "keyPointsEn": [
+      "Aaj Tak diplomatic analysis observes softening rhetoric in Dhaka acknowledging essential reliance on Indian power and food imports",
+      "Despite political friction over Hasina's refuge, administrative channels actively pursue a pragmatic bilateral reset",
+      "Strategic experts underline that geographic and supply chain realities constrain any prolonged decoupling"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Strategy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "উভয় দেশের বাস্তব অর্থনৈতিক ও কৌশলগত নির্ভরতার ভিত্তিতে সম্পর্ক স্বাভাবিকীকরণের পথ খোঁজার ওপর জোর।",
+    "sentimentReasonEn": "Highlights pragmatism and recognition in Dhaka of the vital strategic and economic necessity of partnership with New Delhi.",
+    "source": {
+      "name": "Aaj Tak",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbjFPZU9KcGxManlEVnFjX2J3UDAtN0VsNHFLWE9GXzJWaEtPY3l6aVRmdHRnMkx4YlI0THNCb1ZIeVpOMTJhYWJfLU5scXphUF9Jam5JeFpRZ0hjbEtQRTdOQ0NfcTNQeS1OcnVaNFpiNE1XOEtmLXp4TDVBNnFHXzdsa2YtR0ZwNXVQMkxzMGYzRDlIMTR4WTcxYXl5R3lObEpSMjJYb3hwdkdOMVFTaWJiVXFvSFRGVHI3OEtoaUV6OGFLdjY0bDFhSS0?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-14T01:39:57Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
+    "tags": [
+      "Aaj Tak",
+      "Bilateral Reset",
+      "Diplomacy",
+      "Hindi Media",
+      "Trade Continuity",
+      "Delhi-Dhaka Ties"
+    ]
+  },
+  {
+    "id": "news-20260920-022",
+    "slug": "news18-hindi-asian-games-2026-india-bangladesh-cricket-semifinal-diplomacy",
+    "title": "Asian Games 2026: भारत-बांग्लादेश में फाइनल की टिकट के लिए जंग, जानिए किसका पलड़ा भारी - News18 Hindi",
+    "englishTitle": "News18 Hindi: Asian Games 2026 - High-Stakes India-Bangladesh Cricket Semifinal Amid Diplomatic Spotlight",
+    "banglaTitle": "এশিয়ান গেমস ২০২৬: ফাইনালে ওঠার লড়াইয়ে মুখোমুখি ভারত ও বাংলাদেশ, ক্রীড়াঙ্গনে দ্বিপাক্ষিক উত্তেজনা: নিউজ১৮ হিন্দি",
+    "summaryBn": "এশিয়ান গেমস ২০২৬-এর পুরুষ ক্রিকেটের সেমিফাইনালে মুখোমুখি হচ্ছে ভারত ও বাংলাদেশ। নিউজ১৮ হিন্দির ক্রীড়া ডেস্ক জানিয়েছে, মাঠের বাইরে চলমান কূটনৈতিক টানাপোড়েনের কারণে দুই দেশের ক্রিকেট ভক্তদের মাঝে এই ম্যাচটি নিয়ে তুমুল উত্তেজনা বিরাজ করছে। দুই দলের শক্তিমত্তা ও সাম্প্রতিক মুখোমুখি লড়াইয়ের চুলচেরা বিশ্লেষণ করেছে চ্যানেলটি।",
+    "summaryEn": "News18 Hindi previews the blockbuster semifinal showdown between India and Bangladesh at the 2026 Asian Games cricket tournament. Amid chilly diplomatic atmospherics off the field, sports analysts dissect team combinations, spin matchups, and the historical rivalries driving intense fan engagement across both borders.",
+    "keyPointsBn": [
+      "এশিয়ান গেমস ক্রিকেটের হাই-ভোল্টেজ সেমিফাইনালে মুখোমুখি হতে চলেছে ভারত ও বাংলাদেশ",
+      "দ্বিপাক্ষিক রাজনৈতিক উত্তেজনার আবহে মাঠের ক্রিকেটে দুই দেশের সমর্থকদের তুমুল আগ্রহ",
+      "আইসিসি ইভেন্ট ও মহাদেশীয় আসরে দুই দলের সাম্প্রতিক লড়াইয়ের পরিসংখ্যান তুলে ধরেছে ভারতীয় গণমাধ্যম"
+    ],
+    "keyPointsEn": [
+      "India and Bangladesh gear up for marquee cricket semifinal clash at the Asian Games",
+      "High emotional stakes on the field amidst broader bilateral diplomatic chill",
+      "Indian sports media analyzes squad balance, spin bowling strategies, and recent head-to-head records"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
+    "categoryLabelEn": "Sports & Cricket",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ক্রিকেট প্রতিদ্বন্দ্বিতার রোমাঞ্চ ও মাঠের পরিসংখ্যান নিয়ে তথ্যবহুল বিশ্লেষণ।",
+    "sentimentReasonEn": "Focuses on competitive sporting rivalry, team balance, and cricket diplomacy on the Asian Games stage.",
+    "source": {
+      "name": "News18 Hindi",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQdGp2am44TmQxcVMxV2JCSmRDTlJWUEMtUExlU1JKekV4emRMaUl6UHRjUWJqNUo3WUswR0E4aVk5THYyMUNuc0RQU3loWHlDdGJqeU82OHVxWUNEYnc5TjE1ejdabjNqRXA3d3A5bmZvWXdwbTNLWVhoRzNRZnQ1enBlLVRHb2RGT3Y2ak03YmtNR0VMT0VCSFFUN2FZNzJUdFU4SFVYQVBrbUE4N0gzREZfM2ZyUkVhdkEyR1BOX3N0QTRnTVA4X3NEWFpGMUF3ODctSHZQc0FINnJ5NHJ2MjhiMHUwLW5ySkFsN2ZlNWphQzdUQVY2bXFqYURzQdIB_gFBVV95cUxQdGp2am44TmQxcVMxV2JCSmRDTlJWUEMtUExlU1JKekV4emRMaUl6UHRjUWJqNUo3WUswR0E4aVk5THYyMUNuc0RQU3loWHlDdGJqeU82OHVxWUNEYnc5TjE1ejdabjNqRXA3d3A5bmZvWXdwbTNLWVhoRzNRZnQ1enBlLVRHb2RGT3Y2ak03YmtNR0VMT0VCSFFUN2FZNzJUdFU4SFVYQVBrbUE4N0gzREZfM2ZyUkVhdkEyR1BOX3N0QTRnTVA4X3NEWFpGMUF3ODctSHZQc0FINnJ5NHJ2MjhiMHUwLW5ySkFsN2ZlNWphQzdUQVY2bXFqYURzQQ?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T10:38:58Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1531415074868-036b107e775a?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Asian Games 2026",
+      "Cricket",
+      "News18 Hindi",
+      "Sports Diplomacy",
+      "India vs Bangladesh",
+      "Hindi Media"
+    ]
+  },
+  {
+    "id": "news-20260920-023",
+    "slug": "dainik-jagran-dhaka-dengue-outbreak-overwhelms-hospitals-cross-border-health-screening",
+    "title": "बांग्लादेश: अस्पतालों में डेंगू मरीजों के लिए जगह तक नहीं, फर्श पर हो रहा इलाज; 18 दिनों में 79 मौतें - jagran.com",
+    "englishTitle": "Dainik Jagran: Severe Dengue Outbreak Overwhelms Dhaka Hospitals, 79 Fatalities Prompt Cross-Border Health Monitoring",
+    "banglaTitle": "ঢাকায় ডেঙ্গু পরিস্থিতির মারাত্মক অবনতি, হাসপাতালে বেড সংকট ও মৃত্যুতে সীমান্তবর্তী ভারতীয় চেকপোস্টে সতর্কতা: দৈনিক জাগরণ",
+    "summaryBn": "দৈনিক জাগরণ-এর স্বাস্থ্য ও আঞ্চলিক ডেস্ক জানিয়েছে, বাংলাদেশে ডেঙ্গুর প্রাদুর্ভাব আশঙ্কাজনক রূপ ধারণ করেছে। ঢাকায় গত ১৮ দিনে ৭৯ জনের মৃত্যু হয়েছে এবং হাসপাতালগুলোতে বেডের তীব্র সংকটে মেঝেতে রোগীদের চিকিৎসা দিতে হচ্ছে। এই প্রেক্ষাপটে পশ্চিমবঙ্গ ও ত্রিপুরার সীমান্তবর্তী ভারতীয় স্থলবন্দরগুলোতে প্রাথমিক স্বাস্থ্য নজরদারি জোরদার করা হয়েছে।",
+    "summaryEn": "Dainik Jagran reports that an aggressive surge in seasonal dengue infections has severely strained Dhaka's medical infrastructure, resulting in 79 deaths over an 18-day window and overflowing hospital wards. In response to regional public health risks, health screening protocols have been activated across major land ports in West Bengal and Tripura.",
+    "keyPointsBn": [
+      "সেপ্টেম্বরের প্রথম ১৮ দিনে ঢাকায় ডেঙ্গুতে ৭৯ জনের প্রাণহানি ও হাসপাতালগুলোতে তিল ধারণের ঠাঁই নেই",
+      "মেগা সিটিতে মশা নিধন কার্যক্রমে ঘাটতি ও ওষুধ সংকটে রোগীর চাপ সামলাতে মেঝেতে চিকিৎসার চিত্র",
+      "পেট্রাপোল, গেদে ও আগরতলা স্থলবন্দরে আসা ভ্রমণকারীদের জন্য ভারতে প্রাথমিক স্বাস্থ্য স্ক্রিনিং জোরদার"
+    ],
+    "keyPointsEn": [
+      "Dainik Jagran reports 79 fatalities within 18 days as seasonal dengue epidemic overwhelms healthcare facilities across Dhaka",
+      "Critical shortage of hospital beds forces medical staff to treat patients on corridors and floors",
+      "Land customs stations at Petrapole and Agartala establish health monitoring desks for cross-border travelers"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত স্বাস্থ্য ও জননিরাপত্তা",
+    "categoryLabelEn": "Border Health & Safety",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রোগের প্রাদুর্ভাব, মৃত্যু এবং হাসপাতালের চরম সংকটের ফলে জনস্বাস্থ্যে নেতিবাচক প্রভাবের খবর।",
+    "sentimentReasonEn": "Details humanitarian and public health strains, hospital bed shortages, and elevated mortality from the mosquito-borne epidemic.",
+    "source": {
+      "name": "Dainik Jagran",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZzRwUE8zcEI2TWdtMDVrUVFjWTgxQW1BeV9sSm04V2hrS3lEdnpsYWRQMUhWdXZQbWxlOWhJQ1BtY3Z1TTRIQUlKaFJUa3pPb3Boa043d19nakJJVkY0U1hHc2U1ajRnUVdPMXFGa3lJTmpPOUhqRXJRRGF4ampzU3R0LTZfSmtRTUp4amhSbW5HNThWNTZOQnFHazdJMUliUlA5RDdBYVNhcnRzZV9UcGdmZ2cxd0x0NkxXUVFoNU1USVNfUm4yeEFEZ3VzcmhyLW1j?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-19T10:27:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Dainik Jagran",
+      "Dengue Epidemic",
+      "Dhaka Hospitals",
+      "Border Health",
+      "Hindi Media",
+      "Public Health"
+    ]
+  },
+  {
+    "id": "news-20260920-024",
+    "slug": "dainik-jagran-indo-bangla-passenger-train-services-resumption-railway-delegation-dhaka",
+    "title": "भारत-बांग्लादेश के बीच फिर पटरी पर लौटेंगी पैसेंजर ट्रेनें, ढाका में रेलवे अधिकारियों की 3 दिवसीय बैठक शुरू - jagran.com",
+    "englishTitle": "Dainik Jagran: Passenger Train Services to Return to Track - Indian & Bangladeshi Railway Delegations Meet in Dhaka",
+    "banglaTitle": "ভারত-বাংলাদেশ যাত্রীবাহী ট্রেন ফের চালুর উদ্যোগ: ঢাকায় দুই দেশের রেল কর্মকর্তাদের তিন দিনব্যাপী বৈঠক শুরু—দৈনিক জাগরণ",
+    "summaryBn": "দৈনিক জাগরণ-এর দিল্লি ও কলকাতা ব্যুরো জানিয়েছে, ভারত ও বাংলাদেশের মধ্যে স্থগিত থাকা তিনটি জনপ্রিয় যাত্রীবাহী ট্রেন সার্ভিস—মৈত্রী এক্সপ্রেস (কলকাতা-ঢাকা), বন্ধন এক্সপ্রেস (কলকাতা-খুলনা) এবং মিতালী এক্সপ্রেস (শিলিগুড়ি-ঢাকা) ফের চালুর লক্ষ্যে ঢাকায় দুই দেশের ঊর্ধ্বতন রেল কর্মকর্তাদের তিন দিনব্যাপী যৌথ বৈঠক শুরু হয়েছে। যাত্রী নিরাপত্তা ও অপারেশনাল বিষয়গুলো চূড়ান্ত করে দ্রুত পরিষেবা শুরুর উদ্যোগ নেওয়া হচ্ছে।",
+    "summaryEn": "Dainik Jagran reports that senior railway delegations from India and Bangladesh have convened a three-day bilateral coordination conference in Dhaka to finalize timelines and security protocols for resuming all three passenger train routes: the Maitree Express, Bandhan Express, and Mitali Express, aimed at restoring critical medical, educational, and business travel corridors.",
+    "keyPointsBn": [
+      "মৈত্রী এক্সপ্রেস, বন্ধন এক্সপ্রেস ও মিতালী এক্সপ্রেস ট্রেন চলাচল স্বাভাবিক করতে ঢাকায় যৌথ রেল বৈঠক",
+      "পর্যটন, চিকিৎসা ও ব্যবসায়িক যাতায়াত সহজ করতে নিরাপত্তা ব্যবস্থা নিশ্চিতের পর টিকিট বিক্রির পরিকল্পনা",
+      "স্থলবন্দরে দীর্ঘ অপেক্ষার চাপ কমাতে রেল ট্রানজিটকে অন্যতম কার্যকর দ্বিপাক্ষিক সেতু হিসেবে মূল্যায়িত করা হয়েছে"
+    ],
+    "keyPointsEn": [
+      "Bilateral technical delegation convenes in Dhaka to formulate security and scheduling protocols for Maitree, Bandhan, and Mitali Express",
+      "Resumption aimed at facilitating medical, business, and educational passenger transit between Kolkata, Siliguri, and Dhaka",
+      "Officials note that reviving passenger rail will relieve immense congestion at Petrapole-Benapole integrated checkposts"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও রেল ট্রানজিট",
+    "categoryLabelEn": "Rail Transit & Connectivity",
+    "sentiment": "positive",
+    "sentimentReasonBn": "মৈত্রী, বন্ধন ও মিতালী এক্সপ্রেস ফের চালুর বিষয়ে গঠনমূলক আলোচনা ও জনযোগাযোগের প্রত্যাশায় সুর ইতিবাচক।",
+    "sentimentReasonEn": "Constructive bilateral dialogue focused on restoring people-to-people transit corridors and normal cross-border passenger train operations.",
+    "source": {
+      "name": "Dainik Jagran",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWU1FRTBidGhGUmI3b1ZpbVg0NEVtTV80YVJVZUY3cXZRT2JPeTBZUDRCZ0hwYjhYWnJBZmpRNUFscV8xN21DZjNpNmZ0Q3o3aWpickpzNFBOMFJTdFc0Ynk4RHVGdTJzN21KSmpLMEtJVmpVMFJ4WGJDeDZfOVpSS0VfcmtlNGtCc1N4WUdsTDB5aWtsYW85WHBFM2l3NDF2QkdJSjBmVEV4NFdfOE9vbkh6VlJvRHVqVGY2a3hHYmM?oc=5",
+      "scannedAt": "2026-09-20T01:58:00Z"
+    },
+    "publishedAt": "2026-09-18T07:00:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1534008757030-27299c4371b6?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Dainik Jagran",
+      "Maitree Express",
+      "Cross-Border Rail",
+      "Bandhan Express",
+      "Hindi Media",
+      "Railway Transit"
+    ]
+  },
+  {
     "id": "news-20260920-001",
     "slug": "sangbad-pratidin-hasina-return-announcement-awami-league-dhaka-protests",
     "title": "হাসিনার দেশে ফেরার ঘোষণায় চাঙ্গা লিগ, মিছিল ঘিরে তপ্ত ঢাকা, ৫০০-র বেশি গ্রেপ্তার - Sangbad Pratidin",
@@ -413,7 +968,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
     "imageUrl": "/images/dhaka-national-parliament-symbolic.jpg",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [

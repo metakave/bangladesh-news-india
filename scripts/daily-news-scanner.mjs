@@ -88,6 +88,9 @@ const STANDARD_RSS_FEEDS = [
 
   // 3. Hindi Outlets
   { name: 'BBC Hindi', bureau: 'Delhi', language: 'Hindi', url: 'https://feeds.bbci.co.uk/hindi/rss.xml', webUrl: 'https://www.bbc.com/hindi' },
+  { name: 'Amar Ujala World', bureau: 'Delhi', language: 'Hindi', url: 'https://www.amarujala.com/rss/world-news.xml', webUrl: 'https://www.amarujala.com/world' },
+  { name: 'Navbharat Times World', bureau: 'Delhi', language: 'Hindi', url: 'https://navbharattimes.indiatimes.com/world/rssfeedstopstories.cms', webUrl: 'https://navbharattimes.indiatimes.com/world' },
+  { name: 'Live Hindustan World', bureau: 'Delhi', language: 'Hindi', url: 'https://feed.livehindustan.com/rss/international', webUrl: 'https://www.livehindustan.com/international' },
 
   // 4. Leading Indian TV News Channels (Direct Web Feeds)
   { name: 'WION Bangladesh & South Asia', bureau: 'Delhi', language: 'English', url: 'https://www.wionews.com/rss/world.xml', webUrl: 'https://www.wionews.com/tags/bangladesh-0' },
@@ -131,7 +134,21 @@ const STANDARD_RSS_FEEDS = [
     name: 'Hindi Media - Bangladesh Tracker', 
     bureau: 'Delhi', 
     language: 'Hindi', 
-    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('बांग्लादेश (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:ndtv.in OR site:hindi.news18.com OR site:zeenews.india.com OR site:tv9hindi.com OR site:indiatvnews.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('बांग्लादेश (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:ndtv.in OR site:hindi.news18.com OR site:zeenews.india.com OR site:tv9hindi.com OR site:indiatvnews.com OR site:bhaskar.com OR site:livehindustan.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Hindi Media - Sheikh Hasina & Awami League Priority Wire', 
+    bureau: 'Delhi', 
+    language: 'Hindi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("शेख हसीना" OR "अवामी लीग" OR "हसीना" OR "मोहम्मद यूनुस") (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:ndtv.in OR site:hindi.news18.com OR site:zeenews.india.com OR site:bhaskar.com OR site:livehindustan.com OR site:tv9hindi.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Hindi Media - Indo-Bangladesh Border & Trade Tracker', 
+    bureau: 'Delhi', 
+    language: 'Hindi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("भारत-बांग्लादेश" OR "बांग्लादेश सीमा" OR "पेट्रापोल" OR "हिलि") (site:jagran.com OR site:amarujala.com OR site:navbharattimes.indiatimes.com OR site:aajtak.in OR site:livehindustan.com OR site:hindi.news18.com) when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
     webUrl: 'https://news.google.com' 
   },
 
@@ -240,6 +257,34 @@ const YOUTUBE_FEEDS = [
     language: 'English', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@IndiaGlobalReview" Bangladesh when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
     webUrl: 'https://www.youtube.com/@IndiaGlobalReview' 
+  },
+  { 
+    name: 'Aaj Tak (YouTube Hindi)', 
+    bureau: 'Delhi', 
+    language: 'Hindi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@aajtak" ("बांग्लादेश" OR "हसीना" OR "Bangladesh") when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    webUrl: 'https://www.youtube.com/@aajtak' 
+  },
+  { 
+    name: 'Zee News Hindi (YouTube)', 
+    bureau: 'Delhi', 
+    language: 'Hindi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@ZeeNews" ("बांग्लादेश" OR "हसीना" OR "Bangladesh") when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    webUrl: 'https://www.youtube.com/@ZeeNews' 
+  },
+  { 
+    name: 'NDTV India (YouTube Hindi)', 
+    bureau: 'Delhi', 
+    language: 'Hindi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@ndtvindia" ("बांग्लादेश" OR "हसीना" OR "Bangladesh") when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    webUrl: 'https://www.youtube.com/@ndtvindia' 
+  },
+  { 
+    name: 'TV9 Bharatvarsh (YouTube Hindi)', 
+    bureau: 'Delhi', 
+    language: 'Hindi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@tv9bharatvarsh" ("बांग्लादेश" OR "हसीना" OR "Bangladesh") when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
+    webUrl: 'https://www.youtube.com/@tv9bharatvarsh' 
   }
 ];
 
@@ -762,13 +807,16 @@ async function runDailyNewsScanner() {
     const scratchDir = path.join(rootDir, 'scratch');
     if (!fs.existsSync(scratchDir)) fs.mkdirSync(scratchDir, { recursive: true });
     const candidateDumpPath = path.join(scratchDir, 'candidates.json');
+    const hindiCandidates = matchedArticles.filter(art => art.sourceLanguage === 'Hindi' || /[\u0900-\u097F]/.test(art.title));
     fs.writeFileSync(candidateDumpPath, JSON.stringify({
       totalScanned: allScannedArticles.length,
       matchedCount: matchedArticles.length,
       priorityCount: priorityMatches.length,
-      candidates: matchedArticles.slice(0, 120)
+      hindiCount: hindiCandidates.length,
+      hindiCandidates: hindiCandidates,
+      candidates: matchedArticles.slice(0, 300)
     }, null, 2));
-    console.log(`✅ Candidate articles dumped successfully to ${candidateDumpPath}`);
+    console.log(`✅ Candidate articles dumped successfully (${hindiCandidates.length} Hindi candidates) to ${candidateDumpPath}`);
     return;
   }
 
