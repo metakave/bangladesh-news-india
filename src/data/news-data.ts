@@ -412,7 +412,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-19T16:51:47Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1200",
+    "imageUrl": "/images/dhaka-national-parliament-symbolic.jpg",
     "isLeadStory": true,
     "isTrending": true,
     "isBreaking": true,
