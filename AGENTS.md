@@ -14,6 +14,7 @@
    - Enforce **Strict Zero Duplication on Home Page**: Ensure every news story renders at most ONCE on the home page across HeroGrid columns and downstream category hubs (`diplomacy`, `trade`, `border`, `sports/culture`).
    - For **YouTube Sourced News**: ALWAYS extract and set the YouTube video thumbnail (`https://i.ytimg.com/vi/<VIDEO_ID>/hqdefault.jpg`) as the feature image `imageUrl` whenever `originalUrl` contains a YouTube video ID.
    - Ensure `originalUrl` ALWAYS preserves the candidate's specific article/video URL (e.g. `https://news.google.com/rss/articles/...` or direct post URL) and NEVER uses generic domain roots like `https://www.youtube.com` or `https://www.instagram.com`.
+   - **Image Selection Safeguards**: ALWAYS avoid using Barack Obama or unrelated foreign political portraits (`photo-1541872703-74c5e44368f9`). For Delhi/political news, use verified New Delhi landmarks (India Gate: `photo-1587474260584-136574528ed5`, Rashtrapati Bhavan/South Block: `photo-1570168007204-dfb528c6958f`, Red Fort: `photo-1599661046289-e31897846e41`).
    - Append new items to `SCANNED_NEWS_ITEMS`, update `BREAKING_NEWS_ALERTS`, and update `SCANNER_STATS` inside [`src/data/news-data.ts`](file:///Users/sadiq/antigravity/bangladesh-news-india/src/data/news-data.ts).
 
 3. **Build & Git Workflow**:
