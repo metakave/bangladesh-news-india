@@ -766,7 +766,7 @@ async function runDailyNewsScanner() {
       totalScanned: allScannedArticles.length,
       matchedCount: matchedArticles.length,
       priorityCount: priorityMatches.length,
-      candidates: matchedArticles.slice(0, 30)
+      candidates: matchedArticles.slice(0, 120)
     }, null, 2));
     console.log(`✅ Candidate articles dumped successfully to ${candidateDumpPath}`);
     return;

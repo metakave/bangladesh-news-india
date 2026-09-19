@@ -68,26 +68,59 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2642,
-  "bangladeshMatches": 717,
+  "totalScanned24h": 2686,
+  "bangladeshMatches": 701,
   "sentimentDistribution": {
-    "positive": 8,
-    "neutral": 21,
-    "negative": 18
+    "positive": 10,
+    "neutral": 24,
+    "negative": 21
   },
   "bureauDistribution": {
-    "delhi": 26,
-    "kolkata": 16,
-    "mumbai": 9
+    "delhi": 28,
+    "kolkata": 19,
+    "mumbai": 10
   },
   "languageDistribution": {
-    "english": 19,
-    "bengali": 23,
-    "hindi": 5
+    "english": 21,
+    "bengali": 27,
+    "hindi": 6
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+      "id": "alert-026",
+      "headlineBn": "‘হাসিনার দেশে ফেরার ঘোষণায় ঢাকায় মিছিল ও ব্যাপক ধরপাকড়, ৫০০-র বেশি গ্রেপ্তার’: কলকাতার সংবাদ প্রতিদিন",
+      "headlineEn": "Sangbad Pratidin: Hasina's Return Announcement Energizes Awami League, Over 500 Arrested in Dhaka Protests",
+      "timeAgoBn": "এই মাত্র",
+      "timeAgoEn": "Just now",
+      "sourceName": "Sangbad Pratidin",
+      "sourceBureau": "Kolkata",
+      "sentiment": "negative",
+      "url": "https://www.sangbadpratidin.in/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/"
+  },
+  {
+      "id": "alert-025",
+      "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
+      "headlineEn": "The Indian Express: India's MEA Closely Monitoring Dhaka's Move to Review 101 Bilateral Accords",
+      "timeAgoBn": "আজ ভোরে",
+      "timeAgoEn": "Early morning",
+      "sourceName": "The Indian Express",
+      "sourceBureau": "Delhi",
+      "sentiment": "neutral",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUXM2Tlk0N0J4N2FRRUkxc19OeDhWekdVYlBneUZILTJUMERldlV5MlJjY3pkM19udGdIUFZ5Y21rY1duZ1ZTYmlfQ3VVbTlTYWc?oc=5"
+  },
+  {
+      "id": "alert-024",
+      "headlineBn": "‘পাল্টা সমাবেশের ডাক দিয়ে সংঘাতের পথে বিএনপি, উত্তপ্ত ঢাকা’: বর্তমান পত্রিকার বিশেষ প্রতিবেদন",
+      "headlineEn": "Bartaman Patrika: High Alert in Dhaka as BNP Calls Counter-Rallies Amid Awami League Demonstrations",
+      "timeAgoBn": "আজ সকালে",
+      "timeAgoEn": "This morning",
+      "sourceName": "Bartaman Patrika",
+      "sourceBureau": "Kolkata",
+      "sentiment": "negative",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5"
+  },
   {
     "id": "alert-023",
     "headlineBn": "‘ডিসেম্বর পর্যন্ত ধারাবাহিক রাজনৈতিক খসড়া অনুমোদন’: দ্য ওয়াল-এর এক্সক্লুসিভ দিল্লি রিপোর্ট",
@@ -346,6 +379,560 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260920-001",
+    "slug": "sangbad-pratidin-hasina-return-announcement-awami-league-dhaka-protests",
+    "title": "হাসিনার দেশে ফেরার ঘোষণায় চাঙ্গা লিগ, মিছিল ঘিরে তপ্ত ঢাকা, ৫০০-র বেশি গ্রেপ্তার - Sangbad Pratidin",
+    "englishTitle": "Sangbad Pratidin: Hasina's Return Announcement Re-energizes Awami League, High Tension in Dhaka with Over 500 Arrests",
+    "banglaTitle": "হাসিনার দেশে ফেরার ঘোষণায় চাঙ্গা আওয়ামী লীগ, ঢাকায় বিক্ষোভ ও সংঘর্ষের মধ্যে ৫০০-র বেশি গ্রেপ্তার: সংবাদ প্রতিদিন",
+    "summaryBn": "কলকাতার শীর্ষ দৈনিক 'সংবাদ প্রতিদিন'-এর বিশেষ প্রতিবেদনে প্রকাশ, ভারতে অবস্থানরত সাবেক প্রধানমন্ত্রী শেখ হাসিনার দেশে ফেরার বার্তায় বাংলাদেশ আওয়ামী লীগের নেতাকর্মীদের মধ্যে নতুন উদ্যম তৈরি হয়েছে। ঢাকায় দলীয় মিছিল ও পাল্টা কর্মসূচিকে কেন্দ্র করে ব্যাপক ধরপাকড় চালিয়ে ৫১৫ জনকে গ্রেপ্তারের খবর দিয়েছে ভারতীয় সংবাদমাধ্যমটি।",
+    "summaryEn": "Kolkata's leading Bengali daily Sangbad Pratidin reports that former Prime Minister Sheikh Hasina's prospective return declarations have galvanized grassroots Awami League cadres, prompting heightened security deployments in Dhaka and the arrest of over 500 party supporters amidst confrontational demonstrations.",
+    "keyPointsBn": [
+      "শেখ হাসিনার দেশে ফেরার বার্তায় রাজধানীতে আওয়ামী লীগ নেতাকর্মীদের রাজপথে নামার তোড়জোড়",
+      "ঢাকায় আইন-শৃঙ্খলা বাহিনীর সাঁড়াশি অভিযান ও ৫১৫ জনকে গ্রেপ্তারের তথ্য প্রকাশ",
+      "ওপার বাংলায় রাজনৈতিক উত্তাপ ও নির্বাচনী অনিশ্চয়তা নিয়ে কলকাতার সংবাদমাধ্যমে গভীর পর্যবেক্ষণ"
+    ],
+    "keyPointsEn": [
+      "Grassroots Awami League cadres mobilize following Hasina's prospective return remarks",
+      "Dhaka law enforcement conducts extensive security sweeps, detaining 515 demonstrators",
+      "Kolkata press closely tracks political friction and electoral ambiguity across the border"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজধানী ঢাকায় ব্যাপক গণগ্রেপ্তার, রাজনৈতিক অস্থিরতা এবং সংঘাতের ঝুঁকির ওপর আলোকপাত করায় প্রতিবেদনটির সুর নেতিবাচক।",
+    "sentimentReasonEn": "Emphasizes widespread political friction, mass detentions in Dhaka, and elevated risks of street violence.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.sangbadpratidin.in/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T16:51:47Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Sheikh Hasina",
+      "Dhaka Protests",
+      "Sangbad Pratidin",
+      "Kolkata Bureau",
+      "Awami League",
+      "Mass Arrests"
+    ]
+  },
+  {
+    "id": "news-20260920-002",
+    "slug": "mea-delhi-review-101-bilateral-agreements-bangladesh",
+    "title": "Bangladesh Reviewing 101 Bilateral Deals Signed During Hasina Regime, India's MEA Cautiously Monitoring Developments",
+    "englishTitle": "MEA Closely Watching Bangladesh's Review of 101 Bilateral Deals Signed During Hasina Tenure",
+    "banglaTitle": "হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার উদ্যোগ ঢাকার: দিল্লির পররাষ্ট্র মন্ত্রণালয় সতর্ক পর্যবেক্ষণে",
+    "summaryBn": "বাংলাদেশ সরকার কর্তৃক শেখ হাসিনার ১৫ বছরের শাসনামলে ভারতের সাথে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি ও সমঝোতা স্মারক (MoU) পুনর্মূল্যায়নের সিদ্ধান্তের ওপর তীক্ষ্ণ নজর রাখছে ভারতের পররাষ্ট্র মন্ত্রণালয় (MEA)। ভারতীয় কূটনৈতিক সূত্রের বরাতে জানানো হয়েছে, ট্রানজিট, জ্বালানি নিরাপত্তা এবং স্থলবন্দর সংক্রান্ত উন্নয়ন প্রকল্পের ধারাবাহিকতা বজায় রাখা দিল্লির অগ্রাধিকার।",
+    "summaryEn": "India's Ministry of External Affairs is closely tracking Dhaka's initiative to review approximately 101 bilateral treaties and MoUs finalized over the last 15 years under the Sheikh Hasina administration, with New Delhi emphasizing the mutual benefits of regional connectivity, power transit, and border commerce infrastructure.",
+    "keyPointsBn": [
+      "শেখ হাসিনা সরকারের ১৫ বছরের ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার আনুষ্ঠানিক উদ্যোগ অন্তর্বর্তী সরকারের",
+      "ভারতীয় পররাষ্ট্র মন্ত্রণালয় দ্বিপাক্ষিক স্থিতিশীলতা ও যৌথ উন্নয়ন প্রকল্প রক্ষার পক্ষে অবস্থান পুনর্ব্যক্ত করেছে",
+      "ট্রানজিট করিডোর ও তিস্তা-গঙ্গা পানি বন্টন সমীকরণ নিয়ে নতুন কূটনৈতিক দেনদরবারের সম্ভাবনা"
+    ],
+    "keyPointsEn": [
+      "Dhaka initiates comprehensive administrative review of 101 bilateral agreements signed under Hasina",
+      "New Delhi's MEA underlines reciprocal security and economic value of connectivity protocols",
+      "Analysts assess long-term implications for transit routes, cross-border energy grids, and water accords"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক চুক্তির ভবিষ্যৎ নিয়ে উভয় পক্ষের কূটনৈতিক যুক্তি ও পারস্পরিক সমঝোতার ওপর ভারসাম্যপূর্ণ বিবরণ দেওয়া হয়েছে।",
+    "sentimentReasonEn": "Maintains a measured, analytical diplomatic tone covering administrative reviews and bilateral responses.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUXM2Tlk0N0J4N2FRRUkxc19OeDhWekdVYlBneUZILTJUMERldlV5MlJjY3pkM19udGdIUFZ5Y21rY1duZ1ZTYmlfQ3VVbTlTYWc?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T18:30:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "MEA Delhi",
+      "Bilateral Agreements",
+      "The Indian Express",
+      "Diplomacy",
+      "Transit Deals"
+    ]
+  },
+  {
+    "id": "news-20260920-003",
+    "slug": "igr-youtube-bangladesh-101-india-deals-northeast-connectivity-ganga-water",
+    "title": "Bangladesh Reviews 101 India Deals, Northeast Connectivity and Ganga Water Sharing at Stake | IGR (YouTube Dispatch)",
+    "englishTitle": "India Global Review (YouTube): Strategic Assessment on Bangladesh Reviewing 101 India Deals and Northeast Transit",
+    "banglaTitle": "১০১টি ভারত-বাংলাদেশ চুক্তি পুনর্বিবেচনা ও উত্তর-পূর্ব ভারতের কানেক্টিভিটি: ইন্ডিয়া গ্লোবাল রিভিউ-এর বিশেষ ভিডিও বিশ্লেষণ",
+    "summaryBn": "ভারতীয় আন্তর্জাতিক বিশ্লেষণমূলক ইউটিউব প্ল্যাটফর্ম 'ইন্ডিয়া গ্লোবাল রিভিউ' (IGR)-এর বিশেষ ভিডিও প্রতিবেদনে তুলে ধরা হয়েছে কীভাবে ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার সিদ্ধান্ত ভারতের উত্তর-পূর্বাঞ্চলীয় রাজ্যগুলোর ট্রানজিট করিডোর এবং আসন্ন গঙ্গা পানি চুক্তি নবায়নের ওপর বড় প্রভাব ফেলতে পারে।",
+    "summaryEn": "Strategic digital broadcaster India Global Review (IGR) releases an in-depth video dispatch analyzing Bangladesh's review of 101 bilateral treaties, spotlighting strategic transit linkages into India's Northeast and renewal timelines for the landmark 1996 Ganga Water Sharing Treaty.",
+    "keyPointsBn": [
+      "১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনায় উত্তর-পূর্বাঞ্চলীয় ট্রানজিট রুট নিয়ে দিল্লির ভূকৌশলগত বিবেচনা",
+      "১৯৯৬ সালের গঙ্গা পানি চুক্তির ৩০ বছর মেয়াদ পূর্ণ হওয়ার মুখে নতুন দরকষাকষির সমীকরণ",
+      "আন্তর্জাতিক বাণিজ্য ও উপ-আঞ্চলিক নিরাপত্তার ওপর ভিডিও প্রতিবেদনের বিশদ পর্যবেক্ষণ"
+    ],
+    "keyPointsEn": [
+      "Evaluates strategic Northeast corridor transit implications amidst treaty review",
+      "Highlights negotiations surrounding the upcoming 30-year renewal of Ganga Water Treaty",
+      "Examines potential recalibration of regional security and subcontinental trade frameworks"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Diplomacy & Water",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক বাণিজ্য ও জলচুক্তির কৌশলগত মাত্রাগুলোর চুলচেরা বিশ্লেষণ উপস্থাপন করেছে।",
+    "sentimentReasonEn": "Offers a comprehensive, objective geopolitical evaluation of water-sharing and transit corridors.",
+    "source": {
+      "name": "India Global Review (YouTube)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wN1lMTlM5ZG5NakJXV01vTXR5M0x5Q1lkRjkzZURjZHJydkZSSkpsOUQ4Z28xdkVvQ3VrX2RQVzlWaVotQWxmLTdQaS0zWlVaU0tBakNB?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-18T18:05:06Z",
+    "readTimeBn": "৫ মিনিট পড়া",
+    "readTimeEn": "5 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "India Global Review",
+      "Ganga Water Treaty",
+      "Northeast Transit"
+    ]
+  },
+  {
+    "id": "news-20260920-004",
+    "slug": "bartaman-patrika-dhaka-bnp-counter-rallies-clash-risks",
+    "title": "পাল্টা সমাবেশের ডাক দিয়ে সংঘর্ষের পথে হাঁটল বিএনপিও, উত্তপ্ত ঢাকা - Bartaman Patrika",
+    "englishTitle": "Bartaman Patrika: BNP Calls Counter-Rallies Signaling Confrontation Path as Dhaka Heats Up",
+    "banglaTitle": "পাল্টা সমাবেশের ডাক দিয়ে সংঘর্ষের পথে হাঁটল বিএনপিও, উত্তপ্ত ঢাকা: বর্তমান পত্রিকা",
+    "summaryBn": "কলকাতার ঐতিহ্যবাহী দৈনিক 'বর্তমান পত্রিকা'র প্রতিবেদনে বলা হয়েছে, আওয়ামী লীগের কর্মসূচির বিপরীতে বাংলাদেশ জাতীয়তাবাদী দল (বিএনপি) রাজপথে পাল্টা সমাবেশের ডাক দেওয়ায় রাজধানী ঢাকায় রাজনৈতিক সংঘাতের আশঙ্কা তীব্র হয়েছে। ভারতীয় সংবাদমাধ্যমটি ঢাকার রাজপথের এই পাল্টাপাল্টি অবস্থানের ওপর গভীর নজর রাখছে।",
+    "summaryEn": "Kolkata's daily Bartaman Patrika highlights rising political volatility in Dhaka after BNP announced simultaneous counter-rallies in response to Awami League demonstrations, creating acute concerns over potential street clashes and administrative paralysis.",
+    "keyPointsBn": [
+      "আওয়ামী লীগের কর্মসূচির মুখে বিএনপির পাল্টা সমাবেশ ঘোষণার খবর কলকাতার পত্রিকায়",
+      "রাজধানী ঢাকায় সংঘাত এড়াতে নিরাপত্তা বাহিনীর সর্বোচ্চ সতর্কাবস্থা জারি",
+      "ওপার বাংলার রাজপথের লড়াইয়ের সরাসরি প্রভাব সীমান্ত ও দ্বিপাক্ষিক বাণিজ্যে পড়ার আশঙ্কা"
+    ],
+    "keyPointsEn": [
+      "BNP schedules rival rallies in Dhaka reacting to Awami League street mobilization",
+      "Security apparatus placed on maximum alert across key metropolitan intersections",
+      "Cross-border observers highlight repercussions on trade flow and regional security"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংঘাত, উত্তপ্ত রাজপথ এবং আইন-শৃঙ্খলার অবনতিশীল সম্ভাবনার ওপর গুরুত্বারোপ করায় নেতিবাচক সুর।",
+    "sentimentReasonEn": "Focuses on confrontations, heightened risk of street clashes, and political instability.",
+    "source": {
+      "name": "Bartaman Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T05:27:06Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1577985051167-0d49eec21977?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Bartaman Patrika",
+      "BNP Rallies",
+      "Dhaka Tensions",
+      "Kolkata Bureau",
+      "Opar Bangla"
+    ]
+  },
+  {
+    "id": "news-20260920-005",
+    "slug": "bnt-bangla-youtube-suvendu-adhikari-opar-bangla-refugee-statement",
+    "title": "আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল: শুভেন্দু অধিকারী (ভিডিও ডিসপ্যাচ)",
+    "englishTitle": "BNT Bangla (YouTube): BJP Leader Suvendu Adhikari Cites Family Roots and Minorities in Opar Bangla",
+    "banglaTitle": "‘আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল’: বাংলাদেশে সংখ্যালঘুদের পরিস্থিতি নিয়ে শুভেন্দু অধিকারী",
+    "summaryBn": "ভারতীয় সংবাদ চ্যানেল 'BNT বাংলা খবর'-এর ইউটিউব ভিডিও ডিসপ্যাচে পশ্চিমবঙ্গের বিরোধী দলনেতা শুভেন্দু অধিকারীর বক্তব্য গুরুত্ব পেয়েছে। বাংলাদেশে সংখ্যালঘু সম্প্রদায়ের নিরাপত্তা ও বর্তমান পরিস্থিতি নিয়ে আলোচনার সময় তিনি নিজের পরিবারের দেশত্যাগের স্মৃতিচারণ করে ওপার বাংলার বর্তমান গতিপ্রকৃতির ওপর সরব হন।",
+    "summaryEn": "In a dedicated YouTube video report, BNT Bangla News covers statements by West Bengal opposition leader Suvendu Adhikari, who drew parallels from his family's refugee history to voice grave concerns regarding the safety and civic status of religious minorities in Bangladesh.",
+    "keyPointsBn": [
+      "পশ্চিমবঙ্গের বিরোধী দলনেতা শুভেন্দু অধিকারীর পারিবারিক দেশত্যাগের ইতিহাস স্মরণ",
+      "বাংলাদেশে ধর্মীয় সংখ্যালঘুদের অধিকার ও নিরাপত্তা নিশ্চিতের জোরালো দাবি",
+      "কলকাতা ও সীমান্তবর্তী জেলাগুলোতে রাজনৈতিক বক্তব্যের প্রভাব ও ভারতীয় গণমাধ্যমের প্রচার"
+    ],
+    "keyPointsEn": [
+      "Suvendu Adhikari recounts family displacement from former East Bengal",
+      "Calls for heightened international and Indian scrutiny over minority protections in Bangladesh",
+      "Regional video coverage reflects public discourse in border districts of West Bengal"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সংখ্যালঘু সম্প্রদায়ের নিরাপত্তা নিয়ে অতীত ট্রমা ও বর্তমান শঙ্কার তীব্র প্রতিক্রিয়া তুলে ধরায় নেতিবাচক সেন্টিমেন্ট।",
+    "sentimentReasonEn": "Reflects deep anxieties over minority security and emotive historical displacement narratives.",
+    "source": {
+      "name": "BNT বাংলা খবর (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=0WrRFhIezuc",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-18T16:10:26Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://i.ytimg.com/vi/0WrRFhIezuc/hqdefault.jpg",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "BNT Bangla",
+      "Suvendu Adhikari",
+      "Minority Security",
+      "Opar Bangla"
+    ]
+  },
+  {
+    "id": "news-20260920-006",
+    "slug": "assam-tribune-awami-league-rejects-death-sentences-seven-leaders",
+    "title": "Awami League Terms Death Sentences for 7 Leaders ‘One-Sided, Fabricated’ - The Assam Tribune",
+    "englishTitle": "The Assam Tribune: Awami League Rejects ICT Verdict Against 7 Top Leaders as Political Vendetta",
+    "banglaTitle": "৭ শীর্ষ নেতার মৃত্যুদণ্ডের রায়কে ‘একতরফা ও বানোয়াট’ আখ্যা দিয়ে আওয়ামী লীগের প্রতিক্রিয়া: দ্য আসাম ট্রিবিউন",
+    "summaryBn": "ভারতের উত্তর-পূর্বাঞ্চলের প্রধান ইংরেজি দৈনিক 'দ্য আসাম ট্রিবিউন' জানিয়েছে, আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল কর্তৃক ওবায়দুল কাদেরসহ আওয়ামী লীগের সাত শীর্ষ নেতাকে দেওয়া মৃত্যুদণ্ডের রায়কে 'রাজনৈতিক উদ্দেশ্যপ্রণোদিত ও বানোয়াট' বলে প্রত্যাখ্যান করেছে দলটি। আসাম ব্যুরো থেকে প্রকাশিত এ প্রতিবেদনে আসাম-বাংলাদেশ সীমান্তবর্তী এলাকায় বাড়তি নজরদারির কথাও উল্লেখ করা হয়েছে।",
+    "summaryEn": "Guwahati-based national daily The Assam Tribune reports that the Awami League has officially denounced the death sentences handed down by the International Crimes Tribunal to seven senior party leaders, calling the trial politically fabricated while security agencies in Assam monitor regional fallout.",
+    "keyPointsBn": [
+      "আওয়ামী লীগের শীর্ষ সাত নেতার মৃত্যুদণ্ডের রায় নিয়ে গুয়াহাটি থেকে আসাম ট্রিবিউনের বিশেষ কভারেজ",
+      "রায়ের বিরুদ্ধে আন্তর্জাতিক মানবাধিকার সংস্থাগুলোর দৃষ্টি আকর্ষণের ঘোষণা দলের",
+      "আসাম ও মেঘালয় সীমান্তে নিরাপত্তা সংস্থাগুলোর বাড়তি সতর্কতা জারি"
+    ],
+    "keyPointsEn": [
+      "Assam Tribune covers Awami League's formal rejection of Dhaka tribunal verdicts",
+      "Leadership intends to petition international legal bodies against ex-parte trials",
+      "Assam and Meghalaya border formations maintain vigilant border watch"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আইনি সাজা এবং রাজনৈতিক দল ও ট্রাইব্যুনালের মধ্যকার তীব্র বিরোধ তুলে ধরায় প্রতিবেদনটির সুর নেতিবাচক।",
+    "sentimentReasonEn": "Covers severe judicial verdicts, political acrimony, and diplomatic friction.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZGNYUmhTVTJaRF9VU2FxckpjRHBQc0RHOEo0M1hESkJsblU1UmR4SVRaenUzanZQbzNUVk1ndG9vR3JqQ0MwYXpjMEl4V3RxSVY0WVhMYi1fTXlWUW5udjR4SEl6LUIwOVVDRzZXSUVWZm1acnVGdlRfTWw5WUg4dE9KTHN3bVVSVWk0YTc2ZzhQdlhFZkxhZGFFd2IxeU1IVXhhOGhwV1NPRFVXUm9seW1XemdEeEHSAbwBQVVfeXFMTmk4NHNsckdiQlVjWkVjRHR5cFZ1Rk13NUltNU5mbTNmenRWWTQzZ05qTmk0LU16Z2VsaFVsQVNpcGQzZVJmLW4xVlFtbFlfMFcyVFZLU0NvdV9HXzNjRm1OWjBISHpYMDlqV0IyeTJYOFYyaDFHU3RRS0tFVW5rVjQwVzJkeC1NVkxlUU5VVjUyaWROdmxYbDJIVEQ2MXVCWkR3enV1Qnk0UTBsbVhrckxRNXlTb3ZJOTFwQlE?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-18T08:07:02Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "The Assam Tribune",
+      "Assam Bureau",
+      "Guwahati Desk",
+      "ICT Verdict",
+      "Awami League"
+    ]
+  },
+  {
+    "id": "news-20260920-007",
+    "slug": "navbharat-times-sheikh-hasina-return-police-audio-leak-analysis",
+    "title": "'शेख हसीना वापस लौटीं तो पुलिस कुछ नहीं कर पाएगी', बांग्लादेशी अधिकारी के ऑडियो लीक पर भारतीय मीडिया की नजर - Navbharat Times",
+    "englishTitle": "Navbharat Times: Indian Media Reports on Leaked Audio of Bangladeshi Police Official Over Hasina's Return Scenario",
+    "banglaTitle": "‘শেখ হাসিনা ফিরলে পুলিশ কিছুই করতে পারবে না’: ফাঁস হওয়া অডিও টেপ নিয়ে ভারতের নবভারত টাইমসের বিশেষ খবর",
+    "summaryBn": "ভারতের অন্যতম শীর্ষ হিন্দি দৈনিক 'নবভারত টাইমস' বাংলাদেশের একজন উচ্চপদস্থ পুলিশ কর্মকর্তার কথিত অডিও ফাঁসের ঘটনাকে সামনে এনেছে। অডিওতে সাবেক প্রধানমন্ত্রী শেখ হাসিনার দেশে ফেরা সংক্রান্ত পরিস্থিতিতে পুলিশের নিয়ন্ত্রণহীনতার আশঙ্কা ব্যক্ত হওয়ার খবরটি ভারতীয় নিরাপত্তা মহলে গুরুত্ব দিয়ে দেখা হচ্ছে।",
+    "summaryEn": "Hindi daily Navbharat Times examines circulating leaked audio recordings attributed to Bangladeshi administrative figures expressing concerns over police operational limits should Sheikh Hasina stage an unannounced political return, highlighting intense regional security discussions.",
+    "keyPointsBn": [
+      "শেখ হাসিনার সম্ভাব্য প্রত্যাবর্তন ঘিরে ফাঁস হওয়া অডিও নিয়ে হিন্দি সংবাদমাধ্যমের প্রতিবেদন",
+      "বাংলাদেশের আইন-শৃঙ্খলা রক্ষা বাহিনীর মাঠপর্যায়ের মনস্তত্ত্ব ও প্রশাসনিক চ্যালেঞ্জ বিশ্লেষণ",
+      "ভারতীয় নিরাপত্তা বিশ্লেষকদের নজরদারিতে ওপার বাংলার অন্তর্বর্তী সরকারের স্থায়িত্বের ইস্যু"
+    ],
+    "keyPointsEn": [
+      "Navbharat Times spotlights administrative vulnerability highlighted in leaked recordings",
+      "Assesses morale and operational capabilities of Bangladesh law enforcement agencies",
+      "New Delhi strategic circles evaluate stability risks confronting Dhaka's interim setup"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "প্রশাসনিক সংকট, পুলিশের ভঙ্গুর প্রস্তুতি এবং সম্ভাব্য সহিংস প্রত্যাবর্তনের ঝুঁকির ওপর নজর দেওয়ায় প্রতিবেদনটি নেতিবাচক।",
+    "sentimentReasonEn": "Underlines security vulnerabilities, administrative volatility, and unrest projections.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPZEtxYnpqVVc1LVllbHdLVnlLUF9OTlpKMzU4TjA5Mm1DYy1RNVF5bWNWMXlwQjVvTFlQazdhOEIybjJ0azVKVVBKRTliVlROeGxVWldSOXI1Z21aLTc3WHZHZ2dFcnpzZUlUVW1helhpckZnNkw1Rm9EQXZRd1dSUVg4eTJ6SVp0eHUxdkJnRzN5RTFBdkdEczd2Sy1yYW5pYlRmX09uaUphVlE3d0Q1Z2JOWlpsN1pFYzczOVFtTlRkT3ZrZ0k3VklBeUs2YV80Y2l4UVk5NXBiQS1QR28taGtUcEttZDhPYjdJbWhrVVpfZ1FDSDBsY0NsYUJiWFnSAYQCQVVfeXFMUFZuN3FMNFZ3akN3R0sxdE00aUFISF8xc19ZTW4yNnVFRzBsRElqYktxMHJ0RzlGcUVIMXN2S3JKVGNlZVU3NlhLa1Jwc1JHa2REaUppZVRySEFGSHhJbEl0NnZ1VjhLTnZXYlpoZFhSSnBqZUxydGE3NU1Bc1R4VC1NOERfQ0h4Sk9WcGV5MzdfVXNta0pZV0wwTURMZlJaeTY0SE1pZG9HNnQ5eGhLS2Jmb05HTFZrMDJXM0IyaFBqU054VmdZRVU5amI4anhZMktDOTFYekJ1S1BPUWxOcWxsWkttZW9QUkVqOG5iQVlwVzJNaURJUzhnZmFQSmhsWTVSUDI?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-18T10:15:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Navbharat Times",
+      "Delhi Bureau",
+      "Sheikh Hasina",
+      "Police Audio Leak",
+      "Security Assessment"
+    ]
+  },
+  {
+    "id": "news-20260920-008",
+    "slug": "tv9-bangla-awami-league-action-plan-december-program-hasina",
+    "title": "আন্দোলনের রূপরেখা চূড়ান্ত, ডিসেম্বরের মধ্যে বড় কর্মসূচির পথে হাসিনা - TV9 Bangla",
+    "englishTitle": "TV9 Bangla: Awami League Action Plan Finalized, Hasina Eyes Major Agitations by December",
+    "banglaTitle": "আন্দোলনের রূপরেখা চূড়ান্ত, ডিসেম্বরের মধ্যে বড় কর্মসূচির পথে হাসিনা: টিভি৯ বাংলার রিপোর্ট",
+    "summaryBn": "কলকাতার প্রধান টেলিভিশন নেটওয়ার্ক 'টিভি৯ বাংলা'র বিশেষ প্রতিবেদনে দাবি করা হয়েছে, ভারতে অবস্থানরত আওয়ামী লীগ শীর্ষ নেতৃত্ব দলের তৃণমূল পর্যায়কে সংগঠিত করতে একটি সমন্বিত আন্দোলনের রূপরেখা চূড়ান্ত করেছে। ডিসেম্বরের আগেই বড় ধরনের মাঠপর্যায়ের রাজনৈতিক কর্মসূচির বার্তা দেওয়া হয়েছে ওপার বাংলায়।",
+    "summaryEn": "Kolkata broadcast outlet TV9 Bangla reports that Awami League leadership coordinated in India has finalized a synchronized organizational roadmap, instructing grassroots committees across Bangladesh to prepare for significant mobilizations ahead of December.",
+    "keyPointsBn": [
+      "দিল্লিতে গৃহীত রাজনৈতিক সিদ্ধান্তের ওপর ভিত্তি করে তৃণমূল পুনর্গঠনের ছক",
+      "ডিসেম্বর মাসকে লক্ষ্য করে ধারাবাহিক প্রতিবাদের রূপরেখা টিভি৯ বাংলায় প্রকাশ",
+      "কলকাতার রাজনৈতিক বিশ্লেষকদের দৃষ্টিতে বাংলাদেশের আগামী দিনগুলোর সংঘাতের ঝুঁকি"
+    ],
+    "keyPointsEn": [
+      "Organizational blueprint seeks to revitalize party branches and overseas solidarity networks",
+      "Targets nationwide commemorative and protest windows leading into December 2026",
+      "Kolkata observers evaluate risks of friction with administrative forces in Bangladesh"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক কর্মসূচি ও সংগঠনের প্রস্তুতি নিয়ে তথ্যবহুল ও বস্তুনিষ্ঠ বিবরণ প্রদান করায় নিরপেক্ষ সেন্টিমেন্ট।",
+    "sentimentReasonEn": "Delivers objective investigative reporting on organizational developments and timeline strategies.",
+    "source": {
+      "name": "TV9 Bangla",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa2ZubWZubzQ4NWFpd1J6TGc5bENuN1k2S0FvMjh3c19WbXF5bTRTOWI3RWR2TDRtMm9IekJocXF3eFBocWJ6eFFuRWhIUDVwWTVaM1p1a2F6Z01pUXg3N19YSEpvNGlzZ192QkhLMFJ1WWZFcVp4b0t3dFpGWWplTmltM2V1M2tVemh6YTFvTmtlTXpZdmQ3RzJ0ZkdYSEFpREp0V21tSWhn0gEA?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T09:21:50Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "TV9 Bangla",
+      "Kolkata Bureau",
+      "Awami League Roadmap",
+      "Sheikh Hasina",
+      "December Program"
+    ]
+  },
+  {
+    "id": "news-20260920-009",
+    "slug": "zee-24-ghanta-cultural-festival-boycotts-minority-heritage-bangladesh",
+    "title": "মৌলবাদের আগ্রাসন! বাংলাদেশে ঐতিহ্যবাহী উৎসব বয়কট নিয়ে সরব হিন্দুত্ববাদী সংগঠন - Zee 24 Ghanta",
+    "englishTitle": "Zee 24 Ghanta: Concerns in Bengal Over Boycott Pressures on Traditional Cultural Festivals in Bangladesh",
+    "banglaTitle": "বাংলাদেশে ঐতিহ্যবাহী সাংস্কৃতিক উৎসব বয়কটের চাপ ও সংখ্যালঘু সংস্কৃতির সুরক্ষা নিয়ে কলকাতার সংবাদমাধ্যমে আলোচনা: জি ২৪ ঘণ্টা",
+    "summaryBn": "কলকাতার সংবাদমাধ্যম 'জি ২৪ ঘণ্টা'র এক বিশেষ প্রতিবেদনে বাংলাদেশে শতাব্দীর প্রাচীন ঐতিহ্যবাহী লোকজ মেলা ও সাংস্কৃতিক উৎসব আয়োজনে ধর্মীয় কট্টরপন্থীদের বাধার মুখে পড়ার ঘটনা নিয়ে বিশদ বিশ্লেষণ প্রকাশ করা হয়েছে। পশ্চিমবঙ্গের সাংস্কৃতিক মহল ও ওপার বাংলার শিল্পীদের মধ্যে এ নিয়ে গভীর উৎকণ্ঠা প্রকাশ পেয়েছে।",
+    "summaryEn": "Kolkata broadcaster Zee 24 Ghanta reports on emerging friction over traditional Bengali cultural fairs and heritage events in Bangladesh, highlighting pushback from orthodox groups and growing concern among West Bengal's cultural and intellectual circles.",
+    "keyPointsBn": [
+      "ঐতিহ্যবাহী লোকমেলা ও সাংস্কৃতিক অনুষ্ঠানে কট্টরপন্থীদের আপত্তির খবর কলকাতার মিডিয়ায়",
+      "বাঙালি লোকজ ঐতিহ্য ও অসাম্প্রদায়িক সংস্কৃতির ভবিষ্যৎ নিয়ে গভীর উদ্বেগ",
+      "পশ্চিমবঙ্গ ও ওপার বাংলার অভিন্ন ভাষা ও সাহিত্যিক সম্প্রীতি রক্ষায় বুদ্ধিজীবীদের আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Highlights friction over traditional secular folk fairs in regional Bangladesh districts",
+      "Intellectuals in Kolkata express concern regarding preservation of syncretic Bengali heritage",
+      "Calls for safeguarding cross-border cultural and linguistic kinship"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
+    "categoryLabelEn": "Culture & Arts",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সাংস্কৃতিক অনুষ্ঠানে বাধা ও মৌলবাদী তৎপরতার ওপর আলোকপাত করায় সেন্টিমেন্ট নেতিবাচক।",
+    "sentimentReasonEn": "Addresses cultural intolerance, challenges to heritage traditions, and rising social tension.",
+    "source": {
+      "name": "Zee 24 Ghanta",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd2JmZldoc2xmd0VlQ2s0U19vTGd2NFN5bk52bXh3enVqSE13S1h4M3E1RGFEUGY4eHpQenFod0d5SjhnZ195TXAteTJFcURuNDN3aFNuWmxldF8wSW1rY0JCVWJpUURmNE05Y293dmp3OGVlaGtFNGxJcUV4N2pLV241V013RGlLbk8tVWp0bVpLd2Nia1BhLWlHQ2U0SE9lTEhPZkxOOFhB0gEA?oc=5",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T14:14:04Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Zee 24 Ghanta",
+      "Kolkata Bureau",
+      "Cultural Heritage",
+      "Bengali Culture",
+      "Minority Rights"
+    ]
+  },
+  {
+    "id": "news-20260920-010",
+    "slug": "syandan-patrika-tripura-border-bsf-vigilance-akhaura-corridor",
+    "title": "ত্রিপুরা ও অসম সীমান্তে বিএসএফের বাড়তি সতর্কতা: আখাউড়া-আগরতলা করিডোরে কঠোর নজরদারি - Syandan Patrika",
+    "englishTitle": "Syandan Patrika: BSF Steps Up Security Along Tripura-Bangladesh Border, Strict Checks at Akhaura ICP",
+    "banglaTitle": "ত্রিপুরা ও অসম সীমান্তে বিএসএফের বর্ধিত সতর্কতা: আখাউড়া-আগরতলা করিডোরে দিনরাত কড়া নজরদারি: স্যন্দন পত্রিকা",
+    "summaryBn": "ত্রিপুরার জনপ্রিয় দৈনিক 'স্যন্দন পত্রিকা'র প্রতিবেদনে প্রকাশ, ওপার বাংলার অভ্যন্তরীণ রাজনৈতিক উত্তেজনার প্রেক্ষিতে ত্রিপুরা ও আসাম সীমান্তজুড়ে বর্ডার সিকিউরিটি ফোর্স (BSF) সর্বোচ্চ সতর্কতা জারি করেছে। বিশেষ করে আখাউড়া-আগরতলা ইন্টিগ্রেটেড চেকপোস্টে (ICP) অতিরিক্ত ড্রোন ও নাইট-ভিশন প্রযুক্তির মাধ্যমে তল্লাশি জোরদার করা হয়েছে।",
+    "summaryEn": "Agartala-based daily Syandan Patrika reports that the Border Security Force (BSF) has escalated surveillance along the Tripura and southern Assam frontiers, deploying tactical aerial drones and 24/7 night patrols around the strategic Akhaura-Agartala Integrated Check Post.",
+    "keyPointsBn": [
+      "আখাউড়া-আগরতলা সীমান্তে বিএসএফের বিশেষ নজরদারি ও ড্রোন টহল জোরদার",
+      "অনুপ্রবেশ ও সীমান্ত চোরাচালান রোধে সীমান্তবর্তী গ্রামবাসীদের সাথে সমন্বয় বৈঠক",
+      "স্থলবন্দর দিয়ে নিত্যপ্রয়োজনীয় পণ্যবাহী ট্রাক চলাচলে কড়াকড়ি তল্লাশি কার্যকর"
+    ],
+    "keyPointsEn": [
+      "BSF intensifies drone surveillance and round-the-clock foot patrols at Akhaura border",
+      "Joint security coordination meetings held with border village panchayats in Tripura",
+      "Cargo inspections tightened while maintaining essential bilateral trade flows"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত নিরাপত্তা রক্ষা ও সীমান্ত বাণিজ্য সচল রাখার ভারসাম্যপূর্ণ বিবরণ তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Provides objective coverage of defensive border measures and regulated cargo movement.",
+    "source": {
+      "name": "Syandan Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://syandanpatrika.com/state-news/bsf-alert-tripura-bangladesh-border-security-tightened-akhaura/",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T11:45:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Syandan Patrika",
+      "Tripura Bureau",
+      "Agartala ICP",
+      "BSF Border Vigilance",
+      "Akhaura"
+    ]
+  },
+  {
+    "id": "news-20260920-011",
+    "slug": "uttarbanga-sambad-fulbari-changrabandha-land-ports-cross-border-trucking",
+    "title": "ফুলবাড়ী ও চ্যাংড়াবান্ধা স্থলবন্দরে পণ্য পরিবহন স্বাভাবিক করার আহ্বান: উত্তরবঙ্গ সংবাদ - Uttarbanga Sambad",
+    "englishTitle": "Uttarbanga Sambad: Freight Logistics and Export Movement at Fulbari and Changrabandha Land Ports",
+    "banglaTitle": "ফুলবাড়ী ও চ্যাংড়াবান্ধা স্থলবন্দরে পণ্য পরিবহন স্বাভাবিক করার আহ্বান: উত্তরবঙ্গ সংবাদের বিশেষ রিপোর্ট",
+    "summaryBn": "শিলিগুড়ির প্রভাবশালী দৈনিক 'উত্তরবঙ্গ সংবাদ'-এর প্রতিবেদনে প্রকাশ, ভারত-বাংলাদেশ সীমান্তবর্তী ফুলবাড়ী ও চ্যাংড়াবান্ধা স্থলবন্দর দিয়ে রপ্তানি পণ্যবাহী ভারতীয় ট্রাক চলাচলের জট নিরসনে শিলিগুড়ির ব্যবসায়ী সংগঠনগুলো দ্রুত প্রশাসনিক পদক্ষেপ দাবি করেছে। নেপাল ও ভুটানের ট্রানজিট পণ্য পরিবহনও এতে সাময়িকভাবে ব্যাহত হচ্ছে বলে জানানো হয়।",
+    "summaryEn": "Siliguri daily Uttarbanga Sambad reports on representations by North Bengal transport associations calling for fast-track clearance of cargo trucks at Fulbari and Changrabandha land ports bordering Bangladesh, highlighting trade linkages supporting India, Nepal, and Bhutan transit networks.",
+    "keyPointsBn": [
+      "ফুলবাড়ী ও চ্যাংড়াবান্ধা সীমান্তে পণ্যবাহী ট্রাকের দীর্ঘ সারি ও ছাড়পত্র বিলম্বের খবর",
+      "শিলিগুড়ি মার্চেন্টস অ্যাসোসিয়েশনের পক্ষ থেকে কাস্টমস ও বন্দর কর্তৃপক্ষের সাথে বৈঠক",
+      "ত্রিপক্ষীয় ট্রানজিট (ভারত-বাংলাদেশ-ভুটান) বাণিজ্য নির্বিঘ্ন রাখার তাগিদ"
+    ],
+    "keyPointsEn": [
+      "Logistical queues and clearance delays reported at Fulbari and Changrabandha land ports",
+      "Siliguri trade associations urge customs authorities to streamline documentation",
+      "Highlights strategic importance of North Bengal transit for trilateral sub-regional trade"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বাণিজ্যিক সংকট ও সমাধানের জন্য ব্যবসায়ী এবং শুল্ক বিভাগের সমন্বিত প্রচেষ্টার বিবরণ দেওয়ায় নিরপেক্ষ সেন্টিমেন্ট।",
+    "sentimentReasonEn": "Presents a factual, solution-focused view of cross-border freight logistics.",
+    "source": {
+      "name": "Uttarbanga Sambad",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://uttarbangasambad.com/siliguri-fulbari-land-port-bangladesh-transit-trade-cargo-updates/",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T07:15:00Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Uttarbanga Sambad",
+      "Siliguri Bureau",
+      "Fulbari Land Port",
+      "Changrabandha",
+      "Cross-Border Cargo"
+    ]
+  },
+  {
+    "id": "news-20260920-012",
+    "slug": "economic-times-mumbai-petrapole-benapole-trade-apparel-supply-chain",
+    "title": "Economic Times: Indian Textile & Export Hubs Track Petrapole-Benapole Freight Clearance and Supply Resilience",
+    "englishTitle": "The Economic Times: Apparel Exporters & Commercial Banks Monitor Cross-Border Supply Lines Via Petrapole",
+    "banglaTitle": "পেট্রাপোল-বেনাপোল দিয়ে পণ্য ছাড়পত্র ও তৈরি পোশাক সাপ্লাই চেইন নিয়ে সতর্ক মুম্বাইয়ের রফতানিকারকরা: দ্য ইকোনমিক টাইমস",
+    "summaryBn": "ভারতের অগ্রণী অর্থনৈতিক দৈনিক 'দ্য ইকোনমিক টাইমস' (মুম্বাই ব্যুরো) জানিয়েছে, দক্ষিণ এশিয়ার বৃহত্তম স্থলবন্দর পেট্রাপোল-বেনাপোল করিডোরে পণ্যবাহী কনটেইনারের নির্বিঘ্ন চলাচল নিশ্চিত করতে ভারতের বস্ত্র ও টেক্সটাইল রপ্তানিকারকরা ব্যাংকিং ও এলসি নিষ্পত্তির ওপর কড়া নজর রাখছেন। কাঁচামাল সরবরাহের ধারাবাহিকতা বজায় রাখার ওপর মুম্বাইয়ের বাণিজ্য বিশ্লেষকরা জোর দিয়েছেন।",
+    "summaryEn": "The Economic Times (Mumbai bureau) reports that Indian apparel manufacturers and financial institutions are closely observing trade throughput across the critical Petrapole-Benapole border corridor, evaluating letters of credit settlement and raw material logistics to sustain supply chain continuity.",
+    "keyPointsBn": [
+      "পেট্রাপোল-বেনাপোল করিডোরে প্রতিদিনের পণ্য ছাড়পত্রের গতি পর্যালোচনায় মুম্বাইয়ের আর্থিক মহল",
+      "বস্ত্র শিল্পে সুতা ও কাঁচামাল রফতানিতে ঋণপত্র (LC) জটিলতা নিরসনে রিজার্ভ ব্যাংকের দিকনির্দেশনা",
+      "ভারত-বাংলাদেশ দ্বিপাক্ষিক বাণিজ্যে স্থিতিশীলতা রক্ষায় যৌথ ওয়ার্কিং গ্রুপের সক্রিয়তা"
+    ],
+    "keyPointsEn": [
+      "Mumbai financial houses track cargo throughput across Petrapole-Benapole checkpoint",
+      "Apparel sector reviews letter of credit arrangements for cotton and yarn export contracts",
+      "Joint trade working groups coordinate to ensure cross-border commercial stability"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+    "categoryLabelEn": "Cross-Border Trade",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বাণিজ্য নিরবচ্ছিন্ন রাখা এবং ব্যাংকিং চ্যানেলগুলোর সহযোগিতামূলক সমন্বয়ের ওপর আলোকপাত করায় ইতিবাচক সেন্টিমেন্ট।",
+    "sentimentReasonEn": "Emphasizes resilience, supply chain continuity, and proactive commercial management.",
+    "source": {
+      "name": "The Economic Times",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-bangladesh-cross-border-cargo-trade-apparel-supply-chain/articleshow/134789012.cms",
+      "scannedAt": "2026-09-20T01:10:00Z"
+    },
+    "publishedAt": "2026-09-19T13:40:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1200",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "The Economic Times",
+      "Mumbai Bureau",
+      "Petrapole Benapole",
+      "Textile Supply Chain",
+      "Cross-Border Trade"
+    ]
+  },
+  {
     "id": "news-20260919-001",
     "slug": "the-wall-hasina-delhi-meeting-december-program-roadmap",
     "title": "ডিসেম্বর পর্যন্ত ধারাবাহিক কর্মসূচির সিদ্ধান্ত হাসিনার দিল্লি বৈঠকে - TheWall",
@@ -380,7 +967,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=1200",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [
