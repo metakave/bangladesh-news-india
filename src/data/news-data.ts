@@ -199,37 +199,37 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdFIwTkNoempGUGlDM2E0cGVOVHFZZ3IxNWZqRzFCalU0YjFOcHgzV3hiUE9rOUFjY2VPUVplNzd4dFpUUDFBUFQwdWdwY293dDhSTVNDN2YwZ0hrVjBSelZEaW9CMGdqYWM1RjNsd2tLSWdhYmw5S0lxVHozVHFwczBJc213S2pJM0VwX1RUN1hVakpMSk1xM3Q1a0Z1elI0TWk4UDY5UFpyRjhRTWNVcXhoY1FfOHBpaVY4V1FPd3o3bGJsRlNjOFI4Vld5R3hPM1c3VTJmczhLa1lJRTFTZ19XUFBZajJiMnlDRUpVRnRMS1lRTnJ30gH8AUFVX3lxTFBhVDdJVExoZzVyaU9fclJjaWJhOFQ0aGwxSEJIYnpoUnBxU0tHZEQ0Z3pMVVBhT3YzWHMwTjRxR2FvRjRnT1FKUktzRjEwTlNBdVZlMFhmZ1NTUTNLRktKQlhXVmVzVXVXWlBZaWFlRWx1cnNWY0x6TXd4Ujh6T19CNTMtV0x5d042bHlNVHA1dHB0OC1wT3ZkWEVvdVVOTGhRbDIyVlV2SDZIZS1HNEJLbHV2LTg0bFliMVJaX2tqMFdkd0RNdE5FQ0dPZzg1aXBxdENaZnlDT0RQUGxRWmJuWktxb0ozRVNWcDFlWVVtQ2lKWGJ4WjJYcmdtbA?oc=5"
   },
   {
-      "id": "alert-026",
-      "headlineBn": "‘হাসিনার দেশে ফেরার ঘোষণায় ঢাকায় মিছিল ও ব্যাপক ধরপাকড়, ৫০০-র বেশি গ্রেপ্তার’: কলকাতার সংবাদ প্রতিদিন",
-      "headlineEn": "Sangbad Pratidin: Hasina's Return Announcement Energizes Awami League, Over 500 Arrested in Dhaka Protests",
-      "timeAgoBn": "এই মাত্র",
-      "timeAgoEn": "Just now",
-      "sourceName": "Sangbad Pratidin",
-      "sourceBureau": "Kolkata",
-      "sentiment": "negative",
-      "url": "https://www.sangbadpratidin.in/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/"
+    "id": "alert-026",
+    "headlineBn": "‘হাসিনার দেশে ফেরার ঘোষণায় ঢাকায় মিছিল ও ব্যাপক ধরপাকড়, ৫০০-র বেশি গ্রেপ্তার’: কলকাতার সংবাদ প্রতিদিন",
+    "headlineEn": "Sangbad Pratidin: Hasina's Return Announcement Energizes Awami League, Over 500 Arrested in Dhaka Protests",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "Sangbad Pratidin",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://www.sangbadpratidin.in/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/"
   },
   {
-      "id": "alert-025",
-      "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
-      "headlineEn": "The Indian Express: India's MEA Closely Monitoring Dhaka's Move to Review 101 Bilateral Accords",
-      "timeAgoBn": "আজ ভোরে",
-      "timeAgoEn": "Early morning",
-      "sourceName": "The Indian Express",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUXM2Tlk0N0J4N2FRRUkxc19OeDhWekdVYlBneUZILTJUMERldlV5MlJjY3pkM19udGdIUFZ5Y21rY1duZ1ZTYmlfQ3VVbTlTYWc?oc=5"
+    "id": "alert-025",
+    "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
+    "headlineEn": "The Indian Express: India's MEA Closely Monitoring Dhaka's Move to Review 101 Bilateral Accords",
+    "timeAgoBn": "আজ ভোরে",
+    "timeAgoEn": "Early morning",
+    "sourceName": "The Indian Express",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUXM2Tlk0N0J4N2FRRUkxc19OeDhWekdVYlBneUZILTJUMERldlV5MlJjY3pkM19udGdIUFZ5Y21rY1duZ1ZTYmlfQ3VVbTlTYWc?oc=5"
   },
   {
-      "id": "alert-024",
-      "headlineBn": "‘পাল্টা সমাবেশের ডাক দিয়ে সংঘাতের পথে বিএনপি, উত্তপ্ত ঢাকা’: বর্তমান পত্রিকার বিশেষ প্রতিবেদন",
-      "headlineEn": "Bartaman Patrika: High Alert in Dhaka as BNP Calls Counter-Rallies Amid Awami League Demonstrations",
-      "timeAgoBn": "আজ সকালে",
-      "timeAgoEn": "This morning",
-      "sourceName": "Bartaman Patrika",
-      "sourceBureau": "Kolkata",
-      "sentiment": "negative",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5"
+    "id": "alert-024",
+    "headlineBn": "‘পাল্টা সমাবেশের ডাক দিয়ে সংঘাতের পথে বিএনপি, উত্তপ্ত ঢাকা’: বর্তমান পত্রিকার বিশেষ প্রতিবেদন",
+    "headlineEn": "Bartaman Patrika: High Alert in Dhaka as BNP Calls Counter-Rallies Amid Awami League Demonstrations",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "Bartaman Patrika",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5"
   },
   {
     "id": "alert-023",
@@ -241,7 +241,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
     "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5"
-},
+  },
   {
     "id": "alert-022",
     "headlineBn": "‘তারেক রহমানের প্রস্তাবিত ভারত সফর ও হাসিনাকে নিয়ে দ্বিপাক্ষিক সমীকরণ’: নবভারত টাইমসের খবর",
@@ -252,7 +252,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5"
-},
+  },
   {
     "id": "alert-021",
     "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার খবর ভারতীয় পররাষ্ট্র মন্ত্রণালয় কর্তৃক সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
@@ -263,8 +263,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
     "url": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/"
-},
-  
+  },
   {
     "id": "alert-020",
     "headlineBn": "‘তারেক রহমানের দিল্লি সফর ও দ্বিপাক্ষিক সম্পর্ক পুনর্গঠন নিয়ে পর্যালোচনা’: নবভারত টাইমসের বিশেষ সংবাদ",
@@ -308,182 +307,6 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceBureau": "Delhi",
     "sentiment": "negative",
     "url": "https://www.ndtv.com/world-news"
-  },
-  {
-    "id": "alert-016",
-    "headlineBn": "‘হাসিনার ফেরা ও স্থানীয় সরকার নির্বাচন ঘিরে রাজনৈতিক উত্তাপের আশঙ্কা’: দ্য ওয়াল-এর প্রতিবেদন",
-    "headlineEn": "Fears of political unrest over Hasina's exile return and local polls: Kolkata portal The Wall",
-    "timeAgoBn": "রাত ৯টা",
-    "timeAgoEn": "9:00 PM",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNcG05OE9nNXFhclZudmtCcE1Pa09BSU1jblZkSHJIUmdIcUdrNGpudGRnSnh5UmQ4S0Q4YTlUeEFVY2xoYm4takZjYVk3a2tSdVpPTVl1OTJJeGZvb3NEX2xUZGhTbjgyNUM5REZicnBUT0J6LVo3bHZpeklYOXBhQzBRVFZ6VjJKbmtGZzlXSHNFVVdaMm1KbEVJX05HTzEzMWVnOERsWVFCTTA4RkxKWlVaVWlacjRGdENkTXNQakVaR0dkU2J0eGVTcUN6dFVTbG9JekJGTDJfbmJKUmpMaVdCNUU5emc5MDAxeWhIcWxnejNYZVdRcVV5MXUxNWFzS1J6Mm55QTAxNkpCNWdkUNIBlgJBVV95cUxOaDMxdjFuSmZUUFQtX21HRkI4X1BaSTNJcHJadlpxY0RLanRtYURNN0ZlVUJ0OEFiNW43aWpqczFfcXRNRmE3NnlzcjNWV3ZGODhzSnR6SmUzREpOd0NKblNWajkyMjBQaEduM0NLaDhsN1k2c05WbGtnSDYtVFRBN1hDTnAxdFRvVE1SY1Q2MmNYWjNTVy1uVmxDaVIwNGJwSnhnaG9HcUZ5MHg4NHNSV2R0Tl9vQmF1ejI0dHo2elBsME9yQURYUEkzVzJ3T01RbFpOa05mX2RRN3NzdDhZOTJKR3Q4Ri0xdEtKd1VvX192RTRGVDh0ZFZSUXFsWENQTHE5WUJYQjlpbkZEZ3dDdko4UHI4UQ?oc=5"
-  },
-  {
-    "id": "alert-015",
-    "headlineBn": "‘হাসিনার প্রত্যাবর্তন থেকে মক্কা চুক্তি: বহু প্রশ্ন উত্তরহীন বাংলাদেশে’: কলকাতা সংবাদ প্রতিদিনের বিশেষ সম্পাদকীয় বিশ্লেষণ",
-    "headlineEn": "Sangbad Pratidin Editorial: Unanswered economic & security questions in Bangladesh amid Hasina return debates",
-    "timeAgoBn": "আজ বিকেলে",
-    "timeAgoEn": "This afternoon",
-    "sourceName": "Sangbad Pratidin",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://www.sangbadpratidin.in/editorial/from-hasinas-return-to-the-mecca-pact-many-questions-remain-unanswered-in-bangladesh/pid/1341406/"
-  },
-  {
-    "id": "alert-014",
-    "headlineBn": "ট্রাইব্যুনালের রায়ের প্রতিবাদে আওয়ামী লীগের জেলা কমিটির ইনস্টাগ্রাম ফটো ডিসপ্যাচ ও সোশ্যাল মিডিয়ায় আলোড়ন",
-    "headlineEn": "Awami League district units post Instagram visual dispatches rejecting ICT death sentence verdict",
-    "timeAgoBn": "১ মিনিট পোস্ট",
-    "timeAgoEn": "1 min post",
-    "sourceName": "Indian Media (Instagram)",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.instagram.com"
-  },
-  {
-    "id": "alert-010",
-    "headlineBn": "জুলাই গণ-অভ্যুত্থানে মানবতাবিরোধী অপরাধ: ওবায়দুল কাদেরসহ আওয়ামী লীগের ৭ নেতার মৃত্যুদণ্ডের রায় আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের",
-    "headlineEn": "Bangladesh tribunal sentences 7 senior Awami League leaders to death over 'July uprising'",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "The Times of India",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia/bdesh-tribunal-sentences-7-awami-members-to-death-over-july-uprising/articleshow/134276177.cms"
-  },
-  {
-    "id": "alert-011",
-    "headlineBn": "‘শেখ হাসিনাকে ফেরত দিলেই সম্পর্ক সুধারেগা’: ভারতীয় গণমাধ্যমে তারেক রহমানের উপদেষ্টার শর্ত তুলে ধরা প্রতিবেদন",
-    "headlineEn": "'Hand over Sheikh Hasina to restore ties': Tarique Rahman's Advisor sets conditions (Navbharat Times)",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "Navbharat Times",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdkFVdHh4OWRKNXFlV0dqRTRTSXhsdXRvVUYyamE5MU9JNDdoRkVTSnJjQW5CTkZ6MTdQVE9vdU5iTlFZZ0YzZ2J5OV9sZ2lHN01VS0pFUTFhaDhPM3BxZkctaFBTaVZMbFJJUnYxQUo2TDhXN0dyMzBpTjdkYnpkajgzU2YwUzBCMkpJQ2c1MzV1NTczSkFIei1SN2NwMW1xNHd5RDRGdlk4M2VVNVNrU09BLXBmd2ZFTDdYR1lGN1M3X2w5MmFCN3VQZGpoekpuZWFoVi1nQVNESXlWMmotSE5FWHoyeXJkaUh5MUJIZmJFVlhSNzlIcUVFZkhQOW1Wc3hTX0EwWXpmOXPSAZACQVVfeXFMTXVmOE1aanRaVGM5RUdpNTl2YnRwQ3lmVEFyVVBxMTQ4ZEE1LVV4R1NXQlpNYjZmRktRanVBWnc1cXNKVHRiUGRUUjlXYVBhUmVUd2JjWUVkbFIxN1Y1YjVhaGw5ZDE4b1BXOXVHaUNsdXJLQ04xSTZCX0d4WEZOR0ZyanB2cTI2a0JOalRPT21OZ1Vld01pN0lSUWFrbV9NY2NSM05wRTk0YkhTZHZKYlhCa0tXcjNPc1BJYmtrdkxpdmhybkNKWXA2Q1dIVHd1cl9CTG83YmRXaGdMcTByMll3TmY2RnVDc2tUOHExWGptTl9pLTNRbDl0VGphbktTVVdsU0ZPR2N2NDhScHVoa1g?oc=5"
-  },
-  {
-    "id": "alert-012",
-    "headlineBn": "সর্বজনীন পেনশন স্কিমে পরিবর্তন: চাঁদা প্রদানকারীর স্বামী বা স্ত্রী পাবেন আজীবন সুবিধা (বিবিসি বাংলা)",
-    "headlineEn": "Universal Pension Scheme Reforms: Spouses to receive lifetime benefits (BBC Bengali)",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "BBC Bengali",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.bbc.com/bengali/articles/ck3re1vx2l8ro"
-  },
-  {
-    "id": "alert-013",
-    "headlineBn": "দিল্লিতে শেখ হাসিনার ৩-দফা রাজনৈতিক পরামর্শ সভা ও ভিডিও বিশ্লেষণ (ইউটিউব নিউজ ডিসপ্যাচ)",
-    "headlineEn": "Sheikh Hasina's 3-Point Delhi Strategy Meetings Covered by Indian Digital Media (YouTube Report)",
-    "timeAgoBn": "ভিডিও রিপোর্ট",
-    "timeAgoEn": "Video Dispatch",
-    "sourceName": "Politics Tv (YouTube)",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EOVRXeFpaQTdpVTlSM3pIUGx4ZHhSc3FuWG1JQXFMUDh5UXVGdzNlQUgwNFBKWjVLZmVHazFxSl9FWUV5Mnd2bkFyMUFWWFZQdWtyVGhn?oc=5"
-  },
-  {
-    "id": "alert-009",
-    "headlineBn": "‘আমার মাকে এক কাপড়ে ওপার বাংলা থেকে পালিয়ে আসতে হয়েছিল’: শুভেন্দু অধিকারী (ভিডিও রিপোর্ট)",
-    "headlineEn": "'My mother had to flee Opar Bangla in a single cloth': Suvendu Adhikari (Video Dispatch)",
-    "timeAgoBn": "ভিডিও রিপোর্ট",
-    "timeAgoEn": "Video Dispatch",
-    "sourceName": "BNT Bangla (YouTube)",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://www.youtube.com/watch?v=0WrRFhIezuc"
-  },
-  {
-    "id": "alert-008",
-    "headlineBn": "‘হিন্দু বাঙালিদের অবস্থা হতে পারত চিন্ময়কৃষ্ণের মতো’: বাংলাদেশে পরিস্থিতি নিয়ে সরব শুভেন্দু অধিকারী",
-    "headlineEn": "'Condition of Hindu Bengalis could have been like Chinmoy Krishna': Suvendu Adhikari on Bangladesh crisis",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Ei Samay",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://eisamay.com/west-bengal-news/kolkata-news/cm-suvendu-adhikari-reaction-over-bangladesh-chinmay-krishna-current-situation/200541925.cms"
-  },
-  {
-    "id": "alert-006",
-    "headlineBn": "কাদেরসহ আওয়ামী লীগের ৭ শীর্ষ নেতার বিরুদ্ধে আজ ট্রাইব্যুনালের রায় ঘোষণা",
-    "headlineEn": "Dhaka Tribunal to Deliver Verdict on 7 AL Leaders Including Obaidul Quader Today",
-    "timeAgoBn": "১ ঘন্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://www.thewall.in/bangladesh/dhaka-tribunal-verdict-against-seven-awami-league-leaders-before-hasinas-return/tid/204850"
-  },
-  {
-    "id": "alert-005",
-    "headlineBn": "শেখ সেলিমের ‘নেতৃত্ব’ ইস্যুতে আওয়ামী লীগে তীব্র বিতর্ক ও অসন্তোষ",
-    "headlineEn": "Row over Sheikh Selim's 'Leadership' in Awami League: Is Internal Crisis Brewing?",
-    "timeAgoBn": "৪ ঘন্টা আগে",
-    "timeAgoEn": "4 hours ago",
-    "sourceName": "BBC News বাংলা",
-    "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://www.bbc.com/bengali/articles/c046rvwk2pvo"
-  },
-  {
-    "id": "alert-007",
-    "headlineBn": "মায়ের শেষকৃত্যে যোগ দিতে চিন্ময় কৃষ্ণ দাসকে ৫ ঘণ্টার বিশেষ প্যারোল মঞ্জুর",
-    "headlineEn": "Chinmoy Krishna Das Granted 5-Hour Parole to Attend Mother's Last Rites",
-    "timeAgoBn": "৫ দিন আগে",
-    "timeAgoEn": "5 days ago",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://www.thewall.in/bangladesh/chinmay-krishnas-mother-departed-with-the-unfulfilled-wish-of-seeing-her-son-will-tareq-sarkar-grant-parole-to-the-imprisoned-monk/tid/204451"
-  },
-  {
-    "id": "alert-001",
-    "headlineBn": "ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহ ও জামায়াত নেতার ছবি টানানো নিয়ে বিতর্ক",
-    "headlineEn": "Row at Dhaka University over photos of Jinnah, Jamaat ex-chief",
-    "timeAgoBn": "২ ঘন্টা আগে",
-    "timeAgoEn": "2 hours ago",
-    "sourceName": "Times of India World",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia/row-at-dhaka-university-over-photos-of-jinnah-jamaat-ex-chief/articleshow/134249657.cms"
-  },
-  {
-    "id": "alert-002",
-    "headlineBn": "ভারত থেকে বাংলাদেশে ইলিশ রপ্তানি: ‘ইউএনও রিভার্স’",
-    "headlineEn": "UNO reverse: India is now sending hilsa to Bangladesh",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "India Today",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.indiatoday.in/newsmo/short-videos/uno-reverse-india-is-now-sending-hilsa-to-bangladesh-2994581-2026-09-14?utm_source=rss"
-  },
-  {
-    "id": "alert-003",
-    "headlineBn": "তারেক রহমানের অধীনে ভারত-বাংলাদেশ সম্পর্ক পুনরায় সেট করা সম্ভব?",
-    "headlineEn": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
-    "timeAgoBn": "১ দিন আগে",
-    "timeAgoEn": "1 day ago",
-    "sourceName": "The Indian Express",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5"
-  },
-  {
-    "id": "alert-004",
-    "headlineBn": "শেখ হাসিনার কন্যা জালিয়াতির অভিযোগে ডব্লিউএইচও আঞ্চলিক প্রধান পদ থেকে পদত্যাগ করেছেন",
-    "headlineEn": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
-    "timeAgoBn": "৬ দিন আগে",
-    "timeAgoEn": "6 days ago",
-    "sourceName": "NDTV",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5"
   }
 ];
 

@@ -10,22 +10,30 @@ export default function BreakingNews() {
   const { lang } = useApp();
   const t = TRANSLATIONS[lang];
   const [currentIndex, setCurrentIndex] = useState(0);
+  // Keep at most latest 20 breaking alerts in the top ticker
+  const activeAlerts = BREAKING_NEWS_ALERTS.slice(0, 20);
 
   useEffect(() => {
+    if (activeAlerts.length <= 1) return;
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % BREAKING_NEWS_ALERTS.length);
+      setCurrentIndex((prev) => (prev + 1) % activeAlerts.length);
     }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [activeAlerts.length]);
 
-  const current = BREAKING_NEWS_ALERTS[currentIndex];
+  if (!activeAlerts || activeAlerts.length === 0) {
+    return null;
+  }
+
+  const safeIndex = currentIndex >= activeAlerts.length ? 0 : currentIndex;
+  const current = activeAlerts[safeIndex];
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % BREAKING_NEWS_ALERTS.length);
+    setCurrentIndex((prev) => (prev + 1) % activeAlerts.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + BREAKING_NEWS_ALERTS.length) % BREAKING_NEWS_ALERTS.length);
+    setCurrentIndex((prev) => (prev - 1 + activeAlerts.length) % activeAlerts.length);
   };
 
   const headline = lang === 'bn' ? current.headlineBn : current.headlineEn;
@@ -95,7 +103,7 @@ export default function BreakingNews() {
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', flexShrink: 0 }}>
           <span style={{ fontSize: '0.72rem', opacity: 0.75, marginRight: '0.35rem' }}>
-            {currentIndex + 1}/{BREAKING_NEWS_ALERTS.length}
+            {safeIndex + 1}/{activeAlerts.length}
           </span>
           <button
             onClick={handlePrev}

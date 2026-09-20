@@ -1455,8 +1455,8 @@ Make sure scannerStats reflects totalScanned24h: ${allScannedArticles.length}, b
             mergedAlerts.push(ea);
           }
         }
-        // Retain top 8-10 verified alerts
-        mergedAlerts = mergedAlerts.slice(0, 8);
+        // Retain top 20 verified alerts maximum
+        mergedAlerts = mergedAlerts.slice(0, 20);
       } catch (e) {
         console.warn('Could not parse existing alerts for merging, using new alerts.');
       }
