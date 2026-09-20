@@ -1923,7 +1923,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-13T17:42:21Z",
     "readTimeBn": "৩ মিনিট পড়া",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1534008757030-27299c4371b6?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/hilsa-fish-trade-export.jpg",
     "tags": [
       "India Today",
       "Hilsa Trade",
