@@ -68,26 +68,59 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 3809,
-  "bangladeshMatches": 977,
+  "totalScanned24h": 3821,
+  "bangladeshMatches": 1047,
   "sentimentDistribution": {
-    "positive": 22,
-    "neutral": 42,
-    "negative": 36
+    "positive": 24,
+    "neutral": 43,
+    "negative": 33
   },
   "bureauDistribution": {
-    "delhi": 55,
-    "kolkata": 25,
-    "mumbai": 8
+    "delhi": 53,
+    "kolkata": 31,
+    "mumbai": 16
   },
   "languageDistribution": {
-    "english": 37,
-    "bengali": 29,
-    "hindi": 15
+    "english": 40,
+    "bengali": 36,
+    "hindi": 24
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-036",
+    "headlineBn": "‘শারদীয় উৎসব ঘিরে ভারতে ৫০০ টন ইলিশ রপ্তানির বিশেষ অনুমতি দিল বাংলাদেশ’: আজ তক ভিডিও রিপোর্ট",
+    "headlineEn": "Aaj Tak Video: Bangladesh Clears 500 Metric Tonnes of Hilsa Fish Exports to India Ahead of Festive Season",
+    "timeAgoBn": "ভিডিও রিপোর্ট",
+    "timeAgoEn": "Video Dispatch",
+    "sourceName": "Aaj Tak (YouTube)",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tZC0xZXBSVHpFWFEwLXhrM1V0QmxPcnNmQWZZNk1GSThzNXhtQlhNOXlyTlh4U3VKeFZyUTl4NjVfY3RoTE1fMmJFWWpNZnRnMUEybjBB?oc=5"
+  },
+  {
+    "id": "alert-035",
+    "headlineBn": "‘হু-এর দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক পরিচালকের পদ থেকে পদত্যাগের নেপথ্যে রাজনৈতিক চাপ ও অনিয়ম ছিল’: ইনস্টাগ্রাম পোস্টে সায়মা ওয়াজেদ",
+    "headlineEn": "Firstpost Instagram: Saima Wazed Cites Political Pressure and Violation of Due Process Behind WHO Regional Directorship Exit",
+    "timeAgoBn": "১ ঘণ্টা আগে",
+    "timeAgoEn": "1 hour ago",
+    "sourceName": "Firstpost (Instagram)",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5"
+  },
+  {
+    "id": "alert-034",
+    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনায় দিল্লির কড়া বার্তা: নিজেদের জাতীয় স্বার্থ সুরক্ষিত রাখবে ভারত’: জি নিউজ",
+    "headlineEn": "Zee News: 'India Will Take All Steps to Protect National Interests' - Delhi Responds to Bangladesh Reviewing 101 Hasina-Era Deals",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "Zee News World",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html"
+  },
   {
     "id": "alert-033",
     "headlineBn": "‘বাংলাদেশকে পাকিস্তানের সমান্তরাল ভাবা ভারতের কৌশলগত স্বার্থের জন্য ক্ষতিকর’: দ্যপ্রিন্ট ভিডিও বিশ্লেষণ",
@@ -456,6 +489,558 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260920-057",
+    "slug": "zee-news-bangladesh-reviews-101-hasina-era-deals-delhi-protect-interests",
+    "title": "Zee News: 'Bangladesh Reviews 101 Hasina-Era Deals; Delhi Asserts Resolute Commitment to Safeguard National Interests'",
+    "englishTitle": "Zee News: 'Bangladesh Reviews 101 Hasina-Era Deals; Delhi Asserts Resolute Commitment to Safeguard National Interests'",
+    "banglaTitle": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা; জাতীয় স্বার্থ রক্ষায় কঠোর বার্তা ভারতের’: জি নিউজ",
+    "summaryBn": "ভারতের শীর্ষস্থানীয় গণমাধ্যম জি নিউজ জানিয়েছে, শেখ হাসিনার ১৫ বছরের শাসনামলে ভারতের সাথে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি ও সমঝোতা স্মারক পুঙ্খানুপুঙ্খ পুনর্মূল্যায়ন করার প্রক্রিয়া শুরু করেছে ঢাকা। এর মধ্যে চট্টগ্রাম ও মংলা সমুদ্রবন্দর ব্যবহার করে ভারতের উত্তর-পূর্বাঞ্চলে পণ্য পরিবহন, আন্তঃসীমান্ত রেল সংযোগ এবং জ্বালানি সঞ্চালন চুক্তি অন্তর্ভুক্ত। ভারতের পররাষ্ট্র মন্ত্রণালয় (এমইএ) স্পষ্ট জানিয়ে দিয়েছে যে, নিজেদের সার্বভৌম কৌশলগত ও বাণিজ্যিক স্বার্থ সুরক্ষায় দিল্লি প্রয়োজনীয় যেকোনো পদক্ষেপ গ্রহণ করবে।",
+    "summaryEn": "Zee News reports that Bangladesh has initiated a comprehensive review of 101 bilateral treaties, accords, and memoranda of understanding signed during the 15-year tenure of ousted Prime Minister Sheikh Hasina. The agreements under scrutiny encompass transshipment rights through Chattogram and Mongla ports for India’s landlocked Northeast, cross-border energy grids, and rail connectivity. India’s Ministry of External Affairs responded firmly, underscoring that New Delhi will take all necessary measures to safeguard its core strategic and commercial interests.",
+    "keyPointsBn": [
+      "হাসিনা আমলে ভারতের সাথে স্বাক্ষরিত ১০১টি গুরুত্বপূর্ণ দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা",
+      "চট্টগ্রাম ও মংলা বন্দর ব্যবহার এবং উত্তর-পূর্বাঞ্চলীয় ট্রানজিট সুবিধার ভবিষ্যত নিয়ে দিল্লির সতর্ক দৃষ্টি",
+      "ভারতের পররাষ্ট্র মন্ত্রণালয় জানিয়েছে পারস্পরিক সহযোগিতা ইতিবাচক হলেও জাতীয় স্বার্থ রক্ষায় কোনো আপস নয়"
+    ],
+    "keyPointsEn": [
+      "Dhaka begins formal re-evaluation of 101 key bilateral agreements signed during Sheikh Hasina’s tenure",
+      "Accords under scrutiny include transit access via Chattogram and Mongla ports to India’s Northeast states",
+      "MEA affirms commitment to constructive ties while declaring India will resolutely protect its national interests"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক চুক্তি",
+    "categoryLabelEn": "Diplomacy & Strategic Pacts",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "চুক্তি পর্যালোচনা ঘিরে ঢাকার পদক্ষেপে কিছুটা অনিশ্চয়তা তৈরি হলেও পারস্পরিক স্বার্থ সুরক্ষায় দিল্লির কূটনৈতিক অবস্থান বাস্তবসম্মত ও সুষম।",
+    "sentimentReasonEn": "Reflects balanced coverage of Dhaka’s policy reassessment alongside New Delhi’s firm diplomatic resolve to protect bilateral infrastructure investments.",
+    "source": {
+      "name": "Zee News World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T09:34:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Zee News",
+      "Diplomatic Accords",
+      "101 Deals Review",
+      "Chattogram Port",
+      "Mongla Port",
+      "MEA Delhi",
+      "Sheikh Hasina"
+    ]
+  },
+  {
+    "id": "news-20260920-058",
+    "slug": "firstpost-instagram-saima-wazed-who-resignation-political-pressure",
+    "title": "Firstpost Visual Dispatch: 'Saima Wazed Details Political Pressure and Due Process Failures Behind WHO Regional Resignation'",
+    "englishTitle": "Firstpost Visual Dispatch: 'Saima Wazed Details Political Pressure and Due Process Failures Behind WHO Regional Resignation'",
+    "banglaTitle": "বিশ্ব স্বাস্থ্য সংস্থার (হু) দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক পরিচালকের পদ থেকে ইস্তফা প্রসঙ্গে রাজনৈতিক চাপ ও অবিচারের বিশদ তুলে ধরলেন সায়মা ওয়াজেদ: ফার্স্টপোস্ট ইনস্টাগ্রাম পোস্ট",
+    "summaryBn": "ভারতের প্রভাবশালী ডিজিটাল সংবাদ মাধ্যম ফার্স্টপোস্ট (Firstpost)-এর ইনস্টাগ্রাম ভিজ্যুয়াল প্রতিবেদনে তুলে ধরা হয়েছে বিশ্ব স্বাস্থ্য সংস্থার (হু) দক্ষিণ-পূর্ব এশিয়া অঞ্চলের সাবেক পরিচালক সায়মা ওয়াজেদের পদত্যাগ সংক্রান্ত বক্তব্য। ক্ষমতাচ্যুত প্রধানমন্ত্রী শেখ হাসিনার কন্যা সায়মা ওয়াজেদ জানান, রাজনৈতিক উদ্দেশ্যপ্রণোদিত চাপ এবং ন্যায়সঙ্গত প্রশাসনিক প্রক্রিয়া লঙ্ঘনের কারণেই তিনি দায়িত্ব ছাড়তে বাধ্য হয়েছেন। তাঁর মেয়াদে মানসিক স্বাস্থ্য ও জনস্বাস্থ্যে গৃহীত উদ্যোগগুলোর ভবিষ্যৎ নিয়ে বিশ্ব পরিমণ্ডলে উদ্বেগ তৈরি হয়েছে।",
+    "summaryEn": "In a featured visual dispatch on Instagram, Firstpost highlights the official testimony of Saima Wazed following her resignation as Regional Director of the World Health Organization (WHO) for South-East Asia. The daughter of former Prime Minister Sheikh Hasina detailed sustained geopolitical and political pressures alongside procedural lapses that compromised her mandate, sparking wider international debate on the politicization of multilateral healthcare institutions.",
+    "keyPointsBn": [
+      "হু-এর দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক কার্যালয়ে রাজনৈতিক হস্তক্ষেপে গভীর উদ্বেগ প্রকাশ",
+      "ন্যায্য আইনি ও প্রাতিষ্ঠানিক প্রক্রিয়া ক্ষুণ্ণ হওয়ার অভিযোগ তুলে পদত্যাগের পটভূমি ব্যাখ্যা",
+      "দক্ষিণ এশিয়ার আঞ্চলিক মানসিক স্বাস্থ্য ও অটিজম কর্মসূচির ভবিষ্যৎ নিয়ে আন্তর্জাতিক মহলে আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Saima Wazed outlines targeted administrative and political pressure culminating in WHO regional exit",
+      "Criticizes abandonment of standard multilateral due process amid domestic political shifts in Bangladesh",
+      "International public health observers evaluate impact on regional autism and mental health frameworks"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "আন্তর্জাতিক কূটনীতি ও স্বাস্থ্য",
+    "categoryLabelEn": "International Diplomacy & Health",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আন্তর্জাতিক সংস্থায় রাজনৈতিক চাপ এবং নীতিগত প্রক্রিয়া লঙ্ঘনের অভিযোগ তুলে ধরায় প্রতিবেদনের সুর স্পর্শকাতর ও সমালোচনামূলক।",
+    "sentimentReasonEn": "Critical dispatch spotlighting geopolitical interference in multilateral international health governance.",
+    "source": {
+      "name": "Firstpost (Instagram)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T08:00:00Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Firstpost",
+      "Instagram Post",
+      "Visual Journalism",
+      "Saima Wazed",
+      "Sheikh Hasina",
+      "WHO",
+      "Public Health",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-059",
+    "slug": "aaj-tak-youtube-india-bangladesh-500-ton-hilsa-export-festive-trade",
+    "title": "Aaj Tak Video: 'Bangladesh Clears 500 Tonnes of Hilsa Fish Exports to India Ahead of Festive Season Amid Retail Crunch'",
+    "englishTitle": "Aaj Tak Video: 'Bangladesh Clears 500 Tonnes of Hilsa Fish Exports to India Ahead of Festive Season Amid Retail Crunch'",
+    "banglaTitle": "শারদীয় উৎসব ঘিরে ভারতে ৫০০ টন ইলিশ রপ্তানির বিশেষ ছাড়পত্র দিল বাংলাদেশ, পেট্রাপোল বন্দরে হিমায়িত ট্রাকে ব্যস্ততা: আজ তক ভিডিও রিপোর্ট",
+    "summaryBn": "ভারতের জাতীয় হিন্দি টেলিভিশন চ্যানেল আজ তক (Aaj Tak)-এর বিশেষ ভিডিও প্রতিবেদনে জানানো হয়েছে, আসন্ন দুর্গাপূজা উপলক্ষে ভারতে ৫০০ মেট্রিক টন পদ্মার ইলিশ রপ্তানির বিশেষ অনুমোদন দিয়েছে বাংলাদেশ সরকার। আগের কঠোর রপ্তানি নিষেধাজ্ঞা কিছুটা শিথিল করে গৃহীত এই সিদ্ধান্ত পশ্চিমবঙ্গ ও ভারতের অন্যান্য বাজারে স্বস্তি নিয়ে এসেছে। পেট্রাপোল-বেনাপোল সমন্বিত স্থলবন্দরে বিশেষ প্রক্রিয়ায় দ্রুত কাস্টমস ক্লিয়ারেন্স নিশ্চিত করছে ভারতীয় সীমান্ত কর্তৃপক্ষ।",
+    "summaryEn": "Aaj Tak's frontline video dispatch covers Dhaka's decision to grant special authorization for 500 metric tonnes of coveted Hilsa fish exports to India ahead of the Sharadiya Durga Puja festival. The partial relaxation of the blanket seafood ban brings seasonal relief to consumers across West Bengal, while Petrapole border checkpoints enforce expedited refrigerated clearance to sustain bilateral culinary diplomacy.",
+    "keyPointsBn": [
+      "আসন্ন দুর্গাপূজা উপলক্ষে বাংলাদেশ থেকে ৫০০ টন ইলিশ আমদানির বিশেষ অনুমতি কার্যকর",
+      "বনগাঁ ও কলকাতার পাইকারি মাছ বাজারে দামের ঊর্ধ্বগতি কিছুটা স্বাভাবিক হওয়ার প্রত্যাশা",
+      "পেট্রাপোল-বেনাপোল সীমান্তে কাস্টমস ও খাদ্য নিরাপত্তা পরীক্ষার সমন্বিত উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "Dhaka issues special waiver permitting export of 500 tonnes of premium Hilsa for festive demand",
+      "Wholesale seafood markets in Kolkata and North 24 Parganas register immediate festive optimism",
+      "Integrated Land Port Petrapole prioritizes green-channel clearance for cross-border refrigerated cargo"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও খাদ্য সংস্কৃতি",
+    "categoryLabelEn": "Cross-Border Trade & Food Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "শারদীয় উৎসবের প্রাক্কালে ইলিশ বাণিজ্যের অনুমতি দুই দেশের জনসাধারণের মাঝে সাংস্কৃতিক সৌহার্দ্য ও বাণিজ্যিক আদান-প্রদানকে গতিশীল করেছে।",
+    "sentimentReasonEn": "Positive reporting celebrating cultural bridge-building, cross-border seasonal trade, and bilateral economic cooperation.",
+    "source": {
+      "name": "Aaj Tak (YouTube)",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tZC0xZXBSVHpFWFEwLXhrM1V0QmxPcnNmQWZZNk1GSThzNXhtQlhNOXlyTlh4U3VKeFZyUTl4NjVfY3RoTE1fMmJFWWpNZnRnMUEybjBB?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T07:15:00Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1534483509719-3feaee7c30da?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Aaj Tak",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Hilsa Diplomacy",
+      "Petrapole",
+      "Indo-Bangladesh Trade",
+      "Durga Puja",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-060",
+    "slug": "navbharat-times-tarique-rahman-confrontation-student-leadership-warning",
+    "title": "Navbharat Times: 'Tarique Rahman Faces Stiff Resistance From Student Bloc as Political Deadlock Looms in Dhaka'",
+    "englishTitle": "Navbharat Times: 'Tarique Rahman Faces Stiff Resistance From Student Bloc as Political Deadlock Looms in Dhaka'",
+    "banglaTitle": "‘তারেক রহমান ও বিএনপির রাজনৈতিক অবস্থানের বিরুদ্ধে ছাত্র আন্দোলনের কঠোর হুঁশিয়ারি, ঢাকার রাজনীতিতে নতুন মেরুকরণ’: নবভারত টাইমস",
+    "summaryBn": "ভারতের শীর্ষস্থানীয় হিন্দি দৈনিক নবভারত টাইমস (Navbharat Times) ঢাকার অভ্যন্তরীণ রাজনৈতিক অস্থিরতা নিয়ে প্রকাশিত প্রতিবেদনে জানিয়েছে, বিএনপির ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমানের রাজনৈতিক ভবিষ্যৎ ও সমঝোতার কৌশল নিয়ে জাতীয় নাগরিক কমিটি ও ছাত্র নেতৃত্বের মাঝে তীব্র মতবিরোধ দেখা দিয়েছে। অন্তর্বর্তী সরকারের সংস্কার এজেন্ডা বনাম দ্রুত সাধারণ নির্বাচনের প্রশ্নে এই টানাপোড়েন দিল্লির নিরাপত্তা বিশ্লেষকদের বিশেষ পর্যবেক্ষণে রয়েছে।",
+    "summaryEn": "Navbharat Times analyzes escalating political friction in Dhaka between the student-led coalition and the Bangladesh Nationalist Party (BNP) headed by acting chairman Tarique Rahman. The report details student leaders warning against hasty electoral compromises and institutional backsliding, underscoring growing structural instability as New Delhi tracks regional governance developments.",
+    "keyPointsBn": [
+      "বিএনপির একক প্রাধান্য ও দ্রুত নির্বাচন দাবির বিপরীতে ছাত্র আন্দোলনের কাঠামোগত সংস্কারের ওপর জোর",
+      "তারেক রহমানের নেতৃত্ব ও রাজনৈতিক অবস্থান নিয়ে ঢাকার নীতি মহলে মতদ্বৈততা বৃদ্ধি",
+      "বাংলাদেশের রাজনৈতিক ভবিষ্যৎ ও আইনশৃঙ্খলার প্রশ্নে ভারতের নিরাপত্তা পর্যবেক্ষকদের নিবিড় নজর"
+    ],
+    "keyPointsEn": [
+      "Student movement leaders issue strong warnings against unilateral political compromises by BNP",
+      "Tarique Rahman's strategic maneuvers face resistance over democratic reform sequence prior to polls",
+      "New Delhi security apparatus closely monitors institutional friction and stability risks in Dhaka"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাচন",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দুই রাজনৈতিক পক্ষের পাল্টাপাল্টি অবস্থান ও ভবিষ্যতের সম্ভাব্য সাংবিধানিক জটিলতা বস্তুনিষ্ঠভাবে বিশ্লেষণ করা হয়েছে।",
+    "sentimentReasonEn": "Objective report analyzing multi-faction political competition and democratic reform dilemmas in Bangladesh.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNU45TU5KSE5uSkpOV014bWZTWXFYY2w0VnEyNUw0LVhGaE1RNmlicEFGQUdfNTMzYUxwWlZBRHdzeVp2c3ptRW1xSFB6c2VUYzctM2gzLV9MSV9GbTV0aWtuVEJlT3dnWG1HSVFsMG8ycV8zUS1CbnJnMThZbGpmT3l1eHZYamlwTXpRQXlrWDVIbVpyandGeDN0dzlQeERHMWNPcTRCckprZGNuZmMxZlZORkxFdUg0NHZVY1BwWlNYYVJXMHpBb3puYVNDSUl6Y2xOVFVfb3lMNklZZ0FlT2JRdEdWamR0c1VUU0txSXhSREFwcF9TcWMxTdIBgAJBVV95cUxPeHNEMmpYVkhYczVTZVdIZzZZMVdtOXgtcV8zUENOdTRBbnlNcU9UQUFaZG9qallIU2JXZ3VMZ01TTHhTSjY3a3QzN2QzN1YxTC1yeDJkSXFEdGdIcnVwYU5sLXVxeEpfY1BjQlh2NEZBNVpBMUxBVUFMbWlQcjFOaTZnMXNHTlExanFsRW5NQmlSNGhPS1RmWUNMM3JHeGJ0am1FSF8xYi1TSjUyek8xeW53d3ZieHA2YndaQVVES3ZnaFA1Tm5xOWpzeEpEVEdRdFptaTNGX2liV08wRU40dEdSMXMwU3A5STN4ejdsN0dXM0x2NHlMTGNnOHRHQzZC?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T04:03:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Navbharat Times",
+      "Tarique Rahman",
+      "তারেক রহমান",
+      "BNP",
+      "Student Movement",
+      "Dhaka Politics",
+      "Hindi Media",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-061",
+    "slug": "times-of-india-sheikh-hasina-grassroots-reorganization-party-cadres",
+    "title": "The Times of India: 'Sheikh Hasina Coordinates With Senior Awami League Leaders, Charts Grassroots Mobilization Strategy'",
+    "englishTitle": "The Times of India: 'Sheikh Hasina Coordinates With Senior Awami League Leaders, Charts Grassroots Mobilization Strategy'",
+    "banglaTitle": "তৃণমূল পর্যায়ের নেতাকর্মীদের সঙ্গে সমন্বয় করে রাজনৈতিক পুনর্গঠনের রূপরেখা সাজাচ্ছেন শেখ হাসিনা: টাইমস অব ইন্ডিয়া",
+    "summaryBn": "ভারতের প্রভাবশালী ইংরেজি দৈনিক দ্য টাইমস অব ইন্ডিয়া (The Times of India)-এর প্রতিবেদনে বলা হয়েছে, ভারতে অবস্থানরত ক্ষমতাচ্যুত সাবেক প্রধানমন্ত্রী শেখ হাসিনা দলের শীর্ষ নেতৃত্ব ও তৃণমূল নেতাদের সঙ্গে ভার্চুয়াল ও অফলাইন মাধ্যমে রাজনৈতিক যোগাযোগ বৃদ্ধি করেছেন। আওয়ামী লীগের সাংগঠনিক শক্তি পুনরুজ্জীবিত করা, আইনি লড়াই পরিচালনা এবং তৃণমূল নেতাকর্মীদের মনোবল চাঙ্গা রাখতে সুনির্দিষ্ট নির্দেশনা দিচ্ছেন তিনি। এই কৌশলগত পদক্ষেপ বাংলাদেশের সামগ্রিক রাজনীতিতে নতুন আলোড়ন সৃষ্টি করেছে।",
+    "summaryEn": "The Times of India reports that former Prime Minister Sheikh Hasina has intensified high-level strategic consultations with senior Awami League leaders and regional party organizers. Operating from India, Hasina is actively orchestrating a comprehensive organizational restructuring roadmap aimed at legal defense coordination, grassroots cadre mobilization, and preparing the party apparatus for future political participation in Bangladesh.",
+    "keyPointsBn": [
+      "দলের সাংগঠনিক স্থবিরতা কাটিয়ে তৃণমূলকে পুনরায় সক্রিয় করার লক্ষ্যে শেখ হাসিনার ধারাবাহিক বৈঠক",
+      "আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল (আইসিটি)-এর মামলা মোকাবেলায় সমন্বিত আইনি সেল গঠনের নির্দেশনা",
+      "বাংলাদেশের রাজনৈতিক পটভূমিতে আওয়ামী লীগের প্রত্যাবর্তনের কৌশলগত রূপরেখা প্রণয়ন"
+    ],
+    "keyPointsEn": [
+      "Sheikh Hasina leads structured consultative sessions to reactivate exiled and domestic party networks",
+      "Directs formation of specialized legal defense coordination teams to challenge interim indictments",
+      "Outlines strategic grassroots roadmap for Awami League’s political re-engagement in national affairs"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও সাংগঠনিক পুনর্গঠন",
+    "categoryLabelEn": "Politics & Party Reorganization",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "নির্বাসিত রাজনৈতিক নেতৃত্বের কর্মকাণ্ড ও বাংলাদেশের অভ্যন্তরীণ প্রতিক্রিয়া নিয়ে তথ্যভিত্তিক ও ভারসাম্যপূর্ণ বিশ্লেষণ।",
+    "sentimentReasonEn": "Comprehensive, factual coverage of exiled political leadership strategy and its regional resonance.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcTd5YTZhbnhlUkpKSkhyeDFUUnduRWoxd2dBWXFENEp1MnJLbTJwSlN2ejIyQW5YVVJvaExqanBCX2J5bWZVd2xHdzBjZmc4UkxRLU5Ic0NJMmlJMmZvZGhaMEJrd2h1LVRaTW9EVFJtemEzaUxXOVliTWdGYUtnYmFYbEYyY2k5VjQxeGtEb0Nuemd5eVJ1ZzdsQUFxUC1Pb3ZBNnpoc0swdy15ZUt3dkVHeG9leTVXcDJyUjJrU2fSAcYBQVVfeXFMTklsVkFPX1RUT1NOVVRSSGJtSWtseEt4QmhOUHN2SkFuMTVMM0Z6N29ZcEpMOUpPbmJUMWNQQzNUR0x6RFFSMHM2RE9QSVhxZ0pPTEdndnVLX1dXRFcxZE9mNUtrc1U1LTBOUXA1Z2wxcHMydkRXQ3dCUXNEN0JGT3h4U0hLbTRtczlVb3ZkM1JGT0tUVTJ2UnZzNXpDMVpkWU1uaXdEdFRuMmlTT0tJc0NwRkVVTm9pUENEejg3LXZOdU5nckFR?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-19T23:18:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Times of India",
+      "Sheikh Hasina",
+      "শেখ হাসিনা",
+      "Awami League",
+      "আওয়ামী লীগ",
+      "Exile Politics",
+      "Mumbai Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-062",
+    "slug": "sangbad-pratidin-hasina-rally-call-dhaka-protests-mass-detentions",
+    "title": "Sangbad Pratidin: 'Awami League Activists Mobilize in Dhaka Following Hasina’s Address; Massive Security Clampdown Enforced'",
+    "englishTitle": "Sangbad Pratidin: 'Awami League Activists Mobilize in Dhaka Following Hasina’s Address; Massive Security Clampdown Enforced'",
+    "banglaTitle": "হাসিনার দেশে ফেরার ঘোষণায় চাঙ্গা লিগ, মিছিল ঘিরে তপ্ত ঢাকা, ৫ শতাধিক গ্রেপ্তার: সংবাদ প্রতিদিন",
+    "summaryBn": "কলকাতার জনপ্রিয় বাংলা দৈনিক সংবাদ প্রতিদিন-এর বিশেষ প্রতিবেদনে উল্লেখ করা হয়েছে, শেখ হাসিনার দলীয় নেতাকর্মীদের উদ্দেশ্যে প্রেরিত অডিও বার্তা ও দেশে ফেরার ঘোষণার পর ঢাকায় আকস্মিক মিছিল ও সমাবেশ করেছে আওয়ামী লীগের নেতাকর্মীরা। গুলশান, ধানমন্ডি ও মিরপুরের বিভিন্ন পয়েন্টে আকস্মিক এই মিছিলকে কেন্দ্র করে নিরাপত্তা বাহিনী কঠোর অভিযান পরিচালনা করে পাঁচ শতাধিক নেতাকর্মীকে আটক করেছে। কলকাতার রাজনৈতিক মহলে এই ঘটনা ওপার বাংলার রাজনীতির ভবিষ্যৎ নিয়ে নতুন আগ্রহ তৈরি করেছে।",
+    "summaryEn": "Kolkata daily Sangbad Pratidin reports that an audio message from Sheikh Hasina announcing her intent to return to Bangladesh galvanized spontaneous Awami League rallies across major thoroughfares in Dhaka, including Dhanmondi, Gulshan, and Mirpur. Security agencies initiated extensive counter-crackdowns, detaining over 500 activists as political temperature in Bangladesh reached a fever pitch.",
+    "keyPointsBn": [
+      "শেখ হাসিনার বক্তব্য প্রকাশের পর ঢাকার একাধিক এলাকায় আকস্মিক মিছিল আওয়ামী লীগের",
+      "সহিংসতা প্রতিরোধে যৌথবাহিনীর দেশব্যাপী নিরাপত্তা তল্লাশি ও ৫ শতাধিক ব্যক্তি আটক",
+      "ওপার বাংলার চলমান অস্থিতিশীল পরিস্থিতি ও রাজনৈতিক টানাপোড়েন নিয়ে কলকাতায় গভীর উদ্বেগ"
+    ],
+    "keyPointsEn": [
+      "Awami League supporters stage coordinated flash demonstrations in Dhaka following Hasina's audio release",
+      "Joint security forces enforce heightened emergency vigils, detaining over 500 party affiliates",
+      "West Bengal political observers track volatile political realignment across the eastern frontier"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও আইনশৃঙ্খলা",
+    "categoryLabelEn": "Politics & Law Enforcement",
+    "sentiment": "negative",
+    "sentimentReasonBn": "মিছিল, ধরপাকড় ও গণগ্রেপ্তারের কারণে রাজনৈতিক অস্থিরতা ও সংঘাতের আশঙ্কা বৃদ্ধি পাওয়ায় সুর নেতিবাচক।",
+    "sentimentReasonEn": "Negative tone reflecting heightened civil unrest, preemptive crackdowns, and escalating political polarization.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZ1ozSmZoVFN2ZzBtQmVqSldaSlJ0VGtLa21IZjNSSEI4aGVJZ1EyRXp6ZXc3R3VTeFotQ1R4VmdneURHYW5FSE96QnpSZFV0ZnRvVXpOVDVQRTZvcFJJTm1GQUVmcENWajVQTEN2LXh1X0NXcVYzcVNrSEhoSFFyVEdFRHRLYmRqZVpERzlkdkFuUEI4X2gyeG1zOE1fcVktUjBfaENhN3JyckpQLURINXZhWHdnZ2V2QnRKS0hRb3RpWDRNRDhXSmxB0gHKAUFVX3lxTE9nWjNKZmhUU3ZnMG1CZWpKV1pKUnRUa0trbUhmM1JIQjhoZUlnUTJFenpldzdHdVN4Wi1DVHhWZ2d5REdhbkVIT3pCelJkVXRmdG9Vek5UNVBFNm9wUklObUZBRWZwQ1ZqNVBMQ3YteHVfQ1dxVjNxU2tISGhIUXJUR0VEdEtiZGplWkRHOWR2QW5QQjhfaDJ4bXM4TV9xWS1SMF9oQ2E3cnJySlAtREg1dmFYd2dnZXZCdEpLSFFvdGlYNE1EOFdKbEE?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-19T16:51:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1558431382-27e303142255?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Sangbad Pratidin",
+      "Sheikh Hasina",
+      "শেখ হাসিনা",
+      "Awami League",
+      "Dhaka Protests",
+      "Kolkata Bureau",
+      "ওপার বাংলা"
+    ]
+  },
+  {
+    "id": "news-20260920-063",
+    "slug": "thewall-hasina-delhi-meeting-december-programmes-strategy",
+    "title": "The Wall: 'Awami League Chalks Out Phased Strategic Roadmap Through December at Delhi Leadership Conclave'",
+    "englishTitle": "The Wall: 'Awami League Chalks Out Phased Strategic Roadmap Through December at Delhi Leadership Conclave'",
+    "banglaTitle": "ডিসেম্বর পর্যন্ত ধারাবাহিক কর্মসূচির রূপরেখা চূড়ান্ত করল আওয়ামী লীগের শীর্ষ নেতৃত্ব: দ্য ওয়াল",
+    "summaryBn": "কলকাতার ডিজিটাল নিউজ পোর্টাল দ্য ওয়াল (The Wall)-এর প্রতিবেদনে প্রকাশ, দিল্লিতে অবস্থানরত আওয়ামী লীগের উপদেষ্টা ও কেন্দ্রীয় কার্যনির্বাহী সংসদের শীর্ষ নেতাদের এক বিশেষ বৈঠকে আগামী ডিসেম্বর মাস পর্যন্ত ধাপে ধাপে রাজনৈতিক কর্মসূচি পালনের পরিকল্পনা গ্রহণ করা হয়েছে। ১৬ ডিসেম্বর বিজয় দিবসকে কেন্দ্র করে আন্তর্জাতিক মহলে দলের বক্তব্য উপস্থাপন এবং বাংলাদেশে দলের অস্তিত্ব দৃশ্যমান রাখার কৌশলগত পদক্ষেপ নেওয়া হচ্ছে।",
+    "summaryEn": "The Wall reports from Kolkata that senior Awami League executive leaders currently in New Delhi have formalized a phased multi-month action plan extending through December. Anchored around the upcoming Victory Day celebrations on December 16, the strategy aims to maintain diplomatic representation in foreign capitals while preserving structural cadre visibility within Bangladesh.",
+    "keyPointsBn": [
+      "দিল্লিতে আওয়ামী লীগের শীর্ষ নীতিনির্ধারকদের বৈঠকে ডিসেম্বর পর্যন্ত রোডম্যাপ চূড়ান্ত",
+      "বিজয় দিবস উপলক্ষে বৈশ্বিক পর্যায়ে প্রচার এবং কূটনৈতিক যোগাযোগ জোরদার করার সিদ্ধান্ত",
+      "আইসিটি আদালতের কার্যক্রমের বিপরীতে আন্তর্জাতিক মানবাধিকার প্ল্যাটফর্মে তথ্য উপস্থাপনের উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "Awami League leadership formulates multi-stage political strategy running until December",
+      "Victory Day milestone chosen as focal point for diplomatic advocacy and international outreach",
+      "Coordination of counter-documentation on human rights conditions across global platforms"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কৌশলগত পরিকল্পনা",
+    "categoryLabelEn": "Politics & Strategic Planning",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক দলের দীর্ঘমেয়াদী কর্মপরিকল্পনা ও আন্তর্জাতিক যোগাযোগ নিয়ে তথ্যভিত্তিক প্রতিবেদন।",
+    "sentimentReasonEn": "Objective analysis charting party structural resilience and diplomatic timeline preparations.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPb1dFSllaTGpyeVpBTUwzdC1rOVFrWG5iNmRoaXFDMU02X0ZBX0w4Qjlpb3RFaUg1SkpZNGx2TDVDa2E4WnZHR2VXM2VjeGJQdjdoR0Z5clp6T0ZCTDZpMHYwdUxEWjFnZWdQQlNNSzUxelFQRlRIRU81ZHlIYnVkSVpYWU5taU5LYmNuTkFfdjFiQ0hmbnhQMnRZSm05eVMweTBQUXdqUThiaUE5OUZzTlZhV2tTVklqcHhaZklKaGEtdlJIV0Q3UFJ2M3hCM2FEY0phdFZGeVVfTmVodDJWYmhfOWdnSXFKN3V6dEZtODRMUF9tUUNxelBn0gH_AUFVX3lxTE1jVU4xQzBXbXRHbGFZQWVKSnFpdGwxeFZrOVhCODdrbktjWTE0T0ZZN3VtMkJIa3B0YVU0a3R0TWs1X3FmWTIxNkdLYVNvY3ppUFhLaU1WdkNVUjNlYnlabEVacjdYWnNNWDRhTnBPM3VxU3lQM2dvVEV6eEl2U1lualZyNlVnem1FTGctbS1ld2t0SHItUmx0eXd4bzdGTHNNV1hOR3MtRThSQ0pxc0p5MmNuUEVBT3BSS2RCUXpBdktIODJvUU9ESUo3VHFwcFhMdm1mRFBsOWVzUkNDZTJMWmk1b3VCSEZpYWhJMjdMdTlZRG40RTdyZUh4TzJMZw?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-19T15:20:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Wall",
+      "Sheikh Hasina",
+      "শেখ হাসিনা",
+      "Awami League",
+      "আওয়ামী লীগ",
+      "Kolkata Bureau",
+      "ওপার বাংলা"
+    ]
+  },
+  {
+    "id": "news-20260920-064",
+    "slug": "zee-news-youtube-bsf-rescues-bangladeshi-citizens-ganga-boat-capsizes",
+    "title": "Zee News Video Dispatch: 'BSF Riverine Unit Rescues 10 Stranded Bangladeshis After Boat Capsizes in Border Waters'",
+    "englishTitle": "Zee News Video Dispatch: 'BSF Riverine Unit Rescues 10 Stranded Bangladeshis After Boat Capsizes in Border Waters'",
+    "banglaTitle": "গঙ্গার আন্তর্জাতিক জলসীমায় নৌকাডুবির পর ১০ বাংলাদেশিকে উদ্ধার করল ভারতীয় বিএসএফ ওয়াটার উইং: জি নিউজ ভিডিও রিপোর্ট",
+    "summaryBn": "ভারতের জাতীয় হিন্দি টেলিভিশন জি নিউজ (Zee News)-এর বিশেষ ভিডিও প্রতিবেদনে দেখানো হয়েছে, ভারত-বাংলাদেশ সীমান্তবর্তী গঙ্গা নদীর আন্তর্জাতিক জলসীমায় একটি নৌকাডুবির ঘটনার পর ভারতীয় সীমান্তরক্ষী বাহিনী (বিএসএফ)-এর জলীয় নজরদারি দল দ্রুত অভিযান চালিয়ে ১০ জন বাংলাদেশি নাগরিককে জীবিত উদ্ধার করেছে। মানবিক উদ্ধার তৎপরতার পর বিজিবি-র সাথে যোগাযোগ করে পতাকা বৈঠকের মাধ্যমে তাদের নিরাপদে হস্তান্তরের উদ্যোগ নেওয়া হয়েছে।",
+    "summaryEn": "In an exclusive riverine security dispatch, Zee News broadcasts footage of the Border Security Force (BSF) Water Wing conducting an emergency rescue operation in the swollen Ganga waters along the India-Bangladesh international boundary. BSF patrol speedboats rescued 10 Bangladeshi civilians after their vessel capsized, initiating prompt protocol coordination with Border Guard Bangladesh (BGB) for humanitarian repatriation.",
+    "keyPointsBn": [
+      "সীমান্তবর্তী নদীতে নৌকাডুবির পর বিএসএফ ওয়াটার উইং-এর দ্রুত মানবিক উদ্ধার তৎপরতা",
+      "আন্তর্জাতিক নদী সীমান্তে নিরাপত্তা নিশ্চিতকরণের পাশাপাশি জীবন রক্ষায় ভারতীয় বাহিনীর ভূমিকা",
+      "বিএসএফ ও বিজিবির স্থানীয় কমান্ডের মাঝে সমন্বয়ের মাধ্যমে আইনি ও কূটনৈতিক প্রক্রিয়া সম্পাদন"
+    ],
+    "keyPointsEn": [
+      "BSF Water Wing launches swift emergency response following boat capsize in shared Ganga stretch",
+      "Highlights professional riverine search-and-rescue capabilities along un-fenced boundary segments",
+      "Close humanitarian communication maintained between BSF and BGB border commanders"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও মানবিক উদ্ধার",
+    "categoryLabelEn": "Border Security & Humanitarian Rescue",
+    "sentiment": "positive",
+    "sentimentReasonBn": "সীমান্তে মানবিক উদ্ধার অভিযান এবং দুই সীমান্তরক্ষী বাহিনীর সমন্বিত ইতিবাচক পদক্ষেপ তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Positive account highlighting cross-border humanitarian professionalism and functional boundary coordination.",
+    "source": {
+      "name": "Zee News (YouTube)",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GUjljcElRcm9aZkk4TzdNYTRTbVFPUTdyQmhyZ2tXZE5nSGg2NEhwcFgzMWNkaDJUWk56WlFrSmtDeURsbzNPMWJnU2xMNHpTcnFmYmZ3?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T06:30:00Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Zee News",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "BSF",
+      "BGB",
+      "Border Security",
+      "Riverine Patrol",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-065",
+    "slug": "hindustan-times-assam-meghalaya-border-interception-dawki-guwahati-corridor",
+    "title": "Hindustan Times: 'Assam Police Intercept 27 Infiltration Suspects in Transit Joint Operation After Dawki Border Crossing'",
+    "englishTitle": "Hindustan Times: 'Assam Police Intercept 27 Infiltration Suspects in Transit Joint Operation After Dawki Border Crossing'",
+    "banglaTitle": "মেঘালয়ের ডাউকি সীমান্ত দিয়ে অনুপ্রবেশের পর গুয়াহাটি ট্রানজিট রুটে ২৭ জনকে আটক করল আসাম পুলিশ ও রেলওয়ে যৌথ বাহিনী: হিন্দুস্তান টাইমস",
+    "summaryBn": "হিন্দুস্তান টাইমস (Hindustan Times)-এর উত্তর-পূর্ব ব্যুরো জানিয়েছে, মেঘালয়ের ডাউকি সীমান্ত দিয়ে ভারতে প্রবেশের পর গুয়াহাটিকে ট্রানজিট হিসেবে ব্যবহার করে দূরবর্তী রাজ্যে গমনের চেষ্টাকালে ২৭ জন বাংলাদেশি নাগরিককে আটক করেছে আসাম পুলিশ ও রেলওয়ে সুরক্ষা দল। নারী ও অপ্রাপ্তবয়স্কসহ এই দলটি কোনো বৈধ নথিপত্র ছাড়াই ভারতীয় ভূখণ্ডে অবস্থান করছিল। উত্তর-পূর্ব ভারতে আন্তর্জাতিক সীমান্তজুড়ে নজরদারি কয়েক গুণ বৃদ্ধি করেছে নিরাপত্তা সংস্থাগুলো।",
+    "summaryEn": "Hindustan Times North-East bureau reports on a major joint operation by Assam Police and Government Railway Police intercepting 27 Bangladeshi nationals at Guwahati transit hubs following illicit border crossings via the Dawki sector in Meghalaya. The group, which included women and minors lacking valid travel documents, was apprehended as security grids across the Northeast intensify anti-infiltration countermeasures.",
+    "keyPointsBn": [
+      "ডাউকি সীমান্ত পার হয়ে আসামের গুয়াহাটি হয়ে অন্য রাজ্যে প্রবেশের চেষ্টা নস্যাৎ",
+      "রেলওয়ে পুলিশ ও আসাম পুলিশের সমন্বিত অভিযানে ২৭ জন বিদেশি নাগরিক শনাক্ত ও আটক",
+      "বাংলাদেশ সীমান্তবর্তী উত্তর-পূর্বাঞ্চলীয় রাজ্যগুলোতে অতিরিক্ত তল্লাশি চৌকি ও সার্বক্ষণিক টহল জোরদার"
+    ],
+    "keyPointsEn": [
+      "Security forces foil transit corridor operation following irregular border entry at Dawki sector",
+      "Joint taskforce nabs 27 individuals traveling without mandatory travel authorization",
+      "Intensified multi-tiered surveillance deployed across Assam-Meghalaya borderland transit routes"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও অনুপ্রবেশ প্রতিরোধ",
+    "categoryLabelEn": "Border Security & Law Enforcement",
+    "sentiment": "negative",
+    "sentimentReasonBn": "অবৈধ অনুপ্রবেশ ও সীমান্তবর্তী ট্রানজিট রুটে মানব পাচারের ঝুঁকি তুলে ধরায় প্রতিবেদনটির সুর সতর্কতামূলক ও নেতিবাচক।",
+    "sentimentReasonEn": "Critical reporting on border surveillance vulnerabilities, illicit transit networks, and security crackdowns.",
+    "source": {
+      "name": "Hindustan Times",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU05OZEhsTFlFbzV5V3ZQNjFZeXFoN29iSkVoMEN0NkhSR1o4N1NWZlQtaWNpUmpzWEM2NW45cEk0ZW1ZVkZ3d29QVnF3ZExGTzhuUmU3SlNQcVYyVU9GV2FEQ1hObWI2Z3prT1VNS3pudHQ2MUlRX2xDUlJCVHJXZjlOQ3NYTnp0LTlHWjJZS3M3eUVFZzNFQndqMU9MeWotTTRHNmZkZENMQlkxZVdQUmVtOGFqdGlvZksyYUtKWG1FM2RHZEs3SWtpMzRNZTFOREFsY29LVdIB3AFBVV95cUxONmhHTGVrT1gtWHYzTkExVkNONXNUUkJZR3JlZHFZcEx5OVIwQjYwdGQzQ2MyVGxpXzJoOVhxMmVBR1Z3bW1qX29sLWlGNjJHRlJjYWluSm9WQkNtOGtBaXdjTWpvbXhMcXdfTEVPWl9oRjlQYXhGZkl0aE0xX1I2OEVXdldTc18tLXZzVGZ6TmVUWVBiTW90MFBKeWY1Y2tiUDdkMVZuSFU1QmJnR1hVVXk2eW8tUEtRTUtxUEV1WVZ4VzNud1BxQVJvS01MZ3pkZGpQWGstUHpqaVJx?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T05:12:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Hindustan Times",
+      "Assam Bureau",
+      "Dawki Border",
+      "Guwahati Transit",
+      "Border Security",
+      "BSF",
+      "Northeast India"
+    ]
+  },
+  {
+    "id": "news-20260920-066",
+    "slug": "india-today-instagram-reviewing-101-agreements-chattogram-port-transit",
+    "title": "India Today Visual Dispatch: 'Why Dhaka’s Re-evaluation of 101 Hasina-Era Pacts Tests Northeast Transit Access'",
+    "englishTitle": "India Today Visual Dispatch: 'Why Dhaka’s Re-evaluation of 101 Hasina-Era Pacts Tests Northeast Transit Access'",
+    "banglaTitle": "চট্টগ্রাম-মংলা বন্দর ট্রানজিট ও ভারতীয় পণ্য পরিবহন: হাসিনা আমলে স্বাক্ষরিত ১০১ চুক্তি পর্যালোচনায় ঢাকার পদক্ষেপে কী প্রভাব পড়বে? ইন্ডিয়া টুডে ইনস্টাগ্রাম ইনফোগ্রাফিক",
+    "summaryBn": "ইন্ডিয়া টুডে (India Today)-এর ডিজিটাল প্ল্যাটফর্মের ইনস্টাগ্রাম ভিজ্যুয়াল বিশ্লেষণে তুলে ধরা হয়েছে বিগত আওয়ামী লীগ সরকারের সময়ে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার নেপথ্য সমীকরণ। ভারতের উত্তর-পূর্বাঞ্চলীয় রাজ্যগুলোতে চট্টগ্রাম ও মংলা সমুদ্রবন্দর দিয়ে পণ্য পরিবহনের দীর্ঘদিনের ট্রানজিট সুবিধা এই পর্যালোচনার ফলে বিঘ্নিত হতে পারে কি না, তা বিস্তারিত ব্যাখ্যার মাধ্যমে তুলে ধরেছে গণমাধ্যমটি।",
+    "summaryEn": "In an incisive visual explainer on Instagram, India Today maps the strategic ramifications of Bangladesh reviewing 101 bilateral treaties negotiated under Sheikh Hasina. The infographic analysis unpacks how potential renegotiations over Chattogram and Mongla port transshipment routes could disrupt cargo logistics pipelines feeding India's landlocked Northeastern states.",
+    "keyPointsBn": [
+      "১০১টি চুক্তির তালিকায় সমুদ্রবন্দর ট্রানজিট, ইনল্যান্ড ওয়াটারওয়েজ ও বিদ্যুৎ চুক্তি অন্তর্ভুক্ত",
+      "উত্তর-পূর্বাঞ্চলীয় রাজ্য আসাম, ত্রিপুরা ও মেঘালয়ের অর্থনৈতিক লজিস্টিকসে সম্ভাব্য প্রভাব",
+      "কূটনৈতিক পুনর্বিবেচনার সময় বিদ্যমান প্রাতিষ্ঠানিক সহযোগিতা রক্ষা করার ওপর গুরুত্ব"
+    ],
+    "keyPointsEn": [
+      "Review targets maritime port access, inland waterways, and cross-border power transmission deals",
+      "Assesses exposure to cargo transit supply lines sustaining Assam, Tripura, and Meghalaya",
+      "Emphasizes importance of protecting institutional economic stability during diplomatic reset"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও আঞ্চলিক লজিস্টিকস",
+    "categoryLabelEn": "Diplomacy & Regional Logistics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "অর্থনৈতিক ট্রানজিট চুক্তি পর্যালোচনার প্রভাব ও উভয় দেশের স্বার্থ নিয়ে সুষম ভিজ্যুয়াল বিশ্লেষণ।",
+    "sentimentReasonEn": "Neutral, data-driven visual journalism detailing strategic logistics considerations for both nations.",
+    "source": {
+      "name": "India Today (Instagram)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T07:45:00Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "India Today",
+      "Instagram Post",
+      "Visual Journalism",
+      "Transit Treaties",
+      "Chattogram Port",
+      "Mongla Port",
+      "Northeast Logistics",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-067",
+    "slug": "assam-tribune-jinnah-portrait-dhaka-university-controversy-historical-resonance",
+    "title": "The Assam Tribune: 'Dhaka University Event Displaying Jinnah Portrait Sparks Severe Backlash and Historical Debate in Northeast Intellectual Circles'",
+    "englishTitle": "The Assam Tribune: 'Dhaka University Event Displaying Jinnah Portrait Sparks Severe Backlash and Historical Debate in Northeast Intellectual Circles'",
+    "banglaTitle": "ঢাকা বিশ্ববিদ্যালয়ে কায়েদে আজম জিন্নাহর প্রতিকৃতি প্রদর্শনী নিয়ে তীব্র বিতর্ক ও প্রতিবাদ: দ্য আসাম ট্রিবিউন",
+    "summaryBn": "আসামের প্রধান ইংরেজি দৈনিক দ্য আসাম ট্রিবিউন (The Assam Tribune) এক অনুসন্ধানী প্রতিবেদনে জানিয়েছে, ঢাকা বিশ্ববিদ্যালয়ের ছাত্র-শিক্ষক কেন্দ্রে (টিএসসি) আয়োজিত এক অনুষ্ঠানে পাকিস্তানের প্রতিষ্ঠাতা মোহাম্মদ আলী জিন্নাহর প্রতিকৃতি প্রদর্শন ও তাঁকে স্মরণ করাকে ঘিরে বাংলাদেশে এবং ভারতের উত্তর-পূর্বাঞ্চলের বুদ্ধিজীবী মহলে তীব্র ক্ষোভ তৈরি হয়েছে। ১৯৪৮ সালের ভাষা আন্দোলনের সূতিকাগার ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহর ছবি প্রদর্শনীকে ঐতিহাসিক চেতনা ও মুক্তিযুদ্ধের মূল্যবোধের প্রতি অবমাননা বলে অভিহিত করেছেন ইতিহাসবিদরা।",
+    "summaryEn": "The Assam Tribune reports that a controversial seminar at Dhaka University’s Teacher-Student Centre (TSC) honoring Pakistan’s founder Muhammad Ali Jinnah has incited intense backlash across academic and intellectual circles in Bangladesh and Northeast India. Historians and civil society figures have condemned the commemoration at the historic birthplace of the 1948 Language Movement as a profound affront to the spirit of the Liberation War.",
+    "keyPointsBn": [
+      "ভাষা আন্দোলনের কেন্দ্রস্থল ঢাকা বিশ্ববিদ্যালয়ে জিন্নাহর প্রতিকৃতি প্রদর্শন ঘিরে তীব্র ক্ষোভ",
+      "মুক্তিযুদ্ধ ও ধর্মনিরপেক্ষ মূল্যবোধের বিরুদ্ধে পাকিস্তানের আদর্শ পুনঃপ্রবর্তনের অপচেষ্টা বলে বিশেষজ্ঞদের সমালোচনা",
+      "উত্তর-পূর্ব ভারতের আসাম ও ত্রিপুরায় ঐতিহাসিক চেতনা ও দুই দেশের সাংস্কৃতিক নৈকট্য নিয়ে গভীর উদ্বেগ"
+    ],
+    "keyPointsEn": [
+      "Memorial event featuring Jinnah’s portrait at Dhaka University triggers nationwide outrage",
+      "Academics condemn event as historical revisionism undermining 1952 Language Movement memory",
+      "Northeast intellectual forums express concern over shifts in public discourse across the frontier"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও ঐতিহাসিক বিতর্ক",
+    "categoryLabelEn": "Culture & Historical Discourse",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ঐতিহাসিক ভাষা আন্দোলন ও মুক্তিযুদ্ধের আদর্শ পরিপন্থী বিতর্কিত প্রদর্শনী ঘিরে ক্ষোভ প্রকাশ করায় সুর নেতিবাচক।",
+    "sentimentReasonEn": "Critical evaluation of controversial historical revisionism provoking public outcry across civil society.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUGF1RjhsWlRIVHRNNlVaMjJnMXVoaTBSY3ZWeTd6d0NOMlRYTVFhZ1J1d1YxdUx0M0NIck1KT0FnMERmSDNBMnZkd3JFX1ZTRXJlbmlVMWt0SDlOSmlMRnYyN2VEQ2tVanNoa3A5aXFtenVpZ0p5dkhHRTJEWnktSzQtZkVHSFE0bUloWGNhZlh1UUpUSWhkaUs4d0dOTnJqdzl2LU9TbktRcVRPV09kONIBtgFBVV95cUxQX2hSSHdGQnRCTHlhU2NTRDN1ZXBoUGZFWnAzNXM4Q1M3ZXdMRlVOcWVqaW1ibTBmWXQzbS00UDFSRWNsT0diSXFaY2VUQVM5cWl3MEk4U2wzaUd1RFNLYjZ2X3VLbGJMRW9FbWFIdnNIdzlTdnE1QzEzYTR6QXUwaDN0Uk9UQko4SG80cFNva1V2QklzLWhITTFncXN3T2hFbFUwU05uMXZyb1BqYUJLalpnTFd3QQ?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-19T14:35:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Assam Tribune",
+      "Dhaka University",
+      "Historical Memory",
+      "Language Movement",
+      "1971 Liberation War",
+      "Northeast Media",
+      "Culture"
+    ]
+  },
+  {
+    "id": "news-20260920-068",
+    "slug": "news18-bangla-youtube-gujarat-hilsa-dhaka-trade-dynamics",
+    "title": "News18 Bangla Video: 'Cross-Border Seafood Trade Turnabout: How Gujarat Hilsa is Filling Market Gaps in Dhaka'",
+    "englishTitle": "News18 Bangla Video: 'Cross-Border Seafood Trade Turnabout: How Gujarat Hilsa is Filling Market Gaps in Dhaka'",
+    "banglaTitle": "গুজরাট থেকে টন টন ইলিশ যাচ্ছে ঢাকায়, দ্বিপাক্ষিক মৎস্য বাণিজ্যে নতুন সমীকরণ: নিউজ১৮ বাংলা ভিডিও রিপোর্ট",
+    "summaryBn": "নিউজ১৮ বাংলা (News18 Bangla)-এর বিশেষ ভিডিও প্রতিবেদনে তুলে ধরা হয়েছে দ্বিপাক্ষিক মৎস্য বাণিজ্যের এক অভূতপূর্ব পরিবর্তন। বাংলাদেশের অভ্যন্তরীণ নদীগুলোতে ইলিশের আহরণ হ্রাস এবং চরম মূল্যবৃদ্ধির কারণে ভারতের গুজরাট উপকূল থেকে কোল্ড-চেইনে প্রক্রিয়াজাত ইলিশ মাছ বাণিজ্যিকভাবে ঢাকায় রপ্তানি হচ্ছে। পদ্মার রূপালী ইলিশের ঐতিহ্যের মাঝে আরব সাগরের এই ইলিশ সাধারণ ক্রেতাদের কাছে বিকল্প হিসেবে সমাদৃত হচ্ছে।",
+    "summaryEn": "News18 Bangla reports on a surprising turnabout in bilateral fisheries commerce, highlighting how refrigerated consignments of Hilsa caught along the Gujarat coastline in the Arabian Sea are being commercially shipped to Dhaka to alleviate severe local supply deficits. The video dispatch explains how changing marine migrations and soaring retail prices in Bangladesh have inverted traditional regional seafood trade flows.",
+    "keyPointsBn": [
+      "পদ্মা ও মেঘনায় ইলিশ সংকটের মাঝে গুজরাট উপকূলের ইলিশের ঢাকায় ক্রমবর্ধমান চাহিদা",
+      "হিমায়িত কোল্ড-চেইন কনটেইনারের মাধ্যমে দ্বিপাক্ষিক বাণিজ্য রুটে দ্রুত পরিবহন",
+      "সাধারণ ভোক্তাদের নাগালের মাঝে বিকল্প ইলিশ সরবরাহ ও সীমান্ত বাণিজ্যের সম্প্রসারণ"
+    ],
+    "keyPointsEn": [
+      "Reversed trade dynamics see Gujarat Arabian Sea Hilsa dispatched to supply-constrained Dhaka retail markets",
+      "Advanced cold-chain logistics enable seamless preservation across transit checkpoints",
+      "Demonstrates evolving economic pragmatism and market adaptability in bilateral seafood trade"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও সামুদ্রিক অর্থনীতি",
+    "categoryLabelEn": "Cross-Border Trade & Blue Economy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রাকৃতিক সংকটে বাণিজ্যিক সহযোগিতার মাধ্যমে বাজারের চাহিদা পূরণ ও পারস্পরিক অর্থনৈতিক সুবিধার বিষয় থাকায় সুর ইতিবাচক।",
+    "sentimentReasonEn": "Constructive reporting illustrating bilateral market adaptability, commercial trade continuity, and food supply synergy.",
+    "source": {
+      "name": "News18 Bangla (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wcGNFLW5fOUs3LXRDMnBsQVI3a0dHTmNMaFhqRkM5RGRxUzlPb0Ftc284NGdKSFp3aC1uLVRlbTMxREdVelI3VFUxeGo3UkRkV0RMZUZn?oc=5",
+      "scannedAt": "2026-09-20T17:00:00Z"
+    },
+    "publishedAt": "2026-09-20T08:40:00Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "News18 Bangla",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Hilsa Trade",
+      "Kolkata Bureau",
+      "Cross-Border Trade",
+      "ওপার বাংলা"
+    ]
+  },
+  {
     "id": "news-20260920-049",
     "slug": "theprint-bangladesh-isnt-mirror-image-of-pakistan-strategic-interests-video",
     "title": "ThePrint: 'Bangladesh Isn’t A Mirror Image Of Pakistan: Hyphenating Them Undermines India’s Strategic Interests'",
@@ -490,7 +1075,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৫ মিনিট ভিডিও",
     "readTimeEn": "5 min video",
     "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [
