@@ -68,26 +68,48 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 3083,
-  "bangladeshMatches": 841,
+  "totalScanned24h": 2953,
+  "bangladeshMatches": 779,
   "sentimentDistribution": {
-    "positive": 15,
-    "neutral": 34,
-    "negative": 30
+    "positive": 18,
+    "neutral": 38,
+    "negative": 34
   },
   "bureauDistribution": {
-    "delhi": 50,
-    "kolkata": 21,
-    "mumbai": 10
+    "delhi": 52,
+    "kolkata": 24,
+    "mumbai": 9
   },
   "languageDistribution": {
-    "english": 33,
-    "bengali": 27,
-    "hindi": 18
+    "english": 35,
+    "bengali": 28,
+    "hindi": 17
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-032",
+    "headlineBn": "‘হাসিনা আমলের অস্বস্তিকর সম্পর্ক অতীত, ভারতের সাথে নতুন করে কূটনৈতিক সমীকরণ গড়তে চায় ঢাকা’: হিন্দুস্তান টাইমস",
+    "headlineEn": "Hindustan Times: Bangladesh Wants to 'Reset' Ties With India, Calling Hasina-Era Relationship 'Uncomfortable'",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "Hindustan Times",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeG1GajBTSGlCZDVBcGRybnhjeU9FN2lqd1lFZWNGWG11a3E0QVhxekJrT2QtUjVmTS0zYVFtSDdYMVBmUkFOOHdmNmNuRUdwU2ZnYzJsQThtekZEcGZwSmZhUjFIZnY3OGN4NFZRTVVhaUNUYXg3QlFJQVU5Zy1pTnBXWkdoOE5qODQ0QWJHVWZsajdpd1lVb3J6cWd2VDlkMGhITnFUZTVuZXpQdW1pMnNZY1A2S09NYnpVd3RsMXZrTUxqNXZTZGZNakdLOC1DN2Q5TktTVUstU1hhU1BueTE2VzZpSDQxNHByTl9QbEhVQdIB9wFBVV95cUxOUWE0eThvTUxINTh2QkYxdTB0SGh6U29qano0dllIRXJhXzlMYmM5Y0M4SVM4ME5jQWtfWXZtTXQtbllNekpaRU83M0pTQ29DVThuTjZOLVRHNi1NblNBeFppQVE2TTF3UFF1cnZmb1pVRFFHV3Q0dnpOYUc0bW5sR2ZvdTlZR1F3LUhlWDBnS3U0SFU3SXRUQkxmWVVYYkVsUlNPWUlTSDBsa0FUMkxSWXFrTHprTnJ5QTN5a3R5RmhvZVhQUTdHRFBHemlEc2ptV1k5bEh4ZV9IZ2VXYVlZX2diOHpJWWQ4NERGM3d0ZXZYbmNxU09N?oc=5"
+  },
+  {
+    "id": "alert-031",
+    "headlineBn": "‘হাসিনা বিতর্ক সত্ত্বেও বাংলাদেশের সঙ্গে স্বাভাবিক দ্বিপাক্ষিক সম্পর্কের পথ উন্মুক্ত রেখেছে ভারত’: এনডিটিভি",
+    "headlineEn": "NDTV: India Keeps Door Open for Normalisation of Bangladesh Ties Despite Ongoing Hasina Extradition Row",
+    "timeAgoBn": "আজ সকালে",
+    "timeAgoEn": "This morning",
+    "sourceName": "NDTV",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVDNsZlh1czNPN0c3UjVnR3B5dlNrLTJpbWJYbTBIekwxS0E1Ulk3QzFmS0F4Q0xZa1dKZmhVbnd0MlBQOUhmSVU1ZFhTbVozN29CTS1PcFlBWDVwcHh0cVlZRjdpOVdET195cUFwakNFSGdMRExXOXhySDJGdTZQbzcxTUJpOGJxTS1MUTd5TmpGcEZyeDg3UDNveWtmcEpUeWFnbjhXTEluUGZWbDhBeEhoTXB3TEJrNTFndHNteng4TknSAcsBQVVfeXFMTk9yMVRCZm9VWWdqbHM2ckNzRW9LcE9KS2VIUmdPYlZTSllYLXc1d1N6MXdHNU5wXzJpY0h4cTdIR2VYSWpIaFNXX1EyRzFwdWE4STJpdFgydUllcEp6Vnk0RTdhZ3dOamp4Ymppd2VHVVRhaG1fNVhfMENJOWl5RGZEUDlneXVTTEcwWlVxM1phYTRuaWRWUEE5ckFSOTRPX0syams1WUxTalYzaFBQOFpFSHNjLWtDMWNUYS0yLXFxbnFsd05sZEU0cDQ?oc=5"
+  },
   {
     "id": "alert-030",
     "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতের কড়া বার্তা: নিজেদের স্বার্থ রক্ষায় যেকোনো পদক্ষেপ নেবে দিল্লি’: টাইমস অব ইন্ডিয়া",
@@ -423,6 +445,539 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260920-037",
+    "slug": "hindustan-times-bangladesh-wants-to-reset-ties-with-india-calls-hasina-era-uncomfortable",
+    "title": "Bangladesh Seeks Diplomatic 'Reset' With India, Calling Hasina-Era Relationship 'Uncomfortable': New Delhi Deliberates Response",
+    "englishTitle": "Bangladesh Seeks Diplomatic 'Reset' With India, Calling Hasina-Era Relationship 'Uncomfortable': New Delhi Deliberates Response",
+    "banglaTitle": "হাসিনা আমলের সমীকরণকে 'অস্বস্তিকর' আখ্যা দিয়ে ভারতের সাথে নতুন করে কূটনৈতিক ভারসাম্য চায় ঢাকা: হিন্দুস্তান টাইমস",
+    "summaryBn": "হিন্দুস্তান টাইমসের কূটনৈতিক প্রতিবেদনে জানানো হয়েছে, অন্তর্বর্তীকালীন সরকারের নীতি-নির্ধারকরা নয়াদিল্লির সঙ্গে দ্বিপাক্ষিক সম্পর্ক পুনর্গঠন বা 'রিসেট' করার প্রস্তাব দিচ্ছেন। ঢাকার দাবি, বিগত ১৫ বছরে শেখ হাসিনার সরকারের সঙ্গে দিল্লির অতি-ঘনিষ্ঠ সম্পর্ক দ্বিপাক্ষিক সম্পর্কে অস্বস্তি তৈরি করেছিল। এর প্রেক্ষিতে ভারতের নীতিনির্ধারকরা অর্থনৈতিক স্থায়িত্ব, বিদ্যুৎ সঞ্চালন ও ট্রানজিট অক্ষুন্ন রেখে ভারসাম্যপূর্ণ পদক্ষেপ নিচ্ছেন।",
+    "summaryEn": "Hindustan Times reports that Bangladesh's interim leadership is actively proposing a pragmatic diplomatic 'reset' with New Delhi, characterizing bilateral relations during Sheikh Hasina's 15-year tenure as overly person-centric and 'uncomfortable'. Indian strategic planners are deliberating a structured response that safeguards cross-border energy transmission, transit corridors, and vital regional trade while adjusting to Dhaka's evolving governance.",
+    "keyPointsBn": [
+      "হাসিনা-পরবর্তী বাংলাদেশে দিল্লির সাথে সমমর্যাদা ও স্বার্থের ভিত্তিতে নতুন সম্পর্কের রূপরেখা খোঁজার প্রয়াস",
+      "বিদ্যুৎ সরবরাহ, রেল ট্রানজিট এবং অর্থনৈতিক অংশীদারিত্ব অটুট রাখার পক্ষে ভারতীয় কূটনৈতিক মহল",
+      "রাজনৈতিক পরিবর্তনের মধ্যেও দীর্ঘমেয়াদী ভূ-কৌশলগত ভারসাম্য রক্ষায় দিল্লির সতর্ক নজর"
+    ],
+    "keyPointsEn": [
+      "Dhaka foreign policy planners advocate structural reset to overcome legacy frictions of Hasina administration",
+      "New Delhi underscores non-negotiable strategic interests across cross-border energy grids and transit corridors",
+      "Both establishments pursue quiet diplomatic engagement to prevent economic dislocation and border fallout"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও সমীকরণ",
+    "categoryLabelEn": "Diplomacy & Strategy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক টানাপোড়েনের মধ্যেও নতুন সম্পর্ক গড়ার তাগিদ এবং উভয় পক্ষের কূটনৈতিক অবস্থানের ভারসাম্য তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Balanced appraisal of Dhaka's desire to recalibrate ties alongside New Delhi's steadfast protection of core strategic interests.",
+    "source": {
+      "name": "Hindustan Times",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeG1GajBTSGlCZDVBcGRybnhjeU9FN2lqd1lFZWNGWG11a3E0QVhxekJrT2QtUjVmTS0zYVFtSDdYMVBmUkFOOHdmNmNuRUdwU2ZnYzJsQThtekZEcGZwSmZhUjFIZnY3OGN4NFZRTVVhaUNUYXg3QlFJQVU5Zy1pTnBXWkdoOE5qODQ0QWJHVWZsajdpd1lVb3J6cWd2VDlkMGhITnFUZTVuZXpQdW1pMnNZY1A2S09NYnpVd3RsMXZrTUxqNXZTZGZNakdLOC1DN2Q5TktTVUstU1hhU1BueTE2VzZpSDQxNHByTl9QbEhVQdIB9wFBVV95cUxOUWE0eThvTUxINTh2QkYxdTB0SGh6U29qano0dllIRXJhXzlMYmM5Y0M4SVM4ME5jQWtfWXZtTXQtbllNekpaRU83M0pTQ29DVThuTjZOLVRHNi1NblNBeFppQVE2TTF3UFF1cnZmb1pVRFFHV3Q0dnpOYUc0bW5sR2ZvdTlZR1F3LUhlWDBnS3U0SFU3SXRUQkxmWVVYYkVsUlNPWUlTSDBsa0FUMkxSWXFrTHprTnJ5QTN5a3R5RmhvZVhQUTdHRFBHemlEc2ptV1k5bEh4ZV9IZ2VXYVlZX2diOHpJWWQ4NERGM3d0ZXZYbmNxU09N?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-13T17:22:36Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Hindustan Times",
+      "Sheikh Hasina",
+      "Bilateral Reset",
+      "MEA India",
+      "Diplomacy",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-038",
+    "slug": "ndtv-india-keeps-door-open-for-normalisation-of-bangladesh-ties-despite-hasina-row",
+    "title": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Extradition Friction Over Sheikh Hasina",
+    "englishTitle": "India Keeps Door Open For Normalisation Of Bangladesh Ties Despite Extradition Friction Over Sheikh Hasina",
+    "banglaTitle": "হাসিনা বিতর্ক সত্ত্বেও ঢাকার সঙ্গে স্বাভাবিক দ্বিপাক্ষিক সম্পর্কের দ্বার উন্মুক্ত রেখেছে নয়াদিল্লি: এনডিটিভি",
+    "summaryBn": "এনডিটিভির বিশেষ কূটনৈতিক বিশ্লেষণে প্রকাশ, ক্ষমতাচ্যুত সাবেক প্রধানমন্ত্রী শেখ হাসিনার ভারতে অবস্থান এবং ঢাকার প্রত্যর্পণ দাবি সত্ত্বেও নয়াদিল্লি বাংলাদেশের সঙ্গে সামগ্রিক সম্পর্ক স্বাভাবিক রাখার পথ খোলা রেখেছে। ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের কর্মকর্তারা মনে করেন, বাংলাদেশের ১৭ কোটি মানুষের সাথে ভারতের ঐতিহাসিক ও ভৌগোলিক সম্পর্ক কোনো নির্দিষ্ট রাজনৈতিক পরিবর্তনের কারণে ব্যাহত হতে পারে না।",
+    "summaryEn": "NDTV reports that despite recurring diplomatic tension and tribunal extradition requests regarding exiled leader Sheikh Hasina, India continues to maintain an open door for functional normalisation with Bangladesh. Senior South Block sources state that enduring cultural, economic, and regional connectivity ties with Bangladesh's 170 million people transcend individual political phases.",
+    "keyPointsBn": [
+      "হাসিনাকে কেন্দ্র করে প্রত্যর্পণ বিতর্কের বাইরে রেখে দ্বিপাক্ষিক বাণিজ্য ও জ্বালানি স্বাভাবিক রাখার ভারতীয় বার্তা",
+      "১৭ কোটি বাংলাদেশি জনগণের কল্যাণের স্বার্থে ইতিবাচক কূটনৈতিক সম্পৃক্ততা বজায় রাখার অঙ্গীকার",
+      "স্থলবন্দর, যাত্রী পরিবহন ও ভিসা পরিষেবা পর্যায়ক্রমে স্বাভাবিক করার প্রস্তুতি"
+    ],
+    "keyPointsEn": [
+      "New Delhi consciously separates Hasina's asylum from long-term people-to-people and economic cooperation",
+      "Diplomatic machinery prioritizes operational stability across power grids, cross-border train links, and land customs",
+      "Gradual normalization of essential consular services and business travel envisioned"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নীতি",
+    "categoryLabelEn": "Diplomacy & Cooperation",
+    "sentiment": "positive",
+    "sentimentReasonBn": "রাজনৈতিক জটিলতার মধ্যেও স্বাভাবিক সম্পর্ক বজায় রাখা ও ইতিবাচক সম্পৃক্ততার বার্তায় আশাবাদ প্রকাশিত।",
+    "sentimentReasonEn": "Reflects constructive long-term diplomatic engagement and institutional goodwill towards Bangladesh.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVDNsZlh1czNPN0c3UjVnR3B5dlNrLTJpbWJYbTBIekwxS0E1Ulk3QzFmS0F4Q0xZa1dKZmhVbnd0MlBQOUhmSVU1ZFhTbVozN29CTS1PcFlBWDVwcHh0cVlZRjdpOVdET195cUFwakNFSGdMRExXOXhySDJGdTZQbzcxTUJpOGJxTS1MUTd5TmpGcEZyeDg3UDNveWtmcEpUeWFnbjhXTEluUGZWbDhBeEhoTXB3TEJrNTFndHNteng4TknSAcsBQVVfeXFMTk9yMVRCZm9VWWdqbHM2ckNzRW9LcE9KS2VIUmdPYlZTSllYLXc1d1N6MXdHNU5wXzJpY0h4cTdIR2VYSWpIaFNXX1EyRzFwdWE4STJpdFgydUllcEp6Vnk0RTdhZ3dOamp4Ymppd2VHVVRhaG1fNVhfMENJOWl5RGZEUDlneXVTTEcwWlVxM1phYTRuaWRWUEE5ckFSOTRPX0syams1WUxTalYzaFBQOFpFSHNjLWtDMWNUYS0yLXFxbnFsd05sZEU0cDQ?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-13T18:35:26Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "isTrending": true,
+    "tags": [
+      "NDTV",
+      "Sheikh Hasina",
+      "Diplomatic Normalisation",
+      "South Block",
+      "Bilateral Ties",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-039",
+    "slug": "assam-tribune-death-penalty-seven-senior-awami-league-leaders-tribunal-verdict",
+    "title": "International Crimes Tribunal Sentences Seven Senior Awami League Leaders To Death In Absentia; Assam Watchdogs Track Repercussions",
+    "englishTitle": "International Crimes Tribunal Sentences Seven Senior Awami League Leaders To Death In Absentia; Assam Watchdogs Track Repercussions",
+    "banglaTitle": "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালে আওয়ামী লীগের ৭ শীর্ষ নেতার অনুপস্থিতিতে মৃত্যুদণ্ড: আসামের নিরাপত্তা মহলে নিবিড় নজর—আসাম ট্রিবিউন",
+    "summaryBn": "আসামের শীর্ষ ইংরেজি দৈনিক 'দ্য আসাম ট্রিবিউন' জানিয়েছে, ২০২৪ সালের ছাত্র আন্দোলন দমনে মানবতাবিরোধী অপরাধের অভিযোগে শেখ হাসিনার নেতৃত্বাধীন সাবেক ক্ষমতাসীন দলের দুজন সাবেক মন্ত্রীসহ ৭ শীর্ষ নেতাকে মৃত্যুদণ্ড দিয়েছে আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল-২। আসাম ও উত্তর-পূর্ব ভারতের কৌশলগত পর্যবেক্ষকরা প্রতিবেশী দেশের এই রাজনৈতিক রায় এবং এর সম্ভাব্য সীমান্ত প্রভাব পর্যবেক্ষণ করছেন।",
+    "summaryEn": "The Assam Tribune reports that Bangladesh's International Crimes Tribunal-2 has handed down death sentences in absentia to seven senior Awami League leaders, including two former cabinet ministers, for alleged crimes against humanity during the July 2024 uprising. Security analysts and regional intelligence desks across Assam and the Northeast are tracking the cross-border political fallout.",
+    "keyPointsBn": [
+      "সাবেক সেতুমন্ত্রী ওবায়দুল কাদেরসহ আওয়ামী লীগের সাত শীর্ষ নেতার অনুপস্থিতিতে মৃত্যুদণ্ডাদেশ",
+      "জাতিসংঘের মানবাধিকার প্রতিবেদন এবং ট্রাইব্যুনালের আইনি প্রক্রিয়ার আন্তর্জাতিক গ্রহণযোগ্যতা নিয়ে বিতর্ক",
+      "আসাম ও মেঘালয় সীমান্তে নিরাপত্তা বাহিনীর সতর্কতা ও রাজনৈতিক পরিস্থিতির ওপর নজরদারি"
+    ],
+    "keyPointsEn": [
+      "ICT-2 delivers capital punishment verdicts in absentia against high-profile former ministers and party figures",
+      "Legal analysts evaluate the due process standards and international treaty implications of in-absentia rulings",
+      "Northeast Indian security agencies maintain alert along Assam and Meghalaya borders monitoring spillover"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "আইন ও বিচার",
+    "categoryLabelEn": "Politics & Legal Issues",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক মেরুকরণ, কঠোর মৃত্যুদণ্ডাদেশ এবং সীমান্ত নিরাপত্তা সংশ্লিষ্ট জটিলতা প্রকাশ পাওয়ায় সুর নেতিবাচক।",
+    "sentimentReasonEn": "Reflects continuing domestic political confrontation, in-absentia capital sentencing, and Northeast border sensitivities.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLW0wRzdDLWh1V1EteE03aW9vZGREbkhlOGc1ZDhfSjhvQ1E1VWRFUkQ0M3drU0p5c0d5M0t0QnlJZXN1ZVRzU2tYVnFFSDRyYjR3R0p1QkhBcl9wYlhhbGtBVkN3V1RkTG94Z09qTk9nZHV4ZndySkJ5R2JzWWlRUU50cW93ZlJqY21tT0l3aXNZZ3gxb0lFOHl5a1p5UDFpTGRQWlpsSG8w0gEA?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-15T09:08:03Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "tags": [
+      "The Assam Tribune",
+      "International Crimes Tribunal",
+      "Awami League",
+      "Death Penalty",
+      "Assam Bureau",
+      "Guwahati"
+    ]
+  },
+  {
+    "id": "news-20260920-040",
+    "slug": "sangbad-pratidin-hasina-return-announcement-energizes-awami-league-500-arrests-dhaka",
+    "title": "Awami League Demonstrations Erupt In Dhaka Following Hasina Return Remarks; Over 500 Arrested In Crackdown",
+    "englishTitle": "Awami League Demonstrations Erupt In Dhaka Following Hasina Return Remarks; Over 500 Arrested In Crackdown",
+    "banglaTitle": "হাসিনার দেশে ফেরার ঘোষণায় ঢাকা ও জেলাগুলোতে আওয়ামী লীগের বিক্ষোভ মিছিল, নিরাপত্তা বাহিনীর ব্যাপক ধরপাকড়ে ৫০০-র বেশি গ্রেপ্তার: সংবাদ প্রতিদিন",
+    "summaryBn": "কলকাতার শীর্ষ বাংলা দৈনিক 'সংবাদ প্রতিদিন'-এর বিশেষ প্রতিবেদনে প্রকাশ, ক্ষমতাচ্যুত প্রধানমন্ত্রী শেখ হাসিনার সম্ভাব্য রাজনৈতিক প্রত্যাবর্তন সংক্রান্ত বক্তব্যের পর রাজধানী ঢাকা, চট্টগ্রাম এবং সীমান্ত জেলাগুলোতে সক্রিয় হয়ে উঠেছে আওয়ামী লীগের তৃণমূল কর্মীরা। বিভিন্ন পয়েন্টে আকস্মিক ঝটিকা মিছিলের প্রেক্ষিতে যৌথবাহিনী ব্যাপক তল্লাশি অভিযান চালিয়ে ৫০০ জনের বেশি নেতাকর্মীকে গ্রেপ্তার করেছে।",
+    "summaryEn": "Sangbad Pratidin reports substantial grassroots mobilization by Awami League supporters across Dhaka, Chittagong, and border districts following public statements concerning former Prime Minister Sheikh Hasina's anticipated political return. In response, Bangladesh's joint security forces initiated coordinated crackdowns, detaining more than 500 party workers during flash protests.",
+    "keyPointsBn": [
+      "শেখ হাসিনার বক্তব্য প্রকাশের পর ঢাকায় একাধিক ঝটিকা মিছিল ও রাজনৈতিক উত্তেজনা",
+      "যৌথবাহিনীর বিশেষ অভিযানে মহানগর ও জেলা পর্যায় থেকে পাঁচ শতাধিক নেতাকর্মীকে আটক",
+      "পশ্চিমবঙ্গ সীমান্তের ওপারের এই অস্থির পরিস্থিতি নিবিড়ভাবে পর্যবেক্ষণ করছে কলকাতার নীতিনির্ধারকরা"
+    ],
+    "keyPointsEn": [
+      "Awami League grassroots organize coordinated street demonstrations across urban centers in Bangladesh",
+      "Joint law enforcement forces enact widespread preventative detentions to maintain public order",
+      "Kolkata observers monitor internal political volatility and potential repercussions along West Bengal border"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও অভ্যন্তরীণ সংঘাত",
+    "categoryLabelEn": "Politics & Internal Unrest",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংঘাত, সড়ক বিক্ষোভ এবং গণগ্রেপ্তারের কারণে পরিস্থিতি নেতিবাচক হিসেবে চিহ্নিত।",
+    "sentimentReasonEn": "Covers rising civil tension, widespread preventative arrests, and escalating confrontation between security apparatus and opposition.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.sangbadpratidin.in/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-17T06:45:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "tags": [
+      "Sangbad Pratidin",
+      "Sheikh Hasina",
+      "Awami League",
+      "Dhaka Protests",
+      "Mass Arrests",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-041",
+    "slug": "firstpost-saima-wazed-who-resignation-political-pressure-recounts-events",
+    "title": "Sheikh Hasina's Daughter Saima Wazed Breaks Silence On Resignation From WHO Regional Directorship Amid Political Pressure",
+    "englishTitle": "Sheikh Hasina's Daughter Saima Wazed Breaks Silence On Resignation From WHO Regional Directorship Amid Political Pressure",
+    "banglaTitle": "রাজনৈতিক চাপের মুখে ডব্লিউএইচও-র আঞ্চলিক পরিচালকের পদত্যাগের পেছনের ঘটনা জানালেন শেখ হাসিনার কন্যা সায়মা ওয়াজেদ: ফার্স্টপোস্ট",
+    "summaryBn": "ফার্স্টপোস্টের বিশেষ আন্তর্জাতিক প্রতিবেদনে প্রকাশ, বিশ্ব স্বাস্থ্য সংস্থার (WHO) দক্ষিণ-পূর্ব এশিয়া অঞ্চলের পরিচালক পদ থেকে সরে দাঁড়ানোর প্রেক্ষাপট নিয়ে বিস্তারিত জানিয়েছেন শেখ হাসিনার কন্যা সায়মা ওয়াজেদ। তিনি তুলে ধরেছেন কীভাবে রাজনৈতিক পরিবর্তনের পর আন্তর্জাতিক কূটনীতি এবং আন্তঃসংস্থার উপর নজিরবিহীন চাপ তৈরি হয়েছিল, যা বৈশ্বিক স্বাস্থ্য সংস্থার পেশাদার নিরপেক্ষতাকে প্রশ্নবিদ্ধ করে।",
+    "summaryEn": "Firstpost details the revelations shared by Saima Wazed, daughter of exiled former Prime Minister Sheikh Hasina, regarding the circumstances precipitating her resignation as Regional Director of WHO South-East Asia. Wazed outlined systemic political interference and diplomatic pressures mounted following the political transition in Dhaka, generating ripples across international multilateral agencies.",
+    "keyPointsBn": [
+      "আন্তর্জাতিক স্বাস্থ্য সংস্থায় দায়িত্ব পালনকালে রাজনৈতিক প্রভাব ও কূটনৈতিক চাপের বিবরণ",
+      "জাতিসংঘের বিশেষায়িত সংস্থার পেশাদারিত্ব ও নিরপেক্ষতা নিয়ে বৈশ্বিক বিশেষজ্ঞদের মতবিনিময়",
+      "নয়াদিল্লিভিত্তিক আঞ্চলিক সদর দপ্তরে এই ঘটনাকে ঘিরে কূটনীতিতে তৈরি হওয়া আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Saima Wazed discloses timeline of administrative and diplomatic challenges at WHO Regional Office",
+      "Multilateral analysts scrutinize the politicization of international humanitarian and health bodies",
+      "Diplomatic circles in New Delhi assess long-term implications for South-East Asia public health governance"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "আন্তর্জাতিক সংস্থা ও কূটনীতি",
+    "categoryLabelEn": "Health Diplomacy & UN",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক সংস্থার অভ্যন্তরীণ ঘটনাপ্রবাহ ও সাবেক পরিচালকের আনুষ্ঠানিক বয়ানের বস্তুনিষ্ঠ মূল্যায়ন।",
+    "sentimentReasonEn": "Objective examination of international multilateral governance, diplomatic tensions, and high-level resignation.",
+    "source": {
+      "name": "Firstpost",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBaMmpqQVh1V0g5aHJ5bEdQbU9DaWhYUXh2Y3Q0R1EwSEsyMGV1dTN1cm05c1p4cVR5SGlfTDBiS0t6Z1pqM1hRME9hMkpQcTZ5RzE0dw?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-16T08:10:10Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Firstpost",
+      "Saima Wazed",
+      "Sheikh Hasina",
+      "WHO SEARO",
+      "Diplomatic Protocol",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-042",
+    "slug": "hindustan-times-tripura-court-sentences-5-bangladeshi-nationals-illegal-entry",
+    "title": "Tripura Court Sentences Five Bangladeshi Nationals To Two Years Imprisonment For Unauthorized Cross-Border Entry",
+    "englishTitle": "Tripura Court Sentences Five Bangladeshi Nationals To Two Years Imprisonment For Unauthorized Cross-Border Entry",
+    "banglaTitle": "ত্রিপুরা আদালতে অবৈধ অনুপ্রবেশের দায়ে ৫ বাংলাদেশি নাগরিকের দুই বছরের কারাদণ্ড: হিন্দুস্তান টাইমস",
+    "summaryBn": "হিন্দুস্তান টাইমসের প্রতিবেদনে প্রকাশ, ত্রিপুরার একটি আদালত আন্তর্জাতিক সীমান্ত অতিক্রম করে অবৈধভাবে ভারতে প্রবেশের দায়ে পাঁচজন বাংলাদেশি নাগরিককে দুই বছরের সশ্রম কারাদণ্ড ও অর্থদণ্ড প্রদান করেছে। সীমান্তরক্ষী বাহিনী (বিএসএফ) ও ত্রিপুরা পুলিশের যৌথ নজরদারিতে ধরা পড়ার পর দ্রুত বিচার প্রক্রিয়ার মাধ্যমে এই রায় দেওয়া হয়, যা সীমান্ত অপরাধ দমনে কঠোর বার্তা দিচ্ছে।",
+    "summaryEn": "Hindustan Times reports that a local judicial court in Tripura has sentenced five Bangladeshi nationals to two years of rigorous imprisonment along with financial fines for unauthorized cross-border entry. The individuals were intercepted during coordinated patrols by the Border Security Force (BSF) and state police along the unfenced frontier sector, highlighting strict border vigilance.",
+    "keyPointsBn": [
+      "আন্তর্জাতিক সীমান্ত আইন লঙ্ঘনের দায়ে ত্রিপুরা আদালতের কঠোর সাজার রায়",
+      "বিএসএফ ও রাজ্য পুলিশের সমন্বয়ে আন্তর্জাতিক সীমান্তে টহল জোরদার",
+      "অবৈধ মানবপাচার ও অরক্ষিত সীমান্তে আধুনিক নজরদারি সরঞ্জাম মোতায়েনের সিদ্ধান্ত"
+    ],
+    "keyPointsEn": [
+      "Tripura judiciary imposes strict penal sentences under the Foreigners Act for unlawful border crossing",
+      "BSF accelerates day-and-night foot and drone patrols along unfenced riverine patches",
+      "Cross-border intelligence sharing aims to dismantle tout syndicates facilitating undocumented crossings"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও বিচার বিভাগ",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত আইন প্রয়োগ এবং আদালতের নিয়মিত বিচারিক প্রক্রিয়ার বস্তুনিষ্ঠ বিবরণ তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Fact-based reporting on judicial enforcement of border laws and counter-infiltration procedures.",
+    "source": {
+      "name": "Hindustan Times",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMi15d3lkQVQxbjVGcjRpTFUtTTBRYjQ3TFhQTGZISmd0alJVSml5cFlxNWRmdk1WTU43TndoMDlELTdqMFhtWWRhYzRUa2VJbXhjbmdaQU05cWpiRjNseEtYeEp2TUk1NmFtRWtvRU9yenFMS2FXblo3RlZRS3F4Wm9WaEdJMk1zblRvdk5jZkFEMFNkS3hKbWU5b016bTlBaFJvSUJsTWU0azJPbGk5SXdkQjRkNzl6Q0ZFdXlteUtaaUhtMmZEdDY0N0oxLUtvdlpQRjVB0gHbAUFVX3lxTE5nRVUwWFR2OTRwOW5QNHBhbHRFaFA0NzlTMEZjRDR2Vjg1UDBmTzlyUEJsY2lfWHQ0TU1mZ21Ga1Z0Q2ZxOGZYcjZKRlA1Zm9MVUJkZklqaFhzbllPQWw2UDlXbUNQeWxjd0NXbVN0ejZ1aW9wUm9Db1lMdnZSSnVrMURESm9DQTFxeU5SaDl0WEZuTkUzZ3VaUW9BRWpFakhqQ25ZV1M4RzF6SEpUU0tBV09wZ0hFSUlMZEdQNFNLdEdhNDdaZTI2RS1ZT1lwU3FZdzkyU2RMNXM2dw?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-17T12:19:32Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Hindustan Times",
+      "Tripura Bureau",
+      "BSF",
+      "Border Security",
+      "Foreigners Act",
+      "Agartala"
+    ]
+  },
+  {
+    "id": "news-20260920-043",
+    "slug": "republic-world-four-crude-bombs-explode-dhaka-jatrabari-kamalapur-railway-station",
+    "title": "Security Alert In Dhaka Following Series Of Crude Bomb Detonations Near Jatrabari And Kamalapur Station",
+    "englishTitle": "Security Alert In Dhaka Following Series Of Crude Bomb Detonations Near Jatrabari And Kamalapur Station",
+    "banglaTitle": "ঢাকার যাত্রাবাড়ী ও কমলাপুর রেলওয়ে স্টেশনে ককটেল বিস্ফোরণ: নিরাপত্তা জোরদার—রিপাবলিক ওয়ার্ল্ড",
+    "summaryBn": "রিপাবলিক ওয়ার্ল্ডের নিরাপত্তা প্রতিবেদনে জানানো হয়েছে, ঢাকার যাত্রাবাড়ী মোড় এবং কমলাপুর রেলওয়ে স্টেশনের কাছে ধারাবাহিক ককটেল বা ক্রুড বোমা বিস্ফোরণের ঘটনায় একজন পথচারী আহত হয়েছেন। জনবহুল এলাকায় এই আকস্মিক বিস্ফোরণের পর পরিবহন টার্মিনাল এবং প্রধান প্রবেশপথগুলোতে বাড়তি পুলিশ ও র‍্যাব মোতায়েন করে সর্বোচ্চ সতর্কতা জারি করেছে আইনশৃঙ্খলা বাহিনী।",
+    "summaryEn": "Republic World reports that security alerts have been raised across Dhaka following a sequence of crude bomb explosions near the busy Jatrabari transit corridor and Kamalapur Railway Station, resulting in commuter injuries. Bangladesh law enforcement agencies and rapid intervention units have escalated physical checkpoints and bag screenings across key transit infrastructure.",
+    "keyPointsBn": [
+      "যাত্রাবাড়ী এবং কমলাপুর রেলওয়ে এলাকায় একাধিক ককটেল বিস্ফোরণে আতঙ্ক ও যানজট",
+      "নাশকতার আশঙ্কা ঠেকাতে জনবহুল স্থানে সিসিটিভি নজরদারি এবং তল্লাশি চৌকি বৃদ্ধি",
+      "রাজনৈতিক অস্থিরতার মধ্যে নিরাপত্তা পরিস্থিতি নিয়ে প্রতিবেশী অঞ্চলের ভারতীয় পর্যবেক্ষকদের নজরদারি"
+    ],
+    "keyPointsEn": [
+      "Crude explosive detonations outside central transit hubs disrupt commuter flows and raise alarms",
+      "Police and security contingents establish perimeter cordons around key rail and bus terminals",
+      "Incident triggers regional security advisories monitoring urban stability in the capital"
+    ],
+    "category": "border",
+    "categoryLabelBn": "জননিরাপত্তা ও আইনশৃঙ্খলা",
+    "categoryLabelEn": "Urban Security & Law Order",
+    "sentiment": "negative",
+    "sentimentReasonBn": "বোমা বিস্ফোরণ, সাধারণ মানুষের আতঙ্ক এবং নাশকতার আশঙ্কার কারণে সুর নেতিবাচক।",
+    "sentimentReasonEn": "Focuses on explosive incidents, urban violence threats, and heightened law enforcement alerts.",
+    "source": {
+      "name": "Republic World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWlktZ3UtTXEyWms0Z2U4dmJqQjduWjV6OG94M1R0Sk14RVUxdndOamlzTS1sSlhiMUdIUi13dFdRN3dMLW1xSi1ackJ3cXBSdlRCSXE3Q0hqczVtTnVzdTB0cEFDR0lPSThwMUJqZk9BUTM5bGtrLW5WUDZCQlRxOGJMQS1MZGN0MEpvMk5rOFktY1FKUWFld1ZMM1Q0Y1ZqZlRvQ1piWkZrdlIycjV1Mnlwd2g3cERlM3Z1V25uZ3hpWEx6cFFzUkt0ckptQTNTN0Y1YXlUb3N5ZEItV0NwU0tpSdIB6AFBVV95cUxQT1BRT0R0b2Zra1NOeFN5MmEtTUVyRGtUX2dXbEhqb2poQXd0REZqUDNnVDFEcjZINFZQdkJMam5yZFdYeG9ZRFE3Rk9Md3FfUFRWWTM4Y0J5Y0UyYU9yc1lGOTViRklqSG5yZ1JtQ0ljc21mbXh0Y3MzOUxaLXJHWUVEV1gyb2ZicUpiRG95YXZhTU8zWU8xT25VMEROTEdRdGpaNWFfa2ZuVk5JQ2xFU1VzendHYUxtb2QwRG45ZXRVVllQYVVla3RMTkh5ZnJWM19YSjZVR2d2Y2h6SmlWLUNnLURoZjZK?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-20T01:21:24Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "Republic World",
+      "Dhaka Bomb Blast",
+      "Kamalapur",
+      "Security Alert",
+      "Urban Safety",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-044",
+    "slug": "indian-express-cleared-sir-voted-woman-moves-high-court-husband-detained-bangladesh-immigrant",
+    "title": "'Cleared Inquiries, Cast Votes': Woman Petitions High Court After Husband Detained On Suspected Illegal Migrant Allegations",
+    "englishTitle": "'Cleared Inquiries, Cast Votes': Woman Petitions High Court After Husband Detained On Suspected Illegal Migrant Allegations",
+    "banglaTitle": "‘সব তদন্তে উত্তীর্ণ হয়ে ভোটও দিয়েছেন’: বাংলাদেশি সন্দেহে স্বামী আটকের ঘটনায় দিল্লি হাইকোর্টে আবেদন—ইন্ডিয়ান এক্সপ্রেস",
+    "summaryBn": "ইন্ডিয়ান এক্সপ্রেসের আইনি প্রতিবেদনে প্রকাশ, বাংলাদেশি অবৈধ অনুপ্রবেশকারী সন্দেহে আটক এক ব্যক্তির স্ত্রী দিল্লি হাইকোর্টে রিট আবেদন দায়ের করেছেন। আবেদনে উল্লেখ করা হয়েছে, তার স্বামী ভারতের নিয়মিত ভোটার তালিকায় অন্তর্ভুক্ত এবং সব ধরনের নাগরিক যাচাইকরণে বৈধ বলে প্রমাণিত হওয়া সত্ত্বেও তাকে আটক রাখা হয়েছে। আদালত এই বিষয়ে সংশ্লিষ্ট কর্তৃপক্ষকে অবস্থান স্পষ্ট করার নির্দেশ দিয়েছেন।",
+    "summaryEn": "The Indian Express highlights a legal petition presented before the Delhi High Court by a woman whose husband was detained under suspicion of being an undocumented Bangladeshi immigrant. The petition underscores that the individual had successfully satisfied prior verification inquiries and exercised regular voting rights, prompting the judiciary to seek clarity on due process protocols.",
+    "keyPointsBn": [
+      "বৈধ পরিচয়পত্র ও ভোটাধিকার থাকা সত্ত্বেও সীমান্ত ও অভিবাসন সন্দেহে আটকের ঘটনায় হাইকোর্টে চ্যালেঞ্জ",
+      "নাগরিকত্বের প্রমাণ এবং আটকের আইনি প্রক্রিয়া নিয়ে সাংবিধানিক সুরক্ষার প্রশ্ন",
+      "সীমান্তবর্তী অভিবাসন নজরদারিতে প্রশাসনিক স্বচ্ছতার ওপর আদালতের তাগিদ"
+    ],
+    "keyPointsEn": [
+      "Writ petition challenges administrative detention citing verified electoral participation and civil credentials",
+      "Judicial bench examines procedural fairness and detention timelines under immigration verification rules",
+      "Spotlights broader policy debates on distinguishing undocumented migrants from bonafide citizens"
+    ],
+    "category": "border",
+    "categoryLabelBn": "আইন ও নাগরিক অধিকার",
+    "categoryLabelEn": "Legal & Civil Rights",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আদালতের শুনানি, সাংবিধানিক অধিকার এবং প্রশাসনিক নজরদারির ভারসাম্যপূর্ণ আইনি বিবরণ।",
+    "sentimentReasonEn": "Balanced court reporting exploring civil liberties, documentation safeguards, and immigration enforcement procedures.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/cities/delhi/cleared-sir-voted-woman-moves-high-court-husband-detained-bangladesh-immigrant-10870123/",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-20T03:01:19Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "tags": [
+      "The Indian Express",
+      "High Court",
+      "Immigration Laws",
+      "Due Process",
+      "Legal Rights",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-045",
+    "slug": "thewall-countdown-to-hasina-return-december-delhi-meeting-political-roadmap",
+    "title": "Deciphering Hasina's Political Strategy Ahead Of December Timelines Amid Shifting Dhaka-Delhi Equation",
+    "englishTitle": "Deciphering Hasina's Political Strategy Ahead Of December Timelines Amid Shifting Dhaka-Delhi Equation",
+    "banglaTitle": "হাসিনার প্রত্যাবর্তনের রোডম্যাপ ও ডিসেম্বরের হিসাব-নিকাশ: দিল্লির বৈঠকে রাজনৈতিক খসড়া অনুমোদন—দ্য ওয়াল",
+    "summaryBn": "কলকাতার জনপ্রিয় ডিজিটাল পোর্টাল 'দ্য ওয়াল'-এর এক্সক্লুসিভ বিশ্লেষণে প্রকাশ, সাবেক প্রধানমন্ত্রী শেখ হাসিনার ভারতে অবস্থানের এক বছর পূর্ণ হওয়ার প্রেক্ষাপটে ডিসেম্বরের সম্ভাব্য রাজনৈতিক সময়সীমা সামনে রেখে একগুচ্ছ সাংগঠনিক সিদ্ধান্ত চূড়ান্ত হচ্ছে। আওয়ামী লীগের নির্বাসিত শীর্ষ নেতারা আন্তর্জাতিক মহলে আইনি লড়াই জোরদার এবং তৃণমূলের সাথে ডিজিটাল সংযোগ অব্যাহত রাখার ওপর জোর দিচ্ছেন।",
+    "summaryEn": "TheWall publishes an analytical dispatch scrutinizing internal strategic deliberations among exiled Awami League leaders in New Delhi ahead of upcoming year-end political milestones. The leadership is structuring international legal defense mechanisms and digital coordination channels, while Indian diplomatic observers monitor how evolving timelines influence regional stability.",
+    "keyPointsBn": [
+      "ডিসেম্বর পর্যন্ত সাংগঠনিক কর্মসূচি ও আন্তর্জাতিক মহলে কূটনৈতিক যোগাযোগের পরিকল্পনা",
+      "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের রায়ের বিরুদ্ধে বৈশ্বিক ফোরামে আইনি পদক্ষেপের প্রস্তুতি",
+      "ঢাকা ও দিল্লির দীর্ঘমেয়াদী সমীকরণে নির্বাসিত নেতৃত্বের ভূমিকা নিয়ে বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "Exiled leadership chalks out phased political and communication roadmaps through late 2026",
+      "Legal preparations initiated to challenge ICT rulings before international human rights tribunals",
+      "Regional experts examine potential diplomatic trajectories and backchannel contacts"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Politics & Strategic Matrix",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক কৌশল ও ভবিষ্যৎ সম্ভাবনার বস্তুনিষ্ঠ বিশ্লেষণ তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Analytical examination of party roadmaps, international legal strategies, and geopolitical calculus.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-17T15:45:00Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "The Wall",
+      "Sheikh Hasina",
+      "Political Strategy",
+      "Awami League",
+      "Kolkata Bureau",
+      "Dhaka-Delhi"
+    ]
+  },
+  {
+    "id": "news-20260920-046",
+    "slug": "ndtv-sports-asian-games-womens-cricket-india-vs-bangladesh-semifinal",
+    "title": "Asian Games 2026 Women's Cricket: India Face Bangladesh In High-Stakes Continental Semi-Final",
+    "englishTitle": "Asian Games 2026 Women's Cricket: India Face Bangladesh In High-Stakes Continental Semi-Final",
+    "banglaTitle": "এশিয়ান গেমস ২০২৬ নারী ক্রিকেট সেমিফাইনাল: মুখোমুখি ভারত ও বাংলাদেশ টাইগ্রেস—এনডিটিভি স্পোর্টস",
+    "summaryBn": "এনডিটিভি স্পোর্টসের খবরে প্রকাশ, এশিয়ান গেমসের নারী ক্রিকেটের দ্বিতীয় সেমিফাইনালে মুখোমুখি হচ্ছে হরমনপ্রীত কৌরের ভারত এবং নিগার সুলতানা জ্যোতির নেতৃত্বাধীন বাংলাদেশ দল। ফাইনালে ওঠার এই জমজমাট লড়াই দুই দেশের ক্রীড়াপ্রেমীদের মধ্যে বিপুল উদ্দীপনা সৃষ্টি করেছে, যা দ্বিপাক্ষিক সম্পর্কের কূটনৈতিক শীতলতার মাঝেও এক উজ্জ্বল ক্রীড়া সংযোগের দৃষ্টান্ত।",
+    "summaryEn": "NDTV Sports and Hindustan Times preview the marquee Asian Games 2026 Women's Cricket semi-final clash between Harmanpreet Kaur's Team India and the Nigar Sultana Joty-led Bangladesh Tigresses. The contest brings energetic sports diplomacy to the forefront, celebrating shared South Asian cricketing passions amidst official diplomatic estrangement.",
+    "keyPointsBn": [
+      "এশিয়ান গেমসের পদক লড়াইয়ে ভারত ও বাংলাদেশ নারী ক্রিকেট দলের গুরুত্বপূর্ণ দ্বৈরথ",
+      "স্পিন আক্রমণ ও ফিল্ডিং কৌশলে উভয় দলের কড়া প্রস্তুতির বিশদ বিশ্লেষণ",
+      "দুই দেশের ক্রীড়া অনুরাগীদের মধ্যে সৌহার্দ্য ও ইতিবাচক সংযোগের আবহ"
+    ],
+    "keyPointsEn": [
+      "High-stakes continental semifinal decides finalist for Asian Games women's cricket podium",
+      "Focus on tactical bowling matchups and spin battle on subcontinental conditions",
+      "Highlights robust sportsmanship and cross-border people-to-people affinity despite political chill"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
+    "categoryLabelEn": "Sports & Cricket",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিযোগিতাপূর্ণ ক্রীড়া আসর এবং দুই দেশের বন্ধুত্বপূর্ণ সাংস্কৃতিক মেলবন্ধনের বার্তা থাকায় ইতিবাচক।",
+    "sentimentReasonEn": "Celebrates high-level athletic competition and enduring sports diplomacy between India and Bangladesh.",
+    "source": {
+      "name": "NDTV Sports",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbXUwZzc3LVNGVC1TR0lORWZyTjVkZ25lM05pa2EyMmUtWXc5aEpYX0pvRXRpdjFhcF9FbWtoS2dYdUhoVXJDYUY5OXFOOU5naC1QN0FtRjdkamFvSVAzM0phS2dZd3gtbUFWalZTMVowUFJrc2tmMmNwX0dfR2ZnUUx2QXZILXc0Z3FHVm8wMjZYQ3k2VHRoRl9aQXdweE9kaUp3eXY3OHROMmozSkhEMkJfcDVlMnlaX09OUHVVNzVKTW9uWkJaZU1oZzVFQ09nY2tLWQ?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-20T02:56:42Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "tags": [
+      "NDTV Sports",
+      "Asian Games 2026",
+      "Women Cricket",
+      "India vs Bangladesh",
+      "Sports Diplomacy",
+      "Cricket"
+    ]
+  },
+  {
+    "id": "news-20260920-047",
+    "slug": "defense-analysis-bangladesh-army-tenders-chinese-cs-lr43-assault-rifles",
+    "title": "Indian Strategic Planners Track Bangladesh Military Procurement Tender For Chinese CS/LR-43 Assault Rifles",
+    "englishTitle": "Indian Strategic Planners Track Bangladesh Military Procurement Tender For Chinese CS/LR-43 Assault Rifles",
+    "banglaTitle": "বাংলাদেশ সেনাবাহিনীর জন্য চীন থেকে রাইফেল সংগ্রহের দরপত্রে ভারতীয় নিরাপত্তা মহলের দৃষ্টি: সামরিক পর্যালোচনা",
+    "summaryBn": "ভারতীয় সামরিক বিশ্লেষকদের বরাতে জানা গেছে, বাংলাদেশ প্রতিরক্ষা ক্রয়ের মহাপরিদপ্তর (DGDP) চীনা অস্ত্র নির্মাতা প্রতিষ্ঠানের কাছ থেকে ১০০টি CS/LR-43 অ্যাসল্ট রাইফেল কেনার জন্য সীমিত দরপত্র আহ্বান করেছে। যদিও এটি একটি প্রাথমিক ক্রয়াদেশ, তবে বঙ্গোপসাগরীয় অঞ্চলে বেইজিংয়ের সামরিক সরঞ্জামের উপস্থিতি ও নির্ভরযোগ্যতার ওপর ঢাকার নির্ভরতা নিয়ে কৌশলগতভাবে নজর রাখছে দিল্লি।",
+    "summaryEn": "Strategic defense analysts report that Bangladesh's Directorate General Defence Purchase (DGDP) has initiated a procurement tender for 100 CS/LR-43 assault rifles from China for the Bangladesh Army. While limited in scale, the acquisition is monitored by Indian defense planners tracking military interoperability and regional arms sales within the Bay of Bengal littoral.",
+    "keyPointsBn": [
+      "বাংলাদেশ সেনাবাহিনীর জন্য আধুনিক রাইফেল সংগ্রহের সীমিত দরপত্র আহ্বান",
+      "চীনা প্রতিরক্ষা সরঞ্জাম ও যন্ত্রাংশের ওপর নির্ভরতা নিয়ে কৌশলগত বিশ্লেষণ",
+      "বঙ্গোপসাগর অঞ্চলে সামগ্রিক সামরিক ভারসাম্য রক্ষায় দিল্লির পর্যবেক্ষণ"
+    ],
+    "keyPointsEn": [
+      "DGDP issues procurement notice for specialized Chinese small arms infantry inventory",
+      "Indian defense strategists examine broader modernization trends and supplier diversification",
+      "Maintains focus on ensuring transparent defense engagements across neighborhood frontiers"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "প্রতিরক্ষা ও কৌশলগত নীতি",
+    "categoryLabelEn": "Defense & Strategic Balance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তের কাছাকাছি অঞ্চলে তৃতীয় পক্ষের অস্ত্র বিস্তার ও সামরিক নির্ভরতার কারণে সুর সতর্ক ও নেতিবাচক।",
+    "sentimentReasonEn": "Focuses on arms trade shifts, external geopolitical influence, and regional defense equilibrium concerns.",
+    "source": {
+      "name": "Indian Strategic Review",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VQVFiX2ZvUmRjSnNLaXVSX0lWUTZIOE5fVDI4VTRlTl9URmcwYVNMR2dIcXZVODRubXhiSWgwR2NWeDB1QzBkdmtsMk43eTctTXc?oc=5",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-20T03:00:18Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "Defense Review",
+      "Military Procurement",
+      "China Defense",
+      "Bay of Bengal",
+      "Strategic Balance",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-048",
+    "slug": "bnt-bangla-opposition-leader-raises-refugee-resettlement-border-minorities-assembly",
+    "title": "Opposition Leader Raises Refugee Resettlement & Minority Protection Concerns Across Bengal Border",
+    "englishTitle": "Opposition Leader Raises Refugee Resettlement & Minority Protection Concerns Across Bengal Border",
+    "banglaTitle": "‘ওপার বাংলা থেকে আসা শরণার্থীদের পুনর্বাসন ও সংখ্যালঘু সুরক্ষা নিশ্চিত হোক’: বিধানসভায় শুভেন্দু অধিকারী (ভিডিও ডিসপ্যাচ)",
+    "summaryBn": "বিএনটি বাংলা খবরের ইউটিউব ভিডিও ডিসপ্যাচে প্রচারিত হয়েছে পশ্চিমবঙ্গ বিধানসভার বিরোধী দলনেতা শুভেন্দু অধিকারীর বক্তব্য। তিনি বাংলাদেশে পরিবর্তিত পরিস্থিতিতে সংখ্যালঘু সনাতন ধর্মাবলম্বীদের নিরাপত্তা সংকট এবং শরণার্থী হিসেবে ভারতে আশ্রয় নেওয়া পরিবারগুলোর স্থায়ী নাগরিকত্ব ও সামাজিক সুরক্ষার দাবি জোরদার করার আহ্বান জানিয়েছেন।",
+    "summaryEn": "BNT Bangla News publishes a video dispatch featuring remarks by West Bengal Leader of Opposition Suvendu Adhikari addressing the state assembly. Adhikari underscored urgent rehabilitation and civic protections required for minority families fleeing cross-border turmoil, reiterating calls for rigorous surveillance along the international boundary.",
+    "keyPointsBn": [
+      "ওপার বাংলায় সংখ্যালঘু সম্প্রদায়ের ওপর সাম্প্রতিক পরিস্থিতির প্রেক্ষিতে সুরক্ষার দাবি",
+      "শরণার্থীদের দ্রুত প্রশাসনিক সহায়তা ও নাগরিক সুরক্ষার ওপর জোর",
+      "সীমান্ত সুরক্ষায় রাজ্য ও কেন্দ্রীয় বাহিনীর সক্রিয় সহযোগিতার আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Assembly speech highlights vulnerabilities of cross-border religious minorities following regime change",
+      "Emphasizes expedited civic welfare and resettlement documentation for displaced families",
+      "Calls for strict coordinated boundary security between BSF and local law enforcement"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও শরণার্থী পুনর্বাসন",
+    "categoryLabelEn": "Border & Humanitarian Issues",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তের ওপারে সংখ্যালঘু সংকট এবং মানবিক চ্যালেঞ্জ তুলে ধরায় সুর উদ্বেগমূলক ও নেতিবাচক।",
+    "sentimentReasonEn": "Addresses persecution fears, displaced populations, and border rehabilitation controversies.",
+    "source": {
+      "name": "BNT বাংলা খবর",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=0WrRFhIezuc",
+      "scannedAt": "2026-09-20T10:54:00Z"
+    },
+    "publishedAt": "2026-09-12T16:10:26Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://i.ytimg.com/vi/0WrRFhIezuc/hqdefault.jpg",
+    "tags": [
+      "BNT Bangla",
+      "YouTube Dispatch",
+      "Suvendu Adhikari",
+      "Minority Rights",
+      "Border Security",
+      "Kolkata Bureau"
+    ]
+  },
+  {
     "id": "news-20260920-025",
     "slug": "times-of-india-india-warns-bangladesh-over-reviewing-101-hasina-era-pacts",
     "title": "'Will Take All Necessary Actions': India Issues Stern Warning Amid Reports of Bangladesh Reviewing 101 Hasina-Era Pacts",
@@ -457,7 +1012,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [
