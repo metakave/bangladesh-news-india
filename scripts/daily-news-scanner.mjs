@@ -292,6 +292,62 @@ const YOUTUBE_FEEDS = [
     language: 'Hindi', 
     url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com "@tv9bharatvarsh" ("बांग्लादेश" OR "हसीना" OR "Bangladesh") when:5d') + '&hl=hi&gl=IN&ceid=IN:hi', 
     webUrl: 'https://www.youtube.com/@tv9bharatvarsh' 
+  },
+  { 
+    name: 'ThePrint India (YouTube)', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("ThePrint" OR "@ThePrintIndia") ("Bangladesh" OR "Dhaka" OR "Hasina" OR "Tarique") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@ThePrintIndia' 
+  },
+  { 
+    name: 'Firstpost Vantage (YouTube)', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("Firstpost" OR "@Firstpost") ("Bangladesh" OR "Dhaka" OR "Hasina" OR "Sheikh Hasina") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@Firstpost' 
+  },
+  { 
+    name: 'WION News (YouTube)', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("WION" OR "@WION") ("Bangladesh" OR "Dhaka" OR "Hasina" OR "Sheikh Hasina") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@WION' 
+  },
+  { 
+    name: 'India Today (YouTube Dispatches)', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("India Today" OR "@IndiaToday") ("Bangladesh" OR "Dhaka" OR "Hasina" OR "Hilsa") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@IndiaToday' 
+  },
+  { 
+    name: 'NDTV English (YouTube Dispatches)', 
+    bureau: 'Delhi', 
+    language: 'English', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("NDTV" OR "@NDTV") ("Bangladesh" OR "Dhaka" OR "Hasina") when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://www.youtube.com/@NDTV' 
+  },
+  { 
+    name: 'TV9 Bangla (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("TV9 Bangla" OR "@tv9bangla") ("বাংলাদেশ" OR "হাসিনা" OR "তারেক" OR "ঢাকা") when:7d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@tv9bangla' 
+  },
+  { 
+    name: 'R Plus News & Ranakhetra (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("R Plus" OR "Ranakhetra") ("বাংলাদেশ" OR "হাসিনা" OR "তারেক" OR "Bangladesh") when:7d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@RPlusNews' 
+  },
+  { 
+    name: 'ABP Ananda Video Dispatches (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("ABP Ananda" OR "@abpanandatv") ("বাংলাদেশ" OR "হাসিনা" OR "ওপার বাংলা") when:7d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@abpanandatv' 
   }
 ];
 

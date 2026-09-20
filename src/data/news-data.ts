@@ -68,26 +68,37 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 2953,
-  "bangladeshMatches": 779,
+  "totalScanned24h": 3809,
+  "bangladeshMatches": 977,
   "sentimentDistribution": {
-    "positive": 18,
-    "neutral": 38,
-    "negative": 34
+    "positive": 22,
+    "neutral": 42,
+    "negative": 36
   },
   "bureauDistribution": {
-    "delhi": 52,
-    "kolkata": 24,
-    "mumbai": 9
+    "delhi": 55,
+    "kolkata": 25,
+    "mumbai": 8
   },
   "languageDistribution": {
-    "english": 35,
-    "bengali": 28,
-    "hindi": 17
+    "english": 37,
+    "bengali": 29,
+    "hindi": 15
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-033",
+    "headlineBn": "‘বাংলাদেশকে পাকিস্তানের সমান্তরাল ভাবা ভারতের কৌশলগত স্বার্থের জন্য ক্ষতিকর’: দ্যপ্রিন্ট ভিডিও বিশ্লেষণ",
+    "headlineEn": "ThePrint Video Dispatch: 'Treating Bangladesh as Pakistan's Mirror Image Undermines India's Strategic Interests'",
+    "timeAgoBn": "ভিডিও বিশ্লেষণ",
+    "timeAgoEn": "Video Dispatch",
+    "sourceName": "ThePrint (YouTube)",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BX3FHWFVDMS1mRldYelVRY0FtZkpWaUllZ0ptQ0QwbzItQUFQellZZHl6ak9mQmhyeWpPcXhFX1c1T3I4UjN5andGQTZZZ1cxMmdMVU1n?oc=5"
+  },
   {
     "id": "alert-032",
     "headlineBn": "‘হাসিনা আমলের অস্বস্তিকর সম্পর্ক অতীত, ভারতের সাথে নতুন করে কূটনৈতিক সমীকরণ গড়তে চায় ঢাকা’: হিন্দুস্তান টাইমস",
@@ -445,6 +456,362 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20260920-049",
+    "slug": "theprint-bangladesh-isnt-mirror-image-of-pakistan-strategic-interests-video",
+    "title": "ThePrint: 'Bangladesh Isn’t A Mirror Image Of Pakistan: Hyphenating Them Undermines India’s Strategic Interests'",
+    "englishTitle": "ThePrint: 'Bangladesh Isn’t A Mirror Image Of Pakistan: Hyphenating Them Undermines India’s Strategic Interests'",
+    "banglaTitle": "‘বাংলাদেশ পাকিস্তানের প্রতিচ্ছবি নয়: দুজনকে এক করে দেখা ভারতের কৌশলগত স্বার্থকে ক্ষতিগ্রস্ত করবে’—দ্যপ্রিন্ট ভিডিও বিশ্লেষণ",
+    "summaryBn": "ভারতের শীর্ষ নীতি বিশ্লেষণী প্ল্যাটফর্ম দ্যপ্রিন্ট (ThePrint)-এর প্রধান সম্পাদক শেখর গুপ্ত ও বিশ্লেষকদের বিশেষ ভিডিও বিশ্লেষণে বলা হয়েছে, রাজনৈতিক পটপরিবর্তন সত্ত্বেও বাংলাদেশকে পাকিস্তানের সমান্তরাল বা 'পাকিস্তান ২.০' হিসেবে চিত্রিত করা ভারতের ভূ-কৌশলগত স্বার্থের পক্ষে মারাত্মক ভুল হবে। বাংলাদেশ ও ভারতের পারস্পরিক অর্থনৈতিক স্বার্থ, নদী অববাহিকা ও সাংস্কৃতিক নৈকট্য পাকিস্তানের তুলনায় সম্পূর্ণ ভিন্ন এবং ইতিবাচক কূটনীতির দাবি রাখে।",
+    "summaryEn": "In an incisive video analysis published by ThePrint India, strategic editors underline that viewing post-Hasina Bangladesh as a mirror image of Pakistan ('Pakistan 2.0') fundamentally misreads regional dynamics and damages India's vital security and economic interests. Deep transit connections, shared river hydrology, and mutual market dependencies demand a nuanced, constructive foreign policy from New Delhi rather than reactionary rhetoric.",
+    "keyPointsBn": [
+      "বাংলাদেশ ও পাকিস্তানকে এক দৃষ্টিতে দেখার প্রবণতা ভারতের দীর্ঘমেয়াদী আঞ্চলিক নিরাপত্তার ক্ষতি করবে",
+      "ভৌগোলিক সান্নিধ্য, বিদ্যুৎ সংযোগ এবং মুক্ত বাণিজ্যের অপরিহার্যতায় ভারতের সাথে গঠনমূলক সম্পর্ক বজায় রাখার তাগিদ",
+      "দক্ষিণ এশিয়ায় তৃতীয় শক্তির প্রভাব রুখতে ঢাকার সাথে বাস্তবসম্মত কূটনৈতিক সম্পৃক্ততার ওপর জোর"
+    ],
+    "keyPointsEn": [
+      "ThePrint editorial cautions against reductive narratives equating Bangladesh's transition with Pakistan",
+      "Underlines irreplaceable physical proximity, cross-border energy grids, and bilateral transit interdependence",
+      "Urges South Block to adopt strategic patience and proactive diplomatic engagement with Dhaka's leadership"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও কৌশলগত বিশ্লেষণ",
+    "categoryLabelEn": "Diplomacy & Strategic Video",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিবেশী দেশের সাথে গঠনমূলক সম্পর্ক বজায় রাখা এবং উগ্র বয়ানের বদলে গভীর কৌশলগত সম্পৃক্ততার আহ্বান ইতিবাচক।",
+    "sentimentReasonEn": "Constructive geopolitical analysis advocating pragmatic bridge-building and strategic realism over polarization.",
+    "source": {
+      "name": "ThePrint India (YouTube)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BX3FHWFVDMS1mRldYelVRY0FtZkpWaUllZ0ptQ0QwbzItQUFQellZZHl6ak9mQmhyeWpPcXhFX1c1T3I4UjN5andGQTZZZ1cxMmdMVU1n?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-19T12:08:57Z",
+    "readTimeBn": "৫ মিনিট ভিডিও",
+    "readTimeEn": "5 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "ThePrint",
+      "YouTube Dispatch",
+      "Strategic Analysis",
+      "India-Bangladesh Relations",
+      "South Block",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-050",
+    "slug": "wion-hilsa-exports-surge-bangladesh-catch-slumps-cross-border-seafood-economics",
+    "title": "WION Podcast: 'Hilsa Exports Surge As Bangladesh Catch Slumps, Cross-Border Seafood Economics Reset'",
+    "englishTitle": "WION Podcast: 'Hilsa Exports Surge As Bangladesh Catch Slumps, Cross-Border Seafood Economics Reset'",
+    "banglaTitle": "বাংলাদেশের অভ্যন্তরীণ ইলিশ ঘাটতির মাঝে ভারতের সরবরাহ বৃদ্ধি ও সীমান্ত বাণিজ্যের নতুন বাস্তবতা: উইওন পডকাস্ট",
+    "summaryBn": "আন্তর্জাতিক সংবাদমাধ্যম উইওন (WION)-এর ভিডিও পডকাস্টে তুলে ধরা হয়েছে পদ্মা ও মেঘনায় ইলিশ আহরণ হ্রাসের বিপরীতে ভারতের সাথে বিশেষ মৌসুমি বাণিজ্যের অর্থনৈতিক প্রভাব। শারদীয় উৎসব ঘিরে নিষেধাজ্ঞা শিথিল করে ৫০০ টন ইলিশ ভারতে রপ্তানির অনুমতি দেওয়া হলেও বাজারে দাম ও জোগান নিয়ে উভয় দেশের খুচরা পর্যায়ে যে প্রতিক্রিয়া সৃষ্টি হয়েছে তা বিশ্লেষণ করা হয়েছে।",
+    "summaryEn": "WION's global business and foreign affairs podcast analyzes the shifting dynamics of cross-border seafood commerce following Dhaka's temporary waiver permitting 500 metric tonnes of Hilsa fish exports to India. The dispatch evaluates local fishing yields across the Meghna estuary, commercial pricing impacts across West Bengal markets, and the symbolic cultural diplomacy of cross-border culinary trade.",
+    "keyPointsBn": [
+      "শারদীয় দুর্গাপূজাকে কেন্দ্র করে ভারতে ইলিশ রপ্তানি ছাড়ের অর্থনৈতিক ও কৌশলগত মূল্যায়ন",
+      "পদ্মা-মেঘনা অববাহিকায় জলবায়ু পরিবর্তন ও আহরণ হ্রাসে মাছের দামে প্রভাব",
+      "সীমান্তবর্তী পেট্রাপোল-বেনাপোল স্থলবন্দরে হিমায়িত কার্গোর অগ্রাধিকারমূলক ছাড়পত্র"
+    ],
+    "keyPointsEn": [
+      "WION evaluates the political economy of bilateral fisheries trade and festive diplomatic goodwill",
+      "Assesses catch shortages in southern estuaries and supply chain bottlenecks at land customs stations",
+      "Demonstrates how shared cultural gastronomy continues to bridge institutional diplomatic divides"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও খাদ্য সরবরাহ",
+    "categoryLabelEn": "Cross-Border Trade & Food Security",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বাণিজ্যিক ছাড়পত্র ও উৎসবের সৌহার্দ্যের কারণে প্রতিবেদনটির সুর ইতিবাচক ও বাস্তবধর্মী।",
+    "sentimentReasonEn": "Highlights constructive commercial accommodation, festive goodwill, and bilateral market interdependence.",
+    "source": {
+      "name": "WION News (YouTube)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OV2ZRanRleTlaODNGQVhnS19BTmlXN1NLSzhGUU5aOFFBTE5KMnNVTk5qNFZtREJzVEt1T0V4NUQ4bXpnako3cVRTTGk1WDVRem9KM2RR?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-18T00:30:17Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1534483509719-3feaee7c30da?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "tags": [
+      "WION",
+      "YouTube Dispatch",
+      "Hilsa Fish",
+      "Cross-Border Trade",
+      "Food Diplomacy",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-051",
+    "slug": "r-plus-ranakhetra-tarique-rahman-delhi-consultations-geopolitical-factors",
+    "title": "R Plus Ranakhetra: Behind The Scenes Of BNP Leadership's Proposed Delhi Consultations Amid Shifting Geopolitics",
+    "englishTitle": "R Plus Ranakhetra: Behind The Scenes Of BNP Leadership's Proposed Delhi Consultations Amid Shifting Geopolitics",
+    "banglaTitle": "হঠাৎ কেন দিল্লিতে আলোচনা চায় বিএনপি নেতৃত্ব? ভূ-রাজনৈতিক হিসাব ও দ্বিপাক্ষিক কূটনীতির নেপথ্য রহস্য: আর প্লাস রণক্ষেত্র",
+    "summaryBn": "কলকাতার সংবাদ চ্যানেল আর প্লাসের বিশেষ অনুসন্ধানী ভিডিও অনুষ্ঠান 'রণক্ষেত্র'-তে তুলে ধরা হয়েছে বিএনপি ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমান ও দলের শীর্ষ নেতৃত্বের দিল্লি সফর পর্যালোচনার ভেতরের সমীকরণ। আন্তর্জাতিক পরাশক্তিগুলোর কূটনৈতিক তৎপরতা, হাসিনাকে ভারতে নিরাপদ আশ্রয় প্রদান এবং আসন্ন সাধারণ নির্বাচনের আগে নয়াদিল্লির সাথে বোঝাপড়া গড়ে তোলার প্রয়োজনীয়তা বিশ্লেষণ করা হয়েছে।",
+    "summaryEn": "Kolkata-based broadcaster R Plus delivers an investigative video program ('Ranakhetra') examining diplomatic backchannels coordinating consultations between BNP leadership and Indian foreign policy institutions in New Delhi. The report explores global power interactions, the containment of bilateral fallout over Hasina's exile, and the imperative for cross-border administrative alignment ahead of prospective 2026 elections.",
+    "keyPointsBn": [
+      "নয়াদিল্লির সাউথ ব্লকের সাথে আনুষ্ঠানিক সম্পৃক্ততার প্রস্তুতিতে বিএনপির বাস্তববাদী পদক্ষেপ",
+      "আন্তর্জাতিক ফোরামে ভারসাম্যের জন্য ভারতের ভূমিকা অস্বীকার না করার কৌশলগত উপলব্ধি",
+      "পশ্চিমবঙ্গ ও পূর্বাঞ্চলীয় সীমান্তে স্থিতিশীলতা রক্ষায় শীর্ষ পর্যায়ের যোগাযোগের গুরুত্ব"
+    ],
+    "keyPointsEn": [
+      "Investigative program analyzes pragmatic overtures by Bangladeshi political leaders toward New Delhi",
+      "Examines mutual recognition of indispensable economic dependencies across energy and commerce",
+      "Stresses importance of maintaining predictable regional security along West Bengal frontiers"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও বিশেষ অনুসন্ধান",
+    "categoryLabelEn": "Politics & Investigative Video",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক দলের আন্তর্জাতিক সমীকরণ ও কৌশলগত অবস্থানের নির্মোহ বিশ্লেষণ তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Balanced journalistic scrutiny of backchannel diplomacy, electoral calculations, and regional balance of power.",
+    "source": {
+      "name": "R Plus News (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=d9-CofKQsms",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-17T15:45:06Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "R Plus",
+      "YouTube Dispatch",
+      "Tarique Rahman",
+      "Sheikh Hasina",
+      "Delhi Bureau",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-052",
+    "slug": "indian-defence-update-missile-testing-range-bengal-coast-bay-of-bengal-security",
+    "title": "Indian Defence Update: 'India Prepares Integrated Testing Range Along Bengal Coastline As Bay Of Bengal Dynamic Shifts'",
+    "englishTitle": "Indian Defence Update: 'India Prepares Integrated Testing Range Along Bengal Coastline As Bay Of Bengal Dynamic Shifts'",
+    "banglaTitle": "বঙ্গোপসাগরীয় কৌশলগত নিরাপত্তায় পশ্চিমবঙ্গ উপকূলে নতুন মিসাইল টেস্ট রেঞ্জ পরিকাঠামো: ভারতীয় প্রতিরক্ষা বুলেটিন",
+    "summaryBn": "ইন্ডিয়ান ডিফেন্স আপডেটের সামরিক ভিডিও প্রতিবেদনে প্রকাশ, বঙ্গোপসাগরে আঞ্চলিক নৌ ও আকাশ প্রতিরক্ষার আধুনিকায়নে পশ্চিমবঙ্গ উপকূলে একটি আধুনিক সমন্বিত ক্ষেপণাস্ত্র পরীক্ষণ কেন্দ্র (ITR) চালুর প্রস্তুতি নিচ্ছে ভারত। বাংলাদেশের উপকূলবর্তী গভীর সমুদ্র বন্দর ও তৃতীয় পক্ষের সামরিক তৎপরতার প্রেক্ষাপটে ভারতের পূর্ব উপকূলের আকাশ প্রতিরক্ষা আরও সুরক্ষিত করাই এর লক্ষ্য।",
+    "summaryEn": "Indian Defence Update covers strategic defense preparations to operationalize an advanced coastal missile test and surveillance facility along West Bengal's littoral belt. The military video report contextualizes the installation within emerging regional maritime dynamics, monitoring naval traffic and ensuring comprehensive air defense across the northern Bay of Bengal.",
+    "keyPointsBn": [
+      "পূর্ব উপকূলে ভারতীয় প্রতিরক্ষা গবেষণা ও উন্নয়ন সংস্থার (DRDO) নজরদারি নেটওয়ার্ক জোরদার",
+      "বঙ্গোপসাগরে বাণিজ্যিক নৌপথ ও গভীর সমুদ্র করিডোরে সমন্বিত রাডার সুরক্ষা",
+      "আঞ্চলিক সামরিক ভারসাম্যে কোনো ধরনের আকস্মিক শূন্যতা প্রতিরোধে ভারতের দীর্ঘমেয়াদী প্রস্তুতি"
+    ],
+    "keyPointsEn": [
+      "Strategic defense infrastructure deployed to monitor northern Bay of Bengal littoral zones",
+      "Integrated radar and missile tracking networks enhance coastal defense readiness",
+      "Maintains focus on safeguarding vital maritime shipping lanes and critical civilian infrastructure"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "প্রতিরক্ষা ও নিরাপত্তা",
+    "categoryLabelEn": "Defense & Maritime Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "প্রতিরক্ষা সক্ষমতা বৃদ্ধি ও বঙ্গোপসাগরের সার্বিক নিরাপত্তার বস্তুনিষ্ঠ সামরিক মূল্যায়ন।",
+    "sentimentReasonEn": "Factual defense analysis of maritime surveillance enhancements and regional deterrence posture.",
+    "source": {
+      "name": "Indian Defence Update (YouTube)",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PcHJ2SmNaTkhjZUVGWFlEM2dVYXc5SzdTWHhrRE5CUndsOHNPeWcxajNXU2UtUVZMRDJZLXBQVzdzNXlYVFZUMEpqYmVzRVExZjV3bXhB?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-19T05:00:22Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "Indian Defence Update",
+      "YouTube Dispatch",
+      "Bay of Bengal",
+      "Maritime Security",
+      "Defense Review",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-053",
+    "slug": "wion-news-international-crimes-tribunal-targets-awami-league-global-legal-observers",
+    "title": "WION News: 'International Crimes Tribunal Targets Awami League Leaders Over July Violence, Global Observers Take Note'",
+    "englishTitle": "WION News: 'International Crimes Tribunal Targets Awami League Leaders Over July Violence, Global Observers Take Note'",
+    "banglaTitle": "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের মৃত্যুদণ্ডের রায় ও আন্তর্জাতিক মানবাধিকার আইনের মানদণ্ড: উইওন স্পেশাল রিপোর্ট",
+    "summaryBn": "আন্তর্জাতিক সংবাদ চ্যানেল উইওন (WION)-এর আন্তর্জাতিক আইন প্রতিবেদনে ঢাকায় গঠিত আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের সাম্প্রতিক রায় নিয়ে বিশদ ভিডিও বিশ্লেষণ প্রচার করা হয়েছে। ওবায়দুল কাদেরসহ সাতজন সাবেক নেতার অনুপস্থিতিতে মৃত্যুদণ্ড প্রদানের ক্ষেত্রে আন্তর্জাতিক রেড নোটিশ এবং ২০১৩ সালের প্রত্যর্পণ চুক্তির সীমাবদ্ধতা নিয়ে বৈশ্বিক আইন বিশেষজ্ঞদের মতামত তুলে ধরা হয়েছে।",
+    "summaryEn": "WION News provides an international legal dispatch on Bangladesh's Special Tribunal sentencing former Awami League ministers to capital punishment in absentia. Global jurists and human rights observers discuss procedural fairness standards under international covenants, treaty hurdles facing extradition requests to India, and the potential politicization of transitional justice.",
+    "keyPointsBn": [
+      "আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল-২ এর অনুপস্থিতিতে ফাঁসির রায় নিয়ে বৈশ্বিক মানবাধিকার সংস্থার পর্যবেক্ষণ",
+      "২০১৩ সালের প্রত্যর্পণ চুক্তির রাজনৈতিক ধারা এবং দিল্লির আইনি বাধ্যবাধকতা না থাকার বিশ্লেষণ",
+      "আইনি লড়াইকে আন্তর্জাতিক ফোরামে নিয়ে যাওয়ার প্রস্তুতি নিচ্ছে আওয়ামী লীগের প্রবাসী সেল"
+    ],
+    "keyPointsEn": [
+      "WION analyzes in-absentia capital verdicts through the lens of international transitional justice standards",
+      "Scrutinizes extradition treaty exceptions regarding charges stemming from political confrontations",
+      "Highlights anticipated legal challenges before United Nations treaty bodies by defense councils"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "আইন ও আন্তর্জাতিক বিচার",
+    "categoryLabelEn": "Legal & International Rights",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংঘাত, কঠোর রায় এবং আন্তর্জাতিক প্রত্যর্পণ নিয়ে অচলাবস্থার সুর নেতিবাচক।",
+    "sentimentReasonEn": "Addresses contentious domestic political trials, legal deadlock, and cross-border extradition dilemmas.",
+    "source": {
+      "name": "WION News (YouTube)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14YVlCdWVaVmtHaGVKTmp5bjR4ZnJ2NS05dndiNGNmWmZ4cEM1Wks3bTdJaVlTNDVxWDdIWEZsS3JkU0g4YzMxTGZhcXN2dUJsMy1kbWd3?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-15T07:52:17Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "tags": [
+      "WION",
+      "YouTube Dispatch",
+      "ICT Tribunal",
+      "Awami League",
+      "Extradition Law",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-054",
+    "slug": "news-vanguard-tripura-border-vulnerabilities-bsf-steps-up-anti-touting-drives",
+    "title": "Northeast Media Dispatch: 'Tripura Border Vulnerabilities Under Spotlight As BSF Steps Up Anti-Touting Operations'",
+    "englishTitle": "Northeast Media Dispatch: 'Tripura Border Vulnerabilities Under Spotlight As BSF Steps Up Anti-Touting Operations'",
+    "banglaTitle": "ত্রিপুরা সীমান্তে অবৈধ অনুপ্রবেশ ও দালাল চক্রের বিরুদ্ধে বিএসএফের সাঁড়াশি অভিযান: উত্তর-পূর্ব ভিডিও ডিসপ্যাচ",
+    "summaryBn": "ত্রিপুরার প্রধান আঞ্চলিক ভিডিও চ্যানেল নিউজ ভ্যানগার্ডের গ্রাউন্ড রিপোর্টে প্রকাশ, বাংলাদেশ সীমান্ত ঘেঁষা সিপাহিজলা ও উনকোটি জেলায় সন্দেহভাজন অনুপ্রবেশকারী ও তাদের সহায়তাকারী আন্তঃসীমান্ত মানবপাচার চক্রের বিরুদ্ধে সাঁড়াশি অভিযান জোরদার করেছে বিএসএফ ও রাজ্য পুলিশ। সম্প্রতি একাধিক ব্যক্তি আটক হওয়ার পর যৌথ টহল বৃদ্ধি করা হয়েছে।",
+    "summaryEn": "News Vanguard Tripura broadcasts an on-the-ground video dispatch documenting heightened border interdiction operations conducted jointly by the Border Security Force (BSF) and state police along unfenced international sectors in Tripura. Security contingents have focused on dismantling illicit tout syndicates exploiting riverine terrain for unauthorized crossings.",
+    "keyPointsBn": [
+      "ত্রিপুরার আন্তর্জাতিক সীমানায় আধুনিক ড্রোন নজরদারি ও অতিরিক্ত ক্যাম্প স্থাপন",
+      "অবৈধ অনুপ্রবেশে সহায়তাকারী স্থানীয় দালালদের চিহ্নিত করে বিশেষ আইনি ব্যবস্থা",
+      "সীমান্তবর্তী গ্রামবাসীদের নিয়ে সচেতনতামূলক সভা ও নিরাপত্তা মহড়া"
+    ],
+    "keyPointsEn": [
+      "Joint security forces conduct targeted counter-infiltration cordons across vulnerable border sectors",
+      "Arrests of facilitators spotlight human trafficking networks operating along the international boundary",
+      "Enhanced local community outreach reinforces vigilance along unfenced border patches"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও উত্তর-পূর্ব নিরাপত্তা",
+    "categoryLabelEn": "Border & Northeast Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত নজরদারি জোরদার ও আইনশৃঙ্খলা রক্ষার কার্যকর পদক্ষেপের বস্তুনিষ্ঠ বিবরণ।",
+    "sentimentReasonEn": "Fact-based field dispatch on border policing, counter-trafficking operations, and local security measures.",
+    "source": {
+      "name": "News Vanguard Tripura (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93WUg4aGttNlFzTUYwTjRWTGkwRUc0bTBrZXpzV0NEN2dFbjNoSUZCSTBXajhjd1NMcmZDYUV3ZkxSVDB1NmZubVptdnBBNjAteG50R2N3?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-18T14:15:03Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&auto=format&fit=crop&q=80",
+    "tags": [
+      "News Vanguard",
+      "YouTube Dispatch",
+      "Tripura Border",
+      "BSF",
+      "Northeast India",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-055",
+    "slug": "politics-tv-awami-league-high-command-strategic-realignment-delhi-consultations",
+    "title": "Politics TV: Strategic Realignment And Digital Leadership Dynamics Among Exiled Awami League Brass",
+    "englishTitle": "Politics TV: Strategic Realignment And Digital Leadership Dynamics Among Exiled Awami League Brass",
+    "banglaTitle": "আওয়ামী লীগের হাইকমান্ড সমীকরণ: দিল্লিতে নির্বাসিত নেতাদের সাংগঠনিক সমন্বয় নিয়ে ভিডিও বিশ্লেষণ—পলিটিক্স টিভি",
+    "summaryBn": "পলিটিক্স টিভির বিশেষ ডিজিটাল ডিসপ্যাচে সাবেক ক্ষমতাসীন দল আওয়ামী লীগের সাংগঠনিক পুনর্গঠন নিয়ে বিশ্লেষণ করা হয়েছে। দিল্লিতে অবস্থানরত সাবেক প্রধানমন্ত্রী শেখ হাসিনা এবং শীর্ষ নির্বাসিত নেতারা ভার্চুয়াল মাধ্যমে দেশের তৃণমূল নেতাকর্মীদের সঙ্গে যোগাযোগ রক্ষা করছেন। আগামী দিনে দলের আইনি সেল ও আন্তর্জাতিক লবিং জোরদার করার সিদ্ধান্ত নিয়ে রাজনৈতিক মহলে আলোচনা তুঙ্গে।",
+    "summaryEn": "Politics TV airs an analytical video report assessing organizational realignments within the exiled Awami League leadership residing in New Delhi. Former Prime Minister Sheikh Hasina and senior party strategists are coordinating virtual outreach mechanisms to maintain cohesion with grassroots committees while establishing specialized international legal defense working groups.",
+    "keyPointsBn": [
+      "দিল্লিতে অবস্থানরত আওয়ামী লীগ শীর্ষ নেতৃত্বের নিয়মিত ভার্চুয়াল সমন্বয় বৈঠক",
+      "আন্তর্জাতিক আইনজীবী ও মানবাধিকার বিশেষজ্ঞদের সহায়তায় আন্তর্জাতিক মহলে বার্তা পাঠানো",
+      "আসন্ন স্থানীয় সরকার ও জাতীয় নির্বাচন সামনে রেখে দলের সাংগঠনিক রূপরেখা প্রণয়ন"
+    ],
+    "keyPointsEn": [
+      "Exiled political leadership coordinates digital forums to maintain operational link with grassroots",
+      "International outreach teams structure multi-jurisdictional legal challenges against tribunal verdicts",
+      "Analyzes prospects and challenges of political comeback strategies ahead of year-end timelines"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও সাংগঠনিক বিশ্লেষণ",
+    "categoryLabelEn": "Politics & Strategic Outreach",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক দলের অভ্যন্তরীণ কৌশল ও ভবিষ্যৎ পরিকল্পনার নিরপেক্ষ বিশ্লেষণ।",
+    "sentimentReasonEn": "Objective examination of exiled political organizing, digital communication strategies, and legal plans.",
+    "source": {
+      "name": "Politics TV (YouTube)",
+      "bureau": "Delhi",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nQ0pGU1h5U0VGeG1rZVRzWjdTaHRHUE9FZzQ5RFhLTjRJTkxROEpVREhTOVlHS1Z2UFdVYUtsaTlKbTh0dXpValBsYWFXOE1ubWZCWkZB?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-17T12:00:00Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "tags": [
+      "Politics TV",
+      "YouTube Dispatch",
+      "Sheikh Hasina",
+      "Awami League",
+      "Political Strategy",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260920-056",
+    "slug": "india-today-bilateral-hydrology-consultation-mea-joint-river-commission-telemetry",
+    "title": "India Today Video: 'Bilateral Hydrology Consultation: MEA Says Joint River Commission Working Level Telemetry Uninterrupted'",
+    "englishTitle": "India Today Video: 'Bilateral Hydrology Consultation: MEA Says Joint River Commission Working Level Telemetry Uninterrupted'",
+    "banglaTitle": "ভারত ও বাংলাদেশের যৌথ নদী কমিশনের কারিগরি কার্যক্রম ও বন্যা তথ্য বিনিময় অব্যাহত: ইন্ডিয়া টুডে ভিডিও রিপোর্ট",
+    "summaryBn": "ইন্ডিয়া টুডের বিশেষ কূটনৈতিক ভিডিও রিপোর্টে জানানো হয়েছে, রাজনৈতিক পরিবর্তনের মধ্যেও ভারত ও বাংলাদেশের অভিন্ন ৫৪টি নদীর তথ্য বিনিময় এবং যৌথ নদী কমিশন (JRC)-এর কারিগরি কার্যক্রম সম্পূর্ণ অব্যাহত রয়েছে। বর্ষা মৌসুমে আগাম বন্যা সতর্কবার্তা প্রদান এবং নদী অববাহিকার স্বাভাবিক পানিপ্রবাহ নিশ্চিতে উভয় দেশের প্রকৌশলীরা নিয়মিত টেলিমেট্রি ডেটা শেয়ার করছেন।",
+    "summaryEn": "India Today broadcasts a diplomatic video dispatch confirming that operational telemetry and institutional data-sharing mechanisms under the India-Bangladesh Joint Rivers Commission (JRC) remain active and uninterrupted. Technical delegations from both riparian neighbors continue to exchange real-time monsoon flood hydrological data to safeguard vulnerable downstream populations.",
+    "keyPointsBn": [
+      "উভয় দেশের যৌথ নদী কমিশনের নিয়মিত ডেটা শেয়ারিং ও বন্যা পূর্বাভাস অব্যাহত",
+      "রাজনৈতিক টানাপোড়েনের বাইরে রেখে ৫৪টি অভিন্ন নদীর ব্যবস্থাপনায় পেশাদার সংযোগ রক্ষা",
+      "গঙ্গা চুক্তি নবায়ন এবং তিস্তা অববাহিকা নিয়ে ভবিষ্যৎ আলোচনার ভিত্তি বজায় রাখার অঙ্গীকার"
+    ],
+    "keyPointsEn": [
+      "Operational hydrology and flood telemetry exchange preserved despite broader diplomatic shifts",
+      "Riparian technical bodies maintain active contact ensuring seasonal flood resilience for communities",
+      "Establishes pragmatic foundation for future institutional dialogues concerning shared river accords"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "নদী কূটনীতি ও পরিবেশ",
+    "categoryLabelEn": "Water Diplomacy & Hydrology",
+    "sentiment": "positive",
+    "sentimentReasonBn": "নদী ব্যবস্থাপনা ও বন্যা পূর্বাভাসে উভয় দেশের যৌথ কারিগরি সহযোগিতার ইতিবাচক দিক প্রতিফলিত হয়েছে।",
+    "sentimentReasonEn": "Constructive reportage emphasizing non-partisan environmental and hydrological collaboration for mutual safety.",
+    "source": {
+      "name": "India Today (YouTube)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBqZkZmem1mMk9XNUQ4UWROVmQ1eVExcjU0V3ZCRi1Ic1QzR2ZuV0dVbGF0ajJ2VHJaNFViaFRNTkFVR0EwLXdfQW1KZkdpU0VlTmV4cDZn?oc=5",
+      "scannedAt": "2026-09-20T11:05:00Z"
+    },
+    "publishedAt": "2026-09-18T11:46:21Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-ministry-of-foreign-affairs.jpg",
+    "tags": [
+      "India Today",
+      "YouTube Dispatch",
+      "Joint Rivers Commission",
+      "Water Diplomacy",
+      "Flood Forecasting",
+      "Delhi Bureau"
+    ]
+  },
+  {
     "id": "news-20260920-037",
     "slug": "hindustan-times-bangladesh-wants-to-reset-ties-with-india-calls-hasina-era-uncomfortable",
     "title": "Bangladesh Seeks Diplomatic 'Reset' With India, Calling Hasina-Era Relationship 'Uncomfortable': New Delhi Deliberates Response",
@@ -479,7 +846,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [
