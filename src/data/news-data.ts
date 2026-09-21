@@ -615,7 +615,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV",
       "bureau": "Assam",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BYVdEZ1F4Ymt2T29hOGFybjNrcDVsYld1eTdfR0d1eElnckdrcmpyWUR6ckZ3X3hWbnZldjlSVTNqWjlxbjh5Z3dWVnRn?oc=5",
+      "originalUrl": "https://www.ndtv.com/india-news/himanta-sarma-lays-foundation-stone-for-adani-powers-3-200-mw-assam-project-12072008",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T02:15:00Z",
