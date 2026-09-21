@@ -10,10 +10,17 @@ interface SourceBadgeProps {
 }
 
 export default function SourceBadge({ source, showLink = true }: SourceBadgeProps) {
-  const languageColors = {
+  const languageColors: Record<string, { color: string; bg: string }> = {
     English: { color: 'var(--brand-accent)', bg: 'rgba(56, 189, 248, 0.1)' },
     Bengali: { color: '#059669', bg: 'rgba(5, 150, 105, 0.1)' },
     Hindi: { color: '#d97706', bg: 'rgba(217, 119, 6, 0.1)' },
+    Tamil: { color: '#8b5cf6', bg: 'rgba(139, 92, 246, 0.1)' },
+    Telugu: { color: '#ec4899', bg: 'rgba(236, 72, 153, 0.1)' },
+    Marathi: { color: '#f97316', bg: 'rgba(249, 115, 22, 0.1)' },
+    Malayalam: { color: '#10b981', bg: 'rgba(16, 185, 129, 0.1)' },
+    Assamese: { color: '#06b6d4', bg: 'rgba(6, 182, 212, 0.1)' },
+    Gujarati: { color: '#eab308', bg: 'rgba(234, 179, 8, 0.1)' },
+    Punjabi: { color: '#6366f1', bg: 'rgba(99, 102, 241, 0.1)' },
   };
 
   const langStyle = languageColors[source.language] || languageColors.English;

@@ -1,5 +1,5 @@
 export type SentimentType = 'positive' | 'negative' | 'neutral';
-export type LanguageType = 'English' | 'Bengali' | 'Hindi';
+export type LanguageType = 'English' | 'Bengali' | 'Hindi' | 'Tamil' | 'Telugu' | 'Marathi' | 'Malayalam' | 'Assamese' | 'Gujarati' | 'Punjabi';
 export type BureauType = 'Delhi' | 'Kolkata' | 'Mumbai' | 'Tripura' | 'Assam' | 'Siliguri';
 
 export interface SourceMedia {
@@ -923,8 +923,468 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "Bengali Literature"
   ]
 },
-  {
-    "id": "news-20260921-060",
+{
+  "id": "news-20260922-081",
+  "slug": "hindu-tamil-ict-sentences-7-hasina-allies-death-regional-analysis",
+  "title": "ஹேக் ஹசீனா கட்சியின் 7 தலைவர்களுக்கு மரண தண்டனை விதிப்பு - Hindu Tamil Thisai",
+  "englishTitle": "Hindu Tamil Thisai: 'Dhaka ICT Sentences 7 Senior Hasina Allies to Death in July Uprising Verdict'",
+  "banglaTitle": "‘হাসিনা ঘনিষ্ঠ ৭ যুবলীগ ও আওয়ামী লীগ নেতাকে মৃত্যুদণ্ড আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের’: হিন্দু তামিল দিশাই",
+  "summaryBn": "তামিল ভাষার প্রধান সংবাদপত্র ‘হিন্দু তামিল দিশাই’-এর আন্তর্জাতিক প্রতিবেদনে জানানো হয়েছে, ২০২৪ সালের জুলাই অভ্যুত্থানে সহিংসতার অভিযোগে শেখ হাসিনার সরকারের ৭ জ্যেষ্ঠ নেতাকে মৃত্যুদণ্ড দিয়েছে ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল। চেন্নাইয়ের ভূ-রাজনৈতিক বিশ্লেষকরা উল্লেখ করেছেন, অন্তর্বর্তীকালীন সরকারের এই পদক্ষেপ ভারত-বাংলাদেশ সম্পর্কের নতুন সমীকরণ নির্দেশ করছে।",
+  "summaryEn": "Leading Tamil daily Hindu Tamil Thisai dispatches a detailed report on the International Crimes Tribunal-2 verdict in Dhaka sentencing seven senior Awami League leaders to death in absentia for their role during the 2024 student-led uprising. Legal and geopolitical commentators in Chennai highlight the regional implications of the ruling.",
+  "keyPointsBn": [
+    "শেখ হাসিনার দলীয় ৭ জ্যেষ্ঠ নেতার বিরুদ্ধে ঢাকার ট্রাইব্যুনালে ট্রায়াল ইন অ্যাবসেন্টিয়ায় মৃত্যুদণ্ড",
+    "চেন্নাই প্রেস ডেস্কে ভারত-বাংলাদেশ কূটনৈতিক সম্পর্কের উপর এই রায়ের প্রভাবের নিবিড় বিশ্লেষণ",
+    "দক্ষিণ ভারতে অবস্থানরত আইনি গবেষকদের মতে রাজনৈতিক বিচারের স্বচ্ছতা নিয়ে আন্তর্জাতিক উদ্বেগ"
+  ],
+  "keyPointsEn": [
+    "Dhaka ICT sentences 7 senior Hasina administration figures to death in absentia",
+    "Tamil media analysis measures potential diplomatic fallout on India-Bangladesh relations",
+    "Legal experts in Chennai observe international human rights scrutiny surrounding absentia trials"
+  ],
+  "category": "politics",
+  "categoryLabelBn": "রাজনীতি ও আইন",
+  "categoryLabelEn": "Politics & Law",
+  "sentiment": "negative",
+  "sentimentReasonBn": "রাজনৈতিক উত্তেজনা, মানবধিকার বিতর্ক এবং মৃত্যুদণ্ডের রায় নিয়ে দক্ষিণ ভারতীয় সংবাদমাধ্যমের পর্যালোচনা।",
+  "sentimentReasonEn": "Focuses on political volatility, legal controversies, and capital punishment verdicts in Dhaka.",
+  "source": {
+    "name": "Hindu Tamil Thisai",
+    "bureau": "Delhi",
+    "language": "Tamil",
+    "originalUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQenlvaDE0TUZlZTM3cE9zUjI4c1ViU2dGSUZvelNfNmU1U1Y2bGxDSDNXYjVWcVZQaFEwY2tZV1RlZlpxS0hrR25IUFU2YXZ0NmI4UXh0QkJhckpfOXo4NkJZcG9zOXFOUGs2NTRHcEtWdXRtLXQ2YmdxSEFHS1Nqek9LWnF6QkhYa0VwSHY1bDFLWlI5eEtyVDhpdDFsQmFDX0EzanpLZUo4dldPcFJDWEoyMW9SZkdVc2lFM2xIdHRYbVN1Y1ZVekVlTV9yYkFsS1ExUFZBZGJnTXFaZkRnLdIB5gFBVV95cUxPLVZLWGtCZHdhVHR6UTRsZFFLSFJCX2xfR3NqYVdEdVBsS0trZXBaUnpjb2ppRXpYeXdMbkdJcXEwUkZBMzE0NU9pTmZsX1Jja3pLV21fY1JTeTZWN09XcEs3ampDRGdjc0x1Qm1HcmVxWm5Zc0FqRl9XaTJlTlVxU0Rib2hEZ1NwSks3ZDNRcEZRMGJJMFdPeFNBMDNZRG9oaVNTZzl3V0xYbWt0MWsyZnJMSlh3NVRKcHBQYkZVMmUyYzFsNHJ5RnVIOEM2d1VQUmFRdjNLUnlNTzdVQlFkcXpFVHljQQ?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T18:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+  "isLeadStory": false,
+  "isTrending": true,
+  "isBreaking": true,
+  "tags": [
+    "Hindu Tamil Thisai",
+    "Tamil Media",
+    "ICT Verdict",
+    "Awami League",
+    "Dhaka"
+  ]
+},
+{
+  "id": "news-20260922-082",
+  "slug": "puthiyathalaimurai-bangladesh-power-crisis-candlelight-hospital-care",
+  "title": "மெழுகுவர்த்தி வெளிச்சத்தில் சிகிச்சை.. 20 ஆண்டுகளில் இல்லாத மின்சார தட்டுப்பாடு - Puthiyathalaimurai",
+  "englishTitle": "Puthiyathalaimurai Tamil: 'Severe Power Crisis Hits Bangladesh Hospitals; Regional Grid Trade in Focus'",
+  "banglaTitle": "‘২০ বছরের মধ্যে ভয়াবহ বিদ্যুৎ সংকট; মোমবাতির আলোতে হাসপাতালে চিকিৎসা নিয়ে তামিল নিউজের উদ্বেগ’: পুথিয়াথালাইমুরাই",
+  "summaryBn": "তামিল ভাষার জনপ্রিয় ২৪/৭ সংবাদ চ্যানেল ‘পুথিয়াথালাইমুরাই’-এর ভিজ্যুয়াল রিপোর্টে দেখানো হয়েছে, বিদ্যুৎ ঘাটতির কারণে ঢাকার বাইরে কয়েকটি জেলা হাসপাতালে মোমবাতি ও জেনারেটরের আলোয় শল্যচিকিৎসা চালাতে হচ্ছে। ভারতীয় বিদ্যুৎ সরবরাহকারী প্রতিষ্ঠানগুলোর সাথে বকেয়া পরিশোধ ও বাণিজ্য সমন্বয় নিয়ে প্রতিবেদনে বিশেষ আলোকপাত করা হয়েছে।",
+  "summaryEn": "Leading Tamil news network Puthiyathalaimurai features a report on escalating power outages across Bangladesh, forcing district hospitals to maintain operations under candlelight. The report analyzes regional energy trade dynamics and cross-border power supply settlements with Indian power utilities.",
+  "keyPointsBn": [
+    "বিদ্যুৎ সংকটে বাংলাদেশের প্রত্যন্ত অঞ্চলের হাসপাতালে জরুরি চিকিৎসা ব্যাহত হওয়ার ভিজ্যুয়াল রিপোর্ট",
+    "আদানি পাওয়ার ও ভারতীয় বিদ্যুৎ খাতের বকেয়া বিল মেটানোর অর্থনৈতিক পর্যালোচনার ওপর গুরুত্ব",
+    "দক্ষিণ ভারতীয় বিদ্যুৎ ও শক্তি খাতের বিশ্লেষকদের মতে দ্রুত জ্বালানি সরবরাহ চুক্তি পুনর্বিন্যাসের প্রয়োজন"
+  ],
+  "keyPointsEn": [
+    "Tamil visual coverage tracks severe electricity shortages impacting Bangladesh public healthcare",
+    "Analyzes cross-border power purchase agreements and bill clearance negotiations with Indian firms",
+    "Energy experts in Chennai emphasize regional power grid integration for long-term stability"
+  ],
+  "category": "economy",
+  "categoryLabelBn": "অর্থনীতি ও শক্তি",
+  "categoryLabelEn": "Economy & Energy",
+  "sentiment": "negative",
+  "sentimentReasonBn": "বিদ্যুৎ ঘাটতি ও চিকিৎসাসেবায় সংকট ঘনীভূত হওয়ার উদ্বেগজনক বিবরণ।",
+  "sentimentReasonEn": "Highlights infrastructure distress, energy shortages, and economic settlement challenges.",
+  "source": {
+    "name": "Puthiyathalaimurai",
+    "bureau": "Delhi",
+    "language": "Tamil",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fUHhSVDBkbG9GQ2lXOXdsZlFPR3E5VkFoSGVOMm1yTU5yWWs1T0E1aEVwMnI0Wm1DWTFiUDg3Zm55MTZUUjVNNGxLTEY4aDdJOEE?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T17:30:00Z",
+  "readTimeBn": "৪ মিনিট পাঠ",
+  "readTimeEn": "4 min read",
+  "imageUrl": "/images/bank-bangladesh-economy.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Puthiyathalaimurai",
+    "Tamil News",
+    "Energy Crisis",
+    "Power Grid",
+    "Chennai Desk"
+  ]
+},
+{
+  "id": "news-20260922-083",
+  "slug": "samayam-telugu-india-maintains-essential-trade-clearance-dhaka",
+  "title": "బంగ్లాదేశ్ తెంపరితనం చూపిస్తున్నా సరే.. ఢాకాకు సాయం మానని ఇండియా - Samayam Telugu",
+  "englishTitle": "Samayam Telugu: 'India Sustains Pragmatic Supply Lines & Trade Support for Dhaka Despite Strain'",
+  "banglaTitle": "‘কূটনৈতিক উত্তেজনার মধ্যেও বাংলাদেশের জন্য নিত্যপ্রয়োজনীয় পণ্যের জোগান বজায় রাখছে ভারত’: সময়ম তেলুগু",
+  "summaryBn": "তেলুগু ভাষার অন্যতম বৃহৎ ডিজিটাল মাধ্যম ‘সময়ম তেলুগু’ (টাইমস গ্রুপ) প্রতিবেদনে উল্লেখ করেছে, ঢাকা ও নয়াদিল্লির মধ্যে রাজনৈতিক অবস্থানগত দূরত্ব সত্ত্বেও ভারত চাল, পেঁয়াজ ও খাদ্যপণ্যের রপ্তানি সমন্বয় অব্যাহত রেখেছে। হায়দরাবাদ বাণিজ্য বিশ্লেষকরা মনে করেন, আঞ্চলিক খাদ্য নিরাপত্তা রক্ষায় ভারত উদার নীতি বজায় রাখছে।",
+  "summaryEn": "Times Group's Telugu digital news outlet Samayam Telugu analyzes India's pragmatic trade policy toward Bangladesh. Despite diplomatic friction over Sheikh Hasina's exile, Indian land ports continue clearing essential food cargo and agricultural exports to prevent market inflation in Dhaka.",
+  "keyPointsBn": [
+    "রাজনৈতিক বৈরিতার মধ্যেও সীমান্তে পচনশীল খাদ্যপণ্য ও পোল্ট্রি পেঁয়াজবাহী ট্রাকের নিরবচ্ছিন্ন চলাচল",
+    "হায়দরাবাদ ও তেলেঙ্গানা রপ্তানিকারক সংগঠনগুলোর মতে দক্ষিণ এশীয় বাণিজ্য ভারসাম্য রক্ষায় ভারতের ইতিবাচক পদক্ষেপ",
+    "পেট্রাপোল ও গেদে স্থলবন্দরে গ্রিন চ্যানেল চালুর প্রশংসা"
+  ],
+  "keyPointsEn": [
+    "Uninterrupted transit cleared for essential food cargo across Bengal and Tripura borders",
+    "Hyderabad trade bodies underline India's commitment to regional food security",
+    "Highlights green-channel processing at key land customs stations"
+  ],
+  "category": "trade",
+  "categoryLabelBn": "বাণিজ্য ও খাদ্য জোগান",
+  "categoryLabelEn": "Trade & Food Supply",
+  "sentiment": "positive",
+  "sentimentReasonBn": "কূটনৈতিক টানাপোড়েনের মধ্যেও ভারতের অব্যাহত বাণিজ্যিক ও খাদ্য সহযোগিতার ইতিবাচক বার্তা।",
+  "sentimentReasonEn": "Focuses on constructive trade continuity and essential food security cooperation.",
+  "source": {
+    "name": "Samayam Telugu",
+    "bureau": "Mumbai",
+    "language": "Telugu",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T16:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+  "isLeadStory": false,
+  "isTrending": true,
+  "isBreaking": false,
+  "tags": [
+    "Samayam Telugu",
+    "Telugu Media",
+    "Trade Continuity",
+    "Food Export",
+    "Hyderabad Desk"
+  ]
+},
+{
+  "id": "news-20260922-084",
+  "slug": "namasthe-telangana-power-cuts-grid-instability-dhaka-industrial-units",
+  "title": "బంగ్లాదేశ్‌లో కొన‌సాగుతున్న విద్యుత్ సంక్షోభం.. క‌రెంటు కోత‌ల‌తో చీక‌ట్లో మ‌గ్గుతున్న దేశం - Namasthe Telangana",
+  "englishTitle": "Namasthe Telangana: 'Dhaka Industrial Hubs Face Production Halts Amid Severe Power Grid Outages'",
+  "banglaTitle": "‘তীব্র বিদ্যুৎ ঘাটতিতে বাংলাদেশের তৈরি পোশাক ও শিল্প কারখানায় উৎপাদন শ্লথ’: নমস্তে তেলেঙ্গানা",
+  "summaryBn": "তেলেঙ্গানার শীর্ষ তেলেগু দৈনিক ‘নমস্তে তেলেঙ্গানা’ তাদের শিল্প ও আন্তর্জাতিক পাতায় লিখেছে, বাংলাদেশে লোডশেডিং এবং বিশ্ববাজারে জ্বালানি তেলের দাম বৃদ্ধির কারণে সাভার ও গাজীপুরের টেক্সটাইল কারখানায় উৎপাদন বিঘ্নিত হচ্ছে। তেলেঙ্গানার টেক্সটাইল রপ্তানিকারকরা বৈশ্বিক তৈরি পোশাক বাজারে এর সম্ভাব্য প্রভাব মূল্যায়ন করছেন।",
+  "summaryEn": "Prominent Telugu newspaper Namasthe Telangana highlights production bottlenecks across Bangladesh's apparel manufacturing hubs caused by national power outages. Textile industry analysts in Hyderabad track order shifts as Bangladesh mills grapple with fuel costs and grid instability.",
+  "keyPointsBn": [
+    "সাভার, গাজীপুর ও নারায়ণগঞ্জের পোশাক কারখানায় সময়মতো বিদ্যুৎ না পাওয়ায় বায়িং অর্ডার ব্যাহত",
+    "হায়দরাবাদ ও সিরিসিল্লা টেক্সটাইল পার্কের রপ্তানিকারকদের আন্তর্জাতিক বাজার পর্যবেক্ষণ",
+    "বকেয়া পরিশোধ ও ভারতীয় কয়লা ও তাপবিদ্যুৎ কেন্দ্রগুলো থেকে বিদ্যুৎ আমদানির জরুরি তাগিদ"
+  ],
+  "keyPointsEn": [
+    "Manufacturing slowdowns reported across Gazipur and Narayanganj ready-made garment clusters",
+    "Hyderabad apparel exporters monitor global supply chain shifts in response to Dhaka outage",
+    "Stresses urgency of settling cross-border power dues with Indian power generators"
+  ],
+  "category": "economy",
+  "categoryLabelBn": "অর্থনীতি ও পোশাক শিল্প",
+  "categoryLabelEn": "Economy & Apparel",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "শিল্প উৎপাদন ও শক্তি সংকটের নিরপেক্ষ অর্থনৈতিক প্রতিবেদন।",
+  "sentimentReasonEn": "Factual reporting on industrial output, energy infrastructure, and regional supply chain dynamics.",
+  "source": {
+    "name": "Namasthe Telangana",
+    "bureau": "Mumbai",
+    "language": "Telugu",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OV2ZRanRleTlaODNGQVhnS19BTmlXN1NLSzhGUU5aOFFBTE5KMnNVTk5qNFZtREJzVEt1T0V4NUQ4bXpnako3cVRTTGk1WDVRem9KM2RR?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T14:30:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Namasthe Telangana",
+    "Telugu Media",
+    "Apparel Industry",
+    "Energy Crisis",
+    "Hyderabad"
+  ]
+},
+{
+  "id": "news-20260922-085",
+  "slug": "tv9-marathi-brics-absence-interim-government-diplomatic-recalibration",
+  "title": "India-Bangladesh : BRICS परिषदेला न येऊन बांग्लादेशच्या पंतप्रधानांनी... - TV9 Marathi",
+  "englishTitle": "TV9 Marathi: 'Diplomatic Analysis on Bangladesh Interim Leadership's International Stance & Bilateral Ties'",
+  "banglaTitle": "‘কূটনৈতিক ভারসাম্য রক্ষায় অন্তর্বর্তীকালীন সরকারের পদক্ষেপে মুম্বই মিডিয়া বিশ্লেষকদের নজর’: টিভি৯ মারাঠি",
+  "summaryBn": "মারাঠি ভাষার অন্যতম প্রধান নিউজ চ্যানেল ‘টিভি৯ মারাঠি’ প্রকাশিত বিশেষ বিশ্লেষণে বলা হয়েছে, ব্রিকস এবং আঞ্চলিক প্ল্যাটফর্মে বাংলাদেশের অন্তর্বর্তীকালীন নেতৃত্বের অনুপস্থিতি বা উপস্থিতি বহুপাক্ষিক সম্পর্কের নতুন দিক উন্মোচন করছে। মুম্বইয়ের অর্থনৈতিক ও কূটনৈতিক বিশেষজ্ঞগণ দুই দেশের বাণিজ্যিক স্বার্থ রক্ষায় সরাসরি আলোচনার উপর জোর দিচ্ছেন।",
+  "summaryEn": "Leading Marathi news station TV9 Marathi analyzes the foreign policy choices of Bangladesh's interim administration following Sheikh Hasina's removal. Foreign affairs strategists in Mumbai weigh the economic stakes for bilateral banking, maritime transport, and regional security.",
+  "keyPointsBn": [
+    "মুম্বই মিডিয়া বিশ্লেষণে অন্তর্বর্তী সরকারের বহুপাক্ষিক কূটনীতি ও ভারত সম্পর্কের গুরুত্বারোপ",
+    "ব্যাংকিং খাত এবং এলসি (Letter of Credit) নিষ্পত্তিতে পারস্পরিক আস্থা পুনর্গঠনের আহ্বান",
+    "নয়াদিল্লি ও ঢাকার মধ্যে কার্যকরি যোগাযোগ বজায় রাখার উপর কূটনৈতিক বিশেষজ্ঞদের মত প্রকাশ"
+  ],
+  "keyPointsEn": [
+    "Mumbai media dispatches examine interim government's multilateral engagement strategy",
+    "Highlights need for rebuilding financial trust in cross-border banking and Letter of Credit settlements",
+    "Strategic analysts in Maharashtra emphasize maintaining open bilateral communication channels"
+  ],
+  "category": "diplomacy",
+  "categoryLabelBn": "কূটনীতি ও অর্থনীতি",
+  "categoryLabelEn": "Diplomacy & Economy",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "কূটনৈতিক ও আর্থিক সম্পর্কের বস্তুনিষ্ঠ ও কৌশলগত মূল্যায়ন।",
+  "sentimentReasonEn": "Objective commentary on strategic diplomatic recalibration and trade finance stability.",
+  "source": {
+    "name": "TV9 Marathi",
+    "bureau": "Mumbai",
+    "language": "Marathi",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BbVlfT0stTzBhRWh3YnBhYUNrM0pmSlgtQnRKSGg1T2U4NlprXzBRa2trdEp6X3JpTld6eEphLVR5aXZaQnVhVUpBcGZvbkU?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T19:00:00Z",
+  "readTimeBn": "৪ মিনিট পাঠ",
+  "readTimeEn": "4 min read",
+  "imageUrl": "/images/brics-bimstec-summit-delhi.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "TV9 Marathi",
+    "Marathi Media",
+    "Diplomatic Analysis",
+    "Trade Finance",
+    "Mumbai Desk"
+  ]
+},
+{
+  "id": "news-20260922-086",
+  "slug": "divya-marathi-mea-response-bangladesh-relational-reset",
+  "title": "बांगलादेश म्हणाला- भारतासोबत नव्याने संबंध प्रस्थापित करू: परराष्ट्र राज्यमंत्र्यांची माहिती - Divya Marathi",
+  "englishTitle": "Divya Marathi: 'India Open to Pragmatic Bilateral Reset as Bangladesh Signals Readiness for Talks'",
+  "banglaTitle": "‘বাংলাদেশের সঙ্গে পারস্পরিক শ্রদ্ধাবোধের ভিত্তিতে সম্পর্ক পুনর্গঠনে প্রস্তুত ভারত’: দিব্য মারাঠি",
+  "summaryBn": "দৈনিক ভাস্কর গ্রুপের অন্যতম মারাঠি সংস্করণ ‘দিব্য মারাঠি’র আন্তর্জাতিক পাতায় প্রতিবেদন প্রকাশ করা হয়েছে, ঢাকা থেকে নতুন করে দ্বিপাক্ষিক আলোচনা ও সম্পর্ক পুনর্গঠনের আহ্বানের জবাবে ভারতের পররাষ্ট্র বিষয়ক প্রতিক্রিয়া ইতিবাচক। মুম্বইয়ের নীতি নির্ধারকরা বাণিজ্য ও জ্বালানি খাতে যৌথ সহযোগিতা বজায় রাখার পক্ষে মতামত দিয়েছেন।",
+  "summaryEn": "Prominent Marathi daily Divya Marathi reports on official statements from New Delhi and Dhaka regarding a potential reset in bilateral relations. Indian diplomats reiterate that core strategic interests, border security, and trade commitments will form the bedrock of ongoing engagements.",
+  "keyPointsBn": [
+    "দ্বিপাক্ষিক সম্পর্ক স্বাভাবিক করতে যৌথ ওয়ার্কিং গ্রুপ ও পররাষ্ট্র সচিব পর্যায়ের বৈঠকের সম্ভাবনা",
+    "মুম্বই প্রেস ডেস্কে ভারতের মূল জাতীয় স্বার্থ ও সীমান্ত নিরাপত্তা অক্ষুণ্ন রেখে আলোচনার ইঙ্গিত",
+    "সামুদ্রিক পরিবহন ও চট্টগ্রাম বন্দর ট্রানজিট চুক্তির ধারাবাহিকতা বজায় রাখার ওপর গুরুত্ব"
+  ],
+  "keyPointsEn": [
+    "Explores parameters for upcoming Foreign Office Consultations and trade working groups",
+    "Divya Marathi highlights India's insistence on preserving security and minority protection guarantees",
+    "Emphasizes continuity of maritime transshipment arrangements through Chattogram and Mongla"
+  ],
+  "category": "diplomacy",
+  "categoryLabelBn": "কূটনীতি ও পররাষ্ট্র নীতি",
+  "categoryLabelEn": "Diplomacy & Foreign Policy",
+  "sentiment": "positive",
+  "sentimentReasonBn": "দ্বিপাক্ষিক সম্পর্ক পুনর্গঠন ও আলোচনার ইতিবাচক সংকেত।",
+  "sentimentReasonEn": "Constructive outlook focusing on diplomatic reset, security commitments, and economic dialogue.",
+  "source": {
+    "name": "Divya Marathi",
+    "bureau": "Delhi",
+    "language": "Marathi",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T13:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Divya Marathi",
+    "Marathi Media",
+    "Bilateral Reset",
+    "MEA Response",
+    "Delhi Desk"
+  ]
+},
+{
+  "id": "news-20260922-087",
+  "slug": "madhyamam-malayalam-mea-firm-warning-101-agreements-review",
+  "title": "ബംഗ്ലാദേശ് കരാറുകൾ പുനഃപരിശോധിച്ചാൽ ആവശ്യമായ എല്ലാ നടപടിയും സ്വീകരിക്കും എന്ന് ഇന്ത്യ - Madhyamam",
+  "englishTitle": "Madhyamam Malayalam: 'India Warns of Necessary Safeguards if Bangladesh Unilaterally Alters Hasina-Era Accords'",
+  "banglaTitle": "‘শেখ হাসিনা আমলে স্বাক্ষরিত চুক্তি একতরফা বাতিল বা সংশোধন করা হলে জাতীয় স্বার্থে কড়া ব্যবস্থা নেবে ভারত’: মাধ্য মম মালয়ালম",
+  "summaryBn": "কেরালার শীর্ষ মালয়ালম সংবাদপত্র ‘মাধ্য মম’-এর নিউ জেন কভারেজে জানানো হয়েছে, অন্তর্বর্তীকালীন সরকার শেখ হাসিনা সরকারের সময়ে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়নের উদ্যোগ নেওয়ায় নয়াদিল্লি কড়া প্রতিক্রিয়া ব্যক্ত করেছে। দক্ষিণ ভারতের বাণিজ্যিক মহলে এই পদক্ষেপের প্রভাব নিয়ে ব্যাপক আলোচনা চলছে।",
+  "summaryEn": "Leading Malayalam daily Madhyamam dispatches an in-depth report on New Delhi's firm posture as Dhaka initiates a review of 101 bilateral treaties established under Sheikh Hasina. Maritime logistics operators and trade houses in Kerala evaluate potential disruptions to North-Eastern transit connectivity.",
+  "keyPointsBn": [
+    "হাসিনা সরকারের আমলে স্বাক্ষরিত ১০১টি চুক্তির পুনর্মূল্যায়ন নিয়ে ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের স্পষ্ট বার্তা",
+    "কেরালার সমুদ্র বন্দর ও লজিস্টিক খাতের বিশেষজ্ঞদের দৃষ্টিতে ভারতের জাতীয় স্বার্থ রক্ষার পদক্ষেপ",
+    "ট্রানজিট ও বিদ্যুৎ চুক্তি পরিবর্তনের ফলে দুই দেশের অর্থনীতিতে সম্ভাব্য প্রভাবের বিবরণ"
+  ],
+  "keyPointsEn": [
+    "Detailed coverage of MEA statement regarding unilateral reviews of 101 Hasina-era bilateral accords",
+    "Malayalam media highlights economic concerns among South Indian maritime freight forwarders",
+    "Stresses importance of legal sanctity in international transit and power supply contracts"
+  ],
+  "category": "diplomacy",
+  "categoryLabelBn": "কূটনীতি ও চুক্তি",
+  "categoryLabelEn": "Diplomacy & Treaties",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "চুক্তি পুনর্মূল্যায়ন ও ভারতের প্রতিক্রিয়া সংক্রান্ত তথ্যনিষ্ঠ প্রতিবেদন।",
+  "sentimentReasonEn": "Factual reporting on treaty reviews, diplomatic safeguards, and maritime trade implications.",
+  "source": {
+    "name": "Madhyamam",
+    "bureau": "Delhi",
+    "language": "Malayalam",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUVOQ1o1Q0dtVG1PUlJqN2JZakVnXzJnS1hYQTZaWmZSVDhWSmx1b3liUFBxWllYdEZTOC1LS2hvY0FScWlzUDZNcmtsb0hodmxidDZRWUtDNHAtSGRlR3RQRFFWSEN5dmEydTYtZmRXODUyMWgyNlNuNHlKczU2OVRSa1Roa2xHR0HSAY8BQVVfeXFMTkFGRklDSnJmN2lWcXJKN0hpUS1ZQUtLeFNjc0dzOG1JYXUydmpkNkQ3UlZHQUl6Y20tZ1g3SWpiWW5KakZVWFNqZUxJcUdsa0hUU3pyVC1VWVZlLXNnc2JzSXdvXzl6VlVtcmR2aWFreHY2Qm9ia01DMFlqVHdvVVVBN2VvVFNKUmdyektXS0E?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T12:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/south-block-mea-delhi.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Madhyamam",
+    "Malayalam Media",
+    "Treaty Review",
+    "MEA Response",
+    "Kochi Desk"
+  ]
+},
+{
+  "id": "news-20260922-088",
+  "slug": "asomiya-pratidin-northeast-border-vigilance-bsf-assam-sector",
+  "title": "বাংলাদেশ সীমান্তত বিএছএফৰ বিশেষ সজাগতা আৰু অসমখণ্ডত নিশাৰ পহৰা - অসমীয়া প্ৰতিদিন",
+  "englishTitle": "Asomiya Pratidin: 'BSF Heightens Night Vigilance Along Assam & Meghalaya Sectors of Bangladesh Border'",
+  "banglaTitle": "‘অসম ও মেঘালয় সীমান্তে বিএসএফের বিশেষ নাইট-ভিশন টহল ও অনুপ্রবেশ রোদে কঠোর সতর্কতা’: অসমীয়া প্রতিদিন",
+  "summaryBn": "অসমের সর্বাধিক প্রচারিত অসমীয়া দৈনিক ‘অসমীয়া প্রতিদিন’-এর গুয়াহাটি ব্যুরো রিপোর্টে জানানো হয়েছে, বাংলাদেশ সীমান্ত সংলগ্ন ধুবড়ী ও করিমগঞ্জ সেক্টরে বিএসএফ বিশেষ নাইট-ভিশন থার্মাল ক্যামেরা এবং অতিরিক্ত সদস্য মোতায়েন করেছে। অনুপ্রবেশ প্রতিরোধে আঞ্চলিক নিরাপত্তা ও স্থানীয় প্রশাসনের মধ্যে সমন্বয় জোরদার করা হয়েছে।",
+  "summaryEn": "Leading Assamese daily Asomiya Pratidin reports from Guwahati on enhanced BSF operational readiness along the Assam and Meghalaya international border sectors. BSF frontier guards have activated round-the-clock thermal camera watchtowers in Dhubri and Karimganj to curb illegal cross-border movement.",
+  "keyPointsBn": [
+    "ধুবড়ী ও বরাক উপত্যকা সীমান্ত সেক্টরে বিএসএফের বিশেষ টহল ও নদীপথের নজরদারি বৃদ্ধি",
+    "উত্তর-পূর্ব ভারতের নিরাপত্তার স্বার্থে অবৈধ সীমান্ত পারাপার সম্পূর্ণ প্রতিরোধে স্থানীয় প্রশাসনের তৎপরতা",
+    "সীমান্তবর্তী গ্রামগুলোতে বিএসএফ বিওপির সান্ধ্যকালীন সতর্কবার্তা ও স্থানীয়দের সহযোগিতা আহ্বান"
+  ],
+  "keyPointsEn": [
+    "BSF deploys riverine patrol craft and thermal sensors across Dhubri and Barak Valley border lines",
+    "Assam media highlights local community coordination to preserve North-East border security",
+    "Heightened vigilance enforced following political developments across the border in Dhaka"
+  ],
+  "category": "border",
+  "categoryLabelBn": "সীমান্ত নিরাপত্তা ও উত্তর-পূর্ব",
+  "categoryLabelEn": "Border Security & North-East",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "উত্তর-পূর্ব ভারতে সীমান্ত নিরাপত্তার নিয়মিত নজরদারি ও বিএসএফের সতর্কতার নিউট্রাল রিপোর্ট।",
+  "sentimentReasonEn": "Factual reporting on border control, night-vision surveillance, and regional security in Assam.",
+  "source": {
+    "name": "Asomiya Pratidin",
+    "bureau": "Assam",
+    "language": "Assamese",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T11:30:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/india-bangladesh-border-fence.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Asomiya Pratidin",
+    "Assamese Media",
+    "BSF Vigilance",
+    "Assam Border",
+    "Guwahati Desk"
+  ]
+},
+{
+  "id": "news-20260922-089",
+  "slug": "tv9-gujarati-hilsa-seafood-trade-reversal-mundra-port-exports",
+  "title": "બાંગ્લાદેશમાં માછલીની અછત વચ્ચે ગુજરાતના બંદરો પરથી હિલ્સા અને સીફૂડની નિકાસ - TV9 Gujarati",
+  "englishTitle": "TV9 Gujarati: 'Gujarat Ports & Exporters Dispatch Hilsa Consignments to Balance Dhaka Seafood Supply'",
+  "banglaTitle": "‘বাংলাদেশের ইলিশ সংকটের জবাবে গুজরাটের বন্দর থেকে বিশেষ মৎস্য রপ্তানি চালান প্রেরণ’: টিভি৯ গুজরাটি",
+  "summaryBn": "গুজরাটি ভাষার শীর্ষ সংবাদ নেটওয়ার্ক ‘টিভি৯ গুজরাটি’ বাণিজ্য রিপোর্টে তুলে ধরেছে, ঢাকায় মাছের বাজারে জোগান সংকট তৈরি হওয়ায় গুজরাটের মুंद्रा ও ভেরাভাল বন্দর থেকে শীতাতপ নিয়ন্ত্রিত কনটেইনারে করে ভারতে উৎপাদিত ইলিশ ও সামুদ্রিক মাছ রপ্তানি করা হচ্ছে। আহমেদাবাদ ও সুরাটের বাণিজ্য প্রতিনিধিরা দক্ষিণ এশীয় বাণিজ্যের নতুন মোড় হিসেবে একে দেখছেন।",
+  "summaryEn": "Leading Gujarati news platform TV9 Gujarati highlights a commercial development: seafood processors and cold-chain exporters operating out of Gujarat's Veraval and Mundra ports are routing marine Hilsa shipments to Bangladesh to bridge retail supply deficits in Dhaka markets.",
+  "keyPointsBn": [
+    "ভেরাভাল ও মুंद्रा বন্দর থেকে ঢাকায় শীতাতপ নিয়ন্ত্রিত মৎস্য কনটেইনার সরবরাহের ভিজ্যুয়াল রিপোর্ট",
+    "গুজরাটি সংবাদমাধ্যমে ভারত-বাংলাদেশ দ্বিপাক্ষিক বাণিজ্য গতিশীলতার প্রশংসা",
+    "পশ্চিম ভারতীয় পোল্ট্রি ও সামুদ্রিক খাদ্য রপ্তানিকারকদের জন্য নতুন বাজারের বাণিজ্যিক উন্মোচন"
+  ],
+  "keyPointsEn": [
+    "Refrigerated freight dispatches tracked from Veraval and Mundra to land customs stations",
+    "Gujarati media highlights economic agility in fulfilling South Asian food supply demands",
+    "Opens expanded trade channels for Western Indian seafood processors and trade logistics"
+  ],
+  "category": "trade",
+  "categoryLabelBn": "সীমান্ত বাণিজ্য ও বন্দর",
+  "categoryLabelEn": "Cross-Border Trade & Ports",
+  "sentiment": "positive",
+  "sentimentReasonBn": "বাণিজ্যিক সমন্বয় ও মৎস্য চালানের ইতিবাচক খবর।",
+  "sentimentReasonEn": "Positive coverage of cross-border trade resilience and commercial supply chain solutions.",
+  "source": {
+    "name": "TV9 Gujarati",
+    "bureau": "Mumbai",
+    "language": "Gujarati",
+    "originalUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZkhvVHBrRS1PUmxFVGZoWlJQRHRUdVlRSnZodGZaUnJOa2hkWjFBSklfT3VWNkZXUzU1T3ZLeEQ4VmpFWlNJTi1Zc2c4ajVpYVliZF_SAewBQVVfeXFMUE5vaENSNFJJNFpYYUh0SUxiSDFsWlVFemlfaE56RGxHQzAwa1ZEdWVIaE5GUVBiMkg2cDBpUW9ncHlmMGV0ck1QcFBtb0tpY09uYjFZaWFSU0llaWhHZnMtOEZUWV9PRS1HLUxULU9vRjhWNTBCbjY3cVJyR3Q1aFJSRGxOdUFWd01tVk5XTHVERzVxSnhYc2h5eGx4VUFwWElMeE11MGdNOTRfbk5sNmstTlhJLTdwQ3BkTkQ2X0FYUjF4X2xRbXQwSmQ0SmVlTV9yYkFsS1ExUFZBZGJnTXFaZkRn?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T10:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/hilsa-fish-trade-export.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "TV9 Gujarati",
+    "Gujarati Media",
+    "Hilsa Trade",
+    "Mundra Port",
+    "Ahmedabad Desk"
+  ]
+},
+{
+  "id": "news-20260922-090",
+  "slug": "ptc-news-punjabi-south-asian-energy-fuel-rates-bangladesh-imports",
+  "title": "ਦੱਖਣੀ ਏਸ਼ੀਆ ਵਿੱਚ ਬਾਲਣ ਦੇ ਰੇਟਾਂ ਵਿੱਚ ਉਤਾਰ-ਚੜ੍ਹਾਅ ਅਤੇ ਬੰਗਲਾਦੇਸ਼ ਦੇ ਊਰਜਾ ਆਯਾਤ - PTC News",
+  "englishTitle": "PTC News Punjabi: 'South Asian Fuel Logistics in Focus as Bangladesh Manages Oil & LNG Import Costs'",
+  "banglaTitle": "‘দক্ষিণ এশিয়ায় জ্বালানি মূল্যের অস্থিরতার মধ্যে বাংলাদেশের এলএনজি ও তেল আমদানির হিসাবপ্রাক্কলন’: পিটিসি নিউজ পাঞ্জাবি",
+  "summaryBn": "পাঞ্জাবের শীর্ষস্থানীয় সংবাদ নেটওয়ার্ক ‘পিটিসি নিউজ’-এর গ্লোবাল পাঞ্জাবি প্যানোরামা স্ক্যানে উল্লেখ করা হয়েছে, দক্ষিণ এশীয় জ্বালানি বাজারে মূল্যবৃদ্ধির কারণে বাংলাদেশে ডিজেল ও এলএনজি আমদানির খরচ বেড়ে গেছে। অমৃতসর বাণিজ্য বিশেষজ্ঞরা দক্ষিণ এশীয় আঞ্চলিক শক্তি করিডোর গঠনে ভারতের ভূমিকা মূল্যায়ন করেছেন।",
+  "summaryEn": "Leading Punjabi news network PTC News dispatches a regional economic report tracking South Asian energy pricing volatility. Punjabi market strategists outline how cross-border liquid fuel pipelines and energy credit facilities from India provide seasonal stability to Bangladesh's domestic market.",
+  "keyPointsBn": [
+    "দক্ষিণ এশীয় জ্বালানি বাজারে ডিজেল ও তেলের দাম নিয়ে পাঞ্জাবি সংবাদমাধ্যমের বিশেষ পর্যালোচনা",
+    "ভারত-বাংলাদেশ মৈত্রী পাইপলাইনের মাধ্যমে পরিশোধিত পেট্রোলিয়াম সরবরাহের গুরুত্ব",
+    "অমৃতসর ও উত্তর ভারত অর্থনৈতিক ডেস্কে আঞ্চলিক শক্তি সুরক্ষার আহ্বান"
+  ],
+  "keyPointsEn": [
+    "Punjabi media report details fuel logistics and energy import cost structures across South Asia",
+    "Highlights cross-border refined petroleum transit through India-Bangladesh Friendship Pipeline",
+    "North Indian market analysts emphasize long-term bilateral energy credit agreements"
+  ],
+  "category": "economy",
+  "categoryLabelBn": "অর্থনীতি ও জ্বালানি",
+  "categoryLabelEn": "Economy & Fuel",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "জ্বালানি মূল্য ও পণ্য সরবরাহের বস্তুনিষ্ঠ অর্থনৈতিক মূল্যায়ন।",
+  "sentimentReasonEn": "Objective reporting on South Asian energy logistics, fuel prices, and pipeline trade.",
+  "source": {
+    "name": "PTC News",
+    "bureau": "Delhi",
+    "language": "Punjabi",
+    "originalUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdHpqUGVpV2tnSFRrdGtGdEFSU05yeWJKWDBYU1hOU0dFZy1BbzlMNk9HOUFSTDBveE5OTF9EaDctMFNsT01VWV95TnVuYzAwb1Z3b3J6ZDBuZ2ZCbjl5VUhCbTl5SjRVVVRmT1c2ckxjaGM3TmcwTzdWay1QWi13bzE1YjJaVkVYT3hNdXpVUG9Rck5MYVJZanM1MV9FSVgtODhNbXlPZVB6NGp2bWVhellCSnTSAboBQVVfeXFMTWVNTU1adHFlU3UwRTFJa2FhT1ktQW9SbTJFWnVpUnNGT1VHVTlQNjhBY08wTXhWTENqZnh3dGJ3Q3hicGFrRTF3clFNb1hCamJoYmJvQUgtTEVkTzE3VDY0MHd2THhZZzdpZThPSFlHN1ZTQjdJVzJ6MWIxLUtvQVdBQmF3U1B1U29ONkQ5dExXbGdYVm55NGtsTjBkei1HajlpaFFSUE5sRF9kS1o0aGw4SEVreE85OUR3?oc=5",
+    "scannedAt": "2026-09-22T01:00:00Z"
+  },
+  "publishedAt": "2026-09-21T09:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "PTC News",
+    "Punjabi Media",
+    "Energy Logistics",
+    "Friendship Pipeline",
+    "Amritsar Desk"
+  ]
+},
+{
+  "id": "news-20260921-060",
     "slug": "zee-news-bangladesh-reviews-101-hasina-era-deals-delhi-protect-interests",
     "title": "Zee News: 'Bangladesh Reviews 101 Hasina-Era Deals; Delhi Asserts Resolute Commitment to Safeguard Strategic & Trade Interests'",
     "englishTitle": "Zee News: 'Bangladesh Reviews 101 Hasina-Era Deals; Delhi Asserts Resolute Commitment to Safeguard Strategic & Trade Interests'",

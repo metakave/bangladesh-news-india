@@ -254,6 +254,13 @@ export default function SentimentTrackerBar({
                 <option value="English">{t.englishMedia}</option>
                 <option value="Bengali">{t.bengaliMedia}</option>
                 <option value="Hindi">{t.hindiMedia}</option>
+                <option value="Tamil">{(t as any).tamilMedia || 'Tamil Media'}</option>
+                <option value="Telugu">{(t as any).teluguMedia || 'Telugu Media'}</option>
+                <option value="Marathi">{(t as any).marathiMedia || 'Marathi Media'}</option>
+                <option value="Malayalam">{(t as any).malayalamMedia || 'Malayalam Media'}</option>
+                <option value="Assamese">{(t as any).assameseMedia || 'Assamese Media'}</option>
+                <option value="Gujarati">{(t as any).gujaratiMedia || 'Gujarati Media'}</option>
+                <option value="Punjabi">{(t as any).punjabiMedia || 'Punjabi Media'}</option>
             </select>
           </div>
         </div>

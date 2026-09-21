@@ -131,6 +131,55 @@ const STANDARD_RSS_FEEDS = [
     webUrl: 'https://news.google.com' 
   },
   { 
+    name: 'Tamil Media - Bangladesh Wire', 
+    bureau: 'Delhi', 
+    language: 'Tamil', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('ஹசீனா OR வங்காளதேசம் OR Bangladesh when:7d') + '&hl=ta&gl=IN&ceid=IN:ta', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Telugu Media - Bangladesh Wire', 
+    bureau: 'Mumbai', 
+    language: 'Telugu', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('హసీనా OR బంగ్లాదేశ్ OR Bangladesh when:7d') + '&hl=te&gl=IN&ceid=IN:te', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Marathi Media - Bangladesh Wire', 
+    bureau: 'Mumbai', 
+    language: 'Marathi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('हसीना OR बांग्लादेश OR Bangladesh when:7d') + '&hl=mr&gl=IN&ceid=IN:mr', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Malayalam Media - Bangladesh Wire', 
+    bureau: 'Delhi', 
+    language: 'Malayalam', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('ഹസീന OR ബംഗ്ലാദേശ് OR Bangladesh when:7d') + '&hl=ml&gl=IN&ceid=IN:ml', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Assamese Media - Bangladesh Wire', 
+    bureau: 'Assam', 
+    language: 'Assamese', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('Hasina OR Bangladesh when:7d') + '&hl=as-IN&gl=IN&ceid=IN:as', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Gujarati Media - Bangladesh Wire', 
+    bureau: 'Mumbai', 
+    language: 'Gujarati', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('હસીના OR બાંગ્લાદેશ OR Bangladesh when:7d') + '&hl=gu&gl=IN&ceid=IN:gu', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Punjabi Media - Bangladesh Wire', 
+    bureau: 'Delhi', 
+    language: 'Punjabi', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('ਹਸੀਨਾ OR ਬੰਗਲਾਦੇਸ਼ OR Bangladesh when:7d') + '&hl=pa&gl=IN&ceid=IN:pa', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
     name: 'Hindi Media - Bangladesh Tracker', 
     bureau: 'Delhi', 
     language: 'Hindi', 
