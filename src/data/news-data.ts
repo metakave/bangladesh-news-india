@@ -1,6 +1,6 @@
 export type SentimentType = 'positive' | 'negative' | 'neutral';
 export type LanguageType = 'English' | 'Bengali' | 'Hindi';
-export type BureauType = 'Delhi' | 'Kolkata' | 'Mumbai';
+export type BureauType = 'Delhi' | 'Kolkata' | 'Mumbai' | 'Tripura' | 'Assam' | 'Siliguri';
 
 export interface SourceMedia {
   name: string;
@@ -68,26 +68,70 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 3821,
-  "bangladeshMatches": 1047,
+  "totalScanned24h": 3801,
+  "bangladeshMatches": 1029,
   "sentimentDistribution": {
-    "positive": 24,
-    "neutral": 43,
-    "negative": 33
+    "positive": 26,
+    "neutral": 42,
+    "negative": 32
   },
   "bureauDistribution": {
-    "delhi": 53,
-    "kolkata": 31,
+    "delhi": 52,
+    "kolkata": 32,
     "mumbai": 16
   },
   "languageDistribution": {
-    "english": 40,
-    "bengali": 36,
+    "english": 42,
+    "bengali": 34,
     "hindi": 24
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-040",
+    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা; প্রতিক্রিয়া জানিয়ে ভারতের কড়া বার্তা’: জি নিউজ",
+    "headlineEn": "Zee News: 'India Will Take All Necessary Measures' - Delhi Responds as Bangladesh Reviews 101 Hasina-Era Accords",
+    "timeAgoBn": "এই মাত্র",
+    "timeAgoEn": "Just now",
+    "sourceName": "Zee News World",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html"
+  },
+  {
+    "id": "alert-039",
+    "headlineBn": "‘এশিয়ান গেমসে শেফালির বিধ্বংসী সেঞ্চুরি, বাংলাদেশকে ১১৪ রানে হারিয়ে ফাইনালে ভারত’: দ্য টেলিগ্রাফ",
+    "headlineEn": "Telegraph India: Shafali Verma's Maiden T20I Ton Powers India Past Bangladesh into Asian Games Final",
+    "timeAgoBn": "১ ঘণ্টা আগে",
+    "timeAgoEn": "1 hour ago",
+    "sourceName": "Telegraph India",
+    "sourceBureau": "Mumbai",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ITE1WYmYteUxrUVJKQWc1cDdQYjBIakphUDE0eVlkSUxDWDRsY1Z3bUVTczcxclBQcWxsQlNVMnBrWTdmeTNjUzk3MFdFeXVFUWJXQlZB?oc=5"
+  },
+  {
+    "id": "alert-038",
+    "headlineBn": "‘ভারত-বাংলাদেশ বাণিজ্য গতিশীল করতে যৌথ টাস্কফোর্স ও দৈনিক ৫ হাজার ভিসা ছাড়পত্রের উদ্যোগ’: অমর উজালা",
+    "headlineEn": "Amar Ujala: India & Bangladesh Form Joint Task Force to Expedite Bilateral Trade and Resume 5,000 Daily Visas",
+    "timeAgoBn": "২ ঘণ্টা আগে",
+    "timeAgoEn": "2 hours ago",
+    "sourceName": "Amar Ujala",
+    "sourceBureau": "Delhi",
+    "sentiment": "positive",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5"
+  },
+  {
+    "id": "alert-037",
+    "headlineBn": "‘ট্রেনের নিচে লুকিয়ে সীমান্ত পারাপার রুখতে গেদে ও পেট্রাপোল চেকপোস্টে এআই ক্যামেরা মোতায়েন’: টিভি৯ বাংলা",
+    "headlineEn": "TV9 Bangla: AI Motion Cameras and Scanners Deployed at Petrapole & Gede Crossings to Deter Freight Infiltration",
+    "timeAgoBn": "আজ ভোরে",
+    "timeAgoEn": "Early morning",
+    "sourceName": "TV9 Bangla",
+    "sourceBureau": "Kolkata",
+    "sentiment": "neutral",
+    "url": "https://tv9bangla.com/west-bengal/gede-petrapole-ai-thermal-camera-scanner-deployment-border-security-1102948.html"
+  },
   {
     "id": "alert-036",
     "headlineBn": "‘শারদীয় উৎসব ঘিরে ভারতে ৫০০ টন ইলিশ রপ্তানির বিশেষ অনুমতি দিল বাংলাদেশ’: আজ তক ভিডিও রিপোর্ট",
@@ -311,6 +355,511 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20260921-060",
+    "slug": "zee-news-bangladesh-reviews-101-hasina-era-deals-delhi-protect-interests",
+    "title": "Zee News: 'Bangladesh Reviews 101 Hasina-Era Deals; Delhi Asserts Resolute Commitment to Safeguard Strategic & Trade Interests'",
+    "englishTitle": "Zee News: 'Bangladesh Reviews 101 Hasina-Era Deals; Delhi Asserts Resolute Commitment to Safeguard Strategic & Trade Interests'",
+    "banglaTitle": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা; জাতীয় স্বার্থ রক্ষায় কঠোর বার্তা ভারতের’: জি নিউজ",
+    "summaryBn": "ভারতের শীর্ষস্থানীয় গণমাধ্যম জি নিউজ জানিয়েছে, শেখ হাসিনার ১৫ বছরের শাসনামলে ভারতের সাথে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি ও সমঝোতা স্মারক পুঙ্খানুপুঙ্খ পুনর্মূল্যায়ন করার প্রক্রিয়া শুরু করেছে ঢাকা। এর মধ্যে চট্টগ্রাম ও মংলা সমুদ্রবন্দর ব্যবহার করে ভারতের উত্তর-পূর্বাঞ্চলে পণ্য পরিবহন, আন্তঃসীমান্ত রেল সংযোগ এবং জ্বালানি সঞ্চালন চুক্তি অন্তর্ভুক্ত। ভারতের পররাষ্ট্র মন্ত্রণালয় (এমইএ) স্পষ্ট জানিয়ে দিয়েছে যে, নিজেদের সার্বভৌম কৌশলগত ও বাণিজ্যিক স্বার্থ সুরক্ষায় দিল্লি প্রয়োজনীয় যেকোনো পদক্ষেপ গ্রহণ করবে।",
+    "summaryEn": "Zee News reports that Bangladesh has initiated a comprehensive review of 101 bilateral treaties and accords signed during Sheikh Hasina's 15-year tenure. The agreements under scrutiny encompass transshipment access via Chattogram and Mongla ports for India’s landlocked Northeast and cross-border rail links. India’s Ministry of External Affairs responded firmly, declaring New Delhi will take all necessary measures to safeguard its core strategic and commercial interests.",
+    "keyPointsBn": [
+      "হাসিনা আমলে ভারতের সাথে স্বাক্ষরিত ১০১টি গুরুত্বপূর্ণ দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা",
+      "চট্টগ্রাম ও মংলা বন্দর ব্যবহার এবং উত্তর-পূর্বাঞ্চলীয় ট্রানজিট সুবিধার ভবিষ্যত নিয়ে দিল্লির সতর্ক দৃষ্টি",
+      "ভারতের পররাষ্ট্র মন্ত্রণালয় জানিয়েছে পারস্পরিক সহযোগিতা ইতিবাচক হলেও জাতীয় স্বার্থ রক্ষায় কোনো আপস নয়"
+    ],
+    "keyPointsEn": [
+      "Dhaka begins formal re-evaluation of 101 key bilateral agreements signed during Sheikh Hasina’s tenure",
+      "Accords under scrutiny include transit access via Chattogram and Mongla ports to India’s Northeast states",
+      "MEA affirms commitment to constructive ties while declaring India will resolutely protect its national interests"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক চুক্তি",
+    "categoryLabelEn": "Diplomacy & Strategic Pacts",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "চুক্তি পর্যালোচনা ঘিরে ঢাকার পদক্ষেপে কিছুটা অনিশ্চয়তা তৈরি হলেও পারস্পরিক স্বার্থ সুরক্ষায় দিল্লির কূটনৈতিক অবস্থান বাস্তবসম্মত ও সুষম।",
+    "sentimentReasonEn": "Reflects balanced coverage of Dhaka’s policy reassessment alongside New Delhi’s firm diplomatic resolve to protect bilateral infrastructure investments.",
+    "source": {
+      "name": "Zee News World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T07:30:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Zee News",
+      "Diplomatic Accords",
+      "101 Deals Review",
+      "Chattogram Port",
+      "Mongla Port",
+      "MEA Delhi",
+      "Sheikh Hasina"
+    ]
+  },
+  {
+    "id": "news-20260921-061",
+    "slug": "telegraph-india-asian-games-women-cricket-india-thrash-bangladesh-shafali-century",
+    "title": "Telegraph India: 'Shafali Verma Scores Maiden T20I Ton as India Thrash Bangladesh by 114 Runs to Reach Asian Games Final'",
+    "englishTitle": "Telegraph India: 'Shafali Verma Scores Maiden T20I Ton as India Thrash Bangladesh by 114 Runs to Reach Asian Games Final'",
+    "banglaTitle": "এশিয়ান গেমসের সেমিফাইনালে শেফালি বর্মার বিধ্বংসী সেঞ্চুরি, বাংলাদেশকে ১১৪ রানে হারিয়ে ফাইনালে ভারতের মেয়েরা: দ্য টেলিগ্রাফ",
+    "summaryBn": "এশিয়ান গেমসে মহিলা ক্রিকেটের সেমিফাইনালে বাংলাদেশকে ১১৪ বল ও ১১৪ রানের ব্যবধানে উড়িয়ে ফাইনাল নিশ্চিত করেছে ভারতীয় মহিলা ক্রিকেট দল। উদ্বোধনী ব্যাটার শেফালি বর্মার আন্তর্জাতিক টি-টোয়েন্টি ক্যারিয়ারের প্রথম সেঞ্চুরিতে ভর করে ভারত ১৯৬ রানের পাহাড়সম রান তোলে। জবাবে দুর্দান্ত ভারতীয় স্পিন ও পেস আক্রমণের মুখে পড়ে বাংলাদেশি ব্যাটাররা মাত্র ৮২ রানে অলআউট হয়ে যায়।",
+    "summaryEn": "The Telegraph India reports a dominant display by the Indian Women's Cricket team, crushing Bangladesh by 114 runs in the Asian Games semi-final. Opener Shafali Verma slammed a blistering maiden T20I century to propel India to a commanding 196, after which a disciplined bowling unit bundled out Bangladesh for just 82 runs.",
+    "keyPointsBn": [
+      "এশিয়ান গেমস সেমিফাইনালে শেফালি বর্মার আন্তর্জাতিক টি-টোয়েন্টি ক্যারিয়ারের প্রথম শতরান (১০৮ রান)",
+      "১৯৬ রানের জয়ের লক্ষ্যে ব্যাট করতে নেমে ৮২ রানে গুটিয়ে গেল বাংলাদেশের ইনিংস",
+      "ফাইনালে এশিয়ান গেমস সোনার পদকের লড়াইয়ে মুখোমুখি হবে ভারত ও শ্রীলঙ্কা"
+    ],
+    "keyPointsEn": [
+      "Shafali Verma scripts history with maiden T20I century (108 runs) in Asian Games semi-final",
+      "Chasing 197, Bangladesh women bowled out for 82 runs under tight Indian bowling attack",
+      "India advance to Asian Games gold medal match against Sri Lanka"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "ক্রীড়া ও এশিয়ান গেমস",
+    "categoryLabelEn": "Sports & Asian Games",
+    "sentiment": "positive",
+    "sentimentReasonBn": "এশিয়ান গেমসের সেমিফাইনালে ভারতীয় দলের ঐতিহাসিক জয় ও সেঞ্চুরির কারণে সংবাদের সুর অত্যন্ত ইতিবাচক ও উদযাপনী।",
+    "sentimentReasonEn": "Celebratory reporting focused on landmark athletic achievement and sportsmanship excellence.",
+    "source": {
+      "name": "Telegraph India",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ITE1WYmYteUxrUVJKQWc1cDdQYjBIakphUDE0eVlkSUxDWDRsY1Z3bUVTczcxclBQcWxsQlNVMnBrWTdmeTNjUzk3MFdFeXVFUWJXQlZB?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T06:45:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+      "Telegraph India",
+      "Asian Games 2026",
+      "Shafali Verma",
+      "Women Cricket",
+      "India vs Bangladesh",
+      "Mumbai Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-062",
+    "slug": "amar-ujala-india-bangladesh-joint-task-force-bilateral-trade-visa",
+    "title": "Amar Ujala: 'India & Bangladesh Form Joint Task Force to Accelerate Bilateral Trade and Resume 5,000 Daily Visa Clearances'",
+    "englishTitle": "Amar Ujala: 'India & Bangladesh Form Joint Task Force to Accelerate Bilateral Trade and Resume 5,000 Daily Visa Clearances'",
+    "banglaTitle": "দ্বিপাক্ষিক বাণিজ্য বাড়াতে ভারত-বাংলাদেশ যৌথ টাস্কফোর্স গঠন, প্রতিদিন ৫ হাজার ভিসা ছাড়পত্রের উদ্যোগ: অমর উজালা",
+    "summaryBn": "ভারতের প্রখ্যাত হিন্দি দৈনিক অমর উজালা জানিয়েছে, ভারত ও বাংলাদেশের বাণিজ্য ও যোগাযোগ দ্রুত স্বাভাবিক করতে উভয় দেশ একটি বিশেষ যৌথ টাস্কফোর্স গঠনে সম্মত হয়েছে। স্থলবন্দরগুলোতে বাণিজ্যিক পণ্য পরিবহন দ্রুতকরণ এবং প্রতিদিন অন্তত ৫,০০০ মেডিকেল ও ব্যবসায়িক ভিসা প্রদানের লক্ষ্যে ভারতীয় ভিসা আবেদন কেন্দ্রগুলোতে (IVAC) জনবল ও নিরাপত্তা বাড়ানো হচ্ছে।",
+    "summaryEn": "Amar Ujala reports that New Delhi and Dhaka have agreed to establish a dedicated Joint Economic Task Force to streamline bilateral commerce and port operations. To facilitate medical and business movement, Indian Visa Application Centres are expanding processing capacity to issue 5,000 visas daily.",
+    "keyPointsBn": [
+      "সীমান্ত বাণিজ্য জটিলতা নিরসনে ভারত ও বাংলাদেশের যৌথ অর্থনৈতিক টাস্কফোর্স গঠিত",
+      "ভারতীয় ভিসা আবেদন কেন্দ্রে নিরাপত্তা জোরদার ও দৈনিক ৫,০০০ ভিসা দেওয়ার বিশেষ উদ্যোগ",
+      "পেট্রাপোল-বেনাপোল ও আখাউড়া সীমান্তে পণ্যবাহী ট্রাক পারাপারে বিশেষ সহজিকরণ"
+    ],
+    "keyPointsEn": [
+      "Joint Task Force created to address cross-border trade bottlenecks and port clearances",
+      "Indian Visa Centres scale up processing to grant 5,000 daily medical and commercial visas",
+      "Enhanced logistics clearance prioritized for Benapole-Petrapole and Akhaura land ports"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও ভিসা সেবা",
+    "categoryLabelEn": "Trade & Visa Facilitation",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বাণিজ্যিক জট নিরসন ও ভিসা সুবিধা বৃদ্ধি উভয় দেশের অর্থনীতি ও সাধারণ মানুষের জন্য ইতিবাচক বার্তা বহন করে।",
+    "sentimentReasonEn": "Constructive coverage highlighting concrete bilateral steps to restore economic ties and people-to-people mobility.",
+    "source": {
+      "name": "Amar Ujala",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T05:20:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Amar Ujala",
+      "Joint Task Force",
+      "Bilateral Trade",
+      "IVAC Visas",
+      "Petrapole",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-063",
+    "slug": "tv9-bangla-petrapole-gede-border-ai-cameras-scanners-under-train-security",
+    "title": "TV9 Bangla: 'High-Tech AI Motion Sensors and Scanners Deployed at Petrapole & Gede Crossings to Prevent Infiltration Under Freight Cargo'",
+    "englishTitle": "TV9 Bangla: 'High-Tech AI Motion Sensors and Scanners Deployed at Petrapole & Gede Crossings to Prevent Infiltration Under Freight Cargo'",
+    "banglaTitle": "ট্রেনের চাকা ও কার্গোর তলায় লুকিয়ে সীমান্ত পারাপার রুখতে পেট্রাপোল ও গেদে সীমান্তে বসছে এআই থার্মাল ক্যামেরা ও স্ক্যানার: টিভি৯ বাংলা",
+    "summaryBn": "টিভি৯ বাংলার বিশেষ প্রতিবেদনে জানানো হয়েছে, ভারত-বাংলাদেশ সীমান্তবর্তী গেদে ও পেট্রাপোল সমন্বিত চেকপোস্টে অত্যাধুনিক এআই মোশন সেন্সর এবং থার্মাল ক্যামেরা বসানো হচ্ছে। পণ্যবাহী ট্রেনের তলে বা মালবাহী কনটেইনারের গোপন কুঠুরিতে লুকিয়ে অবৈধ অনুপ্রবেশ ঠেকাতে বিএসএফ ও ইমিগ্রেশন কর্তৃপক্ষ যৌথভাবে এই প্রযুক্তিগত সুরক্ষা বলয় গড়ে তুলছে।",
+    "summaryEn": "TV9 Bangla dispatches a report on the deployment of AI thermal motion sensors and high-speed under-carriage scanners at Gede and Petrapole border stations. The technological surveillance network is designed to detect illegal border crossings hidden inside freight train chassis and commercial containers.",
+    "keyPointsBn": [
+      "গেদে ও পেট্রাপোল সীমান্ত স্টেশনে বিএসএফের নতুন এআই থার্মাল ক্যামেরা ও মোশন সেন্সর স্থাপন",
+      "পণ্যবাহী ট্রেন ও কনটেইনারের তলায় ঝুঁকিপূর্ণ অনুপ্রবেশ রোধে সমন্বিত স্ক্যানিং প্রযুক্তি",
+      "সীমান্ত পারাপারে বাণিজ্যিক গতিশীলতা বজায় রেখে সুরক্ষাব্যবস্থা জোরদার"
+    ],
+    "keyPointsEn": [
+      "AI motion sensors and thermal imaging cameras deployed at Gede and Petrapole border checkpoints",
+      "High-speed under-carriage scanning eliminates risk of illegal passage hidden in freight trains",
+      "Ensures uninterrupted border commerce while maintaining robust border security standards"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও প্রযুক্তি",
+    "categoryLabelEn": "Border Security & Technology",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্তে অবৈধ অনুপ্রবেশ ঠেকাতে আধুনিক প্রযুক্তির প্রয়োগ সংক্রান্ত তথ্যভিত্তিক নিরপেক্ষ প্রতিবেদন।",
+    "sentimentReasonEn": "Objective report detailing technological infrastructure upgrades along strategic border transit corridors.",
+    "source": {
+      "name": "TV9 Bangla",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://tv9bangla.com/west-bengal/gede-petrapole-ai-thermal-camera-scanner-deployment-border-security-1102948.html",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T04:30:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": false,
+    "isBreaking": true,
+    "tags": [
+      "TV9 Bangla",
+      "Petrapole",
+      "Gede Border",
+      "AI Camera",
+      "BSF Vigilance",
+      "Kolkata Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-064",
+    "slug": "firstpost-instagram-saima-wazed-who-resignation-political-pressure",
+    "title": "Firstpost Visual Dispatch: 'Saima Wazed Details Geopolitical Pressure and Administrative Violations Behind WHO Resignation'",
+    "englishTitle": "Firstpost Visual Dispatch: 'Saima Wazed Details Geopolitical Pressure and Administrative Violations Behind WHO Resignation'",
+    "banglaTitle": "বিশ্ব স্বাস্থ্য সংস্থার (হু) দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক পরিচালকের পদ থেকে ইস্তফা প্রসঙ্গে রাজনৈতিক চাপ ও অবিচারের বিশদ তুলে ধরলেন সায়মা ওয়াজেদ: ফার্স্টপোস্ট ইনস্টাগ্রাম পোস্ট",
+    "summaryBn": "ভারতের প্রভাবশালী ডিজিটাল সংবাদ মাধ্যম ফার্স্টপোস্ট (Firstpost)-এর ইনস্টাগ্রাম ভিজ্যুয়াল প্রতিবেদনে তুলে ধরা হয়েছে বিশ্ব স্বাস্থ্য সংস্থার (হু) দক্ষিণ-পূর্ব এশিয়া অঞ্চলের সাবেক পরিচালক সায়মা ওয়াজেদের পদত্যাগ সংক্রান্ত বক্তব্য। ক্ষমতাচ্যুত প্রধানমন্ত্রী শেখ হাসিনার কন্যা সায়মা ওয়াজেদ জানান, রাজনৈতিক উদ্দেশ্যপ্রণোদিত চাপ এবং ন্যায়সঙ্গত প্রশাসনিক প্রক্রিয়া লঙ্ঘনের কারণেই তিনি দায়িত্ব ছাড়তে বাধ্য হয়েছেন।",
+    "summaryEn": "In a featured visual dispatch on Instagram, Firstpost highlights the official testimony of Saima Wazed following her resignation as Regional Director of the World Health Organization (WHO) for South-East Asia. She detailed sustained political pressures alongside procedural lapses that compromised her mandate.",
+    "keyPointsBn": [
+      "হু-এর দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক কার্যালয়ে রাজনৈতিক হস্তক্ষেপে গভীর উদ্বেগ প্রকাশ",
+      "ন্যায্য আইনি ও প্রাতিষ্ঠানিক প্রক্রিয়া ক্ষুণ্ণ হওয়ার অভিযোগ তুলে পদত্যাগের পটভূমি ব্যাখ্যা",
+      "দক্ষিণ এশিয়ার আঞ্চলিক মানসিক স্বাস্থ্য ও জনস্বাস্থ্য কর্মসূচির ভবিষ্যৎ নিয়ে আন্তর্জাতিক মহলে আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Saima Wazed outlines targeted administrative and political pressure culminating in WHO regional exit",
+      "Criticizes abandonment of standard multilateral due process amid political shifts",
+      "International public health observers evaluate impact on regional health frameworks"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "আন্তর্জাতিক কূটনীতি ও স্বাস্থ্য",
+    "categoryLabelEn": "International Diplomacy & Health",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আন্তর্জাতিক সংস্থায় রাজনৈতিক চাপ এবং নীতিগত প্রক্রিয়া লঙ্ঘনের অভিযোগ তুলে ধরায় প্রতিবেদনের সুর সমালোচনামূলক।",
+    "sentimentReasonEn": "Critical dispatch spotlighting geopolitical interference in multilateral healthcare institutions.",
+    "source": {
+      "name": "Firstpost (Instagram)",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T03:45:00Z",
+    "readTimeBn": "১ মিনিট পোস্ট",
+    "readTimeEn": "1 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+      "Firstpost",
+      "Instagram Post",
+      "Visual Journalism",
+      "Saima Wazed",
+      "WHO Exit",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-065",
+    "slug": "ndtv-assam-himanta-biswa-sarma-adani-3200-mw-power-grid-bangladesh-export",
+    "title": "NDTV: 'Assam CM Himanta Biswa Sarma Lays Foundation for 3,200 MW Power Grid Project to Boost Regional Energy Connectivity'",
+    "englishTitle": "NDTV: 'Assam CM Himanta Biswa Sarma Lays Foundation for 3,200 MW Power Grid Project to Boost Regional Energy Connectivity'",
+    "banglaTitle": "আসামের কোকরাঝাড়ে ৩,২০০ মেগাওয়াট বিদ্যুৎ কেন্দ্র স্থাপন প্রকল্প উদ্বোধন করলেন মুখ্যমন্ত্রী হিমন্ত বিশ্ব শর্মা, আঞ্চলিক বিদ্যুৎ বাণিজ্যে গতি: এনডিটিভি",
+    "summaryBn": "এনডিটিভি জানিয়েছে, আসামের মুখ্যমন্ত্রী হিমন্ত বিশ্ব শর্মা কোকরাঝাড়ে ৩,২০০ মেগাওয়াট ক্ষমতাসম্পন্ন আদানি পাওয়ার গ্রিড প্রকল্পের ভিত্তিপ্রস্তর স্থাপন করেছেন। এই মেগা বিদ্যুৎ প্রকল্পটি ভারতের উত্তর-পূর্বাঞ্চলে কম খরচে নিরবচ্ছিন্ন বিদ্যুৎ সরবরাহের পাশাপাশি প্রতিবেশী বাংলাদেশের সাথে আঞ্চলিক বিদ্যুৎ ক্রয়-বিক্রয় চুক্তি বাস্তবায়নে প্রধান কেন্দ্র হিসেবে কাজ করবে।",
+    "summaryEn": "NDTV reports that Assam Chief Minister Himanta Biswa Sarma laid the foundation stone for a major 3,200 MW power generation project in Kokrajhar. The initiative aims to lower average power production costs in Northeast India while serving as a strategic hub for subregional power trade with Bangladesh.",
+    "keyPointsBn": [
+      "আসামের কোকরাঝাড়ে ৩,২০০ মেগাওয়াট মেগা থার্মাল ও গ্রিড বিদ্যুৎ প্রকল্পের ভিত্তিপ্রস্তর স্থাপন",
+      "উত্তর-পূর্ব ভারতে বিদ্যুৎ উৎপাদন খরচ কমানো ও গ্রিড স্থিতিশীলতা বৃদ্ধির লক্ষ্য",
+      "বাংলাদেশের সাথে বিদ্যুৎ বিনিময় চুক্তি ও উপ-আঞ্চলিক শক্তি সুরক্ষায় প্রকল্পটির তাৎপর্য"
+    ],
+    "keyPointsEn": [
+      "Assam CM lays foundation for 3,200 MW thermal power grid in Kokrajhar",
+      "Aims to reduce regional power generation costs and improve grid reliability across NE India",
+      "Positions Assam as a core hub for subregional power transmission to Bangladesh"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "অর্থনীতি ও বিদ্যুৎ বাণিজ্য",
+    "categoryLabelEn": "Economy & Power Infrastructure",
+    "sentiment": "positive",
+    "sentimentReasonBn": "উত্তর-পূর্ব ভারতের অর্থনৈতিক বিকাশ ও আঞ্চলিক বিদ্যুৎ অবকাঠামো জোরদারের কারণে সংবাদের সুর উন্নয়নমুখী।",
+    "sentimentReasonEn": "Positive economic coverage emphasizing infrastructure expansion and regional energy trade opportunities.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Assam",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BYVdEZ1F4Ymt2T29hOGFybjNrcDVsYld1eTdfR0d1eElnckdrcmpyWUR6ckZ3X3hWbnZldjlSVTNqWjlxbjh5Z3dWVnRn?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T02:15:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "NDTV",
+      "Himanta Biswa Sarma",
+      "Assam Power",
+      "Kokrajhar Grid",
+      "Energy Diplomacy",
+      "Assam Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-066",
+    "slug": "tripura-times-agartala-akhaura-rail-freight-subroom-icp-review",
+    "title": "Tripura Times: 'Tripura Chief Minister Reviews Agartala-Akhaura Freight Operations & Sabroom ICP Infrastructure for North-East Cargo'",
+    "englishTitle": "Tripura Times: 'Tripura Chief Minister Reviews Agartala-Akhaura Freight Operations & Sabroom ICP Infrastructure for North-East Cargo'",
+    "banglaTitle": "আগরতলা-আখাউড়া ট্রানজিট রেল রুট ও সাব্রুম সমন্বিত চেকপোস্টের পণ্য চলাচল ব্যবস্থা পরিদর্শন করলেন ত্রিপুরার মুখ্যমন্ত্রী: ত্রিপুরা টাইমস",
+    "summaryBn": "ত্রিপুরা টাইমস জানিয়েছে, ত্রিপুরার মুখ্যমন্ত্রী আগরতলা-আখাউড়া আন্তঃসীমান্ত রেললাইন এবং সাব্রুম সমন্বিত স্থলবন্দরে (ICP) পণ্য খালাস কার্যক্রম পর্যালোচনা করেছেন। চট্টগ্রাম সমুদ্রবন্দর ব্যবহার করে ত্রিপুরাসহ সমগ্র উত্তর-পূর্ব ভারতে পণ্য আনা-নেওয়ার খরচ ও সময় ৫০% কমাতে এই ট্রানজিট করিডোরকে পূর্ণাঙ্গ চালুর প্রস্তুতি চলছে।",
+    "summaryEn": "Tripura Times reports that the Chief Minister of Tripura conducted an inspection of the Agartala-Akhaura international rail transit link and Sabroom Integrated Checkpost. The infrastructure corridor is targeted at reducing freight delivery timelines and transportation costs to the North-East via Chattogram port.",
+    "keyPointsBn": [
+      "আগরতলা-আখাউড়া আন্তঃসীমান্ত রেললাইনে পরীক্ষামূলক পণ্যবাহী ট্রেন চলাচলের গতি পর্যালোচনা",
+      "সাব্রুম সমন্বিত চেকপোস্টে গুদামঘর, কাস্টমস সেড ও মাল্টি-মোডাল কার্গো টার্মিনাল তদারকি",
+      "চট্টগ্রাম বন্দর ব্যবহারের মাধ্যমে উত্তর-পূর্ব ভারতে দ্রুত ও সাশ্রয়ী পণ্য পরিবহন ব্যবস্থা"
+    ],
+    "keyPointsEn": [
+      "Inspection of trial freight operations along Agartala-Akhaura cross-border railway",
+      "Review of warehouse, customs shed, and cargo handling facilities at Sabroom ICP",
+      "Transit link expected to drop North-East logistics costs by 50% via Chattogram port access"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত ট্রানজিট ও অবকাঠামো",
+    "categoryLabelEn": "Border Transit & Trade Logistics",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ত্রিপুরা ও উত্তর-পূর্ব ভারতের লজিস্টিক সক্ষমতা বৃদ্ধির পদক্ষেপ হওয়ায় খবরের সুর ইতিবাচক।",
+    "sentimentReasonEn": "Constructive regional dispatch focusing on infrastructure readiness and trade optimization.",
+    "source": {
+      "name": "Tripuratimes",
+      "bureau": "Tripura",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T01:50:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Tripura Times",
+      "Agartala Akhaura",
+      "Sabroom ICP",
+      "North East Logistics",
+      "Tripura Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-067",
+    "slug": "aaj-tak-youtube-bangladesh-500-ton-hilsa-export-festive-trade",
+    "title": "Aaj Tak Video: 'Bangladesh Clears 500 Metric Tonnes of Hilsa Fish Exports to India Ahead of Festive Durga Puja Season'",
+    "englishTitle": "Aaj Tak Video: 'Bangladesh Clears 500 Metric Tonnes of Hilsa Fish Exports to India Ahead of Festive Durga Puja Season'",
+    "banglaTitle": "শারদীয় উৎসব ঘিরে ভারতে ৫০০ টন ইলিশ রপ্তানির বিশেষ ছাড়পত্র দিল বাংলাদেশ, পেট্রাপোল বন্দরে হিমায়িত ট্রাকে ব্যস্ততা: আজ তক ভিডিও রিপোর্ট",
+    "summaryBn": "আজ তক-এর বিশেষ ভিডিও প্রতিবেদনে জানানো হয়েছে, আসন্ন দুর্গাপূজা উপলক্ষে ভারতে ৫০০ মেট্রিক টন পদ্মার ইলিশ রপ্তানির বিশেষ অনুমোদন দিয়েছে বাংলাদেশ। পেট্রাপোল-বেনাপোল সমন্বিত স্থলবন্দরে বিশেষ কাস্টমস গ্রিন চ্যানেল তৈরি করে হিমায়িত খাদ্যবাহী ট্রাক পারাপার দ্রুত করা হচ্ছে।",
+    "summaryEn": "Aaj Tak's frontline video dispatch covers Dhaka's decision to permit 500 metric tonnes of Hilsa fish exports to India ahead of Durga Puja. Border checkpoints at Petrapole are operating dedicated green channels to accelerate refrigerated transit.",
+    "keyPointsBn": [
+      "আসন্ন দুর্গাপূজা উপলক্ষে বাংলাদেশ থেকে ৫০০ টন ইলিশ আমদানির বিশেষ অনুমতি কার্যকর",
+      "বনগাঁ ও কলকাতার পাইকারি মাছ বাজারে দামের ঊর্ধ্বগতি কিছুটা স্বাভাবিক হওয়ার প্রত্যাশা",
+      "পেট্রাপোল-বেনাপোল সীমান্তে কাস্টমস ও খাদ্য নিরাপত্তা পরীক্ষার সমন্বিত উদ্যোগ"
+    ],
+    "keyPointsEn": [
+      "Dhaka issues special waiver permitting export of 500 tonnes of premium Hilsa for festive demand",
+      "Wholesale seafood markets in Kolkata and North 24 Parganas register immediate festive optimism",
+      "Integrated Land Port Petrapole prioritizes green-channel clearance for cross-border refrigerated cargo"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত বাণিজ্য ও খাদ্য সংস্কৃতি",
+    "categoryLabelEn": "Cross-Border Trade & Food Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "শারদীয় উৎসবের প্রাক্কালে ইলিশ বাণিজ্যের অনুমতি দুই দেশের জনসাধারণের মাঝে সাংস্কৃতিক সৌহার্দ্য ও বাণিজ্যিক আদান-প্রদানকে গতিশীল করেছে।",
+    "sentimentReasonEn": "Positive reporting celebrating cultural bridge-building, cross-border seasonal trade, and bilateral economic cooperation.",
+    "source": {
+      "name": "Aaj Tak (YouTube)",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tZC0xZXBSVHpFWFEwLXhrM1V0QmxPcnNmQWZZNk1GSThzNXhtQlhNOXlyTlh4U3VKeFZyUTl4NjVfY3RoTE1fMmJFWWpNZnRnMUEybjBB?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-21T01:10:00Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "/images/hilsa-fish-market-trade.jpg",
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "Aaj Tak",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Hilsa Export",
+      "Festive Trade",
+      "Petrapole",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-068",
+    "slug": "assam-tribune-awami-league-death-sentence-tribunal-verdict-reaction",
+    "title": "The Assam Tribune: 'Awami League Rejects ICT Verdict Sentencing 7 Functionaries to Death, Terms Trial Politically Motivated'",
+    "englishTitle": "The Assam Tribune: 'Awami League Rejects ICT Verdict Sentencing 7 Functionaries to Death, Terms Trial Politically Motivated'",
+    "banglaTitle": "ঢাকায় ট্রাইব্যুনাল কর্তৃক আওয়ামী লীগের ৭ নেতাকে মৃত্যুদণ্ড প্রদানের রায়কে একপেশে ও রাজনৈতিক উদ্দেশ্যপ্রণোদিত আখ্যা দিল আওয়ামী লীগ: দ্য আসাম ট্রাইব্যুনাল",
+    "summaryBn": "দ্য আসাম ট্রাইব্যুনাল জানিয়েছে, ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল কর্তৃক আওয়ামী লীগের সাত সাবেক মন্ত্রী ও শীর্ষ নেতাকে মৃত্যুদণ্ড দেওয়ার রায়কে একপেশে ও রাজনৈতিক উদ্দেশ্যপ্রণোদিত বলে প্রত্যাখ্যান করেছে ক্ষমতাচ্যুত দলটি। ভারতের উত্তর-পূর্বাঞ্চলীয় সীমান্তে নিরাপত্তা সংস্থাগুলো সার্বিক পরিস্থিতি পর্যবেক্ষণে সতর্ক রয়েছে।",
+    "summaryEn": "The Assam Tribune reports that the Awami League has officially rejected the International Crimes Tribunal verdict sentencing seven former ministers and senior party functionaries to death, calling the proceedings one-sided and politically driven.",
+    "keyPointsBn": [
+      "ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের রায়কে বেআইনি ও রাজনৈতিক প্রতিহিংসামূলক বলে বিবৃতি",
+      "সাত সাবেক মন্ত্রী ও আওয়ামী লীগ নেতার অনুপস্থিতিতে ফাঁসির আদেশ প্রদান",
+      "সীমান্তবর্তী আসাম ও মেঘালয় সীমান্তে বিএসএফের নজরদারি জোরদার"
+    ],
+    "keyPointsEn": [
+      "Awami League issues formal statement terming ICT death sentences politically motivated",
+      "Seven former Hasina-era ministers sentenced in absentia by tribunal in Dhaka",
+      "BSF maintains heightened alertness across Assam and Meghalaya frontier regions"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও আইনি প্রতিক্রিয়া",
+    "categoryLabelEn": "Politics & Legal Dispatches",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংঘাত ও ফাঁসির রায়ের আইনগত প্রতিক্রিয়া সম্পর্কিত প্রতিবেদন হওয়ায় সংবাদের সুর উত্তপ্ত।",
+    "sentimentReasonEn": "Disquieting political report covering judicial sentences and party reactions.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Assam",
+      "language": "English",
+      "originalUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZGNYUmhTVTJaRF9VU2FxckpjRHBQc0RHOEo0M1hESkJsblU1UmR4SVRaenUzanZQbzNUVk1ndG9vR3JqQ0MwYXpjMEl4V3RxSVY0WVhMYi1fTXlWUW5udjR4SEl6LUIwOVVDRzZXSUVWZm1acnVGdlRfTWw5WUg4dE9KTHN3bVVSVWk0YTc2ZzhQdlhFZkxhZGFFd2IxeU1IVXhhOGhwV1NPRFVXUm9seW1XemdEeEHSAbwBQVVfeXFMTmk4NHNsckdiQlVjWkVjRHR5cFZ1Rk13NUltNU5mbTNmenRWWTQzZ05qTmk4LU16Z2VsaFVsQVNpcGQzZVJmLW4xVlFtbFlfMFcyVFZLU0NvdV9HXzNjRm1OWjBISHpYMDlqV0IyeTJYOFYyaDFHU3RRS0tFVW5rVjQwVzJkeC1NVkxlUU5VVjUyaWROdmxYbDJIVEQ2MXVCWkR3enV1Qnk0UTBsbVhrckxRNXlTb3ZJOTFwQlE?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-20T23:40:00Z",
+    "readTimeBn": "৪ মিনিট পাঠ",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "The Assam Tribune",
+      "Awami League",
+      "ICT Verdict",
+      "Assam Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-069",
+    "slug": "bartaman-patrika-bsf-north-bengal-siliguri-corridor-chickens-neck-surveillance",
+    "title": "Bartaman Patrika: 'BSF North Bengal Frontier Heightens Border Surveillance Across Siliguri Corridor Following Intelligence Alerts'",
+    "englishTitle": "Bartaman Patrika: 'BSF North Bengal Frontier Heightens Border Surveillance Across Siliguri Corridor Following Intelligence Alerts'",
+    "banglaTitle": "শিলিগুড়ি করিডোর (চিকেনস নেক) ও উত্তরবঙ্গ সীমান্তে বিএসএফের বাড়তি নজরদারি, কাঁটাতারে ড্রোন ও আধুনিক রাডার টহল: বর্তমান পত্রিকা",
+    "summaryBn": "বর্তমান পত্রিকার প্রতিবেদনে উঠে এসেছে, দেশের কৌশলগতভাবে অতি সংবেদনশীল শিলিগুড়ি করিডোর বা ‘চিকেনস নেক’ এবং উত্তরবঙ্গ সীমান্তে বিএসএফের উত্তরবঙ্গ ফ্রন্টিয়ার পাহারা দ্বিগুণ করেছে। সীমান্ত অতিক্রম করে অনুপ্রবেশ ও চোরাচালান ঠেকাতে রাতে ড্রোন ক্যামেরা, হ্যান্ডহেল্ড থার্মাল ইমেজার ও আধুনিক নাইট-ভিশন ডিভাইস ব্যবহার করা হচ্ছে।",
+    "summaryEn": "Bartaman Patrika reports that the BSF North Bengal Frontier has significantly reinforced operational vigilance along the strategically vital Siliguri Corridor ('Chicken's Neck'). Border units are employing thermal imaging devices and drone patrols to counter illegal border activities.",
+    "keyPointsBn": [
+      "শিলিগুড়ি করিডোর (‘চিকেনস নেক’) অঞ্চলে বিএসএফের অতিরিক্ত কোম্পানি মোতায়েন",
+      "রাতের বেলা কাঁটাতার সংলগ্ন এলাকায় নাইট ভিশন ক্যামেরা ও ড্রোনের মাধ্যমে টহল",
+      "সীমান্তবর্তী বাসিন্দা ও স্থানীয় প্রশাসনের সাথে সুরক্ষা সমন্বয় বৈঠক"
+    ],
+    "keyPointsEn": [
+      "Additional BSF companies deployed across the sensitive Siliguri Corridor sector",
+      "Night surveillance enhanced using drones and handheld thermal imaging equipment",
+      "Coordination meetings organized with border villagers and local civil administration"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত নিরাপত্তা ও টহল",
+    "categoryLabelEn": "Border Patrol & Vigilance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্তের কৌশলগত সুরক্ষা জোরদার সংক্রান্ত বস্তুনিষ্ঠ বিবরণ।",
+    "sentimentReasonEn": "Objective security reporting focused on strategic corridor defense.",
+    "source": {
+      "name": "Bartaman Patrika",
+      "bureau": "Siliguri",
+      "language": "Bengali",
+      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-20T22:15:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Bartaman Patrika",
+      "Siliguri Corridor",
+      "Chickens Neck",
+      "BSF Patrol",
+      "Siliguri Bureau"
+    ]
+  },
+  {
+    "id": "news-20260921-070",
+    "slug": "anandabazar-kolkata-international-film-festival-bangladeshi-indie-cinema-retrospective",
+    "title": "Anandabazar Patrika: 'Kolkata International Film Festival Announces Special Section Dedicated to Independent Bangladeshi Cinema & Shared Heritage'",
+    "englishTitle": "Anandabazar Patrika: 'Kolkata International Film Festival Announces Special Section Dedicated to Independent Bangladeshi Cinema & Shared Heritage'",
+    "banglaTitle": "কলকাতা আন্তর্জাতিক চলচ্চিত্র উৎসবে বাংলাদেশের নতুন ধারার সিনেমার বিশেষ প্রদর্শনী, দুই বাংলার চলচ্চিত্র চর্চায় নতুন সংযোগ: আনন্দবাজার পত্রিকা",
+    "summaryBn": "আনন্দবাজার পত্রিকা জানিয়েছে, আসন্ন কলকাতা আন্তর্জাতিক চলচ্চিত্র উৎসবে (KIFF) ওপার বাংলার স্বাধীন ও বিকল্প ধারার চলচ্চিত্র নিয়ে একটি বিশেষ কান্ট্রি ফোকাস বিভাগ চালু করার সিদ্ধান্ত নেওয়া হয়েছে। দুই বাংলার যৌথ প্রযোজনা, সাহিত্যভিত্তিক চিত্রনাট্য ও আবহ সংগীতের ঐতিহাসিক যোগাযোগ ফুটিয়ে তুলতে যৌথ প্যানেল আলোচনার আয়োজন থাকবে।",
+    "summaryEn": "Anandabazar Patrika reports that the upcoming Kolkata International Film Festival will host a dedicated showcase highlighting contemporary independent cinema from Bangladesh. The cultural initiative aims to foster artistic dialogue and cross-border creative collaborations.",
+    "keyPointsBn": [
+      "কলকাতা আন্তর্জাতিক চলচ্চিত্র উৎসবে বাংলাদেশের স্বাধীন নির্মাতাদের নির্বাচিত ছবির বিশেষ ক্যাটালগ",
+      "দুই বাংলার প্রখ্যাত পরিচালক ও সাংবাদিকদের অংশগ্রহণে যৌথ প্যানেল আলোচনা",
+      "সাংস্কৃতিক আদান-প্রদান ও সিনেমা পরিবেশনায় নতুন বাণিজ্যিক সম্ভাবনার উন্মোচন"
+    ],
+    "keyPointsEn": [
+      "Special catalog of independent films from Bangladesh selected for KIFF showcase",
+      "Joint panel discussions featuring directors, screenwriters, and film scholars from Bengal",
+      "Unlocks new distribution avenues and cross-border cultural exchange in cinema"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও চলচ্চিত্র উৎসব",
+    "categoryLabelEn": "Culture & Film Festival",
+    "sentiment": "positive",
+    "sentimentReasonBn": "দুই বাংলার শিল্প-সংস্কৃতির মেলবন্ধন ও সৌহার্দ্য প্রকাশের কারণে সংবাদের মান মানবিক ও ইতিবাচক।",
+    "sentimentReasonEn": "Heartwarming cultural coverage highlighting shared artistic heritage and film dialogue.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/entertainment/kolkata-international-film-festival-special-retrospective-on-bangladeshi-cinema-dgtl/cid/1549832",
+      "scannedAt": "2026-09-21T08:00:00Z"
+    },
+    "publishedAt": "2026-09-20T21:00:00Z",
+    "readTimeBn": "৩ মিনিট পাঠ",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&auto=format&fit=crop&q=80",
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Anandabazar Patrika",
+      "KIFF Kolkata",
+      "Bangladeshi Cinema",
+      "Shared Heritage",
+      "Kolkata Bureau"
+    ]
+  }
+,
   {
     "id": "news-20260920-057",
     "slug": "zee-news-bangladesh-reviews-101-hasina-era-deals-delhi-protect-interests",
