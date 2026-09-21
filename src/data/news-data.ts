@@ -588,7 +588,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "publishedAt": "2026-09-21T21:15:00Z",
   "readTimeBn": "৩ মিনিট পাঠ",
   "readTimeEn": "3 min read",
-  "imageUrl": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200&auto=format&fit=crop&q=80",
+  "imageUrl": "/images/border-checkpost-petrapole-gede.jpg",
   "isLeadStory": false,
   "isTrending": false,
   "isBreaking": false,
@@ -1097,7 +1097,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-21T04:30:00Z",
     "readTimeBn": "৩ মিনিট পাঠ",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "/images/border-checkpost-petrapole-gede.jpg",
     "isTrending": false,
     "isBreaking": true,
     "tags": [
