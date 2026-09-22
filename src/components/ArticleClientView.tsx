@@ -34,7 +34,16 @@ interface ArticleClientViewProps {
 
 function resolveArticleSourceUrl(article: NewsItem): string {
   const url = (article.source?.originalUrl || '').trim();
-  if (!url || url === 'https://www.youtube.com' || url === 'https://youtube.com' || url === 'https://www.youtube.com/' || url === 'https://youtube.com/') {
+  if (!url || url.includes('news.google.com/rss/articles/')) {
+    if (article.mediaFormat === 'youtube' || article.source?.name?.includes('YouTube')) {
+      const query = article.title ? encodeURIComponent(article.title.slice(0, 80)) : 'Bangladesh';
+      return `https://www.youtube.com/results?search_query=${query}`;
+    }
+    const sourceQuery = article.source?.name ? `"${article.source.name}" ` : '';
+    const query = encodeURIComponent(`${sourceQuery}${article.title ? article.title.slice(0, 70) : 'Bangladesh'}`);
+    return `https://www.google.com/search?q=${query}`;
+  }
+  if (url === 'https://www.youtube.com' || url === 'https://youtube.com' || url === 'https://www.youtube.com/' || url === 'https://youtube.com/') {
     const query = article.title ? encodeURIComponent(article.title.slice(0, 80)) : 'Bangladesh';
     return `https://www.youtube.com/results?search_query=${query}`;
   }

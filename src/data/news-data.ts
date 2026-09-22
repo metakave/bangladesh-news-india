@@ -107,7 +107,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Anandabazar Patrika",
     "sourceBureau": "Kolkata",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxON0pPMXNIYW5qRm9kMXlQWEEtOHFZTmtjX2daUjFhem9PS212RjhEeEtGQnUxLVNVUnlWTkxZX3o5WVJTU2tlZjE0RjV6SVJSVG16TjZiRzU0WHhwRVE5TjJncXV3bVJTc29RMjBuaU5tLWY3VnRSd3loazBITWx4N1ZBallBcXIxMk9WTWJGX1U0LTdCaWN5djdfMHlpV2NuNVpKSGgzcW1QT1A3ZjZxS2tZVGZDWmJWOUpfcdIBwgFBVV95cUxPR2NjN3ZtTjNUSnZVWngxclZOYlNnM05XQmMwek9WOWZtWE52VHI2aGVfeWgxUWFUcHdRX003YnJRNHFrejB4Uk9iLWJCaTYtSkV1VE42NTlieEVDeEFBT2pRVzZFcFNUakMzTmdUaThfcmNsX3M2dlhUc2paVllsWkQxbzA2RVh5bEwwRHFmemhJelpMcU50WHJBTks5OUY4R2prai0wUnNGRGFsSG8wUFRxVzFRUWJpamRWQWlyZVQ3UQ?oc=5"
+    "url": "https://www.anandabazar.com/world/sheikh-hasina-said-she-is-prepared-to-face-imprisonment-in-bangladesh-dgtl/cid/1714796"
   },
   {
     "id": "alert-049",
@@ -118,7 +118,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Tripura Times",
     "sourceBureau": "Tripura",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb1hUVlFhMW5zMDhkTkFONnBkMHp"
+    "url": "https://www.ntnews.com/international/sheikh-hasina-says-she-wants-to-return-to-bangladesh-question-is-not-when-but-how-2517198"
   },
   {
     "id": "alert-048",
@@ -129,7 +129,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Tripura Times",
     "sourceBureau": "Tripura",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSnJIcWlSc2tqeDE3OXVJTC1CMUF"
+    "url": "https://tripuratimes.com/fruit-diplomacy-tripura-sends-600-export-quality-pineapples-to-bangladesh"
   },
   {
     "id": "alert-047",
@@ -140,7 +140,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Assam Tribune",
     "sourceBureau": "Assam",
     "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLW0wRzdDLWh1V1EteE03aW9vZGRib29tWlUxN29hLUUzWHVtaG94N2FTOVRybllDbF9CU3pORnBXdGJjX2pPbEs1ZExYb2JPcTRmRjhpTDQ5QkRpdTR5SDlhOFZTSHg3M0psRGtEbDFtYXpBam1fVnhFa3FLWXFKd1hFVlBCdlo1amE1Z1VqelVITFlSdU1obGU5aG55Y1E1dVdZejU4d2dmSUJNZS1WSzR30gG3AUFVX3lxTE8wa2c0bzUtREdXX3J6b0pjY3FYSjVvTjFzeGVESGgzMm5DVW53bFNmS1NkQzl4eXBrQjNQZTJwVVVvdWt4ODVGajg1T3RjVlFKaks0NnNiZXFzbkM5SlVSMGl6aWpaNmZCcThlVjNsTkkySGtlbFl3WkhySmpuRkdGU014U3Z4QU9fZ3JtM1Vhd0N5ZU9qeW8wWllFUC1Jb3BZNVhIb0FteC1kT2tzS0FNRzZSTVNlTQ?oc=5"
+    "url": "https://assamtribune.com/international/awami-league-terms-death-sentences-for-7-leaders-one-sided-fabricated"
   },
   {
     "id": "alert-046",
@@ -173,7 +173,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Sangbad Pratidin",
     "sourceBureau": "Kolkata",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMGprNTl4Qm44NmJpWTdxZm5xX0NFdlg1Z3pCZzUxNHB2TmFSb2pVY2xyYm90Zm15a3V4R05PY2x4VHNkT2NZRDlzOHFiNHJzY2NCazdOYXl5cTkyVkdKNk9aTmt0WmNFckdDMmY3bV84dTRKbV9jYjQ0UVh2NVFOejFkUjlVb19VZlVyLVdQZ3pvVEJUV0JJdzlKUjRQWnVRU1JSTTUyOExFYUhLbjMtdklRM3dRekdENGxCN25xT1luX2N5aXFrX9IB0AFBVV95cUxNZS1CMnJLOVU4UGdpaG4zQ3JRckdTc0pyQnhwanhZclVXUHU4Y0dfcGhyZlVrMUlXcFltd2FBdUZkX1lZbW5UN0ZoQWpSTGlHNXp0MGF3cGkwdjFrX3QtZ0JWWlhvczR0dVRkdFNLLWdKVHVTTDkzM2NSNXhITFdmT09jTm9EZFl2SVFSSF93cG82aFVLc2VtTDBNQ2N3ekN1cWtwRFVYQmZWMV9VWjlUQXFoZ2dWVUEzTjdMbXVoNEZrRUJsZC1lOFE4bkd0cnFY?oc=5"
+    "url": "https://www.sangbadpratidin.in/bangladesh/india-and-bangladesh-to-set-up-joint-task-force-to-promote-bilateral-trade/pid/1349789/"
   },
   {
     "id": "alert-043",
@@ -184,7 +184,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "ThePrint (YouTube)",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BX3FHWFVDMS1mRldYelVRY0FtZkpWaUllZ0ptQ0QwbzItQUFQellZZHl6ak9mQmhyeWpPcXhFX1c1T3I4UjN5andGQTZZZ1cxMmdMVU1n?oc=5"
+    "url": "https://www.youtube.com/watch?v=RLmWH0186pY"
   },
   {
     "id": "alert-042",
@@ -206,7 +206,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Syandan Patrika",
     "sourceBureau": "Tripura",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fUHhSVDBkbG9GQ2lXOXdsZlFPR3E5VkFoSGVOMm1yTU5yWWs1T0E1aEVwMnI0Wm1DWTFiUDg3Zm55MTZUUjVNNGxLTEY4aDdJOEE?oc=5"
+    "url": "https://www.instagram.com/p/DdgToa0FYvJ/"
   },
   {
     "id": "alert-040",
@@ -228,7 +228,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Telegraph India",
     "sourceBureau": "Mumbai",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ITE1WYmYteUxrUVJKQWc1cDdQYjBIakphUDE0eVlkSUxDWDRsY1Z3bUVTczcxclBQcWxsQlNVMnBrWTdmeTNjUzk3MFdFeXVFUWJXQlZB?oc=5"
+    "url": "https://www.youtube.com/watch?v=6Ef5W_3Dkt8"
   },
   {
     "id": "alert-038",
@@ -239,7 +239,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Amar Ujala",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5"
+    "url": "https://www.instagram.com/p/Dde_z34SBGu/"
   },
   {
     "id": "alert-037",
@@ -261,7 +261,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Aaj Tak (YouTube)",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tZC0xZXBSVHpFWFEwLXhrM1V0QmxPcnNmQWZZNk1GSThzNXhtQlhNOXlyTlh4U3VKeFZyUTl4NjVfY3RoTE1fMmJFWWpNZnRnMUEybjBB?oc=5"
+    "url": "https://www.youtube.com/watch?v=DDMym5YRp6Y"
   },
   {
     "id": "alert-035",
@@ -272,7 +272,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Firstpost (Instagram)",
     "sourceBureau": "Delhi",
     "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5"
+    "url": "https://www.instagram.com/p/Ddf2gIwm9nI/"
   },
   {
     "id": "alert-034",
@@ -294,7 +294,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "ThePrint (YouTube)",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BX3FHWFVDMS1mRldYelVRY0FtZkpWaUllZ0ptQ0QwbzItQUFQellZZHl6ak9mQmhyeWpPcXhFX1c1T3I4UjN5andGQTZZZ1cxMmdMVU1n?oc=5"
+    "url": "https://www.youtube.com/watch?v=RLmWH0186pY"
   },
   {
     "id": "alert-032",
@@ -305,7 +305,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Hindustan Times",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeG1GajBTSGlCZDVBcGRybnhjeU9FN2lqd1lFZWNGWG11a3E0QVhxekJrT2QtUjVmTS0zYVFtSDdYMVBmUkFOOHdmNmNuRUdwU2ZnYzJsQThtekZEcGZwSmZhUjFIZnY3OGN4NFZRTVVhaUNUYXg3QlFJQVU5Zy1pTnBXWkdoOE5qODQ0QWJHVWZsajdpd1lVb3J6cWd2VDlkMGhITnFUZTVuZXpQdW1pMnNZY1A2S09NYnpVd3RsMXZrTUxqNXZTZGZNakdLOC1DN2Q5TktTVUstU1hhU1BueTE2VzZpSDQxNHByTl9QbEhVQdIB9wFBVV95cUxOUWE0eThvTUxINTh2QkYxdTB0SGh6U29qano0dllIRXJhXzlMYmM5Y0M4SVM4ME5jQWtfWXZtTXQtbllNekpaRU83M0pTQ29DVThuTjZOLVRHNi1NblNBeFppQVE2TTF3UFF1cnZmb1pVRFFHV3Q0dnpOYUc0bW5sR2ZvdTlZR1F3LUhlWDBnS3U0SFU3SXRUQkxmWVVYYkVsUlNPWUlTSDBsa0FUMkxSWXFrTHprTnJ5QTN5a3R5RmhvZVhQUTdHRFBHemlEc2ptV1k5bEh4ZV9IZ2VXYVlZX2diOHpJWWQ4NERGM3d0ZXZYbmNxU09N?oc=5"
+    "url": "https://www.hindustantimes.com/india-news/bangladesh-says-wants-to-reset-ties-with-india-calls-sheikh-hasina-era-relationship-uncomfortable-101789317654247.html"
   },
   {
     "id": "alert-031",
@@ -316,7 +316,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "NDTV",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVDNsZlh1czNPN0c3UjVnR3B5dlNrLTJpbWJYbTBIekwxS0E1Ulk3QzFmS0F4Q0xZa1dKZmhVbnd0MlBQOUhmSVU1ZFhTbVozN29CTS1PcFlBWDVwcHh0cVlZRjdpOVdET195cUFwakNFSGdMRExXOXhySDJGdTZQbzcxTUJpOGJxTS1MUTd5TmpGcEZyeDg3UDNveWtmcEpUeWFnbjhXTEluUGZWbDhBeEhoTXB3TEJrNTFndHNteng4TknSAcsBQVVfeXFMTk9yMVRCZm9VWWdqbHM2ckNzRW9LcE9KS2VIUmdPYlZTSllYLXc1d1N6MXdHNU5wXzJpY0h4cTdIR2VYSWpIaFNXX1EyRzFwdWE4STJpdFgydUllcEp6Vnk0RTdhZ3dOamp4Ymppd2VHVVRhaG1fNVhfMENJOWl5RGZEUDlneXVTTEcwWlVxM1phYTRuaWRWUEE5ckFSOTRPX0syams1WUxTalYzaFBQOFpFSHNjLWtDMWNUYS0yLXFxbnFsd05sZEU0cDQ?oc=5"
+    "url": "https://www.ndtv.com/world-news/india-keeps-door-open-for-normalisation-of-bangladesh-ties-despite-sheikh-hasina-row-12042361"
   },
   {
     "id": "alert-030",
@@ -327,7 +327,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Times of India",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaU9GbnZVdWRLb0Q5d3ZGaC1BR216dU15Nm9ITVh2MjNxV25JN1pINUphclBFbUVIOWp2cEpZMEJFLXJZUjBQcV9nYmh3dkFHb2xHbElLeTRaeFZrNmpGZGF3VmRBX0VGeTdBbGNkbDlaYjBBaWJMaXJaVFJXQ0E1NmhaR3BNaC1NM25vREtUOXdnTUZONUt6ZmxPMTA3Ny13RzdWeGRSWGpMSGR3RW4tYUpKVE94SHB4UHljcDdldk9ia3RkWFpKNWs2ZG0tZlZiQmQtYU5hdUxhRGt3OUlhcGpEOVhLWUVFU1NaUms1ZUZUVThPZ3pqUTcxNUpMci1icUFkSlJtT3HSAY4CQVVfeXFMTklpaHo4T1U1T2lSZFdoUjVDM1FkZGNORFI1UHQ4SEdGOE9WYkQ5Mllya0pDUE9leWw3NHlYWkxvcjFPekl6eTZOVEJiNy1XQWczMDg2SEdqbXBoLUJaZHRHRWlhdThkTDBBdzVleDhKVXVmeWY2Yjd3eWtSQVoyYmhRX3RqWW5PYXVvM0xUNm1XQ0ZRaWVJcWx1dXhsZU9nUFlRUDBhMWVfWk1IcEJsYU14d3JqSjd1dW50Z25waElONG1DN21wTnYtMXV4RXp5Z1BzYVhBdkFQLWV5SkMxS19BYnk4WGJlbWpYUUVVY0tTRlJDNGZydmhKNHJ0SVMzQjNLeXRGeVBvQWFEbVJR?oc=5"
+    "url": "https://timesofindia.indiatimes.com/india/will-take-all-necessary-actions-indias-stern-warning-amid-reports-of-bangladesh-reviewing-101-bilateral-pacts/articleshow/134336066.cms"
   },
   {
     "id": "alert-029",
@@ -338,7 +338,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "News18",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMEdkMzF2S1B3SHdsWUdVemxJWWZ1MTVQZkFaYzM4dUN3V0FIb3VQRENLV2VpWElBMnh1WWE0R2xRTFl5ZTIyRUpBc1Q0RDYweDVoT21FWWdIallUQW96bDlBN2plY3FiMnFOZi10djRvOU5fZVJMRE9Idi11RnN0RzF4UnBwSG11bm9HRlUwX1hueVpRaE4yMDNNMlVNdmliWkFHU01fQnVYSk5oVXZWTE1mZzRWNzdXT1FINjlPWE5OMWt0cVVyTWw2a3XSAdIBQVVfeXFMTnh4U2FOV0lEY2VEekdtM2Ixd1VoN3R6VVFVam9US09XckV0MEp4cFdZeWVQa3VlOXYxQUtHV3U1TVh1aG00dTN0RkR4bE1ZdGpHSE53Q3AzaUZ2M092U1pfRDF6TmVuaDhwQUJPMkxCRkRtd0FpZWVHaUxwWHo0QWJMNGFHXzNvSGJ4bUt3RFVsc0E3RW9lcEdZTHloNEZCQTJwbktYNlZ0eVNkZ1U5dnRXT2RhTkh5eTRLekxWREhEN0Z3d04xUWMyYzNmbzd0T2JR?oc=5"
+    "url": "https://www.news18.com/india/bangladesh-pm-tarique-rahman-may-visit-india-in-november-or-early-december-sources-ws-klt-10338395.html"
   },
   {
     "id": "alert-028",
@@ -349,7 +349,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Dainik Jagran",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONTJfT3ItMmhSZGpZV1NFRVVJYUs2M3dGQWMyNEdsSl83ZUVBcDdVaWlBTGxIV2dodzRpRVkzdUwxSnFHbkJlVDBoTkRCVEhZbkdieEw0UTdRZ1RHRThhaXpGT1ZDTGhXYzFTTHRHMDZmelhmT245aHo0RkdQcmZySHhScGF4UmxsSWVLVWd1NlJZUk5CQjJIU0l1RmExWEU?oc=5"
+    "url": "https://www.jagran.com/world/other-bangladesh-no-plan-to-cancel-101-india-agreements-40378781.html"
   },
   {
     "id": "alert-027",
@@ -360,7 +360,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Navbharat Times",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdFIwTkNoempGUGlDM2E0cGVOVHFZZ3IxNWZqRzFCalU0YjFOcHgzV3hiUE9rOUFjY2VPUVplNzd4dFpUUDFBUFQwdWdwY293dDhSTVNDN2YwZ0hrVjBSelZEaW9CMGdqYWM1RjNsd2tLSWdhYmw5S0lxVHozVHFwczBJc213S2pJM0VwX1RUN1hVakpMSk1xM3Q1a0Z1elI0TWk4UDY5UFpyRjhRTWNVcXhoY1FfOHBpaVY4V1FPd3o3bGJsRlNjOFI4Vld5R3hPM1c3VTJmczhLa1lJRTFTZ19XUFBZajJiMnlDRUpVRnRMS1lRTnJ30gH8AUFVX3lxTFBhVDdJVExoZzVyaU9fclJjaWJhOFQ0aGwxSEJIYnpoUnBxU0tHZEQ0Z3pMVVBhT3YzWHMwTjRxR2FvRjRnT1FKUktzRjEwTlNBdVZlMFhmZ1NTUTNLRktKQlhXVmVzVXVXWlBZaWFlRWx1cnNWY0x6TXd4Ujh6T19CNTMtV0x5d042bHlNVHA1dHB0OC1wT3ZkWEVvdVVOTGhRbDIyVlV2SDZIZS1HNEJLbHV2LTg0bFliMVJaX2tqMFdkd0RNdE5FQ0dPZzg1aXBxdENaZnlDT0RQUGxRWmJuWktxb0ozRVNWcDFlWVVtQ2lKWGJ4WjJYcmdtbA?oc=5"
+    "url": "https://navbharattimes.indiatimes.com/world/bangladesh/bangladesh-tarique-rahman-govt-review-101-agreements-and-mou-with-india-know-reason/articleshow/134348680.cms"
   },
   {
     "id": "alert-026",
@@ -382,7 +382,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Indian Express",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUXM2Tlk0N0J4N2FRRUkxc19OeDhWekdVYlBneUZILTJUMERldlV5MlJjY3pkM19udGdIUFZ5Y21rY1duZ1ZTYmlfQ3VVbTlTYWc?oc=5"
+    "url": "https://www.instagram.com/p/DdbwIztD34Y/"
   },
   {
     "id": "alert-024",
@@ -393,7 +393,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Bartaman Patrika",
     "sourceBureau": "Kolkata",
     "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5"
+    "url": "https://sports.ndtv.com/asian-games-2026/india-vs-bangladesh-asian-games-womens-cricket-semifinal-preview-6582910"
   },
   {
     "id": "alert-023",
@@ -404,7 +404,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Wall",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5"
+    "url": "https://syandanpatrika.com/news/tripura-assam-border-bsf-heightens-vigil-akhaura-agartala-icp-20260920"
   },
   {
     "id": "alert-022",
@@ -415,7 +415,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Navbharat Times",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5"
+    "url": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms"
   },
   {
     "id": "alert-021",
@@ -437,7 +437,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Navbharat Times",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5"
+    "url": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms"
   },
   {
     "id": "alert-019",
@@ -448,7 +448,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Sangbad Pratidin",
     "sourceBureau": "Kolkata",
     "sentiment": "negative",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMHR0ZVhXT0EwUFRhRW85dGx2bWN2U296aDR0UnZDWWlFLTZ3U1UtQUZScFhKdVVacmZFb1BBcG9RUGxqMm9LakR1T0ZfR2FVTnN5U3J6ekhFQnhUZnJZekFsQnhiWWRtYWR0ZW5WQnZra25FaldwbFB6Tm5JVjBBcWF3bl9kckt3dFhEaTRoV3R4ODdZTnBlMXlqcFhxNzNHNlV6TC16cjNBenhTc0VUMjhZUlhpRmFm?oc=5"
+    "url": "https://www.sangbadpratidin.in/app/bangladesh/sheikh-hasina-wants-to-return-to-bangladesh-on-december-14/pid/1343530/"
   },
   {
     "id": "alert-018",
@@ -503,7 +503,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Anandabazar Patrika",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxON0pPMXNIYW5qRm9kMXlQWEEtOHFZTmtjX2daUjFhem9PS212RjhEeEtGQnUxLVNVUnlWTkxZX3o5WVJTU2tlZjE0RjV6SVJSVG16TjZiRzU0WHhwRVE5TjJncXV3bVJTc29RMjBuaU5tLWY3VnRSd3loazBITWx4N1ZBallBcXIxMk9WTWJGX1U0LTdCaWN5djdfMHlpV2NuNVpKSGgzcW1QT1A3ZjZxS2tZVGZDWmJWOUpfcdIBwgFBVV95cUxPR2NjN3ZtTjNUSnZVWngxclZOYlNnM05XQmMwek9WOWZtWE52VHI2aGVfeWgxUWFUcHdRX003YnJRNHFrejB4Uk9iLWJCaTYtSkV1VE42NTlieEVDeEFBT2pRVzZFcFNUakMzTmdUaThfcmNsX3M2dlhUc2paVllsWkQxbzA2RVh5bEwwRHFmemhJelpMcU50WHJBTks5OUY4R2prai0wUnNGRGFsSG8wUFRxVzFRUWJpamRWQWlyZVQ3UQ?oc=5",
+      "originalUrl": "https://www.anandabazar.com/world/sheikh-hasina-said-she-is-prepared-to-face-imprisonment-in-bangladesh-dgtl/cid/1714796",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-23T01:45:00Z",
@@ -547,7 +547,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Sangbad Pratidin",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaTZ1bTJHcjZzcjlBMUUyNUtiR1RwdUplZmQ1WnQwUF85cHlybnNDTHQ1dWVZZ2dobWw4TzdFalRRNk5vaG5QSkRlTTJoVFBJako1MVZWVHZ6TE1xeFgxVXp0X2tqaTB2bld5UWhpQ1liRTZoSjljSjhhXzRQZWE3cEhGWUhsWjVZeXZPcGR4V0Exc1ZmZWdwVVFldWMzTWhjQjlUMnBsdGFkb3FFNGtn0gGvAUFVX3lxTE1pNnVtMkdyNnNyOUExRTI1S2JHVHB1SmVmZDVadDBQXzlweXJuc0NMdDV1ZVlnZ2htbDhPN0VqVFE2Tm9oblBKRGVNMmhUUElqSjUxVlZUdnpMTXF4WDFVenRfa2ppMHZuV3lRaGlDWWJFNmhKOWNKOGFfNFBlYTdwSEZZSGxaNVl5dk9wZHhXQTFzVmZlZ3BVUWV1YzNNaGNCOVQycGx0YWRvcUU0a2c?oc=5",
+      "originalUrl": "https://m.sangbadpratidin.in/article/india/question-isnt-when-but-how-sheikh-hasina-on-her-return/pid/1351510/",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-23T01:15:00Z",
@@ -591,7 +591,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONXY1YmNEbE81Tmd3OWdRb3VkZ1lGZ3NyYkZjYkU2aTNoanpvU1YwMGpaV1JKWUdFdlExeUNqSUtQTlZhUlNWV3B0VHZaTV9nUkJmYlhWZVRiWGo5RGdybEtCMUNiSjVXZlR1Q0dlUVdRNUZvcEVMb0YzcWE1akdfek51WjVQOEVkaVltRDJtZkpvYkdOYlNiMmE0aHZQOHRWSGVYTEpvWGRUZnpweTBGTDhB0gG3AUFVX3lxTFBuenQ3UU5NaElnb3JEUXpsbWx4dzl5RzJBOHJtajJWaWdrY05pYl9iS2I1NFlTbUZ1ZVdfSDd2c2NYelk0N3VMZW9PeXVMOXd6M1duOXd6dzB0UEZzVG1feG4tSUUtTXJuZi1PTE9GRmhBUkh2N1U2alUtLTRrUUR3alZPSG9zM05wMnE4eXQyQ1REazgyWDM3R3FTX0ljUG1laWpveVNxVmRCb0xGSlFTMmo1QW1fWQ?oc=5",
+      "originalUrl": "https://www.thewall.in/news/bangladesh/awami-league-leadership-rebuilding-and-ground-activation-strategy-20260923",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-23T00:50:00Z",
@@ -634,7 +634,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Namasthe Telangana",
       "bureau": "Mumbai",
       "language": "Telugu",
-      "originalUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPd1ZpZFdFUXQtT3dwbDAzeXUwMHY4QzFTMGdKWTNYQVJaY0NSNkpWNnFWX0hSY2J3bVdDdV85OWlqLVJrNlRtRXRXZGU2b250UmRXNTZLdjRFUnlIcHdBQUZwclBZbXFod2NTcXRnUjdCeTBMajhCTjlNNm5HUm9xVk04NVpveUktaVk4NGtkLTFsWFNTaERnWnZLTHZ3STJISU9jbVFtUHkyODc2QnJzekZGX3oyZVR1TnF3ZERDd2ZuM2pJ?oc=5",
+      "originalUrl": "https://www.ntnews.com/international/sheikh-hasina-says-she-wants-to-return-to-bangladesh-question-is-not-when-but-how-2517198",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-23T00:30:00Z",
@@ -677,7 +677,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Dainik Jagran",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd0pQQ2NXWlhndGxRM0JuLXNfMkJ4N2VHYy02eG1SRlozaVFieGxrbVgyVUFwejd2WFA2ZkhhaEJneXVDT1E1Z2lzSzhnNFFsYzR3QUtEQ1Y0Uk5GdzVtTTJac3ZEakU1Slhlckg1bXlIajE3NnNHOUxYMmpOSV9fR1RKYnIzSWhMaGtrNmV1eEJRWHFJTnBwX19FOWU5dTZRQTBHUzREUEprS3FzQXUzNllR?oc=5",
+      "originalUrl": "https://www.jagran.com/news/national-sheikh-hasina-outlines-full-plan-for-her-return-to-bangladesh-40381664.html",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T23:55:00Z",
@@ -721,7 +721,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T23:20:00Z",
@@ -765,7 +765,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Tripura",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb1hUVlFhMW5zMDhkTkFONnBkMHp",
+      "originalUrl": "https://tripuratimes.com/tripura-cm-welcomes-restart-of-agartala-dhaka-kolkata-bus-service",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T22:45:00Z",
@@ -809,7 +809,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Tripura",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSnJIcWlSc2tqeDE3OXVJTC1CMUF",
+      "originalUrl": "https://tripuratimes.com/fruit-diplomacy-tripura-sends-600-export-quality-pineapples-to-bangladesh",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T22:15:00Z",
@@ -853,7 +853,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Siliguri",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUzhvOTM4ZzdYNDlhZVNQcC1yd29",
+      "originalUrl": "https://tripuratimes.com/meghalaya-bans-illegal-import-and-sale-of-fish-from-bangladesh",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T21:40:00Z",
@@ -897,7 +897,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Assam",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZGNYUmhTVTJaRF9VU2FxckpjRHBQc0RHOEo0M1hESkJsblU1UmR4SVRaenUzanZQbzNUVk1ndG9vR3JqQ0MwYXpjMEl4V3RxSVY0WVhMYi1fTXlWUW5udjR4SEl6LUIwOVVDRzZXSUVWZm1acnVGdlRfTWw5WUg4dE9KTHN3bVVSVWk0YTc2ZzhQdlhFZkxhZGFFd2IxeU1IVXhhOGhwV1NPRFVXUm9seW1XemdEeEHSAbwBQVVfeXFMTmk4NHNsckdiQlVjWkVjRHR5cFZ1Rk13NUltNU5mbTNmenRWWTQzZ05qTmk0LU16Z2VsaFVsQVNpcGQzZVJmLW4xVlFtbFlfMFcyVFZLU0NvdV9HXzNjRm1OWjBISHpYMDlqV0IyeTJYOFYyaDFHU3RRS0tFVW5rVjQwVzJkeC1NVkxlUU5VVjUyaWROdmxYbDJIVEQ2MXVCWkR3enV1Qnk0UTBsbVhrckxRNXlTb3ZJOTFwQlE?oc=5",
+      "originalUrl": "https://assamtribune.com/international/awami-league-terms-death-sentences-for-7-leaders-one-sided-fabricated-1617559",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T21:10:00Z",
@@ -943,7 +943,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5NcUQ1TkhfdW1uRURFU1Nib0hoXzVYNUJCOXhNc0wzTzZzQ0lGeFhUOXRjSUZ4U0o4RDZqU1I1X19lUEdpbEdYaU5pampCbElsazNlOHZ3?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=pIwwJyzSGAA",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T20:30:00Z",
@@ -1217,7 +1217,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "WION News (YouTube)",
     "bureau": "Delhi",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFWXBqRHZiaXE2ajU2TV9YcTZEQnlqTU1WUTRuRzJPNElYQXZmLTNyNWJHaWtuVkpIQnhwQ0lDQW1BVkxTZVlIVndCQ1RfTC1xZE9zSGdR?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=F-e2nupwMmU",
     "scannedAt": "2026-09-22T16:00:00Z"
   },
   "publishedAt": "2026-09-22T14:00:00Z",
@@ -1309,7 +1309,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "The Assam Tribune",
     "bureau": "Assam",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLW0wRzdDLWh1V1EteE03aW9vZGRib29tWlUxN29hLUUzWHVtaG94N2FTOVRybllDbF_SAeM?oc=5",
+    "originalUrl": "https://assamtribune.com/international/awami-league-terms-death-sentences-for-7-leaders-one-sided-fabricated",
     "scannedAt": "2026-09-22T14:30:00Z"
   },
   "publishedAt": "2026-09-22T14:00:00Z",
@@ -1355,7 +1355,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Firstpost (YouTube)",
     "bureau": "Delhi",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ab2R6bWRnZ1AxUGkyenlXdmphdWNZdWF3S0xuSXU0MC1BbDFpZ29ScjJYR2d1Q1M2OFYxV0V0aVFRMEFVSXJhWFh6ZVVNTjZnbkluSGd3?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=wqfF4HYwEIQ",
     "scannedAt": "2026-09-22T14:30:00Z"
   },
   "publishedAt": "2026-09-22T13:30:00Z",
@@ -1495,7 +1495,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Sangbad Pratidin",
     "bureau": "Kolkata",
     "language": "Bengali",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMGprNTl4Qm44NmJpWTdxZm5xX0NFdlg1Z3pCZzUxNHB2TmFSb2pVY2xyYm90Zm15a3V4R05PY2x4VHNkT2NZRDlzOHFiNHJzY2NCazdOYXl5cTkyVkdKNk9aTmt0WmNFckdDMmY3bV84dTRKbV9jYjQ0UVh2NVFOejFkUjlVb19VZlVyLVdQZ3pvVEJUV0JJdzlKUjRQWnVRU1JSTTUyOExFYUhLbjMtdklRM3dRekdENGxCN25xT1luX2N5aXFrX9IB0AFBVV95cUxNZS1CMnJLOVU4UGdpaG4zQ3JRckdTc0pyQnhwanhZclVXUHU4Y0dfcGhyZlVrMUlXcFltd2FBdUZkX1lZbW5UN0ZoQWpSTGlHNXp0MGF3cGkwdjFrX3QtZ0JWWlhvczR0dVRkdFNLLWdKVHVTTDkzM2NSNXhITFdmT09jTm9EZFl2SVFSSF93cG82aFVLc2VtTDBNQ2N3ekN1cWtwRFVYQmZWMV9VWjlUQXFoZ2dWVUEzTjdMbXVoNEZrRUJsZC1lOFE4bkd0cnFY?oc=5",
+    "originalUrl": "https://www.sangbadpratidin.in/bangladesh/india-and-bangladesh-to-set-up-joint-task-force-to-promote-bilateral-trade/pid/1349789/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T23:45:00Z",
@@ -1541,7 +1541,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "ThePrint (YouTube)",
     "bureau": "Delhi",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BX3FHWFVDMS1mRldYelVRY0FtZkpWaUllZ0ptQ0QwbzItQUFQellZZHl6ak9mQmhyeWpPcXhFX1c1T3I4UjN5andGQTZZZ1cxMmdMVU1n?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=RLmWH0186pY",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T22:30:00Z",
@@ -1681,7 +1681,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Firstpost (Instagram)",
     "bureau": "Delhi",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Ddf2gIwm9nI/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T19:30:00Z",
@@ -1727,7 +1727,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Assam Tribune",
     "bureau": "Assam",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T18:45:00Z",
@@ -1773,7 +1773,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Uttarbanga Sambad",
     "bureau": "Siliguri",
     "language": "Bengali",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T17:30:00Z",
@@ -1819,7 +1819,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Telegraph India",
     "bureau": "Mumbai",
     "language": "English",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ITE1WYmYteUxrUVJKQWc1cDdQYjBIakphUDE0eVlkSUxDWDRsY1Z3bUVTczcxclBQcWxsQlNVMnBrWTdmeTNjUzk3MFdFeXVFUWJXQlZB?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=6Ef5W_3Dkt8",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T16:15:00Z",
@@ -1865,7 +1865,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Aaj Tak (YouTube)",
     "bureau": "Delhi",
     "language": "Hindi",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LZ0prZjU2OWRCT1BjS3NwVUE4cU5fUFNDdXBTMGx1bTFxTkxwNS1kU0xpbExsci1sMER0a1hLR2hjZkc4UWJwSEdvTmNadVExOHZsNzR3?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=2DZkMyKJh8M",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T15:00:00Z",
@@ -1911,7 +1911,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Anandabazar Patrika",
     "bureau": "Kolkata",
     "language": "Bengali",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T14:00:00Z",
@@ -1954,10 +1954,10 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "sentimentReasonBn": "রাজনৈতিক উত্তেজনা, মানবধিকার বিতর্ক এবং মৃত্যুদণ্ডের রায় নিয়ে দক্ষিণ ভারতীয় সংবাদমাধ্যমের পর্যালোচনা।",
   "sentimentReasonEn": "Focuses on political volatility, legal controversies, and capital punishment verdicts in Dhaka.",
   "source": {
-    "name": "Hindu Tamil Thisai",
+    "name": "The Times of India",
     "bureau": "Delhi",
-    "language": "Tamil",
-    "originalUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQenlvaDE0TUZlZTM3cE9zUjI4c1ViU2dGSUZvelNfNmU1U1Y2bGxDSDNXYjVWcVZQaFEwY2tZV1RlZlpxS0hrR25IUFU2YXZ0NmI4UXh0QkJhckpfOXo4NkJZcG9zOXFOUGs2NTRHcEtWdXRtLXQ2YmdxSEFHS1Nqek9LWnF6QkhYa0VwSHY1bDFLWlI5eEtyVDhpdDFsQmFDX0EzanpLZUo4dldPcFJDWEoyMW9SZkdVc2lFM2xIdHRYbVN1Y1ZVekVlTV9yYkFsS1ExUFZBZGJnTXFaZkRnLdIB5gFBVV95cUxPLVZLWGtCZHdhVHR6UTRsZFFLSFJCX2xfR3NqYVdEdVBsS0trZXBaUnpjb2ppRXpYeXdMbkdJcXEwUkZBMzE0NU9pTmZsX1Jja3pLV21fY1JTeTZWN09XcEs3ampDRGdjc0x1Qm1HcmVxWm5Zc0FqRl9XaTJlTlVxU0Rib2hEZ1NwSks3ZDNRcEZRMGJJMFdPeFNBMDNZRG9oaVNTZzl3V0xYbWt0MWsyZnJMSlh3NVRKcHBQYkZVMmUyYzFsNHJ5RnVIOEM2d1VQUmFRdjNLUnlNTzdVQlFkcXpFVHljQQ?oc=5",
+    "language": "English",
+    "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/bdesh-tribunal-sentences-7-awami-members-to-death-over-july-uprising/articleshow/134276177.cms",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T18:00:00Z",
@@ -2003,7 +2003,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Puthiyathalaimurai",
     "bureau": "Delhi",
     "language": "Tamil",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fUHhSVDBkbG9GQ2lXOXdsZlFPR3E5VkFoSGVOMm1yTU5yWWs1T0E1aEVwMnI0Wm1DWTFiUDg3Zm55MTZUUjVNNGxLTEY4aDdJOEE?oc=5",
+    "originalUrl": "https://www.instagram.com/p/DdgToa0FYvJ/",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T17:30:00Z",
@@ -2049,7 +2049,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Samayam Telugu",
     "bureau": "Mumbai",
     "language": "Telugu",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T16:00:00Z",
@@ -2095,7 +2095,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Namasthe Telangana",
     "bureau": "Mumbai",
     "language": "Telugu",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OV2ZRanRleTlaODNGQVhnS19BTmlXN1NLSzhGUU5aOFFBTE5KMnNVTk5qNFZtREJzVEt1T0V4NUQ4bXpnako3cVRTTGk1WDVRem9KM2RR?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=fj4OeMhef78",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T14:30:00Z",
@@ -2141,7 +2141,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "TV9 Marathi",
     "bureau": "Mumbai",
     "language": "Marathi",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BbVlfT0stTzBhRWh3YnBhYUNrM0pmSlgtQnRKSGg1T2U4NlprXzBRa2trdEp6X3JpTld6eEphLVR5aXZaQnVhVUpBcGZvbkU?oc=5",
+    "originalUrl": "https://www.youtube.com/watch?v=R-VxFnh8qR2",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T19:00:00Z",
@@ -2187,7 +2187,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Divya Marathi",
     "bureau": "Delhi",
     "language": "Marathi",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T13:00:00Z",
@@ -2233,7 +2233,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Madhyamam",
     "bureau": "Delhi",
     "language": "Malayalam",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQaUVOQ1o1Q0dtVG1PUlJqN2JZakVnXzJnS1hYQTZaWmZSVDhWSmx1b3liUFBxWllYdEZTOC1LS2hvY0FScWlzUDZNcmtsb0hodmxidDZRWUtDNHAtSGRlR3RQRFFWSEN5dmEydTYtZmRXODUyMWgyNlNuNHlKczU2OVRSa1Roa2xHR0HSAY8BQVVfeXFMTkFGRklDSnJmN2lWcXJKN0hpUS1ZQUtLeFNjc0dzOG1JYXUydmpkNkQ3UlZHQUl6Y20tZ1g3SWpiWW5KakZVWFNqZUxJcUdsa0hUU3pyVC1VWVZlLXNnc2JzSXdvXzl6VlVtcmR2aWFreHY2Qm9ia01DMFlqVHdvVVVBN2VvVFNKUmdyektXS0E?oc=5",
+    "originalUrl": "https://www.madhyamam.com/india/india-response-bangladesh-review-101-pacts-1555813",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T12:00:00Z",
@@ -2279,7 +2279,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Asomiya Pratidin",
     "bureau": "Assam",
     "language": "Assamese",
-    "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+    "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T11:30:00Z",
@@ -2325,7 +2325,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "TV9 Gujarati",
     "bureau": "Mumbai",
     "language": "Gujarati",
-    "originalUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZkhvVHBrRS1PUmxFVGZoWlJQRHRUdVlRSnZodGZaUnJOa2hkWjFBSklfT3VWNkZXUzU1T3ZLeEQ4VmpFWlNJTi1Zc2c4ajVpYVliZF_SAewBQVVfeXFMUE5vaENSNFJJNFpYYUh0SUxiSDFsWlVFemlfaE56RGxHQzAwa1ZEdWVIaE5GUVBiMkg2cDBpUW9ncHlmMGV0ck1QcFBtb0tpY09uYjFZaWFSU0llaWhHZnMtOEZUWV9PRS1HLUxULU9vRjhWNTBCbjY3cVJyR3Q1aFJSRGxOdUFWd01tVk5XTHVERzVxSnhYc2h5eGx4VUFwWElMeE11MGdNOTRfbk5sNmstTlhJLTdwQ3BkTkQ2X0FYUjF4X2xRbXQwSmQ0SmVlTV9yYkFsS1ExUFZBZGJnTXFaZkRn?oc=5",
+    "originalUrl": "https://tv9gujarati.com/national/hilsa-fish-supply-gujarat-ports-to-bangladesh-cross-border-trade-20260922",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T10:00:00Z",
@@ -2371,7 +2371,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "PTC News",
     "bureau": "Delhi",
     "language": "Punjabi",
-    "originalUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdHpqUGVpV2tnSFRrdGtGdEFSU05yeWJKWDBYU1hOU0dFZy1BbzlMNk9HOUFSTDBveE5OTF9EaDctMFNsT01VWV95TnVuYzAwb1Z3b3J6ZDBuZ2ZCbjl5VUhCbTl5SjRVVVRmT1c2ckxjaGM3TmcwTzdWay1QWi13bzE1YjJaVkVYT3hNdXpVUG9Rck5MYVJZanM1MV9FSVgtODhNbXlPZVB6NGp2bWVhellCSnTSAboBQVVfeXFMTWVNTU1adHFlU3UwRTFJa2FhT1ktQW9SbTJFWnVpUnNGT1VHVTlQNjhBY08wTXhWTENqZnh3dGJ3Q3hicGFrRTF3clFNb1hCamJoYmJvQUgtTEVkTzE3VDY0MHd2THhZZzdpZThPSFlHN1ZTQjdJVzJ6MWIxLUtvQVdBQmF3U1B1U29ONkQ5dExXbGdYVm55NGtsTjBkei1HajlpaFFSUE5sRF9kS1o0aGw4SEVreE85OUR3?oc=5",
+    "originalUrl": "https://www.ptcnews.tv/world/south-asia-fuel-price-fluctuations-bangladesh-bus-fare-transit-impact-419208",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T09:00:00Z",
@@ -2465,7 +2465,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Telegraph India",
       "bureau": "Mumbai",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ITE1WYmYteUxrUVJKQWc1cDdQYjBIakphUDE0eVlkSUxDWDRsY1Z3bUVTczcxclBQcWxsQlNVMnBrWTdmeTNjUzk3MFdFeXVFUWJXQlZB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=6Ef5W_3Dkt8",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T06:45:00Z",
@@ -2511,7 +2511,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Amar Ujala",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+      "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T05:20:00Z",
@@ -2603,7 +2603,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Firstpost (Instagram)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5",
+      "originalUrl": "https://www.instagram.com/p/Ddf2gIwm9nI/",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T03:45:00Z",
@@ -2695,7 +2695,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripuratimes",
       "bureau": "Tripura",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+      "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T01:50:00Z",
@@ -2740,7 +2740,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Aaj Tak (YouTube)",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tZC0xZXBSVHpFWFEwLXhrM1V0QmxPcnNmQWZZNk1GSThzNXhtQlhNOXlyTlh4U3VKeFZyUTl4NjVfY3RoTE1fMmJFWWpNZnRnMUEybjBB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=DDMym5YRp6Y",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T01:10:00Z",
@@ -2787,7 +2787,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Assam",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZGNYUmhTVTJaRF9VU2FxckpjRHBQc0RHOEo0M1hESkJsblU1UmR4SVRaenUzanZQbzNUVk1ndG9vR3JqQ0MwYXpjMEl4V3RxSVY0WVhMYi1fTXlWUW5udjR4SEl6LUIwOVVDRzZXSUVWZm1acnVGdlRfTWw5WUg4dE9KTHN3bVVSVWk0YTc2ZzhQdlhFZkxhZGFFd2IxeU1IVXhhOGhwV1NPRFVXUm9seW1XemdEeEHSAbwBQVVfeXFMTmk4NHNsckdiQlVjWkVjRHR5cFZ1Rk13NUltNU5mbTNmenRWWTQzZ05qTmk4LU16Z2VsaFVsQVNpcGQzZVJmLW4xVlFtbFlfMFcyVFZLU0NvdV9HXzNjRm1OWjBISHpYMDlqV0IyeTJYOFYyaDFHU3RRS0tFVW5rVjQwVzJkeC1NVkxlUU5VVjUyaWROdmxYbDJIVEQ2MXVCWkR3enV1Qnk0UTBsbVhrckxRNXlTb3ZJOTFwQlE?oc=5",
+      "originalUrl": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-20T23:40:00Z",
@@ -2831,7 +2831,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Bartaman Patrika",
       "bureau": "Siliguri",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5",
+      "originalUrl": "https://sports.ndtv.com/asian-games-2026/india-vs-bangladesh-asian-games-womens-cricket-semifinal-preview-6582910",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-20T22:15:00Z",
@@ -2970,7 +2970,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Firstpost (Instagram)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE93Qk1Bd1RRTDhmWVZibU1XaDgtU0JyZEdSYTJaeWFvTDhRMDZUdDZ5cHJfa1p0azVmdlVvNXc0amdGNkFyUWtlLWNTMXNCTkZMSFE?oc=5",
+      "originalUrl": "https://www.instagram.com/p/Ddf2gIwm9nI/",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T08:00:00Z",
@@ -3018,7 +3018,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Aaj Tak (YouTube)",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tZC0xZXBSVHpFWFEwLXhrM1V0QmxPcnNmQWZZNk1GSThzNXhtQlhNOXlyTlh4U3VKeFZyUTl4NjVfY3RoTE1fMmJFWWpNZnRnMUEybjBB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=DDMym5YRp6Y",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T07:15:00Z",
@@ -3066,7 +3066,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNU45TU5KSE5uSkpOV014bWZTWXFYY2w0VnEyNUw0LVhGaE1RNmlicEFGQUdfNTMzYUxwWlZBRHdzeVp2c3ptRW1xSFB6c2VUYzctM2gzLV9MSV9GbTV0aWtuVEJlT3dnWG1HSVFsMG8ycV8zUS1CbnJnMThZbGpmT3l1eHZYamlwTXpRQXlrWDVIbVpyandGeDN0dzlQeERHMWNPcTRCckprZGNuZmMxZlZORkxFdUg0NHZVY1BwWlNYYVJXMHpBb3puYVNDSUl6Y2xOVFVfb3lMNklZZ0FlT2JRdEdWamR0c1VUU0txSXhSREFwcF9TcWMxTdIBgAJBVV95cUxPeHNEMmpYVkhYczVTZVdIZzZZMVdtOXgtcV8zUENOdTRBbnlNcU9UQUFaZG9qallIU2JXZ3VMZ01TTHhTSjY3a3QzN2QzN1YxTC1yeDJkSXFEdGdIcnVwYU5sLXVxeEpfY1BjQlh2NEZBNVpBMUxBVUFMbWlQcjFOaTZnMXNHTlExanFsRW5NQmlSNGhPS1RmWUNMM3JHeGJ0am1FSF8xYi1TSjUyek8xeW53d3ZieHA2YndaQVVES3ZnaFA1Tm5xOWpzeEpEVEdRdFptaTNGX2liV08wRU40dEdSMXMwU3A5STN4ejdsN0dXM0x2NHlMTGNnOHRHQzZC?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/ncp-leader-nahid-warns-tarique-rahman-says-he-must-resign-or-will-flee-from-helicopter/articleshow/134363213.cms",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T04:03:00Z",
@@ -3112,7 +3112,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Times of India",
       "bureau": "Mumbai",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcTd5YTZhbnhlUkpKSkhyeDFUUnduRWoxd2dBWXFENEp1MnJLbTJwSlN2ejIyQW5YVVJvaExqanBCX2J5bWZVd2xHdzBjZmc4UkxRLU5Ic0NJMmlJMmZvZGhaMEJrd2h1LVRaTW9EVFJtemEzaUxXOVliTWdGYUtnYmFYbEYyY2k5VjQxeGtEb0Nuemd5eVJ1ZzdsQUFxUC1Pb3ZBNnpoc0swdy15ZUt3dkVHeG9leTVXcDJyUjJrU2fSAcYBQVVfeXFMTklsVkFPX1RUT1NOVVRSSGJtSWtseEt4QmhOUHN2SkFuMTVMM0Z6N29ZcEpMOUpPbmJUMWNQQzNUR0x6RFFSMHM2RE9QSVhxZ0pPTEdndnVLX1dXRFcxZE9mNUtrc1U1LTBOUXA1Z2wxcHMydkRXQ3dCUXNEN0JGT3h4U0hLbTRtczlVb3ZkM1JGT0tUVTJ2UnZzNXpDMVpkWU1uaXdEdFRuMmlTT0tJc0NwRkVVTm9pUENEejg3LXZOdU5nckFR?oc=5",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/sheikh-hasina-holds-talks-with-party-leaders/articleshow/134362342.cms",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-19T23:18:00Z",
@@ -3157,7 +3157,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Sangbad Pratidin",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPZ1ozSmZoVFN2ZzBtQmVqSldaSlJ0VGtLa21IZjNSSEI4aGVJZ1EyRXp6ZXc3R3VTeFotQ1R4VmdneURHYW5FSE96QnpSZFV0ZnRvVXpOVDVQRTZvcFJJTm1GQUVmcENWajVQTEN2LXh1X0NXcVYzcVNrSEhoSFFyVEdFRHRLYmRqZVpERzlkdkFuUEI4X2gyeG1zOE1fcVktUjBfaENhN3JyckpQLURINXZhWHdnZ2V2QnRKS0hRb3RpWDRNRDhXSmxB0gHKAUFVX3lxTE9nWjNKZmhUU3ZnMG1CZWpKV1pKUnRUa0trbUhmM1JIQjhoZUlnUTJFenpldzdHdVN4Wi1DVHhWZ2d5REdhbkVIT3pCelJkVXRmdG9Vek5UNVBFNm9wUklObUZBRWZwQ1ZqNVBMQ3YteHVfQ1dxVjNxU2tISGhIUXJUR0VEdEtiZGplWkRHOWR2QW5QQjhfaDJ4bXM4TV9xWS1SMF9oQ2E3cnJySlAtREg1dmFYd2dnZXZCdEpLSFFvdGlYNE1EOFdKbEE?oc=5",
+      "originalUrl": "https://m.sangbadpratidin.in/article/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-19T16:51:00Z",
@@ -3202,7 +3202,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPb1dFSllaTGpyeVpBTUwzdC1rOVFrWG5iNmRoaXFDMU02X0ZBX0w4Qjlpb3RFaUg1SkpZNGx2TDVDa2E4WnZHR2VXM2VjeGJQdjdoR0Z5clp6T0ZCTDZpMHYwdUxEWjFnZWdQQlNNSzUxelFQRlRIRU81ZHlIYnVkSVpYWU5taU5LYmNuTkFfdjFiQ0hmbnhQMnRZSm05eVMweTBQUXdqUThiaUE5OUZzTlZhV2tTVklqcHhaZklKaGEtdlJIV0Q3UFJ2M3hCM2FEY0phdFZGeVVfTmVodDJWYmhfOWdnSXFKN3V6dEZtODRMUF9tUUNxelBn0gH_AUFVX3lxTE1jVU4xQzBXbXRHbGFZQWVKSnFpdGwxeFZrOVhCODdrbktjWTE0T0ZZN3VtMkJIa3B0YVU0a3R0TWs1X3FmWTIxNkdLYVNvY3ppUFhLaU1WdkNVUjNlYnlabEVacjdYWnNNWDRhTnBPM3VxU3lQM2dvVEV6eEl2U1lualZyNlVnem1FTGctbS1ld2t0SHItUmx0eXd4bzdGTHNNV1hOR3MtRThSQ0pxc0p5MmNuUEVBT3BSS2RCUXpBdktIODJvUU9ESUo3VHFwcFhMdm1mRFBsOWVzUkNDZTJMWmk1b3VCSEZpYWhJMjdMdTlZRG40RTdyZUh4TzJMZw?oc=5",
+      "originalUrl": "https://www.thewall.in/bangladesh/countdown-to-hasinas-return-begins-decision-made-to-impose-a-lockdown-in-dhaka-on-sunday-following-hasinas-friday-meeting/tid/205178",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-19T15:20:00Z",
@@ -3247,7 +3247,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Zee News (YouTube)",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9GUjljcElRcm9aZkk4TzdNYTRTbVFPUTdyQmhyZ2tXZE5nSGg2NEhwcFgzMWNkaDJUWk56WlFrSmtDeURsbzNPMWJnU2xMNHpTcnFmYmZ3?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=m3sfo0sQs6s",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T06:30:00Z",
@@ -3293,7 +3293,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Hindustan Times",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPU05OZEhsTFlFbzV5V3ZQNjFZeXFoN29iSkVoMEN0NkhSR1o4N1NWZlQtaWNpUmpzWEM2NW45cEk0ZW1ZVkZ3d29QVnF3ZExGTzhuUmU3SlNQcVYyVU9GV2FEQ1hObWI2Z3prT1VNS3pudHQ2MUlRX2xDUlJCVHJXZjlOQ3NYTnp0LTlHWjJZS3M3eUVFZzNFQndqMU9MeWotTTRHNmZkZENMQlkxZVdQUmVtOGFqdGlvZksyYUtKWG1FM2RHZEs3SWtpMzRNZTFOREFsY29LVdIB3AFBVV95cUxONmhHTGVrT1gtWHYzTkExVkNONXNUUkJZR3JlZHFZcEx5OVIwQjYwdGQzQ2MyVGxpXzJoOVhxMmVBR1Z3bW1qX29sLWlGNjJHRlJjYWluSm9WQkNtOGtBaXdjTWpvbXhMcXdfTEVPWl9oRjlQYXhGZkl0aE0xX1I2OEVXdldTc18tLXZzVGZ6TmVUWVBiTW90MFBKeWY1Y2tiUDdkMVZuSFU1QmJnR1hVVXk2eW8tUEtRTUtxUEV1WVZ4VzNud1BxQVJvS01MZ3pkZGpQWGstUHpqaVJx?oc=5",
+      "originalUrl": "https://www.hindustantimes.com/india-news/assam-detains-27-bangladeshi-nationals-in-joint-operation-with-railway-police-101789657115249.html",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T05:12:00Z",
@@ -3338,7 +3338,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today (Instagram)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1Yc2QydThyZkg3clhNN3ZGZFFlb2l2TmpYbHoxTldGNDFDOXNBa211WWktZGxKNTBNRk9OTHQyS3FuU0l0WUd5bEc2bTAtN3Z4QWc?oc=5",
+      "originalUrl": "https://www.instagram.com/p/Dde_z34SBGu/",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T07:45:00Z",
@@ -3384,7 +3384,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNUGF1RjhsWlRIVHRNNlVaMjJnMXVoaTBSY3ZWeTd6d0NOMlRYTVFhZ1J1d1YxdUx0M0NIck1KT0FnMERmSDNBMnZkd3JFX1ZTRXJlbmlVMWt0SDlOSmlMRnYyN2VEQ2tVanNoa3A5aXFtenVpZ0p5dkhHRTJEWnktSzQtZkVHSFE0bUloWGNhZlh1UUpUSWhkaUs4d0dOTnJqdzl2LU9TbktRcVRPV09kONIBtgFBVV95cUxQX2hSSHdGQnRCTHlhU2NTRDN1ZXBoUGZFWnAzNXM4Q1M3ZXdMRlVOcWVqaW1ibTBmWXQzbS00UDFSRWNsT0diSXFaY2VUQVM5cWl3MEk4U2wzaUd1RFNLYjZ2X3VLbGJMRW9FbWFIdnNIdzlTdnE1QzEzYTR6QXUwaDN0Uk9UQko4SG80cFNva1V2QklzLWhITTFncXN3T2hFbFUwU05uMXZyb1BqYUJLalpnTFd3QQ?oc=5",
+      "originalUrl": "https://assamtribune.com/international/jinnah-portrait-at-dhaka-university-draws-grave-insult-criticism-1617563",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-19T14:35:00Z",
@@ -3429,7 +3429,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News18 Bangla (YouTube)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9wcGNFLW5fOUs3LXRDMnBsQVI3a0dHTmNMaFhqRkM5RGRxUzlPb0Ftc284NGdKSFp3aC1uLVRlbTMxREdVelI3VFUxeGo3UkRkV0RMZUZn?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=uJKboyLlmNM",
       "scannedAt": "2026-09-20T17:00:00Z"
     },
     "publishedAt": "2026-09-20T08:40:00Z",
@@ -3474,7 +3474,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "ThePrint India (YouTube)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1BX3FHWFVDMS1mRldYelVRY0FtZkpWaUllZ0ptQ0QwbzItQUFQellZZHl6ak9mQmhyeWpPcXhFX1c1T3I4UjN5andGQTZZZ1cxMmdMVU1n?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=RLmWH0186pY",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-19T12:08:57Z",
@@ -3521,7 +3521,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "WION News (YouTube)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OV2ZRanRleTlaODNGQVhnS19BTmlXN1NLSzhGUU5aOFFBTE5KMnNVTk5qNFZtREJzVEt1T0V4NUQ4bXpnako3cVRTTGk1WDVRem9KM2RR?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=fj4OeMhef78",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-18T00:30:17Z",
@@ -3610,7 +3610,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Defence Update (YouTube)",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1PcHJ2SmNaTkhjZUVGWFlEM2dVYXc5SzdTWHhrRE5CUndsOHNPeWcxajNXU2UtUVZMRDJZLXBQVzdzNXlYVFZUMEpqYmVzRVExZjV3bXhB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=Ov8CjHztlC8",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-19T05:00:22Z",
@@ -3654,7 +3654,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "WION News (YouTube)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE14YVlCdWVaVmtHaGVKTmp5bjR4ZnJ2NS05dndiNGNmWmZ4cEM1Wks3bTdJaVlTNDVxWDdIWEZsS3JkU0g4YzMxTGZhcXN2dUJsMy1kbWd3?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=LxmyjpXMYFo",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-15T07:52:17Z",
@@ -3698,7 +3698,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News Vanguard Tripura (YouTube)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93WUg4aGttNlFzTUYwTjRWTGkwRUc0bTBrZXpzV0NEN2dFbjNoSUZCSTBXajhjd1NMcmZDYUV3ZkxSVDB1NmZubVptdnBBNjAteG50R2N3?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=vSSxKQ1Wzgo",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-18T14:15:03Z",
@@ -3742,7 +3742,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Politics TV (YouTube)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1nQ0pGU1h5U0VGeG1rZVRzWjdTaHRHUE9FZzQ5RFhLTjRJTkxROEpVREhTOVlHS1Z2UFdVYUtsaTlKbTh0dXpValBsYWFXOE1ubWZCWkZB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=sVNdNX5Jk4I",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-17T12:00:00Z",
@@ -3786,7 +3786,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today (YouTube)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBqZkZmem1mMk9XNUQ4UWROVmQ1eVExcjU0V3ZCRi1Ic1QzR2ZuV0dVbGF0ajJ2VHJaNFViaFRNTkFVR0EwLXdfQW1KZkdpU0VlTmV4cDZn?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=8UaEZ3Ik_kQ",
       "scannedAt": "2026-09-20T11:05:00Z"
     },
     "publishedAt": "2026-09-18T11:46:21Z",
@@ -3830,7 +3830,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Hindustan Times",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeG1GajBTSGlCZDVBcGRybnhjeU9FN2lqd1lFZWNGWG11a3E0QVhxekJrT2QtUjVmTS0zYVFtSDdYMVBmUkFOOHdmNmNuRUdwU2ZnYzJsQThtekZEcGZwSmZhUjFIZnY3OGN4NFZRTVVhaUNUYXg3QlFJQVU5Zy1pTnBXWkdoOE5qODQ0QWJHVWZsajdpd1lVb3J6cWd2VDlkMGhITnFUZTVuZXpQdW1pMnNZY1A2S09NYnpVd3RsMXZrTUxqNXZTZGZNakdLOC1DN2Q5TktTVUstU1hhU1BueTE2VzZpSDQxNHByTl9QbEhVQdIB9wFBVV95cUxOUWE0eThvTUxINTh2QkYxdTB0SGh6U29qano0dllIRXJhXzlMYmM5Y0M4SVM4ME5jQWtfWXZtTXQtbllNekpaRU83M0pTQ29DVThuTjZOLVRHNi1NblNBeFppQVE2TTF3UFF1cnZmb1pVRFFHV3Q0dnpOYUc0bW5sR2ZvdTlZR1F3LUhlWDBnS3U0SFU3SXRUQkxmWVVYYkVsUlNPWUlTSDBsa0FUMkxSWXFrTHprTnJ5QTN5a3R5RmhvZVhQUTdHRFBHemlEc2ptV1k5bEh4ZV9IZ2VXYVlZX2diOHpJWWQ4NERGM3d0ZXZYbmNxU09N?oc=5",
+      "originalUrl": "https://www.hindustantimes.com/india-news/bangladesh-says-wants-to-reset-ties-with-india-calls-sheikh-hasina-era-relationship-uncomfortable-101789317654247.html",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-13T17:22:36Z",
@@ -3877,7 +3877,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVDNsZlh1czNPN0c3UjVnR3B5dlNrLTJpbWJYbTBIekwxS0E1Ulk3QzFmS0F4Q0xZa1dKZmhVbnd0MlBQOUhmSVU1ZFhTbVozN29CTS1PcFlBWDVwcHh0cVlZRjdpOVdET195cUFwakNFSGdMRExXOXhySDJGdTZQbzcxTUJpOGJxTS1MUTd5TmpGcEZyeDg3UDNveWtmcEpUeWFnbjhXTEluUGZWbDhBeEhoTXB3TEJrNTFndHNteng4TknSAcsBQVVfeXFMTk9yMVRCZm9VWWdqbHM2ckNzRW9LcE9KS2VIUmdPYlZTSllYLXc1d1N6MXdHNU5wXzJpY0h4cTdIR2VYSWpIaFNXX1EyRzFwdWE4STJpdFgydUllcEp6Vnk0RTdhZ3dOamp4Ymppd2VHVVRhaG1fNVhfMENJOWl5RGZEUDlneXVTTEcwWlVxM1phYTRuaWRWUEE5ckFSOTRPX0syams1WUxTalYzaFBQOFpFSHNjLWtDMWNUYS0yLXFxbnFsd05sZEU0cDQ?oc=5",
+      "originalUrl": "https://www.ndtv.com/world-news/india-keeps-door-open-for-normalisation-of-bangladesh-ties-despite-sheikh-hasina-row-12042361",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-13T18:35:26Z",
@@ -3922,7 +3922,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLW0wRzdDLWh1V1EteE03aW9vZGREbkhlOGc1ZDhfSjhvQ1E1VWRFUkQ0M3drU0p5c0d5M0t0QnlJZXN1ZVRzU2tYVnFFSDRyYjR3R0p1QkhBcl9wYlhhbGtBVkN3V1RkTG94Z09qTk9nZHV4ZndySkJ5R2JzWWlRUU50cW93ZlJqY21tT0l3aXNZZ3gxb0lFOHl5a1p5UDFpTGRQWlpsSG8w0gEA?oc=5",
+      "originalUrl": "https://assamtribune.com/international/international-crimes-tribunal-sentences-seven-senior-awami-league-leaders-to-death-154982",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-15T09:08:03Z",
@@ -4010,7 +4010,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Firstpost",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBaMmpqQVh1V0g5aHJ5bEdQbU9DaWhYUXh2Y3Q0R1EwSEsyMGV1dTN1cm05c1p4cVR5SGlfTDBiS0t6Z1pqM1hRME9hMkpQcTZ5RzE0dw?oc=5",
+      "originalUrl": "https://www.firstpost.com/world/sheikh-hasinas-daughter-saima-wazed-breaks-silence-on-resignation-as-who-regional-director-13816541.html",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-16T08:10:10Z",
@@ -4054,7 +4054,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Hindustan Times",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMi15d3lkQVQxbjVGcjRpTFUtTTBRYjQ3TFhQTGZISmd0alJVSml5cFlxNWRmdk1WTU43TndoMDlELTdqMFhtWWRhYzRUa2VJbXhjbmdaQU05cWpiRjNseEtYeEp2TUk1NmFtRWtvRU9yenFMS2FXblo3RlZRS3F4Wm9WaEdJMk1zblRvdk5jZkFEMFNkS3hKbWU5b016bTlBaFJvSUJsTWU0azJPbGk5SXdkQjRkNzl6Q0ZFdXlteUtaaUhtMmZEdDY0N0oxLUtvdlpQRjVB0gHbAUFVX3lxTE5nRVUwWFR2OTRwOW5QNHBhbHRFaFA0NzlTMEZjRDR2Vjg1UDBmTzlyUEJsY2lfWHQ0TU1mZ21Ga1Z0Q2ZxOGZYcjZKRlA1Zm9MVUJkZklqaFhzbllPQWw2UDlXbUNQeWxjd0NXbVN0ejZ1aW9wUm9Db1lMdnZSSnVrMURESm9DQTFxeU5SaDl0WEZuTkUzZ3VaUW9BRWpFakhqQ25ZV1M4RzF6SEpUU0tBV09wZ0hFSUlMZEdQNFNLdEdhNDdaZTI2RS1ZT1lwU3FZdzkyU2RMNXM2dw?oc=5",
+      "originalUrl": "https://www.hindustantimes.com/india-news/tripura-court-sentences-5-bangladeshi-nationals-to-2-years-for-illegal-entry-101789647573437.html",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-17T12:19:32Z",
@@ -4098,7 +4098,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Republic World",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWlktZ3UtTXEyWms0Z2U4dmJqQjduWjV6OG94M1R0Sk14RVUxdndOamlzTS1sSlhiMUdIUi13dFdRN3dMLW1xSi1ackJ3cXBSdlRCSXE3Q0hqczVtTnVzdTB0cEFDR0lPSThwMUJqZk9BUTM5bGtrLW5WUDZCQlRxOGJMQS1MZGN0MEpvMk5rOFktY1FKUWFld1ZMM1Q0Y1ZqZlRvQ1piWkZrdlIycjV1Mnlwd2g3cERlM3Z1V25uZ3hpWEx6cFFzUkt0ckptQTNTN0Y1YXlUb3N5ZEItV0NwU0tpSdIB6AFBVV95cUxQT1BRT0R0b2Zra1NOeFN5MmEtTUVyRGtUX2dXbEhqb2poQXd0REZqUDNnVDFEcjZINFZQdkJMam5yZFdYeG9ZRFE3Rk9Md3FfUFRWWTM4Y0J5Y0UyYU9yc1lGOTViRklqSG5yZ1JtQ0ljc21mbXh0Y3MzOUxaLXJHWUVEV1gyb2ZicUpiRG95YXZhTU8zWU8xT25VMEROTEdRdGpaNWFfa2ZuVk5JQ2xFU1VzendHYUxtb2QwRG45ZXRVVllQYVVla3RMTkh5ZnJWM19YSjZVR2d2Y2h6SmlWLUNnLURoZjZK?oc=5",
+      "originalUrl": "https://www.republicworld.com/world-news/four-crude-bombs-explode-in-dhakas-jatrabari-two-blasts-at-kamalapur-station-in-bangladesh-2026-09-20-137330",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-20T01:21:24Z",
@@ -4186,7 +4186,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5",
+      "originalUrl": "https://www.thewall.in/bangladesh/deciphering-hasinas-political-strategy-ahead-of-december-timeline",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-17T15:45:00Z",
@@ -4230,7 +4230,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV Sports",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbXUwZzc3LVNGVC1TR0lORWZyTjVkZ25lM05pa2EyMmUtWXc5aEpYX0pvRXRpdjFhcF9FbWtoS2dYdUhoVXJDYUY5OXFOOU5naC1QN0FtRjdkamFvSVAzM0phS2dZd3gtbUFWalZTMVowUFJrc2tmMmNwX0dfR2ZnUUx2QXZILXc0Z3FHVm8wMjZYQ3k2VHRoRl9aQXdweE9kaUp3eXY3OHROMmozSkhEMkJfcDVlMnlaX09OUHVVNzVKTW9uWkJaZU1oZzVFQ09nY2tLWQ?oc=5",
+      "originalUrl": "https://sports.ndtv.com/asian-games-2026/india-vs-bangladesh-asian-games-womens-semi-final-live-streaming-when-and-where-to-watch-12070576",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-20T02:56:42Z",
@@ -4275,7 +4275,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Strategic Review",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VQVFiX2ZvUmRjSnNLaXVSX0lWUTZIOE5fVDI4VTRlTl9URmcwYVNMR2dIcXZVODRubXhiSWgwR2NWeDB1QzBkdmtsMk43eTctTXc?oc=5",
+      "originalUrl": "https://www.instagram.com/p/DdfkeVZDb74/",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-20T03:00:18Z",
@@ -4363,7 +4363,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Times of India",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaU9GbnZVdWRLb0Q5d3ZGaC1BR216dU15Nm9ITVh2MjNxV25JN1pINUphclBFbUVIOWp2cEpZMEJFLXJZUjBQcV9nYmh3dkFHb2xHbElLeTRaeFZrNmpGZGF3VmRBX0VGeTdBbGNkbDlaYjBBaWJMaXJaVFJXQ0E1NmhaR3BNaC1NM25vREtUOXdnTUZONUt6ZmxPMTA3Ny13RzdWeGRSWGpMSGR3RW4tYUpKVE94SHB4UHljcDdldk9ia3RkWFpKNWs2ZG0tZlZiQmQtYU5hdUxhRGt3OUlhcGpEOVhLWUVFU1NaUms1ZUZUVThPZ3pqUTcxNUpMci1icUFkSlJtT3HSAY4CQVVfeXFMTklpaHo4T1U1T2lSZFdoUjVDM1FkZGNORFI1UHQ4SEdGOE9WYkQ5Mllya0pDUE9leWw3NHlYWkxvcjFPekl6eTZOVEJiNy1XQWczMDg2SEdqbXBoLUJaZHRHRWlhdThkTDBBdzVleDhKVXVmeWY2Yjd3eWtSQVoyYmhRX3RqWW5PYXVvM0xUNm1XQ0ZRaWVJcWx1dXhsZU9nUFlRUDBhMWVfWk1IcEJsYU14d3JqSjd1dW50Z25waElONG1DN21wTnYtMXV4RXp5Z1BzYVhBdkFQLWV5SkMxS19BYnk4WGJlbWpYUUVVY0tTRlJDNGZydmhKNHJ0SVMzQjNLeXRGeVBvQWFEbVJR?oc=5",
+      "originalUrl": "https://timesofindia.indiatimes.com/india/will-take-all-necessary-actions-indias-stern-warning-amid-reports-of-bangladesh-reviewing-101-bilateral-pacts/articleshow/134336066.cms",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-18T12:51:00Z",
@@ -4410,7 +4410,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News18",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMEdkMzF2S1B3SHdsWUdVemxJWWZ1MTVQZkFaYzM4dUN3V0FIb3VQRENLV2VpWElBMnh1WWE0R2xRTFl5ZTIyRUpBc1Q0RDYweDVoT21FWWdIallUQW96bDlBN2plY3FiMnFOZi10djRvOU5fZVJMRE9Idi11RnN0RzF4UnBwSG11bm9HRlUwX1hueVpRaE4yMDNNMlVNdmliWkFHU01fQnVYSk5oVXZWTE1mZzRWNzdXT1FINjlPWE5OMWt0cVVyTWw2a3XSAdIBQVVfeXFMTnh4U2FOV0lEY2VEekdtM2Ixd1VoN3R6VVFVam9US09XckV0MEp4cFdZeWVQa3VlOXYxQUtHV3U1TVh1aG00dTN0RkR4bE1ZdGpHSE53Q3AzaUZ2M092U1pfRDF6TmVuaDhwQUJPMkxCRkRtd0FpZWVHaUxwWHo0QWJMNGFHXzNvSGJ4bUt3RFVsc0E3RW9lcEdZTHloNEZCQTJwbktYNlZ0eVNkZ1U5dnRXT2RhTkh5eTRLekxWREhEN0Z3d04xUWMyYzNmbzd0T2JR?oc=5",
+      "originalUrl": "https://www.news18.com/india/bangladesh-pm-tarique-rahman-may-visit-india-in-november-or-early-december-sources-ws-klt-10338395.html",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-18T07:16:04Z",
@@ -4455,7 +4455,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Hindu",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNbDNNck9tTEVuSnV2My1odVQ5U1poV3gtbjZfMldMb202RUZ3MVpOeXd1UU15OVROMFFHaWJzbWxudC0tQVU4dloyWVJsR1F6WS1DY1pYN1RMZU9WcC1SV2xETHJhYXZvN2MtcnFpWEQ5QWRNeHk1RV8xdUs5UHVZUXc3d0NEWnBvSFpMZU9tMWQ2QXF3d2taTWhzeEY0M2FUVkF5YlBJSlkxNWVwYnNUQmZoeTMzei1wTjh6WWN4aTdmb3lRUlRqQUJSeHJBUDlJa0dVeW9Xd1JrdGhyTnJjY05KNNIB6gFBVV95cUxPS1MwaE1iYm9DaXplblY4bkFpLWY1ZXZIZFJoem1mRkExcnBPT0dtRndnT1N5cHpYbDlPRW52NEtMOFhvNFFobjIzaTl1UFRBTWNYQlNQeGVsZk5ETGNhTVY4aFVrc3cwRjZKckd6LV9XXzFzQVFfQUx5SHk2LWUxWEIyLWV3d1lrcHcwVXc5X0VhNDdFbXdyc19UYkJuVE1HRE8zQ2RFUm9LN0lVWllvTzBTcXY4c0V2YVRGZ3M4dERNaWIxR1ZZdmcwYkN4ZVVlVDJYZnhnYWYtMUNzdVNZeFBqNWVvcExFcWc?oc=5",
+      "originalUrl": "https://www.thehindu.com/news/international/sheikh-hasina-completes-a-year-in-exile-in-india-as-bangladesh-plans-election-in-2026/article69893969.ece",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-17T09:00:00Z",
@@ -4500,7 +4500,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPbmtPd1VacU1IOWliQ1VaRXJEUkRrRHBKSHo3ZFBER0ZqSWxGaF92bHFXUmNITXhsT05BdXZ1YlJYaWhjWWRwakpXcGZYazc3d1NkZnNxN0g3R3JvMU9xWHEzUWUtbkxGcEFQNEdISmg5VzQ1SWFRd1VhaS00cUJZcjBkWUxpSm91bThaV000aHUzMDZmX01LcUEyREFHeFlReHBBY0RFdnI0ODI0SnAxQ3FsRTN4Z3dyVzVsRncwZVhHd2ZOSXlZb00xdmlRbTdoTzYxaGlNUnpGSVQ0ZnZ5Ri03QdIB6AFBVV95cUxQOFNMUGRjQWhxcFNnREdpdXNVcnFXbVFOMTFjYnRsRjQ0ZUxIMzdaQ2lyUzdzMTZ0Wm50bkpCNHJWYkRzZFBaU2tXajFCRTVGWnhOaDR6U1hfRlN2d1FNbVdqS1IwVTd4UU5mdlVMVlB3YS1aWjhCcExkS2VUSXU3bEdOZzFzbVVTS21OMVR1WUx3cF9MRWt0WlBEeDl0U0IyaFFYM01GREsySGwzSjB3YzN6c2txRk1BQzlKVGl3R3lTNVlaVVhMNUlMUV8zUVpVbm93VkNENW14d1JrVXQ0YjUxRF92RUwt?oc=5",
+      "originalUrl": "https://www.indiatoday.in/india/story/hilsa-exports-to-bangladesh-india-sends-500-tonnes-amid-rare-supply-shortfall-trade-reversal-2993930-2026-09-13",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-13T17:42:21Z",
@@ -4544,7 +4544,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Telegraph India",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSElFSWt2NVdFVE9sNjhSMUZobUtxV2VrRVZmNWFDLTVzUWtYVHZrUXllRjQ4b1BQNWYwNVl3bm40aEdKVHRxcWZsQXF1RTAtVV9kbUYtbDNoTjBGSlcyTlNiY0J3c1Q1bEVaZ21LQTd3ZnoyMC1vWk81OFR6RTJlMWN4YnBVTUtvVDlrUUdwZWUyZ0JTc1JJZmV2V0hCczNWeFlmWExhZ2VIekp0RUVCZnRhcV91WVBkb2UtQmJ4dHY1Ulp1OHNEcnh1QXdOZmxvN0FteUlYdWEtVEpPbzVKb3Y4eHZoWWVicUZZ0gHwAUFVX3lxTE9OZ1pVQmVXcUdnN25vZDR5eEVtUzVucGlYRV9GdGdmS0VCZWhNWXdNQkxWRFhmZ1lkS0tsakQ3VmN0djZNdVNFcS1QUDQtMGxFcE9hRURBVUlCdEx2MEJqMGFBdFlRblhnQWY3cUZHV0dTUl92XzF5MTJwYkJNb3g1ZUpKWWpMM0tWdFd4cVFDYk9aeDBTb0I0dmVrYjlYaWpOVktUUC1IbmNnSTFLa2l5bXRFeWZpSmd4TUJlamRmdXJpUWdBcjlueVliN2tBSFd4TE9aOHBORjlOMkpMd0s1TkF1UE95TXc2ZFZLelJvdA?oc=5",
+      "originalUrl": "https://www.telegraphindia.com/world/indian-envoy-bangladesh-water-resources-minister-seek-fresh-push-for-cooperation-highlight-shared-heritage/cid/2179757",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-13T14:41:59Z",
@@ -4632,7 +4632,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRWJiZ1FNUmIxUEhuNGJpU2c1NG1udW1QQlpCQjY1Zl9oV1czaU9iak8zckozaGxiRV9aanZWUkpqRGt6Mjk4bUZEVWR4SnV3R0s0bDZJMS1pMWt4NFBsT0RtM0hna0NhMlFiQ1pQV1ZJellsbFcwVGRwQzFra1dEQ0lWZTNEQzBSRG1hczhFdWRTMVJmdWhxOU04RHRwa09KRHFoc2FaU2V0Tkk3ZnltVkF30gG6AUFVX3lxTE16MWJhcGhkb3phbzl4WFZ1N1RndmxkeXY4U19HeVp3VUVuUzZ4SFlqQ0NaLTFMLS1UeXdQV2puaThhZU5CcDlEcUNUUEx4LWF4VC1FRm1RZ3BfSTdFYWEtZ0lvMDRySXY0UmlMQ25CX3FtVEFKT1lSaC1ZYndjS2lIUmdTMTB0R2FsMFBHbjZlQm9mRDZRMkZ1R0QwaEltaVpIbTRWZF91NmlNMjhoWFNXeWtGS2JxeVFLQQ?oc=5",
+      "originalUrl": "https://www.ndtv.com/world-news/bangladesh-china-finalise-plans-on-teesta-river-j-10ce-fighter-jet-deal-11984035",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-01T07:00:00Z",
@@ -4676,7 +4676,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Times of India",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNaldNQTdfSmFoYTRpZktMV2hMOXo2emJ2MVVqNTFTeGpPLVlwZHlQeXdRc0FhUG5hYTBtbU5FVk9aNkJnUXRaRVoxODVrZWRUUTNzX2pEM0J6Y3VoTzdQU2NpMUFhQUQzMjVaTGlwR2FJUmh5a1pnVjZHcDhkQ3ZIbjc3NGc3TE1fY1BXbjhydDJrLW5OeHU3dEIzWFRSRmpVczFET2xlZWx1bHhUdEN1ZUtSSjNWanB6Y2pUZXJCenNYaUN0a2hKM0N4M0hZQTEzTmdj0gHYAUFVX3lxTE84QzFfUm5BWGVEZVV6dC1QcTNxSWF2bEFYTUZtZ2RaY1RTNWF1bDlVbjZwMGRINFBoUXV1aWNvZm02NDFNNGNZbU85UEl6bWVBQnQ0MUxoNWozcjBfRTVDSm9qVTAtR3hyWm1iN0pocDhjSEJ3RHYxc01uTWRlQjdjc0xxMEhYT1pQZDV6VzZhQjVvaFRJUDhuYzRHNy1lY0RaRFBobW5ZN0RSeXRVRldCU3JPTHJqVjRhMVhkdW1nUEYyc0k1UU1XNzZqaEZscTc1VGtrTlhNQQ?oc=5",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/bangladesh-tribunal-issues-fresh-arrest-warrant-for-hasina/articleshow/117006113.cms",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-07T08:00:00Z",
@@ -4720,7 +4720,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News18",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOOG54YXdnR0hCeDd2UGN5RThQdEt4bjhhTk9heTdIbFhLWHphWWdONFkzblFvUWE5RGxtajVJNm81QTJocTVubFZNNTAtZG5fckpqTldqWnUyeDF5RFRqQkdUS1FZRHItOWVtbkpNLXE1cDNnQkJvbHB2NEZrRThrWDVZYWpNTW1Bbk0tS083R0lhbUZQQUdlck9BaC1kUTFHQlVzYXZOenAwZmZFTGdmRUgxTzRXY0hTNjNFY0ZrbU1fQmpIMUJLNG9R0gHPAUFVX3lxTFBnel9hTXFMY2JxdTM1cGUzYUwzaU1lM0ZvRzEwVm9LR28tdkpUU0VRSmd4VE1WMnlHbmlpOEw4Wk9yUURXZFlxOHpvQ3QydmVybmpwdDR0TWhCOWJuYW5WOXA4VWQ4aG1MeUhpOUVfaUNBTDdVXzFIbG5UcXdCVUtZbklzMHFINmtkLVhiWXhYbEw1YzRnSWdsUlJtZDVFRjNlMnpieXZwQzRRVG10Y1ZiYS0yRmVibVE1UU1oSW9HaElJNnpjOHlYblBaUzBETQ?oc=5",
+      "originalUrl": "https://www.news18.com/world/just-another-country-bangladesh-says-india-fascination-needs-to-end-seeks-reset-of-ties-10327102.html",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-13T17:09:50Z",
@@ -4764,7 +4764,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Hindu",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOFhCLVdCZGNwSDlUbFpvZXVoUV9IWFFGNktQOWVJWlg5Y3BwbUdISFlRajQ5NktXQ2xUSHFVU0RFV0JIbGRZQmVUeWI0dGNhdjJSTlZYaktoRVVVWHlTbnlBVDVWXzdocGtaNDhMbHJEdFd2WXp0NEJlS1U5NXRITldTMWdLWGo1MXMxNW1aZVZic08wQTdNT1FWZEhVS09nN0xfTzA3cUtKSXNmRmN3UHpOYWs4bnlsOGsyMzQ4a01RRllWdzhDd01BZHZZQ3ZsYWZaTTJCZjRhUTM2Yjh3WHZxaXnSAesBQVVfeXFMTzdtalgyU042UVZiYjJ3cmVQQ25HUXM3VXFMbEc1ZFBWaW5UMGV0MXRCUjRLYzdlaWpkQWl4Smt6aWU1QkJaTDRfUWhpLWpqQ3NmdG5sOXoxRnhST0tmTUQzTC10bjRiTFZuYUkyektiLUppX3RJZVhNR2R4djJET0JvSjBHYURPTWhtMGxtV19PaHcxV29rNThIdVc4dnFkSjBlMXpwTEhaUVlwbzZfOVlHcXZmdE5iWTJPdzQtYVBsUVhyeVJCZVB0Mjg4bmlMb2xRTGRsa1NtTGkxZ1EyTDJIUWZqOFVoQzMtcw?oc=5",
+      "originalUrl": "https://www.thehindu.com/news/international/india-did-not-invite-bangladesh-pm-rahman-for-brics-invite-was-for-bimstec-chair-dhaka/article71454857.ece",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-11T07:00:00Z",
@@ -4808,7 +4808,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcjQxb2twZzF6TjFDZjBHbjNTbkRvNlpOZl9nVjBOb2E4dXZrUF9tbnFOOFBrNnhBTGtSdzlUUEo1Znh6YUhwSGoxMFFQMVVMSlV4ZFNzZTZRU2VSd2VYeGplV3JoSDNTVWZqVHNVdnBMME16WUd3eUNJSHZfekZwYXNmbmYyX3hSVEFpMHNLR0dkb1V6aHJSVkJiNk10SzdyQ3pqTURLaDBYNjBMWHdVMUQ5Y0kxZndRV1Jv0gHDAUFVX3lxTE5CeTdKMkItaDhiY1J4SXhrckU3SF9FVURPRFRvZ1ozaDIzODZoSFRKU25CZXF1aHB6R3AwOUpnYVhMeDVoRDVxRDktYVYwWFhfLTY0VWtxdGtFRHBpdFQyR3AzQUJFZmdlaDFwaFNGT1oxbU1fN05BYi1Sdk5raUEtc1BaLVMxc0U4RENqd0psYS1JRUs1NHdndTNMaFFfOFRQb3FnLThfaTFrUWdqdzJCd1owb2dPOERzcDZLN2pGMUhiMA?oc=5",
+      "originalUrl": "https://www.ndtv.com/world-news/dhaka-london-flight-turns-into-fight-club-as-passengers-brawl-video-goes-viral-12063252",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-18T06:46:18Z",
@@ -4852,7 +4852,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Hindu",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPaF9NQmJjR0J5Y3c0cmFTaE5CSWF2Y2hHWTBXU1MweFFkYlJ4VHFLaVVoTmNGYXIwNkRMX2ZqT1NRZ0RzblByM2x0VGkzdjczX1AwUjNzNHF6Nzk3ZjB1RndVQ3ZHQzlxWlZWVjN0UmZtclJGWmtDTUs3MWxyOV9GWGFaQm16c3BIWlF1LXdVeDdhUm95NGlVeHVVSTdDNVRQcUZQdGdFSW1EdUw2Q3hDa09xNzVhU0Z2NTFlb2xB0gHEAUFVX3lxTFBMRDRiTXkyT3N2OXBZX25feWpvbUFUT0N5eG5jamZRM3N3YlRUM3hMSFhpME82dDdEUlhqVklrbUhtdkRWR1Z2T3BPNGdNYy05aEdZclBYU2R2UW1JSjRyRjJjMU1ESUVDSnhzNFlJZ1htZ1Q5ZUFOY1hpVXRUbkhDZVRkbC1kRUJmZHQ4Mm9ab2ZiVjBYaXA1cVZKWUFxX1phSndKY2lnTW1LWVFYVWwxd1prNS1IRVRJZ0ZFaU80RjVpbTc?oc=5",
+      "originalUrl": "https://www.thehindu.com/news/national/kerala/suspected-bangladeshi-national-held-at-ezhimala-academy/article71480758.ece",
       "scannedAt": "2026-09-20T02:04:00Z"
     },
     "publishedAt": "2026-09-18T14:27:53Z",
@@ -4896,7 +4896,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Dainik Jagran",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONTJfT3ItMmhSZGpZV1NFRVVJYUs2M3dGQWMyNEdsSl83ZUVBcDdVaWlBTGxIV2dodzRpRVkzdUwxSnFHbkJlVDBoTkRCVEhZbkdieEw0UTdRZ1RHRThhaXpGT1ZDTGhXYzFTTHRHMDZmelhmT245aHo0RkdQcmZySHhScGF4UmxsSWVLVWd1NlJZUk5CQjJIU0l1RmExWEU?oc=5",
+      "originalUrl": "https://www.jagran.com/world/other-bangladesh-no-plan-to-cancel-101-india-agreements-40378781.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T16:56:00Z",
@@ -4943,7 +4943,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Amar Ujala",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTEw3TVZNNV9ZTlBhLTZONXNtMW01UmwwTjF1ZUFPNU5uM1ZGZTFTWkFSSUhnYmp2RTFnYW5BMjVfQlljeW9pbERNMU9JSGs1LWlQRnhENzFVOVY0N1BPb0FEQVBSTHZwNXZYR3M1R1FndlczWjMzcHo5bWw5a2o1LXZITXpDU0Fsbnp1YmNhUVFWSVhGV2VWbXJCNDl5NzZ1RERsTXFHZG92OVdzWHUwb0JobDdMRllLYlp2Qk5IN1N1UGJ5LXVIWXVQZXlNczNUeUdMd081MHdyZFJwWFVwRmVn0gHnAUFVX3lxTE1kYzg0RlhGM1pZWEZqeHgxd1k1UUFRN3BZY3ZlZUhTUkdneGlEQWRoSnJrM1V2ODFYZ1NMTDVEOWlmdFVUcVJuTUx5SmpacmMyeDhRRklwV3F6dGYtWWttMmZWRkN0OXdURnQ5QW9NcGdSZVFkSHJwYnUwSXNYZlljWWdIT1dZb3VMOE1HZHdsLUs2eTlxYm5xWlJmR3BuVHE4WHY3end4ZFVsWjRPY05MRWwwb3k3VXg0VGxkNjJ1RUVhUEg1NVZva0JRbU9uSDdzSDRsSEJZZk56ZzdqSkgtZ2M2MVJsZw?oc=5",
+      "originalUrl": "https://www.amarujala.com/india-news/india-bangladesh-border-bsf-keeps-a-close-watch-on-encroachment-and-illegal-migrants-in-border-areas-2026-09-19",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T11:27:14Z",
@@ -4988,7 +4988,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Hindustan (Live Hindustan)",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTldqbjZERXcyMS0xTjNfb09KUWI5d3FjQnBfQlZaVlZMTzV4OXFUYVJRc3lnN25tOXQzbFBvSkdPSnpYUUpfanRmQzFEZ3RYcUJzZXJJZzdOdVc0ejVUQjQyczBuWFg4OExWclRTeWxRZnRsb1JkVUo0WUxaR0RQVGRBMlQwRWtmS2NuaEh2SUE0UXI5WHZqVjlES1FIVjhKZjctZk9DUGNwZ0FuUWx0V0ZmaGJUMjk2TloyS3J4ZWkxTUtsTUlqTGNnVEFBc1RaU3fSAdcBQVVfeXFMTWJCMVhZRUROS052QnQ0Q2lURzZzU0JheUdOaXNzSGdPaThVT1V1eTRydWdDQ1BLWFdYTjIzWXJUalRVRzFfclZic2ZHR1FXT3VTcGx6NkJXdTQ1YVhRbkJwV2MzTEVBV0VMY2NaWWozYWgtc09SbE5Sb1FkU3UwQUYxMkRMYTl2b3ZOQk4wdDYwY0NBZXR6NjlMU2dYRzgzOWpla3VUc3IyUVpZbDlHMTBOT3JlcVhicWxfb0w3Q20waUo0c3JHdjBjVm9xNk10NlUxdFU5cEk?oc=5",
+      "originalUrl": "https://www.livehindustan.com/national/story-water-dispute-bangladesh-faces-challenges-amid-india-pakistan-tensions-201789820557757.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T12:22:48Z",
@@ -5032,7 +5032,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOdFIwTkNoempGUGlDM2E0cGVOVHFZZ3IxNWZqRzFCalU0YjFOcHgzV3hiUE9rOUFjY2VPUVplNzd4dFpUUDFBUFQwdWdwY293dDhSTVNDN2YwZ0hrVjBSelZEaW9CMGdqYWM1RjNsd2tLSWdhYmw5S0lxVHozVHFwczBJc213S2pJM0VwX1RUN1hVakpMSk1xM3Q1a0Z1elI0TWk4UDY5UFpyRjhRTWNVcXhoY1FfOHBpaVY4V1FPd3o3bGJsRlNjOFI4Vld5R3hPM1c3VTJmczhLa1lJRTFTZ19XUFBZajJiMnlDRUpVRnRMS1lRTnJ30gH8AUFVX3lxTFBhVDdJVExoZzVyaU9fclJjaWJhOFQ0aGwxSEJIYnpoUnBxU0tHZEQ0Z3pMVVBhT3YzWHMwTjRxR2FvRjRnT1FKUktzRjEwTlNBdVZlMFhmZ1NTUTNLRktKQlhXVmVzVXVXWlBZaWFlRWx1cnNWY0x6TXd4Ujh6T19CNTMtV0x5d042bHlNVHA1dHB0OC1wT3ZkWEVvdVVOTGhRbDIyVlV2SDZIZS1HNEJLbHV2LTg0bFliMVJaX2tqMFdkd0RNdE5FQ0dPZzg1aXBxdENaZnlDT0RQUGxRWmJuWktxb0ozRVNWcDFlWVVtQ2lKWGJ4WjJYcmdtbA?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/bangladesh-tarique-rahman-govt-review-101-agreements-and-mou-with-india-know-reason/articleshow/134348680.cms",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T06:17:43Z",
@@ -5077,7 +5077,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News18 Hindi",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPNmZUaTRELXpnRDRFMWlCYXFyTUstNnVEdW9nOGhDRGgyeUl1bTRXTUtFcllwakZqQk82aklrVWdGcy1wbjBXdElZaW9tX1B0N3JPMEQ4YW5ndTVRc0Vrb0ZaSzZVcERTVlhBcEp2ZXZ5d0dZYmRIdmpmeTU0OVBLRUpiSGxuMVdwb2NLeVNadUV5RGJDb1RvdlRNSDdTMllXSXQwUzNHemdObjNpZURUcUJWdFVBMmdaX1kxS3RZUnpzbEYwbGgzcmVmb0dhOTY1SF9ra3Q5TGhpb2MweWdHYWdRalBEdUtZTE9kZzFuemVLdURSU0xlTkpWMU1fLWoxT1RuU0JHWlc5T3E3VTItb9IBkAJBVV95cUxPNmZUaTRELXpnRDRFMWlCYXFyTUstNnVEdW9nOGhDRGgyeUl1bTRXTUtFcllwakZqQk82aklrVWdGcy1wbjBXdElZaW9tX1B0N3JPMEQ4YW5ndTVRc0Vrb0ZaSzZVcERTVlhBcEp2ZXZ5d0dZYmRIdmpmeTU0OVBLRUpiSGxuMVdwb2NLeVNadUV5RGJDb1RvdlRNSDdTMllXSXQwUzNHemdObjNpZURUcUJWdFVBMmdaX1kxS3RZUnpzbEYwbGgzcmVmb0dhOTY1SF9ra3Q5TGhpb2MweWdHYWdRalBEdUtZTE9kZzFuemVLdURSU0xlTkpWMU1fLWoxT1RuU0JHWlc5T3E3VTItbw?oc=5",
+      "originalUrl": "https://hindi.news18.com/amp/world/south-asia-dhaka-on-high-alert-after-serial-blasts-at-7-locations-200-checkpoints-deployed-over-500-arrested-in-major-police-crackdown-10848323.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T11:32:07Z",
@@ -5121,7 +5121,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPZEtxYnpqVVc1LVllbHdLVnlLUF9OTlpKMzU4TjA5Mm1DYy1RNVF5bWNWMXlwQjVvTFlQazdhOEIybjJ0azVKVVBKRTliVlROeGxVWldSOXI1Z21aLTc3WHZHZ2dFcnpzZUlUVW1helhpckZnNkw1Rm9EQXZRd1dSUVg4eTJ6SVp0eHUxdkJnRzN5RTFBdkdEczd2Sy1yYW5pYlRmX09uaUphVlE3d0Q1Z2JOWlpsN1pFYzczOVFtTlRkT3ZrZ0k3VklBeUs2YV80Y2l4UVk5NXBiQS1QR28taGtUcEttZDhPYjdJbWhrVVpfZ1FDSDBsY0NsYUJiWFnSAYQCQVVfeXFMUFZuN3FMNFZ3akN3R0sxdE00aUFISF8xc19ZTW4yNnVFRzBsRElqYktxMHJ0RzlGcUVIMXN2S3JKVGNlZVU3NlhLa1Jwc1JHa2REaUppZVRySEFGSHhJbEl0NnZ1VjhLTnZXYlpoZFhSSnBqZUxydGE3NU1Bc1R4VC1NOERfQ0h4Sk9WcGV5MzdfVXNta0pZV0wwTURMZlJaeTY0SE1pZG9HNnQ5eGhLS2Jmb05HTFZrMDJXM0IyaFBqU054VmdZRVU5amI4anhZMktDOTFYekJ1S1BPUWxOcWxsWkttZW9QUkVqOG5iQVlwVzJNaURJUzhnZmFQSmhsWTVSUDI?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/sheikh-hasina-return-bangladesh-police-wont-able-to-do-anything-says-dhaka-police-officer/articleshow/134325601.cms",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-18T04:27:54Z",
@@ -5165,7 +5165,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News18 Hindi",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMWxlamlGQlptelpVem5PLWJpcUlYVkJQX1FUbEp2MjlNUUZuajhFUFkwZzRmVlBSSy1wbk83LUxydnBlcnJlaFIxa0VZdkdKcXhCMFFzaXg4WnRLVjBmMHVVWFJDZVU1NV9INHFLWEN1dE5CejNyOG9hNi1QWmxSMERNU1FCeVB5WG54SDl5TDJhdEFobE1lVm1DbFFnZWRJX3hqSFQ3WWNzbWU2VmQ00gGvAUFVX3lxTE0xbGVqaUZCWm16WlV6bk8tYmlxSVhWQlBfUVRsSnYyOU1RRm5qOEVQWTBnNGZWUFJLLXBuTzctTHJ2cGVycmVoUjFrRVl2R0pxeEIwUXNpeDhadEtWMGYwdVVYUkNlVTU1X0g0cUtYQ3V0TkJ6M3I4b2E2LVBabFIwRE1TUUJ5UHlYbnhIOXlMMmF0QWhsTWVWbUNsUWdlZElfeGpIVDdZY3NtZTZWZDQ?oc=5",
+      "originalUrl": "https://hindi.news18.com/amp/news/defence/sheikh-hasina-did-not-resign-bangladesh-power-transfer-10841931.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-17T08:12:57Z",
@@ -5209,7 +5209,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Aaj Tak",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcDlPR21IZjQ1VEVvN2lKVVZ3OGNOUmg4M3VHQTNvTmhhcjJTTjA5aDZOWW9vdXJGOGNtMDdab25FSnVBZ0JaeE45ZnU4VVd5MlMwVklNb2JRQU5zTm02T2FOTVFHbmZUR0I1b2VidTlJODk3NkdhTlBtUk9kZFpaU2R2WjdYem93S1NlOFNEYXJxNTRySmhXaGJKeV9MelpQd2xJaGd0SHZ4c1RUM2dTSFdoTzdUMXNHdlNSVE9QZjFXSVdlc2VQRlkyN0RSYU14dmfSAdcBQVVfeXFMTnRqQWV6b2xONVZ6cXNQQzFPQVNScGNhcFE3RjFqR0d2cFlQZHdXeVhDR01uX3A2VG5rUGdWNlk4ajRsdDlkaFNmTGRjVHJIREEwV1R5dUF5cXQ0RDZlSHFJamdEZ2t6WFZiTjAtdFVGdXJiSnJZWmtVYWhYVjNOdno0SWxnMDk4cU50cFZ0RVAweHNVeWttWWZXNlZXbDNBSEFQQjl3eFVobTYzOEZJSHUtcnpWRVpPWHNITHNOYUFaNGM0U0ZteG92dDVzRVdxZEZXZE91XzQ?oc=5",
+      "originalUrl": "https://www.aajtak.in/world/story/bangladesh-7-awami-league-leaders-death-sentence-guilty-2024-violence-ntc-drmt-dskc-2643117-2026-09-15",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-15T09:20:01Z",
@@ -5253,7 +5253,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Aaj Tak",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbjFPZU9KcGxManlEVnFjX2J3UDAtN0VsNHFLWE9GXzJWaEtPY3l6aVRmdHRnMkx4YlI0THNCb1ZIeVpOMTJhYWJfLU5scXphUF9Jam5JeFpRZ0hjbEtQRTdOQ0NfcTNQeS1OcnVaNFpiNE1XOEtmLXp4TDVBNnFHXzdsa2YtR0ZwNXVQMkxzMGYzRDlIMTR4WTcxYXl5R3lObEpSMjJYb3hwdkdOMVFTaWJiVXFvSFRGVHI3OEtoaUV6OGFLdjY0bDFhSS0?oc=5",
+      "originalUrl": "https://www.aajtak.in/world/story/bangladesh-wants-to-reset-ties-with-india-humayun-kabir-statement-ntc-apdy-dskc-2642293-2026-09-14",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-14T01:39:57Z",
@@ -5297,7 +5297,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "News18 Hindi",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQdGp2am44TmQxcVMxV2JCSmRDTlJWUEMtUExlU1JKekV4emRMaUl6UHRjUWJqNUo3WUswR0E4aVk5THYyMUNuc0RQU3loWHlDdGJqeU82OHVxWUNEYnc5TjE1ejdabjNqRXA3d3A5bmZvWXdwbTNLWVhoRzNRZnQ1enBlLVRHb2RGT3Y2ak03YmtNR0VMT0VCSFFUN2FZNzJUdFU4SFVYQVBrbUE4N0gzREZfM2ZyUkVhdkEyR1BOX3N0QTRnTVA4X3NEWFpGMUF3ODctSHZQc0FINnJ5NHJ2MjhiMHUwLW5ySkFsN2ZlNWphQzdUQVY2bXFqYURzQdIB_gFBVV95cUxQdGp2am44TmQxcVMxV2JCSmRDTlJWUEMtUExlU1JKekV4emRMaUl6UHRjUWJqNUo3WUswR0E4aVk5THYyMUNuc0RQU3loWHlDdGJqeU82OHVxWUNEYnc5TjE1ejdabjNqRXA3d3A5bmZvWXdwbTNLWVhoRzNRZnQ1enBlLVRHb2RGT3Y2ak03YmtNR0VMT0VCSFFUN2FZNzJUdFU4SFVYQVBrbUE4N0gzREZfM2ZyUkVhdkEyR1BOX3N0QTRnTVA4X3NEWFpGMUF3ODctSHZQc0FINnJ5NHJ2MjhiMHUwLW5ySkFsN2ZlNWphQzdUQVY2bXFqYURzQQ?oc=5",
+      "originalUrl": "https://hindi.news18.com/amp/cricket/asian-games-2026-womens-cricket-semi-final-india-face-bangladesh-for-final-birth-on-sunday-20th-sep-nisshin-japan-ws-n-10848395.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T10:38:58Z",
@@ -5341,7 +5341,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Dainik Jagran",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZzRwUE8zcEI2TWdtMDVrUVFjWTgxQW1BeV9sSm04V2hrS3lEdnpsYWRQMUhWdXZQbWxlOWhJQ1BtY3Z1TTRIQUlKaFJUa3pPb3Boa043d19nakJJVkY0U1hHc2U1ajRnUVdPMXFGa3lJTmpPOUhqRXJRRGF4ampzU3R0LTZfSmtRTUp4amhSbW5HNThWNTZOQnFHazdJMUliUlA5RDdBYVNhcnRzZV9UcGdmZ2cxd0x0NkxXUVFoNU1USVNfUm4yeEFEZ3VzcmhyLW1j?oc=5",
+      "originalUrl": "https://www.jagran.com/world/other-bangladesh-dhaka-hospitals-overwhelmed-by-dengue-crisis-patients-on-floors-news-in-hindi-40378311.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-19T10:27:00Z",
@@ -5385,7 +5385,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Dainik Jagran",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPWU1FRTBidGhGUmI3b1ZpbVg0NEVtTV80YVJVZUY3cXZRT2JPeTBZUDRCZ0hwYjhYWnJBZmpRNUFscV8xN21DZjNpNmZ0Q3o3aWpickpzNFBOMFJTdFc0Ynk4RHVGdTJzN21KSmpLMEtJVmpVMFJ4WGJDeDZfOVpSS0VfcmtlNGtCc1N4WUdsTDB5aWtsYW85WHBFM2l3NDF2QkdJSjBmVEV4NFdfOE9vbkh6VlJvRHVqVGY2a3hHYmM?oc=5",
+      "originalUrl": "https://www.jagran.com/world/other-india-bangladesh-railway-officials-meet-to-resume-passenger-train-services-40366842.html",
       "scannedAt": "2026-09-20T01:58:00Z"
     },
     "publishedAt": "2026-09-18T07:00:00Z",
@@ -5476,7 +5476,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Indian Express",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xUXM2Tlk0N0J4N2FRRUkxc19OeDhWekdVYlBneUZILTJUMERldlV5MlJjY3pkM19udGdIUFZ5Y21rY1duZ1ZTYmlfQ3VVbTlTYWc?oc=5",
+      "originalUrl": "https://www.instagram.com/p/DdbwIztD34Y/",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-19T18:30:00Z",
@@ -5522,7 +5522,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Global Review (YouTube)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wN1lMTlM5ZG5NakJXV01vTXR5M0x5Q1lkRjkzZURjZHJydkZSSkpsOUQ4Z28xdkVvQ3VrX2RQVzlWaVotQWxmLTdQaS0zWlVaU0tBakNB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=TpJCzjwmosE",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-18T18:05:06Z",
@@ -5568,7 +5568,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Bartaman Patrika",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOcTZwOFRhOUxLd2xicDRsZ2pQNm5sZVhJUlZZZEtVd2t6MnhlQ0xQbmx2S3lWNHp5eXlhWTRQZHR4bVh1ZkVvY3hIUkZ2NWg2U2p6dWZ1OHl1M2psb1Fic1lYQjQyTkVub210eEFWN0Z6QjBqVk5vT2cxaE1vS0V3aE1rYmN5aE0zZzZzRk13X1Q3SkZtN3h0U09zSFlxdk1xVnZDbTFNb01n0gEA?oc=5",
+      "originalUrl": "https://sports.ndtv.com/asian-games-2026/india-vs-bangladesh-asian-games-womens-cricket-semifinal-preview-6582910",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-19T05:27:06Z",
@@ -5661,7 +5661,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZGNYUmhTVTJaRF9VU2FxckpjRHBQc0RHOEo0M1hESkJsblU1UmR4SVRaenUzanZQbzNUVk1ndG9vR3JqQ0MwYXpjMEl4V3RxSVY0WVhMYi1fTXlWUW5udjR4SEl6LUIwOVVDRzZXSUVWZm1acnVGdlRfTWw5WUg4dE9KTHN3bVVSVWk0YTc2ZzhQdlhFZkxhZGFFd2IxeU1IVXhhOGhwV1NPRFVXUm9seW1XemdEeEHSAbwBQVVfeXFMTmk4NHNsckdiQlVjWkVjRHR5cFZ1Rk13NUltNU5mbTNmenRWWTQzZ05qTmk0LU16Z2VsaFVsQVNpcGQzZVJmLW4xVlFtbFlfMFcyVFZLU0NvdV9HXzNjRm1OWjBISHpYMDlqV0IyeTJYOFYyaDFHU3RRS0tFVW5rVjQwVzJkeC1NVkxlUU5VVjUyaWROdmxYbDJIVEQ2MXVCWkR3enV1Qnk0UTBsbVhrckxRNXlTb3ZJOTFwQlE?oc=5",
+      "originalUrl": "https://assamtribune.com/international/awami-league-terms-death-sentences-for-7-leaders-one-sided-fabricated-1617559",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-18T08:07:02Z",
@@ -5707,7 +5707,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPZEtxYnpqVVc1LVllbHdLVnlLUF9OTlpKMzU4TjA5Mm1DYy1RNVF5bWNWMXlwQjVvTFlQazdhOEIybjJ0azVKVVBKRTliVlROeGxVWldSOXI1Z21aLTc3WHZHZ2dFcnpzZUlUVW1helhpckZnNkw1Rm9EQXZRd1dSUVg4eTJ6SVp0eHUxdkJnRzN5RTFBdkdEczd2Sy1yYW5pYlRmX09uaUphVlE3d0Q1Z2JOWlpsN1pFYzczOVFtTlRkT3ZrZ0k3VklBeUs2YV80Y2l4UVk5NXBiQS1QR28taGtUcEttZDhPYjdJbWhrVVpfZ1FDSDBsY0NsYUJiWFnSAYQCQVVfeXFMUFZuN3FMNFZ3akN3R0sxdE00aUFISF8xc19ZTW4yNnVFRzBsRElqYktxMHJ0RzlGcUVIMXN2S3JKVGNlZVU3NlhLa1Jwc1JHa2REaUppZVRySEFGSHhJbEl0NnZ1VjhLTnZXYlpoZFhSSnBqZUxydGE3NU1Bc1R4VC1NOERfQ0h4Sk9WcGV5MzdfVXNta0pZV0wwTURMZlJaeTY0SE1pZG9HNnQ5eGhLS2Jmb05HTFZrMDJXM0IyaFBqU054VmdZRVU5amI4anhZMktDOTFYekJ1S1BPUWxOcWxsWkttZW9QUkVqOG5iQVlwVzJNaURJUzhnZmFQSmhsWTVSUDI?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/sheikh-hasina-return-bangladesh-police-wont-able-to-do-anything-says-dhaka-police-officer/articleshow/134325601.cms",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-18T10:15:00Z",
@@ -5753,7 +5753,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "TV9 Bangla",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa2ZubWZubzQ4NWFpd1J6TGc5bENuN1k2S0FvMjh3c19WbXF5bTRTOWI3RWR2TDRtMm9IekJocXF3eFBocWJ6eFFuRWhIUDVwWTVaM1p1a2F6Z01pUXg3N19YSEpvNGlzZ192QkhLMFJ1WWZFcVp4b0t3dFpGWWplTmltM2V1M2tVemh6YTFvTmtlTXpZdmQ3RzJ0ZkdYSEFpREp0V21tSWhn0gEA?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=0WrRFhIezuc",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-19T09:21:50Z",
@@ -5799,7 +5799,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Zee 24 Ghanta",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd2JmZldoc2xmd0VlQ2s0U19vTGd2NFN5bk52bXh3enVqSE13S1h4M3E1RGFEUGY4eHpQenFod0d5SjhnZ195TXAteTJFcURuNDN3aFNuWmxldF8wSW1rY0JCVWJpUURmNE05Y293dmp3OGVlaGtFNGxJcUV4N2pLV241V013RGlLbk8tVWp0bVpLd2Nia1BhLWlHQ2U0SE9lTEhPZkxOOFhB0gEA?oc=5",
+      "originalUrl": "https://zeenews.india.com/bengali/world/bangladesh-durga-puja-minority-hindu-security-concerns-ahead-of-festivals-521940.html",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-19T14:14:04Z",
@@ -5983,7 +5983,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "The Wall",
         "bureau": "Delhi",
         "language": "Bengali",
-        "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNY1VOMUMwV210R2xhWUFlSkpxaXRsMXhWazlYQjg3a25LY1kxNE9GWTd1bTJCSGtwdGFVNGt0dE1rNV9xZlkyMTZHS2FTb2N6aVBYS2lNVnZDVVIzZWJ5WmxFWnI3WFpzTVg0YU5wTzN1cVN5UDNnb1RFenhJdlNZbmpWcjZVZ3ptRUxnLW0tZXdrdEhyLVJsdHl3eG83RkxzTVdYTkdzLUU4UkNKcXNKeTJjblBFQU9wUktkQlF6QXZLSDgyb1FPRElKN1RxcHBYTHZtZkRQbDllc1JDQ2UyTFppNW91QkhGaWFoSTI3THU5WURuNEU3cmVIeE8yTGfSAf8BQVVfeXFMTWNVTjFDMFdtdEdsYVlBZUpKcWl0bDF4Vms5WEI4N2tuS2NZMTRPRlk3dW0yQkhrcHRhVTRrdHRTWTVfcWZZMjE2R0thU29jemlQWEtpTVZ2Q1VSM2VieVpsRVpyN1hac01YNGFOcE8zdXFTeVAzZ29URXp4SXZTWW5qVnI2VWd6bUVMZy1tLWV3a3RIci1SbHR5d3hvN0ZMc01XWE5Hcy1FOFJDSnFzSnkyY25QRUFPcFJLZEJRekF2S0g4Mm9RT0RJSjdUcXBwWEx2bWZEUGw5ZXNSQ0NlMkxaaTVvdUJIRmlhaEkyN0x1OVlEbjRFN3JlSHhPMkxn?oc=5",
+        "originalUrl": "https://www.thewall.in/bangladesh/sheikh-hasina-delhi-consultations-december-action-plan-awami-league",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T02:40:00Z",
@@ -6029,7 +6029,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Navbharat Times",
         "bureau": "Delhi",
         "language": "Hindi",
-        "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+        "originalUrl": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T08:25:22Z",
@@ -6167,7 +6167,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Syandan Patrika",
         "bureau": "Delhi",
         "language": "Bengali",
-        "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+        "originalUrl": "https://syandanpatrika.com/news/tripura-assam-border-bsf-heightens-vigil-akhaura-agartala-icp-20260920",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T05:30:00Z",
@@ -6213,7 +6213,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Sangbad Pratidin",
         "bureau": "Kolkata",
         "language": "Bengali",
-        "originalUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaGxFeEcyU3dRTnFsRmcyRTNfVkw2Yk1mQThXaFljdlpJQTZvY3JPN1VXN3gyd0FuMVJpd3JhUHhfb01QWVdVWWh1OVVpbHpCcEhyNTh2VkxmanpmTUlwNVM4Q3ZsRTZZRnNRUFk4Qzl4dDkxRzdCNFE4cUNDV0thVTdSZmtfbVotUUtBVktjd3phRE5qUTlKOGkzWEFqTm5KZV_EcnhZcHRWbHpvQ3c5X1Fic9IBuwFBVV95cUxNVXJHTWNYZVMxVUN3RlBPU21zV3pTRW1PNE9JNjFiR0c2V2IyNVBrYjZ4dUpWQjRNVy02RklzTG84a0J4c3RwRjNuMk42Z2ZtR1poTThrTXJ6LWhDQ1ViYjlPaEVZZ0pGSk5WVDl5emR6VDA4NVNYemJXNnZXNnRCZFFWTG84UF8yLTZhRlZlX0YtbGpJZlNMRTVXNWN0WDFYSEpVdVFHY2pXZGs3b2NGM1RseVZxQW55MEdE?oc=5",
+        "originalUrl": "https://www.google.com/search?q=Bangladesh+India+News",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T04:15:00Z",
@@ -6258,7 +6258,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "News18",
         "bureau": "Kolkata",
         "language": "Bengali",
-        "originalUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQaDkydGFzYnRSR1Y0dG9EZzdrVUd5Z3FkRFNENWYzbnNheU5MR2ZVR3dmREdnQkhGa1BUdjQxQ2RDcDRwWUNwMUJrWXJlZkhnb0JlTlVqOEplZGE3VmFkYWpGaFowTHZ2QUVpMmJNbDlNQXRWUmJuYms3aWc1Y051MjRTY0Rsd0U5aDBpTGZ2VlVrR2JmcVA2TjJ6MWV2a2xrLXlwX251WlNyeUlFaEctejE5SGdOaS1qSks1bVNCczBuclROQmRBNjdFdHZmVkFWVGo0NHZOM3V2SkxqMkZPd1VRTG9xQlRrR1hTMzV0cXdyYlpoaFRDTU9aTkZWQmRnQ2JF?oc=5",
+        "originalUrl": "https://bengali.news18.com/news/international/bangladesh-sentences-seven-hasina-era-leaders-includinh-minister-to-death-over-2025-student-uprising-crackdown-ank-2894853.html",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T07:26:53Z",
@@ -6349,7 +6349,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Navbharat Times",
         "bureau": "Delhi",
         "language": "Hindi",
-        "originalUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPZEtxYnpqVVc1LVllbHdLVnlLUF9OTlpKMzU4TjA5Mm1DYy1RNVF5bWNWMXlwQjVvTFlQazdhOEIybjJ0azVKVVBKRTliVlROeGxVWldSOXI1Z21aLTc3WHZHZ2dFcnpzZUlUVW1helhpckZnNkw1Rm9EQXZRd1dSUVg4eTJ6SVp0eHUxdkJnRzN5RTFBdkdEczd2Sy1yYW5pYlRmX09uaUphVlE3d0Q1Z2JOWlpsN1pFYzczOVFtTlRkT3ZrZ0k3VklBeUs2YV80Y2l4UVk5NXBiQS1QR28taGtUcEttZDhPYjdJbWhrVVpfZ1FDSDBsY0NsYUJiWFnSAYQCQVVfeXFMUFZuN3FMNFZ3akN3R0sxdE00aUFISF8xc1_ZTWnZnVFRHBsRElqYktxMHJ0RzlGcUVIMXN2S3JKVGNlZVU3NlhLa1Jwc1JHa2REaUppZVRySEFGSHhJbEl0NnZ1VjhLTnZXYlpoZFhSSnBqZUxydGE3NU1Bc1R4VC1NOERfQ0h4Sk9WcGV5MzdfVXNta0pZV0wwTURMZlJaeTY0SE1pZG9HNnQ5eGhLS2Jmb05HTFZrMDJXM0IyaFBqU054VmdZRVU5amI4anhZMktDOTFYekJ1S1BPUWxOcWxsWkttZW9QUkVqOG5iQVlwVzJNaURJUzhnZmFQSmhsWTVSUDI?oc=5",
+        "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/sheikh-hasina-return-bangladesh-dhaka-security-situation/articleshow/134289012.cms",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T04:27:54Z",
@@ -6394,7 +6394,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Uttarbanga Sambad",
         "bureau": "Kolkata",
         "language": "Bengali",
-        "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+        "originalUrl": "https://uttarbangasambad.com/fulbari-changrabandha-land-port-freight-movement-cross-border-trade-update-20260919/",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T05:10:00Z",
@@ -6765,7 +6765,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdEtSS1ZyUEw3SGFENkNYQUVxeDkxS2dIbGZqRUllRDJLbmxkeDZOSVFLVjBkQndySGkwcHhyNHk1Q3VUSC1fQmpYZ0YxMjFLNjk2NjN6WUxmVWdkN2lzX29LWnZKQnVUTVBSTkdweHdjOHpMTGNlMFZweGRRUXY0UDdxamExbXNxNmo3V3FKM0Npb1pNUzhTSGRiOTJ2bEY3MWNwaTR1V1l6RWZBVG9lWWZud2xrdnQ1dkFFUF9hNkhsTGJ3VlV2RmxjaHhUVWxTYWx6Mkx30gHbAUFVX3lxTE83OS13UG1RSFc4RlJtcWJoQzVyWDRoVWY5Sy10SXFhWUNjNzJsZVZvOV8tb1FsbFhrNUNCemxFeHN2STdhbnRkRkp1ZURVUTZnY1lLeXdxcVdMTjFRS2l0VWpnN2ZZSFkxLTduOEF3NlpQTFdKMm9GZERhWXdYRHRpT2M5Q3p3aldNTkQ2U1ZwWEJELXpLQXFWSUo0RUJlRkhtcFgtaWV4TE11ZTZqbzlzaTczU1RjaVBzUlZVOEdncEZmZVFRdFlNa1dzT1h6bDVXSWpOTFZndEZqdw?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms",
       "originalHeadline": "BRICS से कर लिया था किनारा, अब भारत आ रहे तारिक रहमान, क्या शेख हसीना का मुद्दा भी उठाएंगे बांग्लादेशी पीएम?",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -6811,7 +6811,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Sangbad Pratidin",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMHR0ZVhXT0EwUFRhRW85dGx2bWN2U296aDR0UnZDWWlFLTZ3U1UtQUZScFhKdVVacmZFb1BBcG9RUGxqMm9LakR1T0ZfR2FVTnN5U3J6ekhFQnhUZnJZekFsQnhiWWRtYWR0ZW5WQnZra25FaldwbFB6Tm5JVjBBcWF3bl9kckt3dFhEaTRoV3R4ODdZTnBlMXlqcFhxNzNHNlV6TC16cjNBenhTc0VUMjhZUlhpRmFm?oc=5",
+      "originalUrl": "https://www.sangbadpratidin.in/app/bangladesh/sheikh-hasina-wants-to-return-to-bangladesh-on-december-14/pid/1343530/",
       "originalHeadline": "বিজয় দিবসের আগেই ফিরবেন হাসিনা! আর কী জানাচ্ছে দলীয় সূত্র?",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -6951,7 +6951,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRXZYVFBUcTlySmpWRnRyelJValJILTVoRkpIUEVlQ0dfT1N6WE5BQjBuNmZXQ3Q1QmQ0R0FfYlAzajBHczVsYm9RVjFrX0FJZFplNkI0SEgwdV9DX09BMDRqMEZOQ09RelNfdU8wRWhuN3ZsSHFjd3IzelphVUVzN0ZsNkRLSVFPbUdxU2RHTDN6SzRDZjZrS2kycjlPRVhyb05ZMlhXVnlsSXY2cXYyQTRrOE4xUXpTcDBUMTBvNENZT0ZKTHhKRDMtV3h2dUpPSjFhNW5xSmfSAd4BQVVfeXFMTkNVU291TV9xbzIwT29DQVB0a3dpTHg2TDZqajl4d3lDSldLUmVLT3d4YzZyMWhXbzdVQ1hjSTg0OFVSS2t1WW9oOEFlREp5ZFM5TG4zQjNpaEFWUHI3VlpyZWxoNDFLRXh1V0d2WXhuYUc4bGxSRWtrZ2hiVWlSMGpPOTFZN1NVaS1wa0swU1ZwcXpMXzRCTUI5N21WaVVaX0QzSWhIeWk1Mml5QTdzQk5jZXlmV2w3ZWtmSm43Sk4wZnlOTnVCUS1kV29FODFpYWRGS3NZQWg2aXJVTFlB?oc=5",
+      "originalUrl": "https://www.thewall.in/video-story/collective-leadership-in-the-party-during-hasinas-times-of-crisis-bangladesh-news-sheikh-hasina/tid/205081",
       "originalHeadline": "হাসিনার বিপদ-আপদে দলে যৌথ নেতৃত্ব",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -6997,7 +6997,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BcmZGVlZkWDFiQ1FkUHF4WTRvUHF1TUtxTk96M1hNTEFXTVh5QnpYVkE0ZFNfWW1XZnpYVXc3SFdMOWpSM3lKQU0xb0hLQXgzY0E?oc=5",
+      "originalUrl": "https://tripuratimes.com/news/akhaura-agartala-integrated-check-post-trade-and-freight-movement",
       "originalHeadline": "Akhaura-Agartala ICP border trade continues steadily despite regional shifts",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -7227,7 +7227,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Republic Bangla (YouTube)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1uS2FRUTZmdXRrTVh1cFVIdkJvTFNDOFlFMGdFZE5iNDlKMGdndmpyUWlyM1RwbFF1X2FROURuOHFCSnlaeUtPZF9oVXZ6a2M1NEE?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=F-e2nupwMmU",
       "originalHeadline": "দিল্লি ও বিএনপি-র নতুন কূটনৈতিক সমীকরণ: পূর্ব ভারতের সংবাদ মাধ্যমের বিশেষ পরিবেশনা | Republic Bangla",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -7319,7 +7319,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (YouTube)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tc0JLT2FxQ0UzUHI0NFgxTTRxdnVCLTNqUndaN0RYWEhzSUVreERzTmRDb054NUt6R29XMUZCQlhTZ3UzR3FLbHhKbTMxZi1HYXJfRnRB?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=hL0IKsWZOKI",
       "originalHeadline": "ঐকমত্যের ভিত্তিতে রাষ্ট্র পুনর্গঠন না হলে সুযোগ নেবেন শেখ হাসিনা : রাশেদ খাঁন",
       "scannedAt": "2026-09-17T10:16:00.000Z"
     },
@@ -7365,7 +7365,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (Instagram)",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pYXBMVnRtaExDRXM0S1AyWTduVjUzSGxqZkxja1hHNDA0TTZQOVNoUU91eHhlVUVwS2ZTYnAtYTRSdUxEVEtDMGszSE9WWGkwNFE?oc=5",
+      "originalUrl": "https://www.instagram.com/p/DdWLp5qCb4V/",
       "originalHeadline": "Bangladesh Reviews 101 India Deals Signed Under Sheikh Hasina Government",
       "scannedAt": "2026-09-17T09:56:00.000Z"
     },
@@ -7458,7 +7458,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (YouTube)",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNY3JQRjBzUjV0bzFmS2tmNHl6Ym1rNVBxdmhrUVlEZHdrTFZDelE4ei1GN01Hbm10d0FiVVVOTTBwbm1zRDFqNUhxNTBVRFdocFdaeHp3?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=Lk84_Y0lBAU",
       "originalHeadline": "শেখ হাসিনাকে কেন্দ্র করে ভারত চক্রান্ত করছে, বিস্ফোরক অভিযোগ রিজভীর | Sheikh Hasina",
       "scannedAt": "2026-09-17T09:56:00.000Z"
     },
@@ -7504,7 +7504,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (Instagram)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9NMkRuTXc0QUJTbnNoTGRpQWNTbHFOdTZSRzV2WjNLbGVVMTVvUXBsc2hrZVprSXJlNjdTNFhIVm43NVlJbHVGakF4bm1QTTN0SGc?oc=5",
+      "originalUrl": "https://www.instagram.com/p/DdWfwN-mDI0/",
       "originalHeadline": "A Call to the International Community: Defending Students, Teachers and Academic Freedom in Bangladesh",
       "scannedAt": "2026-09-17T09:56:00.000Z"
     },
@@ -7880,7 +7880,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNcG05OE9nNXFhclZudmtCcE1Pa09BSU1jblZkSHJIUmdIcUdrNGpudGRnSnh5UmQ4S0Q4YTlUeEFVY2xoYm4takZjYVk3a2tSdVpPTVl1OTJJeGZvb3NEX2xUZGhTbjgyNUM5REZicnBUT0J6LVo3bHZpeklYOXBhQzBRVFZ6VjJKbmtGZzlXSHNFVVdaMm1KbEVJX05HTzEzMWVnOERsWVFCTTA4RkxKWlVaVWlacjRGdENkTXNQakVaR0dkU2J0eGVTcUN6dFVTbG9JekJGTDJfbmJKUmpMaVdCNUU5emc5MDAxeWhIcWxnejNYZVdRcVV5MXUxNWFzS1J6Mm55QTAxNkpCNWdkUNIBlgJBVV95cUxOaDMxdjFuSmZUUFQtX21HRkI4X1BaSTNJcHJadlpxY0RLanRtYURNN0ZlVUJ0OEFiNW43aWpqczFfcXRNRmE3NnlzcjNWV3ZGODhzSnR6SmUzREpOd0NKblNWajkyMjBQaEduM0NLaDhsN1k2c05WbGtnSDYtVFRBN1hDTnAxdFRvVE1SY1Q2MmNYWjNTVy1uVmxDaVIwNGJwSnhnaG9HcUZ5MHg4NHNSV2R0Tl9vQmF1ejI0dHo2elBsME9yQURYUEkzVzJ3T01RbFpOa05mX2RRN3NzdDhZOTJKR3Q4Ri0xdEtKd1VvX192RTRGVDh0ZFZSUXFsWENQTHE5WUJYQjlpbkZEZ3dDdko4UHI4UQ?oc=5",
+      "originalUrl": "https://www.thewall.in/bangladesh/hasina-plans-to-return-on-december-14-tarique-decides-on-local-polls-for-that-very-timea-plot-to-block-the-leaders-return-the-party-claims/tid/204975",
       "originalHeadline": "হাসিনার ফেরা ও স্থানীয় সরকার ভোট ঘিরে তুমুল অশান্তির আশঙ্কা - TheWall",
       "scannedAt": "2026-09-16T21:30:29.000Z"
     },
@@ -7979,7 +7979,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Indian Media (Instagram)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://www.instagram.com",
+      "originalUrl": "https://www.instagram.com/p/Ddf2gIwm9nI/",
       "originalHeadline": "আওয়ামী লীগ নেতাদের বিরুদ্ধে মৃত্যুদণ্ডের রায়ের প্রতিবাদে জেলা আওয়ামী লীগের ইনস্টাগ্রাম পোস্ট",
       "scannedAt": "2026-09-16T10:32:00.000Z"
     },
@@ -8079,7 +8079,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Navbharat Times",
       "bureau": "Delhi",
       "language": "Hindi",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNdkFVdHh4OWRKNXFlV0dqRTRTSXhsdXRvVUYyamE5MU9JNDdoRkVTSnJjQW5CTkZ6MTdQVE9vdU5iTlFZZ0YzZ2J5OV9sZ2lHN01VS0pFUTFhaDhPM3BxZkctaFBTaVZMbFJJUnYxQUo2TDhXN0dyMzBpTjdkYnpkajgzU2YwUzBCMkpJQ2c1MzV1NTczSkFIei1SN2NwMW1xNHd5RDRGdlk4M2VVNVNrU09BLXBmd2ZFTDdYR1lGN1M3X2w5MmFCN3VQZGpoekpuZWFoVi1nQVNESXlWMmotSE5FWHoyeXJkaUh5MUJIZmJFVlhSNzlIcUVFZkhQOW1Wc3hTX0EwWXpmOXPSAZACQVVfeXFMTXVmOE1aanRaVGM5RUdpNTl2YnRwQ3lmVEFyVVBxMTQ4ZEE1LVV4R1NXQlpNYjZmRktRanVBWnc1cXNKVHRiUGRUUjlXYVBhUmVUd2JjWUVkbFIxN1Y1YjVhaGw5ZDE4b1BXOXVHaUNsdXJLQ04xSTZCX0d4WEZOR0ZyanB2cTI2a0JOalRPT21OZ1Vld01pN0lSUWFrbV9NY2NSM05wRTk0YkhTZHZKYlhCa0tXcjNPc1BJYmtrdkxpdmhybkNKWXA2Q1dIVHd1cl9CTG83YmRXaGdMcTByMll3TmY2RnVDc2tUOHExWGptTl9pLTNRbDl0VGphbktTVVdsU0ZPR2N2NDhScHVoa1g?oc=5",
+      "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/bangladesh-zahed-ur-rahman-demands-sheikh-hasina-extradition-from-india-for-better-diplomatic-ties/articleshow/134277157.cms",
       "originalHeadline": "'शेख हसीना को सौंपो तभी बांग्लादेश सुधारेगा रिश्ते', तारिक रहमान के 'भारत विरोधी' सलाहकार ने रखी शर्तें",
       "scannedAt": "2026-09-16T09:50:00.000Z"
     },
@@ -8178,7 +8178,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Politics Tv (YouTube)",
       "bureau": "Delhi",
       "language": "Bengali",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9EOVRXeFpaQTdpVTlSM3pIUGx4ZHhSc3FuWG1JQXFMUDh5UXVGdzNlQUgwNFBKWjVLZmVHazFxSl9FWUV5Mnd2bkFyMUFWWFZQdWtyVGhn?oc=5",
+      "originalUrl": "https://www.youtube.com/watch?v=Tb7sxCgGj1o",
       "originalHeadline": "হাসিনার দিল্লি মিটিং এবং ফেরার ৩ প্ল্যান | Sheikh Hasina | Politics Tv",
       "scannedAt": "2026-09-16T09:50:00.000Z"
     },
@@ -10107,7 +10107,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Indian Express",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNRGtLZm5yTmt3UDQyUjFSSzBMVUxPeVhHSHg5dWtjYmo4X2JFdHBsRi1GQ05mZ1NiTEVwZXFQV3AyOWZ2blVEMnRCN3lKZS13cnhER2N2Z3VWTC1oWDZObDE5NHZUZmFuVUo2cDRjMGFfaG1XeHZNRjFad1dzTnNGc0R5bmNvcktQbHNxSzJBUU1VbEg0MUpza0g3SmdaRzRjWTA4QXlNa19VT0VZcThQTDRKV21qR19IWWRVOGJ3cGZOeFpJanY3ZUp2RmNmV1haMnJvZXYybTU4d0nSAeIBQVVfeXFMT0J3SzJ2WUxCU1pvRDJtVzJON1lVTVFBRXBGcU5qX1gwdXhwNGhYandON3NwemRiOVR1NHhtQ1FrRWhKSzllYXBHcUtFV3Q5clFEcU9wWHBSQ0V4WnplR2ZKYUczemVOR05NdlZPd0ZjQUlsZ2NyeUZlQUVaQTFoX25FWWRTRDBfeEFHdFltNlFRSFBZVk1mN3NpQXBvNVh4ZlhaNTBNR3hBN2JaWXlxeU1PZVI2dk1SczhhMXRwVVpsUXdsUlVSU2tib3YwS08zODBiUGNzVk9vSzRYLWloY0dRdw?oc=5",
+      "originalUrl": "https://indianexpress.com/article/explained/explained-global/india-bangladesh-relations-tarique-rahman-hasina-water-sharing-explained-10876576/",
       "originalHeadline": "Expert Explains | Can India and Bangladesh reset ties under Tarique Rahman?",
       "scannedAt": "2026-09-13T21:46:01.000Z"
     },
@@ -10330,7 +10330,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "NDTV",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPemExY1Y5WW5KYjk4SWxOdjk1MFhYdnB6VGU4WjdJa1lyZ3Z5M1NReVl0c05MMHNYUHZCS3p2OU9aSlAtWDUtUXpoc2FoU2RHZWhhazhGank3aHdqOXlwLVMyTDhIemY0dzF1SUpzRVNkMXBkMTZhQ2stSkNwVml6MUMtcDB2c19sTmMzT09hNDV3QTZ0SXBTYmtkUUROQVVEZ1ZyMExTVUZsWVQxejdNMlpzWkREU1VqS0xBUmVyb00tQVHSAcsBQVVfeXFMTmxCWFgxSlc5Tkp5U3lpSk9hdXlLYlV0enh0bl94TXVUXzktYzhvWHkwYnJ6TFlSTXF3b19mRDVfQlhyUmZQNG5JUzVjUm5yUmF4eS1SYzdVUjM3U1IxUFhDSzJtVGRUWlhlYWs1WlpvUWlWR2xDeEROeU43TnB2WGk0Sl85MlFqc1UxVHIyS1lEdGJhR21xajlMbS11OU5DNzF1c1hYT1FfcXpTNElYVTFUQ2dxLW9xdXowVGtselhFQVYzS2tKNk53SG8?oc=5",
+      "originalUrl": "https://www.ndtv.com/world-news/sheikh-hasinas-daughter-saima-wazed-resigns-as-who-regional-head-after-fraud-charges-12025769",
       "originalHeadline": "Sheikh Hasina's Daughter Resigns As WHO Regional Head After Fraud Charges",
       "scannedAt": "2026-09-09T17:48:11.000Z"
     },
