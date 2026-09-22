@@ -144,3 +144,19 @@
 🎯 Identified 1006 articles specifically related to Bangladesh / Dhaka (148 priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).
 ✅ Candidate articles dumped successfully (485 English Hasina/BD candidates) to /Users/sadiq/antigravity/bangladesh-news-india/scratch/candidates.json
 ✅ Candidate scan completed at Mon Sep 21 16:00:56 +06 2026
+====================================================
+⏰ Local Cron Execution: Tue Sep 22 12:00:07 +06 2026
+====================================================
+====================================================
+🚀 NARRATIVE COMPASS - DAILY NEWS SCANNER
+⏰ Time (Local): 9/22/2026, 12:00:07 PM
+🤖 AI Engine: DEEPSEEK API (deepseek-chat)
+📌 Operational Mode: [ALL] -> Full Ingestion: All Feeds (Standard RSS + YouTube + Instagram)
+====================================================
+
+📡 Step 1: Scanning 78 media feeds with IP anti-ban safeguards...
+🛡️ Anti-Ban Protections: max 3 concurrent requests | randomized timing jitter | same-domain cooldown | automatic circuit breaker
+✅ Scanned 0 total news items across 78 media outlets safely without rate limits.
+🎯 Identified 0 articles specifically related to Bangladesh / Dhaka (0 priority "শেখ হাসিনা / আওয়ামী লীগ / ওপার বাংলা" items).
+✅ Candidate articles dumped successfully (0 English Hasina/BD candidates) to /Users/sadiq/antigravity/bangladesh-news-india/scratch/candidates.json
+✅ Candidate scan completed at Tue Sep 22 12:01:43 +06 2026

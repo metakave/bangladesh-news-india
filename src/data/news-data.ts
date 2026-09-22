@@ -440,6 +440,282 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
 {
+  "id": "news-20260922-103",
+  "slug": "indian-express-asad-alam-siam-new-bangladesh-high-commissioner-delhi",
+  "title": "The Indian Express: 'Senior Diplomat Asad Alam Siam Designated New Bangladesh High Commissioner to India'",
+  "englishTitle": "The Indian Express: 'Senior Diplomat Asad Alam Siam Designated New Bangladesh High Commissioner to India'",
+  "banglaTitle": "‘ভারতে বাংলাদেশের নতুন হাইকমিশনার পদে জ্যেষ্ঠ কূটনীতিক আসাদ আলম সিয়াম নিয়োজিত’: দ্য ইন্ডিয়ান এক্সপ্রেস",
+  "summaryBn": "‘দ্য ইন্ডিয়ান এক্সপ্রেস’-এর কূটনৈতিক ডেস্কে বলা হয়েছে, অন্তর্বর্তীকালীন সরকার নয়াদিল্লিতে বাংলাদেশের নতুন হাইকমিশনার হিসেবে পররাষ্ট্র সচিব আসাদ আলম সিয়ামকে নিযুক্ত করতে যাচ্ছে। দিল্লির পররাষ্ট্র বিশ্লেষকরা মনে করছেন, এই নিয়োগ দ্বিপাক্ষিক আলোচনা ও সরাসরি যোগাযোগ সহজ করতে ইতিবাচক ভূমিকা রাখবে।",
+  "summaryEn": "The Indian Express reports from Delhi that senior diplomat and Foreign Secretary Asad Alam Siam has been designated as Bangladesh's new High Commissioner to India. Diplomatic strategists in New Delhi view the appointment as a constructive move to streamline bilateral consultations and resolve pending trade and visa issues.",
+  "keyPointsBn": [
+    "নয়াদিল্লিতে নতুন হাইকমিশনার হিসেবে আসাদ আলম সিয়ামকে মনোনয়ন দিল ঢাকা",
+    "দিল্লির কূটনৈতিক মহলে দুই দেশের মধ্যে সরাসরি আলোচনা ও যোগাযোগ সহজ করার আশা",
+    "ভিসা সেবা ও বাণিজ্য সংক্রান্ত অমীমাংসিত বিষয়গুলো দ্রুত নিষ্পত্তির তাগিদ"
+  ],
+  "keyPointsEn": [
+    "Dhaka designates Foreign Secretary Asad Alam Siam as new High Commissioner to India",
+    "Diplomatic circles in Delhi view appointment as positive step for direct bilateral channels",
+    "Aims to expedite consultations on trade clearances and visa processing operations"
+  ],
+  "category": "diplomacy",
+  "categoryLabelBn": "কূটনীতি ও দূতাবাস",
+  "categoryLabelEn": "Diplomacy & Embassy",
+  "sentiment": "positive",
+  "sentimentReasonBn": "কূটনৈতিক প্রতিনিধি নিয়োগ ও দ্বিপাক্ষিক যোগাযোগের ইতিবাচক পদক্ষেপ।",
+  "sentimentReasonEn": "Positive coverage of diplomatic appointment and bilateral engagement channels.",
+  "source": {
+    "name": "The Indian Express",
+    "bureau": "Delhi",
+    "language": "English",
+    "originalUrl": "https://indianexpress.com/article/world/bangladesh-foreign-secretary-asad-alam-siam-new-envoy-india/",
+    "scannedAt": "2026-09-22T16:00:00Z"
+  },
+  "publishedAt": "2026-09-22T16:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
+  "isLeadStory": true,
+  "isTrending": true,
+  "isBreaking": true,
+  "tags": [
+    "The Indian Express",
+    "High Commissioner",
+    "Diplomacy",
+    "New Delhi",
+    "Dhaka"
+  ]
+},
+{
+  "id": "news-20260922-104",
+  "slug": "tripura-times-meghalaya-tripura-border-security-detention-protocols",
+  "title": "Tripura Times: 'Northeast Border Vigilance Streamlined Along Tripura & Meghalaya Sectors'",
+  "englishTitle": "Tripura Times: 'Northeast Border Vigilance Streamlined Along Tripura & Meghalaya Sectors'",
+  "banglaTitle": "‘ত্রিপুরা ও মেঘালয় সীমান্তে অনুপ্রবেশ প্রতিরোধে বিশেষ ইমিগ্রেশন ও সুরক্ষা প্রটোকল কার্যকর’: ত্রিপুরা টাইমস",
+  "summaryBn": "ত্রিপুরা ও উত্তর-পূর্বের প্রথম সারির ইংরেজি দৈনিক ‘ত্রিপুরা টাইমস’ প্রকাশিত খবরে বলা হয়েছে, সীমান্ত টহল বৃদ্ধি ও অবৈধ প্রবেশ ঠেকাতে ত্রিপুরা ও মেঘালয় সীমান্ত সেক্টরে যৌথ নিরাপত্তা প্রটোকল জোরদার করা হয়েছে। বিএসএফ ও রাজ্য পুলিশ সমন্বিতভাবে নদীপথ ও স্থল সীমান্তে নজরদারি চালাচ্ছে।",
+  "summaryEn": "Tripura Times reports on updated border management protocols enacted along the Tripura and Meghalaya frontiers. Border Security Force (BSF) commandants and state police forces have instituted coordinated patrolling along riverine and land sectors to preserve regional security.",
+  "keyPointsBn": [
+    "ত্রিপুরা ও মেঘালয় সীমান্ত সেক্টরে বিএসএফ ও রাজ্য পুলিশের সমন্বিত নিরাপত্তা টহল",
+    "নদীপথ ও সীমান্ত এলাকার স্পর্শকাতর পয়েন্টগুলোতে অতিরিক্ত নাইট-ভিশন সেন্সর মোতায়েন",
+    "আঞ্চলিক স্থিতিশীলতা রক্ষায় স্থানীয় সীমান্ত জনগোষ্ঠীর যৌথ সহযোগিতা"
+  ],
+  "keyPointsEn": [
+    "Joint security operations activated across Tripura and Meghalaya border sectors",
+    "Additional night-vision thermal sensors deployed along riverine and remote outposts",
+    "Emphasizes community coordination to preserve North-East frontier security"
+  ],
+  "category": "border",
+  "categoryLabelBn": "সীমান্ত নিরাপত্তা ও উত্তর-পূর্ব",
+  "categoryLabelEn": "Border & North-East",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "সীমান্ত নিরাপত্তার বস্তুনিষ্ঠ ও সমন্বিত প্রতিরক্ষামূলক কভারেজ।",
+  "sentimentReasonEn": "Objective reporting on border vigilance and North-Eastern regional security.",
+  "source": {
+    "name": "Tripura Times",
+    "bureau": "Tripura",
+    "language": "English",
+    "originalUrl": "https://tripuratimes.com/news/meghalaya-tripura-border-security-detention-protocols-20260922",
+    "scannedAt": "2026-09-22T16:00:00Z"
+  },
+  "publishedAt": "2026-09-22T15:30:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/gauhati-high-court.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Tripura Times",
+    "BSF Vigilance",
+    "Tripura Border",
+    "Meghalaya",
+    "Agartala"
+  ]
+},
+{
+  "id": "news-20260922-105",
+  "slug": "ndtv-sports-asian-games-women-cricket-bronze-pakistan-beat-bangladesh",
+  "title": "NDTV Sports: 'Asian Games 2026: Pakistan Defeats Bangladesh by 31 Runs in Women's Cricket Bronze Playoff'",
+  "englishTitle": "NDTV Sports: 'Asian Games 2026: Pakistan Defeats Bangladesh by 31 Runs in Women's Cricket Bronze Playoff'",
+  "banglaTitle": "‘এশিয়ান গেমসে ব্রোঞ্জ পদক নির্ধারণী ম্যাচে পাকিস্তানকে রুখতে ব্যর্থ বাংলাদেশ উইমেনস দল’: এনডিটিভি স্পোর্টস",
+  "summaryBn": "এনডিটিভি স্পোর্টসের আন্তর্জাতিক কভারেজে জানানো হয়েছে, এশিয়ান গেমস ২০২৬-এর নারী টি-টোয়েন্টি ক্রিকেটের তৃতীয় স্থান নির্ধারণী ম্যাচে পাকিস্তানের কাছে ৩১ রানে হেরে পদক হাতছাড়া করেছে বাংলাদেশ উইমেনস টিম। জাপানের কোরোগি স্পোর্টস পার্কে পাকিস্তান ১৪৫ রান করার জবাবে বাংলাদেশ ১১৪ রানে অলআউট হয়।",
+  "summaryEn": "NDTV Sports reports on the Asian Games 2026 women's cricket 3rd place playoff at Korogi Sports Park, where Pakistan women's team defeated Bangladesh by 31 runs to claim the bronze medal. Chasing 146, Bangladesh Tigresses were bowled out for 114.",
+  "keyPointsBn": [
+    "এশিয়ান গেমসে উইমেনস টি-টোয়েন্টি ব্রোঞ্জ প্লে-অফে পাকিস্তানের জয়",
+    "১৪৬ রানের লক্ষ্যে ব্যাট করতে নেমে ১১৪ রানে অলআউট বাংলাদেশ দল",
+    "দক্ষিণ এশীয় ক্রিকেট অঙ্গনে আগামী টুর্নামেন্টের প্রস্তুতি মূল্যায়ন"
+  ],
+  "keyPointsEn": [
+    "Pakistan women's team clinches bronze medal defeating Bangladesh by 31 runs",
+    "Bangladesh bowled out for 114 chasing a target of 146",
+    "Evaluates performance and tournament standings across South Asian teams"
+  ],
+  "category": "sports",
+  "categoryLabelBn": "ক্রীড়া ও ক্রিকেট",
+  "categoryLabelEn": "Sports & Cricket",
+  "sentiment": "neutral",
+  "sentimentReasonBn": "আন্তর্জাতিক ক্রীড়া প্রতিযোগিতার ফলাফল সংক্রান্ত নিরপেক্ষ খবর।",
+  "sentimentReasonEn": "Factual sports reporting on Asian Games T20 match outcome.",
+  "source": {
+    "name": "NDTV Sports",
+    "bureau": "Mumbai",
+    "language": "English",
+    "originalUrl": "https://sports.ndtv.com/cricket/asian-games-2026-pakistan-women-win-bronze-beating-bangladesh-12073200",
+    "scannedAt": "2026-09-22T16:00:00Z"
+  },
+  "publishedAt": "2026-09-22T15:00:00Z",
+  "readTimeBn": "২ মিনিট পাঠ",
+  "readTimeEn": "2 min read",
+  "imageUrl": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=1200&auto=format&fit=crop&q=80",
+  "isLeadStory": false,
+  "isTrending": true,
+  "isBreaking": false,
+  "tags": [
+    "NDTV Sports",
+    "Asian Games 2026",
+    "Cricket",
+    "Bangladesh Tigresses",
+    "T20"
+  ]
+},
+{
+  "id": "news-20260922-106",
+  "slug": "economic-times-textile-supply-chains-indian-cotton-yarn-exports-to-dhaka",
+  "title": "Economic Times: 'Indian Textile Mills Sustain Raw Cotton & Yarn Export Flow to Bangladesh Factories'",
+  "englishTitle": "Economic Times: 'Indian Textile Mills Sustain Raw Cotton & Yarn Export Flow to Bangladesh Factories'",
+  "banglaTitle": "‘বাংলাদেশের পোশাক কারখানার উৎপাদন সচল রাখতে ভারতীয় তুলা ও সুতার রপ্তানি অব্যাহত’: ইকোনমিক টাইমস",
+  "summaryBn": "মুম্বই কেন্দ্রিক ইকোনমিক টাইমসের শিল্প প্রতিবেদনে উল্লেখ করা হয়েছে, বাংলাদেশে বিদ্যুৎ সংকট ও অভ্যন্তরীণ চ্যালেঞ্জ থাকা সত্ত্বেও ভারতীয় তুলা উৎপাদনকারী ও সুতা মিলগুলো সড়ক ও রেলপথে রপ্তানি পাঠাচ্ছ। মুম্বই ও আহমেদাবাদ বস্ত্র সমিতি জানিয়েছে, এতে দক্ষিণ এশীয় তৈরি পোশাক জোগান শৃঙ্খল স্থিতিশীল থাকছে।",
+  "summaryEn": "The Economic Times dispatches an industry report outlining how Indian spinning mills and cotton exporters are maintaining raw material rail cargo into Bangladesh. Exporters in Gujarat and Maharashtra emphasize that raw cotton supplies protect apparel supply chains across South Asia.",
+  "keyPointsBn": [
+    "ভারতীয় টেক্সটাইল মিলগুলো থেকে বাংলাদেশে তুলা ও সুতা পণ্যবাহী ট্রেনের নিয়মিত চলাচল",
+    "মুম্বই ও সুরাটের শিল্প রপ্তানিকারকদের মতে যৌথ উৎপাদন সমন্বয় বজায় রাখা জরুরি",
+    "দক্ষিণ এশিয়ার টেক্সটাইল ও তৈরি পোশাক বাজারে স্থিতিশীলতা বজায় রাখার ইতিবাচক পদক্ষেপ"
+  ],
+  "keyPointsEn": [
+    "Indian spinning mills maintain steady raw cotton and yarn freight trains to Bangladesh",
+    "Industry bodies in Mumbai and Surat highlight importance of supply chain co-dependence",
+    "Protects apparel manufacturing orders and export commitments across South Asia"
+  ],
+  "category": "economy",
+  "categoryLabelBn": "অর্থনীতি ও টেক্সটাইল",
+  "categoryLabelEn": "Economy & Textile",
+  "sentiment": "positive",
+  "sentimentReasonBn": "শিল্প উপাদান সরবরাহ ও টেক্সটাইল সহযোগিতার ইতিবাচক খবর।",
+  "sentimentReasonEn": "Positive coverage of cross-border supply chain resilience and raw material exports.",
+  "source": {
+    "name": "Economic Times",
+    "bureau": "Mumbai",
+    "language": "English",
+    "originalUrl": "https://economictimes.indiatimes.com/industry/cons-products/garments-/-textiles/indian-textile-mills-sustain-raw-cotton-yarn-export-flow-to-bangladesh/articleshow/134396112.cms",
+    "scannedAt": "2026-09-22T16:00:00Z"
+  },
+  "publishedAt": "2026-09-22T14:30:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Economic Times",
+    "Textile Industry",
+    "Cotton Exports",
+    "Mumbai Desk",
+    "Apparel Supply"
+  ]
+},
+{
+  "id": "news-20260922-107",
+  "slug": "wion-video-hilsa-trade-reversal-how-india-steps-in-dhaka-supply-deficits",
+  "title": "WION Fineprint Dispatch: 'How Reverse Hilsa Trade Flows From India Eases Seafood Supply In Bangladesh'",
+  "englishTitle": "WION Fineprint Dispatch: 'How Reverse Hilsa Trade Flows From India Eases Seafood Supply In Bangladesh'",
+  "banglaTitle": "‘ভারতে উৎপাদিত সমুদ্রের ইলিশ কেন বাংলাদেশে পাঠানো হচ্ছে: ডাব্লিউআইওএন ফাইনপ্রিন্ট ভিডিও বিশ্লেষণ’",
+  "summaryBn": "ডাব্লিউআইওএন (WION)-এর গ্রাভিটাস ও ফাইনপ্রিন্ট ভিডিও রিপোর্টে দক্ষিণ এশীয় ইলিশ বাণিজ্যের বিপরীত প্রবণতা বিশ্লেষণ করা হয়েছে। গুজরাট ও পশ্চিমবঙ্গের সমুদ্র বন্দর থেকে রেফ্রিজারেটেড লরিতে উৎপাদিত ইলিশ ঢাকার মাছ বাজারে জোগান সংকট কমিয়ে আনছে।",
+  "summaryEn": "WION Fineprint dispatches a video explainer mapping the reverse Hilsa fish trade flow from Indian maritime ports into Bangladesh markets. The report frames the commercial trade as a pragmatic solution to seasonal supply shortfalls in Dhaka.",
+  "keyPointsBn": [
+    "গুজরাট ও পশ্চিমবঙ্গের বন্দর থেকে ঢাকায় শীতাতপ নিয়ন্ত্রিত ইলিশ সরবরাহের ভিডিও রিপোর্ট",
+    "উৎসবের মৌসুমে ঢাকার খুচরা বাজারে মাছের সরবরাহ ও মূল্য নিয়ন্ত্রণে বাণিজ্যিক ভূমিকা",
+    "দক্ষিণ এশিয়ার মৎস্য ও খাদ্য বাণিজ্যে দুই দেশের বাস্তবভিত্তিক সহযোগিতার প্রশংসা"
+  ],
+  "keyPointsEn": [
+    "Video dispatch tracks refrigerated Hilsa freight shipments from Gujarat and Bengal ports to Dhaka",
+    "Addresses festive season retail supply deficits in Bangladesh fish markets",
+    "Highlights economic agility and trade cooperation across South Asian borders"
+  ],
+  "category": "culture",
+  "categoryLabelBn": "বাণিজ্য ও সংস্কৃতি",
+  "categoryLabelEn": "Trade & Culture",
+  "sentiment": "positive",
+  "sentimentReasonBn": "বাণিজ্যিক সমন্বয় ও মৎস্য সরবরাহের ইতিবাচক ভিডিও বিশ্লেষণ।",
+  "sentimentReasonEn": "Positive coverage of cross-border trade continuity and food supply solutions.",
+  "source": {
+    "name": "WION News (YouTube)",
+    "bureau": "Delhi",
+    "language": "English",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFWXBqRHZiaXE2ajU2TV9YcTZEQnlqTU1WUTRuRzJPNElYQXZmLTNyNWJHaWtuVkpIQnhwQ0lDQW1BVkxTZVlIVndCQ1RfTC1xZE9zSGdR?oc=5",
+    "scannedAt": "2026-09-22T16:00:00Z"
+  },
+  "publishedAt": "2026-09-22T14:00:00Z",
+  "readTimeBn": "৩ মিনিট ভিডিও",
+  "readTimeEn": "3 min video",
+  "imageUrl": "/images/hilsa-fish-market-trade.jpg",
+  "isLeadStory": false,
+  "isTrending": true,
+  "isBreaking": false,
+  "tags": [
+    "WION News",
+    "YouTube Dispatch",
+    "Hilsa Trade",
+    "Food Diplomacy",
+    "Delhi Bureau"
+  ]
+},
+{
+  "id": "news-20260922-108",
+  "slug": "anandabazar-patrika-benapole-petrapole-rail-freight-corridor-capacity-boost",
+  "title": "Anandabazar Patrika: 'Eastern Railway & Customs Expand Daily Freight Train Slots Across Petrapole-Benapole Rail Link'",
+  "englishTitle": "Anandabazar Patrika: 'Eastern Railway & Customs Expand Daily Freight Train Slots Across Petrapole-Benapole Rail Link'",
+  "banglaTitle": "‘পেট্রাপোল-বেনাপোল রেল করিডোরে পণ্যবাহী ট্রেনের ট্রিপ সংখ্যা বাড়ানোর সিদ্ধান্ত পূর্ব রেলের’: আনন্দবাজার পত্রিকা",
+  "summaryBn": "আনন্দবাজার পত্রিকার পরিবহন পাতায় প্রকাশ করা হয়েছে, ভারত-বাংলাদেশ রেল পণ্য পরিবহন গতিশীল করতে পূর্ব রেল এবং শুল্ক বিভাগ পেট্রাপোল-বেনাপোল সীমান্ত দিয়ে দৈনিক কন্টেইনার ও কাঁচামালবাহী ট্রেনের ট্রিপ সংখ্যা বৃদ্ধি করার চুক্তি করেছে। এতে আন্তর্জাতিক বাণিজ্য পথ নিরাপদ ও দ্রুততর হবে।",
+  "summaryEn": "Anandabazar Patrika reports that Eastern Railway and customs authorities have agreed to increase daily freight train slots along the Petrapole-Benapole rail corridor. The initiative optimizes rail cargo transshipment and reduces reliance on congested highway borders.",
+  "keyPointsBn": [
+    "পেট্রাপোল-বেনাপোল রেল সংযোগে দৈনিক পণ্যবাহী ট্রেনের সংখ্যা বৃদ্ধির সিদ্ধান্ত পূর্ব রেলের",
+    "কনটেইনার ও কাঁচামাল পরিবহনে সময় কমানোর উদ্যোগ",
+    "দুই দেশের ব্যবসায়ীদের দীর্ঘদিনের দাবি পূরণ ও পরিবহন ব্যয় কমানোর বাণিজ্যিক পদক্ষেপ"
+  ],
+  "keyPointsEn": [
+    "Eastern Railway and customs add daily freight train slots on Petrapole-Benapole line",
+    "Accelerates containerized cargo transit and reduces highway customs bottlenecking",
+    "Welcomed by trade bodies in Kolkata and Dhaka for lowering international logistics costs"
+  ],
+  "category": "trade",
+  "categoryLabelBn": "রেল ও সীমান্ত বাণিজ্য",
+  "categoryLabelEn": "Rail & Border Trade",
+  "sentiment": "positive",
+  "sentimentReasonBn": "রেল পরিবহন ব্যবস্থা সম্প্রসারণ ও সীমান্ত বাণিজ্যে গতির খবর।",
+  "sentimentReasonEn": "Positive coverage of railway logistics expansion and cross-border trade optimization.",
+  "source": {
+    "name": "Anandabazar Patrika",
+    "bureau": "Kolkata",
+    "language": "Bengali",
+    "originalUrl": "https://www.anandabazar.com/west-bengal/kolkata/eastern-railway-customs-expand-daily-freight-train-slots-petrapole-benapole-link-dgtl/cid/1549920",
+    "scannedAt": "2026-09-22T16:00:00Z"
+  },
+  "publishedAt": "2026-09-22T13:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+  "isLeadStory": false,
+  "isTrending": false,
+  "isBreaking": false,
+  "tags": [
+    "Anandabazar Patrika",
+    "Kolkata Bureau",
+    "Petrapole Rail Link",
+    "Eastern Railway",
+    "Freight Logistics"
+  ]
+},
+{
   "id": "news-20260922-091",
   "slug": "assam-tribune-awami-league-slams-ict-death-verdict-fabricated",
   "title": "The Assam Tribune: 'Awami League Rejects ICT Death Sentences as One-Sided & Fabricated; Guwahati Bureau Reports'",
