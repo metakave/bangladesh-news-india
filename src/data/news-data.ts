@@ -68,29 +68,55 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 3800,
-  "bangladeshMatches": 1026,
+  "totalScanned24h": 4095,
+  "bangladeshMatches": 1144,
   "sentimentDistribution": {
-    "positive": 28,
-    "neutral": 42,
+    "positive": 30,
+    "neutral": 40,
     "negative": 30
   },
   "bureauDistribution": {
-    "delhi": 50,
+    "delhi": 48,
     "kolkata": 30,
-    "mumbai": 10,
+    "mumbai": 12,
     "tripura": 5,
     "assam": 3,
     "siliguri": 2
   },
   "languageDistribution": {
-    "english": 45,
-    "bengali": 35,
-    "hindi": 20
+    "english": 42,
+    "bengali": 32,
+    "hindi": 16,
+    "tamil": 3,
+    "telugu": 3,
+    "marathi": 2,
+    "malayalam": 2
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-047",
+    "headlineBn": "‘ঢাকার আইসিটি ট্রাইব্যুনাল কর্তৃক ৭ নেতার মৃত্যুদণ্ডকে একপাক্ষিক দাবি করে প্রত্যাখ্যান আওয়ামী লীগের’: দ্য আসাম ট্রাইব্যুনাল",
+    "headlineEn": "The Assam Tribune: Awami League Rejects ICT Death Sentences for 7 Party Leaders as One-Sided & Fabricated",
+    "timeAgoBn": "৫ মিনিট আগে",
+    "timeAgoEn": "5 mins ago",
+    "sourceName": "The Assam Tribune",
+    "sourceBureau": "Assam",
+    "sentiment": "negative",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLW0wRzdDLWh1V1EteE03aW9vZGRib29tWlUxN29hLUUzWHVtaG94N2FTOVRybllDbF9CU3pORnBXdGJjX2pPbEs1ZExYb2JPcTRmRjhpTDQ5QkRpdTR5SDlhOFZTSHg3M0psRGtEbDFtYXpBam1fVnhFa3FLWXFKd1hFVlBCdlo1amE1Z1VqelVITFlSdU1obGU5aG55Y1E1dVdZejU4d2dmSUJNZS1WSzR30gG3AUFVX3lxTE8wa2c0bzUtREdXX3J6b0pjY3FYSjVvTjFzeGVESGgzMm5DVW53bFNmS1NkQzl4eXBrQjNQZTJwVVVvdWt4ODVGajg1T3RjVlFKaks0NnNiZXFzbkM5SlVSMGl6aWpaNmZCcThlVjNsTkkySGtlbFl3WkhySmpuRkdGU014U3Z4QU9fZ3JtM1Vhd0N5ZU9qeW8wWllFUC1Jb3BZNVhIb0FteC1kT2tzS0FNRzZSTVNlTQ?oc=5"
+  },
+  {
+    "id": "alert-046",
+    "headlineBn": "‘পেট্রাপোল স্থলবন্দরে পচনশীল রপ্তানি পণ্যের দ্রুত খালাসে কাস্টমস ও বিএসএফের বিশেষ গ্রিন চ্যানেল চালু’: সংবাদ প্রতিদিন",
+    "headlineEn": "Sangbad Pratidin: Petrapole ICP Launches Green-Channel Freight Clearance for Perishable Export Cargo",
+    "timeAgoBn": "২০ মিনিট আগে",
+    "timeAgoEn": "20 mins ago",
+    "sourceName": "Sangbad Pratidin",
+    "sourceBureau": "Kolkata",
+    "sentiment": "positive",
+    "url": "https://sangbadpratidin.in/bengal/petrapole-benapole-icp-green-channel-freight-clearance-20260922"
+  },
   {
     "id": "alert-045",
     "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা; জাতীয় স্বার্থ রক্ষায় কঠোর বার্তা ভারতের’: জি নিউজ",
@@ -413,6 +439,144 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+{
+  "id": "news-20260922-091",
+  "slug": "assam-tribune-awami-league-slams-ict-death-verdict-fabricated",
+  "title": "The Assam Tribune: 'Awami League Rejects ICT Death Sentences as One-Sided & Fabricated; Guwahati Bureau Reports'",
+  "englishTitle": "The Assam Tribune: 'Awami League Rejects ICT Death Sentences as One-Sided & Fabricated'",
+  "banglaTitle": "‘আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের মৃত্যুদণ্ডের রায়কে একপাক্ষিক দাবি করে প্রত্যাখ্যান আওয়ামী লীগের’: দ্য আসাম ট্রাইব্যুনাল",
+  "summaryBn": "উত্তর-পূর্ব ভারতের প্রধান ইংরেজি দৈনিক ‘দ্য আসাম ট্রাইব্যুনাল’-এর প্রতিবেদনে বলা হয়েছে, সাবেক প্রধানমন্ত্রী শেখ হাসিনার দল আওয়ামী লীগ ঢাকার ট্রাইব্যুনাল কর্তৃক ৭ নেতার বিরুদ্ধে ঘোষিত মৃত্যুদণ্ডের রায়কে ‘একপাক্ষিক ও রাজনৈতিক উদ্দেশ্যপ্রণোদিত’ দাবি করে প্রত্যাখ্যান করেছে। গুয়াহাটি নীতি বিশ্লেষকরা উল্লেখ করেছেন, এই বিচারিক সিদ্ধান্ত দক্ষিণ এশীয় রাজনীতিতে গভীর প্রভাব ফেলবে।",
+  "summaryEn": "The Assam Tribune reports from Guwahati that the Awami League has officially denounced the International Crimes Tribunal verdict sentencing seven party leaders to death in absentia. Party spokespersons termed the trial unilateral and politically driven, while North-Eastern security analysts evaluate the stability implications along India's Eastern frontier.",
+  "keyPointsBn": [
+    "শেখ হাসিনার দলীয় ৭ জ্যেষ্ঠ নেতার বিরুদ্ধে ঢাকার ট্রাইব্যুনালে ট্রায়াল ইন অ্যাবসেন্টিয়ায় মৃত্যুদণ্ড",
+    "গুয়াহাটি নীতি ডেস্কে ভারত-বাংলাদেশ কূটনৈতিক সম্পর্কের উপর এই রায়ের প্রভাবের নিবিড় বিশ্লেষণ",
+    "আইনি গবেষকদের মতে রাজনৈতিক বিচারের স্বচ্ছতা নিয়ে আন্তর্জাতিক মানবাধিকার মহলে উদ্বেগ"
+  ],
+  "keyPointsEn": [
+    "Dhaka ICT sentences 7 senior Hasina administration figures to death in absentia",
+    "Assam media analysis measures potential diplomatic fallout on India-Bangladesh relations",
+    "Legal experts observe international scrutiny surrounding absentia trials in Dhaka"
+  ],
+  "category": "politics",
+  "categoryLabelBn": "রাজনীতি ও আইন",
+  "categoryLabelEn": "Politics & Law",
+  "sentiment": "negative",
+  "sentimentReasonBn": "রাজনৈতিক উত্তেজনা ও বিচারিক প্রক্রিয়া ঘিরে বিতর্কের তথ্যমূলক কভারেজ।",
+  "sentimentReasonEn": "Focuses on political volatility, legal controversies, and capital punishment verdicts in Dhaka.",
+  "source": {
+    "name": "The Assam Tribune",
+    "bureau": "Assam",
+    "language": "English",
+    "originalUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOLW0wRzdDLWh1V1EteE03aW9vZGRib29tWlUxN29hLUUzWHVtaG94N2FTOVRybllDbF_SAeM?oc=5",
+    "scannedAt": "2026-09-22T14:30:00Z"
+  },
+  "publishedAt": "2026-09-22T14:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/gauhati-high-court.jpg",
+  "isLeadStory": true,
+  "isTrending": true,
+  "isBreaking": true,
+  "tags": [
+    "The Assam Tribune",
+    "Assam Bureau",
+    "ICT Verdict",
+    "Awami League",
+    "Guwahati"
+  ]
+},
+{
+  "id": "news-20260922-092",
+  "slug": "firstpost-video-bangladesh-sentences-7-hasina-aides-death-july-uprising",
+  "title": "Firstpost Video Dispatch: 'Bangladesh ICT Sentences 7 Hasina Aides to Death Over 2024 Uprising Crackdown'",
+  "englishTitle": "Firstpost Video Dispatch: 'Bangladesh ICT Sentences 7 Hasina Aides to Death Over 2024 Uprising Crackdown'",
+  "banglaTitle": "‘২০২৪ এর আন্দোলনের ঘটনায় হাসিনা ঘনিষ্ঠ ৭ শীর্ষ নেতাকে ট্রাইব্যুনালের মৃত্যুদণ্ড’: ফার্স্টপোস্ট ভিডিও",
+  "summaryBn": "ফার্স্টপোস্ট ডিজিটাল নেটওয়ার্কের একটি প্রধান ভিডিও বিশ্লেষণে দেখানো হয়েছে, ঢাকার আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল ২০২৪ সালের শিক্ষার্থী আন্দোলনের সময় সহিংসতা ও খুনের অভিযোগে ওবায়দুল কাদের ও বাহাউদ্দিন নাছিম সহ আওয়ামী লীগের ৭ নেতাকে ট্রায়াল ইন অ্যাবসেন্টিয়ায় মৃত্যুদণ্ড প্রদান করেছে।",
+  "summaryEn": "Firstpost produces a video dispatch detailing the capital punishment sentence issued by Dhaka's International Crimes Tribunal against seven former Hasina-era functionaries including Obaidul Quader and AFM Bahauddin Nasim. The legal panel examines in absentia trial standards under international human rights frameworks.",
+  "keyPointsBn": [
+    "ওবায়দুল কাদের ও বাহাউদ্দিন নাছিম সহ আওয়ামী লীগের ৭ নেতার বিরুদ্ধে মৃত্যুদণ্ডের রায়",
+    "ফার্স্টপোস্ট ভিডিও ডেস্কে আন্তর্জাতিক আইনবিদদের মতামতের গুরুত্বারোপ",
+    "দক্ষিণ এশিয়ার ভূ-কূটনীতি ও নিরাপত্তা বিশ্লেষকদের প্রতিক্রিয়া"
+  ],
+  "keyPointsEn": [
+    "ICT Tribunal-2 issues death sentence for 7 senior Hasina-era officials in absentia",
+    "Legal analysts examine procedural safeguards and human rights standards",
+    "Measures regional stability impact across South Asian diplomatic capitals"
+  ],
+  "category": "politics",
+  "categoryLabelBn": "রাজনীতি ও আন্তর্জাতিক আইন",
+  "categoryLabelEn": "Politics & International Law",
+  "sentiment": "negative",
+  "sentimentReasonBn": "মৃত্যুদণ্ড ও রাজনৈতিক অস্থিরতা নিয়ে ভিডিও ডেসপ্যাচের পর্যালোচনার নেতিবাচক সুর।",
+  "sentimentReasonEn": "Focuses on capital punishment, legal scrutiny, and political volatility.",
+  "source": {
+    "name": "Firstpost (YouTube)",
+    "bureau": "Delhi",
+    "language": "English",
+    "originalUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ab2R6bWRnZ1AxUGkyenlXdmphdWNZdWF3S0xuSXU0MC1BbDFpZ29ScjJYR2d1Q1M2OFYxV0V0aVFRMEFVSXJhWFh6ZVVNTjZnbkluSGd3?oc=5",
+    "scannedAt": "2026-09-22T14:30:00Z"
+  },
+  "publishedAt": "2026-09-22T13:30:00Z",
+  "readTimeBn": "৪ মিনিট ভিডিও",
+  "readTimeEn": "4 min video",
+  "imageUrl": "https://i.ytimg.com/vi/a_Yw2qO7_pM/hqdefault.jpg",
+  "isLeadStory": false,
+  "isTrending": true,
+  "isBreaking": false,
+  "tags": [
+    "Firstpost",
+    "YouTube Dispatch",
+    "ICT Trials",
+    "Awami League",
+    "Delhi Bureau"
+  ]
+},
+{
+  "id": "news-20260922-093",
+  "slug": "sangbad-pratidin-petrapole-benapole-customs-green-channel-perishable-freight",
+  "title": "Sangbad Pratidin: 'Petrapole ICP Launches Green-Channel Freight Clearance for Perishable Export Cargo'",
+  "englishTitle": "Sangbad Pratidin: 'Petrapole ICP Launches Green-Channel Freight Clearance for Perishable Export Cargo'",
+  "banglaTitle": "‘পেট্রাপোল স্থলবন্দরে পচনশীল রপ্তানি পণ্যের জন্য বিশেষ গ্রিন চ্যানেল চালু করেছে বিএসএফ ও কাস্টমস’: সংবাদ প্রতিদিন",
+  "summaryBn": "সংবাদ প্রতিদিনের বিশেষ বাণিজ্যিক ডেস্কে জানানো হয়েছে, পেট্রাপোল-বেনাপোল আন্তর্জাতিক সীমান্তে আটকে থাকা পণ্যবাহী ট্রাক দ্রুত পারাপার করতে কোলকাতা কাস্টমস ও বিএসএফ সাউথ বেঙ্গল ফ্রন্টিয়ার যৌথ গ্রিন চ্যানেল ব্যবস্থা কার্যকর করেছে। এতে পোল্ট্রি, সবজি ও মাছের গাড়ি কম সময়ে সীমান্ত পার হতে পারছে।",
+  "summaryEn": "Sangbad Pratidin reports from Kolkata that Indian customs and South Bengal Frontier BSF have instituted dedicated green-channel customs clearance corridors at Petrapole Integrated Check Post (ICP) to streamline perishable cargo trucks bound for Benapole.",
+  "keyPointsBn": [
+    "পেট্রাপোল স্থলবন্দরে পচনশীল পণ্যের ট্রাক জট কমাতে বিশেষ ফাস্ট-ট্র্যাক লেন চালু",
+    "কোলকাতা কাস্টমস ও বিএসএফের যৌথ উদ্যোগে বাণিজ্য গতিশীলতা রক্ষা",
+    "দুই দেশের ব্যবসায়িক মহলে স্বস্তি ও নিত্যপ্রয়োজনীয় খাদ্য সামগ্রীর সরবরাহ বৃদ্ধি"
+  ],
+  "keyPointsEn": [
+    "Dedicated fast-track green channel established at Petrapole ICP for essential food cargo",
+    "Joint initiative by Kolkata Customs and BSF South Bengal Frontier reduces border wait times",
+    "Welcomed by cross-border trade associations for stabilizing market supplies in Dhaka"
+  ],
+  "category": "trade",
+  "categoryLabelBn": "সীমান্ত বাণিজ্য ও পরিবহন",
+  "categoryLabelEn": "Trade & Logistics",
+  "sentiment": "positive",
+  "sentimentReasonBn": "সীমান্ত বাণিজ্য সহজীকরণ ও পণ্য খালাসের ইতিবাচক পদক্ষেপ।",
+  "sentimentReasonEn": "Positive coverage of cross-border trade facilitation and logistics optimization.",
+  "source": {
+    "name": "Sangbad Pratidin",
+    "bureau": "Kolkata",
+    "language": "Bengali",
+    "originalUrl": "https://sangbadpratidin.in/bengal/petrapole-benapole-icp-green-channel-freight-clearance-20260922",
+    "scannedAt": "2026-09-22T14:30:00Z"
+  },
+  "publishedAt": "2026-09-22T12:00:00Z",
+  "readTimeBn": "৩ মিনিট পাঠ",
+  "readTimeEn": "3 min read",
+  "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
+  "isLeadStory": false,
+  "isTrending": true,
+  "isBreaking": true,
+  "tags": [
+    "Sangbad Pratidin",
+    "Kolkata Bureau",
+    "Petrapole ICP",
+    "Trade Green Channel",
+    "BSF"
+  ]
+},
 {
   "id": "news-20260922-070",
   "slug": "zee-news-india-will-protect-core-interests-bangladesh-reviews-101-accords",
