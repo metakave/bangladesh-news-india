@@ -71,33 +71,88 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "totalScanned24h": 4108,
-  "bangladeshMatches": 1112,
+  "totalScanned24h": 3581,
+  "bangladeshMatches": 1087,
   "sentimentDistribution": {
-    "positive": 30,
-    "neutral": 40,
-    "negative": 30
+    "positive": 32,
+    "neutral": 42,
+    "negative": 26
   },
   "bureauDistribution": {
-    "delhi": 48,
-    "kolkata": 30,
-    "mumbai": 12,
+    "delhi": 46,
+    "kolkata": 32,
+    "mumbai": 10,
     "tripura": 5,
-    "assam": 3,
-    "siliguri": 2
+    "assam": 4,
+    "siliguri": 3
   },
   "languageDistribution": {
-    "english": 42,
-    "bengali": 32,
-    "hindi": 16,
-    "tamil": 3,
-    "telugu": 3,
+    "english": 44,
+    "bengali": 34,
+    "hindi": 14,
+    "tamil": 2,
+    "telugu": 2,
     "marathi": 2,
     "malayalam": 2
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+      "id": "alert-055",
+      "headlineBn": "‘ভারতে বাংলাদেশের নতুন রাষ্ট্রদূত হিসেবে দায়িত্ব নিতে চলেছেন বিদেশ সচিব আসাদ আলম সিয়াম; সম্মতি দিল দিল্লি’: বিজনেস স্ট্যান্ডার্ড",
+      "headlineEn": "Business Standard: Bangladesh Foreign Secretary Asad Alam Siam Set to Take Over as High Commissioner in Delhi",
+      "timeAgoBn": "৫ মিনিট আগে",
+      "timeAgoEn": "5 mins ago",
+      "sourceName": "Business Standard",
+      "sourceBureau": "Delhi",
+      "sentiment": "positive",
+      "url": "https://www.business-standard.com/world-news/bangladesh-foreign-secretary-asad-siam-set-to-be-new-envoy-to-india-126092300018_1.html"
+  },
+  {
+      "id": "alert-054",
+      "headlineBn": "‘কখন নয়, প্রশ্ন হলো কীভাবে: ডিসেম্বরেই বাংলাদেশে ফেরার প্রত্যয় পুনর্ব্যক্ত করে আইনি লড়াইয়ের প্রস্তুতি হাসিনার’: ইন্ডিয়ান এক্সপ্রেস",
+      "headlineEn": "The Indian Express: Sheikh Hasina Vows Return by December, Prepared to Confront Judicial Process and Defense",
+      "timeAgoBn": "১৫ মিনিট আগে",
+      "timeAgoEn": "15 mins ago",
+      "sourceName": "The Indian Express",
+      "sourceBureau": "Delhi",
+      "sentiment": "neutral",
+      "url": "https://indianexpress.com/article/world/sheikh-hasina-dhaka-return-international-crimes-tribunal-verdict-bangladesh-interview-10890775/"
+  },
+  {
+      "id": "alert-053",
+      "headlineBn": "‘বাংলাদেশে সন্ত্রাসবিরোধী অভিযানে ফের গ্রেপ্তার আওয়ামী লীগ নেতা; সীমান্তবর্তী এলাকায় বাড়তি নজরদারি’: দ্য আসাম ট্রাইব্যুনাল",
+      "headlineEn": "The Assam Tribune: Another Awami League Leader Arrested in Bangladesh Anti-Terror Sweep as Crackdown Expands",
+      "timeAgoBn": "২৫ মিনিট আগে",
+      "timeAgoEn": "25 mins ago",
+      "sourceName": "The Assam Tribune",
+      "sourceBureau": "Assam",
+      "sentiment": "negative",
+      "url": "https://assamtribune.com/national/another-awami-league-leader-arrested-in-bangladesh-anti-terror-case-1618264"
+  },
+  {
+      "id": "alert-052",
+      "headlineBn": "‘রাতে কাঁটাতার পেরিয়ে অনুপ্রবেশের চেষ্টা রুখে দিল বিএসএফ ও পুলিশ; সীমান্ত থেকে ধৃত ৩’: সংবাদ প্রতিদিন",
+      "headlineEn": "Sangbad Pratidin: BSF & State Police Foil Nighttime Cross-Border Infiltration Attempt, 3 Apprehended",
+      "timeAgoBn": "৪০ মিনিট আগে",
+      "timeAgoEn": "40 mins ago",
+      "sourceName": "Sangbad Pratidin",
+      "sourceBureau": "Kolkata",
+      "sentiment": "neutral",
+      "url": "https://www.sangbadpratidin.in/app/bengal/3-arrested-for-entering-india-border-from-bangladesh-at-night/pid/1351053/"
+  },
+  {
+      "id": "alert-051",
+      "headlineBn": "‘বিদ্যুৎ সঞ্চালন ব্যবস্থা আধুনিকীকরণ ও আঞ্চলিক গ্রিড সুরক্ষায় বাংলাদেশকে ২০০ মিলিয়ন ডলার ঋণ দিচ্ছে এডিবি’: ইন্ডিয়া টুডে",
+      "headlineEn": "India Today: ADB Approves $200M Financing Package to Strengthen Bangladesh Power Grid & Regional Connectivity",
+      "timeAgoBn": "১ ঘণ্টা আগে",
+      "timeAgoEn": "1 hour ago",
+      "sourceName": "India Today",
+      "sourceBureau": "Delhi",
+      "sentiment": "positive",
+      "url": "https://www.youtube.com/watch?v=M5GBon_Ki6s"
+  },
   {
     "id": "alert-050",
     "headlineBn": "‘আওয়ামী লীগের পুনরুজ্জীবনের লক্ষ্যে নেতাকর্মীদের আইনি সুরক্ষা নিশ্চিতের আহ্বান হাসিনার’: আনন্দবাজার পত্রিকা",
@@ -476,6 +531,534 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+      "id": "news-20260923-013",
+      "slug": "business-standard-asad-alam-siam-new-bangladesh-high-commissioner-india",
+      "title": "Business Standard: 'Bangladesh Foreign Secretary Asad Alam Siam Set to Be New Envoy to India as Diplomatic Channels Reopen'",
+      "englishTitle": "Business Standard: 'Bangladesh Foreign Secretary Asad Alam Siam Set to Be New Envoy to India as Diplomatic Channels Reopen'",
+      "banglaTitle": "‘ভারতে বাংলাদেশের নতুন রাষ্ট্রদূত হিসেবে দায়িত্ব নিতে চলেছেন বিদেশ সচিব আসাদ আলম সিয়াম’: বিজনেস স্ট্যান্ডার্ড",
+      "summaryBn": "‘বিজনেস স্ট্যান্ডার্ড’-এর প্রতিবেদন অনুযায়ী, বাংলাদেশের বর্তমান পররাষ্ট্র সচিব আসাদ আলম সিয়ামকে ভারতে নতুন হাইকমিশনার হিসেবে মনোনীত করা হয়েছে। নয়াদিল্লির পররাষ্ট্র মন্ত্রণালয় ইতিমধ্যে তার নিয়োগের এগ্রিমা মঞ্জুর করেছে, যা দুই দেশের দ্বিপাক্ষিক কূটনৈতিক স্থবিরতা কাটিয়ে সহযোগিতার নতুন পথ উন্মোচন করবে বলে মনে করা হচ্ছে।",
+      "summaryEn": "Business Standard reports that Bangladesh has appointed Foreign Secretary Asad Alam Siam as its next High Commissioner to India. The Ministry of External Affairs in New Delhi has formally approved his agreement, marking a pivotal diplomatic step to revitalize institutional communication channels between the two neighbouring nations.",
+      "keyPointsBn": [
+          "বর্তমান পররাষ্ট্র সচিব আসাদ আলম সিয়ামকে ভারতে বাংলাদেশের নতুন রাষ্ট্রদূত হিসেবে নিয়োগ",
+          "নয়াদিল্লির পররাষ্ট্র মন্ত্রণালয় কর্তৃক দ্রুততম সময়ে এগ্রিমা অনুমোদন",
+          "দ্বিপাক্ষিক আলোচনা, বাণিজ্যিক সহযোগিতা ও কূটনৈতিক স্থবিরতা কাটানোর ক্ষেত্রে গুরুত্বপূর্ণ পদক্ষেপ"
+      ],
+      "keyPointsEn": [
+          "Career diplomat & current Foreign Secretary Asad Alam Siam named envoy to New Delhi",
+          "MEA in New Delhi accords prompt diplomatic clearance (agrement)",
+          "Move aimed at restoring high-level diplomatic dialogue and institutional stability"
+      ],
+      "category": "diplomacy",
+      "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+      "categoryLabelEn": "Diplomacy & Bilateral Relations",
+      "sentiment": "positive",
+      "sentimentReasonBn": "শীর্ষ কূটনীতিক নিয়োগের মাধ্যমে কূটনৈতিক সম্পর্ক স্বাভাবিকীকরণের ইতিবাচক অগ্রগতি।",
+      "sentimentReasonEn": "Positive development toward normalizing high-level institutional diplomacy.",
+      "source": {
+          "name": "Business Standard",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://www.business-standard.com/world-news/bangladesh-foreign-secretary-asad-siam-set-to-be-new-envoy-to-india-126092300018_1.html",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T19:00:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/south-block-mea-delhi.jpg",
+      "tags": [
+          "Business Standard",
+          "Diplomacy",
+          "Asad Alam Siam",
+          "MEA Delhi",
+          "High Commission"
+      ],
+      "isLeadStory": true,
+      "isTrending": true
+  },
+  {
+      "id": "news-20260923-014",
+      "slug": "indian-express-sheikh-hasina-vows-december-return-prepared-legal-trial",
+      "title": "The Indian Express: ''Question Is How, Not When': Sheikh Hasina Vows to Return to Bangladesh by December, Prepared to Face Legal Proceedings'",
+      "englishTitle": "The Indian Express: ''Question Is How, Not When': Sheikh Hasina Vows to Return to Bangladesh by December, Prepared to Face Legal Proceedings'",
+      "banglaTitle": "‘কখন নয়, প্রশ্ন হলো কীভাবে: ডিসেম্বরেই বাংলাদেশে ফেরার প্রত্যয় পুনর্ব্যক্ত করে আইনি লড়াইয়ের প্রস্তুতি হাসিনার’: ইন্ডিয়ান এক্সপ্রেস",
+      "summaryBn": "‘দ্য ইন্ডিয়ান এক্সপ্রেস’-এর বিশেষ প্রতিবেদনে বলা হয়েছে, সাবেক প্রধানমন্ত্রী শেখ হাসিনা পুনর্ব্যক্ত করেছেন যে তিনি আগামী ডিসেম্বরের মধ্যেই বাংলাদেশে ফিরবেন। তিনি জানান, রাজনৈতিক ভবিষ্যৎ ও দলীয় সমর্থকদের গণতান্ত্রিক অধিকার রক্ষায় তিনি ট্রাইব্যুনালের মুখোমুখি হতে প্রস্তুত।",
+      "summaryEn": "The Indian Express highlights former Prime Minister Sheikh Hasina's resolute remarks asserting she is determined to return to Bangladesh by December 2026, stating she is fully prepared to face judicial proceedings to defend her party cadres and democratic legacy.",
+      "keyPointsBn": [
+          "ডিসেম্বর ২০২৬-এর মধ্যে বাংলাদেশে প্রত্যাবর্তনের পরিকল্পনা পুনর্ব্যক্ত করলেন শেখ হাসিনা",
+          "আইনগত বিচারপ্রক্রিয়া ও ট্রাইব্যুনালের রায়ের মুখোমুখি হওয়ার ঘোষণা",
+          "তৃণমূল কর্মীদের নিরাপত্তা এবং সাংবিধানিক সুরক্ষার ওপর বিশেষ গুরুত্বারোপ"
+      ],
+      "keyPointsEn": [
+          "Hasina reaffirms targeted return to Dhaka by December 2026",
+          "Prepared to face tribunal proceedings and judicial challenges",
+          "Emphasizes grassroots cadre safety and transparent due process"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও সুশাসন",
+      "categoryLabelEn": "Politics & Governance",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "রাজনৈতিক বক্তব্য ও আইনি প্রস্তুতি সম্পর্কিত বস্তুনিষ্ঠ বিশ্লেষণ।",
+      "sentimentReasonEn": "Objective analytical coverage of major political statements and legal scenarios.",
+      "source": {
+          "name": "The Indian Express",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://indianexpress.com/article/world/sheikh-hasina-dhaka-return-international-crimes-tribunal-verdict-bangladesh-interview-10890775/",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T18:30:00Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "/images/thewall-hasina-interview.jpeg",
+      "tags": [
+          "The Indian Express",
+          "Sheikh Hasina",
+          "Awami League",
+          "Delhi Bureau",
+          "Politics"
+      ],
+      "isTrending": true
+  },
+  {
+      "id": "news-20260923-015",
+      "slug": "assam-tribune-awami-league-leader-arrested-anti-terror-clampdown",
+      "title": "The Assam Tribune: 'Another Awami League Leader Apprehended in Bangladesh Anti-Terror Dragnet Amid Widening Clampdown'",
+      "englishTitle": "The Assam Tribune: 'Another Awami League Leader Apprehended in Bangladesh Anti-Terror Dragnet Amid Widening Clampdown'",
+      "banglaTitle": "‘বাংলাদেশে সন্ত্রাসবিরোধী অভিযানে ফের গ্রেপ্তার আওয়ামী লীগ নেতা; অভিযানের পরিধি বাড়ার খবর’: দ্য আসাম ট্রাইব্যুনাল",
+      "summaryBn": "‘দ্য আসাম ট্রাইব্যুনাল’-এর প্রতিবেদনে জানা গেছে, বাংলাদেশে চলমান সন্ত্রাসবিরোধী অভিযানের আওতায় আরও এক জ্যেষ্ঠ আওয়ামী লীগ নেতাকে গ্রেপ্তার করেছে নিরাপত্তা বাহিনী। উত্তর-পূর্ব ভারতের কূটনৈতিক মহলে বাংলাদেশের অভ্যন্তরীণ রাজনৈতিক অস্থিতিশীলতা ও সীমান্তবর্তী এলাকার প্রভাব নিয়ে পর্যবেক্ষণ অব্যাহত রয়েছে।",
+      "summaryEn": "The Assam Tribune reports the arrest of another prominent Awami League figure in Bangladesh under expanding anti-terror crackdowns, noting close surveillance across North East security circles regarding regional cross-border spillover effects.",
+      "keyPointsBn": [
+          "বাংলাদেশে সন্ত্রাসবিরোধী আইনে আওয়ামী লীগের শীর্ষপর্যায়ের নেতাদের গ্রেপ্তার অব্যাহত",
+          "সীমান্তবর্তী আসাম ও মেঘালয় সীমান্তে বাড়তি নিরাপত্তা ও গোয়েন্দা নজরদারি",
+          "আইনি প্রক্রিয়া ও মানবাধিকার মানদণ্ড নিয়ে আন্তর্জাতিক পর্যবেক্ষকদের উদ্বেগ"
+      ],
+      "keyPointsEn": [
+          "Security forces in Bangladesh detain another senior Awami League functionary",
+          "North East frontier units maintain heightened intelligence monitoring",
+          "Observers track legal standards and human rights implications"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও সীমান্ত প্রভাব",
+      "categoryLabelEn": "Politics & Regional Impact",
+      "sentiment": "negative",
+      "sentimentReasonBn": "রাজনৈতিক ধরপাকড় ও আঞ্চলিক অস্থিতিশীলতার উদ্বেগ।",
+      "sentimentReasonEn": "Concerns regarding ongoing political arrests and regional stability.",
+      "source": {
+          "name": "The Assam Tribune",
+          "bureau": "Assam",
+          "language": "English",
+          "originalUrl": "https://assamtribune.com/national/another-awami-league-leader-arrested-in-bangladesh-anti-terror-case-1618264",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T17:45:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+      "tags": [
+          "The Assam Tribune",
+          "Assam Bureau",
+          "Awami League",
+          "Security",
+          "Regional Alert"
+      ]
+  },
+  {
+      "id": "news-20260923-016",
+      "slug": "sangbad-pratidin-night-border-infiltration-busted-bsf-police-arrest",
+      "title": "Sangbad Pratidin: 'Nighttime Border Infiltration Attempt Thwarted; 3 Apprehended Along Indo-Bangla Frontier in Joint BSF-Police Sweep'",
+      "englishTitle": "Sangbad Pratidin: 'Nighttime Border Infiltration Attempt Thwarted; 3 Apprehended Along Indo-Bangla Frontier in Joint BSF-Police Sweep'",
+      "banglaTitle": "‘রাতে কাঁটাতার পেরিয়ে অনুপ্রবেশের চেষ্টা রুখে দিল বিএসএফ ও পুলিশ; সীমান্ত থেকে ধৃত ৩’: সংবাদ প্রতিদিন",
+      "summaryBn": "‘সংবাদ প্রতিদিন’-এর খবরে প্রকাশ, পশ্চিমবঙ্গের আন্তর্জাতিক সীমান্ত দিয়ে রাতের অন্ধকারে অবৈধ অনুপ্রবেশের চেষ্টা রুখে দিয়েছে বিএসএফ ও রাজ্য পুলিশ। তল্লাশি অভিযানে ৩ জনকে আটক করে জিজ্ঞাসাবাদ করা হচ্ছে। চোরাচালান ও অনুপ্রবেশ রোধে জিরো পয়েন্টে টহল আরও জোরদার করা হয়েছে।",
+      "summaryEn": "Sangbad Pratidin reports that a joint operation by the Border Security Force (BSF) and state police thwarted an unauthorized nighttime border infiltration attempt, apprehending three individuals along the Indo-Bangladesh frontier in West Bengal.",
+      "keyPointsBn": [
+          "সীমান্তে রাতের অন্ধকারে অবৈধ অনুপ্রবেশের চেষ্টা রুখে দিল বিএসএফ ও পুলিশ",
+          "আটক ৩ জনের কাছ থেকে গুরুত্বপূর্ণ নথিপত্র উদ্ধার ও জিজ্ঞাসাবাদ",
+          "সীমান্ত চেকপোস্টে নাইট ভিশন ও ড্রোনের মাধ্যমে বাড়তি নজরদারি"
+      ],
+      "keyPointsEn": [
+          "Joint BSF-police sweep intercepts nighttime cross-border infiltration attempt",
+          "Three suspects taken into custody for intensive interrogation",
+          "Enhanced deployment of night-vision devices and drone patrols along the boundary"
+      ],
+      "category": "border",
+      "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+      "categoryLabelEn": "Border & Security",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "সীমান্ত নজরদারি ও আইন প্রয়োগকারী সংস্থার যৌথ অভিযান সম্পর্কিত নিরাপত্তা প্রতিবেদন।",
+      "sentimentReasonEn": "Security reporting on joint border management and interdiction efforts.",
+      "source": {
+          "name": "Sangbad Pratidin",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://www.sangbadpratidin.in/app/bengal/3-arrested-for-entering-india-border-from-bangladesh-at-night/pid/1351053/",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T17:15:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/border-checkpost-petrapole-gede.jpg",
+      "tags": [
+          "Sangbad Pratidin",
+          "BSF",
+          "Border Security",
+          "Kolkata Bureau",
+          "Infiltration"
+      ]
+  },
+  {
+      "id": "news-20260923-017",
+      "slug": "bartaman-patrika-border-deaddiction-anti-smuggling-drive-intensified",
+      "title": "Bartaman Patrika: 'De-Addiction and Vigilance Drive to Intensify Across Indo-Bangla Border Districts to Curb Cross-Border Smuggling'",
+      "englishTitle": "Bartaman Patrika: 'De-Addiction and Vigilance Drive to Intensify Across Indo-Bangla Border Districts to Curb Cross-Border Smuggling'",
+      "banglaTitle": "‘সীমান্তবর্তী এলাকায় মাদক পাচার ও চোরাচালান রুখতে নেশামুক্তি এবং নজরদারি অভিযান জোরদার থাকবে’: বর্তমান পত্রিকা",
+      "summaryBn": "‘বর্তমান পত্রিকা’-র প্রতিবেদনে জানানো হয়েছে, ভারত-বাংলাদেশ সীমান্ত সংলগ্ন জেলাগুলোতে মাদক চোরাচালান রোধে বিশেষ যৌথ টাস্কফোর্সের নজরদারি বাড়ানো হচ্ছে। যুবসমাজকে মাদকমুক্ত রাখতে এবং চোরাচালান সিন্ডিকেট গুঁড়িয়ে দিতে প্রশাসন ও নিরাপত্তা বাহিনী সমন্বিত অভিযান শুরু করেছে।",
+      "summaryEn": "Bartaman Patrika reports on intensified administrative and security measures across Indo-Bangladesh border districts to suppress illicit narcotics trafficking and dismantle cross-border contraband syndicates.",
+      "keyPointsBn": [
+          "ভারত-বাংলাদেশ সীমান্ত সংলগ্ন এলাকায় মাদক চোরাচালান প্রতিরোধে সমন্বিত অভিযান",
+          "সীমান্তবর্তী জেলাগুলোতে সচেতনতা বৃদ্ধি ও বিশেষ তল্লাশি চৌকি স্থাপন",
+          "চোরাচালান রুখতে পঞ্চায়েত ও বিএসএফের যৌথ কর্মপরিকল্পনা"
+      ],
+      "keyPointsEn": [
+          "Coordinated inter-agency initiative launched against cross-border narcotics trafficking",
+          "Special checkpoints and community outreach rolled out across border belts",
+          "BSF and local administrations partner to disrupt illicit smuggling rings"
+      ],
+      "category": "border",
+      "categoryLabelBn": "সীমান্ত নিরাপত্তা ও প্রশাসন",
+      "categoryLabelEn": "Border Security & Governance",
+      "sentiment": "positive",
+      "sentimentReasonBn": "মাদক পাচার ও চোরাচালান দমনে ইতিবাচক প্রশাসনিক পদক্ষেপ।",
+      "sentimentReasonEn": "Proactive governance measures targeting contraband suppression along frontiers.",
+      "source": {
+          "name": "Bartaman Patrika",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://bartamanpatrika.com/news/de-addiction-drive-to-continue-in-bangladesh-border-areas-chief-minister",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T16:45:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/bsf-border-drone-surveillance.jpg",
+      "tags": [
+          "Bartaman Patrika",
+          "Border Security",
+          "Kolkata Bureau",
+          "Anti-Narcotics",
+          "Vigilance"
+      ]
+  },
+  {
+      "id": "news-20260923-018",
+      "slug": "sangbad-pratidin-bangladesh-textbook-curriculum-overhaul-debate",
+      "title": "Sangbad Pratidin: 'Major Curriculum Overhaul in Bangladesh Textbooks Sparks Wide Regional and Academic Debate'",
+      "englishTitle": "Sangbad Pratidin: 'Major Curriculum Overhaul in Bangladesh Textbooks Sparks Wide Regional and Academic Debate'",
+      "banglaTitle": "‘বাংলাদেশের বিদ্যালয়ের পাঠ্যবইয়ে ঐতিহাসিক অধ্যায়ের ব্যাপক পরিবর্তন নিয়ে আঞ্চলিক ও শিক্ষাঙ্গনে বিতর্ক’: সংবাদ প্রতিদিন",
+      "summaryBn": "‘সংবাদ প্রতিদিন’-এর কলকাতা ডেস্কে প্রকাশিত প্রতিবেদনে বলা হয়েছে, বাংলাদেশের পাঠ্যপুস্তক বোর্ডের সাম্প্রতিক সংশোধনে মুক্তিযুদ্ধের ইতিহাস ও রাজনৈতিক ব্যক্তিত্বদের অধ্যায়ে ব্যাপক রদবদল আনা হয়েছে। এ নিয়ে শিক্ষাবিদ এবং আঞ্চলিক বিশ্লেষকদের মাঝে গভীর পর্যালোচনা চলছে।",
+      "summaryEn": "Sangbad Pratidin reports on sweeping revisions introduced by Bangladesh's education authorities in school history textbooks, triggering widespread intellectual and regional debate regarding historical narratives and pedagogical shifts.",
+      "keyPointsBn": [
+          "বিদ্যালয়ের পাঠ্যবইয়ের ইতিহাস ও জাতীয় ব্যক্তিত্বদের বিবরণীতে বড় ধরনের পরিবর্তন",
+          "শিক্ষাবিদ ও political বিশ্লেষকদের মধ্যে মিশ্র প্রতিক্রিয়া",
+          "পশ্চিমবঙ্গের বুদ্ধিজীবী মহলে বিষয়টির ঐতিহাসিক প্রভাব নিয়ে আলোচনা"
+      ],
+      "keyPointsEn": [
+          "Curriculum authorities undertake major structural revisions in school history books",
+          "Evokes strong reactions across academic, civil society, and political circles",
+          "Generates detailed commentary across Kolkata cultural and editorial desks"
+      ],
+      "category": "culture",
+      "categoryLabelBn": "সংস্কৃতি ও শিক্ষাব্যবস্থা",
+      "categoryLabelEn": "Culture & Education",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "শিক্ষানীতি ও পাঠ্যবই সংস্কার সম্পর্কিত অ্যাকাডেমিক এবং সাংস্কৃতিক পর্যবেক্ষণ।",
+      "sentimentReasonEn": "Academic and cultural coverage of pedagogical revisions and public discourse.",
+      "source": {
+          "name": "Sangbad Pratidin",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://www.sangbadpratidin.in/app/bangladesh/in-bangladesh-mujibar-rahman-will-be-excluded-and-khaleda-zia-included-in-school-syllabus/pid/1350701/",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T16:15:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/dhaka-university-campus-landscape.jpg",
+      "tags": [
+          "Sangbad Pratidin",
+          "Culture",
+          "Education",
+          "Kolkata Bureau",
+          "Curriculum"
+      ]
+  },
+  {
+      "id": "news-20260923-019",
+      "slug": "india-today-adb-200m-loan-bangladesh-power-transmission-grid",
+      "title": "India Today Video Dispatch: 'ADB Clears $200 Million Facility to Upgrade Bangladesh Power Transmission Network & Regional Connectivity'",
+      "englishTitle": "India Today Video Dispatch: 'ADB Clears $200 Million Facility to Upgrade Bangladesh Power Transmission Network & Regional Connectivity'",
+      "banglaTitle": "‘বাংলাদেশের বিদ্যুৎ সঞ্চালন ব্যবস্থা ও আঞ্চলিক গ্রিড আধুনিকায়নে ২০০ মিলিয়ন ডলারের ঋণ অনুমোদন এডিবির’: ইন্ডিয়া টুডে ভিডিও",
+      "summaryBn": "‘ইন্ডিয়া টুডে’-র আন্তর্জাতিক ভিডিও ডেসপ্যাচে জানানো হয়েছে, এশীয় উন্নয়ন ব্যাংক (এডিবি) বাংলাদেশের জাতীয় বিদ্যুৎ সঞ্চালন নেটওয়ার্ক সম্প্রসারণ এবং ভারত-বাংলাদেশ ক্রস-বর্ডার গ্রিড সংযোগ নির্বিঘ্ন রাখতে ২০০ মিলিয়ন ডলারের সহজ শর্তের ঋণ অনুমোদন করেছে।",
+      "summaryEn": "India Today reports on the Asian Development Bank's approval of a $200 million financing package designed to modernize Bangladesh's electricity transmission infrastructure, enhancing regional power trade and grid resilience.",
+      "keyPointsBn": [
+          "জাতীয় বিদ্যুৎ সঞ্চালন আধুনিকায়নে এডিবির ২০০ মিলিয়ন ডলারের তহবিল অনুমোদন",
+          "ভারত-বাংলাদেশ বিদ্যুৎ সংযোগ ও ক্রস-বর্ডার গ্রিডের নির্ভরযোগ্যতা বৃদ্ধি",
+          "নবায়নযোগ্য জ্বালানি একীভূতকরণ ও বিদ্যুৎ ঘাটতি নিরসনে ভূমিকা রাখবে"
+      ],
+      "keyPointsEn": [
+          "ADB sanctions $200 million package to strengthen national transmission lines",
+          "Reinforces cross-border electricity interconnectors and regional energy flows",
+          "Facilitates renewable energy integration and reduces distribution bottlenecks"
+      ],
+      "category": "economy",
+      "categoryLabelBn": "অর্থনীতি ও জ্বালানি",
+      "categoryLabelEn": "Economy & Energy",
+      "sentiment": "positive",
+      "sentimentReasonBn": "আঞ্চলিক জ্বালানি নিরাপত্তা ও অবকাঠামো উন্নয়নে অর্থায়নের ইতিবাচক পদক্ষেপ।",
+      "sentimentReasonEn": "Constructive development bolstering regional infrastructure and energy connectivity.",
+      "source": {
+          "name": "India Today",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://www.youtube.com/watch?v=M5GBon_Ki6s",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T15:40:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "https://i.ytimg.com/vi/M5GBon_Ki6s/hqdefault.jpg",
+      "mediaFormat": "youtube",
+      "videoUrl": "https://www.youtube.com/watch?v=M5GBon_Ki6s",
+      "tags": [
+          "India Today",
+          "ADB",
+          "Economy",
+          "Energy",
+          "Delhi Bureau",
+          "YouTube"
+      ]
+  },
+  {
+      "id": "news-20260923-020",
+      "slug": "ei-samay-asian-games-women-cricket-pakistan-beats-bangladesh-bronze",
+      "title": "Ei Samay: 'Asian Games 2026: Bangladesh Women Face 31-Run Defeat Against Pakistan in Bronze Medal Playoff'",
+      "englishTitle": "Ei Samay: 'Asian Games 2026: Bangladesh Women Face 31-Run Defeat Against Pakistan in Bronze Medal Playoff'",
+      "banglaTitle": "‘এশিয়ান গেমস ২০২৬: ব্রোঞ্জ নির্ধারণী ম্যাচে পাকিস্তানের কাছে ৩১ রানে পরাজিত বাংলাদেশ নারী ক্রিকেট দল’: এই সময়",
+      "summaryBn": "‘এই সময়’-এর ক্রীড়া প্রতিবেদনে বলা হয়েছে, ভারতের কাছে সেমিফাইনালে হারের পর এশিয়ান গেমস ক্রিকেটের ব্রোঞ্জ পদক নির্ধারণী ম্যাচে পাকিস্তানের কাছে ৩১ রানে পরাজিত হয়েছে বাংলাদেশ নারী ক্রিকেট দল। ম্যাচ শেষে দলের ব্যাটিং ব্যর্থতা নিয়ে বিশ্লেষণ প্রকাশিত হয়েছে।",
+      "summaryEn": "Ei Samay covers the Asian Games 2026 bronze medal cricket match, where Bangladesh Women fell short by 31 runs against Pakistan following their earlier semi-final defeat against India.",
+      "keyPointsBn": [
+          "ব্রোঞ্জ পদক ম্যাচে পাকিস্তানের নিয়ন্ত্রিত বোলিংয়ের মুখে বাংলাদেশ দলের পরাজয়",
+          "ভারতের কাছে সেমিফাইনালের পর টানা দুই ম্যাচে ব্যাটিং ব্যর্থতা",
+          "এশিয়ান গেমস ক্রিকেট ময়দানে দলীয় পারফরম্যান্সের সামগ্রিক মূল্যায়ন"
+      ],
+      "keyPointsEn": [
+          "Pakistan Women secure Asian Games bronze with a 31-run victory over Bangladesh",
+          "Follows Bangladesh's earlier semi-final setback against Team India",
+          "Draws analytical coverage across Kolkata sports media desks"
+      ],
+      "category": "sports",
+      "categoryLabelBn": "ক্রীড়া ও এশিয়ান গেমস",
+      "categoryLabelEn": "Sports & Asian Games",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "এশিয়ান গেমসের ক্রিকেট ম্যাচ ও স্কোরলাইনের ক্রীড়া সাংবাদিকতা।",
+      "sentimentReasonEn": "Objective sports reporting covering tournament playoffs and statistics.",
+      "source": {
+          "name": "Ei Samay",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://www.instagram.com/p/DdlIPDfGljV/",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T15:10:00Z",
+      "readTimeBn": "২ মিনিট",
+      "readTimeEn": "2 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80",
+      "mediaFormat": "instagram",
+      "instagramEmbedUrl": "https://www.instagram.com/p/DdlIPDfGljV/",
+      "tags": [
+          "Ei Samay",
+          "Asian Games",
+          "Cricket",
+          "Sports",
+          "Kolkata Bureau"
+      ]
+  },
+  {
+      "id": "news-20260923-021",
+      "slug": "india-today-dhaka-high-commission-itec-journalism-fellowship-hyderabad",
+      "title": "India Today: 'Indian High Commission in Dhaka Rolls Out Fully Funded ITEC Journalism and PR Fellowship in Hyderabad'",
+      "englishTitle": "India Today: 'Indian High Commission in Dhaka Rolls Out Fully Funded ITEC Journalism and PR Fellowship in Hyderabad'",
+      "banglaTitle": "‘বাংলাদেশি গণমাধ্যমকর্মীদের জন্য হায়দরাবাদে সম্পূর্ণ অর্থায়িত আইটেক ফেলোশিপ ঘোষণা ভারতীয় হাইকমিশনের’: ইন্ডিয়া টুডে",
+      "summaryBn": "‘ইন্ডিয়া টুডে’-র খবরে জানানো হয়েছে, ঢাকায় নিযুক্ত ভারতীয় হাইকমিশন বাংলাদেশি সাংবাদিকদের জন্য হায়দরাবাদে এক সপ্তাহের বিশেষ মিডিয়া ও পিআর প্রশিক্ষণ ফেলোশিপের ঘোষণা দিয়েছে। ভারত সরকার সম্পূর্ণ অর্থায়ন বহন করে দ্বিপাক্ষিক জনসংযোগ ও সাংস্কৃতিক বিনিময় জোরদার করছে।",
+      "summaryEn": "India Today reports that the High Commission of India in Dhaka has announced fully funded ITEC capacity-building fellowships in journalism and public relations for Bangladeshi media professionals in Hyderabad.",
+      "keyPointsBn": [
+          "বাংলাদেশি সাংবাদিকদের জন্য ভারতে সম্পূর্ণ অর্থায়িত আইটেক কোর্স ঘোষণা",
+          "হায়দরাবাদে ২৫-৩১ অক্টোবর অনুষ্ঠিতব্য পেশাগত প্রশিক্ষণ কর্মসূচি",
+          "ভারত-বাংলাদেশ মিডিয়া ও সাংস্কৃতিক সংযোগ বৃদ্ধির ইতিবাচক উদ্যোগ"
+      ],
+      "keyPointsEn": [
+          "Indian High Commission offers fully sponsored ITEC professional journalism course",
+          "Weeklong training scheduled in Hyderabad from Oct 25-31",
+          "Enhances institutional media engagement and bilateral cultural ties"
+      ],
+      "category": "culture",
+      "categoryLabelBn": "সংস্কৃতি ও গণমাধ্যম ফেলোশিপ",
+      "categoryLabelEn": "Culture & Media Exchange",
+      "sentiment": "positive",
+      "sentimentReasonBn": "দ্বিপাক্ষিক সম্পর্ক উন্নয়নে গণমাধ্যম বিনিময় ও শিক্ষাবৃত্তির ইতিবাচক পদক্ষেপ।",
+      "sentimentReasonEn": "Positive bilateral capacity-building and cultural exchange initiative.",
+      "source": {
+          "name": "India Today",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://www.instagram.com/p/DdfssCZjA4o/",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T14:35:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/indian-visa-application-center-dhaka.jpg",
+      "mediaFormat": "instagram",
+      "instagramEmbedUrl": "https://www.instagram.com/p/DdfssCZjA4o/",
+      "tags": [
+          "India Today",
+          "ITEC",
+          "High Commission",
+          "Culture",
+          "Delhi Bureau"
+      ]
+  },
+  {
+      "id": "news-20260923-022",
+      "slug": "theprint-strategic-video-analysis-dhaka-delhi-diplomatic-realignments",
+      "title": "ThePrint Strategic Dispatch: 'Analysing the Political Dynamics Behind Diplomatic Shifts Between Dhaka and New Delhi'",
+      "englishTitle": "ThePrint Strategic Dispatch: 'Analysing the Political Dynamics Behind Diplomatic Shifts Between Dhaka and New Delhi'",
+      "banglaTitle": "‘ঢাকা-দিল্লি কূটনৈতিক সম্পর্ক ও অভ্যন্তরীণ রাজনৈতিক সমীকরণের গতিপ্রকৃতি বিশ্লেষণ’: দ্যপ্রিন্ট স্পেশাল ভিডিও",
+      "summaryBn": "‘দ্যপ্রিন্ট’-এর আন্তর্জাতিক ভিডিও ডেসপ্যাচে ঢাকা ও দিল্লির মধ্যকার সাম্প্রতিক কূটনৈতিক গতিপ্রকৃতি, রাজনৈতিক নেতৃবৃন্দের পারস্পরিক সফর পরিকল্পনা এবং বহুপাক্ষিক নিরাপত্তা সম্পর্কের দীর্ঘমেয়াদি কৌশলগত প্রভাব নিয়ে গভীর বিশ্লেষণ উপস্থাপন করা হয়েছে।",
+      "summaryEn": "ThePrint's video dispatch provides an extensive strategic appraisal of current diplomatic trajectories between New Delhi and Dhaka, examining domestic political dynamics, security postures, and future engagement frameworks.",
+      "keyPointsBn": [
+          "ভারত-বাংলাদেশ দ্বিপাক্ষিক সম্পর্কের ভবিষ্যৎ অভিমুখ নিয়ে কৌশলগত পর্যালোচনা",
+          "অভ্যন্তরীণ রাজনৈতিক বাস্তবতার প্রেক্ষাপটে কূটনৈতিক নীতি নির্ধারণের জটিলতা",
+          "প্রতিবেশী প্রথম নীতির আওতায় অংশীদারিত্ব বজায় রাখার ওপর গুরুত্ব"
+      ],
+      "keyPointsEn": [
+          "Strategic evaluation of ongoing diplomatic trajectories between New Delhi and Dhaka",
+          "Assesses domestic political factors shaping bilateral diplomatic timelines",
+          "Emphasizes the necessity of sustained engagement under Neighborhood First policy"
+      ],
+      "category": "diplomacy",
+      "categoryLabelBn": "কূটনীতি ও কৌশলগত বিশ্লেষণ",
+      "categoryLabelEn": "Diplomacy & Strategic Analysis",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "দ্বিপাক্ষিক কূটনীতি ও ভূ-রাজনীতি সম্পর্কিত নিরপেক্ষ কৌশলগত আলোচনা।",
+      "sentimentReasonEn": "Balanced geopolitical analysis of regional diplomatic engagements.",
+      "source": {
+          "name": "ThePrint (YouTube)",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://www.youtube.com/watch?v=uyv1yYWNPJU",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T13:50:00Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "https://i.ytimg.com/vi/uyv1yYWNPJU/hqdefault.jpg",
+      "mediaFormat": "youtube",
+      "videoUrl": "https://www.youtube.com/watch?v=uyv1yYWNPJU",
+      "tags": [
+          "ThePrint",
+          "Diplomacy",
+          "Strategic Affairs",
+          "Delhi Bureau",
+          "YouTube"
+      ]
+  },
+  {
+      "id": "news-20260923-023",
+      "slug": "navbharat-times-iaf-tarang-shakti-multilateral-exercise-jodhpur",
+      "title": "Navbharat Times: 'IAF Hosts Tarang Shakti Air Exercise in Jodhpur with Regional Observers and Multinational Air Fleets'",
+      "englishTitle": "Navbharat Times: 'IAF Hosts Tarang Shakti Air Exercise in Jodhpur with Regional Observers and Multinational Air Fleets'",
+      "banglaTitle": "‘যোধপুরে ভারতীয় বিমানবাহিনীর বহুজাতিক মহড়া ‘তরঙ্গ শক্তি’: আকাশসীমা সুরক্ষা ও সামরিক সমন্বয়ের মহোৎসব’: নবভারত টাইমস",
+      "summaryBn": "‘নবভারত টাইমস’-এর প্রতিবেদনে জানা গেছে, ভারতীয় বিমানবাহিনী (আইএএফ) যোধপুরে বৃহৎ আন্তর্জাতিক মহড়া ‘তরঙ্গ শক্তি’ পরিচালনা করছে। প্রতিবেশী দেশগুলোর আকাশসীমা ও আঞ্চলিক বিমান চলাচল সমন্বয়ে এই বহুপাক্ষিক মহড়া কৌশলগত বার্তা বহন করছে।",
+      "summaryEn": "Navbharat Times reports on the Indian Air Force's massive multinational exercise 'Tarang Shakti' in Jodhpur, showcasing advanced aerial interoperability and regional airspace coordination with international observer delegations.",
+      "keyPointsBn": [
+          "যোধপুরে বিমানবাহিনীর বৃহত্তম আন্তর্জাতিক মহড়া ‘তরঙ্গ শক্তি’ শুরু",
+          "আঞ্চলিক আকাশসীমা সুরক্ষা ও যৌথ সামরিক সমন্বয়ের পরীক্ষা",
+          "দক্ষিণ এশিয়া ও মিত্র দেশগুলোর প্রতিনিধিদের সক্রিয় পর্যবেক্ষণ"
+      ],
+      "keyPointsEn": [
+          "Indian Air Force conducts major multilateral 'Tarang Shakti' combat exercise in Jodhpur",
+          "Validates regional airspace interoperability and advanced aerial tactics",
+          "Attracts international military observers and strategic delegations"
+      ],
+      "category": "border",
+      "categoryLabelBn": "প্রতিরক্ষা ও নিরাপত্তা",
+      "categoryLabelEn": "Defense & Security",
+      "sentiment": "positive",
+      "sentimentReasonBn": "সামরিক সক্ষমতা ও আঞ্চলিক নিরাপত্তা সহযোগিতার ইতিবাচক মহড়া।",
+      "sentimentReasonEn": "Positive defense preparedness and regional cooperation reporting.",
+      "source": {
+          "name": "Navbharat Times",
+          "bureau": "Delhi",
+          "language": "Hindi",
+          "originalUrl": "https://navbharattimes.indiatimes.com/india/indian-air-force-tarang-shakti-exercise-in-jodhpur-and-rajasthan-us-france-germany-australia-bangladesh-sri-lanka-uae-will-participate/articleshow/134410055.cms",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T13:05:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80",
+      "tags": [
+          "Navbharat Times",
+          "Defense",
+          "Air Force",
+          "Delhi Bureau",
+          "Security"
+      ]
+  },
+  {
+      "id": "news-20260923-024",
+      "slug": "sangbad-pratidin-petrapole-benapole-freight-trade-customs-clearance",
+      "title": "Sangbad Pratidin: 'Petrapole-Benapole Land Port Facilitates Essential Freight Transit with Streamlined Customs Clearance'",
+      "englishTitle": "Sangbad Pratidin: 'Petrapole-Benapole Land Port Facilitates Essential Freight Transit with Streamlined Customs Clearance'",
+      "banglaTitle": "‘পেট্রাপোল-বেনাপোল স্থলবন্দরে দ্রুত শুল্ক ছাড়পত্র ও নিয়মিত পণ্য পরিবহন স্বাভাবিক গতিতে বজায়’: সংবাদ প্রতিদিন",
+      "summaryBn": "‘সংবাদ প্রতিদিন’-এর বাণিজ্যিক প্রতিবেদনে প্রকাশ, পেট্রাপোল-বেনাপোল সমন্বিত চেকপোস্টে নিত্যপ্রয়োজনীয় পণ্য, ওষুধ ও কৃষিপণ্য পরিবহনে বিশেষ গ্রিন চ্যানেল কার্যকর রয়েছে। বাণিজ্য গতিশীল রাখতে কাস্টমস ও বিএসএফের যৌথ ব্যবস্থাপনায় পণ্য খালাস স্বাভাবিক রয়েছে।",
+      "summaryEn": "Sangbad Pratidin reports on smooth freight movement across the Petrapole-Benapole Integrated Check Post, where streamlined customs clearances and green channels ensure uninterrupted cross-border supply chains for essential commodities.",
+      "keyPointsBn": [
+          "পেট্রাপোল-বেনাপোল স্থলবন্দরে নিত্যপ্রয়োজনীয় পণ্য পরিবহনে গতিশীলতা বজায়",
+          "কাস্টমস ও সীমান্ত এজেন্সির সমন্বয়ে গ্রিন চ্যানেল ক্লিয়ারেন্স কার্যকর",
+          "দ্বিপাক্ষিক বাণিজ্যিক সরবরাহ শৃঙ্খল নিরবচ্ছিন্ন রাখার জোর প্রচেষ্টা"
+      ],
+      "keyPointsEn": [
+          "Petrapole-Benapole land port maintains regular flow of essential freight cargo",
+          "Coordinated green-channel clearances minimize transit delays for perishables",
+          "Ensures supply chain continuity between Indian and Bangladeshi markets"
+      ],
+      "category": "trade",
+      "categoryLabelBn": "বাণিজ্য ও বন্দর",
+      "categoryLabelEn": "Trade & Ports",
+      "sentiment": "positive",
+      "sentimentReasonBn": "দ্বিপাক্ষিক বাণিজ্য ও স্থলবন্দরের নির্বিঘ্ন পরিচালন সম্পর্কিত ইতিবাচক খবর।",
+      "sentimentReasonEn": "Positive economic report on uninterrupted bilateral trade logistics.",
+      "source": {
+          "name": "Sangbad Pratidin",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://www.sangbadpratidin.in/bengal/petrapole-benapole-icp-green-channel-freight-clearance-20260922",
+          "scannedAt": "2026-09-23T22:30:00Z"
+      },
+      "publishedAt": "2026-09-23T12:20:00Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
+      "tags": [
+          "Sangbad Pratidin",
+          "Trade",
+          "Petrapole",
+          "Land Port",
+          "Kolkata Bureau"
+      ]
+  },
+  {
     "id": "news-20260923-001",
     "slug": "anandabazar-sheikh-hasina-awami-league-revival-legal-safeguards",
     "title": "Anandabazar Patrika: 'Sheikh Hasina Signals Plan to Rebuild Awami League on Ground, Calls for Legal Safeguards'",
@@ -517,8 +1100,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "Kolkata Bureau",
       "Politics"
     ],
-    "isLeadStory": true
-  },
+      },
   {
     "id": "news-20260923-002",
     "slug": "sangbad-pratidin-hasina-december-return-readiness-to-face-trial",
@@ -1040,8 +1622,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "readTimeBn": "৩ মিনিট পাঠ",
   "readTimeEn": "3 min read",
   "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
-  "isLeadStory": true,
-  "isTrending": true,
+    "isTrending": true,
   "isBreaking": true,
   "tags": [
     "The Indian Express",
@@ -1316,8 +1897,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "readTimeBn": "৩ মিনিট পাঠ",
   "readTimeEn": "3 min read",
   "imageUrl": "/images/gauhati-high-court.jpg",
-  "isLeadStory": true,
-  "isTrending": true,
+    "isTrending": true,
   "isBreaking": true,
   "tags": [
     "The Assam Tribune",
@@ -1454,8 +2034,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "readTimeBn": "৪ মিনিট পাঠ",
   "readTimeEn": "4 min read",
   "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
-  "isLeadStory": true,
-  "isTrending": true,
+    "isTrending": true,
   "isBreaking": true,
   "tags": [
     "Zee News",
@@ -2424,8 +3003,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পাঠ",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
-    "isLeadStory": true,
-    "isTrending": true,
+        "isTrending": true,
     "isBreaking": true,
     "tags": [
       "Zee News",
@@ -2929,8 +3507,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeBn": "৪ মিনিট পাঠ",
     "readTimeEn": "4 min read",
     "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1200&auto=format&fit=crop&q=80",
-    "isLeadStory": true,
-    "isTrending": true,
+        "isTrending": true,
     "isBreaking": true,
     "tags": [
       "Zee News",
