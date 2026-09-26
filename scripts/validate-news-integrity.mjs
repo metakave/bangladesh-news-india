@@ -40,7 +40,13 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'ntnews.com', validNames: ['Namasthe Telangana', 'NT News'] },
   { domain: 'madhyamam.com', validNames: ['Madhyamam'] },
   { domain: 'divyamarathi.bhaskar.com', validNames: ['Divya Marathi'] },
-  { domain: 'ptcnews.tv', validNames: ['PTC News'] }
+  { domain: 'ptcnews.tv', validNames: ['PTC News'] },
+  { domain: 'inquilab.com', validNames: ['The Inquilab', 'Inquilab', 'Roznama Inquilab'] },
+  { domain: 'theinquilab.com', validNames: ['The Inquilab', 'Inquilab', 'Roznama Inquilab'] },
+  { domain: 'siasat.com', validNames: ['The Siasat Daily', 'Siasat Daily', 'Siasat Urdu', 'Siasat'] },
+  { domain: 'roznamasahara.com', validNames: ['Roznama Rashtriya Sahara', 'Rashtriya Sahara', 'Sahara Urdu'] },
+  { domain: 'munsifdaily.com', validNames: ['The Munsif Daily', 'Munsif Daily', 'Munsif Urdu', 'Munsif'] },
+  { domain: 'taasir.com', validNames: ['Daily Taasir', 'Roznama Taasir', 'Taasir'] }
 ];
 
 console.log('🔍 Running Narrative Compass - News Link & Source Integrity Validator...\n');

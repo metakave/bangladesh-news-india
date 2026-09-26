@@ -2,7 +2,7 @@ export interface IndianMediaOutlet {
   id: string;
   name: string;
   nameBn?: string;
-  language: 'English' | 'Bengali' | 'Hindi' | 'Malayalam' | 'Tamil' | 'Telugu' | 'Marathi' | 'Gujarati';
+  language: 'English' | 'Bengali' | 'Hindi' | 'Malayalam' | 'Tamil' | 'Telugu' | 'Marathi' | 'Gujarati' | 'Assamese' | 'Punjabi' | 'Urdu';
   type: 'Print/Digital' | 'Broadcast/Digital' | 'Digital' | 'Magazine/Digital' | 'Broadcast/YouTube';
   headOffice: string;
   headOfficeBn?: string;
@@ -1619,5 +1619,73 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     domain: 'youtube.com',
     bangladeshUrl: 'https://www.youtube.com/results?search_query=Silchar+News+Bangladesh',
     youtubeChannelUrl: 'https://www.youtube.com/results?search_query=Silchar+News',
+  },
+
+  // ==========================================
+  // 12. URDU NATIONAL NEWS MEDIA (5 Outlets)
+  // ==========================================
+  {
+    id: 'the-inquilab',
+    name: 'The Inquilab',
+    nameBn: 'দ্য ইনকিলাব (উর্দু)',
+    language: 'Urdu',
+    type: 'Print/Digital',
+    headOffice: 'Mumbai, Maharashtra',
+    headOfficeBn: 'মুম্বই, মহারাষ্ট্র',
+    websiteUrl: 'https://www.inquilab.com',
+    domain: 'inquilab.com',
+    bangladeshUrl: 'https://www.inquilab.com/news/world',
+    rssFeedUrl: 'https://www.inquilab.com/feed',
+  },
+  {
+    id: 'the-siasat-daily',
+    name: 'The Siasat Daily',
+    nameBn: 'দ্য সিয়াসত ডেইলি (উর্দু)',
+    language: 'Urdu',
+    type: 'Print/Digital',
+    headOffice: 'Hyderabad, Telangana',
+    headOfficeBn: 'হায়দরাবাদ, তেলেঙ্গানা',
+    websiteUrl: 'https://urdu.siasat.com',
+    domain: 'siasat.com',
+    bangladeshUrl: 'https://urdu.siasat.com/news/international/',
+    rssFeedUrl: 'https://urdu.siasat.com/feed/',
+  },
+  {
+    id: 'roznama-rashtriya-sahara',
+    name: 'Roznama Rashtriya Sahara',
+    nameBn: 'রোজনামা রাষ্ট্রীয় সাহারা',
+    language: 'Urdu',
+    type: 'Print/Digital',
+    headOffice: 'New Delhi',
+    headOfficeBn: 'নতুন দিল্লি',
+    websiteUrl: 'https://www.roznamasahara.com',
+    domain: 'roznamasahara.com',
+    bangladeshUrl: 'https://www.roznamasahara.com/international',
+  },
+  {
+    id: 'the-munsif-daily',
+    name: 'The Munsif Daily',
+    nameBn: 'দ্য মনসিফ ডেইলি',
+    language: 'Urdu',
+    type: 'Print/Digital',
+    headOffice: 'Hyderabad, Telangana',
+    headOfficeBn: 'হায়দরাবাদ, তেলেঙ্গানা',
+    websiteUrl: 'https://munsifdaily.com',
+    domain: 'munsifdaily.com',
+    bangladeshUrl: 'https://munsifdaily.com/category/international/',
+    rssFeedUrl: 'https://munsifdaily.com/feed/',
+  },
+  {
+    id: 'daily-taasir',
+    name: 'Daily Taasir',
+    nameBn: 'দৈনিক তাসির (উর্দু)',
+    language: 'Urdu',
+    type: 'Print/Digital',
+    headOffice: 'New Delhi / Patna',
+    headOfficeBn: 'নতুন দিল্লি / পাটনা',
+    websiteUrl: 'https://taasir.com',
+    domain: 'taasir.com',
+    bangladeshUrl: 'https://taasir.com/category/world/',
+    rssFeedUrl: 'https://taasir.com/feed/',
   },
 ];

@@ -180,6 +180,20 @@ const STANDARD_RSS_FEEDS = [
     webUrl: 'https://news.google.com' 
   },
   { 
+    name: 'Urdu Media - Bangladesh Tracker', 
+    bureau: 'Delhi', 
+    language: 'Urdu', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("بنگلہ دیش" OR "حسینہ" OR Bangladesh) (site:inquilab.com OR site:theinquilab.com OR site:siasat.com OR site:urdu.siasat.com OR site:roznamasahara.com OR site:munsifdaily.com OR site:taasir.com) when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
+    name: 'Urdu Media - Sheikh Hasina & Regional Affairs Wire', 
+    bureau: 'Mumbai', 
+    language: 'Urdu', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('("شیخ حسینہ" OR "ڈھاکہ" OR "عوامی لیگ" OR "ہندوستانی سرحد") (site:inquilab.com OR site:siasat.com OR site:roznamasahara.com OR site:munsifdaily.com OR site:taasir.com) when:7d') + '&hl=en-IN&gl=IN&ceid=IN:en', 
+    webUrl: 'https://news.google.com' 
+  },
+  { 
     name: 'Hindi Media - Bangladesh Tracker', 
     bureau: 'Delhi', 
     language: 'Hindi', 

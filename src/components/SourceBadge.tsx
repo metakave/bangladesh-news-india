@@ -21,6 +21,7 @@ export default function SourceBadge({ source, showLink = true }: SourceBadgeProp
     Assamese: { color: '#06b6d4', bg: 'rgba(6, 182, 212, 0.1)' },
     Gujarati: { color: '#eab308', bg: 'rgba(234, 179, 8, 0.1)' },
     Punjabi: { color: '#6366f1', bg: 'rgba(99, 102, 241, 0.1)' },
+    Urdu: { color: '#0d9488', bg: 'rgba(13, 148, 136, 0.1)' },
   };
 
   const langStyle = languageColors[source.language] || languageColors.English;
