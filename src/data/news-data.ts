@@ -108,7 +108,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Hindu",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.thehindu.com/news/national/pm-modi-mohammad-yunus-meeting-bilateral-talks-minority-security-unga-20260926/article68685412.ece"
+    "url": "https://www.thehindu.com/news/national/pm-modi-mohammad-yunus-meeting-updates/article69411639.ece"
   },
   {
     "id": "alert-064",
@@ -885,7 +885,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Hindu",
           "bureau": "Delhi",
           "language": "English",
-          "originalUrl": "https://www.thehindu.com/news/national/pm-modi-mohammad-yunus-meeting-bilateral-talks-minority-security-unga-20260926/article68685412.ece",
+          "originalUrl": "https://www.thehindu.com/news/national/pm-modi-mohammad-yunus-meeting-updates/article69411639.ece",
           "scannedAt": "2026-09-26T22:30:00Z"
       },
       "publishedAt": "2026-09-26T21:15:00Z",
