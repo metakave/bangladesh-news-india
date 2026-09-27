@@ -81,6 +81,25 @@ function resolveInstagramLink(article: NewsItem): string {
   return 'https://www.instagram.com';
 }
 
+function InstagramCardImage({ src, alt }: { src: string; alt: string }) {
+  const [imgSrc, setImgSrc] = useState(src || FALLBACK_IMAGE);
+
+  return (
+    <Image
+      src={imgSrc}
+      alt={alt}
+      fill
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      style={{ objectFit: 'cover' }}
+      onError={() => {
+        if (imgSrc !== FALLBACK_IMAGE) {
+          setImgSrc(FALLBACK_IMAGE);
+        }
+      }}
+    />
+  );
+}
+
 export default function InstagramClientView({ initialArticles }: InstagramClientViewProps) {
   const { lang } = useApp();
   const t = TRANSLATIONS[lang];
@@ -759,12 +778,9 @@ export default function InstagramClientView({ initialArticles }: InstagramClient
                         overflow: 'hidden',
                       }}
                     >
-                      <Image
+                      <InstagramCardImage
                         src={article.imageUrl || FALLBACK_IMAGE}
                         alt={article.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        style={{ objectFit: 'cover' }}
                       />
 
                       {/* Instagram Visual Badge overlay */}

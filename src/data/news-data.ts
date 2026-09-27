@@ -949,7 +949,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "publishedAt": "2026-09-27T06:20:00Z",
       "readTimeBn": "৩ মিনিট পাঠ",
       "readTimeEn": "3 min read",
-      "imageUrl": "https://images.unsplash.com/photo-1524813686514-a57563d77d66?auto=format&fit=crop&w=1200&q=80",
+      "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
       "tags": [
           "Tripura Times",
           "Akhaura ICP",
@@ -1300,7 +1300,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "publishedAt": "2026-09-26T20:30:00Z",
       "readTimeBn": "৩ মিনিট পাঠ",
       "readTimeEn": "3 min read",
-      "imageUrl": "https://images.unsplash.com/photo-1524813686514-a57563d77d66?auto=format&fit=crop&w=1200&q=80",
+      "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
       "tags": [
           "Rashtriya Sahara",
           "Urdu Media",
@@ -1736,7 +1736,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "publishedAt": "2026-09-26T14:40:00Z",
       "readTimeBn": "৩ মিনিট পাঠ",
       "readTimeEn": "3 min read",
-      "imageUrl": "https://images.unsplash.com/photo-1524813686514-a57563d77d66?auto=format&fit=crop&w=1200&q=80",
+      "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
       "tags": [
           "News18",
           "Petrapole",
@@ -1912,7 +1912,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "publishedAt": "2026-09-26T12:00:00Z",
       "readTimeBn": "২ মিনিট পাঠ",
       "readTimeEn": "2 min read",
-      "imageUrl": "https://images.unsplash.com/photo-1524813686514-a57563d77d66?auto=format&fit=crop&w=1200&q=80",
+      "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
       "mediaFormat": "instagram",
       "instagramEmbedUrl": "https://www.instagram.com/p/DdwaHhynStH/",
       "tags": [
@@ -3493,7 +3493,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "publishedAt": "2026-09-22T16:00:00Z",
   "readTimeBn": "৩ মিনিট পাঠ",
   "readTimeEn": "3 min read",
-  "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
+  "imageUrl": "/images/south-block-mea-delhi.jpg",
     "isTrending": true,
   "isBreaking": true,
   "tags": [
@@ -3813,7 +3813,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "publishedAt": "2026-09-22T13:30:00Z",
   "readTimeBn": "৪ মিনিট ভিডিও",
   "readTimeEn": "4 min video",
-  "imageUrl": "https://i.ytimg.com/vi/a_Yw2qO7_pM/hqdefault.jpg",
+  "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
   "isLeadStory": false,
   "isTrending": true,
   "isBreaking": false,
@@ -4460,7 +4460,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   "publishedAt": "2026-09-21T17:30:00Z",
   "readTimeBn": "৪ মিনিট পাঠ",
   "readTimeEn": "4 min read",
-  "imageUrl": "/images/bank-bangladesh-economy.jpg",
+  "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
   "isLeadStory": false,
   "isTrending": false,
   "isBreaking": false,
@@ -6109,7 +6109,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-15T07:52:17Z",
     "readTimeBn": "৪ মিনিট ভিডিও",
     "readTimeEn": "4 min video",
-    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
     "tags": [
       "WION",
       "YouTube Dispatch",
@@ -6197,7 +6197,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-17T12:00:00Z",
     "readTimeBn": "৪ মিনিট ভিডিও",
     "readTimeEn": "4 min video",
-    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "imageUrl": "/images/gauhati-high-court.jpg",
     "tags": [
       "Politics TV",
       "YouTube Dispatch",
@@ -6377,7 +6377,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-15T09:08:03Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
     "tags": [
       "The Assam Tribune",
       "International Crimes Tribunal",
@@ -6421,7 +6421,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-17T06:45:00Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "imageUrl": "/images/gauhati-high-court.jpg",
     "tags": [
       "Sangbad Pratidin",
       "Sheikh Hasina",
@@ -6597,7 +6597,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-20T03:01:19Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-dhaka-high-court.jpg",
+    "imageUrl": "/images/gauhati-high-court.jpg",
     "tags": [
       "The Indian Express",
       "High Court",
@@ -7131,7 +7131,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-07T08:00:00Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
     "tags": [
       "The Times of India",
       "Sheikh Hasina",
@@ -7175,7 +7175,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-13T17:09:50Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
     "tags": [
       "News18",
       "Bilateral Reset",
@@ -7664,7 +7664,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-15T09:20:01Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-international-crimes-tribunal-ict-dhaka.jpg",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
     "tags": [
       "Aaj Tak",
       "ICT Tribunal",
@@ -7708,7 +7708,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-14T01:39:57Z",
     "readTimeBn": "৪ মিনিট পড়া",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/bangladesh-high-commission-new-delhi.jpg",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
     "tags": [
       "Aaj Tak",
       "Bilateral Reset",
@@ -7752,7 +7752,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-19T10:38:58Z",
     "readTimeBn": "৩ মিনিট পড়া",
     "readTimeEn": "3 min read",
-    "imageUrl": "https://images.unsplash.com/photo-1531415074868-036b107e775a?w=1200&auto=format&fit=crop&q=80",
+    "imageUrl": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1200&auto=format&fit=crop&q=80",
     "tags": [
       "Asian Games 2026",
       "Cricket",
@@ -8758,7 +8758,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-19T06:50:00Z",
     "readTimeBn": "৬ মিনিট ভিডিও",
     "readTimeEn": "6 min watch",
-    "imageUrl": "https://i.ytimg.com/vi/HPwrbhXjMwA/hqdefault.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
     "isLeadStory": false,
     "isTrending": false,
     "isBreaking": false,
@@ -9036,7 +9036,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T17:15:00.000Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/chattogram-port-maritime-hub.jpg",
+    "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -9407,7 +9407,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T06:45:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/kolkata-writers-building.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=1200&q=80",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
@@ -9545,7 +9545,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T04:15:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "/images/siliguri-corridor-northeast-route.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&auto=format&fit=crop&q=80",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
@@ -9591,7 +9591,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-18T03:40:00.000Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/chattogram-port-maritime-hub.jpg",
+    "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -9729,7 +9729,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-17T09:15:00.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://i.ytimg.com/vi/3lE0QeO4v1Q/hqdefault.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -10006,7 +10006,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T11:37:05.000Z",
     "readTimeBn": "২ মিনিট",
     "readTimeEn": "2 min read",
-    "imageUrl": "https://i.ytimg.com/vi/7X-H54GvWQA/hqdefault.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -10147,7 +10147,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T14:26:53.000Z",
     "readTimeBn": "১ মিনিট",
     "readTimeEn": "1 min read",
-    "imageUrl": "https://i.ytimg.com/vi/9V2wN1n1k1o/hqdefault.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1200&auto=format&fit=crop&q=80",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
@@ -10485,7 +10485,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T07:28:07.000Z",
     "readTimeBn": "৩ মিনিট পাঠ",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/dhaka-high-court.jpg",
+    "imageUrl": "/images/gauhati-high-court.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -10535,7 +10535,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T03:26:33.000Z",
     "readTimeBn": "৪ মিনিট পাঠ",
     "readTimeEn": "4 min read",
-    "imageUrl": "/images/tarique-rahman-speech.jpg",
+    "imageUrl": "/images/dhaka-national-parliament-symbolic.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
@@ -10585,7 +10585,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-16T02:36:38.000Z",
     "readTimeBn": "৩ মিনিট পাঠ",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/bank-bangladesh-economy.jpg",
+    "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
     "isLeadStory": false,
     "isTrending": false,
     "tags": [
@@ -10634,7 +10634,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-09-15T15:04:20.000Z",
     "readTimeBn": "ভিডিও রিপোর্ট",
     "readTimeEn": "Video Dispatch",
-    "imageUrl": "/images/sheikh-hasina-delhi.jpg",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
     "isLeadStory": false,
     "isTrending": true,
     "tags": [
