@@ -71,6 +71,9 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
+  "lastScannedAt": "2026-09-29T18:55:00+06:00",
+  "lastScannedAtBn": "২৯ সেপ্টেম্বর ২০২৬, সন্ধ্যা ৭:০০",
+  "lastScannedAtEn": "29 Sep 2026, 7:00 PM IST",
   "totalScanned24h": 4226,
   "bangladeshMatches": 1107,
   "sentimentDistribution": {

@@ -7,7 +7,7 @@ import { useApp } from '@/context/ThemeContext';
 import { TRANSLATIONS } from '@/data/translations';
 import ArticleCard from './ArticleCard';
 import SentimentBadge from './SentimentBadge';
-import { Radio, Building2, ExternalLink } from 'lucide-react';
+import { Radio, Building2, ExternalLink, Clock } from 'lucide-react';
 
 interface HeroGridProps {
   articles: NewsItem[];
@@ -94,6 +94,23 @@ export default function HeroGrid({ articles }: HeroGridProps) {
                 <div>• {lang === 'bn' ? `গত ২৪ ঘণ্টায় স্ক্যান করা হয়েছে ${SCANNER_STATS.totalScanned24h}টি ভারতীয় সংবাদ` : `Scanned ${SCANNER_STATS.totalScanned24h} Indian articles in last 24h`}</div>
                 <div>• {lang === 'bn' ? `${SCANNER_STATS.bangladeshMatches}টি সংবাদে বাংলাদেশ বিষয়ক তথ্য চিহ্নিত` : `${SCANNER_STATS.bangladeshMatches} identified with keyword 'Bangladesh'`}</div>
                 <div>• {lang === 'bn' ? `${SCANNER_STATS.bureauDistribution.kolkata}টি কলকাতা, ${SCANNER_STATS.bureauDistribution.delhi}টি দিল্লি এবং ${SCANNER_STATS.bureauDistribution.mumbai || 0}টি মুম্বই ব্যুরোর` : `${SCANNER_STATS.bureauDistribution.kolkata} Kolkata, ${SCANNER_STATS.bureauDistribution.delhi} Delhi, ${SCANNER_STATS.bureauDistribution.mumbai || 0} Mumbai`}</div>
+                <div style={{
+                  marginTop: '0.35rem',
+                  paddingTop: '0.5rem',
+                  borderTop: '1px dashed var(--border-primary)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.35rem',
+                  fontSize: '0.72rem',
+                  color: 'var(--text-muted)'
+                }}>
+                  <Clock size={12} style={{ color: 'var(--brand-primary)', flexShrink: 0 }} />
+                  <span>
+                    {lang === 'bn'
+                      ? `সর্বশেষ স্ক্যান ও আপডেট: ${SCANNER_STATS.lastScannedAtBn || '২৯ সেপ্টেম্বর ২০২৬, সন্ধ্যা ৭:০০'}`
+                      : `Last Scan & Update: ${SCANNER_STATS.lastScannedAtEn || '29 Sep 2026, 7:00 PM IST'}`}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
