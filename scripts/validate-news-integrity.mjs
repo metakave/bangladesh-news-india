@@ -27,7 +27,7 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'wionews.com', validNames: ['WION', 'WION Bangladesh & South Asia'] },
   { domain: 'republicworld.com', validNames: ['Republic TV', 'Republic TV World', 'Republic World', 'Republic Bangla (YouTube)'] },
   { domain: 'timesnownews.com', validNames: ['Times Now', 'Times Now World'] },
-  { domain: 'news18.com', validNames: ['News18', 'News18 World', 'News18 Bengali', 'News18 Hindi'] },
+  { domain: 'news18.com', validNames: ['News18', 'News18 World', 'News18 Bengali', 'News18 Bangla', 'News18 Bangla (YouTube)', 'News18 Hindi'] },
   { domain: 'abplive.com', validNames: ['ABP Ananda', 'ABP Ananda (YouTube)', 'ABP Live', 'ABP Majha'] },
   { domain: 'tv9bangla.com', validNames: ['TV9 Bangla'] },
   { domain: 'tripuratimes.com', validNames: ['Tripura Times'] },

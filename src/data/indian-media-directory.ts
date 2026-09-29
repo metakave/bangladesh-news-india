@@ -774,6 +774,7 @@ export const INDIAN_MEDIA_DIRECTORY: IndianMediaOutlet[] = [
     domain: 'bengali.news18.com',
     bangladeshUrl: 'https://bengali.news18.com/tag/bangladesh/',
     rssFeedUrl: 'https://bengali.news18.com/rss/',
+    youtubeChannelUrl: 'https://www.youtube.com/@News18Bangla',
   },
   {
     id: 'republic-bangla',

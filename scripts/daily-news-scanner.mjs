@@ -287,6 +287,20 @@ const YOUTUBE_FEEDS = [
     webUrl: 'https://www.youtube.com/@RepublicBangla' 
   },
   { 
+    name: 'News18 Bangla (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://www.youtube.com/feeds/videos.xml?channel_id=UCbf0XHULBkTfv2hBjaaDw9Q', 
+    webUrl: 'https://www.youtube.com/@News18Bangla' 
+  },
+  { 
+    name: 'News18 Bangla Video Dispatches (YouTube)', 
+    bureau: 'Kolkata', 
+    language: 'Bengali', 
+    url: 'https://news.google.com/rss/search?q=' + encodeURIComponent('site:youtube.com ("News18 Bangla" OR "@News18Bangla") ("বাংলাদেশ" OR "হাসিনা" OR "Bangladesh") when:7d') + '&hl=bn&gl=IN&ceid=IN:bn', 
+    webUrl: 'https://www.youtube.com/@News18Bangla' 
+  },
+  { 
     name: 'Zee 24 Ghanta (YouTube)', 
     bureau: 'Kolkata', 
     language: 'Bengali', 
