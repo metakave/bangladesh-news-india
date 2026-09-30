@@ -2660,7 +2660,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "publishedAt": "2026-09-26T19:30:00Z",
       "readTimeBn": "৪ মিনিট পাঠ",
       "readTimeEn": "4 min read",
-      "imageUrl": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80",
+      "imageUrl": "/images/thewall-hasina-interview.jpeg",
       "tags": [
           "Indian Express",
           "Sheikh Hasina",

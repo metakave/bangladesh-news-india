@@ -51,7 +51,14 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'zeenews.india.com', validNames: ['Zee News', 'Zee News World', 'Zee News Sports', 'Zee 24 Ghanta', 'Zee 24 Ghanta (YouTube)'] }
 ];
 
-console.log('🔍 Running Narrative Compass - Strict Link & Source Integrity Validator...\n');
+// Banned image IDs safeguard
+const BANNED_IMAGES = ['photo-1541872703-74c5e44368f9'];
+for (const banned of BANNED_IMAGES) {
+  if (content.includes(banned)) {
+    console.error(`❌ BANNED IMAGE DETECTED in news-data.ts: ${banned}`);
+    process.exit(1);
+  }
+}
 
 // Extract all news item JSON blocks
 const items = [];
