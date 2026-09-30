@@ -936,7 +936,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Wall",
           "bureau": "Kolkata",
           "language": "Bengali",
-          "originalUrl": "https://www.thewall.in/",
+          "originalUrl": "https://www.thewall.in/video-story/hasinas-successor-in-the-party-discussion-about-sons-and-daughters/tid/205415",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T12:30:00Z",
