@@ -14,6 +14,7 @@
    - Enforce **Strict Zero Duplication on Home Page**: Ensure every news story renders at most ONCE on the home page across HeroGrid columns and downstream category hubs (`diplomacy`, `trade`, `border`, `sports/culture`).
    - **Direct Canonical URL & Source-Link Integrity**:
      - `originalUrl` MUST ALWAYS be resolved to the direct canonical publisher article URL (e.g., `https://timesofindia.indiatimes.com/...`, `https://www.thehindu.com/...`, `https://www.anandabazar.com/...`, `https://assamtribune.com/...`, `https://tripuratimes.com/...`).
+     - NEVER construct, guess, or synthesize estimated publisher URL slugs (e.g. fabricated `/articleshow/123456.cms` or approximated paths). ALWAYS decode the candidate's real Google News URL via `googlenewsdecoder` or verify the live URL with an HTTP request to ensure 100% 200 OK resolution.
      - NEVER store raw opaque Google News wrapper URLs (`https://news.google.com/rss/articles/...`). Decode them into the direct destination publisher URL.
      - Ensure strict consistency between `source.name` and the hostname in `originalUrl` (e.g., Times of India must point to `timesofindia.indiatimes.com`, Anandabazar to `anandabazar.com`, The Wall to `thewall.in`). Never assign a candidate article from one outlet to a different media brand.
      - NEVER use generic domain roots like `https://www.youtube.com` or `https://www.instagram.com` without the specific video ID or post slug.

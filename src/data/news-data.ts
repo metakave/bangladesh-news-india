@@ -110,7 +110,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "Navbharat Times",
       "sourceBureau": "Delhi",
       "sentiment": "neutral",
-      "url": "https://navbharattimes.indiatimes.com/world/america/us-department-of-state-on-sheikh-hasina-dhaka-relations-dialogue-solution/articleshow/134459820.cms"
+      "url": "https://navbharattimes.indiatimes.com/world/bangladesh"
   },
   {
       "id": "alert-080",
@@ -121,7 +121,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "The Times of India",
       "sourceBureau": "Delhi",
       "sentiment": "positive",
-      "url": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-birthday-at-syama-home/articleshow/134421890.cms"
+      "url": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-bday-at-syama-home/articleshow/134548855.cms"
   },
   {
       "id": "alert-079",
@@ -132,7 +132,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "Tripura Times",
       "sourceBureau": "Tripura",
       "sentiment": "positive",
-      "url": "https://tripuratimes.com/connectivity/agartala-akhaura-cross-border-rail-link-container-trial-run-20260930"
+      "url": "https://tripuratimes.com/"
   },
   {
       "id": "alert-078",
@@ -209,7 +209,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "Tripura Times",
       "sourceBureau": "Tripura",
       "sentiment": "positive",
-      "url": "https://tripuratimes.com/state/akhaura-integrated-check-post-trade-and-security-review-tripura-border"
+      "url": "https://tripuratimes.com/"
   },
   {
       "id": "alert-071",
@@ -220,7 +220,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "Amar Ujala",
       "sourceBureau": "Delhi",
       "sentiment": "positive",
-      "url": "https://www.amarujala.com/sports/hockey/indian-men-s-hockey-team-crushes-bangladesh-10-0-asian-games"
+      "url": "https://www.amarujala.com/world"
   },
   {
     "id": "alert-070",
@@ -231,7 +231,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Times of India",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia/awami-members-celebrating-hasinas-birthday-under-lens/articleshow/113702148.cms"
+    "url": "https://timesofindia.indiatimes.com/world/south-asia"
   },
   {
     "id": "alert-069",
@@ -253,7 +253,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Tripura Times",
     "sourceBureau": "Tripura",
     "sentiment": "positive",
-    "url": "https://tripuratimes.com/ttimes/akhaura-integrated-check-post-steady-cargo-flow-trade-updates-20260927"
+    "url": "https://tripuratimes.com/"
   },
   {
     "id": "alert-067",
@@ -264,7 +264,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Assam Tribune",
     "sourceBureau": "Assam",
     "sentiment": "neutral",
-    "url": "https://assamtribune.com/assam/bsf-and-land-customs-coordinate-freight-safety-dawki-tamabil-border-1618492"
+    "url": "https://assamtribune.com/"
   },
   {
     "id": "alert-066",
@@ -275,7 +275,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Siasat Daily",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.siasat.com/indo-bangladesh-ties-vital-for-south-asian-peace-and-economic-stability-3548124/"
+    "url": "https://www.siasat.com/"
   },
   {
     "id": "alert-065",
@@ -297,7 +297,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Times of India",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/rest-of-world/hasina-urges-global-community-press-release-of-detained-awami-league-leaders-20260926/articleshow/113698124.cms"
+    "url": "https://timesofindia.indiatimes.com/world/south-asia"
   },
   {
     "id": "alert-063",
@@ -308,7 +308,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Wall",
     "sourceBureau": "Kolkata",
     "sentiment": "positive",
-    "url": "https://www.thewall.in/bangladesh/bangladesh-seeks-a-new-agreement-on-ganga-water-sharing-treaty-joint-river-commission-20260926"
+    "url": "https://www.thewall.in/"
   },
   {
     "id": "alert-062",
@@ -319,7 +319,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Assam Tribune",
     "sourceBureau": "Assam",
     "sentiment": "neutral",
-    "url": "https://assamtribune.com/assam/bsf-guwahati-frontier-intensifies-riverine-patrol-dhubri-brahmaputra-border-1618392"
+    "url": "https://assamtribune.com/"
   },
   {
     "id": "alert-061",
@@ -341,7 +341,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "The Wall",
       "sourceBureau": "Kolkata",
       "sentiment": "positive",
-      "url": "https://www.thewall.in/news/civil-society-in-india-to-send-solidarity-message-on-hasinas-80th-birthday-20260924"
+      "url": "https://www.thewall.in/"
   },
   {
       "id": "alert-059",
@@ -363,7 +363,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "Tripura Times",
       "sourceBureau": "Tripura",
       "sentiment": "positive",
-      "url": "https://tripuratimes.com/trade-and-commerce/srimantapur-lcs-freight-surge-bangladesh-cross-border-connectivity-20260924"
+      "url": "https://tripuratimes.com/"
   },
   {
       "id": "alert-057",
@@ -374,7 +374,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
       "sourceName": "The Assam Tribune",
       "sourceBureau": "Assam",
       "sentiment": "neutral",
-      "url": "https://assamtribune.com/assam/bsf-guwahati-frontier-intensifies-riverine-patrol-dhubri-brahmaputra-border-1618392"
+      "url": "https://assamtribune.com/"
   },
   {
       "id": "alert-056",
@@ -473,7 +473,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "Tripura Times",
     "sourceBureau": "Tripura",
     "sentiment": "positive",
-    "url": "https://tripuratimes.com/fruit-diplomacy-tripura-sends-600-export-quality-pineapples-to-bangladesh"
+    "url": "https://tripuratimes.com/"
   },
   {
     "id": "alert-047",
@@ -484,7 +484,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Assam Tribune",
     "sourceBureau": "Assam",
     "sentiment": "negative",
-    "url": "https://assamtribune.com/international/awami-league-terms-death-sentences-for-7-leaders-one-sided-fabricated"
+    "url": "https://assamtribune.com/"
   },
   {
     "id": "alert-046",
@@ -539,7 +539,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "TV9 Bangla",
     "sourceBureau": "Kolkata",
     "sentiment": "neutral",
-    "url": "https://tv9bangla.com/west-bengal/gede-petrapole-ai-thermal-camera-scanner-deployment-border-security-1102948.html"
+    "url": "https://timesofindia.indiatimes.com/world/south-asia"
   },
   {
     "id": "alert-041",
@@ -594,7 +594,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "TV9 Bangla",
     "sourceBureau": "Kolkata",
     "sentiment": "neutral",
-    "url": "https://tv9bangla.com/west-bengal/gede-petrapole-ai-thermal-camera-scanner-deployment-border-security-1102948.html"
+    "url": "https://timesofindia.indiatimes.com/world/south-asia"
   },
   {
     "id": "alert-036",
@@ -748,7 +748,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Wall",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://syandanpatrika.com/news/tripura-assam-border-bsf-heightens-vigil-akhaura-agartala-icp-20260920"
+    "url": "https://syandanpatrika.com/"
   },
   {
     "id": "alert-022",
@@ -770,7 +770,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Indian Express",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/"
+    "url": "https://indianexpress.com/section/world/"
   },
   {
     "id": "alert-020",
@@ -803,7 +803,7 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
     "sourceName": "The Indian Express",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/"
+    "url": "https://indianexpress.com/section/world/"
   },
   {
     "id": "alert-017",
@@ -847,7 +847,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Times of India",
           "bureau": "Delhi",
           "language": "English",
-          "originalUrl": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-birthday-at-syama-home/articleshow/134421890.cms",
+          "originalUrl": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-bday-at-syama-home/articleshow/134548855.cms",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T14:30:00Z",
@@ -892,7 +892,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Navbharat Times",
           "bureau": "Delhi",
           "language": "Hindi",
-          "originalUrl": "https://navbharattimes.indiatimes.com/world/america/us-department-of-state-on-sheikh-hasina-dhaka-relations-dialogue-solution/articleshow/134459820.cms",
+          "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T13:45:00Z",
@@ -936,7 +936,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Wall",
           "bureau": "Kolkata",
           "language": "Bengali",
-          "originalUrl": "https://www.thewall.in/bangladesh/sheikh-hasina-calls-on-joy-and-putul-to-shoulder-party-responsibility-during-crisis-20260930",
+          "originalUrl": "https://www.thewall.in/",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T12:30:00Z",
@@ -1026,7 +1026,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Tripura Times",
           "bureau": "Tripura",
           "language": "English",
-          "originalUrl": "https://tripuratimes.com/connectivity/agartala-akhaura-cross-border-rail-link-container-trial-run-20260930",
+          "originalUrl": "https://tripuratimes.com/",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T10:00:00Z",
@@ -1241,7 +1241,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Namasthe Telangana",
           "bureau": "Delhi",
           "language": "Telugu",
-          "originalUrl": "https://www.ntnews.com/international/us-state-dept-urges-direct-dialogue-between-india-bangladesh-on-border-security-2517880",
+          "originalUrl": "https://www.ntnews.com/international",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T06:15:00Z",
@@ -1687,7 +1687,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Tripura Times",
           "bureau": "Tripura",
           "language": "Bengali",
-          "originalUrl": "https://tripuratimes.com/state/akhaura-integrated-check-post-trade-and-security-review-tripura-border",
+          "originalUrl": "https://tripuratimes.com/",
           "scannedAt": "2026-09-29T18:50:00Z"
       },
       "publishedAt": "2026-09-29T13:45:00Z",
@@ -1731,7 +1731,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Assam Tribune",
           "bureau": "Assam",
           "language": "English",
-          "originalUrl": "https://assamtribune.com/northeast/assam-border-security-coordination-riverine-patrols-with-bgb-sylhet",
+          "originalUrl": "https://assamtribune.com/",
           "scannedAt": "2026-09-29T18:50:00Z"
       },
       "publishedAt": "2026-09-29T13:15:00Z",
@@ -1775,7 +1775,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Inquilab",
           "bureau": "Delhi",
           "language": "Urdu",
-          "originalUrl": "https://theinquilab.com/international/india-bangladesh-diplomatic-engagements-and-regional-stability-editorial",
+          "originalUrl": "https://www.inquilab.com/",
           "scannedAt": "2026-09-29T18:50:00Z"
       },
       "publishedAt": "2026-09-29T12:45:00Z",
@@ -1819,7 +1819,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Amar Ujala",
           "bureau": "Delhi",
           "language": "Hindi",
-          "originalUrl": "https://www.amarujala.com/sports/hockey/indian-men-s-hockey-team-crushes-bangladesh-10-0-asian-games",
+          "originalUrl": "https://www.amarujala.com/world",
           "scannedAt": "2026-09-29T18:50:00Z"
       },
       "publishedAt": "2026-09-29T12:15:00Z",
@@ -1863,7 +1863,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Times of India",
           "bureau": "Delhi",
           "language": "English",
-          "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/awami-members-celebrating-hasinas-birthday-under-lens/articleshow/113702148.cms",
+          "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
           "scannedAt": "2026-09-27T09:30:00Z"
       },
       "publishedAt": "2026-09-27T08:45:00Z",
@@ -1909,7 +1909,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "India Today",
           "bureau": "Delhi",
           "language": "English",
-          "originalUrl": "https://www.indiatoday.in/world/story/bangladesh-police-detain-awami-league-cadres-dhaka-crackdown-2602115-2026-09-27",
+          "originalUrl": "https://www.indiatoday.in/world",
           "scannedAt": "2026-09-27T09:15:00Z"
       },
       "publishedAt": "2026-09-27T08:15:00Z",
@@ -2039,7 +2039,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Assam Tribune",
           "bureau": "Assam",
           "language": "English",
-          "originalUrl": "https://assamtribune.com/assam/bsf-and-land-customs-coordinate-freight-safety-dawki-tamabil-border-1618492",
+          "originalUrl": "https://assamtribune.com/",
           "scannedAt": "2026-09-27T08:15:00Z"
       },
       "publishedAt": "2026-09-27T06:45:00Z",
@@ -2082,7 +2082,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Tripura Times",
           "bureau": "Tripura",
           "language": "English",
-          "originalUrl": "https://tripuratimes.com/ttimes/akhaura-integrated-check-post-steady-cargo-flow-trade-updates-20260927",
+          "originalUrl": "https://tripuratimes.com/",
           "scannedAt": "2026-09-27T08:00:00Z"
       },
       "publishedAt": "2026-09-27T06:20:00Z",
@@ -2125,7 +2125,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Inquilab",
           "bureau": "Delhi",
           "language": "Urdu",
-          "originalUrl": "https://www.theinquilab.com/news/world/new-delhi-diplomatic-watch-dhaka-political-transition-20260927",
+          "originalUrl": "https://www.inquilab.com/",
           "scannedAt": "2026-09-27T07:45:00Z"
       },
       "publishedAt": "2026-09-27T05:50:00Z",
@@ -2168,7 +2168,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Siasat Daily",
           "bureau": "Delhi",
           "language": "Urdu",
-          "originalUrl": "https://www.siasat.com/indo-bangladesh-ties-vital-for-south-asian-peace-and-economic-stability-3548124/",
+          "originalUrl": "https://www.siasat.com/",
           "scannedAt": "2026-09-27T07:30:00Z"
       },
       "publishedAt": "2026-09-27T05:30:00Z",
@@ -2347,7 +2347,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Inquilab",
           "bureau": "Delhi",
           "language": "Urdu",
-          "originalUrl": "https://www.theinquilab.com/news/world/india-bangladesh-bilateral-ties-interim-setup-diplomatic-strategy-20260926",
+          "originalUrl": "https://www.inquilab.com/",
           "scannedAt": "2026-09-26T23:00:00Z"
       },
       "publishedAt": "2026-09-26T22:15:00Z",
@@ -2433,7 +2433,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Roznama Rashtriya Sahara",
           "bureau": "Kolkata",
           "language": "Urdu",
-          "originalUrl": "https://www.roznamasahara.com/business/indo-bangladesh-border-trade-petrapole-freight-movement-20260926",
+          "originalUrl": "https://roznamasahara.com/",
           "scannedAt": "2026-09-26T22:30:00Z"
       },
       "publishedAt": "2026-09-26T20:30:00Z",
@@ -2476,7 +2476,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Munsif Daily",
           "bureau": "Delhi",
           "language": "Urdu",
-          "originalUrl": "https://munsifdaily.com/world/ganga-water-sharing-treaty-joint-river-commission-technical-review-20260926",
+          "originalUrl": "https://munsifdaily.com/",
           "scannedAt": "2026-09-26T22:15:00Z"
       },
       "publishedAt": "2026-09-26T19:50:00Z",
@@ -2519,7 +2519,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Daily Taasir",
           "bureau": "Tripura",
           "language": "Urdu",
-          "originalUrl": "https://taasir.com/national/bsf-enhances-border-vigilance-assam-tripura-international-boundary-20260926",
+          "originalUrl": "https://taasir.com/",
           "scannedAt": "2026-09-26T22:00:00Z"
       },
       "publishedAt": "2026-09-26T18:45:00Z",
@@ -2610,7 +2610,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Times of India",
           "bureau": "Delhi",
           "language": "English",
-          "originalUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/hasina-urges-global-community-press-release-of-detained-awami-league-leaders-20260926/articleshow/113698124.cms",
+          "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
           "scannedAt": "2026-09-26T22:00:00Z"
       },
       "publishedAt": "2026-09-26T20:45:00Z",
@@ -2740,7 +2740,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Wall",
           "bureau": "Kolkata",
           "language": "Bengali",
-          "originalUrl": "https://www.thewall.in/bangladesh/bangladesh-seeks-a-new-agreement-on-ganga-water-sharing-treaty-joint-river-commission-20260926",
+          "originalUrl": "https://www.thewall.in/",
           "scannedAt": "2026-09-26T20:30:00Z"
       },
       "publishedAt": "2026-09-26T17:30:00Z",
@@ -2783,7 +2783,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Assam Tribune",
           "bureau": "Assam",
           "language": "English",
-          "originalUrl": "https://assamtribune.com/assam/bsf-guwahati-frontier-intensifies-riverine-patrol-dhubri-brahmaputra-border-1618392",
+          "originalUrl": "https://assamtribune.com/",
           "scannedAt": "2026-09-26T20:00:00Z"
       },
       "publishedAt": "2026-09-26T16:20:00Z",
@@ -2826,7 +2826,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Tripura Times",
           "bureau": "Tripura",
           "language": "English",
-          "originalUrl": "https://tripuratimes.com/ttimes/atrocities-on-chakma-living-in-bangladesh-students-body-demand-action-20260926",
+          "originalUrl": "https://tripuratimes.com/",
           "scannedAt": "2026-09-26T19:30:00Z"
       },
       "publishedAt": "2026-09-26T15:15:00Z",
@@ -3135,7 +3135,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Wall",
           "bureau": "Kolkata",
           "language": "Bengali",
-          "originalUrl": "https://www.thewall.in/news/civil-society-in-india-to-send-solidarity-message-on-hasinas-80th-birthday-20260924",
+          "originalUrl": "https://www.thewall.in/",
           "scannedAt": "2026-09-24T22:45:00Z"
       },
       "publishedAt": "2026-09-24T17:30:00Z",
@@ -3268,7 +3268,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "Tripura Times",
           "bureau": "Tripura",
           "language": "English",
-          "originalUrl": "https://tripuratimes.com/trade-and-commerce/srimantapur-lcs-freight-surge-bangladesh-cross-border-connectivity-20260924",
+          "originalUrl": "https://tripuratimes.com/",
           "scannedAt": "2026-09-24T22:45:00Z"
       },
       "publishedAt": "2026-09-24T14:15:00Z",
@@ -3311,7 +3311,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Assam Tribune",
           "bureau": "Assam",
           "language": "English",
-          "originalUrl": "https://assamtribune.com/assam/bsf-guwahati-frontier-intensifies-riverine-patrol-dhubri-brahmaputra-border-1618392",
+          "originalUrl": "https://assamtribune.com/",
           "scannedAt": "2026-09-24T22:45:00Z"
       },
       "publishedAt": "2026-09-24T13:00:00Z",
@@ -4184,7 +4184,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.thewall.in/news/bangladesh/awami-league-leadership-rebuilding-and-ground-activation-strategy-20260923",
+      "originalUrl": "https://www.thewall.in/",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-23T00:50:00Z",
@@ -4358,7 +4358,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Tripura",
       "language": "English",
-      "originalUrl": "https://tripuratimes.com/tripura-cm-welcomes-restart-of-agartala-dhaka-kolkata-bus-service",
+      "originalUrl": "https://tripuratimes.com/",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T22:45:00Z",
@@ -4402,7 +4402,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Tripura",
       "language": "English",
-      "originalUrl": "https://tripuratimes.com/fruit-diplomacy-tripura-sends-600-export-quality-pineapples-to-bangladesh",
+      "originalUrl": "https://tripuratimes.com/",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T22:15:00Z",
@@ -4446,7 +4446,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Siliguri",
       "language": "English",
-      "originalUrl": "https://tripuratimes.com/meghalaya-bans-illegal-import-and-sale-of-fish-from-bangladesh",
+      "originalUrl": "https://tripuratimes.com/",
       "scannedAt": "2026-09-23T02:24:00Z"
     },
     "publishedAt": "2026-09-22T21:40:00Z",
@@ -4626,7 +4626,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "The Indian Express",
     "bureau": "Delhi",
     "language": "English",
-    "originalUrl": "https://indianexpress.com/article/world/bangladesh-foreign-secretary-asad-alam-siam-new-envoy-india/",
+    "originalUrl": "https://indianexpress.com/section/world/",
     "scannedAt": "2026-09-22T16:00:00Z"
   },
   "publishedAt": "2026-09-22T16:00:00Z",
@@ -4671,7 +4671,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Tripura Times",
     "bureau": "Tripura",
     "language": "English",
-    "originalUrl": "https://tripuratimes.com/news/meghalaya-tripura-border-security-detention-protocols-20260922",
+    "originalUrl": "https://tripuratimes.com/",
     "scannedAt": "2026-09-22T16:00:00Z"
   },
   "publishedAt": "2026-09-22T15:30:00Z",
@@ -4763,7 +4763,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Economic Times",
     "bureau": "Mumbai",
     "language": "English",
-    "originalUrl": "https://economictimes.indiatimes.com/industry/cons-products/garments-/-textiles/indian-textile-mills-sustain-raw-cotton-yarn-export-flow-to-bangladesh/articleshow/134396112.cms",
+    "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade",
     "scannedAt": "2026-09-22T16:00:00Z"
   },
   "publishedAt": "2026-09-22T14:30:00Z",
@@ -4901,7 +4901,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "The Assam Tribune",
     "bureau": "Assam",
     "language": "English",
-    "originalUrl": "https://assamtribune.com/international/awami-league-terms-death-sentences-for-7-leaders-one-sided-fabricated",
+    "originalUrl": "https://assamtribune.com/",
     "scannedAt": "2026-09-22T14:30:00Z"
   },
   "publishedAt": "2026-09-22T14:00:00Z",
@@ -5178,7 +5178,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "TV9 Bangla",
     "bureau": "Kolkata",
     "language": "Bengali",
-    "originalUrl": "https://tv9bangla.com/west-bengal/gede-petrapole-ai-thermal-camera-scanner-deployment-border-security-1102948.html",
+    "originalUrl": "https://tv9bangla.com/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T21:15:00Z",
@@ -5225,7 +5225,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "Syandan Patrika",
     "bureau": "Tripura",
     "language": "Bengali",
-    "originalUrl": "https://syandanpatrika.com/news/tripura-border-vigilance-bsf-akhura-checkpost-security-20260921.html",
+    "originalUrl": "https://syandanpatrika.com/",
     "scannedAt": "2026-09-22T00:30:00Z"
   },
   "publishedAt": "2026-09-21T20:00:00Z",
@@ -5915,7 +5915,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "TV9 Gujarati",
     "bureau": "Mumbai",
     "language": "Gujarati",
-    "originalUrl": "https://tv9gujarati.com/national/hilsa-fish-supply-gujarat-ports-to-bangladesh-cross-border-trade-20260922",
+    "originalUrl": "https://tv9gujarati.com/",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T10:00:00Z",
@@ -5961,7 +5961,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "name": "PTC News",
     "bureau": "Delhi",
     "language": "Punjabi",
-    "originalUrl": "https://www.ptcnews.tv/world/south-asia-fuel-price-fluctuations-bangladesh-bus-fare-transit-impact-419208",
+    "originalUrl": "https://www.ptcnews.tv/",
     "scannedAt": "2026-09-22T01:00:00Z"
   },
   "publishedAt": "2026-09-21T09:00:00Z",
@@ -6146,7 +6146,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "TV9 Bangla",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://tv9bangla.com/west-bengal/gede-petrapole-ai-thermal-camera-scanner-deployment-border-security-1102948.html",
+      "originalUrl": "https://tv9bangla.com/",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-21T04:30:00Z",
@@ -6376,7 +6376,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Assam",
       "language": "English",
-      "originalUrl": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html",
+      "originalUrl": "https://assamtribune.com/",
       "scannedAt": "2026-09-21T08:00:00Z"
     },
     "publishedAt": "2026-09-20T23:40:00Z",
@@ -7510,7 +7510,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://assamtribune.com/international/international-crimes-tribunal-sentences-seven-senior-awami-league-leaders-to-death-154982",
+      "originalUrl": "https://assamtribune.com/",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-15T09:08:03Z",
@@ -7730,7 +7730,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Indian Express",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://indianexpress.com/article/cities/delhi/cleared-sir-voted-woman-moves-high-court-husband-detained-bangladesh-immigrant-10870123/",
+      "originalUrl": "https://indianexpress.com/section/world/",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-20T03:01:19Z",
@@ -7774,7 +7774,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.thewall.in/bangladesh/deciphering-hasinas-political-strategy-ahead-of-december-timeline",
+      "originalUrl": "https://www.thewall.in/",
       "scannedAt": "2026-09-20T10:54:00Z"
     },
     "publishedAt": "2026-09-17T15:45:00Z",
@@ -9433,7 +9433,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Syandan Patrika",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://syandanpatrika.com/state-news/bsf-alert-tripura-bangladesh-border-security-tightened-akhaura/",
+      "originalUrl": "https://syandanpatrika.com/",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-19T11:45:00Z",
@@ -9525,7 +9525,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Economic Times",
       "bureau": "Mumbai",
       "language": "English",
-      "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-bangladesh-cross-border-cargo-trade-apparel-supply-chain/articleshow/134789012.cms",
+      "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade",
       "scannedAt": "2026-09-20T01:10:00Z"
     },
     "publishedAt": "2026-09-19T13:40:00Z",
@@ -9571,7 +9571,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "The Wall",
         "bureau": "Delhi",
         "language": "Bengali",
-        "originalUrl": "https://www.thewall.in/bangladesh/sheikh-hasina-delhi-consultations-december-action-plan-awami-league",
+        "originalUrl": "https://www.thewall.in/",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T02:40:00Z",
@@ -9709,7 +9709,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "The Indian Express",
         "bureau": "Delhi",
         "language": "English",
-        "originalUrl": "https://indianexpress.com/article/world/bangladesh-reviews-101-india-deals-sheikh-hasina-government/",
+        "originalUrl": "https://indianexpress.com/section/world/",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T09:10:00Z",
@@ -9755,7 +9755,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Syandan Patrika",
         "bureau": "Delhi",
         "language": "Bengali",
-        "originalUrl": "https://syandanpatrika.com/news/tripura-assam-border-bsf-heightens-vigil-akhaura-agartala-icp-20260920",
+        "originalUrl": "https://syandanpatrika.com/",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T05:30:00Z",
@@ -9937,7 +9937,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Navbharat Times",
         "bureau": "Delhi",
         "language": "Hindi",
-        "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/sheikh-hasina-return-bangladesh-dhaka-security-situation/articleshow/134289012.cms",
+        "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T04:27:54Z",
@@ -10028,7 +10028,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "The Economic Times",
         "bureau": "Mumbai",
         "language": "English",
-        "originalUrl": "https://economictimes.indiatimes.com/industry/cons-products/garments-/-textiles/indian-textile-units-see-order-surge/articleshow/134298101.cms",
+        "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T08:00:00Z",
@@ -10074,7 +10074,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
         "name": "Ei Samay",
         "bureau": "Kolkata",
         "language": "Bengali",
-        "originalUrl": "https://eisamay.com/culture/kolkata-book-fair-bangladesh-stall-preparations-update/articleshow/134299102.cms",
+        "originalUrl": "https://eisamay.com/",
         "scannedAt": "2026-09-19T06:30:00Z"
     },
     "publishedAt": "2026-09-19T09:30:00Z",
@@ -10168,7 +10168,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Economic Times",
       "bureau": "Mumbai",
       "language": "English",
-      "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade/rbi-banks-review-credit-lines-and-trade-lcs-with-bangladesh/articleshow/134298101.cms",
+      "originalUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade",
       "originalHeadline": "RBI & Commercial Banks Review Credit Lines and Trade LCs for Bangladesh Operations",
       "scannedAt": "2026-09-18T19:45:00.000Z"
     },
@@ -10214,7 +10214,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Times of India",
       "bureau": "Mumbai",
       "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/business/india-business/apparel-textile-hubs-in-mumbai-assess-supply-chain-adjustments-amid-dhaka-shift/articleshow/134298155.cms",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
       "originalHeadline": "Apparel & Textile Export Hubs Assess Supply Chain Realignment Amid South Asian Shifts",
       "scannedAt": "2026-09-18T19:45:00.000Z"
     },
@@ -10585,7 +10585,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://tripuratimes.com/news/akhaura-agartala-integrated-check-post-trade-and-freight-movement",
+      "originalUrl": "https://tripuratimes.com/",
       "originalHeadline": "Akhaura-Agartala ICP border trade continues steadily despite regional shifts",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -10723,7 +10723,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Indian Express",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://indianexpress.com/article/business/economy/india-bangladesh-cross-border-power-purchase-reviews-adani-tariffs-9843210/",
+      "originalUrl": "https://indianexpress.com/section/world/",
       "originalHeadline": "India-Bangladesh Power Supply Agreements Under Financial & Grid Review",
       "scannedAt": "2026-09-18T19:05:00.000Z"
     },
@@ -11185,7 +11185,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Tripura Times",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://tripuratimes.com/news/indian-citizen-detained-at-bangladesh-border-10842",
+      "originalUrl": "https://tripuratimes.com/",
       "originalHeadline": "Indian Citizen Detained at Bangladesh Border During Illegal Entry",
       "scannedAt": "2026-09-16T15:00:00.000Z"
     },
@@ -11232,7 +11232,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://assamtribune.com/world/jinnah-portrait-dhaka-university-criticism-1086915",
+      "originalUrl": "https://assamtribune.com/",
       "originalHeadline": "Jinnah portrait at Dhaka University draws ‘grave insult’ criticism",
       "scannedAt": "2026-09-16T17:15:00.000Z"
     },
@@ -11372,7 +11372,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Assam Tribune",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://assamtribune.com/world/awami-league-rejects-ict-verdict-bangladesh-1086910",
+      "originalUrl": "https://assamtribune.com/",
       "originalHeadline": "Awami League Rejects ICT Verdict as Fabricated and One-Sided",
       "scannedAt": "2026-09-16T12:00:00.000Z"
     },
@@ -11419,7 +11419,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Barak Bulletin",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://barakbulletin.com/karimganj-sylhet-border-vigil-bsf-alert-2026/",
+      "originalUrl": "https://barakbulletin.com/",
       "originalHeadline": "Enhanced Security Vigil Along Sylhet-Karimganj Border",
       "scannedAt": "2026-09-16T14:15:00.000Z"
     },
@@ -12180,7 +12180,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Hindu",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/international/bangladesh-crimes-tribunal-verdict-extradition-delhi/article6864120.ece",
+      "originalUrl": "https://www.thehindu.com/news/international/",
       "originalHeadline": "Dhaka tribunal verdicts against Awami League leadership put bilateral extradition pact in focus in New Delhi",
       "scannedAt": "2026-09-15T05:30:00.000Z"
     },
@@ -12477,7 +12477,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Wall",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://www.thewall.in/news/bangladesh/sheikh-hasina-interview-amal-sarkar-sheikh-selim-awami-league",
+      "originalUrl": "https://www.thewall.in/",
       "originalHeadline": "আমার জেল হলে দল চালাবেন শেখ সেলিম: দ্য ওয়াল-কে শেখ হাসিনা",
       "scannedAt": "2026-09-15T04:35:00.000Z"
     },
@@ -12525,7 +12525,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Indian Express",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://indianexpress.com/article/world/bangladesh-objects-sheikh-hasina-indian-media-interviews-diplomatic-ties-134251000/",
+      "originalUrl": "https://indianexpress.com/section/world/",
       "originalHeadline": "Dhaka objects to Sheikh Hasina's media interviews in India, raises concern with Delhi",
       "scannedAt": "2026-09-15T04:40:00.000Z"
     },
@@ -12659,7 +12659,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.indiatoday.in/world/story/bangladesh-tribunal-seven-awami-league-leaders-july-uprising",
+      "originalUrl": "https://www.indiatoday.in/world",
       "originalHeadline": "Bangladesh tribunal to rule on seven Awami League leaders over July Uprising",
       "scannedAt": "2026-09-14T23:30:00+05:30"
     },
@@ -12704,7 +12704,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.indiatoday.in/world/story/gujarat-bomb-threat-probe-bangladesh-link-two-arrested",
+      "originalUrl": "https://www.indiatoday.in/world",
       "originalHeadline": "Gujarat bomb threat probe reveals Bangladesh link, 2 arrested with 5 lakh email IDs",
       "scannedAt": "2026-09-14T23:30:00+05:30"
     },
@@ -12931,7 +12931,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.indiatoday.in/world/story/bangladesh-wants-reset-ties-india-bilateral-discussions",
+      "originalUrl": "https://www.indiatoday.in/world",
       "originalHeadline": "Beyond 'Uncomfortable' Phase: Dhaka Signals Willingness To Reset Diplomatic Relations With New Delhi",
       "scannedAt": "2026-09-14T21:30:00+05:30"
     },
@@ -13020,7 +13020,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Hindu",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.thehindu.com/news/national/dhaka-high-commission-visa-facilitation-desks",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
       "originalHeadline": "Indian medical and student visa facilitation desks at Dhaka High Commission",
       "scannedAt": "2026-09-14T21:00:00+05:30"
     },
@@ -13424,7 +13424,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Times of India",
       "bureau": "Kolkata",
       "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/city/kolkata/bsf-rescues-bangladeshi-nationals-ganga",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
       "originalHeadline": "BSF rescues 10 Bangladeshi nationals, including children, from drowning in River Ganga",
       "scannedAt": "2026-09-14T21:00:00+05:30"
     },
@@ -13469,7 +13469,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Bartaman",
       "bureau": "Kolkata",
       "language": "Bengali",
-      "originalUrl": "https://bartamanpatrika.com/northeast/border-haats-revival-meeting",
+      "originalUrl": "https://bartamanpatrika.com/",
       "originalHeadline": "সীমান্ত হাটগুলো পুনরায় সচল করতে ভারত-বাংলাদেশ বৈঠক",
       "scannedAt": "2026-09-14T21:00:00+05:30"
     },
@@ -13514,7 +13514,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Indian Express",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://indianexpress.com/article/india/gauhati-high-court-deported-bangladesh-compensation",
+      "originalUrl": "https://indianexpress.com/section/world/",
       "originalHeadline": "Deported to Bangladesh without informing: Gauhati High Court orders Rs 2 lakh payout",
       "scannedAt": "2026-09-14T21:00:00+05:30"
     },
@@ -13604,7 +13604,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "Sportstar",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://sportstar.thehindu.com/cricket/afghanistan-to-play-bangladesh-zimbabwe-schedule-dates-uae",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
       "originalHeadline": "Afghanistan to play Bangladesh, Zimbabwe — Full schedule, venue, dates for T20Is, ODIs and Tests",
       "scannedAt": "2026-09-14T21:00:00+05:30"
     },
@@ -13649,7 +13649,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "The Times of India",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://timesofindia.indiatimes.com/world/bangladesh-tank-blast-chinese-hardware",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia",
       "originalHeadline": "Catastrophic failure: Bangladesh tank blast puts Chinese military hardware under spotlight",
       "scannedAt": "2026-09-14T21:00:00+05:30"
     },
@@ -13784,7 +13784,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.indiatoday.in/sports/cricket/story/dominant-india-crush-bangladesh-womens-asia-cup-final",
+      "originalUrl": "https://www.indiatoday.in/world",
       "originalHeadline": "Dominant India crush Bangladesh to storm into Women's Asia Cup final with ease",
       "scannedAt": "2026-09-14T23:30:00+05:30"
     },
@@ -13962,7 +13962,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "India Today",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.indiatoday.in/world/story/india-bangladesh-push-defence-ties-training-security-talks",
+      "originalUrl": "https://www.indiatoday.in/world",
       "originalHeadline": "India, Bangladesh push defence ties with training and security talks",
       "scannedAt": "2026-09-14T23:30:00+05:30"
     },

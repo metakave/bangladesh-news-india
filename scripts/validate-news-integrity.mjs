@@ -46,10 +46,12 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'siasat.com', validNames: ['The Siasat Daily', 'Siasat Daily', 'Siasat Urdu', 'Siasat'] },
   { domain: 'roznamasahara.com', validNames: ['Roznama Rashtriya Sahara', 'Rashtriya Sahara', 'Sahara Urdu'] },
   { domain: 'munsifdaily.com', validNames: ['The Munsif Daily', 'Munsif Daily', 'Munsif Urdu', 'Munsif'] },
-  { domain: 'taasir.com', validNames: ['Daily Taasir', 'Roznama Taasir', 'Taasir'] }
+  { domain: 'taasir.com', validNames: ['Daily Taasir', 'Roznama Taasir', 'Taasir'] },
+  { domain: 'thecsrjournal.in', validNames: ['The CSR Journal', 'CSR Journal'] },
+  { domain: 'zeenews.india.com', validNames: ['Zee News', 'Zee News World', 'Zee News Sports', 'Zee 24 Ghanta', 'Zee 24 Ghanta (YouTube)'] }
 ];
 
-console.log('🔍 Running Narrative Compass - News Link & Source Integrity Validator...\n');
+console.log('🔍 Running Narrative Compass - Strict Link & Source Integrity Validator...\n');
 
 // Extract all news item JSON blocks
 const items = [];
@@ -90,13 +92,19 @@ items.forEach((item) => {
     errorCount++;
   }
 
-  // 2. Check for generic domain root
+  // 2. Check for generic domain root for video/social platforms
   if (url === 'https://www.youtube.com' || url === 'https://youtube.com' || url === 'https://www.instagram.com' || url === 'https://instagram.com') {
     console.warn(`⚠️ [${item.id}] Generic root media link: ${url}`);
     warningCount++;
   }
 
-  // 3. Domain vs Source Name consistency check
+  // 3. Strict Check: No synthetic / estimated placeholder numbers in TOI URLs
+  if (url.includes('timesofindia.indiatimes.com') && url.includes('/articleshow/') && !url.endsWith('.cms')) {
+    console.error(`❌ [${item.id}] Invalid Times of India URL structure (missing .cms): ${url}`);
+    errorCount++;
+  }
+
+  // 4. Domain vs Source Name consistency check
   try {
     const parsed = new URL(url);
     let hostname = parsed.hostname.toLowerCase();
@@ -104,6 +112,7 @@ items.forEach((item) => {
     if (hostname.startsWith('m.')) hostname = hostname.slice(2);
     if (hostname.startsWith('hindi.')) hostname = hostname.slice(6);
     if (hostname.startsWith('bengali.')) hostname = hostname.slice(8);
+    if (hostname.startsWith('sportstar.')) hostname = 'thehindu.com';
 
     for (const rule of DOMAIN_SOURCE_RULES) {
       if (hostname === rule.domain) {
