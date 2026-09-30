@@ -19,7 +19,7 @@
      - Ensure strict consistency between `source.name` and the hostname in `originalUrl` (e.g., Times of India must point to `timesofindia.indiatimes.com`, Anandabazar to `anandabazar.com`, The Wall to `thewall.in`). Never assign a candidate article from one outlet to a different media brand.
      - NEVER use generic domain roots like `https://www.youtube.com` or `https://www.instagram.com` without the specific video ID or post slug.
    - For **YouTube Sourced News**: ALWAYS extract and set the YouTube video thumbnail (`https://i.ytimg.com/vi/<VIDEO_ID>/hqdefault.jpg`) as the feature image `imageUrl` whenever `originalUrl` contains a YouTube video ID.
-   - **Image Selection Safeguards**: ALWAYS avoid using Barack Obama or unrelated foreign political portraits (`photo-1541872703-74c5e44368f9`). For Delhi/political news, use verified New Delhi landmarks (India Gate: `photo-1587474260584-136574528ed5`, Rashtrapati Bhavan/South Block: `photo-1570168007204-dfb528c6958f`, Red Fort: `photo-1599661046289-e31897846e41`).
+   - **Image Selection Safeguards**: ALWAYS avoid using Barack Obama or unrelated foreign political portraits (`photo-1541872703-74c5e44368f9`). For default geopolitical/diplomatic news, use the standardized high-resolution map feature image `/images/default-geopolitical-map.jpg` or verified regional landmarks (India Gate: `photo-1587474260584-136574528ed5`, Rashtrapati Bhavan/South Block: `photo-1570168007204-dfb528c6958f`, Red Fort: `photo-1599661046289-e31897846e41`).
    - Append new items to `SCANNED_NEWS_ITEMS`, update `BREAKING_NEWS_ALERTS`, and update `SCANNER_STATS` inside [`src/data/news-data.ts`](file:///Users/sadiq/antigravity/bangladesh-news-india/src/data/news-data.ts).
 
 3. **Build, Validation & Git Workflow**:
