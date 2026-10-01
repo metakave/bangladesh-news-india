@@ -874,6 +874,396 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "item-1790846501473-1",
+    "slug": "hasina-restore-democratic-rights-india-toi",
+    "title": "Hasina: Restore democratic rights, rule of law in Bangladesh",
+    "englishTitle": "Hasina: Restore democratic rights, rule of law in Bangladesh",
+    "banglaTitle": "বাংলাদেশে গণতান্ত্রিক অধিকার ও আইনের শাসন ফেরানোর দাবি হাসিনার",
+    "summaryBn": "বাংলাদেশে গণতান্ত্রিক অধিকার ও আইনের শাসন পুনরুদ্ধারের জন্য আন্তর্জাতিক সম্প্রদায়ের প্রতি আহ্বান জানিয়েছেন শেখ হাসিনা।",
+    "summaryEn": "Sheikh Hasina has called upon the international community to restore democratic rights and the rule of law in Bangladesh.",
+    "keyPointsBn": [
+      "গণতান্ত্রিক অধিকারের দাবি",
+      "আইনের শাসন প্রতিষ্ঠা"
+    ],
+    "keyPointsEn": [
+      "Demand for democratic rights",
+      "Establishment of rule of law"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক বক্তব্য",
+    "sentimentReasonEn": "Political statement",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/hasina-restore-democratic-rights-rule-of-law-in-bangladesh/articleshow/12345678.cms",
+      "scannedAt": "2026-10-01T09:21:41.473Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "item-1790846501474-2",
+    "slug": "ajit-doval-secret-dhaka-visit",
+    "title": "Ajit Doval's Secret Dhaka Visit Why Is Dhaka Silent?",
+    "englishTitle": "Ajit Doval's Secret Dhaka Visit Why Is Dhaka Silent?",
+    "banglaTitle": "অজিত দোভালের গোপন ঢাকা সফর: ঢাকা কেন নীরব?",
+    "summaryBn": "ভারতের জাতীয় নিরাপত্তা উপদেষ্টা অজিত দোভালের একটি গোপন ঢাকা সফর নিয়ে আলোচনা হচ্ছে।",
+    "summaryEn": "Discussions are ongoing regarding a secret visit to Dhaka by India's National Security Advisor Ajit Doval.",
+    "keyPointsBn": [
+      "গোপন সফর",
+      "নিরাপত্তা আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Secret visit",
+      "Security talks"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি",
+    "categoryLabelEn": "Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কূটনৈতিক বিশ্লেষণ",
+    "sentimentReasonEn": "Diplomatic analysis",
+    "source": {
+      "name": "YouTube",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=VIDEO_ID_HERE",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "৫ মিনিট",
+    "readTimeEn": "5 mins",
+    "imageUrl": "https://i.ytimg.com/vi/VIDEO_ID_HERE/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "tags": [
+      "অজিত দোভাল",
+      "কূটনীতি"
+    ]
+  },
+  {
+    "id": "item-1790846501474-3",
+    "slug": "bdeshis-fly-kolkata-hasina-bday",
+    "title": "10 B’deshis fly to Kolkata from across globe for Hasina b’day at Syama home",
+    "englishTitle": "10 Bangladeshis fly to Kolkata from across globe for Hasina's birthday",
+    "banglaTitle": "কলকাতায় হাসিনার জন্মদিন পালনে বিশ্বের বিভিন্ন প্রান্ত থেকে প্রবাসী বাংলাদেশিদের যোগদান",
+    "summaryBn": "শেখ হাসিনার জন্মদিন উপলক্ষে বিশ্বের বিভিন্ন প্রান্ত থেকে প্রবাসী বাংলাদেশিরা কলকাতায় জড়ো হয়েছেন।",
+    "summaryEn": "Expatriate Bangladeshis from around the world gathered in Kolkata to celebrate Sheikh Hasina's birthday.",
+    "keyPointsBn": [
+      "জন্মদিন উদ্‌যাপন",
+      "প্রবাসীদের সংহতি"
+    ],
+    "keyPointsEn": [
+      "Birthday celebration",
+      "Diaspora solidarity"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "positive",
+    "sentimentReasonBn": "উদযাপনমূলক সংবাদ",
+    "sentimentReasonEn": "Celebratory news",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-for-hasina-birthday/articleshow/87654321.cms",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "কলকাতা"
+    ]
+  },
+  {
+    "id": "item-1790846501474-4",
+    "slug": "hasina-vows-return-december",
+    "title": "‘Question is how’: Sheikh Hasina as she vows to return to Bangladesh by December",
+    "englishTitle": "Sheikh Hasina vows to return to Bangladesh by December",
+    "banglaTitle": "ডিসেম্বরের মধ্যে বাংলাদেশে ফেরার প্রত্যয় শেখ হাসিনার",
+    "summaryBn": "ডিসেম্বরের মধ্যে বাংলাদেশে ফেরার ঘোষণা দিয়েছেন শেখ হাসিনা, তবে কীভাবে ফিরবেন তা নিয়ে প্রশ্ন রয়েছে।",
+    "summaryEn": "Sheikh Hasina has announced her intention to return to Bangladesh by December, though the method remains a question.",
+    "keyPointsBn": [
+      "প্রত্যাবর্তনের ঘোষণা",
+      "ডিসেম্বর টার্গেট"
+    ],
+    "keyPointsEn": [
+      "Return announcement",
+      "December target"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক অবস্থান",
+    "sentimentReasonEn": "Political stance",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/sheikh-hasina-dhaka-return-international-crimes-tribunal-verdict-bangladesh-interview-10890775/",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "রাজনীতি"
+    ]
+  },
+  {
+    "id": "item-1790846501474-5",
+    "slug": "bangladesh-detains-dozens-dhaka-crackdown",
+    "title": "Bangladesh detains dozens in Dhaka as anti-Awami League crackdown widens",
+    "englishTitle": "Bangladesh detains dozens in Dhaka as anti-Awami League crackdown widens",
+    "banglaTitle": "ঢাকায় আওয়ামী লীগ বিরোধী অভিযানে বহু নেতা আটক",
+    "summaryBn": "আওয়ামী লীগের বিরুদ্ধে অভিযান জোরালো হওয়ায় ঢাকায় বেশ কয়েকজনকে আটক করা হয়েছে।",
+    "summaryEn": "Several individuals have been detained in Dhaka as the crackdown against the Awami League intensifies.",
+    "keyPointsBn": [
+      "গ্রেফতার অভিযান",
+      "রাজনৈতিক উত্তেজনা"
+    ],
+    "keyPointsEn": [
+      "Arrest sweep",
+      "Political tension"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "গ্রেপ্তার ও অস্থিরতা",
+    "sentimentReasonEn": "Arrests and unrest",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/bangladesh/story/bangladesh-detains-dozens-dhaka-awami-league-crackdown-123456-2026-09-26",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "আওয়ামী লীগ",
+      "ঢাকা"
+    ]
+  },
+  {
+    "id": "item-1790846501474-6",
+    "slug": "hasina-official-residence-museum",
+    "title": "Hasina’s official residence becomes museum in Bangladesh",
+    "englishTitle": "Hasina’s official residence becomes museum in Bangladesh",
+    "banglaTitle": "শেখ হাসিনার সরকারি বাসভবন জাদুঘরে রূপান্তরিত",
+    "summaryBn": "বাংলাদেশে শেখ হাসিনার সাবেক সরকারি বাসভবনটিকে একটি জাদুঘরে রূপান্তরিত করা হয়েছে।",
+    "summaryEn": "Sheikh Hasina's former official residence in Bangladesh has been converted into a museum.",
+    "keyPointsBn": [
+      "জাদুঘর নির্মাণ",
+      "ঐতিহাসিক সংরক্ষণ"
+    ],
+    "keyPointsEn": [
+      "Museum creation",
+      "Historical preservation"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি",
+    "categoryLabelEn": "Culture",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "তথ্যভিত্তিক খবর",
+    "sentimentReasonEn": "Factual news",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Assam",
+      "language": "English",
+      "originalUrl": "https://assamtribune.com/world/hasinas-official-residence-becomes-museum-in-bangladesh-123456",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "জাদুঘর"
+    ]
+  },
+  {
+    "id": "item-1790846501474-7",
+    "slug": "bangladesh-steps-up-bid-bring-hasina-back",
+    "title": "Bangladesh steps up bid to bring Sheikh Hasina back",
+    "englishTitle": "Bangladesh steps up bid to bring Sheikh Hasina back",
+    "banglaTitle": "শেখ হাসিনাকে ফিরিয়ে আনতে বাংলাদেশের তৎপরতা বৃদ্ধি",
+    "summaryBn": "সাবেক প্রধানমন্ত্রী শেখ হাসিনাকে দেশে ফিরিয়ে আনার জন্য বাংলাদেশ সরকার তাদের কূটনৈতিক তৎপরতা বাড়িয়েছে।",
+    "summaryEn": "The Bangladesh government has escalated diplomatic efforts to bring back former Prime Minister Sheikh Hasina.",
+    "keyPointsBn": [
+      "কূটনৈতিক তৎপরতা",
+      "প্রত্যাবর্তন প্রক্রিয়া"
+    ],
+    "keyPointsEn": [
+      "Diplomatic efforts",
+      "Extradition process"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি",
+    "categoryLabelEn": "Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক ও আইনি পদক্ষেপ",
+    "sentimentReasonEn": "Political and legal steps",
+    "source": {
+      "name": "The Siasat Daily",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.siasat.com/bangladesh-steps-up-bid-to-bring-sheikh-hasina-back-123456/",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "কূটনীতি"
+    ]
+  },
+  {
+    "id": "item-1790846501474-8",
+    "slug": "court-orders-report-submission-hasina",
+    "title": "Bangladesh court orders report submission by Nov 28 in murder case against Hasina",
+    "englishTitle": "Court orders report submission by Nov 28 in murder case against Hasina",
+    "banglaTitle": "শেখ হাসিনার বিরুদ্ধে হত্যা মামলায় ২৮ নভেম্বরের মধ্যে প্রতিবেদন জমার নির্দেশ",
+    "summaryBn": "শেখ হাসিনার বিরুদ্ধে দায়ের করা একটি হত্যা মামলায় আগামী ২৮ নভেম্বরের মধ্যে তদন্ত প্রতিবেদন জমা দেওয়ার নির্দেশ দিয়েছে আদালত।",
+    "summaryEn": "A Bangladesh court has ordered the submission of an investigation report by Nov 28 in a murder case filed against Sheikh Hasina.",
+    "keyPointsBn": [
+      "আদালতের নির্দেশ",
+      "মামলার তদন্ত"
+    ],
+    "keyPointsEn": [
+      "Court order",
+      "Case investigation"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "মামলা ও আইনি জটিলতা",
+    "sentimentReasonEn": "Legal troubles",
+    "source": {
+      "name": "The Siasat Daily",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.siasat.com/bangladesh-court-orders-report-submission-by-nov-28-in-murder-case-against-hasina-123456/",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "আদালত"
+    ]
+  },
+  {
+    "id": "item-1790846501474-9",
+    "slug": "hasina-stay-in-india-matter-herself",
+    "title": "Deposed Hasina’s stay in India a matter for herself, New Delhi: BNP",
+    "englishTitle": "Hasina's stay in India a matter for herself and New Delhi, says BNP",
+    "banglaTitle": "হাসিনার ভারতে অবস্থান তার এবং দিল্লির নিজস্ব বিষয়: বিএনপি",
+    "summaryBn": "বিএনপি জানিয়েছে যে ক্ষমতাচ্যুত শেখ হাসিনার ভারতে অবস্থান সম্পূর্ণভাবে তার এবং নয়াদিল্লির নিজস্ব ব্যাপার।",
+    "summaryEn": "BNP stated that deposed leader Sheikh Hasina's stay in India is entirely a matter concerning herself and New Delhi.",
+    "keyPointsBn": [
+      "বিএনপির প্রতিক্রিয়া",
+      "আশ্রয় ইস্যু"
+    ],
+    "keyPointsEn": [
+      "BNP reaction",
+      "Asylum issue"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক মন্তব্য",
+    "sentimentReasonEn": "Political comment",
+    "source": {
+      "name": "The Siasat Daily",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.siasat.com/deposed-hasinas-stay-in-india-a-matter-for-herself-new-delhi-bnp-123456/",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বিএনপি",
+      "শেখ হাসিনা"
+    ]
+  },
+  {
+    "id": "item-1790846501474-10",
+    "slug": "bangladesh-india-ties-fast-pace",
+    "title": "Bangladesh-India ties ever-growing at fast pace: Sheikh Hasina",
+    "englishTitle": "Bangladesh-India ties ever-growing at fast pace: Sheikh Hasina",
+    "banglaTitle": "বাংলাদেশ-ভারত সম্পর্ক দ্রুত গতিতে বৃদ্ধি পাচ্ছে: শেখ হাসিনা",
+    "summaryBn": "শেখ হাসিনা বলেছেন যে বাংলাদেশ ও ভারতের মধ্যকার দ্বিপাক্ষিক সম্পর্ক দ্রুত গতিতে আরও শক্তিশালী হচ্ছে।",
+    "summaryEn": "Sheikh Hasina remarked that the bilateral relationship between Bangladesh and India is growing stronger at a fast pace.",
+    "keyPointsBn": [
+      "দ্বিপাক্ষিক সম্পর্ক",
+      "উন্নতি"
+    ],
+    "keyPointsEn": [
+      "Bilateral ties",
+      "Improvement"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি",
+    "categoryLabelEn": "Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ইতিবাচক কূটনৈতিক বার্তা",
+    "sentimentReasonEn": "Positive diplomatic message",
+    "source": {
+      "name": "The Siasat Daily",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.siasat.com/bangladesh-india-ties-ever-growing-at-fast-pace-sheikh-hasina-123456/",
+      "scannedAt": "2026-10-01T09:21:41.474Z"
+    },
+    "publishedAt": "2026-10-01T09:21:41.474Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ-ভারত সম্পর্ক",
+      "কূটনীতি"
+    ]
+  },
+  {
       "id": "news-20260930-001",
       "slug": "times-of-india-expatriates-kolkata-sheikh-hasina-birthday-solidarity",
       "title": "The Times of India: 'Expatriate Bangladeshis Fly to Kolkata from Across Globe for Sheikh Hasina's Birthday at Syama Prasad Bhavan'",
