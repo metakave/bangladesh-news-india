@@ -71,8 +71,8 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "৩০ সেপ্টেম্বর ২০২৬, রাত ৭:৪৮",
-  "lastScannedAtEn": "30 Sep 2026, 7:48 PM IST",
+  "lastScannedAtBn": "১ অক্টোবর, ২০২৬ এ ৩:৩৩ PM",
+  "lastScannedAtEn": "1 Oct 2026, 3:33 pm",
   "totalScanned24h": 4218,
   "bangladeshMatches": 1137,
   "sentimentDistribution": {
@@ -873,6 +873,357 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "scan-1790846999775-40",
+    "slug": "news-1790846999775-40",
+    "title": "9 Bangladeshi Nationals Arrested In Assam, Fake Indian IDs Recovered",
+    "englishTitle": "9 Bangladeshi Nationals Arrested In Assam, Fake Indian IDs Recovered",
+    "banglaTitle": "সংবাদ আপডেট: 9 Bangladeshi Nationals Arrested In Assam, Fake In",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "NDTV Top Stories",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/india-news/9-bangladeshi-nationals-arrested-in-assam-fake-indian-ids-recovered-12124309#publisher=newsstand",
+      "scannedAt": "2026-10-01T09:29:59.775Z"
+    },
+    "publishedAt": "2026-10-01T08:19:52.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790846999776-41",
+    "slug": "news-1790846999776-41",
+    "title": "When is the India vs Pakistan Asian Games 2026 cricket gold medal match?",
+    "englishTitle": "When is the India vs Pakistan Asian Games 2026 cricket gold medal match?",
+    "banglaTitle": "সংবাদ আপডেট: When is the India vs Pakistan Asian Games 2026 cri",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "Times of India Top",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/sports/cricket/asian-games-2026-mens-t20/when-is-india-vs-pakistan-asian-games-2026-gold-medal-match-check-date-time-venue/articleshow/134612509.cms",
+      "scannedAt": "2026-10-01T09:29:59.776Z"
+    },
+    "publishedAt": "2026-10-01T08:03:52.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847003382-51",
+    "slug": "news-1790847003382-51",
+    "title": "'Deeply Worrying': World Medical Body Flags Attacks On Doctors In Bangladesh, Writes To Tarique Govt",
+    "englishTitle": "'Deeply Worrying': World Medical Body Flags Attacks On Doctors In Bangladesh, Writes To Tarique Govt",
+    "banglaTitle": "সংবাদ আপডেট: 'Deeply Worrying': World Medical Body Flags Attack",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "News18 World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.news18.com/world/deeply-worrying-world-medical-body-flags-attacks-on-doctors-in-bangladesh-writes-to-tarique-govt-ws-lr-10362067.html",
+      "scannedAt": "2026-10-01T09:30:03.382Z"
+    },
+    "publishedAt": "2026-10-01T05:07:15.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847018920-82",
+    "slug": "news-1790847018920-82",
+    "title": "Bangladesh On High Alert For Durga Puja: 24-Hour Monitoring, Mobile App To Track Untoward Incidents",
+    "englishTitle": "Bangladesh On High Alert For Durga Puja: 24-Hour Monitoring, Mobile App To Track Untoward Incidents",
+    "banglaTitle": "সংবাদ আপডেট: Bangladesh On High Alert For Durga Puja: 24-Hour M",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "News18 World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.news18.com/world/bangladesh-on-high-alert-for-durga-puja-24-hour-monitoring-mobile-app-to-track-untoward-incidents-ws-r-10361296.html",
+      "scannedAt": "2026-10-01T09:30:18.920Z"
+    },
+    "publishedAt": "2026-09-30T12:24:27.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847048106-160",
+    "slug": "news-1790847048106-160",
+    "title": "‘Technical Issues’: Pakistan Denies Airspace To Russian Plane Carrying Uranium To Bangladesh Nuclear Plant",
+    "englishTitle": "‘Technical Issues’: Pakistan Denies Airspace To Russian Plane Carrying Uranium To Bangladesh Nuclear Plant",
+    "banglaTitle": "সংবাদ আপডেট: ‘Technical Issues’: Pakistan Denies Airspace To Ru",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "News18 World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.news18.com/world/technical-issues-pakistan-denies-airspace-to-russian-plane-carrying-uranium-to-bangladesh-nuclear-plant-ws-r-10359611.html",
+      "scannedAt": "2026-10-01T09:30:48.106Z"
+    },
+    "publishedAt": "2026-09-29T12:29:19.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847137086-390",
+    "slug": "news-1790847137086-390",
+    "title": "Bangladesh Foreign Secretary Asad Alam Siam set to be next High Commissioner to India",
+    "englishTitle": "Bangladesh Foreign Secretary Asad Alam Siam set to be next High Commissioner to India",
+    "banglaTitle": "সংবাদ আপডেট: Bangladesh Foreign Secretary Asad Alam Siam set to",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/asad-alan-siam-bangladeshs-foreign-secretary-appointed-as-new-high-commissioner-to-india-10888843/",
+      "scannedAt": "2026-10-01T09:32:17.086Z"
+    },
+    "publishedAt": "2026-09-22T07:40:29.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847137366-392",
+    "slug": "news-1790847137366-392",
+    "title": "T-shirt torn, punches thrown: Biman Bangladesh passengers fight mid-air, video goes viral",
+    "englishTitle": "T-shirt torn, punches thrown: Biman Bangladesh passengers fight mid-air, video goes viral",
+    "banglaTitle": "সংবাদ আপডেট: T-shirt torn, punches thrown: Biman Bangladesh pas",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/biman-bangladesh-airlines-flight-brawl-caught-on-camera-passengers-exchange-blows-mid-air-10883624/",
+      "scannedAt": "2026-10-01T09:32:17.366Z"
+    },
+    "publishedAt": "2026-09-18T10:01:11.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847137366-393",
+    "slug": "news-1790847137366-393",
+    "title": "'Fascination with India must end': Bangladesh minister sparks row",
+    "englishTitle": "'Fascination with India must end': Bangladesh minister sparks row",
+    "banglaTitle": "সংবাদ আপডেট: 'Fascination with India must end': Bangladesh mini",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/bangladesh-minister-humaiun-kobir-india-ties-reset-tarique-rahman-unga-10877038/",
+      "scannedAt": "2026-10-01T09:32:17.366Z"
+    },
+    "publishedAt": "2026-09-14T07:36:41.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
+  {
+    "id": "scan-1790847137977-395",
+    "slug": "news-1790847137977-395",
+    "title": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
+    "englishTitle": "No Dhaka representation at BRICS Summit as Bangladesh rules out Rahman's visit",
+    "banglaTitle": "সংবাদ আপডেট: No Dhaka representation at BRICS Summit as Banglad",
+    "summaryBn": "এই সংবাদটি বিস্তারিত জানতে মূল লিংকে ক্লিক করুন।",
+    "summaryEn": "Click the source link to read the full details of this report.",
+    "keyPointsBn": [
+      "সংবাদ আপডেট",
+      "বিস্তারিত পড়ুন"
+    ],
+    "keyPointsEn": [
+      "News update",
+      "Read more"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি",
+    "categoryLabelEn": "Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাধারণ সংবাদ",
+    "sentimentReasonEn": "General news",
+    "source": {
+      "name": "The Indian Express World",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/tarique-rahman-brics-summit-india-visit-bangladesh-response-10872092/",
+      "scannedAt": "2026-10-01T09:32:17.977Z"
+    },
+    "publishedAt": "2026-09-10T12:33:25.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বাংলাদেশ",
+      "ভারত"
+    ]
+  },
   {
     "id": "item-1790846501473-1",
     "slug": "hasina-restore-democratic-rights-india-toi",
