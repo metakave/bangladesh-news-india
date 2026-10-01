@@ -1642,7 +1642,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
           "name": "The Times of India",
           "bureau": "Delhi",
           "language": "English",
-          "originalUrl": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-birthday-at-syama-home/articleshow/134421890.cms",
+          "originalUrl": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-bday-at-syama-home/articleshow/134548855.cms",
           "scannedAt": "2026-09-30T15:00:00Z"
       },
       "publishedAt": "2026-09-30T14:30:00Z",
