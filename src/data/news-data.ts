@@ -1289,13 +1289,13 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "name": "YouTube",
       "bureau": "Delhi",
       "language": "English",
-      "originalUrl": "https://www.youtube.com/watch?v=VIDEO_ID_HERE",
+      "originalUrl": "https://www.youtube.com/watch?v=_PDiClbaHSc",
       "scannedAt": "2026-10-01T09:21:41.474Z"
     },
     "publishedAt": "2026-10-01T09:21:41.474Z",
     "readTimeBn": "৫ মিনিট",
     "readTimeEn": "5 mins",
-    "imageUrl": "https://i.ytimg.com/vi/VIDEO_ID_HERE/hqdefault.jpg",
+    "imageUrl": "https://i.ytimg.com/vi/_PDiClbaHSc/hqdefault.jpg",
     "mediaFormat": "youtube",
     "tags": [
       "অজিত দোভাল",
