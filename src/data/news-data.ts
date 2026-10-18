@@ -71,10 +71,10 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "১৬ অক্টোবর, ২০২৬ এ ৬:৩০ PM",
-  "lastScannedAtEn": "16 Oct 2026, 06:30 pm",
-  "totalScanned24h": 4621,
-  "bangladeshMatches": 1273,
+  "lastScannedAtBn": "১৮ অক্টোবর, ২০২৬ এ ৮:১৫ PM",
+  "lastScannedAtEn": "18 Oct 2026, 08:15 pm",
+  "totalScanned24h": 4816,
+  "bangladeshMatches": 1340,
   "sentimentDistribution": {
     "positive": 35,
     "neutral": 46,
@@ -100,6 +100,39 @@ export const SCANNER_STATS = {
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-111",
+    "headlineBn": "‘দিল্লিতে থাকলে ব্রিকসে আসতে বাধা কোথায়?’: তারেক রহমানকে শেখ হাসিনার সরাসরি চ্যালেঞ্জ — টাইমস নাউ",
+    "headlineEn": "Times Now: In Delhi Dispatch, Sheikh Hasina Dares Tarique Rahman Over Skipping BRICS Summit",
+    "timeAgoBn": "১০ মিনিট আগে",
+    "timeAgoEn": "10 mins ago",
+    "sourceName": "Times Now",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://www.youtube.com/watch?v=wWZAFfSVTDo"
+  },
+  {
+    "id": "alert-112",
+    "headlineBn": "‘ভারতে শেখ হাসিনার অবস্থান নিয়ে মুহাম্মদ ইউনূসের বার্তা ও আইনি বাস্তবতা’: বিজনেস স্ট্যান্ডার্ডের বিশেষ প্রতিবেদন",
+    "headlineEn": "Business Standard: What Muhammad Yunus Stated Regarding Sheikh Hasina's Sovereign Shelter in India",
+    "timeAgoBn": "২৫ মিনিট আগে",
+    "timeAgoEn": "25 mins ago",
+    "sourceName": "Business Standard",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://hindi.business-standard.com/economy/international/bangladesh-what-did-muhammad-yunus-say-about-sheikh-hasina-being-in-india-id-362257/"
+  },
+  {
+    "id": "alert-113",
+    "headlineBn": "‘ভারতের জাতীয় স্বার্থেই বিজেপি, বাম ও কংগ্রেসের উচিত হাসিনার পাশে দাঁড়ানো’: কলকাতার দ্য ওয়ালের সম্পাদকীয় ভাষ্য",
+    "headlineEn": "The Wall: In India's National Interest, All Parties Across BJP, Left, and Congress Must Back Hasina",
+    "timeAgoBn": "৪০ মিনিট আগে",
+    "timeAgoEn": "40 mins ago",
+    "sourceName": "The Wall",
+    "sourceBureau": "Kolkata",
+    "sentiment": "positive",
+    "url": "https://www.thewall.in/bangladesh/india-should-exert-strong-pressure-on-america-to-ensure-hasinas-safe-return-it-is-they-who-have-brought-this-danger-upon-bangladesh/tid/207218"
+  },
   {
       "id": "alert-109",
       "headlineBn": "‘রবীন্দ্রনাথের ছবিতে কালি বিতর্ক: বাংলাদেশের আত্মপরিচয়ের সংকট নিয়ে বিশেষ প্রতিবেদন’: দ্য টাইমস অব ইন্ডিয়া",
@@ -1160,6 +1193,492 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20261018-001",
+    "slug": "times-now-sheikh-hasina-dares-tarique-rahman-brics-visit",
+    "title": "Sheikh Hasina In India Invites Bangladesh PM Tarique Rahman As She Dares BNP Boss, ‘Why Can't You?' - Times Now",
+    "englishTitle": "Times Now: In Delhi Dispatch, Sheikh Hasina Dares Tarique Rahman Over Skipping BRICS Summit",
+    "banglaTitle": "‘দিল্লিতে থাকলে ব্রিকসে আসতে বাধা কোথায়?’: তারেক রহমানকে সরাসরি চ্যালেঞ্জ ছুড়লেন শেখ হাসিনা, টাইমস নাউয়ের ভিডিও রিপোর্ট",
+    "summaryBn": "দিল্লিতে অনুষ্ঠিত ব্রিকস সম্মেলন এড়িয়ে যাওয়ার সিদ্ধান্তের তীব্র সমালোচনা করে বিএনপির ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমানকে সরাসরি চ্যালেঞ্জ ছুড়েছেন শেখ হাসিনা। টাইমস নাউয়ের বিশেষ ভিডিও প্রতিবেদনে তুলে ধরা হয়েছে কীভাবে সাবেক প্রধানমন্ত্রী প্রশ্ন তুলেছেন যে তিনি ভারতে অবস্থান করায় কূটনৈতিক সম্মেলন বয়কট করা অপরিণত রাজনীতির পরিচায়ক।",
+    "summaryEn": "Times Now broadcasted a special dispatch covering former Bangladesh Prime Minister Sheikh Hasina directly challenging BNP leadership over their decision to skip the BRICS Summit in New Delhi. She criticized the refusal to engage bilaterally as diplomatic immaturity.",
+    "keyPointsBn": [
+      "দিল্লি ব্রিকস সম্মেলনে বাংলাদেশ প্রতিনিধি না পাঠানোকে অপরিণত কূটনৈতিক সিদ্ধান্ত আখ্যা",
+      "শেখ হাসিনার ভারতে অবস্থান নিয়ে বিএনপির আপত্তির বিরুদ্ধে পাল্টা জোরালো প্রশ্ন",
+      "আঞ্চলিক কূটনীতি ও ভারতীয় নীতিনির্ধারকদের পর্যবেক্ষণে দ্বিপাক্ষিক সম্পর্কের ভবিষ্যৎ"
+    ],
+    "keyPointsEn": [
+      "Critiqued Dhaka's decision to bypass the BRICS leadership summit in New Delhi",
+      "Challenged BNP's logic that her presence in India precludes bilateral diplomatic engagement",
+      "Analyzed strategic ramifications for regional summitry and Indo-Bangla ties"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও দ্বিপাক্ষিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & Strategic Ties",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কূটনৈতিক বিতর্ক ও নেতৃত্ব পর্যায়ের বিবৃতি নিয়ে বস্তুনিষ্ঠ ভারতীয় টেলিভিশন বিশ্লেষণ।",
+    "sentimentReasonEn": "Objective Indian broadcast coverage detailing high-stakes diplomatic challenges and summit decisions.",
+    "source": {
+      "name": "Times Now",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=wWZAFfSVTDo",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-18T10:30:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "https://i.ytimg.com/vi/wWZAFfSVTDo/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "শেখ হাসিনা",
+      "টাইমস নাউ",
+      "ব্রিকস",
+      "কূটনীতি",
+      "তারেক রহমান"
+    ]
+  },
+  {
+    "id": "news-20261018-002",
+    "slug": "business-standard-yunus-remarks-on-hasina-shelter-in-india",
+    "title": "Bangladesh: शेख हसीना के भारत में होने को लेकर मुहम्मद यूनुस ने क्या कहा? - Business Standard",
+    "englishTitle": "Business Standard: What Muhammad Yunus Stated Regarding Sheikh Hasina's Presence in India",
+    "banglaTitle": "‘ভারতে শেখ হাসিনার অবস্থান নিয়ে মুহাম্মদ ইউনূসের বার্তা’: বিজনেস স্ট্যান্ডার্ডের বিশদ বিশ্লেষণ",
+    "summaryBn": "ভারতে সাবেক প্রধানমন্ত্রী শেখ হাসিনার সাময়িক অবস্থান ও দ্বিপাক্ষিক সম্পর্কের প্রভাব নিয়ে অন্তর্বর্তী সরকারের প্রধান উপদেষ্টা মুহাম্মদ ইউনূসের অবস্থান বিস্তারিত প্রকাশ করেছে বিজনেস স্ট্যান্ডার্ড। প্রতিবেদনে উল্লেখ করা হয় কীভাবে দিল্লি ও ঢাকার মধ্যে কূটনৈতিক অস্বস্তি সত্ত্বেও প্রত্যর্পণ এবং সীমান্ত নিরাপত্তা বজায় রাখার চেষ্টা চলছে।",
+    "summaryEn": "Business Standard examined interim Chief Adviser Muhammad Yunus's public statements regarding Sheikh Hasina's ongoing shelter in India. The report assesses the diplomatic balance between Dhaka's extradition rhetoric and New Delhi's steadfast sovereign shelter protocols.",
+    "keyPointsBn": [
+      "দিল্লিতে শেখ হাসিনার অবস্থান নিয়ে ঢাকার অন্তর্বর্তী প্রশাসনের কূটনৈতিক প্রতিক্রিয়া",
+      "প্রত্যর্পণ চুক্তির শর্তাবলি ও ভারতের নিরাপত্তা ও আইনি বাধ্যবাধকতা",
+      "বাণিজ্য ও সীমান্ত যোগাযোগ অব্যাহত রাখার বিষয়ে দুই দেশের বাস্তবসম্মত অবস্থান"
+    ],
+    "keyPointsEn": [
+      "Examined Chief Adviser's diplomatic messaging regarding Hasina's safe shelter in India",
+      "Analyzed extradition treaty provisions versus India's legal and security safeguards",
+      "Highlighted mutual geopolitical imperatives to keep borders and cross-border trade open"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও নিরাপত্তা",
+    "categoryLabelEn": "Diplomacy & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দুই দেশের শীর্ষ নেতৃত্বের বক্তব্য ও আইনি বাস্তবতার ভারসাম্যপূর্ণ মূল্যায়ন।",
+    "sentimentReasonEn": "Balanced journalistic assessment of extradition protocols and regional sovereign diplomacy.",
+    "source": {
+      "name": "Business Standard",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://hindi.business-standard.com/economy/international/bangladesh-what-did-muhammad-yunus-say-about-sheikh-hasina-being-in-india-id-362257/",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-18T08:15:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "বিজনেস স্ট্যান্ডার্ড",
+      "মুহাম্মদ ইউনূস",
+      "শেখ হাসিনা",
+      "প্রত্যর্পণ",
+      "কূটনীতি"
+    ]
+  },
+  {
+    "id": "news-20261018-003",
+    "slug": "ndtv-india-syed-suhail-us-base-st-martin-island-geopolitics",
+    "title": "St Martin Island पर US Base से इनकार की सजा मिली Sheikh Hasina को? | Syed Suhail - NDTV India",
+    "englishTitle": "NDTV India: Did Rejection of US Military Base on St. Martin's Island Trigger Hasina's Ouster? Syed Suhail Explains",
+    "banglaTitle": "‘সেন্ট মার্টিন দ্বীপে মার্কিন ঘাঁটি স্থাপনে অস্বীকৃতিই কি পতনের কারণ?’ এনডিটিভি ইন্ডিয়ায় সৈয়দ সুহাইলের ভূ-রাজনৈতিক বিশ্লেষণ",
+    "summaryBn": "বঙ্গোপসাগরের কৌশলগত সেন্ট মার্টিন দ্বীপে মার্কিন সামরিক ঘাঁটি গড়ার প্রস্তাব প্রত্যাখ্যান করায় শেখ হাসিনাকে ক্ষমতাচ্যুত হতে হয়েছে কি না—এই ভূ-রাজনৈতিক তত্ত্ব নিয়ে বিশেষ পর্যালোচনা করেছেন এনডিটিভি ইন্ডিয়ার জ্যেষ্ঠ বিশ্লেষক সৈয়দ সুহাইল। ভারতের জাতীয় নিরাপত্তা এবং বঙ্গোপসাগরে আধিপত্য বিস্তারের লড়াইয়ের প্রেক্ষাপটে এই ভিডিও ডিসপ্যাচটি অত্যন্ত আলোচিত।",
+    "summaryEn": "NDTV India's Syed Suhail delivers a strategic geopolitical analysis dissecting claims that Sheikh Hasina's refusal to grant a military base on St. Martin's Island provoked foreign regime-change pressures. The report evaluates maritime security stakes for India in the Bay of Bengal.",
+    "keyPointsBn": [
+      "সেন্ট মার্টিন দ্বীপে বিদেশি সামরিক উপস্থিতির অভিযোগ ও শেখ হাসিনার পূর্ববর্তী সতর্কবার্তা",
+      "বঙ্গোপসাগরে পরাশক্তিদের নৌ ও ভূ-রাজনৈতিক প্রতিযোগিতা এবং ভারতের জাতীয় নিরাপত্তা",
+      "ভারত মহাসাগরীয় অঞ্চলে আঞ্চলিক স্থিতিশীলতা বজায় রাখতে নয়াদিল্লির সতর্ক নজরদারি"
+    ],
+    "keyPointsEn": [
+      "Analyzed claims surrounding rejected foreign military access to St. Martin's Island",
+      "Evaluated superpower maritime competition across the strategic Bay of Bengal",
+      "Highlighted New Delhi's vigilant tracking of external influences near its maritime borders"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "নিরাপত্তা ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Security & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক পরাশক্তির চাপ ও নিরাপত্তা স্বার্থের বস্তুনিষ্ঠ বিশ্লেষণ।",
+    "sentimentReasonEn": "Analytical strategic assessment of Bay of Bengal maritime security and foreign policy dynamics.",
+    "source": {
+      "name": "NDTV India",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://www.youtube.com/watch?v=LRZZvlPsxsc",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-18T09:40:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "https://i.ytimg.com/vi/LRZZvlPsxsc/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "tags": [
+      "এনডিটিভি",
+      "সেন্ট মার্টিন",
+      "ভূ-রাজনীতি",
+      "বঙ্গোপসাগর",
+      "নিরাপত্তা"
+    ]
+  },
+  {
+    "id": "news-20261018-004",
+    "slug": "thewall-india-political-consensus-standing-with-sheikh-hasina",
+    "title": "দেশের স্বার্থে বিজেপি, বাম, কংগ্রেস-সহ সব পার্টির উচিত হাসিনার পাশে দাঁড়ানো - TheWall",
+    "englishTitle": "The Wall: In India's National Interest, All Parties Across BJP, Left, and Congress Must Back Hasina",
+    "banglaTitle": "‘ভারতের জাতীয় স্বার্থেই বিজেপি, বাম ও কংগ্রেসের উচিত হাসিনার পাশে দাঁড়ানো’: দ্য ওয়ালের সম্পাদকীয় বিশ্লেষণ",
+    "summaryBn": "ভারতের জাতীয় নিরাপত্তা ও উত্তর-পূর্বাঞ্চলীয় রাজ্যগুলোর অখণ্ডতা রক্ষায় বাংলাদেশের সঙ্গে ঐতিহাসিক বন্ধুত্বের গুরুত্ব তুলে ধরেছে কলকাতার শীর্ষ ডিজিটাল পোর্টাল দ্য ওয়াল। বিশ্লেষণে বলা হয়েছে, অভ্যন্তরীণ রাজনৈতিক মতপার্থক্য ভুলে বিজেপি, কংগ্রেস ও বামদলগুলোর উচিত বাংলাদেশে ধর্মনিরপেক্ষ শক্তির প্রতীক শেখ হাসিনার পাশে থাকা।",
+    "summaryEn": "Kolkata bureau's The Wall published an extensive strategic commentary arguing that Indian national security and Northeast connectivity dictate a united political stance across party lines—encompassing BJP, Congress, and the Left—in supporting secular democratic stability in Bangladesh.",
+    "keyPointsBn": [
+      "ভারতের উত্তর-পূর্বাঞ্চলের বিচ্ছিন্নতাবাদী দমন ও সীমান্ত নিরাপত্তায় বিগত সরকারের অবদান",
+      "দিল্লির সর্বদলীয় রাজনৈতিক ঐকমত্য বজায় রাখার আহ্বান",
+      "মৌলবাদী শক্তির উত্থান রুখতে দীর্ঘমেয়াদী ভারতীয় কূটনৈতিক নীতি"
+    ],
+    "keyPointsEn": [
+      "Reiterated past contributions toward neutralizing anti-India insurgencies in the Northeast",
+      "Urged domestic cross-party consensus between ruling and opposition benches on Bangladesh policy",
+      "Warned against letting radical Islamist elements undermine decades of regional stability"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও জাতীয় স্বার্থ",
+    "categoryLabelEn": "Politics & Strategic Consensus",
+    "sentiment": "positive",
+    "sentimentReasonBn": "দ্বিপাক্ষিক ধর্মনিরপেক্ষ সম্পর্ক ও জাতীয় সুরক্ষায় ভারতের রাজনৈতিক সংহতির পক্ষে সুস্পষ্ট অবস্থান।",
+    "sentimentReasonEn": "Pro-stability commentary highlighting India's shared national interest and bipartisan consensus.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/india-should-exert-strong-pressure-on-america-to-ensure-hasinas-safe-return-it-is-they-who-have-brought-this-danger-upon-bangladesh/tid/207218",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T17:45:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/kolkata-howrah-bridge-view.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "দ্য ওয়াল",
+      "কলকাতা",
+      "জাতীয় স্বার্থ",
+      "শেখ হাসিনা",
+      "সর্বদলীয় ঐক্য"
+    ]
+  },
+  {
+    "id": "news-20261018-005",
+    "slug": "sangbad-pratidin-hasina-blasts-tarique-rahman-diplomacy",
+    "title": "‘অপরিণত, ভারতে না আসায় হাসিনার ধমক তারেক রহমানকে’: সংবাদ প্রতিদিনের প্রতিবেদন",
+    "englishTitle": "Sangbad Pratidin: 'Immature Diplomatic Posture': Hasina Slams Tarique Rahman Over India Boycott",
+    "banglaTitle": "‘ভারতের সাথে দূরত্ব বাড়ানো অপরিপক্বতা’: তারেক রহমানকে শেখ হাসিনার কড়া জবাব নিয়ে সংবাদ প্রতিদিনের বিশ্লেষণ",
+    "summaryBn": "সংবাদ প্রতিদিন তাদের বিশেষ প্রতিবেদনে তুলে ধরেছে কীভাবে শেখ হাসিনা তারেক রহমানের দিল্লি সফর এড়ানোর সিদ্ধান্তকে তীব্র ভাষায় আক্রমণ করেছেন। প্রতিবেদনে জানানো হয়, আঞ্চলিক রাজনীতিতে ভারতের ভূমিকা উপেক্ষা করে বাংলাদেশের উন্নয়ন বা কূটনৈতিক অগ্রগতি সম্ভব নয় বলে মন্তব্য করেছেন তিনি।",
+    "summaryEn": "Sangbad Pratidin reported on Sheikh Hasina's pointed criticism of Tarique Rahman, emphasizing that shunning dialogue with New Delhi reflects diplomatic shortsightedness that undermines Bangladesh's vital bilateral and regional economic linkages.",
+    "keyPointsBn": [
+      "ভারতের সাথে সম্পর্ক ছিন্ন বা এড়িয়ে চলাকে রাজনৈতিক অপরিণততা আখ্যা",
+      "দুই দেশের গণমানুষের বাণিজ্যিক ও চিকিৎসাগত যোগাযোগের অপরিহার্যতা",
+      "পশ্চিমবঙ্গের রাজনৈতিক মহলে এই বক্তব্যের ব্যাপক প্রতিক্রিয়া"
+    ],
+    "keyPointsEn": [
+      "Characterized avoidance of summit engagements in India as diplomatic shortsightedness",
+      "Underlined vital cross-border economic, energy, and medical transit realities",
+      "Noted keen tracking of the exchanges across West Bengal's political landscape"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Regional Politics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কলকাতার বাংলা সংবাদমাধ্যমের বিস্তারিত রাজনৈতিক ভাষ্য।",
+    "sentimentReasonEn": "Analytical Kolkata press dispatch focusing on trans-Padma diplomatic tensions.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://m.sangbadpratidin.in/article/bangladesh/sheikh-hasina-blasts-bangladesh-pm-tarique-rahman/pid/1385806",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T15:20:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/kolkata-victoria-memorial-heritage.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "সংবাদ প্রতিদিন",
+      "তারেক রহমান",
+      "শেখ হাসিনা",
+      "কলকাতা",
+      "কূটনীতি"
+    ]
+  },
+  {
+    "id": "news-20261018-006",
+    "slug": "anandabazar-patrika-hasina-brics-summit-critique",
+    "title": "ফের তারেককে তোপ হাসিনার! ব্রিক্‌স সম্মেলন এড়ানোয় খোঁচা ‘অপরিণত’ - আনন্দবাজার পত্রিকা",
+    "englishTitle": "Anandabazar Patrika: Hasina Lambasts Tarique Rahman Again, Calls BRICS Boycott 'Diplomatically Immature'",
+    "banglaTitle": "‘ব্রিকস এড়ানো ছেলেমানুষি সিদ্ধান্ত’: তারেককে ফের তোপ হাসিনার, আনন্দবাজার পত্রিকার শীর্ষ খবর",
+    "summaryBn": "আনন্দবাজার পত্রিকার আন্তর্জাতিক পাতায় প্রকাশিত শীর্ষ প্রতিবেদনে তুলে ধরা হয়েছে কীভাবে শেখ হাসিনা ব্রিকস সম্মেলনে বাংলাদেশের অনুপস্থিতির কড়া সমালোচনা করেছেন। তিনি উল্লেখ করেন, দ্বিপাক্ষিক আলোচনা ও বহুমুখী আন্তর্জাতিক মঞ্চকে ব্যক্তিগত রাজনৈতিক ক্ষোভের কারণে বর্জন করা দেশের অর্থনৈতিক স্বার্থের পরিপন্থী।",
+    "summaryEn": "Anandabazar Patrika highlighted Sheikh Hasina's renewed denunciation of BNP leadership for avoiding the BRICS Summit. She underscored that isolating Bangladesh from multilateral economic corridors hurts the country's macro-trade prospects and regional stature.",
+    "keyPointsBn": [
+      "ব্রিকস অর্থনৈতিক করিডোরে বাংলাদেশের অংশগ্রহণ থেকে পিছিয়ে পড়ার সমালোচনা",
+      "ভারত-বাংলাদেশ দ্বিপাক্ষিক সহযোগিতার দীর্ঘমেয়াদী ধারাবাহিকতার ওপর জোর",
+      "আন্তর্জাতিক ফোরামে ব্যক্তিগত রাজনীতির প্রভাবের ক্ষতিকর দিক"
+    ],
+    "keyPointsEn": [
+      "Critiqued missing out on emerging Global South multilateral credit and infrastructure corridors",
+      "Stressed the enduring imperative of constructive Indo-Bangla economic cooperation",
+      "Warned against sacrificing national economic interests for partisan political boycotts"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও আন্তর্জাতিক বাণিজ্য",
+    "categoryLabelEn": "Diplomacy & Global Trade",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক মঞ্চ ও অর্থনীতির প্রেক্ষাপটে শীর্ষস্থানীয় আনন্দবাজারীয় বিশ্লেষণ।",
+    "sentimentReasonEn": "Detailed coverage of multilateral summit diplomacy from Kolkata's primary daily.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/world/sheikh-hasina-again-slams-tarique-rahman-calls-decision-of-skipping-brics-summit-as-immature-dgtl/cid/1719576",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T14:10:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/kolkata-howrah-bridge-view.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "আনন্দবাজার পত্রিকা",
+      "ব্রিকস",
+      "শেখ হাসিনা",
+      "কূটনীতি",
+      "আন্তর্জাতিক বাণিজ্য"
+    ]
+  },
+  {
+    "id": "news-20261018-007",
+    "slug": "news18-world-durga-puja-minority-safety-hasina-address",
+    "title": "Sheikh Hasina Wishes ‘Subho Saradiya’ To Hindus, Flags Minority Safety In Bangladesh - News18",
+    "englishTitle": "News18: Sheikh Hasina Conveys Durga Puja Greetings, Calls for Firm Minority Protection in Bangladesh",
+    "banglaTitle": "‘শুভ শারদীয়া জানিয়ে বাংলাদেশে সংখ্যালঘুদের নিরাপত্তার তাগিদ’: শেখ হাসিনার বার্তার বিস্তারিত নিউজ১৮-এ",
+    "summaryBn": "শারদীয় দুর্গোৎসব উপলক্ষে হিন্দু সম্প্রদায়ের প্রতি আন্তরিক শুভেচ্ছা জানানোর পাশাপাশি বাংলাদেশে সংখ্যালঘু হিন্দু ও আদিবাসীদের ওপর হামলার ঘটনায় গভীর উদ্বেগ প্রকাশ করেছেন শেখ হাসিনা। নিউজ১৮-এর বিশেষ প্রতিবেদনে তুলে ধরা হয় কীভাবে তিনি বলেছেন—‘বাংলাদেশ আপনাদেরও দেশ, মাথা উঁচু করে বাঁচুন’।",
+    "summaryEn": "News18 reported on Sheikh Hasina's festive Durga Puja message to the Hindu community, wherein she voiced urgent concern regarding attacks on minority shrines and businesses in post-transition Bangladesh, urging community members to stand firm with civic pride.",
+    "keyPointsBn": [
+      "শারদীয় দুর্গাপূজায় সম্প্রীতি রক্ষা ও মণ্ডপে সার্বিক নিরাপত্তার আহ্বান",
+      "সাম্প্রতিক মাসগুলোতে বিভিন্ন জেলায় উপাসনালয় ও সংখ্যালঘুদের ওপর হামলার নিন্দা",
+      "ভারতের পররাষ্ট্র মন্ত্রণালয় ও নাগরিক সমাজের দৃষ্টিগোচর হওয়া এই বার্তার তাৎপর্য"
+    ],
+    "keyPointsEn": [
+      "Urged civic harmony and comprehensive security around Durga Puja pandals across Bangladesh",
+      "Strongly condemned vandalism targeting minority temples and cultural installations",
+      "Noted keen resonance among Indian civil society and bilateral cultural observers"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংখ্যালঘু অধিকার ও সংস্কৃতি",
+    "categoryLabelEn": "Minority Rights & Culture",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সংখ্যালঘুদের ওপর নিরাপত্তা হুমকি ও বৈষম্যের বিরুদ্ধে ভারতীয় গণমাধ্যমের সোচ্চার অবস্থান।",
+    "sentimentReasonEn": "Critical reportage documenting safety apprehensions and protection deficits for religious minorities.",
+    "source": {
+      "name": "News18",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.news18.com/world/sheikh-hasina-wishes-subho-saradiya-to-hindus-flags-minority-safety-in-bangladesh-your-country-too-10382164.html",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T11:00:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "নিউজ১৮",
+      "দুর্গাপূজা",
+      "সংখ্যালঘু সুরক্ষা",
+      "শেখ হাসিনা",
+      "সম্প্রীতি"
+    ]
+  },
+  {
+    "id": "news-20261018-008",
+    "slug": "ndtv-hasina-minority-attacks-communal-harmony-appeal",
+    "title": "Sheikh Hasina Alleges Rising Attacks On Minorities In Bangladesh, Calls For Harmony - NDTV",
+    "englishTitle": "NDTV: Sheikh Hasina Highlights Spike in Vandalism Against Minorities, Urges National Protection in Bangladesh",
+    "banglaTitle": "‘সংখ্যালঘুদের ওপর পরিকল্পিত আক্রমণ উদ্বেগজনক’: সাম্প্রদায়িক সম্প্রীতির জোরালো ডাক শেখ হাসিনার, এনডিটিভির বিশেষ রিপোর্ট",
+    "summaryBn": "এনডিটিভি তাদের প্রধান সংবাদ বুলেটিনে প্রকাশ করেছে শেখ হাসিনার একটি আনুষ্ঠানিক বিবৃতি, যেখানে তিনি বাংলাদেশে রাজনৈতিক অস্থিতিশীলতার সুযোগে ধর্মীয় ও জাতিগত সংখ্যালঘুদের বাড়িঘর ও ব্যবসাপ্রতিষ্ঠানে হামলার পরিসংখ্যান তুলে ধরেছেন। আন্তর্জাতিক সম্প্রদায় এবং অন্তর্বর্তী সরকারকে এ ব্যাপারে কঠোর পদক্ষেপ নেওয়ার দাবি জানান তিনি।",
+    "summaryEn": "NDTV highlighted former Prime Minister Sheikh Hasina's detailed press communication condemning coordinated harassment and property grabs targeting vulnerable minority communities across Bangladesh, calling upon civil administration to safeguard secular constitutional guarantees.",
+    "keyPointsBn": [
+      "ধর্মীয় সংখ্যালঘুদের নাগরিক নিরাপত্তা নিশ্চিতে প্রশাসনের ব্যর্থতার তীব্র সমালোচনা",
+      "ঐতিহাসিক সম্প্রীতি ফিরিয়ে আনতে সমাজের সকল স্তরের নাগরিকদের এগিয়ে আসার আহ্বান",
+      "নয়াদিল্লির পররাষ্ট্র মন্ত্রণালয় কর্তৃক পরিস্থিতির ওপর অব্যাহত নজরদারি"
+    ],
+    "keyPointsEn": [
+      "Highlighted administrative lapses in deterring radical vandalism and intimidation",
+      "Called on progressive civil society groups inside Bangladesh to uphold inclusive heritage",
+      "Noted ongoing monitoring by Indian authorities regarding cross-border demographic spillover"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "মানবাধিকার ও সংখ্যালঘু সুরক্ষা",
+    "categoryLabelEn": "Human Rights & Minority Safety",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সাম্প্রদায়িক সহিংসতা ও মানবাধিকার লঙ্ঘনের বিরুদ্ধে কঠোর ভারতীয় মিডিয়া প্রতিবেদন।",
+    "sentimentReasonEn": "Critical human-rights report detailing institutional vulnerability of minorities.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/india-news/sheikh-hasina-alleges-rising-attacks-on-minorities-in-bangladesh-calls-for-harmony-12186786",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T09:30:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/delhi-south-block-diplomacy.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "এনডিটিভি",
+      "মানবাধিকার",
+      "সংখ্যালঘু",
+      "বাংলাদেশ",
+      "সম্প্রীতি"
+    ]
+  },
+  {
+    "id": "news-20261018-009",
+    "slug": "wion-hasina-insecurity-minorities-puja-dispatch",
+    "title": "Sheikh Hasina Warns Of 'Deep Sense Of Insecurity' Among Bangladesh's Minorities - WION",
+    "englishTitle": "WION Dispatch: Deep Sense of Insecurity Gripping Bangladesh Minorities, Cautions Sheikh Hasina",
+    "banglaTitle": "‘সংখ্যালঘুদের মধ্যে চরম নিরাপত্তাহীনতা কাজ করছে’: উইওনের আন্তর্জাতিক ডিসপ্যাচে শেখ হাসিনার হুঁশিয়ারি",
+    "summaryBn": "ভারতের আন্তর্জাতিক সংবাদ নেটওয়ার্ক উইওন (WION) বিশেষ ডিসপ্যাচে তুলে ধরেছে শেখ হাসিনার বার্তা। তিনি সতর্ক করেছেন যে উগ্রপন্থী শক্তির ক্রমাগত আস্ফালনে বাংলাদেশে ধর্মীয় বহুত্ববাদ মারাত্মক হুমকির সম্মুখীন। আন্তর্জাতিক ফোরামগুলোতে এই বিষয়টি তুলে ধরার জন্য তিনি প্রবাসী বাঙালিদের প্রতিও আহ্বান জানান।",
+    "summaryEn": "WION’s South Asia bureau broadcasted an in-depth dispatch on Sheikh Hasina’s warning that radicalism is eroding pluralism in Bangladesh. The report underscores growing strategic concern in South Asian diplomatic circles over extremist impunity.",
+    "keyPointsBn": [
+      "দক্ষিণ এশিয়ায় চরমপন্থার উত্থান ও আঞ্চলিক নিরাপত্তার ওপর এর সম্ভাব্য মারাত্মক প্রভাব",
+      "আন্তর্জাতিক মানবাধিকার সংস্থাগুলোর নীরবতার সমালোচনা",
+      "ভারতের কৌশলগত নীতিনির্ধারকদের জন্য সংখ্যালঘু সুরক্ষার বিষয়টি অন্যতম প্রধান বিবেচ্য"
+    ],
+    "keyPointsEn": [
+      "Stressed the regional security risks of resurgent radical extremist networks in South Asia",
+      "Critiqued international rights bodies for delayed monitoring of sectarian incidents",
+      "Identified minority protection as a key benchmark in New Delhi's foreign policy calculus"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "আন্তর্জাতিক কূটনীতি ও অধিকার",
+    "categoryLabelEn": "International Diplomacy & Human Rights",
+    "sentiment": "negative",
+    "sentimentReasonBn": "চরমপন্থা ও সাম্প্রদায়িক সংঘাতের আঞ্চলিক ঝুঁকি নিয়ে আন্তর্জাতিক ভারতীয় সংবাদমাধ্যমের বিশ্লেষণ।",
+    "sentimentReasonEn": "Analytical global broadcast on extremism risks and regional peace.",
+    "source": {
+      "name": "WION",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.wionews.com/world/sheikh-hasina-warns-of-deep-sense-of-insecurity-among-bangladesh-s-minorities-in-durga-puja-message-1792002462112",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T08:50:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "উইওন",
+      "WION",
+      "সংখ্যালঘু",
+      "কূটনীতি",
+      "দক্ষিণ এশিয়া"
+    ]
+  },
+  {
+    "id": "news-20261018-010",
+    "slug": "aaj-tak-bangla-political-slugfest-gen-z-protests-comparison",
+    "title": "Hasinaর মডেলে Indiaর ধ্বংসযজ্ঞে মেতেছে বিরোধীরা: ‘বাংলাদেশ আমাদের অনুপ্রেরণা’ বিতর্কে আজ তক বাংলা",
+    "englishTitle": "Aaj Tak Bangla: Political Firestorm Erupts as Indian Opposition Invokes Bangladesh-Style Protests",
+    "banglaTitle": "‘বাংলাদেশে গণঅভ্যুত্থানের আদলে ভারতে আন্দোলন?’: রাজনৈতিক বিতর্ক তুঙ্গে, আজ তক বাংলার বিশেষ ভিডিও সম্প্রচার",
+    "summaryBn": "ভারতের অভ্যন্তরে শিক্ষার্থী ও বিরোধী নেতাদের বক্তব্যে বাংলাদেশের সাম্প্রতিক ছাত্র-গণঅভ্যুত্থানের উদাহরণ টেনে আনা নিয়ে তীব্র বিতর্ক সৃষ্টি হয়েছে। আজ তক বাংলার বিশেষ ভিডিও প্রতিবেদনে তুলে ধরা হয়েছে কীভাবে শাসক দল বিজেপি এবং বিরোধী দলগুলো এই মন্তব্য নিয়ে মুখোমুখি সংঘাতে জড়িয়েছে।",
+    "summaryEn": "Aaj Tak Bangla covered the escalating domestic political controversy in India after student organizations and opposition figures referenced Bangladesh's Gen Z movement. The report details fierce political debate regarding democratic protest norms versus regime destabilization rhetoric.",
+    "keyPointsBn": [
+      "আইসা নেত্রী নেহা বোরার মন্তব্য ঘিরে ভারতীয় রাজনীতিতে উত্তপ্ত বিতর্ক",
+      "বিজেপি নেতাদের অভিযোগ—ভারতের স্থিতিশীলতা নষ্ট করার জন্য বিদেশি অভ্যুত্থানের উসকানি দেওয়া হচ্ছে",
+      "ভারতীয় গণতান্ত্রিক কাঠামোর সাথে বাংলাদেশের পরিস্থিতির মৌলিক পার্থক্যের বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "Sparked fierce exchanges over student leaders invoking Bangladesh's street protests",
+      "BJP leadership accused critics of attempting to import violent regime-destabilization models",
+      "Underlined fundamental resilience and institutional differences in Indian democracy"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও অভ্যন্তরীণ প্রভাব",
+    "categoryLabelEn": "Politics & Domestic Impact",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক সংঘাত ও তীব্র বিতর্ক নিয়ে বস্তুনিষ্ঠ ভারতীয় গণমাধ্যম সম্প্রচার।",
+    "sentimentReasonEn": "High-intensity political discourse coverage analyzing cross-border movement narratives.",
+    "source": {
+      "name": "Aaj Tak Bangla",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=YNBGcDhadnA",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-17T07:15:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "https://i.ytimg.com/vi/YNBGcDhadnA/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "tags": [
+      "আজ তক বাংলা",
+      "রাজনীতি",
+      "বিতর্ক",
+      "কলকাতা",
+      "ভিডিও"
+    ]
+  },
+  {
+    "id": "news-20261018-011",
+    "slug": "the-hindu-cross-border-illegal-entry-kozhikode-surveillance",
+    "title": "No Valid Documents: Bangladeshi National Held In Kozhikode - The Hindu",
+    "englishTitle": "The Hindu: Bangladeshi National Apprehended in Kozhikode for Entering Without Valid Travel Documents",
+    "banglaTitle": "‘বৈধ কাগজপত্র ছাড়া ভারতে প্রবেশের দায়ে কোঝিকোড়ে বাংলাদেশি নাগরিক আটক’: দ্য হিন্দুর প্রতিবেদন",
+    "summaryBn": "কেরালার কোঝিকোড়ে কোনো প্রকার বৈধ ভিসা বা পাসপোর্ট ছাড়া অবস্থান করার অপরাধে এক বাংলাদেশি নাগরিককে আটক করেছে পুলিশ। দ্য হিন্দু জানিয়েছে, সাম্প্রতিক রাজনৈতিক পটপরিবর্তনের পর ভারতের দক্ষিণাঞ্চলীয় রাজ্যগুলোতেও আন্তঃসীমান্ত অনুপ্রবেশ ঠেকাতে নিরাপত্তা সংস্থাগুলো নজরদারি জোরদার করেছে।",
+    "summaryEn": "The Hindu reported that police in Kozhikode, Kerala, arrested a Bangladeshi national residing without valid passport or visa documents. The arrest reflects heightened pan-India vigilance by domestic law enforcement agencies monitoring undocumented cross-border influx.",
+    "keyPointsBn": [
+      "দক্ষিণ ভারতের কেরালায় সীমান্ত অতিক্রম করে আসা অবৈধ অনুপ্রবেশকারী আটক",
+      "ভারতের উপকূলীয় ও অভ্যন্তরীণ জেলাগুলোতে যৌথ পুলিশ ও গোয়েন্দা চিরুনি অভিযান",
+      "সীমান্ত পারাপারে দালালচক্র ও মানবপাচার চক্রের বিরুদ্ধে আইনি তদন্ত"
+    ],
+    "keyPointsEn": [
+      "Apprehension in Kozhikode underscores nation-wide documentation scrutiny",
+      "Intensified intelligence coordination across coastal and inland states",
+      "Probing unauthorized cross-border trafficking networks and undocumented transit"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও জাতীয় নিরাপত্তা",
+    "categoryLabelEn": "Border & National Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আইনশৃঙ্খলা ও অভিবাসন সংক্রান্ত সুনির্দিষ্ট তথ্যভিত্তিক প্রতিবেদন।",
+    "sentimentReasonEn": "Factual judicial and border-security reportage on immigration compliance.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/national/kerala/no-valid-documents-bangladeshi-national-held-in-kozhikode/article71599335.ece",
+      "scannedAt": "2026-10-18T20:15:00Z"
+    },
+    "publishedAt": "2026-10-16T19:20:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "দ্য হিন্দু",
+      "সীমান্ত নিরাপত্তা",
+      "আইনশৃঙ্খলা",
+      "অনুপ্রবেশ",
+      "জাতীয় নিরাপত্তা"
+    ]
+  },
   {
       "id": "news-20261016-013",
       "slug": "times-of-india-black-ink-tagore-fight-over-bangladesh-identity",
