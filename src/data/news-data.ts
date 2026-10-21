@@ -71,29 +71,29 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "১৮ অক্টোবর, ২০২৬ এ ৮:১৫ PM",
-  "lastScannedAtEn": "18 Oct 2026, 08:15 pm",
-  "totalScanned24h": 4816,
-  "bangladeshMatches": 1340,
+  "lastScannedAtBn": "২১ অক্টোবর, ২০২৬ এ ৭:৩০ PM",
+  "lastScannedAtEn": "21 Oct 2026, 07:30 pm",
+  "totalScanned24h": 5031,
+  "bangladeshMatches": 1411,
   "sentimentDistribution": {
-    "positive": 35,
-    "neutral": 46,
-    "negative": 19
+    "positive": 36,
+    "neutral": 48,
+    "negative": 16
   },
   "bureauDistribution": {
-    "delhi": 43,
-    "kolkata": 33,
-    "mumbai": 12,
+    "delhi": 44,
+    "kolkata": 34,
+    "mumbai": 11,
     "tripura": 5,
-    "assam": 5,
+    "assam": 4,
     "siliguri": 2
   },
   "languageDistribution": {
-    "english": 45,
-    "bengali": 34,
-    "hindi": 15,
+    "english": 46,
+    "bengali": 35,
+    "hindi": 14,
     "tamil": 2,
-    "telugu": 2,
+    "telugu": 1,
     "marathi": 1,
     "malayalam": 1
   }
@@ -101,1098 +101,585 @@ export const SCANNER_STATS = {
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "alert-111",
-    "headlineBn": "‘দিল্লিতে থাকলে ব্রিকসে আসতে বাধা কোথায়?’: তারেক রহমানকে শেখ হাসিনার সরাসরি চ্যালেঞ্জ — টাইমস নাউ",
-    "headlineEn": "Times Now: In Delhi Dispatch, Sheikh Hasina Dares Tarique Rahman Over Skipping BRICS Summit",
+    "id": "alert-114",
+    "headlineBn": "‘আমি কাউকে ভয় পাই না, ডিসেম্বরেই বাংলাদেশে ফিরব’: ভারতে বসে শেখ হাসিনার সরাসরি বার্তা — নিউজএক্স",
+    "headlineEn": "NewsX: Sheikh Hasina LIVE: ‘I Am Not Afraid’, Vows to Return to Bangladesh in December",
     "timeAgoBn": "১০ মিনিট আগে",
     "timeAgoEn": "10 mins ago",
-    "sourceName": "Times Now",
+    "sourceName": "NewsX",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.youtube.com/watch?v=wWZAFfSVTDo"
+    "url": "https://www.youtube.com/watch?v=TlxjU2A8xUc"
   },
   {
-    "id": "alert-112",
-    "headlineBn": "‘ভারতে শেখ হাসিনার অবস্থান নিয়ে মুহাম্মদ ইউনূসের বার্তা ও আইনি বাস্তবতা’: বিজনেস স্ট্যান্ডার্ডের বিশেষ প্রতিবেদন",
-    "headlineEn": "Business Standard: What Muhammad Yunus Stated Regarding Sheikh Hasina's Sovereign Shelter in India",
+    "id": "alert-115",
+    "headlineBn": "‘সব ধর্মের মানুষের সমান অধিকার নিশ্চিত করব’: দুর্গাপূজা মণ্ডপ পরিদর্শনে গিয়ে তারেক রহমানের বার্তা — দ্য ইন্ডিয়ান এক্সপ্রেস",
+    "headlineEn": "The Indian Express: Bangladesh PM Tarique Rahman Visits Puja Pandals, Vows Equal Rights for All Religions",
     "timeAgoBn": "২৫ মিনিট আগে",
     "timeAgoEn": "25 mins ago",
-    "sourceName": "Business Standard",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://hindi.business-standard.com/economy/international/bangladesh-what-did-muhammad-yunus-say-about-sheikh-hasina-being-in-india-id-362257/"
-  },
-  {
-    "id": "alert-113",
-    "headlineBn": "‘ভারতের জাতীয় স্বার্থেই বিজেপি, বাম ও কংগ্রেসের উচিত হাসিনার পাশে দাঁড়ানো’: কলকাতার দ্য ওয়ালের সম্পাদকীয় ভাষ্য",
-    "headlineEn": "The Wall: In India's National Interest, All Parties Across BJP, Left, and Congress Must Back Hasina",
-    "timeAgoBn": "৪০ মিনিট আগে",
-    "timeAgoEn": "40 mins ago",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://www.thewall.in/bangladesh/india-should-exert-strong-pressure-on-america-to-ensure-hasinas-safe-return-it-is-they-who-have-brought-this-danger-upon-bangladesh/tid/207218"
-  },
-  {
-      "id": "alert-109",
-      "headlineBn": "‘রবীন্দ্রনাথের ছবিতে কালি বিতর্ক: বাংলাদেশের আত্মপরিচয়ের সংকট নিয়ে বিশেষ প্রতিবেদন’: দ্য টাইমস অব ইন্ডিয়া",
-      "headlineEn": "The Times of India: Black Ink on Tagore Reflects Deeper Identity Battle in Post-Transition Bangladesh",
-      "timeAgoBn": "৫ মিনিট আগে",
-      "timeAgoEn": "5 mins ago",
-      "sourceName": "The Times of India",
-      "sourceBureau": "Delhi",
-      "sentiment": "negative",
-      "url": "https://timesofindia.indiatimes.com/world/black-ink-on-tagore-the-fight-over-bangladeshs-identity/articleshow/134990572.cms"
-  },
-  {
-      "id": "alert-110",
-      "headlineBn": "‘বাংলাদেশগামী আধুনিক এলএইচবি রেল কোচ উত্তরপ্রদেশের রেলপথে রওনা, বাণিজ্য সংযোগ জোরদার’: নবভারত টাইমস",
-      "headlineEn": "Navbharat Times: Make in India Modern LHB Coaches for Bangladesh Transit Through Uttar Pradesh",
-      "timeAgoBn": "২০ মিনিট আগে",
-      "timeAgoEn": "20 mins ago",
-      "sourceName": "Navbharat Times",
-      "sourceBureau": "Delhi",
-      "sentiment": "positive",
-      "url": "https://navbharattimes.indiatimes.com/state/uttar-pradesh/shahjahanpur/modern-passenger-coaches-manufactured-bangladeshs-intercity-trains-lhb-make-in-india/articleshow/134981383.cms"
-  },
-  {
-      "id": "alert-111",
-      "headlineBn": "‘ভারতে পঞ্চম কনস্যুলার সংলাপে শেখ হাসিনাসহ রাজনৈতিক প্রত্যাবর্তনের আলোচনা’: এই সময় অনলাইন",
-      "headlineEn": "Ei Samay: Indo-Bangla Fifth Consular Dialogue Focuses on Visa Normalization & High-Level Exchanges",
-      "timeAgoBn": "৩৫ মিনিট আগে",
-      "timeAgoEn": "35 mins ago",
-      "sourceName": "Ei Samay (Instagram)",
-      "sourceBureau": "Siliguri",
-      "sentiment": "neutral",
-      "url": "https://www.instagram.com/p/DejF4x_nVZj/"
-  },
-  {
-      "id": "alert-112",
-      "headlineBn": "‘বাংলাদেশে পুশব্যাকের ঘটনায় কেন্দ্রে ও রাজ্যকে মুমতাজ বেগমের খোঁজ পাওয়ার নির্দেশ গৌহাটি হাইকোর্টের’: দৈনিক জাগরণ",
-      "headlineEn": "Dainik Jagran: Gauhati HC Directs Centre and Assam Govt to Trace Woman Expelled to Bangladesh",
-      "timeAgoBn": "৫০ মিনিট আগে",
-      "timeAgoEn": "50 mins ago",
-      "sourceName": "Dainik Jagran",
-      "sourceBureau": "Assam",
-      "sentiment": "negative",
-      "url": "https://www.jagran.com/news/national-where-is-mumtaz-begum-gauhati-hc-directs-centre-and-state-government-to-locate-woman-sent-to-bangladesh-40406523.html"
-  },
-{
-      "id": "alert-105",
-      "headlineBn": "‘বাংলাদেশে সংখ্যালঘুদের নিরাপত্তা নিয়ে গভীর উদ্বেগ, দুর্গাপূজার আগে কড়া নজরদারি’: দ্য টাইমস অব ইন্ডিয়া",
-      "headlineEn": "The Times of India: Sheikh Hasina Flags Minority Insecurity in Bangladesh Ahead of Durga Puja",
-      "timeAgoBn": "১০ মিনিট আগে",
-      "timeAgoEn": "10 mins ago",
-      "sourceName": "The Times of India",
-      "sourceBureau": "Mumbai",
-      "sentiment": "negative",
-      "url": "https://timesofindia.indiatimes.com/world/south-asia/deep-sense-of-insecurity-sheikh-hasina-flags-minority-safety-in-bangladesh/articleshow/134963994.cms"
-  },
-  {
-      "id": "alert-106",
-      "headlineBn": "‘ব্রিকস সম্মেলন বর্জন তারেক রহমানের অপরিণত কূটনৈতিক সিদ্ধান্ত’: দ্য আসাম ট্রিবিউন",
-      "headlineEn": "The Assam Tribune: Sheikh Hasina Calls Tarique Rahman's BRICS Absence Counterproductive for Dhaka",
-      "timeAgoBn": "২৫ মিনিট আগে",
-      "timeAgoEn": "25 mins ago",
-      "sourceName": "The Assam Tribune",
-      "sourceBureau": "Assam",
-      "sentiment": "neutral",
-      "url": "https://assamtribune.com/international/sheikh-hasina-calls-rahmans-brics-summit-absence-counterproductive-1620217"
-  },
-  {
-      "id": "alert-107",
-      "headlineBn": "‘ভারতে না যাওয়া আত্মঘাতী, কূটনৈতিক সুযোগ হারাল বাংলাদেশ’: বর্তমান পত্রিকা",
-      "headlineEn": "Bartaman Patrika: Bangladesh Missed Strategic Economic Opening by Skipping Delhi BRICS Meet",
-      "timeAgoBn": "৪০ মিনিট আগে",
-      "timeAgoEn": "40 mins ago",
-      "sourceName": "Bartaman Patrika",
-      "sourceBureau": "Kolkata",
-      "sentiment": "neutral",
-      "url": "https://bartamanpatrika.com/news/hasina-claims-tareqs-decision-not-to-join-brics-was-immature"
-  },
-  {
-      "id": "alert-108",
-      "headlineBn": "‘হিলি সীমান্তে কাঁটাতারের ওপারে-এপারে প্রীতি ও কড়া বিএসএফ নজরদারি’: এই সময়",
-      "headlineEn": "Ei Samay: Indo-Bangla Festivities & BSF Vigilance at Hili Border Ahead of Festive Season",
-      "timeAgoBn": "১ ঘণ্টা আগে",
-      "timeAgoEn": "1 hour ago",
-      "sourceName": "Ei Samay (Instagram)",
-      "sourceBureau": "Siliguri",
-      "sentiment": "positive",
-      "url": "https://www.instagram.com/p/DejOdshDeC_/"
-  },
-{
-    "id": "alert-101",
-    "headlineBn": "‘জিএম কাদেরের বাসভবনে হামলার প্রতিবাদে উত্তাল ঢাকা’: ইন্ডিয়া টুডে",
-    "headlineEn": "India Today: Mob Attacks GM Quader's Dhaka Residence; Leader Blames BNP, Jamaat",
-    "timeAgoBn": "১০ মিনিট আগে",
-    "timeAgoEn": "10 mins ago",
-    "sourceName": "India Today",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.indiatoday.in/world/story/bangladesh-gm-quader-dhaka-home-attack-indian-agent-slogans-sheikh-hasina-bnp-jamaat-3015446-2026-10-12"
-  },
-  {
-    "id": "alert-102",
-    "headlineBn": "‘রবীন্দ্রনাথের ছবিতে কালির ঘটনায় চারজনের বিরুদ্ধে রাষ্ট্রদ্রোহ মামলা দায়ের’: আনন্দবাজার পত্রিকা",
-    "headlineEn": "Anandabazar Patrika: Bangladesh Police File Sedition Case Against Four in Tagore Graffiti Defacement Row",
-    "timeAgoBn": "২৫ মিনিট আগে",
-    "timeAgoEn": "25 mins ago",
-    "sourceName": "Anandabazar Patrika",
-    "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://www.anandabazar.com/world/bangladesh-police-lodges-case-under-sedition-charge-against-those-arrested-in-allegation-of-defacing-a-graffiti-of-rabindranath-tagore-dgtl/cid/1718967"
-  },
-  {
-    "id": "alert-103",
-    "headlineBn": "‘পাঞ্জাব থেকে বাংলাদেশে ১৮টি আধুনিক এলএইচবি রেল কোচ রপ্তানি সম্পন্ন’: দৈনিক জাগরণ",
-    "headlineEn": "Dainik Jagran: Indian Railways Exports 18 Modern LHB Coaches from Punjab to Bangladesh",
-    "timeAgoBn": "৪০ মিনিট আগে",
-    "timeAgoEn": "40 mins ago",
-    "sourceName": "Dainik Jagran",
+    "sourceName": "The Indian Express",
     "sourceBureau": "Delhi",
     "sentiment": "positive",
-    "url": "https://www.jagran.com/punjab/firozpur-punjab-made-train-to-run-in-bangladesh-more-then-91-lakh-earned-by-exporting-18-lhb-coaches-40402845.html"
+    "url": "https://indianexpress.com/article/world/tarique-rahman-durga-puja-bangladesh-equal-rights-10930040/"
   },
   {
-    "id": "alert-104",
-    "headlineBn": "‘গুয়াহাটিতে আন্তর্জাতিক পাচার নেটওয়ার্ক ও অনুপ্রবেশের অভিযোগে আটক ৪’: দ্য আসাম ট্রিবিউন",
-    "headlineEn": "The Assam Tribune: Guwahati Emerges as Transit Route for Bangladeshi Nationals; 4 Arrested",
+    "id": "alert-116",
+    "headlineBn": "‘অবতরণের মুহূর্তেই ওরা আমাকে মেরে ফেলতে পারে, ঝুঁকি সত্ত্বেও দেশে ফিরব’: শেখ হাসিনা — এবিপি আনন্দ",
+    "headlineEn": "ABP Ananda: ‘They May Kill Me the Moment I Land’, Sheikh Hasina Signals Return Despite Severe Peril",
+    "timeAgoBn": "৪০ মিনিট আগে",
+    "timeAgoEn": "40 mins ago",
+    "sourceName": "ABP Ananda",
+    "sourceBureau": "Kolkata",
+    "sentiment": "neutral",
+    "url": "https://bengali.abplive.com/news/former-bangladesh-prime-minister-sheikh-hasina-on-monday-said-she-is-ready-to-return-to-her-country-1196635"
+  },
+  {
+    "id": "alert-117",
+    "headlineBn": "‘বাংলাদেশ সীমান্ত দিয়ে পাচার হওয়া বিপুল সোনা বিজয়ওয়াড়ার কাছে জব্দ, পাঁচজন গ্রেপ্তার’: দ্য হিন্দু",
+    "headlineEn": "The Hindu: Contraband Gold Smuggled Across Bangladesh Border Intercepted in Vijayawada",
     "timeAgoBn": "১ ঘণ্টা আগে",
     "timeAgoEn": "1 hour ago",
-    "sourceName": "The Assam Tribune",
-    "sourceBureau": "Assam",
-    "sentiment": "negative",
-    "url": "https://assamtribune.com/guwahati/guwahati-emerges-as-transit-route-for-bangladeshi-nationals-4-arrested-1619644"
-  },
-  {
-    "id": "alert-075",
-    "headlineBn": "‘ভারতে শেখ হাসিনার অবস্থান দ্বিপাক্ষিক সম্পর্কের আলোচনায় নিয়মিত পর্যালোচিত হচ্ছে’: দ্য হিন্দু",
-    "headlineEn": "The Hindu: Sheikh Hasina's Status in India Examined Through Formal Diplomatic & Legal Channels",
-    "timeAgoBn": "১০ মিনিট আগে",
-    "timeAgoEn": "10 mins ago",
     "sourceName": "The Hindu",
     "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.thehindu.com/news/national/sheikh-hasinas-activities-in-india-principal-challenge-in-planning-bangladesh-pms-visit/article71546940.ece"
-  },
-  {
-    "id": "alert-074",
-    "headlineBn": "‘আইনি কাঠামো ও দ্বিপাক্ষিক চুক্তির ভিত্তিতেই প্রত্যর্পণ মূল্যায়ন অব্যাহত’: টাইমস অব ইন্ডিয়া",
-    "headlineEn": "Times of India: Political Will and Legal Protocol Core to Hasina Extradition Review",
-    "timeAgoBn": "২৫ মিনিট আগে",
-    "timeAgoEn": "25 mins ago",
-    "sourceName": "The Times of India",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia/indias-political-will-needed-to-extradite-sheikh-hasina-bangladesh/articleshow/134683095.cms"
-  },
-  {
-    "id": "alert-073",
-    "headlineBn": "‘ফুলবাড়ি ও চ্যাংড়াবান্ধায় পণ্য খালাস ত্বরান্বিত করতে বিএসএফ-কাস্টমসের সমন্বয় সভা’: উত্তরবঙ্গ সংবাদ",
-    "headlineEn": "Uttarbanga Sambad: BSF & Customs Hold Joint Coordination Summit at Fulbari Land Port",
-    "timeAgoBn": "৪০ মিনিট আগে",
-    "timeAgoEn": "40 mins ago",
-    "sourceName": "Uttarbanga Sambad",
-    "sourceBureau": "Siliguri",
-    "sentiment": "positive",
-    "url": "https://uttarbangasambad.com/siliguri-fulbari-changrabandha-border-truckers-security-customs-meeting-20260924/"
-  },
-  {
-    "id": "alert-072",
-    "headlineBn": "‘শ্রীমন্তপুর স্থল শুল্ক স্টেশনে পণ্য পরিবহনের ধারা অব্যাহত’: ত্রিপুরা টাইমস",
-    "headlineEn": "Tripura Times: Srimantapur LCS Records Freight Transit Continuity with Bangladesh",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "Tripura Times",
-    "sourceBureau": "Tripura",
-    "sentiment": "positive",
-    "url": "https://tripuratimes.com/trade-and-commerce/srimantapur-lcs-freight-surge-bangladesh-cross-border-connectivity-20260924"
-  },
-{
-        "id": "alert-091",
-        "headlineBn": "‘বাংলাদেশে অবিলম্বে গণতান্ত্রিক অধিকার ও আইনের শাসন পুনর্বহাল করার আহ্বান শেখ হাসিনার’: টাইমস অব ইন্ডিয়া",
-        "headlineEn": "Times of India: Sheikh Hasina Urges Immediate Restoration of Democratic Rights & Rule of Law in Bangladesh",
-        "timeAgoBn": "১০ মিনিট আগে",
-        "timeAgoEn": "10 mins ago",
-        "sourceName": "Times of India",
-        "sourceBureau": "Delhi",
-        "sentiment": "neutral",
-        "url": "https://timesofindia.indiatimes.com/world/south-asia/hasina-restore-democratic-rights-rule-of-law-in-bangladesh/articleshow/134605980.cms"
-    },
-    {
-        "id": "alert-090",
-        "headlineBn": "‘আইনি প্রক্রিয়ার মধ্য দিয়েই বাংলাদেশে দলীয় পুনর্গঠন ত্বরান্বিত করার বার্তা শেখ হাসিনার’: আনন্দবাজার পত্রিকা",
-        "headlineEn": "Anandabazar Patrika: Sheikh Hasina Affirms Commitment to Lead Political Reconstruction Through Legal Channels",
-        "timeAgoBn": "২০ মিনিট আগে",
-        "timeAgoEn": "20 mins ago",
-        "sourceName": "Anandabazar Patrika",
-        "sourceBureau": "Kolkata",
-        "sentiment": "neutral",
-        "url": "https://www.anandabazar.com/world/sheikh-hasina-said-she-is-prepared-to-face-imprisonment-in-bangladesh-dgtl/cid/1714796"
-    },
-    {
-        "id": "alert-089",
-        "headlineBn": "‘আগরতলা-আখাউড়া আন্তর্জাতিক রেলে বাণিজ্য বাড়াতে নতুন কনটেইনার টার্মিনাল সক্রিয়’: ত্রিপুরা টাইমস",
-        "headlineEn": "Tripura Times: Agartala-Akhaura International Rail Freight Terminal Operationalized to Boost Regional Logistics",
-        "timeAgoBn": "৩৫ মিনিট আগে",
-        "timeAgoEn": "35 mins ago",
-        "sourceName": "Tripura Times",
-        "sourceBureau": "Tripura",
-        "sentiment": "positive",
-        "url": "https://tripuratimes.com/connectivity/agartala-akhaura-cross-border-rail-link-container-trial-run-20260930"
-    },
-    {
-        "id": "alert-088",
-        "headlineBn": "‘করিমগঞ্জ সীমান্তে অনুপ্রবেশ রুখতে আসাম পুলিশ ও বিএসএফের যৌথ প্রযুক্তিনির্ভর কমান্ড হাব সক্রিয়’: দ্য আসাম ট্রাইব্যুনাল",
-        "headlineEn": "The Assam Tribune: Assam Police & BSF Activate High-Tech Border Surveillance Command in Karimganj",
-        "timeAgoBn": "৫০ মিনিট আগে",
-        "timeAgoEn": "50 mins ago",
-        "sourceName": "The Assam Tribune",
-        "sourceBureau": "Assam",
-        "sentiment": "neutral",
-        "url": "https://assamtribune.com/assam/assam-police-bsf-set-up-karimganj-border-coordination-cell-1618580"
-    },
-    {
-        "id": "alert-087",
-        "headlineBn": "‘ফুলবাড়ি ও চ্যাংড়াবান্ধা সীমান্তে কাস্টমস ও বিএসএফের যৌথ ট্র্যাকিং বুথ চালু’: উত্তরবঙ্গ সংবাদ",
-        "headlineEn": "Uttarbanga Sambad: BSF & Customs Establish Joint Cargo Tracking Unit at Fulbari and Changrabandha Ports",
-        "timeAgoBn": "১ ঘণ্টা আগে",
-        "timeAgoEn": "1 hour ago",
-        "sourceName": "Uttarbanga Sambad",
-        "sourceBureau": "Siliguri",
-        "sentiment": "positive",
-        "url": "https://uttarbangasambad.com/fulbari-changrabandha-joint-security-cell-20261001/"
-    },
-{
-        "id": "alert-086",
-        "headlineBn": "‘বাংলাদেশি নাগরিক সন্দেহে ধৃত ব্যক্তি ভারতীয় কি না প্রমাণ করুন: কলকাতা হাইকোর্ট’: টাইমস অব ইন্ডিয়া",
-        "headlineEn": "Times of India: Calcutta High Court Directs Accused to Prove Indian Citizenship in SIR Immigration Dispute",
-        "timeAgoBn": "৫ মিনিট আগে",
-        "timeAgoEn": "5 mins ago",
-        "sourceName": "Times of India",
-        "sourceBureau": "Kolkata",
-        "sentiment": "neutral",
-        "url": "https://timesofindia.indiatimes.com/city/kolkata/prove-you-are-indian-calcutta-hc-tells-sir-deleted-bangladeshi/articleshow/134630144.cms"
-    },
-    {
-        "id": "alert-085",
-        "headlineBn": "‘বাংলাদেশে অবিলম্বে গণতান্ত্রিক অধিকার ও আইনের শাসন পুনর্বহাল করার আহ্বান শেখ হাসিনার’: টাইমস অব ইন্ডিয়া",
-        "headlineEn": "Times of India: Sheikh Hasina Urges Immediate Restoration of Democratic Rights & Rule of Law in Bangladesh",
-        "timeAgoBn": "১৫ মিনিট আগে",
-        "timeAgoEn": "15 mins ago",
-        "sourceName": "Times of India",
-        "sourceBureau": "Delhi",
-        "sentiment": "neutral",
-        "url": "https://timesofindia.indiatimes.com/world/south-asia/hasina-restore-democratic-rights-rule-of-law-in-bangladesh/articleshow/134605980.cms"
-    },
-    {
-        "id": "alert-084",
-        "headlineBn": "‘মুম্বাইয়ের শহরতলিতে অবৈধভাবে বসবাসের অভিযোগে ৬ প্রবাসী বাংলাদেশি গ্রেফতার’: টাইমস অব ইন্ডিয়া",
-        "headlineEn": "Times of India: Mumbai Police Arrest 6 Bangladeshi Nationals Operating Without Valid Travel Documentation",
-        "timeAgoBn": "২৫ মিনিট আগে",
-        "timeAgoEn": "25 mins ago",
-        "sourceName": "Times of India",
-        "sourceBureau": "Mumbai",
-        "sentiment": "negative",
-        "url": "https://timesofindia.indiatimes.com/city/mumbai/6-bangladeshi-nationals-arrested-for-illegal-stay-in-mumbai/articleshow/134625537.cms"
-    },
-    {
-        "id": "alert-083",
-        "headlineBn": "‘ফুলবাড়ি ও চ্যাংড়াবান্ধা সীমান্তে পণ্যবাহী ট্রাকের নিরবচ্ছিন্ন নিরাপত্তা নিশ্চিতে বিএসএফ-কাস্টমসের যৌথ ট্র্যাকিং সেল’: উত্তরবঙ্গ সংবাদ",
-        "headlineEn": "Uttarbanga Sambad: BSF & Customs Establish Joint Truck Inspection Unit at Fulbari and Changrabandha Land Ports",
-        "timeAgoBn": "৪০ মিনিট আগে",
-        "timeAgoEn": "40 mins ago",
-        "sourceName": "Uttarbanga Sambad",
-        "sourceBureau": "Siliguri",
-        "sentiment": "positive",
-        "url": "https://uttarbangasambad.com/fulbari-changrabandha-joint-security-cell-20261001/"
-    },
-    {
-        "id": "alert-082",
-        "headlineBn": "‘২০২৭ আইসিসি পুরুষ ওডিআই বিশ্বকাপে সরাসরি খেলার যোগ্যতা অর্জন করল বাংলাদেশ’: টাইমস অব ইন্ডিয়া",
-        "headlineEn": "Times of India: Bangladesh Secures Final Direct Spot for 2027 ICC Cricket World Cup After Cutoff",
-        "timeAgoBn": "১ ঘণ্টা আগে",
-        "timeAgoEn": "1 hour ago",
-        "sourceName": "Times of India",
-        "sourceBureau": "Delhi",
-        "sentiment": "positive",
-        "url": "https://timesofindia.indiatimes.com/sports/cricket/news/bangladesh-qualify-for-2027-world-cup/articleshow/134615020.cms"
-    }
-,
-  {
-      "id": "alert-065",
-      "headlineBn": "‘আমেরিকা জানাল শেখ হাসিনা ও আওয়ামী লীগ ইস্যুতে ঢাকা ও দিল্লির সরাসরি আলোচনার মাধ্যমেই সমাধান হওয়া উচিত’: নবভারত টাইমস",
-      "headlineEn": "Navbharat Times: US State Department Urges India & Bangladesh to Settle Hasina and Bilateral Ties via Direct Dialogue",
-      "timeAgoBn": "৫ মিনিট আগে",
-      "timeAgoEn": "5 mins ago",
-      "sourceName": "Navbharat Times",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://navbharattimes.indiatimes.com/world/america/us-department-of-state-on-sheikh-hasina-dhaka-relations-dialogue-solution/articleshow/134459820.cms"
-  },
-  {
-      "id": "alert-064",
-      "headlineBn": "‘কলকাতায় শ্যামাপ্রসাদ মুখোপাধ্যায় ভবনে হাসিনার জন্মদিন উদযাপনে বিশ্বের বিভিন্ন দেশ থেকে যোগ দিলেন প্রবাসীরা’: টাইমস অব ইন্ডিয়া",
-      "headlineEn": "The Times of India: Expatriate Bangladeshis Fly to Kolkata to Mark Sheikh Hasina's Birthday at Syama Prasad Bhavan",
-      "timeAgoBn": "১৫ মিনিট আগে",
-      "timeAgoEn": "15 mins ago",
-      "sourceName": "The Times of India",
-      "sourceBureau": "Delhi",
-      "sentiment": "positive",
-      "url": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-birthday-at-syama-home/articleshow/134421890.cms"
-  },
-  {
-      "id": "alert-063",
-      "headlineBn": "‘আগরতলা-আখাউড়া রেলপথে উৎসবের মরসুমে নিয়মিত কনটেইনার ও মালবাহী ট্রেন চলাচলের চূড়ান্ত মহড়া সম্পন্ন’: ত্রিপুরা টাইমস",
-      "headlineEn": "Tripura Times: Agartala-Akhaura International Rail Link Concludes Final Freight Trial for Festive Cargo Transit",
-      "timeAgoBn": "২৫ মিনিট আগে",
-      "timeAgoEn": "25 mins ago",
-      "sourceName": "Tripura Times",
-      "sourceBureau": "Tripura",
-      "sentiment": "positive",
-      "url": "https://tripuratimes.com/connectivity/agartala-akhaura-cross-border-rail-link-container-trial-run-20260930"
-  },
-  {
-      "id": "alert-062",
-      "headlineBn": "‘করিমগঞ্জ ও শ্রীভূমি সীমান্তে অনুপ্রবেশ ঠেকাতে আসাম পুলিশ ও বিএসএফের যৌথ কমান্ড সেন্টার কার্যকর’: দ্য আসাম ট্রাইব্যুনাল",
-      "headlineEn": "The Assam Tribune: Assam Police & BSF Activate Joint Border Command Center in Karimganj",
-      "timeAgoBn": "৪০ মিনিট আগে",
-      "timeAgoEn": "40 mins ago",
-      "sourceName": "The Assam Tribune",
-      "sourceBureau": "Assam",
-      "sentiment": "neutral",
-      "url": "https://assamtribune.com/assam/assam-police-bsf-set-up-karimganj-border-coordination-cell-1618580"
-  },
-  {
-      "id": "alert-061",
-      "headlineBn": "‘চ্যাংড়াবান্ধা ও ফুলবাড়িতে রপ্তানি বাণিজ্য সচল রাখতে যৌথ ট্রাক স্ক্যানিং সেল গঠন’: উত্তরবঙ্গ সংবাদ",
-      "headlineEn": "Uttarbanga Sambad: BSF & Customs Operationalize Joint Truck Security Checking Cell at Changrabandha & Fulbari",
-      "timeAgoBn": "১ ঘণ্টা আগে",
-      "timeAgoEn": "1 hour ago",
-      "sourceName": "Uttarbanga Sambad",
-      "sourceBureau": "Siliguri",
-      "sentiment": "positive",
-      "url": "https://uttarbangasambad.com/changrabandha-fulbari-border-joint-truck-checking-cell-activated-20260930/"
-  },
-  {
-      "id": "alert-081",
-      "headlineBn": "‘আমেরিকা জানাল শেখ হাসিনা ও আওয়ামী লীগ ইস্যুতে ঢাকা ও দিল্লির সরাসরি আলোচনার মাধ্যমেই সমাধান হওয়া উচিত’: নবভারত টাইমস",
-      "headlineEn": "Navbharat Times: US State Department Urges India & Bangladesh to Settle Hasina and Bilateral Ties via Direct Dialogue",
-      "timeAgoBn": "৫ মিনিট আগে",
-      "timeAgoEn": "5 mins ago",
-      "sourceName": "Navbharat Times",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://navbharattimes.indiatimes.com/world/bangladesh"
-  },
-  {
-      "id": "alert-080",
-      "headlineBn": "‘কলকাতায় শ্যামাপ্রসাদ মুখোপাধ্যায় ভবনে হাসিনার জন্মদিন উদযাপনে বিশ্বের বিভিন্ন দেশ থেকে যোগ দিলেন প্রবাসীরা’: টাইমস অব ইন্ডিয়া",
-      "headlineEn": "The Times of India: Expatriate Bangladeshis Fly to Kolkata to Mark Sheikh Hasina's Birthday at Syama Prasad Bhavan",
-      "timeAgoBn": "১৫ মিনিট আগে",
-      "timeAgoEn": "15 mins ago",
-      "sourceName": "The Times of India",
-      "sourceBureau": "Delhi",
-      "sentiment": "positive",
-      "url": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-bday-at-syama-home/articleshow/134548855.cms"
-  },
-  {
-      "id": "alert-079",
-      "headlineBn": "‘আগরতলা-আখাউড়া রেলপথে উৎসবের মরসুমে নিয়মিত কনটেইনার ও মালবাহী ট্রেন চলাচলের চূড়ান্ত মহড়া সম্পন্ন’: ত্রিপুরা টাইমস",
-      "headlineEn": "Tripura Times: Agartala-Akhaura International Rail Link Concludes Final Freight Trial for Festive Cargo Transit",
-      "timeAgoBn": "২৫ মিনিট আগে",
-      "timeAgoEn": "25 mins ago",
-      "sourceName": "Tripura Times",
-      "sourceBureau": "Tripura",
-      "sentiment": "positive",
-      "url": "https://tripuratimes.com/"
-  },
-  {
-      "id": "alert-078",
-      "headlineBn": "‘করিমগঞ্জ ও শ্রীভূমি সীমান্তে অনুপ্রবেশ ঠেকাতে আসাম পুলিশ ও বিএসএফের যৌথ কমান্ড সেন্টার কার্যকর’: দ্য আসাম ট্রাইব্যুনাল",
-      "headlineEn": "The Assam Tribune: Assam Police & BSF Activate Joint Border Command Center in Karimganj",
-      "timeAgoBn": "৪০ মিনিট আগে",
-      "timeAgoEn": "40 mins ago",
-      "sourceName": "The Assam Tribune",
-      "sourceBureau": "Assam",
-      "sentiment": "neutral",
-      "url": "https://assamtribune.com/assam/assam-police-bsf-set-up-karimganj-border-coordination-cell-1618580"
-  },
-  {
-      "id": "alert-077",
-      "headlineBn": "‘চ্যাংড়াবান্ধা ও ফুলবাড়িতে রপ্তানি বাণিজ্য সচল রাখতে যৌথ ট্রাক স্ক্যানিং সেল গঠন’: উত্তরবঙ্গ সংবাদ",
-      "headlineEn": "Uttarbanga Sambad: BSF & Customs Operationalize Joint Truck Security Checking Cell at Changrabandha & Fulbari",
-      "timeAgoBn": "১ ঘণ্টা আগে",
-      "timeAgoEn": "1 hour ago",
-      "sourceName": "Uttarbanga Sambad",
-      "sourceBureau": "Siliguri",
-      "sentiment": "positive",
-      "url": "https://uttarbangasambad.com/changrabandha-fulbari-border-joint-truck-checking-cell-activated-20260930/"
-  },
-  {
-      "id": "alert-076",
-      "headlineBn": "‘কলকাতা ও আন্তর্জাতিক পরিসরে শেখ হাসিনার জন্মদিনে নেতাকর্মীদের সংহতি বার্তা’: টাইমস অব ইন্ডিয়া",
-      "headlineEn": "Times of India: Awami League Diaspora & Expatriates Gather in Kolkata on Sheikh Hasina's Birthday",
-      "timeAgoBn": "৫ মিনিট আগে",
-      "timeAgoEn": "5 mins ago",
-      "sourceName": "Times of India",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://timesofindia.indiatimes.com/city/kolkata/10-bdeshis-fly-to-kolkata-from-across-globe-for-hasina-bday-at-syama-home/articleshow/134548855.cms"
-  },
-  {
-      "id": "alert-075",
-      "headlineBn": "‘যুক্তরাষ্ট্রের স্পষ্ট বার্তা: শেখ হাসিনা ও আওয়ামী লীগ ইস্যু ভারত ও বাংলাদেশের দ্বিপাক্ষিক সমঝোতার বিষয়’: নবভারত টাইমস",
-      "headlineEn": "Navbharat Times: US States Hasina and Awami League Transition Is Bilateral Matter Between Dhaka & Delhi",
-      "timeAgoBn": "১৫ মিনিট আগে",
-      "timeAgoEn": "15 mins ago",
-      "sourceName": "Navbharat Times",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://navbharattimes.indiatimes.com/world/america/us-department-of-state-on-sheikh-hasina-dhaka-return-and-india-bangladesh-relations/articleshow/134522449.cms"
-  },
-  {
-      "id": "alert-074",
-      "headlineBn": "‘পূজার মৌসুমে পেট্রাপোল-বেনাপোল সীমান্তে ইলিশ রফতানি ও শুল্ক ক্লিয়ারেন্স প্রক্রিয়া সচল’: নিউজ১৮ বাংলা",
-      "headlineEn": "News18 Bangla: Petrapole-Benapole Customs Step Up Logistics for Festive Season Trade Clearance",
-      "timeAgoBn": "২৫ মিনিট আগে",
-      "timeAgoEn": "25 mins ago",
-      "sourceName": "News18 Bangla",
-      "sourceBureau": "Kolkata",
-      "sentiment": "positive",
-      "url": "https://www.youtube.com/watch?v=0WrRFhIezuc"
-  },
-  {
-      "id": "alert-073",
-      "headlineBn": "‘রূপপুর পারমাণবিক বিদ্যুৎ প্রকল্পের জ্বালানি পরিবহন নিয়ে পাকিস্তানের আকাশসীমা জটিলতা’: আনন্দবাজার পত্রিকা",
-      "headlineEn": "Anandabazar Patrika: Airspace Transit Hurdle in Pakistan for Bangladesh Rooppur Nuclear Fuel Logistics",
-      "timeAgoBn": "৩৫ মিনিট আগে",
-      "timeAgoEn": "35 mins ago",
-      "sourceName": "Anandabazar Patrika",
-      "sourceBureau": "Kolkata",
-      "sentiment": "negative",
-      "url": "https://www.anandabazar.com/world/uranium-required-for-the-nuclear-power-plant-in-bangladesh-faces-airspace-hurdles-in-pakistan-dgtl/cid/1468201"
-  },
-  {
-      "id": "alert-072",
-      "headlineBn": "‘আখাউড়া ও ডাউকি স্থল শুল্ক স্টেশনে পণ্যবাহী ট্রাক পারাপার ও সীমান্ত নিরাপত্তা পর্যালোচনা’: ত্রিপুরা টাইমস",
-      "headlineEn": "Tripura Times: Akhaura & Dawki Land Customs Review Frontier Trade & Security Measures",
-      "timeAgoBn": "৪৫ মিনিট আগে",
-      "timeAgoEn": "45 mins ago",
-      "sourceName": "Tripura Times",
-      "sourceBureau": "Tripura",
-      "sentiment": "positive",
-      "url": "https://tripuratimes.com/"
-  },
-  {
-      "id": "alert-071",
-      "headlineBn": "‘এশিয়ান গেমসে ভারতীয় পুরুষ হকি দল ১০-০ ব্যবধানে বাংলাদেশকে পরাজিত করে সেমিফাইনালে’: অমর উজালা",
-      "headlineEn": "Amar Ujala: Indian Men's Hockey Team Beats Bangladesh 10-0 in Dominant Performance to Reach Semis",
-      "timeAgoBn": "১ ঘণ্টা আগে",
-      "timeAgoEn": "1 hour ago",
-      "sourceName": "Amar Ujala",
-      "sourceBureau": "Delhi",
-      "sentiment": "positive",
-      "url": "https://www.amarujala.com/world"
-  },
-  {
-    "id": "alert-070",
-    "headlineBn": "‘শেখ হাসিনার জন্মদিনে ঢাকায় নেতাকর্মীদের নজরদারির মধ্যে দলীয় পুনর্গঠন বার্তা অব্যাহত’: টাইমস অব ইন্ডিয়া",
-    "headlineEn": "Times of India: Tight Surveillance in Dhaka as Awami League Cadres Receive Rebuilding Message",
-    "timeAgoBn": "৮ মিনিট আগে",
-    "timeAgoEn": "8 mins ago",
-    "sourceName": "Times of India",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia"
-  },
-  {
-    "id": "alert-069",
-    "headlineBn": "‘তিস্তা ও গঙ্গা অববাহিকায় সমন্বিত জলবিজ্ঞান তথ্য বিনিময়ে যৌথ টাস্কফোর্স গঠনের পর্যালোচনা’: দ্য ওয়াল",
-    "headlineEn": "The Wall: Joint Bilateral Taskforce Proposed for Hydrological Data Sharing on Teesta & Ganga",
-    "timeAgoBn": "১৮ মিনিট আগে",
-    "timeAgoEn": "18 mins ago",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://www.thewall.in/bangladesh/bangladesh-seeks-a-new-agreement-on-ganges-water-rather-than-a-renewal-of-the-existing-one-stated-tariqs-water-resources-development-minister/tid/205597"
-  },
-  {
-    "id": "alert-068",
-    "headlineBn": "‘আখাউড়া ও ডাউকি স্থল শুল্ক স্টেশনে দ্বিপাক্ষিক বাণিজ্য ও কাঁচামাল পরিবহন স্বাভাবিক গতিতে সচল’: ত্রিপুরা টাইমস",
-    "headlineEn": "Tripura Times: Akhaura & Dawki Land Customs Stations Maintain Steady Essential Freight Movement",
-    "timeAgoBn": "৩২ মিনিট আগে",
-    "timeAgoEn": "32 mins ago",
-    "sourceName": "Tripura Times",
-    "sourceBureau": "Tripura",
-    "sentiment": "positive",
-    "url": "https://tripuratimes.com/"
-  },
-  {
-    "id": "alert-067",
-    "headlineBn": "‘ডাউকি-তামাবিল ও ডালু সীমান্তে বিএসএফ-কাস্টমসের যৌথ নিরাপত্তা সমন্বয় সভা অনুষ্ঠিত’: দ্য আসাম ট্রাইব্যুনাল",
-    "headlineEn": "The Assam Tribune: BSF & Land Customs Convene Frontier Coordination at Dawki-Tamabil Border",
-    "timeAgoBn": "৪৫ মিনিট আগে",
-    "timeAgoEn": "45 mins ago",
-    "sourceName": "The Assam Tribune",
-    "sourceBureau": "Assam",
-    "sentiment": "neutral",
-    "url": "https://assamtribune.com/"
-  },
-  {
-    "id": "alert-066",
-    "headlineBn": "‘দক্ষিণ এশিয়ায় আঞ্চলিক ভারসাম্য ও অর্থনৈতিক সহযোগিতার স্বার্থে দ্বিপাক্ষিক সম্পর্কের স্থায়িত্ব প্রয়োজন’: সিয়াসত ডেইলি",
-    "headlineEn": "The Siasat Daily: Indo-Bangladesh Ties Vital for Regional Equilibrium and South Asian Stability",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "The Siasat Daily",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.siasat.com/"
-  },
-  {
-    "id": "alert-065",
-    "headlineBn": "‘জাতিসংঘ অধিবেশনের ফাঁকে বাংলাদেশ-ভারত শীর্ষ দ্বিপাক্ষিক আলোচনা ও আঞ্চলিক নিরাপত্তা পর্যালোচনা’: দ্য হিন্দু",
-    "headlineEn": "The Hindu: PM Modi and Muhammad Yunus Hold High-Level Bilateral Talks on Regional Security & Stability",
-    "timeAgoBn": "১০ মিনিট আগে",
-    "timeAgoEn": "10 mins ago",
-    "sourceName": "The Hindu",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.thehindu.com/news/national/pm-modi-mohammad-yunus-meeting-updates/article69411639.ece"
-  },
-  {
-    "id": "alert-064",
-    "headlineBn": "‘আওয়ামী লীগ নেতাকর্মীদের আটকের বিরুদ্ধে আন্তর্জাতিক মহলের হস্তক্ষেপ চেয়ে শেখ হাসিনার বার্তা’: টাইমস অব ইন্ডিয়া",
-    "headlineEn": "Times of India: Sheikh Hasina Urges Global Community to Press for Release of Detained Leaders",
-    "timeAgoBn": "২০ মিনিট আগে",
-    "timeAgoEn": "20 mins ago",
-    "sourceName": "Times of India",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia"
-  },
-  {
-    "id": "alert-063",
-    "headlineBn": "‘১৯৯৬ সালের গঙ্গা জলবণ্টন চুক্তি পর্যালোচনা নিয়ে যৌথ নদী কমিশনের কারিগরি কমিটির প্রাথমিক প্রস্তুতি’: দ্য ওয়াল",
-    "headlineEn": "The Wall: Joint River Commission Prepares Technical Consultations on 1996 Ganga Water Sharing Treaty",
-    "timeAgoBn": "৩৫ মিনিট আগে",
-    "timeAgoEn": "35 mins ago",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://www.thewall.in/"
-  },
-  {
-    "id": "alert-062",
-    "headlineBn": "‘ধুবড়ি সেক্টরে ব্রহ্মপুত্র নদের জলসীমান্তে বিএসএফের হাইটেক নাইট-ভিশন ও স্পিডবোট টহল জোরদার’: দ্য আসাম ট্রাইব্যুনাল",
-    "headlineEn": "The Assam Tribune: BSF Intensifies Riverine Patrols & Sensor Surveillance Along Dhubri Border",
-    "timeAgoBn": "৫০ মিনিট আগে",
-    "timeAgoEn": "50 mins ago",
-    "sourceName": "The Assam Tribune",
-    "sourceBureau": "Assam",
-    "sentiment": "neutral",
-    "url": "https://assamtribune.com/"
-  },
-  {
-    "id": "alert-061",
-    "headlineBn": "‘পুজোয় পদ্মার ইলিশ রফতানি নিয়ে পেট্রাপোল স্থলবন্দরে ক্লিয়ারেন্স ও লজিস্টিকস জোরদার’: নিউজ১৮ ইন্ডিয়া",
-    "headlineEn": "News18: Petrapole Land Port Steps Up Logistics & Customs Clearance for Festive Hilsa Consignments",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "News18",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://www.news18.com/india/hilsa-shock-ahead-of-durga-puja-bangladesh-stops-fish-export-petrapole-border-9062314.html"
-  },
-  {
-      "id": "alert-060",
-      "headlineBn": "‘হাসিনার ৮০তম জন্মদিনে পাশে থাকার বার্তা দেবে ভারতের নাগরিক সমাজ ও বুদ্ধিজীবী মহল’: দ্য ওয়াল",
-      "headlineEn": "The Wall: Indian Civil Society & Scholars to Send Solidarity Messages on Sheikh Hasina's 80th Birthday",
-      "timeAgoBn": "৫ মিনিট আগে",
-      "timeAgoEn": "5 mins ago",
-      "sourceName": "The Wall",
-      "sourceBureau": "Kolkata",
-      "sentiment": "positive",
-      "url": "https://www.thewall.in/"
-  },
-  {
-      "id": "alert-059",
-      "headlineBn": "‘তৃণমূল পর্যায়ে দল পুনর্গঠনে সক্রিয়ভাবে কাজ চালিয়ে যাওয়ার প্রত্যয় ব্যক্ত করলেন শেখ হাসিনা’: এনডিটিভি",
-      "headlineEn": "NDTV Exclusive: 'I Am Actively Working to Rebuild Awami League on Ground' - Sheikh Hasina",
-      "timeAgoBn": "১৫ মিনিট আগে",
-      "timeAgoEn": "15 mins ago",
-      "sourceName": "NDTV",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://www.ndtv.com/world-news/sheikh-hasina-on-reviving-awami-league-party-i-am-actively-working-to-rebuild-it-12081492"
-  },
-  {
-      "id": "alert-058",
-      "headlineBn": "‘শ্রীমন্তপুর স্থল শুল্ক স্টেশনে দ্বিপাক্ষিক পণ্য পরিবহনে ২৪% উল্লম্ফন; সক্রিয় ত্রিপুরা-বাংলাদেশ করিডোর’: ত্রিপুরা টাইমস",
-      "headlineEn": "Tripura Times: Srimantapur LCS Records 24% Surge in Cross-Border Freight Movement with Bangladesh",
-      "timeAgoBn": "২৫ মিনিট আগে",
-      "timeAgoEn": "25 mins ago",
-      "sourceName": "Tripura Times",
-      "sourceBureau": "Tripura",
-      "sentiment": "positive",
-      "url": "https://tripuratimes.com/"
-  },
-  {
-      "id": "alert-057",
-      "headlineBn": "‘ধুবড়ি সেক্টরে ব্রহ্মপুত্র নদের জলসীমান্তে বিএসএফের যৌথ স্পিডবোট ও নাইট-ভিশন টহল জোরদার’: দ্য আসাম ট্রাইব্যুনাল",
-      "headlineEn": "The Assam Tribune: BSF Guwahati Frontier Steps Up Riverine Vigilance along Brahmaputra Sector",
-      "timeAgoBn": "৪০ মিনিট আগে",
-      "timeAgoEn": "40 mins ago",
-      "sourceName": "The Assam Tribune",
-      "sourceBureau": "Assam",
-      "sentiment": "neutral",
-      "url": "https://assamtribune.com/"
-  },
-  {
-      "id": "alert-056",
-      "headlineBn": "‘ফুলবাড়ি ও চ্যাংড়াবান্ধায় ট্রাক চালকদের নিরাপত্তা ও দ্রুত শুল্কায়নে বিএসএফ-কাস্টমসের যৌথ পদক্ষেপ’: উত্তরবঙ্গ সংবাদ",
-      "headlineEn": "Uttarbanga Sambad: BSF & Land Customs Convene Coordination Meeting on Truckers Security at Fulbari & Changrabandha",
-      "timeAgoBn": "১ ঘণ্টা আগে",
-      "timeAgoEn": "1 hour ago",
-      "sourceName": "Uttarbanga Sambad",
-      "sourceBureau": "Siliguri",
-      "sentiment": "positive",
-      "url": "https://uttarbangasambad.com/siliguri-fulbari-changrabandha-border-truckers-security-customs-meeting-20260924/"
-  },
-  {
-      "id": "alert-055",
-      "headlineBn": "‘ভারতে বাংলাদেশের নতুন রাষ্ট্রদূত হিসেবে দায়িত্ব নিতে চলেছেন বিদেশ সচিব আসাদ আলম সিয়াম; সম্মতি দিল দিল্লি’: বিজনেস স্ট্যান্ডার্ড",
-      "headlineEn": "Business Standard: Bangladesh Foreign Secretary Asad Alam Siam Set to Take Over as High Commissioner in Delhi",
-      "timeAgoBn": "৫ মিনিট আগে",
-      "timeAgoEn": "5 mins ago",
-      "sourceName": "Business Standard",
-      "sourceBureau": "Delhi",
-      "sentiment": "positive",
-      "url": "https://www.business-standard.com/world-news/bangladesh-foreign-secretary-asad-siam-set-to-be-new-envoy-to-india-126092300018_1.html"
-  },
-  {
-      "id": "alert-054",
-      "headlineBn": "‘কখন নয়, প্রশ্ন হলো কীভাবে: ডিসেম্বরেই বাংলাদেশে ফেরার প্রত্যয় পুনর্ব্যক্ত করে আইনি লড়াইয়ের প্রস্তুতি হাসিনার’: ইন্ডিয়ান এক্সপ্রেস",
-      "headlineEn": "The Indian Express: Sheikh Hasina Vows Return by December, Prepared to Confront Judicial Process and Defense",
-      "timeAgoBn": "১৫ মিনিট আগে",
-      "timeAgoEn": "15 mins ago",
-      "sourceName": "The Indian Express",
-      "sourceBureau": "Delhi",
-      "sentiment": "neutral",
-      "url": "https://indianexpress.com/article/world/sheikh-hasina-dhaka-return-international-crimes-tribunal-verdict-bangladesh-interview-10890775/"
-  },
-  {
-      "id": "alert-053",
-      "headlineBn": "‘বাংলাদেশে সন্ত্রাসবিরোধী অভিযানে ফের গ্রেপ্তার আওয়ামী লীগ নেতা; সীমান্তবর্তী এলাকায় বাড়তি নজরদারি’: দ্য আসাম ট্রাইব্যুনাল",
-      "headlineEn": "The Assam Tribune: Another Awami League Leader Arrested in Bangladesh Anti-Terror Sweep as Crackdown Expands",
-      "timeAgoBn": "২৫ মিনিট আগে",
-      "timeAgoEn": "25 mins ago",
-      "sourceName": "The Assam Tribune",
-      "sourceBureau": "Assam",
-      "sentiment": "negative",
-      "url": "https://assamtribune.com/national/another-awami-league-leader-arrested-in-bangladesh-anti-terror-case-1618264"
-  },
-  {
-      "id": "alert-052",
-      "headlineBn": "‘রাতে কাঁটাতার পেরিয়ে অনুপ্রবেশের চেষ্টা রুখে দিল বিএসএফ ও পুলিশ; সীমান্ত থেকে ধৃত ৩’: সংবাদ প্রতিদিন",
-      "headlineEn": "Sangbad Pratidin: BSF & State Police Foil Nighttime Cross-Border Infiltration Attempt, 3 Apprehended",
-      "timeAgoBn": "৪০ মিনিট আগে",
-      "timeAgoEn": "40 mins ago",
-      "sourceName": "Sangbad Pratidin",
-      "sourceBureau": "Kolkata",
-      "sentiment": "neutral",
-      "url": "https://www.sangbadpratidin.in/app/bengal/3-arrested-for-entering-india-border-from-bangladesh-at-night/pid/1351053/"
-  },
-  {
-      "id": "alert-051",
-      "headlineBn": "‘বিদ্যুৎ সঞ্চালন ব্যবস্থা আধুনিকীকরণ ও আঞ্চলিক গ্রিড সুরক্ষায় বাংলাদেশকে ২০০ মিলিয়ন ডলার ঋণ দিচ্ছে এডিবি’: ইন্ডিয়া টুডে",
-      "headlineEn": "India Today: ADB Approves $200M Financing Package to Strengthen Bangladesh Power Grid & Regional Connectivity",
-      "timeAgoBn": "১ ঘণ্টা আগে",
-      "timeAgoEn": "1 hour ago",
-      "sourceName": "India Today",
-      "sourceBureau": "Delhi",
-      "sentiment": "positive",
-      "url": "https://www.youtube.com/watch?v=M5GBon_Ki6s"
-  },
-  {
-    "id": "alert-050",
-    "headlineBn": "‘আওয়ামী লীগের পুনরুজ্জীবনের লক্ষ্যে নেতাকর্মীদের আইনি সুরক্ষা নিশ্চিতের আহ্বান হাসিনার’: আনন্দবাজার পত্রিকা",
-    "headlineEn": "Anandabazar Patrika: Sheikh Hasina Urges Legal Safeguards for Party Cadres to Rebuild Awami League on Ground",
-    "timeAgoBn": "৫ মিনিট আগে",
-    "timeAgoEn": "5 mins ago",
-    "sourceName": "Anandabazar Patrika",
-    "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://www.anandabazar.com/world/sheikh-hasina-said-she-is-prepared-to-face-imprisonment-in-bangladesh-dgtl/cid/1714796"
-  },
-  {
-    "id": "alert-049",
-    "headlineBn": "‘আগরতলা-ঢাকা-কলকাতা সরাসরি যাত্রীবাহী বাস চলাচল পুনরায় শুরু হওয়ায় স্বাগত জানালেন ত্রিপুরার মুখ্যমন্ত্রী’: ত্রিপুরা টাইমস",
-    "headlineEn": "Tripura Times: Tripura CM Welcomes Resumption of Agartala-Dhaka-Kolkata International Bus Transit",
-    "timeAgoBn": "১৫ মিনিট আগে",
-    "timeAgoEn": "15 mins ago",
-    "sourceName": "Tripura Times",
-    "sourceBureau": "Tripura",
-    "sentiment": "positive",
-    "url": "https://www.ntnews.com/international/sheikh-hasina-says-she-wants-to-return-to-bangladesh-question-is-not-when-but-how-2517198"
-  },
-  {
-    "id": "alert-048",
-    "headlineBn": "‘ফল কূটনীতি: বাংলাদেশে ৬০০টি উন্নত জাতের কুইন আনারস উপহার পাঠাল ত্রিপুরা উদ্যানপালন দপ্তর’: ত্রিপুরা টাইমস",
-    "headlineEn": "Tripura Times: Fruit Diplomacy - Tripura Dispatches 600 Queen Pineapples Consignment as Goodwill Gift to Bangladesh",
-    "timeAgoBn": "২৫ মিনিট আগে",
-    "timeAgoEn": "25 mins ago",
-    "sourceName": "Tripura Times",
-    "sourceBureau": "Tripura",
-    "sentiment": "positive",
-    "url": "https://tripuratimes.com/"
-  },
-  {
-    "id": "alert-047",
-    "headlineBn": "‘ঢাকার আইসিটি ট্রাইব্যুনাল কর্তৃক ৭ নেতার মৃত্যুদণ্ডকে একপাক্ষিক দাবি করে প্রত্যাখ্যান আওয়ামী লীগের’: দ্য আসাম ট্রাইব্যুনাল",
-    "headlineEn": "The Assam Tribune: Awami League Rejects ICT Death Sentences for 7 Party Leaders as One-Sided & Fabricated",
-    "timeAgoBn": "৫ মিনিট আগে",
-    "timeAgoEn": "5 mins ago",
-    "sourceName": "The Assam Tribune",
-    "sourceBureau": "Assam",
     "sentiment": "negative",
-    "url": "https://assamtribune.com/"
-  },
-  {
-    "id": "alert-046",
-    "headlineBn": "‘পেট্রাপোল স্থলবন্দরে পচনশীল রপ্তানি পণ্যের দ্রুত খালাসে কাস্টমস ও বিএসএফের বিশেষ গ্রিন চ্যানেল চালু’: সংবাদ প্রতিদিন",
-    "headlineEn": "Sangbad Pratidin: Petrapole ICP Launches Green-Channel Freight Clearance for Perishable Export Cargo",
-    "timeAgoBn": "২০ মিনিট আগে",
-    "timeAgoEn": "20 mins ago",
-    "sourceName": "Sangbad Pratidin",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://sangbadpratidin.in/bengal/petrapole-benapole-icp-green-channel-freight-clearance-20260922"
-  },
-  {
-    "id": "alert-045",
-    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা; জাতীয় স্বার্থ রক্ষায় কঠোর বার্তা ভারতের’: জি নিউজ",
-    "headlineEn": "Zee News: 'India Will Protect Core Interests' - Delhi Responds as Bangladesh Reviews 101 Hasina-Era Accords",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Zee News World",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html"
-  },
-  {
-    "id": "alert-044",
-    "headlineBn": "‘হাসিনা কাঁটার মধ্যেও দ্বিপাক্ষিক বাণিজ্যে গতি ফেরাতে ভারত-বাংলাদেশ যৌথ টাস্কফোর্স গঠনের উদ্যোগ’: সংবাদ প্রতিদিন",
-    "headlineEn": "Sangbad Pratidin: India-Bangladesh Joint Task Force Proposed to Expedite Cross-Border Freight & Trade",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "Sangbad Pratidin",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://www.sangbadpratidin.in/bangladesh/india-and-bangladesh-to-set-up-joint-task-force-to-promote-bilateral-trade/pid/1349789/"
-  },
-  {
-    "id": "alert-043",
-    "headlineBn": "‘বাংলাদেশকে পাকিস্তানের সমান্তরাল ভাবা ভারতের কৌশলগত স্বার্থের জন্য ক্ষতিকর’: দ্যপ্রিন্ট ভিডিও বিশ্লেষণ",
-    "headlineEn": "ThePrint Video: 'Treating Bangladesh as Pakistan Mirror Image Undermines India Strategic Interests'",
-    "timeAgoBn": "ভিডিও বিশ্লেষণ",
-    "timeAgoEn": "Video Dispatch",
-    "sourceName": "ThePrint (YouTube)",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.youtube.com/watch?v=RLmWH0186pY"
-  },
-  {
-    "id": "alert-042",
-    "headlineBn": "‘গেদে ও পেট্রাপোল সীমান্তে অবৈধ অনুপ্রবেশ রুখতে কৃত্রিম বুদ্ধিমত্তা ও থার্মাল ক্যামেরা মোতায়েন’: টিভি৯ বাংলা",
-    "headlineEn": "TV9 Bangla: AI Thermal Scanners & Motion Cameras Deployed at Petrapole & Gede Crossings to Deter Infiltration",
-    "timeAgoBn": "২ ঘণ্টা আগে",
-    "timeAgoEn": "2 hours ago",
-    "sourceName": "TV9 Bangla",
-    "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia"
-  },
-  {
-    "id": "alert-041",
-    "headlineBn": "‘ত্রিপুরা-কুমিল্লা সীমান্তে বিএসএফের নজরদারি জোরদার ও আখাউড়া চেকপোস্টে বিশেষ তল্লাশি’: স্যন্দন পত্রিকা",
-    "headlineEn": "Syandan Patrika: BSF Heightens Border Vigilance & Inspection Along Tripura-Comilla Sector",
-    "timeAgoBn": "আজ ভোরে",
-    "timeAgoEn": "Early morning",
-    "sourceName": "Syandan Patrika",
-    "sourceBureau": "Tripura",
-    "sentiment": "neutral",
-    "url": "https://www.instagram.com/p/DdgToa0FYvJ/"
-  },
-  {
-    "id": "alert-040",
-    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে ঢাকা; প্রতিক্রিয়া জানিয়ে ভারতের কড়া বার্তা’: জি নিউজ",
-    "headlineEn": "Zee News: 'India Will Take All Necessary Measures' - Delhi Responds as Bangladesh Reviews 101 Hasina-Era Accords",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Zee News World",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html"
-  },
-  {
-    "id": "alert-039",
-    "headlineBn": "‘এশিয়ান গেমসে শেফালির বিধ্বংসী সেঞ্চুরি, বাংলাদেশকে ১১৪ রানে হারিয়ে ফাইনালে ভারত’: দ্য টেলিগ্রাফ",
-    "headlineEn": "Telegraph India: Shafali Verma's Maiden T20I Ton Powers India Past Bangladesh into Asian Games Final",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "Telegraph India",
-    "sourceBureau": "Mumbai",
-    "sentiment": "positive",
-    "url": "https://www.youtube.com/watch?v=6Ef5W_3Dkt8"
-  },
-  {
-    "id": "alert-038",
-    "headlineBn": "‘ভারত-বাংলাদেশ বাণিজ্য গতিশীল করতে যৌথ টাস্কফোর্স ও দৈনিক ৫ হাজার ভিসা ছাড়পত্রের উদ্যোগ’: অমর উজালা",
-    "headlineEn": "Amar Ujala: India & Bangladesh Form Joint Task Force to Expedite Bilateral Trade and Resume 5,000 Daily Visas",
-    "timeAgoBn": "২ ঘণ্টা আগে",
-    "timeAgoEn": "2 hours ago",
-    "sourceName": "Amar Ujala",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.instagram.com/p/Dde_z34SBGu/"
-  },
-  {
-    "id": "alert-037",
-    "headlineBn": "‘ট্রেনের নিচে লুকিয়ে সীমান্ত পারাপার রুখতে গেদে ও পেট্রাপোল চেকপোস্টে এআই ক্যামেরা মোতায়েন’: টিভি৯ বাংলা",
-    "headlineEn": "TV9 Bangla: AI Motion Cameras and Scanners Deployed at Petrapole & Gede Crossings to Deter Freight Infiltration",
-    "timeAgoBn": "আজ ভোরে",
-    "timeAgoEn": "Early morning",
-    "sourceName": "TV9 Bangla",
-    "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/world/south-asia"
-  },
-  {
-    "id": "alert-036",
-    "headlineBn": "‘শারদীয় উৎসব ঘিরে ভারতে ৫০০ টন ইলিশ রপ্তানির বিশেষ অনুমতি দিল বাংলাদেশ’: আজ তক ভিডিও রিপোর্ট",
-    "headlineEn": "Aaj Tak Video: Bangladesh Clears 500 Metric Tonnes of Hilsa Fish Exports to India Ahead of Festive Season",
-    "timeAgoBn": "ভিডিও রিপোর্ট",
-    "timeAgoEn": "Video Dispatch",
-    "sourceName": "Aaj Tak (YouTube)",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.youtube.com/watch?v=DDMym5YRp6Y"
-  },
-  {
-    "id": "alert-035",
-    "headlineBn": "‘হু-এর দক্ষিণ-পূর্ব এশিয়া আঞ্চলিক পরিচালকের পদ থেকে পদত্যাগের নেপথ্যে রাজনৈতিক চাপ ও অনিয়ম ছিল’: ইনস্টাগ্রাম পোস্টে সায়মা ওয়াজেদ",
-    "headlineEn": "Firstpost Instagram: Saima Wazed Cites Political Pressure and Violation of Due Process Behind WHO Regional Directorship Exit",
-    "timeAgoBn": "১ ঘণ্টা আগে",
-    "timeAgoEn": "1 hour ago",
-    "sourceName": "Firstpost (Instagram)",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.instagram.com/p/Ddf2gIwm9nI/"
-  },
-  {
-    "id": "alert-034",
-    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনায় দিল্লির কড়া বার্তা: নিজেদের জাতীয় স্বার্থ সুরক্ষিত রাখবে ভারত’: জি নিউজ",
-    "headlineEn": "Zee News: 'India Will Take All Steps to Protect National Interests' - Delhi Responds to Bangladesh Reviewing 101 Hasina-Era Deals",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Zee News World",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://zeenews.india.com/world/bangladesh-reviews-101-india-deals-chattogram-mongla-ports-mea-response-3072451.html"
-  },
-  {
-    "id": "alert-033",
-    "headlineBn": "‘বাংলাদেশকে পাকিস্তানের সমান্তরাল ভাবা ভারতের কৌশলগত স্বার্থের জন্য ক্ষতিকর’: দ্যপ্রিন্ট ভিডিও বিশ্লেষণ",
-    "headlineEn": "ThePrint Video Dispatch: 'Treating Bangladesh as Pakistan's Mirror Image Undermines India's Strategic Interests'",
-    "timeAgoBn": "ভিডিও বিশ্লেষণ",
-    "timeAgoEn": "Video Dispatch",
-    "sourceName": "ThePrint (YouTube)",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.youtube.com/watch?v=RLmWH0186pY"
-  },
-  {
-    "id": "alert-032",
-    "headlineBn": "‘হাসিনা আমলের অস্বস্তিকর সম্পর্ক অতীত, ভারতের সাথে নতুন করে কূটনৈতিক সমীকরণ গড়তে চায় ঢাকা’: হিন্দুস্তান টাইমস",
-    "headlineEn": "Hindustan Times: Bangladesh Wants to 'Reset' Ties With India, Calling Hasina-Era Relationship 'Uncomfortable'",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Hindustan Times",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.hindustantimes.com/india-news/bangladesh-says-wants-to-reset-ties-with-india-calls-sheikh-hasina-era-relationship-uncomfortable-101789317654247.html"
-  },
-  {
-    "id": "alert-031",
-    "headlineBn": "‘হাসিনা বিতর্ক সত্ত্বেও বাংলাদেশের সঙ্গে স্বাভাবিক দ্বিপাক্ষিক সম্পর্কের পথ উন্মুক্ত রেখেছে ভারত’: এনডিটিভি",
-    "headlineEn": "NDTV: India Keeps Door Open for Normalisation of Bangladesh Ties Despite Ongoing Hasina Extradition Row",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "NDTV",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.ndtv.com/world-news/india-keeps-door-open-for-normalisation-of-bangladesh-ties-despite-sheikh-hasina-row-12042361"
-  },
-  {
-    "id": "alert-030",
-    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতের কড়া বার্তা: নিজেদের স্বার্থ রক্ষায় যেকোনো পদক্ষেপ নেবে দিল্লি’: টাইমস অব ইন্ডিয়া",
-    "headlineEn": "The Times of India: 'Will Take All Necessary Actions' - India Issues Stern Warning Amid Bangladesh Reviewing 101 Hasina-Era Pacts",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "The Times of India",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://timesofindia.indiatimes.com/india/will-take-all-necessary-actions-indias-stern-warning-amid-reports-of-bangladesh-reviewing-101-bilateral-pacts/articleshow/134336066.cms"
-  },
-  {
-    "id": "alert-029",
-    "headlineBn": "‘হাসিনাকে ভারতে আশ্রয় দেওয়া সত্ত্বেও নভেম্বর বা ডিসেম্বরে তারেক রহমানের দিল্লি সফরের জোরালো সম্ভাবনা’: নিউজ১৮",
-    "headlineEn": "News18: Bangladesh Leadership Explores Diplomatic Reset with Delhi Visit in Late 2026 Despite Hasina Exile Factor",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "News18",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.news18.com/india/bangladesh-pm-tarique-rahman-may-visit-india-in-november-or-early-december-sources-ws-klt-10338395.html"
-  },
-  {
-    "id": "alert-028",
-    "headlineBn": "‘ভারত-বাংলাদেশ দ্বিপাক্ষিক চুক্তি বাতিল হবে না, উভয় দেশের স্বার্থ রক্ষা ও কার্যকারিতাই মূল লক্ষ্য’: দৈনিক জাগরণ",
-    "headlineEn": "Dainik Jagran: India-Bangladesh Treaties Will Not Be Scrapped, Focus on Mutual Benefit and Reciprocal Economic Continuity",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Dainik Jagran",
-    "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://www.jagran.com/world/other-bangladesh-no-plan-to-cancel-101-india-agreements-40378781.html"
-  },
-  {
-    "id": "alert-027",
-    "headlineBn": "‘হাসিনা আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পর্যালোচনার নেপথ্য কারণ স্পষ্ট করলেন তারেক রহমানের উপদেষ্টা’: নবভারত টাইমস",
-    "headlineEn": "Navbharat Times: Tarique Rahman's Aide Explains Real Intent Behind Review of 101 Hasina-Era Bilateral Accords",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "Navbharat Times",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://navbharattimes.indiatimes.com/world/bangladesh/bangladesh-tarique-rahman-govt-review-101-agreements-and-mou-with-india-know-reason/articleshow/134348680.cms"
-  },
-  {
-    "id": "alert-026",
-    "headlineBn": "‘হাসিনার দেশে ফেরার ঘোষণায় ঢাকায় মিছিল ও ব্যাপক ধরপাকড়, ৫০০-র বেশি গ্রেপ্তার’: কলকাতার সংবাদ প্রতিদিন",
-    "headlineEn": "Sangbad Pratidin: Hasina's Return Announcement Energizes Awami League, Over 500 Arrested in Dhaka Protests",
-    "timeAgoBn": "এই মাত্র",
-    "timeAgoEn": "Just now",
-    "sourceName": "Sangbad Pratidin",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://www.sangbadpratidin.in/bangladesh/awami-league-energized-by-hasinas-announcement-of-return-515-arrested/pid/1347323/"
-  },
-  {
-    "id": "alert-025",
-    "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার পদক্ষেপে ভারতীয় পররাষ্ট্র মন্ত্রণালয়ের সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
-    "headlineEn": "The Indian Express: India's MEA Closely Monitoring Dhaka's Move to Review 101 Bilateral Accords",
-    "timeAgoBn": "আজ ভোরে",
-    "timeAgoEn": "Early morning",
-    "sourceName": "The Indian Express",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.instagram.com/p/DdbwIztD34Y/"
-  },
-  {
-    "id": "alert-024",
-    "headlineBn": "‘পাল্টা সমাবেশের ডাক দিয়ে সংঘাতের পথে বিএনপি, উত্তপ্ত ঢাকা’: বর্তমান পত্রিকার বিশেষ প্রতিবেদন",
-    "headlineEn": "Bartaman Patrika: High Alert in Dhaka as BNP Calls Counter-Rallies Amid Awami League Demonstrations",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "Bartaman Patrika",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://sports.ndtv.com/asian-games-2026/india-vs-bangladesh-asian-games-womens-cricket-semifinal-preview-6582910"
-  },
-  {
-    "id": "alert-023",
-    "headlineBn": "‘ডিসেম্বর পর্যন্ত ধারাবাহিক রাজনৈতিক খসড়া অনুমোদন’: দ্য ওয়াল-এর এক্সক্লুসিভ দিল্লি রিপোর্ট",
-    "headlineEn": "The Wall Exclusive: Sheikh Hasina Chairs High-Level Delhi Consultation on Party Roadmap Through December",
-    "timeAgoBn": "আজ দুপুরে",
-    "timeAgoEn": "This afternoon",
-    "sourceName": "The Wall",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://syandanpatrika.com/"
-  },
-  {
-    "id": "alert-022",
-    "headlineBn": "‘তারেক রহমানের প্রস্তাবিত ভারত সফর ও হাসিনাকে নিয়ে দ্বিপাক্ষিক সমীকরণ’: নবভারত টাইমসের খবর",
-    "headlineEn": "Navbharat Times Report on Tarique Rahman's Planned India Visit and Bilateral Reset",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "Navbharat Times",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms"
-  },
-  {
-    "id": "alert-021",
-    "headlineBn": "‘১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন নিয়ে ঢাকার খবর ভারতীয় পররাষ্ট্র মন্ত্রণালয় কর্তৃক সতর্ক পর্যবেক্ষণ’: ইন্ডিয়ান এক্সপ্রেস",
-    "headlineEn": "Indian Express: India's MEA Closely Watching Reports of Bangladesh Reviewing 101 Bilateral Deals",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "The Indian Express",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://indianexpress.com/section/world/"
-  },
-  {
-    "id": "alert-020",
-    "headlineBn": "‘তারেক রহমানের দিল্লি সফর ও দ্বিপাক্ষিক সম্পর্ক পুনর্গঠন নিয়ে পর্যালোচনা’: নবভারত টাইমসের বিশেষ সংবাদ",
-    "headlineEn": "Navbharat Times report on BNP leadership's potential Delhi visit and India-Bangladesh diplomatic reset",
-    "timeAgoBn": "আজ বিকেলে",
-    "timeAgoEn": "This afternoon",
-    "sourceName": "Navbharat Times",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://navbharattimes.indiatimes.com/india/bangladesh-pm-tarique-rahman-india-visit-on-november-or-december-2026/articleshow/134330066.cms"
-  },
-  {
-    "id": "alert-019",
-    "headlineBn": "‘বিজয়ের মাসের আগেই শেখ হাসিনার স্বদেশ প্রত্যাবর্তন চর্চা’: কলকাতা সংবাদ প্রতিদিনের বিশেষ এক্সক্লুসিভ রিপোর্ট",
-    "headlineEn": "Sangbad Pratidin report on political strategy and discussions surrounding Hasina's exile return",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "Sangbad Pratidin",
-    "sourceBureau": "Kolkata",
-    "sentiment": "negative",
-    "url": "https://www.sangbadpratidin.in/app/bangladesh/sheikh-hasina-wants-to-return-to-bangladesh-on-december-14/pid/1343530/"
-  },
-  {
-    "id": "alert-018",
-    "headlineBn": "‘আওয়ামী লীগ আমলে স্বাক্ষরিত ১০১টি দ্বিপাক্ষিক চুক্তি পুনর্মূল্যায়ন করছে অন্তর্বর্তী সরকার’: দ্য ইন্ডিয়ান এক্সপ্রেসের বিশেষ সংবাদ",
-    "headlineEn": "Bangladesh reviewing 101 agreements signed with India during Sheikh Hasina tenure: Indian Express",
-    "timeAgoBn": "আজ সকালে",
-    "timeAgoEn": "This morning",
-    "sourceName": "The Indian Express",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://indianexpress.com/section/world/"
-  },
-  {
-    "id": "alert-017",
-    "headlineBn": "‘শেখ হাসিনাকে আশ্রয় দেওয়া নিয়ে টানাপোড়েন ও দ্বিপাক্ষিক কূটনীতিতে নতুন চাপ’: এনডিটিভির বিশেষ বিশ্লেষণ",
-    "headlineEn": "Tensions mount over Sheikh Hasina's exile in India as Bangladesh calls for extradition: NDTV Report",
-    "timeAgoBn": "আজ দুপুরে",
-    "timeAgoEn": "This afternoon",
-    "sourceName": "NDTV World",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.ndtv.com/world-news"
+    "url": "https://www.thehindu.com/news/cities/Hyderabad/gold-smuggled-from-bangladesh-seized-near-vijayawada-five-arrested/article71606668.ece"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20261021-001",
+    "slug": "newsx-sheikh-hasina-vows-return-december-live",
+    "title": "Sheikh Hasina LIVE: ‘I Am Not Afraid’, Vows To Return To Bangladesh In December | NewsX",
+    "englishTitle": "NewsX Live: ‘I Am Not Afraid’, Sheikh Hasina Vows to Return to Bangladesh in December",
+    "banglaTitle": "‘আমি কাউকে ভয় পাই না, ডিসেম্বরেই বাংলাদেশে ফিরব’: ভারতে বসে শেখ হাসিনার সরাসরি বার্তা, নিউজএক্স লাইভ",
+    "summaryBn": "ভারতের মাটি থেকে এক বিশেষ লাইভ সম্প্রচারে সাবেক প্রধানমন্ত্রী শেখ হাসিনা দৃঢ় কণ্ঠে ঘোষণা করেছেন যে গ্রেপ্তার বা রাজনৈতিক প্রতিহিংসার ঝুঁকি সত্ত্বেও তিনি আগামী ডিসেম্বরেই বাংলাদেশে ফিরতে প্রস্তুত। নিউজএক্সের বিশেষ বিশ্লেষণে দিল্লির কূটনৈতিক মহল ও ঢাকার অন্তর্বর্তী প্রশাসনের সম্ভাব্য প্রতিক্রিয়া তুলে ধরা হয়েছে।",
+    "summaryEn": "In a special live broadcast carried by Indian news channel NewsX, former Bangladesh Prime Minister Sheikh Hasina declared that she is not afraid of risks or retribution and is prepared to return to Bangladesh in December. The report assesses political ripples in Dhaka and diplomatic calculations in New Delhi.",
+    "keyPointsBn": [
+      "ডিসেম্বরেই বাংলাদেশে প্রত্যাবর্তনের দৃঢ় অঙ্গীকার পুনর্ব্যক্ত করলেন শেখ হাসিনা",
+      "রাজনৈতিক বন্দিশালা বা আইনি হুমকিকে তোয়াক্কা না করার স্পষ্ট বার্তা",
+      "ভারতের কূটনৈতিক ও আঞ্চলিক মহলে এই ঘোষণার সুদূরপ্রসারী তাৎপর্য"
+    ],
+    "keyPointsEn": [
+      "Sheikh Hasina reaffirmed her resolve to return to Bangladesh in December",
+      "Dismissed threats of arrest and persecution as political intimidation",
+      "Indian strategic observers analyze ramifications for cross-border dynamics"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাবেক প্রধানমন্ত্রীর রাজনৈতিক প্রত্যাবর্তন সংক্রান্ত লাইভ বার্তা ও আঞ্চলিক প্রতিক্রিয়া নিয়ে ভারতীয় গণমাধ্যমের বিশ্লেষণ।",
+    "sentimentReasonEn": "Objective Indian broadcast report analyzing political statements regarding repatriation and governance.",
+    "source": {
+      "name": "NewsX",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=TlxjU2A8xUc",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-21T12:00:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "https://i.ytimg.com/vi/TlxjU2A8xUc/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "শেখ হাসিনা",
+      "নিউজএক্স",
+      "রাজনীতি",
+      "ডিসেম্বর",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261021-002",
+    "slug": "indian-express-tarique-rahman-durga-puja-equal-rights",
+    "title": "Bangladesh PM Tarique Rahman visits Puja pandals, vows to ensure equal rights for people of all religions - The Indian Express",
+    "englishTitle": "The Indian Express: Bangladesh PM Tarique Rahman Visits Puja Pandals, Vows Equal Rights for All Religions",
+    "banglaTitle": "‘সব ধর্মের মানুষের সমান অধিকার নিশ্চিত করব’: দুর্গাপূজার মণ্ডপ পরিদর্শনে গিয়ে তারেক রহমানের বার্তা, দ্য ইন্ডিয়ান এক্সপ্রেসের রিপোর্ট",
+    "summaryBn": "শারদীয় দুর্গাপূজা উপলক্ষে বাংলাদেশের বিভিন্ন মণ্ডপ পরিদর্শনে গিয়ে সব সম্প্রদায়ের সমান অধিকার ও নিরাপত্তা নিশ্চিত করার প্রতিশ্রুতি দিয়েছেন বিএনপির শীর্ষ নেতা তারেক রহমান। দ্য ইন্ডিয়ান এক্সপ্রেসের প্রতিবেদনে উল্লেখ করা হয়েছে, সীমান্তপারের সম্প্রীতির বার্তা ও ধর্মীয় সংখ্যালঘুদের আস্থা অর্জনে এই পদক্ষেপকে কীভাবে দেখছেন বিশ্লেষকরা।",
+    "summaryEn": "The Indian Express reported on BNP acting chairman Tarique Rahman visiting Durga Puja pavilions across Bangladesh, pledging strict security and constitutionally guaranteed equal rights for minority communities amid recent communal concerns.",
+    "keyPointsBn": [
+      "দুর্গাপূজা মণ্ডপে গিয়ে সংখ্যালঘুদের নিরাপত্তা ও সমান অধিকারের অঙ্গীকার",
+      "সীমান্তপারে সংখ্যালঘু নিরাপত্তা নিয়ে দিল্লির উদ্বেগের মধ্যে এই সফর তাৎপর্যপূর্ণ",
+      "সাম্প্রদায়িক সম্প্রীতি রক্ষায় দল ও প্রশাসনের ভূমিকার আশ্বাস"
+    ],
+    "keyPointsEn": [
+      "Pledged state protection and constitutional equality during festival visits",
+      "Significant gesture amid ongoing minority security concerns voiced in New Delhi",
+      "Stressed communal amity and social cohesion across districts"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সমাজ",
+    "categoryLabelEn": "Culture & Society",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ধর্মীয় সংখ্যালঘু সুরক্ষা ও উৎসবের সম্প্রীতি নিয়ে ইতিবাচক পদক্ষেপের পর্যালোচনা।",
+    "sentimentReasonEn": "Constructive reportage highlighting interfaith solidarity and festival protections.",
+    "source": {
+      "name": "The Indian Express",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://indianexpress.com/article/world/tarique-rahman-durga-puja-bangladesh-equal-rights-10930040/",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-21T06:30:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isTrending": true,
+    "tags": [
+      "তারেক রহমান",
+      "দুর্গাপূজা",
+      "ইন্ডিয়ান এক্সপ্রেস",
+      "সংখ্যালঘু সুরক্ষা",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261021-003",
+    "slug": "the-hindu-gold-smuggled-bangladesh-seized-vijayawada",
+    "title": "Gold smuggled from Bangladesh seized near Vijayawada; five arrested - The Hindu",
+    "englishTitle": "The Hindu: Gold Smuggled from Bangladesh Seized Near Vijayawada, Five Arrested in Inter-State Crackdown",
+    "banglaTitle": "বাংলাদেশ সীমান্ত দিয়ে পাচার হওয়া বিপুল সোনা বিজয়ওয়াড়ার কাছে জব্দ, পাঁচজন গ্রেপ্তার: দ্য হিন্দু",
+    "summaryBn": "বাংলাদেশ সীমান্ত দিয়ে অবৈধভাবে ভারতে পাচার করা বিপুল পরিমাণ স্বর্ণ অন্ধ্রপ্রদেশের বিজয়ওয়াড়ায় জব্দ করেছে রাজস্ব গোয়েন্দা সংস্থা। দ্য হিন্দুর বিশদ প্রতিবেদনে বলা হয়েছে, আন্তর্জাতিক সীমান্ত চোরাচালান চক্রটির সংযোগ পশ্চিমবঙ্গ থেকে দক্ষিণ ভারত পর্যন্ত বিস্তৃত ছিল এবং কেন্দ্রীয় সংস্থাগুলো এই চক্রের আর্থিক উৎস খতিয়ে দেখছে।",
+    "summaryEn": "The Hindu reported that enforcement authorities seized contraband gold smuggled across the India-Bangladesh border near Vijayawada, arresting five operatives linked to an inter-state syndicate operating from the eastern corridor into southern markets.",
+    "keyPointsBn": [
+      "বাংলাদেশ সীমান্ত থেকে আসা কোটি টাকার পাচারকৃত সোনা উদ্ধার",
+      "আন্তর্জাতিক ও আন্তঃরাজ্য চোরাচালান চক্রের পাঁচ সদস্য গ্রেপ্তার",
+      "পূর্ব সীমান্ত দিয়ে শুল্ক ফাঁকি ও আর্থিক অপরাধ নিয়ন্ত্রণে কঠোর নজরদারি"
+    ],
+    "keyPointsEn": [
+      "Revenue intelligence intercepted major bullion shipment from Bangladesh border",
+      "Arrested five operatives running an inter-state illicit transit network",
+      "Highlights tightened customs vigilance along eastern border transit points"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "সীমান্ত ও বাণিজ্য",
+    "categoryLabelEn": "Border & Trade Enforcement",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তপথে অবৈধ সোনা পাচার ও আন্তঃরাজ্য অপরাধ চক্র উন্মোচন সংক্রান্ত প্রতিবেদন।",
+    "sentimentReasonEn": "Coverage focusing on cross-border illicit smuggling networks and law enforcement action.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/cities/Hyderabad/gold-smuggled-from-bangladesh-seized-near-vijayawada-five-arrested/article71606668.ece",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-21T08:30:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "সোনা পাচার",
+      "দ্য হিন্দু",
+      "সীমান্ত বাণিজ্য",
+      "চোরাচালান",
+      "ভারত-বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261020-001",
+    "slug": "toi-bangladesh-pm-tarique-rahman-warns-unrest-bid",
+    "title": "Bangladesh PM Tarique Rahman warns of unrest bid by ‘2 united parties’ - The Times of India",
+    "englishTitle": "The Times of India: Bangladesh PM Tarique Rahman Warns of Coordinated Unrest Bid by '2 United Parties'",
+    "banglaTitle": "‘দুই দলের আঁতাত দেশে অস্থিরতা সৃষ্টির চক্রান্ত করছে’: তারেক রহমানের সতর্কবার্তা নিয়ে টাইমস অব ইন্ডিয়ার প্রতিবেদন",
+    "summaryBn": "বাংলাদেশে আইন-শৃঙ্খলা পরিস্থিতি অস্থিতিশীল করতে দুটি রাজনৈতিক দল একযোগে চক্রান্ত চালাচ্ছে বলে হুঁশিয়ারি দিয়েছেন তারেক রহমান। দ্য টাইমস অব ইন্ডিয়া তাদের আন্তর্জাতিক পাতায় বিস্তারিত তুলে ধরেছে কীভাবে ঢাকার অভ্যন্তরীণ ক্ষমতা ভাগাভাগি ও ইসলামপন্থী দলগুলোর সাথে বোঝাপড়া এক জটিল রাজনৈতিক সমীকরণ তৈরি করেছে।",
+    "summaryEn": "The Times of India reported on warnings issued by Tarique Rahman regarding alleged covert alignments seeking to foment domestic unrest. The analysis notes how rival factions and ideological realignments are complicating Dhaka's transitional stabilization.",
+    "keyPointsBn": [
+      "রাজনৈতিক অস্থিরতা তৈরির পেছনে দুই বিরোধী শক্তির গোপন আঁতাতের অভিযোগ",
+      "আইন-শৃঙ্খলা রক্ষা ও অন্তর্বর্তী পরিস্থিতি স্বাভাবিক রাখার আহ্বান",
+      "ঢাকার অভ্যন্তরীণ রাজনীতিতে ভারতীয় পর্যবেক্ষকদের ধারাবাহিক নজর"
+    ],
+    "keyPointsEn": [
+      "Alleged covert alliances attempting to disrupt post-transition stability",
+      "Appealed for administrative vigilance and public law and order compliance",
+      "Viewed by Indian strategic watchers as reflecting deepening factional friction"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও অভ্যন্তরীণ পরিস্থিতি",
+    "categoryLabelEn": "Politics & Internal Affairs",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক অস্থিরতা ও সংঘাতের আশঙ্কা নিয়ে প্রধান জাতীয় সংবাদপত্রের অনুসন্ধান।",
+    "sentimentReasonEn": "Analytical report outlining heightened political rivalry and potential instability.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/bangladesh-pm-tarique-rahman-warns-of-unrest-bid-by-2-united-parties/articleshow/135078225.cms",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-20T16:45:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "তারেক রহমান",
+      "টাইমস অব ইন্ডিয়া",
+      "রাজনীতি",
+      "আইনশৃঙ্খলা",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261020-002",
+    "slug": "abp-ananda-hasina-ready-to-return-despite-risks",
+    "title": "Sheikh Hasina : অবতরণের মুহূর্তেই ওরা আমাকে মেরে ফেলতে পারে, ঝুঁকি সত্ত্বেও বাংলাদেশে ফেরার বার্তা - ABP Ananda",
+    "englishTitle": "ABP Ananda: ‘They May Kill Me the Moment I Land’, Sheikh Hasina Signals Return Despite Severe Peril",
+    "banglaTitle": "‘অবতরণের মুহূর্তেই ওরা আমাকে মেরে ফেলতে পারে, তবু ফিরব’: এবিপি আনন্দ-এ শেখ হাসিনার দৃঢ় বার্তা",
+    "summaryBn": "বাংলাদেশে পা রাখার সাথে সাথে জীবননাশের শঙ্কা থাকা সত্ত্বেও দেশের দায়িত্ব পালনে ফিরে যেতে তিনি দ্বিধাগ্রস্ত নন বলে স্পষ্ট জানিয়েছেন সাবেক প্রধানমন্ত্রী শেখ হাসিনা। কলকাতার জনপ্রিয় গণমাধ্যম এবিপি আনন্দের বিশেষ প্রতিবেদনে তুলে ধরা হয়েছে কীভাবে কলকাতায় নির্বাসিত নেতাকর্মীদের মাঝে তাঁর এই ঘোষণা নতুন প্রাণচাঞ্চল্য তৈরি করেছে।",
+    "summaryEn": "ABP Ananda reported on former Bangladesh Prime Minister Sheikh Hasina's candid remarks affirming her determination to return to her homeland, acknowledging grave personal safety threats upon arrival while emphasizing historic responsibility toward party cadre.",
+    "keyPointsBn": [
+      "দেশে ফেরা মাত্রই প্রাণনাশের গুরুতর ঝুঁকির আশঙ্কার মধ্যেও প্রত্যাবর্তনের ঘোষণা",
+      "আওয়ামী লীগ নেতাকর্মীদের মনোবল ধরে রাখার বার্তা ও দিকনির্দেশনা",
+      "পশ্চিমবঙ্গ ও ত্রিপুরার রাজনৈতিক মহলে এই বক্তব্যের ব্যাপক প্রতিধ্বনি"
+    ],
+    "keyPointsEn": [
+      "Stated full awareness of mortal threats while pledging uncompromised return",
+      "Rallied party supporters and exiled leadership across the eastern corridor",
+      "Sparked active diplomatic and public discourse across West Bengal media"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও নির্বাসন",
+    "categoryLabelEn": "Politics & Exiled Leadership",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "রাজনৈতিক ঝুঁকি ও প্রত্যাবর্তনের সংকল্প নিয়ে কলকাতার শীর্ষ গণমাধ্যমের বস্তুনিষ্ঠ প্রতিবেদন।",
+    "sentimentReasonEn": "Balanced coverage by premier Kolkata outlet on high-stakes political resolutions.",
+    "source": {
+      "name": "ABP Ananda",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://bengali.abplive.com/news/former-bangladesh-prime-minister-sheikh-hasina-on-monday-said-she-is-ready-to-return-to-her-country-1196635",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-20T14:20:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isTrending": true,
+    "tags": [
+      "শেখ হাসিনা",
+      "এবিপি আনন্দ",
+      "কলকাতা",
+      "আওয়ামী লীগ",
+      "প্রত্যাবর্তন"
+    ]
+  },
+  {
+    "id": "news-20261020-003",
+    "slug": "the-wall-hasina-message-to-trump-administration-democracy",
+    "title": "'বাংলাদেশে গণতন্ত্র, মানবাধিকার পুনরুদ্ধারে দায় আছে আমেরিকার' - TheWall",
+    "englishTitle": "The Wall: 'America Has a Moral Obligation to Restore Democracy & Rights in Bangladesh': Sheikh Hasina",
+    "banglaTitle": "‘বাংলাদেশে গণতন্ত্র ও মানবাধিকার পুনরুদ্ধারে আমেরিকার দায় রয়েছে’: ট্রাম্প প্রশাসনকে হাসিনার বার্তা, দ্য ওয়ালের বিশ্লেষণ",
+    "summaryBn": "বাংলাদেশে চরমপন্থী উত্থান রোধ ও ধর্মনিরপেক্ষ সাংবিধানিক ব্যবস্থা পুনরুদ্ধারে আন্তর্জাতিক মহল, বিশেষ করে মার্কিন যুক্তরাষ্ট্রের নৈতিক দায়িত্ব রয়েছে বলে স্মরণ করিয়ে দিয়েছেন শেখ হাসিনা। কলকাতার ডিজিটাল সংবাদমাধ্যম দ্য ওয়ালের বিশেষ সম্পাদকীয় প্রতিবেদনে বিশ্লেষণ করা হয়েছে কীভাবে ওয়াশিংটনের নির্বাচনী পটপরিবর্তন ঢাকার ভবিষ্যৎ রাজনীতিকে প্রভাবিত করতে পারে।",
+    "summaryEn": "The Wall reported on Sheikh Hasina's message urging the upcoming US administration and international stakeholders to support the restoration of democratic norms and secular pluralism in Bangladesh rather than facilitating political extremism.",
+    "keyPointsBn": [
+      "বাংলাদেশে মানবাধিকার ও গণতান্ত্রিক ধারাবাহিকতা রক্ষায় আন্তর্জাতিক দায়বদ্ধতার প্রশ্ন",
+      "উগ্রপন্থী ও মৌলবাদী শক্তির প্রভাব বৃদ্ধির বিষয়ে বিশ্বনেতাদের প্রতি হুঁশিয়ারি",
+      "যুক্তরাষ্ট্রের পররাষ্ট্রনীতি ও দক্ষিণ এশিয়ায় ভারতের অবস্থানের যৌথ প্রাসঙ্গিকতা"
+    ],
+    "keyPointsEn": [
+      "Urged international accountability regarding constitutional democracy in Dhaka",
+      "Warned against emboldening Islamist radical elements on the eastern border",
+      "Assessed strategic intersections between Indian security and US foreign policy"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও আন্তর্জাতিক সম্পর্ক",
+    "categoryLabelEn": "Diplomacy & International Affairs",
+    "sentiment": "positive",
+    "sentimentReasonBn": "গণতন্ত্র ও মানবাধিকার পুনঃপ্রতিষ্ঠায় বৈশ্বিক সহযোগিতা আহ্বানের বিশ্লেষণধর্মী উপস্থাপন।",
+    "sentimentReasonEn": "Constructive diplomatic analysis advocating regional pluralism and institutional stability.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/not-interference-but-supportstand-by-the-restoration-of-democracy-in-bangladesh-hasinas-message-to-the-trump-administration-before-her-return-home/tid/207412",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-20T17:15:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "দ্য ওয়াল",
+      "কূটনীতি",
+      "আমেরিকা",
+      "গণতন্ত্র"
+    ]
+  },
+  {
+    "id": "news-20261019-001",
+    "slug": "toi-i-am-not-afraid-sheikh-hasina-vows-return-december",
+    "title": "‘I am not afraid’: Sheikh Hasina vows to return to Bangladesh in December - The Times of India",
+    "englishTitle": "The Times of India: ‘I Am Not Afraid’: Sheikh Hasina Vows to Return to Bangladesh in December",
+    "banglaTitle": "‘আমি ভয় পাই না’: ডিসেম্বরেই বাংলাদেশে ফেরার অঙ্গীকার করলেন শেখ হাসিনা, টাইমস অব ইন্ডিয়ার বিশেষ প্রতিবেদন",
+    "summaryBn": "ভারতের রাজধানীতে আয়োজিত এক সংলাপে সাবেক প্রধানমন্ত্রী শেখ হাসিনা অত্যন্ত স্পষ্ট ভাষায় জানিয়েছেন যে তিনি নিজের মাতৃভূমিতে ফিরে যাওয়ার সিদ্ধান্ত নিয়েছেন। টাইমস অব ইন্ডিয়া লিখেছে, অন্তর্বর্তী সরকারের জারি করা গ্রেপ্তারি পরোয়ানা ও মানবতাবিরোধী অপরাধের অভিযোগকে রাজনৈতিক উদ্দেশ্যপ্রণোদিত অভিহিত করে তিনি দলীয় নেতৃত্বকে সংগঠিত হওয়ার নির্দেশ দিয়েছেন।",
+    "summaryEn": "The Times of India detailed former Prime Minister Sheikh Hasina's definitive statement declaring her plans to return to Bangladesh in December. She dismissed judicial tribunals in Dhaka as politically motivated and rallied her party leadership to face challenges courageously.",
+    "keyPointsBn": [
+      "ডিসেম্বর মাসে বাংলাদেশে ফিরে যাওয়ার স্পষ্ট রাজনৈতিক সময়সীমা ঘোষণা",
+      "আইসিটি ট্রাইব্যুনালের পরোয়ানা ও বিচারকে রাজনৈতিক প্রতিহিংসা হিসেবে আখ্যা",
+      "দক্ষিণ ব্লকের অবস্থান এবং ভারতের সার্বভৌম কূটনীতিতে এর তাৎপর্য"
+    ],
+    "keyPointsEn": [
+      "Formally announced a target timeline of December for return to Dhaka",
+      "Characterized ICT arrest warrants as selective partisan vendetta",
+      "Examined New Delhi's sovereign diplomatic stance regarding bilateral obligations"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও ক্ষমতা",
+    "categoryLabelEn": "Politics & Power Dynamics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সাবেক প্রধানমন্ত্রীর রাজনৈতিক ঘোষণা ও তার আইনি-দ্বিপাক্ষিক প্রতিক্রিয়া নিয়ে বস্তুনিষ্ঠ বিশ্লেষণ।",
+    "sentimentReasonEn": "Objective reporting covering major political roadmap and legal controversies.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/i-am-not-afraid-sheikh-hasina-vows-to-return-to-bangladesh-in-december/articleshow/135052941.cms",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-19T16:52:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isTrending": true,
+    "tags": [
+      "শেখ হাসিনা",
+      "টাইমস অব ইন্ডিয়া",
+      "রাজনীতি",
+      "দিল্লি",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261019-002",
+    "slug": "the-hindu-indian-air-ambulance-emergency-landing-bangladesh",
+    "title": "Indian air ambulance makes emergency landing in Bangladesh; patient dies - The Hindu",
+    "englishTitle": "The Hindu: Indian Air Ambulance Makes Emergency Landing at Dhaka Airport; Critical Patient Passes Away",
+    "banglaTitle": "মাঝআকাশে ত্রুটি: ঢাকায় ভারতীয় এয়ার অ্যাম্বুল্যান্সের জরুরি অবতরণ, রোগীর মৃত্যু নিয়ে দ্য হিন্দুর রিপোর্ট",
+    "summaryBn": "ব্যাংককগামী একটি ভারতীয় এয়ার অ্যাম্বুল্যান্স উড়োজাহাজে যান্ত্রিক ত্রুটি দেখা দিলে তা ঢাকার হযরত শাহজালাল আন্তর্জাতিক বিমানবন্দরে জরুরি অবতরণ করতে বাধ্য হয়। দ্য হিন্দুর প্রতিবেদনে বলা হয়েছে, দুর্ভাগ্যবশত জরুরি চিকিৎসার আগেই সংকটাপন্ন রোগীর মৃত্যু ঘটে, তবে জরুরি পরিস্থিতিতে বাংলাদেশ বিমানবন্দর কর্তৃপক্ষের পেশাদার সহযোগিতা মানবিক দৃষ্টান্ত স্থাপন করেছে।",
+    "summaryEn": "The Hindu reported that an Indian air ambulance carrying a critical medical patient en route to Bangkok executed an emergency diversion and landed safely in Dhaka due to cabin pressure issues. Despite medical intervention upon arrival, the patient succumbed, with bilateral aviation authorities coordinating smoothly.",
+    "keyPointsBn": [
+      "উড়োজাহাজে যান্ত্রিক জটিলতার কারণে ঢাকায় ভারতীয় এয়ার অ্যাম্বুল্যান্সের জরুরি অবতরণ",
+      "ঢাকা বিমানবন্দর কর্তৃপক্ষ ও চিকিৎসকদের তাৎক্ষণিক মানবিক সাড়াদান",
+      "জরুরি চিকিৎসা সহায়তায় দুই দেশের পারস্পরিক বেসামরিক সহযোগিতার ইতিবাচক দিক"
+    ],
+    "keyPointsEn": [
+      "Indian medical charter diverted to Dhaka due to mid-flight technical malfunction",
+      "Bangladesh aviation and medical teams responded promptly on humanitarian grounds",
+      "Reflects professional cross-border emergency coordination despite political chill"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "দ্বিপাক্ষিক সহযোগিতা ও মানবিক সহায়তা",
+    "categoryLabelEn": "Bilateral Ties & Emergency Aid",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "জরুরি আকাশপথ সমন্বয় ও চিকিৎসা উদ্ধার সংক্রান্ত মানবিক ঘটনা নিয়ে বস্তুনিষ্ঠ প্রতিবেদন।",
+    "sentimentReasonEn": "Factual reporting highlighting cross-border civil aviation and humanitarian cooperation.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/national/indian-air-ambulance-makes-emergency-landing-in-bangladesh-patient-dies/article71602262.ece",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-19T07:59:46.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "দ্য হিন্দু",
+      "এয়ার অ্যাম্বুল্যান্স",
+      "ঢাকা",
+      "জরুরি অবতরণ",
+      "ভারত-বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261019-003",
+    "slug": "the-wall-tarique-warns-awami-league-return-jamaat-equation",
+    "title": "হাসিনার ফেরার ইচ্ছায় জল ঢাললেন তারেক - TheWall",
+    "englishTitle": "The Wall: Tarique Responds to Hasina’s Return Plans, Outlines Stance on Political Ban and Jamaat Ties",
+    "banglaTitle": "‘আওয়ামী লীগকে ফিরতে দেওয়া হবে না’: শেখ হাসিনার প্রত্যাবর্তন ঘোষণার পাল্টা তোপ তারেকের, দ্য ওয়ালের বিশেষ নিবন্ধ",
+    "summaryBn": "শেখ হাসিনার দেশে ফেরার অঙ্গীকারের জবাবে বিএনপির ভারপ্রাপ্ত চেয়ারম্যান তারেক রহমান কঠোর মনোভাব ব্যক্ত করে বলেছেন যে অন্তর্বর্তী ব্যবস্থা চলাকালে আওয়ামী লীগকে রাজনীতিতে পুনর্বাসিত হতে দেওয়া হবে না। দ্য ওয়ালের প্রতিবেদনে জামায়াত ও বিএনপির মধ্যকার কৌশলগত প্রতিদ্বন্দ্বিতা এবং মাঠপর্যায়ের রাজনৈতিক সমীকরণ বিশ্লেষণ করা হয়েছে।",
+    "summaryEn": "The Wall analyzed Tarique Rahman's public rebuttal to Sheikh Hasina's planned December homecoming. The report explores how the interim landscape is witnessing friction between BNP and Jamaat-e-Islami as they compete for dominance over the post-Awami League electoral space.",
+    "keyPointsBn": [
+      "হাসিনার দেশে ফেরার ঘোষণার বিরুদ্ধে বিএনপির শীর্ষ নেতৃত্বের কঠোর অবস্থান",
+      "আওয়ামী লীগকে রাজনৈতিক ময়দানে নিষিদ্ধ রাখার দাবিতে জামায়াত ও বিএনপির প্রতিযোগিতা",
+      "পশ্চিমবঙ্গের বিশ্লেষকদের মতে বাংলাদেশের অভ্যন্তরীণ ক্ষমতার ভারসাম্য এখনও অস্থির"
+    ],
+    "keyPointsEn": [
+      "Strong pushback from BNP leadership against Awami League's electoral reintegration",
+      "Strategic maneuvering between BNP and Jamaat ahead of anticipated parliamentary polls",
+      "Kolkata commentators note fragile equilibrium within Dhaka's emerging leadership"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও প্রতিদ্বন্দ্বিতা",
+    "categoryLabelEn": "Politics & Strategic Rivalry",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক নিষেধাজ্ঞা ও দলগুলোর মধ্যকার পারস্পরিক সংঘাতময় অবস্থান নিয়ে কলকাতার গণমাধ্যমের পর্যালোচনা।",
+    "sentimentReasonEn": "Analytical examination of contentious political exclusion and inter-party rivalries.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/government-will-not-allow-awami-league-to-return-to-political-arena-tarique-stated-clearly-with-message-for-jamaat/tid/207380",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-19T08:53:43.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "তারেক রহমান",
+      "দ্য ওয়াল",
+      "শেখ হাসিনা",
+      "জামায়াত",
+      "আওয়ামী লীগ"
+    ]
+  },
+  {
+    "id": "news-20261018-001b",
+    "slug": "the-hindu-rijiju-alleges-bangladesh-style-conspiracy",
+    "title": "Conspiracy similar to one behind violence in France, Bangladesh hatched by anti-India gangs to instigate youth: Rijiju - The Hindu",
+    "englishTitle": "The Hindu: Conspiracy Similar to France and Bangladesh Unrest Hatched to Destabilize India: Kiren Rijiju",
+    "banglaTitle": "‘বাংলাদেশ ও ফ্রান্সের মতো ভারতেও বিশৃঙ্খলা সৃষ্টির চক্রান্ত করছে দেশবিরোধী চক্র’: কিরেন রিজিজু, দ্য হিন্দুর প্রতিবেদন",
+    "summaryBn": "বাংলাদেশে ঘটে যাওয়া সহিংস রাজনৈতিক পটপরিবর্তন ও ফ্রান্সের দাঙ্গার উদাহরণ টেনে ভারতের কেন্দ্রীয় মন্ত্রী কিরেন রিজিজু অভিযোগ করেছেন যে স্বার্থান্বেষী গোষ্ঠী ভারতেও একই ধরনের অস্থিতিশীলতা তৈরির অপচেষ্টা করছে। দ্য হিন্দুর জাতীয় পাতায় এই রাজনৈতিক বিতর্ক এবং বিরোধী শিবিরের পাল্টা জবাব বিস্তারিতভাবে তুলে ধরা হয়েছে।",
+    "summaryEn": "The Hindu reported that Union Minister Kiren Rijiju warned against alleged attempts by hostile entities to orchestrate civil unrest in India modeled after recent turmoil in Bangladesh and France. The remarks ignited heated exchanges across Indian political parties.",
+    "keyPointsBn": [
+      "বাংলাদেশে পটপরিবর্তন মডেল করে ভারতে অস্থিরতা তৈরির ষড়যন্ত্রের অভিযোগ কেন্দ্রীয় মন্ত্রীর",
+      "গণতান্ত্রিক কাঠামো সুরক্ষায় জাতীয় ঐক্য ও তরুণ সমাজকে সতর্ক থাকার আহ্বান",
+      "দিল্লির রাজনৈতিক পরিমণ্ডলে বাংলাদেশের ঘটনাবলির গভীর কূটনৈতিক প্রভাব"
+    ],
+    "keyPointsEn": [
+      "Union Minister alleged foreign-backed attempts to emulate Bangladesh unrest in India",
+      "Emphasized resilience of Indian constitutional and democratic mechanisms",
+      "Highlights how Dhaka's political transition remains a focal point in Indian national discourse"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "জাতীয় নিরাপত্তা ও কূটনীতি",
+    "categoryLabelEn": "National Security & Geopolitics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তপারের অস্থিতিশীলতা ও ভারতের অভ্যন্তরীণ নিরাপত্তার তুলনামূলক রাজনৈতিক বিশ্লেষণ।",
+    "sentimentReasonEn": "Critical reporting on political debate drawing parallels with neighboring unrest.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/national/conspiracy-similar-to-one-behind-violence-in-france-bangladesh-hatched-by-anti-india-gangs-to-instigate-youth-rijiju/article71600401.ece",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-18T14:38:30.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "কিরেন রিজিজু",
+      "দ্য হিন্দু",
+      "জাতীয় নিরাপত্তা",
+      "কূটনীতি",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261018-002b",
+    "slug": "the-wall-modi-condolence-dhaka-accident-pandal-deaths",
+    "title": "কলকাতার প্যান্ডেলে দুর্ঘটনায় মৃত্যুতে বাংলাদেশের শোক প্রকাশ - TheWall",
+    "englishTitle": "The Wall: Modi Expresses Condolences Over Dhaka Collision; Bangladesh Deputy High Commission Mourns Kolkata Pandal Loss",
+    "banglaTitle": "‘ঢাকার দুর্ঘটনায় মোদীর সমবেদনা, কলকাতার ঘটনায় শোকবার্তা ডেপুটি হাইকমিশনের’: দ্য ওয়ালের কূটনৈতিক ভাষ্য",
+    "summaryBn": "নাটোরের মর্মান্তিক বাস দুর্ঘটনায় প্রাণহানির ঘটনায় ভারতের প্রধানমন্ত্রী নরেন্দ্র মোদী গভীর সমবেদনা প্রকাশ করেছেন এবং একই সঙ্গে কলকাতায় পূজা মণ্ডপের দুর্ঘটনায় প্রাণহানিতে শোকবার্তা জানিয়েছে বাংলাদেশ ডেপুটি হাইকমিশন। দ্য ওয়ালের প্রতিবেদনে বলা হয়েছে, কূটনৈতিক শীতলতা সত্ত্বেও দুই নিকটতম প্রতিবেশীর মানবিক সহমর্মিতার বন্ধন অব্যাহত রয়েছে।",
+    "summaryEn": "The Wall reported on bilateral expressions of condolence, with Prime Minister Narendra Modi mourning tragic road accident victims in Bangladesh, while Dhaka's Deputy High Commission in Kolkata conveyed grief over casualties during Durga Puja festivities in Bengal.",
+    "keyPointsBn": [
+      "নাটোরের সড়ক দুর্ঘটনায় ভারতের প্রধানমন্ত্রীর গভীর শোক ও সমবেদনা",
+      "কলকাতার মণ্ডপের দুর্ঘটনায় বাংলাদেশ ডেপুটি হাইকমিশনের সংহতি প্রকাশ",
+      "কূটনৈতিক দূরত্বের মাঝেও দুই দেশের মানবিক ও পারস্পরিক শ্রদ্ধার বহিঃপ্রকাশ"
+    ],
+    "keyPointsEn": [
+      "Indian Prime Minister offered heartfelt condolences over fatal bus collision in Bangladesh",
+      "Dhaka Deputy High Commission shared solidarity following festival tragedy in Kolkata",
+      "Demonstrates enduring neighborly humanitarian empathy across the Bengal border"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও মানবিক সহমর্মিতা",
+    "categoryLabelEn": "Diplomacy & Humanitarian Amity",
+    "sentiment": "positive",
+    "sentimentReasonBn": "পারস্পরিক সমবেদনা ও প্রতিবেশীসুলভ সংহতি প্রকাশের ইতিবাচক কূটনৈতিক দিক।",
+    "sentimentReasonEn": "Constructive report demonstrating reciprocal empathy and diplomatic goodwill.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/modi-expressed-condolences-over-the-accident-in-dhaka-tarique-remains-silent-on-the-deaths-at-a-kolkata-pandalstatement-from-the-bangladesh-deputy-high-commission/tid/207346",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-18T11:36:20.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "নরেন্দ্র মোদী",
+      "দ্য ওয়াল",
+      "কূটনীতি",
+      "সমবেদনা",
+      "কলকাতা"
+    ]
+  },
+  {
+    "id": "news-20261018-003b",
+    "slug": "sangbad-pratidin-rabindranath-tagore-dhaka-university-history",
+    "title": "গুজবের বাংলাদেশে চরমে রবি বিদ্বেষ, আদৌ ঢাকা বিশ্ববিদ্যালয়ের বিরোধিতা করেছিলেন রবীন্দ্রনাথ? কী বলছে ইতিহাস - Sangbad Pratidin",
+    "englishTitle": "Sangbad Pratidin: Fact-Check: Did Rabindranath Tagore Oppose Dhaka University? What History Really Says",
+    "banglaTitle": "‘গুজবের ওপারে রবি-বিদ্বেষ, আদৌ ঢাকা বিশ্ববিদ্যালয়ের বিরোধিতা করেছিলেন রবীন্দ্রনাথ?’: সংবাদ প্রতিদিনের তথ্যসন্ধান",
+    "summaryBn": "বাংলাদেশে সাম্প্রতিক সময়ে কবিগুরু রবীন্দ্রনাথ ঠাকুরের ম্যুরালে কালি লেপন ও ঢাকা বিশ্ববিদ্যালয় প্রতিষ্ঠার বিরোধিতার ভিত্তিহীন অভিযোগের বিরুদ্ধে ঐতিহাসিক তথ্য-প্রমাণ তুলে ধরেছে সংবাদ প্রতিদিন। বিশিষ্ট ইতিহাসবিদদের উদ্ধৃতি দিয়ে প্রতিবেদনে স্পষ্ট করা হয় কীভাবে দুই বাংলার অবিচ্ছেদ্য সাংস্কৃতিক সেতু হিসেবে রবীন্দ্রনাথের অবদানকে বিকৃত করার চেষ্টা চলছে।",
+    "summaryEn": "Sangbad Pratidin published a comprehensive historical investigation countering revisionist propaganda in Bangladesh alleging Rabindranath Tagore opposed the founding of Dhaka University. Drawing on documented archives, scholars reaffirmed Tagore's intellectual contributions to Bengali unity.",
+    "keyPointsBn": [
+      "রবীন্দ্রনাথ ঠাকুর সম্পর্কে মনগড়া অভিযোগের বিরুদ্ধে ঐতিহাসিক দলিলের বিশ্লেষণ",
+      "ঢাকা বিশ্ববিদ্যালয়ে তাঁর ঐতিহাসিক বক্তৃতা ও শিক্ষাবিস্তারে অবদানের পর্যালোচনা",
+      "দুই বাংলার অভিন্ন সাংস্কৃতিক ঐতিহ্য রক্ষা ও উগ্র মতাদর্শ রোখার আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Refuted falsified allegations regarding Tagore and the establishment of Dhaka University",
+      "Documented historical records of Tagore’s visits and intellectual engagement in Dhaka",
+      "Defended shared Bengali cultural legacy against polarizing revisionist narratives"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও ইতিহাস",
+    "categoryLabelEn": "Culture & Heritage",
+    "sentiment": "positive",
+    "sentimentReasonBn": "ঐতিহাসিক সত্য উদঘাটন ও বাঙালির অবিসংবাদিত সাংস্কৃতিক উত্তরাধিকার রক্ষার বিশ্লেষণধর্মী প্রয়াস।",
+    "sentimentReasonEn": "Culturally enriching and fact-checked defense of shared historical heritage.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://m.sangbadpratidin.in/article/bangladesh/is-rabindranath-tagore-opposed-dhaka-university-what-history-says/pid/1391058/",
+      "scannedAt": "2026-10-21T19:30:00Z"
+    },
+    "publishedAt": "2026-10-18T13:20:46.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 mins",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "রবীন্দ্রনাথ ঠাকুর",
+      "সংবাদ প্রতিদিন",
+      "সংস্কৃতি",
+      "ঢাকা বিশ্ববিদ্যালয়",
+      "ইতিহাস"
+    ]
+  },
   {
     "id": "news-20261018-001",
     "slug": "times-now-sheikh-hasina-dares-tarique-rahman-brics-visit",
