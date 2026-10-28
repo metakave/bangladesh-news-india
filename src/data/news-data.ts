@@ -71,22 +71,22 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "২১ অক্টোবর, ২০২৬ এ ৭:৩০ PM",
-  "lastScannedAtEn": "21 Oct 2026, 07:30 pm",
-  "totalScanned24h": 5031,
-  "bangladeshMatches": 1411,
+  "lastScannedAtBn": "২৯ অক্টোবর, ২০২৬ এ ১২:৪০ AM",
+  "lastScannedAtEn": "29 Oct 2026, 12:40 am",
+  "totalScanned24h": 4605,
+  "bangladeshMatches": 1089,
   "sentimentDistribution": {
-    "positive": 36,
-    "neutral": 48,
-    "negative": 16
+    "positive": 38,
+    "neutral": 47,
+    "negative": 15
   },
   "bureauDistribution": {
     "delhi": 44,
     "kolkata": 34,
-    "mumbai": 11,
-    "tripura": 5,
-    "assam": 4,
-    "siliguri": 2
+    "mumbai": 12,
+    "tripura": 4,
+    "assam": 3,
+    "siliguri": 3
   },
   "languageDistribution": {
     "english": 46,
@@ -101,52 +101,586 @@ export const SCANNER_STATS = {
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "alert-114",
-    "headlineBn": "‘আমি কাউকে ভয় পাই না, ডিসেম্বরেই বাংলাদেশে ফিরব’: ভারতে বসে শেখ হাসিনার সরাসরি বার্তা — নিউজএক্স",
-    "headlineEn": "NewsX: Sheikh Hasina LIVE: ‘I Am Not Afraid’, Vows to Return to Bangladesh in December",
+    "id": "alert-118",
+    "headlineBn": "‘আওয়ামি লিগকে বাদ দিয়ে নির্বাচনের কোনো বৈধতা নেই’: ভারতে বসে শেখ হাসিনার বার্তা — ফার্স্টপোস্ট",
+    "headlineEn": "Firstpost: Sheikh Hasina LIVE: Challenges Legitimacy of Elections That Excluded Awami League",
     "timeAgoBn": "১০ মিনিট আগে",
     "timeAgoEn": "10 mins ago",
-    "sourceName": "NewsX",
+    "sourceName": "Firstpost",
     "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.youtube.com/watch?v=TlxjU2A8xUc"
+    "url": "https://www.youtube.com/watch?v=0H0h1MKG7ec"
   },
   {
-    "id": "alert-115",
-    "headlineBn": "‘সব ধর্মের মানুষের সমান অধিকার নিশ্চিত করব’: দুর্গাপূজা মণ্ডপ পরিদর্শনে গিয়ে তারেক রহমানের বার্তা — দ্য ইন্ডিয়ান এক্সপ্রেস",
-    "headlineEn": "The Indian Express: Bangladesh PM Tarique Rahman Visits Puja Pandals, Vows Equal Rights for All Religions",
+    "id": "alert-119",
+    "headlineBn": "‘আওয়ামি লিগের ওপর নিষেধাজ্ঞা প্রত্যাহার চেয়ে রাষ্ট্রসংঘে শেখ হাসিনার নালিশ’: ইন্ডিয়া টুডে",
+    "headlineEn": "India Today: Sheikh Hasina Approaches United Nations Seeking Reversal of Ban on Awami League",
     "timeAgoBn": "২৫ মিনিট আগে",
     "timeAgoEn": "25 mins ago",
-    "sourceName": "The Indian Express",
+    "sourceName": "India Today",
     "sourceBureau": "Delhi",
-    "sentiment": "positive",
-    "url": "https://indianexpress.com/article/world/tarique-rahman-durga-puja-bangladesh-equal-rights-10930040/"
+    "sentiment": "neutral",
+    "url": "https://www.indiatoday.in/world/story/sheikh-hasina-un-action-awami-league-ban-bangladesh-elections-3026654-2026-10-28"
   },
   {
-    "id": "alert-116",
-    "headlineBn": "‘অবতরণের মুহূর্তেই ওরা আমাকে মেরে ফেলতে পারে, ঝুঁকি সত্ত্বেও দেশে ফিরব’: শেখ হাসিনা — এবিপি আনন্দ",
-    "headlineEn": "ABP Ananda: ‘They May Kill Me the Moment I Land’, Sheikh Hasina Signals Return Despite Severe Peril",
+    "id": "alert-120",
+    "headlineBn": "ঢাকার পাতাল মেট্রো নির্মাণে ফের বড় বরাত পেল ভারতীয় সংস্থা এলঅ্যান্ডটি — দ্য ওয়াল",
+    "headlineEn": "The Wall: Indian Infrastructure Major L&T Wins Massive Underground Dhaka Metro MRT-1 Contract",
     "timeAgoBn": "৪০ মিনিট আগে",
     "timeAgoEn": "40 mins ago",
-    "sourceName": "ABP Ananda",
+    "sourceName": "The Wall",
     "sourceBureau": "Kolkata",
-    "sentiment": "neutral",
-    "url": "https://bengali.abplive.com/news/former-bangladesh-prime-minister-sheikh-hasina-on-monday-said-she-is-ready-to-return-to-her-country-1196635"
+    "sentiment": "positive",
+    "url": "https://www.thewall.in/bangladesh/indian-company-lt-has-secured-a-major-contract-for-dhakas-new-metro-project-as-well/tid/208059"
   },
   {
-    "id": "alert-117",
-    "headlineBn": "‘বাংলাদেশ সীমান্ত দিয়ে পাচার হওয়া বিপুল সোনা বিজয়ওয়াড়ার কাছে জব্দ, পাঁচজন গ্রেপ্তার’: দ্য হিন্দু",
-    "headlineEn": "The Hindu: Contraband Gold Smuggled Across Bangladesh Border Intercepted in Vijayawada",
+    "id": "alert-121",
+    "headlineBn": "নেপাল ও বাংলাদেশ সীমান্তে নজরদারি বাড়াতে উত্তরবঙ্গে ৫০টি নতুন থানা ও ফাঁড়ি — দৈনিক জাগরণ",
+    "headlineEn": "Dainik Jagran: 50 New Police Stations and Outposts in North Bengal Along Nepal-Bangladesh Border",
     "timeAgoBn": "১ ঘণ্টা আগে",
     "timeAgoEn": "1 hour ago",
-    "sourceName": "The Hindu",
-    "sourceBureau": "Delhi",
-    "sentiment": "negative",
-    "url": "https://www.thehindu.com/news/cities/Hyderabad/gold-smuggled-from-bangladesh-seized-near-vijayawada-five-arrested/article71606668.ece"
+    "sourceName": "Dainik Jagran",
+    "sourceBureau": "Siliguri",
+    "sentiment": "neutral",
+    "url": "https://www.jagran.com/west-bengal/kolkata-north-bengal-police-expansion-50-new-stations-for-border-security-40420186.html"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20261028-001",
+    "slug": "firstpost-hasina-challenges-legitimacy-elections-excluding-awami-league",
+    "title": "Hasina Challenges Legitimacy of Elections That Excluded Her Party | Race to Power - YouTube",
+    "englishTitle": "Firstpost Race to Power: Sheikh Hasina Challenges Legitimacy of Elections Excluding Awami League",
+    "banglaTitle": "‘আওয়ামি লিগকে বাদ দিয়ে নির্বাচনের কোনো বৈধতা নেই’: ভারতে বসে শেখ হাসিনার জোরালো বার্তা — ফার্স্টপোস্ট",
+    "summaryBn": "ভারতীয় আন্তর্জাতিক সংবাদমাধ্যম ফার্স্টপোস্টের বিশেষ অনুষ্ঠান ‘রেস টু পাওয়ার’-এ সাবেক প্রধানমন্ত্রী শেখ হাসিনা অন্তর্বর্তীকালীন সরকারের নির্বাচনী প্রক্রিয়া নিয়ে সরাসরি চ্যালেঞ্জ ছুড়ে দিয়েছেন। তিনি উল্লেখ করেন, দেশের প্রাচীনতম ও অন্যতম প্রধান রাজনৈতিক দল আওয়ামী লীগকে বাদ দিয়ে অনুষ্ঠিত কোনো নির্বাচন আন্তর্জাতিক সম্প্রদায়ের কাছে গ্রহণযোগ্য হতে পারে না।",
+    "summaryEn": "In a feature broadcast by Indian media network Firstpost on 'Race to Power', former Prime Minister Sheikh Hasina directly questioned the constitutional legitimacy of any electoral process in Bangladesh that excludes the Awami League, asserting that disenfranchising a major political force invalidates the democratic mandate.",
+    "keyPointsBn": [
+      "আওয়ামি লিগকে ছাড়া যেকোনো জাতীয় নির্বাচনের সাংবিধানিক বৈধতা নিয়ে প্রশ্ন",
+      "আন্তর্জাতিক সম্প্রদায়ের কাছে নির্বাচনী গ্রহণযোগ্যতা প্রমাণের চ্যালেঞ্জ",
+      "ভারতের মাটি থেকে নির্বাচন ও রাজনৈতিক সমীকরণ নিয়ে কঠোর বার্তা"
+    ],
+    "keyPointsEn": [
+      "Questioned constitutional legitimacy of elections excluding Bangladesh's largest party",
+      "Challenged international community on accepting selective democratic exercises",
+      "Highlighted cross-border diplomatic ripples from statements made in India"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বাংলাদেশের নির্বাচনী বৈধতা ও প্রধান রাজনৈতিক দলের অংশগ্রহণ নিয়ে ভারতীয় গণমাধ্যমের বস্তুনিষ্ঠ রাজনৈতিক বিশ্লেষণ।",
+    "sentimentReasonEn": "Objective geopolitical broadcast evaluating democratic participation, party exclusion, and regional stability.",
+    "source": {
+      "name": "Firstpost",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=0H0h1MKG7ec",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T16:38:21.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://i.ytimg.com/vi/0H0h1MKG7ec/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=0H0h1MKG7ec",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "শেখ হাসিনা",
+      "ফার্স্টপোস্ট",
+      "আওয়ামি লিগ",
+      "নির্বাচন",
+      "রাজনীতি"
+    ]
+  },
+  {
+    "id": "news-20261028-002",
+    "slug": "the-wall-indian-company-lt-dhaka-underground-metro-mrt-1",
+    "title": "ঢাকার প্রথম মেট্রো প্রকল্পে সুখ্যাতির সুবাদে ফের বরাত পেল এলঅ্যান্ডটি - TheWall",
+    "englishTitle": "The Wall: Indian Infrastructure Giant L&T Clinches Major Contract for Dhaka’s Underground Metro MRT-1",
+    "banglaTitle": "ঢাকার প্রথম মেট্রো প্রকল্পে সুখ্যাতির সুবাদে ফের বিরাট বরাত পেল ভারতীয় সংস্থা এলঅ্যান্ডটি: দ্য ওয়াল",
+    "summaryBn": "ঢাকার প্রথম উড়াল মেট্রো রেলের বিদ্যুৎ ও ট্র্যাক স্থাপনের সফল বাস্তবায়নের পর, এবার বাংলাদেশের প্রথম পাতাল মেট্রো রেল (এমআরটি লাইন-১) নির্মাণের অন্যতম বৃহৎ চুক্তি পেয়েছে ভারতের শীর্ষস্থানীয় পরিকাঠামো সংস্থা লারসেন অ্যান্ড টুব্রো (এলঅ্যান্ডটি)। দ্য ওয়ালের প্রতিবেদনে বলা হয়েছে, ভারত-বাংলাদেশ দ্বিপাক্ষিক সম্পর্কের নানা টানাপোড়েনের মধ্যেও অর্থনৈতিক ও পরিকাঠামো ক্ষেত্রে ভারতীয় সংস্থার ওপর ঢাকার আস্থা অটুট রয়েছে।",
+    "summaryEn": "Following the successful execution of electrical and track infrastructure for Dhaka's maiden elevated metro, Indian engineering and construction giant Larsen & Toubro (L&T) has been awarded a massive contract for Bangladesh's first underground metro rail (MRT Line-1). The Wall highlights how bilateral infrastructure connectivity continues to thrive despite geopolitical friction.",
+    "keyPointsBn": [
+      "ঢাকার প্রথম পাতাল মেট্রো রেল প্রকল্পে বিশাল কাজের দায়িত্ব পেল ভারতীয় সংস্থা এলঅ্যান্ডটি",
+      "আগের উড়াল মেট্রো প্রকল্পে কাজের সফল ট্র্যাক রেকর্ডের সুবাদে নতুন চুক্তি",
+      "কূটনৈতিক উত্তেজনার মাঝেও দ্বিপাক্ষিক অর্থনৈতিক ও পরিকাঠামো সহযোগিতার ধারাবাহিকতা"
+    ],
+    "keyPointsEn": [
+      "Larsen & Toubro secures major overseas contract for Dhaka's first underground metro system",
+      "Award follows proven execution track record in Bangladesh's initial elevated MRT network",
+      "Demonstrates resilience of cross-border commercial and engineering cooperation"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও অর্থনীতি",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "বাংলাদেশের মেগা পরিকাঠামো প্রকল্পে ভারতীয় সংস্থার বড় চুক্তি জয় দ্বিপাক্ষিক অর্থনৈতিক সম্পর্কের ইতিবাচক দিক নির্দেশ করে।",
+    "sentimentReasonEn": "Positive reportage on Indian corporate prowess securing vital cross-border transit infrastructure contracts.",
+    "source": {
+      "name": "The Wall",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.thewall.in/bangladesh/indian-company-lt-has-secured-a-major-contract-for-dhakas-new-metro-project-as-well/tid/208059",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T14:15:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isTrending": true,
+    "tags": [
+      "এলঅ্যান্ডটি",
+      "ঢাকা মেট্রো",
+      "বাণিজ্য",
+      "পরিকাঠামো",
+      "ভারত-বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261028-003",
+    "slug": "jagran-north-bengal-police-expansion-border-security",
+    "title": "उत्तर बंगाल में खुलेंगे करीब 50 नए थाने और पुलिस चौकियां, नेपाल-बांग्लादेश सीमा पर चौकसी तेज - Jagran",
+    "englishTitle": "Dainik Jagran: 50 New Police Stations and Outposts in North Bengal Along Nepal-Bangladesh Border",
+    "banglaTitle": "উত্তরবঙ্গে তৈরি হচ্ছে ৫০টি নতুন থানা ও পুলিশ ফাঁড়ি, নেপাল ও বাংলাদেশ সীমান্তে নজরদারি জোরদার: দৈনিক জাগরণ",
+    "summaryBn": "নেপাল, ভুটান ও বাংলাদেশের ত্রিদেশীয় সীমান্ত সংলগ্ন কৌশলগত চিকেনস নেক করিডোরের নিরাপত্তা জোরদার করতে উত্তরবঙ্গে ৫০টি নতুন থানা ও পুলিশ ফাঁড়ি চালুর সিদ্ধান্ত নিয়েছে পশ্চিমবঙ্গ স্বরাষ্ট্র দপ্তর। দৈনিক জাগরণের বিশেষ প্রতিবেদনে উল্লেখ করা হয়েছে, সীমান্তপারের রাজনৈতিক অস্থিরতা ও অবৈধ অনুপ্রবেশের আশঙ্কায় শিলিগুড়ি ও সংলগ্ন জেলাগুলোতে গোয়েন্দা নজরদারি ব্যাপকভাবে বাড়ানো হয়েছে।",
+    "summaryEn": "Dainik Jagran reports that the West Bengal government is establishing approximately 50 new police stations and outposts across North Bengal, heavily augmenting security along the strategic borders with Bangladesh and Nepal. The move responds to heightened vigil requirements around the Siliguri corridor amid regional transition.",
+    "keyPointsBn": [
+      "উত্তরবঙ্গের আন্তর্জাতিক সীমান্ত সংলগ্ন এলাকায় ৫০টি নতুন থানা ও নিরাপত্তা ফাঁড়ি স্থাপন",
+      "শিলিগুড়ি করিডোর ও সীমান্ত অঞ্চলে অবৈধ অনুপ্রবেশ ও পাচার ঠেকাতে যৌথ নজরদারি",
+      "বাংলাদেশের পরিবর্তিত পরিস্থিতির প্রেক্ষিতে সীমান্তবর্তী জেলাগুলোতে অতিরিক্ত সতর্কতা"
+    ],
+    "keyPointsEn": [
+      "Setting up 50 new police stations and outposts along strategic northern frontiers",
+      "Reinforces security around the vital Siliguri corridor against illicit crossings",
+      "Heightened preparedness following dynamic political developments across the border"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্তবর্তী ভৌগোলিক নিরাপত্তা ও আইনশৃঙ্খলা বৃদ্ধির প্রশাসনিক পদক্ষেপের বিশ্লেষণধর্মী প্রতিবেদন।",
+    "sentimentReasonEn": "Strategic coverage detailing state security reinforcement along international frontier boundaries.",
+    "source": {
+      "name": "Dainik Jagran",
+      "bureau": "Siliguri",
+      "language": "Hindi",
+      "originalUrl": "https://www.jagran.com/west-bengal/kolkata-north-bengal-police-expansion-50-new-stations-for-border-security-40420186.html",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T12:30:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bsf-border-outpost-tripura.jpg",
+    "mediaFormat": "rss",
+    "isTrending": true,
+    "tags": [
+      "উত্তরবঙ্গ",
+      "সীমান্ত নিরাপত্তা",
+      "দৈনিক জাগরণ",
+      "শিলিগুড়ি",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261028-004",
+    "slug": "the-hindu-mea-japan-northeast-bangladesh-connectivity",
+    "title": "MEA highlights stronger linkages between Japan and northeast India - The Hindu",
+    "englishTitle": "The Hindu: MEA Highlights Stronger Japan-Northeast Linkages and Regional Connectivity via Bangladesh",
+    "banglaTitle": "উত্তর-পূর্ব ভারত ও জাপানের সম্পর্ক জোরদারে জোর দিল্লির, বঙ্গোপসাগর ও বাংলাদেশ সংযোগ নিয়ে আলোচনা: দ্য হিন্দু",
+    "summaryBn": "ভারতের পররাষ্ট্র মন্ত্রণালয় (এমইএ) এক উচ্চপর্যায়ের পর্যালোচনা বৈঠকে জাপানের সঙ্গে ভারতের উত্তর-পূর্বাঞ্চলের পরিকাঠামো ও লজিস্টিক সংযোগ বৃদ্ধির গুরুত্ব তুলে ধরেছে। দ্য হিন্দুর প্রতিবেদনে বলা হয়েছে, বিগ-বি (বে অব বেঙ্গল ইন্ডাস্ট্রিয়াল গ্রোথ বেল্ট) প্রকল্পের আওতায় মাতারবাড়ি গভীর সমুদ্রবন্দর থেকে ভারতের ত্রিপুরা ও আসাম পর্যন্ত অর্থনৈতিক করিডোর গড়ে তোলার সম্ভাবনা খতিয়ে দেখা হচ্ছে।",
+    "summaryEn": "The Hindu reported that India's Ministry of External Affairs underscored expanding strategic and economic linkages between Japan and India's Northeast, examining regional supply chain corridors connecting Matarbari port in Bangladesh to landlocked northeastern Indian states under the Bay of Bengal Industrial Growth Belt initiative.",
+    "keyPointsBn": [
+      "জাপানের সহায়তায় উত্তর-পূর্ব ভারত ও বঙ্গোপসাগরীয় অঞ্চলের বাণিজ্যিক সংযোগ বৃদ্ধির উদ্যোগ",
+      "বাংলাদেশের মাতারবাড়ি বন্দর থেকে ত্রিপুরা ও আসাম পর্যন্ত অর্থনৈতিক করিডোরের সম্ভাবনা",
+      "উপ-আঞ্চলিক পরিকাঠামো ও মুক্ত ইন্দো-প্যাসিফিক কৌশলে দিল্লির কূটনৈতিক অগ্রাধিকার"
+    ],
+    "keyPointsEn": [
+      "External Affairs Ministry stresses logistics links between Northeast India and Tokyo-backed projects",
+      "Explores multi-modal corridors connecting Bangladesh's deep-sea port to northeastern states",
+      "Sub-regional connectivity anchored within broader Indo-Pacific trade architecture"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "উপ-আঞ্চলিক সংযোগ ও অর্থনৈতিক উন্নয়ন নিয়ে ত্রিদেশীয় সহযোগিতার আশাব্যঞ্জক কূটনৈতিক রূপরেখা।",
+    "sentimentReasonEn": "Constructive diplomatic analysis highlighting long-term multilateral economic integration.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/national/mea-highlights-stronger-linkages-between-japan-and-northeast-india/article71637193.ece",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T10:45:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop&q=80",
+    "mediaFormat": "rss",
+    "tags": [
+      "পররাষ্ট্র মন্ত্রণালয়",
+      "জাপান",
+      "দ্য হিন্দু",
+      "কানেক্টিভিটি",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261028-005",
+    "slug": "india-today-sheikh-hasina-un-awami-league-ban-elections",
+    "title": "Sheikh Hasina approaches UN over ban on Awami League from Bangladesh elections - India Today",
+    "englishTitle": "India Today: Sheikh Hasina Petitions United Nations Over Awami League Election Exclusion",
+    "banglaTitle": "নির্বাচনে আওয়ামি লিগকে নিষিদ্ধ করার বিরুদ্ধে জাতিসংঘে শেখ হাসিনার আবেদন: ইন্ডিয়া টুডে",
+    "summaryBn": "আসন্ন জাতীয় নির্বাচন থেকে আওয়ামি লিগকে বাদ দেওয়ার সিদ্ধান্তের বিরুদ্ধে সরাসরি জাতিসংঘের বিশেষ দূতদের কাছে চিঠি পাঠিয়েছেন সাবেক প্রধানমন্ত্রী শেখ হাসিনা। ইন্ডিয়া টুডের প্রতিবেদনে জানানো হয়েছে, চিঠিতে তিনি অন্তর্বর্তী প্রশাসনের বিরুদ্ধে বিরোধী নেতাকর্মীদের ওপর নির্বিচার গ্রেপ্তার, মানবাধিকার লঙ্ঘন ও রাজনৈতিক দমন-পীড়নের অভিযোগ তুলে আন্তর্জাতিক হস্তক্ষেপ দাবি করেছেন।",
+    "summaryEn": "India Today reported that former Prime Minister Sheikh Hasina formally petitioned UN special rapporteurs, contesting interim authorities' moves to exclude the Awami League from parliamentary elections. The petition raises grave concerns over mass arrests, human rights violations, and the systematic suppression of democratic opposition.",
+    "keyPointsBn": [
+      "জাতিসংঘের মানবাধিকার বিশেষজ্ঞদের কাছে শেখ হাসিনার আনুষ্ঠানিক চিঠি ও নালিশ",
+      "আওয়ামি লিগ নেতাকর্মীদের বিরুদ্ধে নির্বিচার গ্রেপ্তার ও রাজনৈতিক দমন-পীড়নের অভিযোগ",
+      "একটি অবাধ ও সুষ্ঠু নির্বাচনের জন্য আন্তর্জাতিক সম্প্রদায়ের তদারকির আবেদন"
+    ],
+    "keyPointsEn": [
+      "Formal communication submitted to UN human rights bodies challenging party disqualification",
+      "Cites widespread detention of political cadres and suppression of fundamental rights",
+      "Demands international oversight to ensure representative electoral participation"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "জাতিসংঘে পাঠানো আন্তর্জাতিক আইনি ও মানবাধিকার চিঠি নিয়ে ভারতীয় সংবাদমাধ্যমের বিশ্লেষণধর্মী প্রতিবেদন।",
+    "sentimentReasonEn": "Balanced coverage detailing international legal petitions regarding party bans and fundamental rights.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/story/sheikh-hasina-un-action-awami-league-ban-bangladesh-elections-3026654-2026-10-28",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T06:18:24.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/sheikh-hasina-official-portrait.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "জাতিসংঘ",
+      "ইন্ডিয়া টুডে",
+      "আওয়ামি লিগ",
+      "রাজনীতি"
+    ]
+  },
+  {
+    "id": "news-20261028-006",
+    "slug": "news18-bangla-hasina-un-intervention-demand-tarique-pressure",
+    "title": "Sheikh Hasina UN Intervention Demand |রাষ্ট্রপুঞ্জের দরজায় হাসিনা,বাংলাদেশে Tariqueর নতুন চাপ? |N18V - YouTube",
+    "englishTitle": "News18 Bangla: Sheikh Hasina Knocks on UN Doors Demanding Democratic Safeguards Amid Mounting Political Pressure",
+    "banglaTitle": "রাষ্ট্রপুঞ্জের দরজায় কড়া নাড়লেন শেখ হাসিনা, ঢাকায় অন্তর্বর্তী সরকারের ওপর বাড়ছে আন্তর্জাতিক চাপ: নিউজ১৮ বাংলা",
+    "summaryBn": "নিউজ১৮ বাংলার বিশেষ ভিডিও বিশ্লেষণে দেখানো হয়েছে কীভাবে শেখ হাসিনার জাতিসংঘে চিঠি পাঠানোর পদক্ষেপ ঢাকার অন্তর্বর্তী সরকার ও বিএনপির শীর্ষ নেতৃত্বের ওপর আন্তর্জাতিক চাপ বাড়িয়ে দিয়েছে। বিশেষত মানবাধিকার রক্ষা এবং নির্বাচনে সকল দলের অংশগ্রহণ নিশ্চিত করার দাবিতে বহির্বিশ্বের দৃষ্টি আকর্ষণ করার কৌশল বিশ্লেষণ করেছে চ্যানেলটি।",
+    "summaryEn": "In an exclusive video dispatch, News18 Bangla breaks down Sheikh Hasina's UN appeal, assessing how this diplomatic move amplifies external pressure on the administration in Dhaka to uphold constitutional guarantees and preserve inclusive political competition.",
+    "keyPointsBn": [
+      "জাতিসংঘে নালিশের পর ঢাকার অন্তর্বর্তী প্রশাসনের ওপর আন্তর্জাতিক কূটনীতির নজর",
+      "বিএনপি ও অন্তর্বর্তী সরকারের যৌথ সমীকরণে নতুন কৌশলগত চ্যালেঞ্জের সৃষ্টি",
+      "কলকাতার সংবাদমাধ্যমের ক্যামেরায় ওপার বাংলার রাজনৈতিক সংকটের চুলচেরা বিশ্লেষণ"
+    ],
+    "keyPointsEn": [
+      "UN petition intensifies global scrutiny on interim administration's democratic roadmap",
+      "Presents fresh diplomatic dilemmas for current transitional authorities in Dhaka",
+      "Kolkata newsroom analysis dissects geopolitical fallout across the Bengal border"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক ফোরামে বাংলাদেশের রাজনৈতিক সংকট উত্থাপন নিয়ে ভারতীয় টেলিভিশন চ্যানেলের বিশেষ অডিও-ভিজ্যুয়াল কভারেজ।",
+    "sentimentReasonEn": "Specialized broadcast analysis tracking cross-border diplomatic ramifications of UN entreaties.",
+    "source": {
+      "name": "News18 Bangla (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=9ZXpSXJ4TjI",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T07:57:57.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://i.ytimg.com/vi/9ZXpSXJ4TjI/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=9ZXpSXJ4TjI",
+    "tags": [
+      "নিউজ১৮ বাংলা",
+      "শেখ হাসিনা",
+      "জাতিসংঘ",
+      "ভিডিও",
+      "রাজনীতি"
+    ]
+  },
+  {
+    "id": "news-20261028-007",
+    "slug": "india-today-ahmedabad-bomb-threats-cyber-links-bangladesh-pakistan",
+    "title": "Bangladesh, Pakistan links emerge in Ahmedabad hoax bomb threat cases - India Today",
+    "englishTitle": "India Today: Cyber Footprints from Bangladesh and Pakistan Emerge in Ahmedabad Hoax Bomb Threat Investigation",
+    "banglaTitle": "আহমেদাবাদে স্কুলে বোমা হামলার হুমকি ইমেলের পেছনে বাংলাদেশ ও পাকিস্তানের সাইবার যোগসূত্র ফাঁস: ইন্ডিয়া টুডে",
+    "summaryBn": "আহমেদাবাদের বেশ কয়েকটি শীর্ষ শিক্ষা প্রতিষ্ঠানে প্রেরিত ভূয়া বোমা হামলার হুমকির তদন্তে বড় অগ্রগতি পেয়েছে গুজরাট সাইবার সেল। ইন্ডিয়া টুডের অনুসন্ধানী প্রতিবেদনে জানা গেছে, হুমকি সম্বলিত ইমেলের আইপি ঠিকানা ও প্রক্সি সার্ভারের সংযোগ বাংলাদেশ ও পাকিস্তানে সন্ধান পাওয়া গেছে। আন্তঃসীমান্ত সাইবার অপরাধ দমনে কেন্দ্রীয় গোয়েন্দা সংস্থাগুলো যৌথ তদন্ত শুরু করেছে।",
+    "summaryEn": "India Today reports that investigative agencies probing coordinated hoax bomb threat emails sent to premier schools in Ahmedabad traced digital footprints and proxy origins to cyber actors based in Bangladesh and Pakistan. Law enforcement agencies have intensified cross-border cyber tracing mechanisms.",
+    "keyPointsBn": [
+      "আহমেদাবাদের শিক্ষাপ্রতিষ্ঠানে হুমকি ইমেলের ডিজিটাল সংযোগ বাংলাদেশ ও পাকিস্তানে শনাক্ত",
+      "আইপি অ্যাড্রেস ও ক্রিপ্টো ওয়ালেট লেনদেন খতিয়ে দেখছে ভারতীয় সাইবার ক্রাইম ইউনিট",
+      "সীমান্তপারের সাইবার হুমকি মোকাবিলায় জাতীয় তদন্তকারী সংস্থাগুলোর সমন্বয় বৃদ্ধি"
+    ],
+    "keyPointsEn": [
+      "Forensic tracking uncovers routing pathways operating through Bangladesh and Pakistan networks",
+      "Cyber investigators examine compromised servers and encrypted digital payment trails",
+      "Heightened coordinated inter-agency monitoring to thwart cross-border psychological harassment"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তপারের হ্যাকার নেটওয়ার্ক ও জননিরাপত্তা বিঘ্নিত করার অপচেষ্টার বিরুদ্ধে গোয়েন্দা অনুসন্ধানের প্রতিবেদন।",
+    "sentimentReasonEn": "Security coverage detailing malicious cross-border cyber operations targeting civilian institutions.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/india/story/ahmedabad-bomb-threat-emails-bangladesh-pakistan-hackers-investigation-3026612-2026-10-28",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-28T05:30:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "সাইবার নিরাপত্তা",
+      "ইন্ডিয়া টুডে",
+      "সীমান্ত",
+      "আহমেদাবাদ",
+      "তদন্ত"
+    ]
+  },
+  {
+    "id": "news-20261027-001",
+    "slug": "sportstar-asian-champions-trophy-india-thrashes-bangladesh-13-0",
+    "title": "Asian Champions Trophy 2026: Mandeep Singh hat-trick leads India’s 13-0 rout of Bangladesh - Sportstar",
+    "englishTitle": "Sportstar: Mandeep Singh Hat-Trick Propels India to Crushing 13-0 Win Over Bangladesh in Asian Champions Trophy",
+    "banglaTitle": "এশিয়ান চ্যাম্পিয়ন্স ট্রফি হকি: মনদীপ সিংয়ের বিধ্বংসী হ্যাটট্রিকে বাংলাদেশকে ১৩-০ গোলে ওড়াল ভারত, স্পোর্টস্টার",
+    "summaryBn": "জালন্ধরের অলিম্পিয়ান সুরজিৎ হকি স্টেডিয়ামে পুরুষদের এশিয়ান চ্যাম্পিয়ন্স ট্রফি হকির উদ্বোধনী ম্যাচে বাংলাদেশকে ১৩-০ গোলের বিশাল ব্যবধানে হারাল ভারতীয় দল। স্পোর্টস্টারের ম্যাচ রিপোর্টে উল্লেখ করা হয়েছে, ভারতীয় ফরোয়ার্ড মনদীপ সিং ও হার্দিক সিংয়ের দুর্দান্ত হ্যাটট্রিক এবং আক্রমণাত্মক খেলা বাংলাদেশের রক্ষণভাগকে দাঁড়াতেই দেয়নি।",
+    "summaryEn": "Sportstar reports that India commenced their Asian Champions Trophy campaign with a commanding 13-0 thrashing of Bangladesh at the Olympian Surjit Hockey Stadium in Jalandhar. Dominant hat-tricks from star forwards Mandeep Singh and Hardik Singh overwhelmed Bangladesh’s defensive lines throughout the four quarters.",
+    "keyPointsBn": [
+      "এশিয়ান চ্যাম্পিয়ন্স ট্রফির প্রথম ম্যাচেই বাংলাদেশকে ১৩-০ গোলে বিধ্বস্ত করল ভারত",
+      "মনদীপ সিং ও হার্দিক সিংয়ের দুর্দান্ত নৈপুণ্যে একতরফা জয় তুলে নিল স্বাগতিকরা",
+      "টুর্নামেন্টে টাইটেল ধরে রাখার অভিযানে ভারতীয় হকি দলের আত্মবিশ্বাসী সূচনা"
+    ],
+    "keyPointsEn": [
+      "Defending champions India secure emphatic 13-0 triumph in tournament opener",
+      "Clinical finishing saw hat-tricks by Mandeep Singh and vice-captain Hardik Singh",
+      "Bangladesh struggled against persistent high-press tactics in Jalandhar encounter"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "খেলাধুলা",
+    "categoryLabelEn": "Sports",
+    "sentiment": "positive",
+    "sentimentReasonBn": "আন্তর্জাতিক ক্রীড়াঙ্গনে ভারতীয় দলের ঐতিহাসিক ও দাপুটে জয়কে ইতিবাচকভাবে তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Sports reportage praising India's clinical, dominant performance in continental competition.",
+    "source": {
+      "name": "Sportstar",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://sportstar.thehindu.com/hockey/asian-champions-trophy-2026-mandeep-hardik-hat-trick-india-bangladesh/article71632895.ece",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-27T16:26:50.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=800&auto=format&fit=crop&q=80",
+    "mediaFormat": "rss",
+    "tags": [
+      "হকি",
+      "স্পোর্টস্টার",
+      "ভারত-বাংলাদেশ",
+      "এশিয়ান চ্যাম্পিয়ন্স ট্রফি",
+      "মনদীপ সিং"
+    ]
+  },
+  {
+    "id": "news-20261027-002",
+    "slug": "divya-marathi-hasina-vows-return-december-amid-arrest-fears",
+    "title": "शेख हसीना म्हणाल्या- सरकार अटक किंवा छळ करू शकते: तरीही डिसेंबरमध्ये बांगलादेशात परतेन - Divya Marathi",
+    "englishTitle": "Divya Marathi: ‘Risk of Arrest Remains, Yet Returning in December’, Sheikh Hasina Reaffirms Determination",
+    "banglaTitle": "‘গ্রেপ্তার বা হেনস্থার ঝুঁকি সত্ত্বেও ডিসেম্বরেই দেশে ফিরব’: ভারতে বসে শেখ হাসিনার প্রত্যয়, দিব্য মারাঠি",
+    "summaryBn": "মহারাষ্ট্রের জনপ্রিয় দৈনিক ‘দিব্য মারাঠি’র আন্তর্জাতিক পাতায় শেখ হাসিনার রাজনৈতিক ভবিষ্যৎ নিয়ে বিশদ প্রতিবেদন প্রকাশিত হয়েছে। প্রতিবেদনে বলা হয়েছে, অন্তর্বর্তী সরকার গ্রেপ্তারি পরোয়ানা জারি করলেও বা শারীরিকভাবে হেনস্থা করার চেষ্টা করলেও তিনি আগামী ডিসেম্বরেই ঢাকায় ফিরতে সংকল্পবদ্ধ। তিনি আইনি লড়াইয়ের মাধ্যমে জনগণের অধিকার ফিরিয়ে আনার কথা ব্যক্ত করেছেন।",
+    "summaryEn": "Maharashtra-based daily Divya Marathi highlighted former Premier Sheikh Hasina’s firm resolution to return to Bangladesh in December despite facing imminent arrest warrants and severe legal persecution. The report examines political undercurrents across western Indian strategic circles regarding cross-border stability.",
+    "keyPointsBn": [
+      "গ্রেপ্তার বা হেনস্থার চরম ঝুঁকি সত্ত্বেও ডিসেম্বরে ফেরার সিদ্ধান্ত পুনর্ব্যক্ত করলেন শেখ হাসিনা",
+      "আইনি প্রক্রিয়া ও গণমানুষের সমর্থন নিয়ে রাজনৈতিক প্রত্যাবর্তনের প্রত্যাশা",
+      "পশ্চিম ভারতের গণমাধ্যমে সীমান্তপারের নিরাপত্তা ও শাসন ব্যবস্থার ওপর দৃষ্টি"
+    ],
+    "keyPointsEn": [
+      "Reiterated intention to return in December notwithstanding pending warrants and physical threats",
+      "Emphasized resolving legal battles transparently before domestic and international forums",
+      "Western Indian press coverage spotlights regional governance and refugee policy implications"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "মারাঠি আঞ্চলিক গণমাধ্যমে সাবেক প্রধানমন্ত্রীর রাজনৈতিক বক্তব্য ও সম্ভাব্য পরিণতির নিরপেক্ষ পর্যালোচনা।",
+    "sentimentReasonEn": "Balanced regional Indian press analysis of sensitive political developments in Bangladesh.",
+    "source": {
+      "name": "Divya Marathi",
+      "bureau": "Mumbai",
+      "language": "Marathi",
+      "originalUrl": "https://divyamarathi.bhaskar.com/international/news/sheikh-hasina-statement-bangladesh-return-plans-amidst-arrest-threat-139430375.html",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-27T23:49:38.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/sheikh-hasina-official-portrait.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "শেখ হাসিনা",
+      "দিব্য মারাঠি",
+      "ডিসেম্বর",
+      "রাজনীতি",
+      "মারাঠি"
+    ]
+  },
+  {
+    "id": "news-20261027-003",
+    "slug": "dd-news-indian-envoy-dinesh-trivedi-meets-bangladesh-pm-rahman",
+    "title": "Indian envoy Dinesh Trivedi meets Bangladesh PM Rahman - DD News",
+    "englishTitle": "DD News: Indian Special Envoy Dinesh Trivedi Meets Bangladesh Prime Minister Rahman in Dhaka",
+    "banglaTitle": "ঢাকায় বাংলাদেশের প্রধানমন্ত্রীর সঙ্গে ভারতীয় বিশেষ দূত দীনেশ ত্রিবেদীর সৌজন্য সাক্ষাৎ: ডিডি নিউজ",
+    "summaryBn": "ভারতের রাষ্ট্রীয় সম্প্রচারমাধ্যম ডিডি নিউজের কূটনৈতিক বার্তায় জানানো হয়েছে, ঢাকায় বাংলাদেশের নতুন প্রধানমন্ত্রী তারেক রহমানের সঙ্গে এক গুরুত্বপূর্ণ সৌজন্য বৈঠকে মিলিত হয়েছেন ভারতীয় বিশেষ দূত দীনেশ ত্রিবেদী। বৈঠকে সীমান্ত বাণিজ্য স্বাভাবিক রাখা, বিদ্যুৎ ও নিত্যপণ্য সরবরাহ অব্যাহত রাখা এবং আঞ্চলিক স্থিতিশীলতা রক্ষার বিভিন্ন দিক নিয়ে খোলামেলা আলোচনা হয়।",
+    "summaryEn": "Indian national broadcaster DD News reported that Indian Special Envoy Dinesh Trivedi held official discussions with Bangladesh Prime Minister Tarique Rahman in Dhaka. The high-level meeting addressed essential trade continuity, energy supplies, cross-border border stability, and ongoing regional diplomatic cooperation.",
+    "keyPointsBn": [
+      "ঢাকায় দুই দেশের উচ্চপর্যায়ের আনুষ্ঠানিক কূটনৈতিক যোগাযোগ",
+      "বিদ্যুৎ, খাদ্যপণ্য ও সীমান্ত বাণিজ্য স্বাভাবিক রাখার ওপর বিশেষ গুরুত্ব",
+      "দ্বিপাক্ষিক সম্পর্ক স্বাভাবিক ও গঠনমূলক রাখার ব্যাপারে উভয় পক্ষের সম্মতি"
+    ],
+    "keyPointsEn": [
+      "High-level bilateral diplomatic engagement conducted in Dhaka by Indian delegation",
+      "Prioritized stability of essential supplies, energy links, and peaceful borders",
+      "Both sides affirmed mutual commitment to pragmatic and sustained cross-border ties"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "উচ্চপর্যায়ের আনুষ্ঠানিক বৈঠক ও নিত্যপণ্য সরবরাহ বজায় রাখার আশ্বাস গঠনমূলক কূটনৈতিক সম্পর্কের ইঙ্গিতবাহী।",
+    "sentimentReasonEn": "Constructive reportage tracking stable official contact and pragmatic bilateral negotiations.",
+    "source": {
+      "name": "DD News",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://ddnews.gov.in/en/indian-envoy-dinesh-trivedi-meets-bangladesh-pm-rahman/",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-27T11:20:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "ডিডি নিউজ",
+      "দীনেশ ত্রিবেদী",
+      "কূটনীতি",
+      "ঢাকা",
+      "ভারত-বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261026-001",
+    "slug": "sangbad-pratidin-bangladesh-intelligence-chief-delhi-visit",
+    "title": "দিল্লিতে ঝটিকা সফরে বাংলাদেশের জাতীয় নিরাপত্তা ও গোয়েন্দা প্রধান, হাসিনার প্রত্যাবর্তন নিয়ে আলোচনা? - Sangbad Pratidin",
+    "englishTitle": "Sangbad Pratidin: Bangladesh Intelligence Chief Makes Whirlwind Visit to Delhi Amid Hasina Repatriation Buzz",
+    "banglaTitle": "দিল্লিতে ঝটিকা সফরে বাংলাদেশের জাতীয় নিরাপত্তা ও গোয়েন্দা প্রধান, কূটনৈতিক মহলে ব্যাপক গুঞ্জন: সংবাদ প্রতিদিন",
+    "summaryBn": "কলকাতার শীর্ষস্থানীয় সংবাদপত্র সংবাদ প্রতিদিনের বিশেষ এক্সক্লুসিভ প্রতিবেদনে দাবি করা হয়েছে, কোনো পূর্বঘোষণা ছাড়াই দিল্লিতে এক গোপন ও গুরুত্বপূর্ণ সফরে এসেছিলেন বাংলাদেশের জাতীয় নিরাপত্তা ও গোয়েন্দা প্রধান। সাউথ ব্লকের শীর্ষ নিরাপত্তা কর্মকর্তা ও ভারতীয় গোয়েন্দা প্রধানদের সঙ্গে দ্বিপাক্ষিক নিরাপত্তা পরিস্থিতি, সীমান্ত নিয়ন্ত্রণ ও শেখ হাসিনার অবস্থান নিয়ে বিশদ আলোচনা হয়েছে বলে কূটনৈতিক সূত্রের বরাতে জানানো হয়েছে।",
+    "summaryEn": "Kolkata daily Sangbad Pratidin reported on an unannounced whirlwind visit by Bangladesh's National Security Intelligence leadership to New Delhi. The report states that crucial talks were held with Indian national security officials concerning border management, intelligence sharing, and regional political sensitivities.",
+    "keyPointsBn": [
+      "দিল্লির সাউথ ব্লকে দুই দেশের নিরাপত্তা ও গোয়েন্দা শীর্ষ কর্মকর্তাদের রুদ্ধদ্বার বৈঠক",
+      "সীমান্ত অপরাধ দমন ও গোয়েন্দা তথ্য আদান-প্রদান অব্যাহত রাখার অঙ্গীকার",
+      "কূটনৈতিক মহলে শেখ হাসিনার উপস্থিতি ও দ্বিপাক্ষিক নিরাপত্তা নিয়ে নানামুখী গুঞ্জন"
+    ],
+    "keyPointsEn": [
+      "Unpublicized high-stakes security consultations convened between intelligence officials in New Delhi",
+      "Reaffirmed cooperation on cross-border surveillance, terror prevention, and border stability",
+      "Assessed implications of evolving political leadership dynamics on regional security"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দুই দেশের শীর্ষ নিরাপত্তা মহলের গোপন দ্বিপাক্ষিক আলোচনা ও সীমান্তবর্তী গোয়েন্দা তৎপরতার বিশদ পর্যালোচনা।",
+    "sentimentReasonEn": "Detailed strategic analysis of covert intelligence diplomacy and institutional cooperation.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.sangbadpratidin.in/india/bangladeshs-national-security-and-intelligence-chief-on-a-visit-to-delhi/pid/1400416/",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-26T15:55:53.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&auto=format&fit=crop&q=80",
+    "mediaFormat": "rss",
+    "tags": [
+      "সংবাদ প্রতিদিন",
+      "গোয়েন্দা প্রধান",
+      "দিল্লি সফর",
+      "সাউথ ব্লক",
+      "নিরাপত্তা"
+    ]
+  },
+  {
+    "id": "news-20261026-002",
+    "slug": "times-of-india-hindu-teacher-killed-mediating-dispute-bangladesh",
+    "title": "Hindu teacher killed while mediating dispute in Bangladesh - The Times of India",
+    "englishTitle": "The Times of India: Hindu Teacher Beaten to Death While Mediating Land Dispute in Bangladesh",
+    "banglaTitle": "বাংলাদেশে সালিশি সভায় গিয়ে হিন্দু শিক্ষককে পিটিয়ে হত্যা, ক্ষোভে ফুঁসছে স্থানীয় সংখ্যালঘু সমাজ: টাইমস অব ইন্ডিয়া",
+    "summaryBn": "বাংলাদেশে এক গ্রামীণ জমিজমা সংক্রান্ত বিরোধ নিষ্পত্তির সালিশি বৈঠকে মধ্যস্থতা করতে গিয়ে এক প্রবীণ হিন্দু স্কুলশিক্ষককে পিটিয়ে হত্যা করার নৃশংস ঘটনা রিপোর্ট করেছে টাইমস অব ইন্ডিয়া। ঘটনাটি স্থানীয় সংখ্যালঘু সম্প্রদায়ের মধ্যে গভীর আতঙ্ক ও ক্ষোভের জন্ম দিয়েছে। সংখ্যালঘু সংগঠনগুলো দোষীদের দৃষ্টান্তমূলক শাস্তির দাবি জানিয়েছে এবং ভারতেও বিষয়টি নিয়ে উদ্বেগ প্রকাশ করা হয়েছে।",
+    "summaryEn": "The Times of India reports that a veteran Hindu school teacher was brutally assaulted and killed while mediating a local property dispute in Bangladesh. The incident has sparked outrage and fear among minority groups, prompting civil rights organizations to demand immediate arrests and state protection for vulnerable communities.",
+    "keyPointsBn": [
+      "জমি বিরোধ মীমাংসা করতে গিয়ে প্রবীণ হিন্দু শিক্ষককে নৃশংসভাবে পিটিয়ে হত্যার ঘটনা",
+      "সংখ্যালঘু সংগঠনগুলোর তীব্র প্রতিবাদ ও জড়িতদের দ্রুত গ্রেপ্তারের দাবি",
+      "সীমান্তপারে সংখ্যালঘু সম্প্রদায়ের সুরক্ষা ও সামাজিক নিরাপত্তা নিয়ে উদ্বেগ পুনর্ব্যক্ত"
+    ],
+    "keyPointsEn": [
+      "Tragic death of veteran Hindu educator during community land arbitration",
+      "Minority organizations stage demonstrations demanding strict legal accountability",
+      "Highlights persistent concerns regarding community safety and law enforcement responsiveness"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সমাজ",
+    "categoryLabelEn": "Culture & Society",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সংখ্যালঘু সম্প্রদায়ের সদস্যের ওপর সহিংসতা ও নিরাপত্তাহীনতার সংবেদনশীল বিষয়ে উদ্বেগজনক ভারতীয় কভারেজ।",
+    "sentimentReasonEn": "Somber reporting focusing on minority protection challenges and communal vulnerability.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/south-asia/hindu-teacher-killed-while-mediating-dispute-in-bangladesh/articleshow/135221682.cms",
+      "scannedAt": "2026-10-29T00:40:00.000Z"
+    },
+    "publishedAt": "2026-10-26T23:47:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/dhakeshwari-national-temple-dhaka.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "টাইমস অব ইন্ডিয়া",
+      "সংখ্যালঘু নিরাপত্তা",
+      "শিক্ষক",
+      "বাংলাদেশ",
+      "মানবাধিকার"
+    ]
+  },
   {
     "id": "news-20261021-001",
     "slug": "newsx-sheikh-hasina-vows-return-december-live",
@@ -183,7 +717,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeEn": "3 mins",
     "imageUrl": "https://i.ytimg.com/vi/TlxjU2A8xUc/hqdefault.jpg",
     "mediaFormat": "youtube",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "tags": [
       "শেখ হাসিনা",
