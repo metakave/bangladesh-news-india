@@ -71,10 +71,10 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "২৯ অক্টোবর, ২০২৬ এ ১২:৪০ AM",
-  "lastScannedAtEn": "29 Oct 2026, 12:40 am",
-  "totalScanned24h": 4605,
-  "bangladeshMatches": 1089,
+  "lastScannedAtBn": "৪ নভেম্বর, ২০২৬ এ ১:০০ PM",
+  "lastScannedAtEn": "04 Nov 2026, 01:00 pm",
+  "totalScanned24h": 4786,
+  "bangladeshMatches": 1233,
   "sentimentDistribution": {
     "positive": 38,
     "neutral": 47,
@@ -83,8 +83,8 @@ export const SCANNER_STATS = {
   "bureauDistribution": {
     "delhi": 44,
     "kolkata": 34,
-    "mumbai": 12,
-    "tripura": 4,
+    "mumbai": 11,
+    "tripura": 5,
     "assam": 3,
     "siliguri": 3
   },
@@ -101,52 +101,586 @@ export const SCANNER_STATS = {
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
   {
-    "id": "alert-118",
-    "headlineBn": "‘আওয়ামি লিগকে বাদ দিয়ে নির্বাচনের কোনো বৈধতা নেই’: ভারতে বসে শেখ হাসিনার বার্তা — ফার্স্টপোস্ট",
-    "headlineEn": "Firstpost: Sheikh Hasina LIVE: Challenges Legitimacy of Elections That Excluded Awami League",
+    "id": "alert-122",
+    "headlineBn": "‘গঙ্গা জলচুক্তি নবায়ন ও সংযোগ নিয়ে প্রাতিষ্ঠানিক ব্যবস্থা বহাল রয়েছে’: ভারতের বিদেশ মন্ত্রক — দ্য হিন্দু",
+    "headlineEn": "The Hindu: Weeks Before Expiry of Ganga Water Treaty, MEA Affirms Structured Mechanism Remains Active",
     "timeAgoBn": "১০ মিনিট আগে",
     "timeAgoEn": "10 mins ago",
-    "sourceName": "Firstpost",
+    "sourceName": "The Hindu",
     "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.youtube.com/watch?v=0H0h1MKG7ec"
+    "sentiment": "positive",
+    "url": "https://www.thehindu.com/news/national/weeks-before-expiry-of-ganga-water-treaty-mea-says-structured-mechanism-remains-in-place-for-pact/article71661782.ece"
   },
   {
-    "id": "alert-119",
-    "headlineBn": "‘আওয়ামি লিগের ওপর নিষেধাজ্ঞা প্রত্যাহার চেয়ে রাষ্ট্রসংঘে শেখ হাসিনার নালিশ’: ইন্ডিয়া টুডে",
-    "headlineEn": "India Today: Sheikh Hasina Approaches United Nations Seeking Reversal of Ban on Awami League",
+    "id": "alert-123",
+    "headlineBn": "বাংলাদেশে পোশাক শ্রমিকদের ভয়াবহ বিক্ষোভ, গাজীপুর ও সাভারে পরিস্থিতি নিয়ন্ত্রণে নামল বিজিবি — সংবাদ প্রতিদিন",
+    "headlineEn": "Sangbad Pratidin: Violent Garment Wage Protests Shut Hundreds of Factories in Bangladesh; BGB Deployed",
     "timeAgoBn": "২৫ মিনিট আগে",
     "timeAgoEn": "25 mins ago",
-    "sourceName": "India Today",
-    "sourceBureau": "Delhi",
-    "sentiment": "neutral",
-    "url": "https://www.indiatoday.in/world/story/sheikh-hasina-un-action-awami-league-ban-bangladesh-elections-3026654-2026-10-28"
+    "sourceName": "Sangbad Pratidin",
+    "sourceBureau": "Kolkata",
+    "sentiment": "negative",
+    "url": "https://www.sangbadpratidin.in/bangladesh/bgb-controlling-bangladesh-situation-as-protest-going-on/pid/1412351/"
   },
   {
-    "id": "alert-120",
-    "headlineBn": "ঢাকার পাতাল মেট্রো নির্মাণে ফের বড় বরাত পেল ভারতীয় সংস্থা এলঅ্যান্ডটি — দ্য ওয়াল",
-    "headlineEn": "The Wall: Indian Infrastructure Major L&T Wins Massive Underground Dhaka Metro MRT-1 Contract",
+    "id": "alert-124",
+    "headlineBn": "ত্রিপুরা সীমান্তে বিএসএফ জওয়ানদের ওপর অতর্কিত হামলার ঘটনায় আটজন গ্রেপ্তার — ত্রিপুরা টাইমস",
+    "headlineEn": "Tripura Times: Eight Arrested for Attacking BSF Personnel Along India-Bangladesh Border in Tripura",
     "timeAgoBn": "৪০ মিনিট আগে",
     "timeAgoEn": "40 mins ago",
-    "sourceName": "The Wall",
-    "sourceBureau": "Kolkata",
-    "sentiment": "positive",
-    "url": "https://www.thewall.in/bangladesh/indian-company-lt-has-secured-a-major-contract-for-dhakas-new-metro-project-as-well/tid/208059"
+    "sourceName": "Tripura Times",
+    "sourceBureau": "Tripura",
+    "sentiment": "neutral",
+    "url": "https://tripuratimes.com/ttimes/eight-arrested-for-attacking-bsf-personnel-along-india-bangladesh-border-in-tripura-42883.html"
   },
   {
-    "id": "alert-121",
-    "headlineBn": "নেপাল ও বাংলাদেশ সীমান্তে নজরদারি বাড়াতে উত্তরবঙ্গে ৫০টি নতুন থানা ও ফাঁড়ি — দৈনিক জাগরণ",
-    "headlineEn": "Dainik Jagran: 50 New Police Stations and Outposts in North Bengal Along Nepal-Bangladesh Border",
+    "id": "alert-125",
+    "headlineBn": "মজুরি বৃদ্ধির দাবিতে ঢাকায় পোশাক শ্রমিকদের ব্যাপক আন্দোলন, শত শত কারখানা বন্ধ — উইয়ন নিউজ",
+    "headlineEn": "WION: Dhaka: Garment Workers Continue Massive Demonstrations for Wage Hikes as Factories Shut Down",
     "timeAgoBn": "১ ঘণ্টা আগে",
     "timeAgoEn": "1 hour ago",
-    "sourceName": "Dainik Jagran",
-    "sourceBureau": "Siliguri",
+    "sourceName": "WION",
+    "sourceBureau": "Delhi",
     "sentiment": "neutral",
-    "url": "https://www.jagran.com/west-bengal/kolkata-north-bengal-police-expansion-50-new-stations-for-border-security-40420186.html"
+    "url": "https://www.youtube.com/watch?v=lz7UzOyKLug"
   }
 ];
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
+  {
+    "id": "news-20261104-001",
+    "slug": "the-hindu-ganga-water-treaty-structured-mechanism-mea-clarification",
+    "title": "Weeks before expiry of Ganga Water Treaty, MEA says ‘structured mechanism’ remains in place for pact - The Hindu",
+    "englishTitle": "The Hindu: Weeks Before Expiry of Ganga Water Treaty, MEA Affirms Structured Mechanism Remains in Place",
+    "banglaTitle": "গঙ্গা চুক্তির মেয়াদ উত্তীর্ণের প্রাক্কালে ভারতের বার্তা, ‘স্থায়ী কাঠামোবদ্ধ প্রক্রিয়া কার্যকর রয়েছে’: দ্য হিন্দু",
+    "summaryBn": "১৯৯৬ সালের ঐতিহাসিক ভারত-বাংলাদেশ গঙ্গা জলবণ্টন চুক্তির ৩০ বছরের মেয়াদ আগামী মাসে শেষ হওয়ার প্রাক্কালে ভারতের পররাষ্ট্র মন্ত্রণালয় স্পষ্ট জানিয়েছে যে চুক্তি পর্যালোচনা ও আলোচনা চালিয়ে যাওয়ার জন্য প্রতিষ্ঠিত যৌথ নদী কমিশন ও স্থায়ী প্রাতিষ্ঠানিক ব্যবস্থা বহাল রয়েছে। দ্য হিন্দুর বিশেষ প্রতিবেদনে দিল্লির কূটনৈতিক অবস্থান বিশদভাবে বিশ্লেষণ করা হয়েছে।",
+    "summaryEn": "Ahead of the expiration of the historic 1996 30-year Ganga Water Sharing Treaty, India's Ministry of External Affairs affirmed that an established, institutionalized mechanism under the Joint Rivers Commission remains active to deliberate technical and bilateral considerations between New Delhi and Dhaka.",
+    "keyPointsBn": [
+      "গঙ্গা জলচুক্তির মেয়াদ শেষ হওয়ার মুখে ভারতের পররাষ্ট্র মন্ত্রণালয়ের গুরুত্বপূর্ণ বিবৃতি",
+      "যৌথ নদী কমিশনের আওতায় উভয় দেশের প্রাতিষ্ঠানিক কারিগরি ব্যবস্থা সক্রিয় থাকার নিশ্চয়তা",
+      "সীমান্তবর্তী নদীর হিস্যা নিয়ে যেকোনো অপপ্রচার বা গুজব নিরসনে গঠনমূলক কূটনীতির গুরুত্ব"
+    ],
+    "keyPointsEn": [
+      "MEA affirms active operational framework ahead of bilateral 30-year treaty expiration",
+      "Joint Rivers Commission technical teams continue baseline data coordination",
+      "Emphasizes institutional resilience and constructive dialogue over politicized rhetoric"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "নদীর পানিবণ্টন সংক্রান্ত জটিল ইস্যুতে দিল্লি-ঢাকা প্রতিষ্ঠিত প্রাতিষ্ঠানিক চ্যানেল অব্যাহত থাকার গঠনমূলক ও ইতিবাচক বার্তা।",
+    "sentimentReasonEn": "Constructive diplomatic reportage emphasizing stability and bilateral institutional procedures on shared river waters.",
+    "source": {
+      "name": "The Hindu",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.thehindu.com/news/national/weeks-before-expiry-of-ganga-water-treaty-mea-says-structured-mechanism-remains-in-place-for-pact/article71661782.ece",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-04T08:30:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": true,
+    "isTrending": true,
+    "tags": [
+      "গঙ্গা চুক্তি",
+      "পররাষ্ট্র মন্ত্রণালয়",
+      "দ্য হিন্দু",
+      "কূটনীতি",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261104-002",
+    "slug": "tv9-bangla-saff-cup-indian-team-hotel-room-chaos-dhaka",
+    "title": "SAFF Cup: বুক করা নেই হোটেল রুম, ঢাকায় খেলতে গিয়ে চরম অব্যবস্থার শিকার ভারতীয় দল - TV9 Bangla",
+    "englishTitle": "TV9 Bangla: No Hotel Rooms Booked, Indian Football Squad Stranded in Dhaka Ahead of SAFF Match",
+    "banglaTitle": "ঢাকায় পৌঁছে চরম ভোগান্তির শিকার ভারতীয় ফুটবল দল, হোটেল রুম না পেয়ে রাস্তায় অপেক্ষা: টিভি৯ বাংলা",
+    "summaryBn": "অনূর্ধ্ব সাফ ফুটবল টুর্নামেন্টে অংশ নিতে ঢাকা পৌঁছানোর পর তীব্র অব্যবস্থার মুখে পড়ল ভারতীয় জাতীয় ফুটবল দল। টিভি৯ বাংলার এক্সক্লুসিভ প্রতিবেদনে জানা গেছে, আয়োজকদের চরম গাফিলতিতে বিমানবন্দরে নামার পর নির্ধারিত হোটেলে কোনো রুম বুক করা ছিল না। ভারতীয় খেলোয়াড় ও কর্মকর্তাদের ঘণ্টার পর ঘণ্টা লাগেজ নিয়ে লবি ও রাস্তায় দাঁড়িয়ে থাকতে হয়।",
+    "summaryEn": "TV9 Bangla reports that the Indian national youth football squad faced severe administrative chaos upon landing in Dhaka for the SAFF tournament. Due to logistical failure by local tournament organizers, no hotel rooms were reserved, leaving Indian players and staff stranded for over four hours with their baggage.",
+    "keyPointsBn": [
+      "ঢাকায় সাফ টুর্নামেন্ট খেলতে গিয়ে হোটেল না পেয়ে চরম হেনস্থার শিকার ভারতীয় দল",
+      "বিমানবন্দর থেকে হোটেলে পৌঁছালেও আয়োজকদের কোনো বুকিং বা ব্যবস্থাপনা ছিল না",
+      "আন্তর্জাতিক ক্রীড়া আয়োজনে এমন অপেশাদার আচরণের বিরুদ্ধে সর্বভারতীয় ফুটবল ফেডারেশনের তীব্র ক্ষোভ"
+    ],
+    "keyPointsEn": [
+      "Indian youth team stranded in Dhaka due to unreserved hotel accommodations",
+      "Contingent waited hours in transit before emergency alternate lodging was arranged",
+      "AIFF officials express concern over administrative neglect during continental tournament"
+    ],
+    "category": "sports",
+    "categoryLabelBn": "খেলাধুলা",
+    "categoryLabelEn": "Sports",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আন্তর্জাতিক খেলায় অংশ নিতে গিয়ে ভারতীয় ক্রীড়াবিদদের অনাকাঙ্ক্ষিত হেনস্থা ও লজিস্টিক বিশৃঙ্খলা নিয়ে প্রতিবেদন।",
+    "sentimentReasonEn": "Critical sports coverage highlighting administrative incompetence impacting touring Indian athletes.",
+    "source": {
+      "name": "TV9 Bangla",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://tv9bangla.com/sports/no-hotel-booked-indian-team-stranded-in-dhaka-ahead-of-pakistan-clash-in-saff-cup-1358229.html",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-04T07:15:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&auto=format&fit=crop&q=80",
+    "mediaFormat": "rss",
+    "isTrending": true,
+    "tags": [
+      "সাফ কাপ",
+      "টিভি৯ বাংলা",
+      "ফুটবল",
+      "ঢাকা",
+      "খেলাধুলা"
+    ]
+  },
+  {
+    "id": "news-20261104-003",
+    "slug": "navbharat-times-mea-ganga-treaty-tarique-rahman-visit-clarification",
+    "title": "India-Bangladesh: 'न गंगा संधि, न ही तारिक रहमान के दौरे की तारीख पर कोई अपडेट', MEA का बयान - Navbharat Times",
+    "englishTitle": "Navbharat Times: 'No Formal Update on Ganga Water Treaty or Tarique Rahman New Delhi Visit', Clarifies MEA",
+    "banglaTitle": "‘গঙ্গা চুক্তি বা তারেক রহমানের সফর নিয়ে কোনো দিনক্ষণ চূড়ান্ত হয়নি’: ভারতীয় বিদেশ মন্ত্রক, নবভারত টাইমস",
+    "summaryBn": "ভারতের পররাষ্ট্র মন্ত্রণালয়ের মুখপাত্র সাপ্তাহিক ব্রিফিংয়ে জানিয়েছেন যে বাংলাদেশের রাজনৈতিক রূপান্তরের পর নতুন অন্তর্বর্তী নেতৃত্ব বা তারেক রহমানের দিল্লি সফর নিয়ে এখনও কোনো নির্দিষ্ট তারিখ বা প্রস্তাব নির্ধারিত হয়নি। নবভারত টাইমসের প্রতিবেদনে উল্লেখ করা হয়, নদীর জলবণ্টন ও সীমান্ত নিরাপত্তা নিয়ে ভারত গঠনমূলক দ্বিপাক্ষিক আলোচনাকে স্বাগত জানালেও স্পর্শকাতর বিষয়ে তাড়াহুড়ো না করার নীতি অনুসরণ করছে।",
+    "summaryEn": "Navbharat Times reported that the Ministry of External Affairs clarified in its weekly press briefing that no concrete dates or proposals have been finalized regarding a high-level visit by Bangladesh PM Tarique Rahman or revisions to the Ganga treaty, emphasizing a measured diplomatic posture focused on security and practical cooperation.",
+    "keyPointsBn": [
+      "তারেক রহমানের দিল্লি সফর বা গঙ্গা চুক্তির নতুন রূপরেখা নিয়ে এখনো কোনো চূড়ান্ত সিদ্ধান্ত নেই",
+      "দ্বিপাক্ষিক সম্পর্ক ও যোগাযোগ চ্যানেল সক্রিয় থাকলেও স্পর্শকাতর বিষয়ে ভারতের সাবধানী পদক্ষেপ",
+      "সীমান্তের শান্তি ও নাগরিকদের নিরাপত্তাকে সর্বোচ্চ কূটনৈতিক অগ্রাধিকার দিল্লির"
+    ],
+    "keyPointsEn": [
+      "MEA spokesperson notes no finalized timeline for leadership bilateral summit",
+      "Reiterates sustained institutional channels while prioritizing border security stability",
+      "Maintains principled diplomatic engagement aligned with core strategic interests"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দ্বিপাক্ষিক কূটনৈতিক তৎপরতা ও শীর্ষ নেতৃত্বের বৈঠক সংক্রান্ত বিষয়ে পররাষ্ট্র মন্ত্রণালয়ের ভারসাম্যপূর্ণ বিশ্লেষণ।",
+    "sentimentReasonEn": "Objective diplomatic briefing tracking high-level bilateral engagement protocols and regional policies.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://navbharattimes.indiatimes.com/india/india-straight-forward-message-to-bangladesh-on-ganga-water-treaty-and-pm-tarique-rahman-to-visit-new-delhi/articleshow/135525959.cms",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-04T05:45:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop&q=80",
+    "mediaFormat": "rss",
+    "tags": [
+      "নবভারত টাইমস",
+      "পররাষ্ট্র মন্ত্রণালয়",
+      "তারেক রহমান",
+      "গঙ্গা চুক্তি",
+      "কূটনীতি"
+    ]
+  },
+  {
+    "id": "news-20261103-001",
+    "slug": "wion-dhaka-garment-workers-protest-better-wages-shutdown",
+    "title": "Dhaka: Workers Continue Demonstrations for Better Wages | WION - YouTube",
+    "englishTitle": "WION Video Dispatch: Garment Workers Continue Massive Demonstrations in Dhaka Demanding Higher Minimum Wages",
+    "banglaTitle": "মজুরি বৃদ্ধির দাবিতে ঢাকায় পোশাক শ্রমিকদের তীব্র আন্দোলন, আন্তর্জাতিক চ্যানেলে সরাসরি রিপোর্ট — উইয়ন নিউজ",
+    "summaryBn": "ভারতের প্রথম বৈশ্বিক আন্তর্জাতিক চ্যানেল উইয়ন নিউজের বিশেষ ভিডিও প্রতিবেদনে ঢাকার গাজীপুর ও আশুলিয়ার পোশাক কারখানার ব্যাপক শ্রমিক অসন্তোষের চিত্র তুলে ধরা হয়েছে। জীবনযাত্রার ক্রমবর্ধমান ব্যয় ও উচ্চ মুদ্রাস্ফীতির মুখে ন্যূনতম বেতন ২৫ হাজার টাকার দাবিতে কয়েক লাখ শ্রমিক রাজপথে নেমেছেন, যার ফলে প্রায় এক হাজার পোশাক কারখানায় উৎপাদন সম্পূর্ণ বন্ধ হয়ে পড়েছে।",
+    "summaryEn": "In a featured international video report, Indian global news network WION documents the escalating garment worker unrest paralyzing Dhaka, Gazipur, and Ashulia. With inflation soaring, over one hundred thousand workers have halted production across nearly 1,000 export garment factories, demanding higher wages and immediate cost-of-living relief.",
+    "keyPointsBn": [
+      "ঢাকার পোশাক শিল্পাঞ্চলে মজুরি বৃদ্ধির দাবিতে লাখো শ্রমিকের সড়ক অবরোধ ও বিক্ষোভ",
+      "প্রায় এক হাজার কারখানা বন্ধ থাকায় রপ্তানি সরবরাহে ব্যাপক বিঘ্নের আশঙ্কা",
+      "উইয়নের অন-গ্রাউন্ড বিশ্লেষণ ও আন্তর্জাতিক ফ্যাশন সাপ্লাই চেইনে সম্ভাব্য অভিঘাত"
+    ],
+    "keyPointsEn": [
+      "Widespread industrial protests disrupt hundreds of ready-made garment units",
+      "Inflation pressures drive intense labor demands for minimum wage adjustments",
+      "WION visual dispatch examines fallout across international retail supply chains"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও অর্থনীতি",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "বাংলাদেশের তৈরি পোশাক খাতের অর্থনৈতিক অস্থিরতা ও বৈশ্বিক সাপ্লাই চেইনের ওপর এর প্রভাব নিয়ে আন্তর্জাতিক ভিডিও বিশ্লেষণ।",
+    "sentimentReasonEn": "In-depth international television report tracking labor economics and supply chain disruptions in Bangladesh.",
+    "source": {
+      "name": "WION",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=lz7UzOyKLug",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T18:20:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "https://i.ytimg.com/vi/lz7UzOyKLug/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=lz7UzOyKLug",
+    "isTrending": true,
+    "tags": [
+      "উইয়ন",
+      "পোশাক শ্রমিক",
+      "ঢাকা",
+      "ভিডিও",
+      "অর্থনীতি"
+    ]
+  },
+  {
+    "id": "news-20261103-002",
+    "slug": "sangbad-pratidin-garment-protests-bgb-deployed-bangladesh",
+    "title": "হাসিনা ফেরার আগেই শ্রমিক বিক্ষোভে জ্বলছে বাংলাদেশ! পরিস্থিতি সামাল দিতে নামল বিজিবি - Sangbad Pratidin",
+    "englishTitle": "Sangbad Pratidin: Unprecedented Garment Unrest Grips Bangladesh Industrial Hubs; BGB Deployed to Restore Order",
+    "banglaTitle": "পোশাক শ্রমিকদের বিক্ষোভে অগ্নিগর্ভ গাজীপুর-আশুলিয়া, পরিস্থিতি নিয়ন্ত্রণে নামল বিজিবি: সংবাদ প্রতিদিন",
+    "summaryBn": "কলকাতার জনপ্রিয় দৈনিক সংবাদ প্রতিদিনের প্রতিবেদনে ওপার বাংলার পোশাক খাতের ভয়াবহ বিক্ষোভের খবর বিস্তারিতভাবে প্রকাশ করা হয়েছে। আশুলিয়া ও গাজীপুরের একাধিক কারখানায় ভাঙচুর ও অগ্নিসংযোগের ঘটনার পর প্রশাসন পরিস্থিতি নিয়ন্ত্রণে বর্ডার গার্ড বাংলাদেশ (বিজিবি) ও বিশেষ যৌথ বাহিনী মোতায়েন করেছে। অন্তর্বর্তী সরকার এই অসন্তোষের পেছনে রাজনৈতিক উসকানির অভিযোগ তুলেছে।",
+    "summaryEn": "Kolkata daily Sangbad Pratidin reports on violent labor unrest sweeping Bangladesh's export processing belts in Gazipur and Ashulia. Following clashes and vandalism at multiple manufacturing plants, the administration deployed Border Guard Bangladesh (BGB) paramilitary units to restore law and order, alleging political instigation behind the coordinated protests.",
+    "keyPointsBn": [
+      "পোশাক কারখানাগুলোতে ভাঙচুর ও সংঘর্ষের ঘটনায় গাজীপুর ও সাভারে বিজিবি মোতায়েন",
+      "মজুরি বোর্ড গঠন সত্ত্বেও অসন্তোষ অব্যাহত, উৎপাদন বন্ধ থাকায় রপ্তানি ক্ষতিগ্রস্ত",
+      "রাজনৈতিক পরিবর্তনের পর তৈরি পোশাক শিল্পের এই অস্থিরতাকে ঢাকার জন্য বড় চ্যালেঞ্জ হিসেবে দেখছেন বিশ্লেষকরা"
+    ],
+    "keyPointsEn": [
+      "Paramilitary BGB personnel deployed across sensitive garment manufacturing zones",
+      "Violent skirmishes force indefinite closure of major export processing plants",
+      "Kolkata report assesses economic vulnerabilities facing transitional authorities in Dhaka"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও অর্থনীতি",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "শিল্পাঞ্চলে সহিংসতা, কারখানা বন্ধ ও সীমান্তরক্ষী মোতায়েনের মতো জরুরি আইনশৃঙ্খলা সংকট নিয়ে বিস্তারিত ভারতীয় প্রতিবেদন।",
+    "sentimentReasonEn": "Critical reporting on labor violence, industrial shutdowns, and paramilitary security mobilization.",
+    "source": {
+      "name": "Sangbad Pratidin",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.sangbadpratidin.in/bangladesh/bgb-controlling-bangladesh-situation-as-protest-going-on/pid/1412351/",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T14:40:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "সংবাদ প্রতিদিন",
+      "বিজিবি",
+      "পোশাক শিল্প",
+      "গাজীপুর",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261103-003",
+    "slug": "tripura-times-eight-arrested-attacking-bsf-personnel-border",
+    "title": "Eight arrested for attacking BSF personnel along India-Bangladesh border in Tripura - TripuraTimes.com",
+    "englishTitle": "Tripura Times: Eight Arrested for Violently Attacking BSF Personnel Along India-Bangladesh Border in Tripura",
+    "banglaTitle": "ত্রিপুরা সীমান্তে বিএসএফ জওয়ানদের ওপর অতর্কিত হামলার ঘটনায় আটজনকে গ্রেপ্তার করল পুলিশ: ত্রিপুরা টাইমস",
+    "summaryBn": "ত্রিপুরা রাজ্যের ভারত-বাংলাদেশ আন্তর্জাতিক সীমান্ত সংলগ্ন সিপাহিজলা ও সোনামুড়া সেক্টরে নিয়মিত টহল দেওয়ার সময় বর্ডার সিকিউরিটি ফোর্স (বিএসএফ) জওয়ানদের ওপর চোরাচালানকারী চক্রের হামলার ঘটনায় আটজনকে গ্রেপ্তার করেছে ত্রিপুরা পুলিশ। ত্রিপুরা টাইমসের প্রতিবেদনে জানানো হয়েছে, পাচারকারীদের বিরুদ্ধে কঠোর আইনি ব্যবস্থা নেওয়া হয়েছে এবং শূন্যরেখা বরাবর অতিরিক্ত বাহিনী মোতায়েন করা হয়েছে।",
+    "summaryEn": "Tripura Times reports that police arrested eight individuals linked to cross-border smuggling networks following a violent physical assault on Border Security Force (BSF) personnel during night patrolling along the Sepahijala-Sonamura international border corridor. Authorities have placed border battalions on maximum alert.",
+    "keyPointsBn": [
+      "সীমান্তে টহলরত বিএসএফ জওয়ানদের ওপর হামলার ঘটনায় যৌথ অভিযানে আটজন গ্রেপ্তার",
+      "আন্তর্জাতিক চোরাচালান চক্রের গতিবিধি বন্ধে সীমান্তজুড়ে ড্রোন ও অতিরিক্ত প্রহরা বৃদ্ধি",
+      "ত্রিপুরা সীমান্তে অপরাধ নিয়ন্ত্রণে আইনশৃঙ্খলা বাহিনীর জিরো টলারেন্স নীতি"
+    ],
+    "keyPointsEn": [
+      "Eight suspects apprehended in inter-agency crackdown following clash on the Tripura border",
+      "BSF strengthens night surveillance and drone patrols across sensitive unfenced stretches",
+      "State administration reaffirms zero tolerance against cross-border contraband syndicates"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্তে চোরাচালান চক্রের হামলার বিরুদ্ধে নিরাপত্তা বাহিনীর দ্রুত ব্যবস্থা ও গ্রেপ্তারের তথ্যভিত্তিক পর্যালোচনা।",
+    "sentimentReasonEn": "Factual regional security reporting on frontier law enforcement and anti-smuggling countermeasures.",
+    "source": {
+      "name": "Tripura Times",
+      "bureau": "Tripura",
+      "language": "English",
+      "originalUrl": "https://tripuratimes.com/ttimes/eight-arrested-for-attacking-bsf-personnel-along-india-bangladesh-border-in-tripura-42883.html",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T11:10:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bsf-border-outpost-tripura.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "ত্রিপুরা টাইমস",
+      "বিএসএফ",
+      "সীমান্ত নিরাপত্তা",
+      "গ্রেপ্তার",
+      "ত্রিপুরা"
+    ]
+  },
+  {
+    "id": "news-20261103-004",
+    "slug": "live-hindustan-hindu-rights-activist-shampa-goswami-sedition-case",
+    "title": "बांग्लादेश में हिंदू महिला अधिकार कार्यकर्ता पर देशद्रोह का मामला दर्ज - Hindustan",
+    "englishTitle": "Live Hindustan: Sedition Case Filed Against Hindu Female Rights Activist in Bangladesh Sparking Minority Safety Concerns",
+    "banglaTitle": "বাংলাদেশে সংখ্যালঘু হিন্দু নারী অধিকার কর্মীর বিরুদ্ধে রাষ্ট্রদ্রোহের অভিযোগ দায়ের, আতঙ্ক ও ক্ষোভ: হিন্দুস্তান",
+    "summaryBn": "বাংলাদেশে সংখ্যালঘু অধিকার ও নারী সুরক্ষায় কাজ করা বিশিষ্ট অধিকার কর্মী চম্পা গোস্বামীর বিরুদ্ধে রাষ্ট্রদ্রোহের অভিযোগে মামলা দায়েরের ঘটনায় গভীর উদ্বেগ প্রকাশ করেছে আন্তর্জাতিক মানবাধিকার সংগঠনগুলো। লাইভ হিন্দুস্তানের বিশেষ প্রতিবেদনে বলা হয়েছে, সংখ্যালঘু সম্প্রদায়ের ওপর সাম্প্রতিক নিপীড়নের প্রতিবাদ করায় এই মামলা দেওয়া হয়েছে বলে অভিযোগ উঠেছে, যা ভারতের পর্যবেক্ষক মহলেও উদ্বেগ সৃষ্টি করেছে।",
+    "summaryEn": "Live Hindustan reports that human rights monitors have raised urgent alarms over a sedition case lodged against prominent minority rights activist Shampa Goswami in Bangladesh. Activists argue the charges stem from her vocal advocacy against recent communal attacks, triggering diplomatic and civil society concern across the border.",
+    "keyPointsBn": [
+      "সংখ্যালঘু অধিকার রক্ষার সোচ্চার নারী কর্মীর বিরুদ্ধে রাষ্ট্রদ্রোহের গুরুতর ধারা প্রয়োগ",
+      "মানবাধিকার সংগঠনগুলোর দাবি, প্রতিবাদী কণ্ঠ রোধ করতেই আইনি নিপীড়নের আশ্রয়",
+      "সীমান্তপারে হিন্দু ও সংখ্যালঘু সম্প্রদায়ের সাংবিধানিক নিরাপত্তা নিয়ে দিল্লিতে পুনর্ব্যক্ত উদ্বেগ"
+    ],
+    "keyPointsEn": [
+      "Sedition charges leveled against outspoken female minority rights defender",
+      "Civil society organizations label the legal action intimidation against human rights monitoring",
+      "Prompts renewed calls from Indian observers for transparent minority safeguards"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সংখ্যালঘু অধিকার কর্মীদের বিরুদ্ধে আইনি হয়রানি ও বিচারিক চাপের বিষয়ে সংবেদনশীল ও উদ্বেগজনক প্রতিবেদন।",
+    "sentimentReasonEn": "Somber analysis focusing on judicial harassment of minority advocates and democratic deficits.",
+    "source": {
+      "name": "Live Hindustan",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://www.livehindustan.com/international/story-bangladesh-human-rights-groups-raise-alarm-over-hindu-activist-shampa-goswami-s-safety-201793714765677.html",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T09:20:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/dhakeshwari-national-temple-dhaka.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "লাইভ হিন্দুস্তান",
+      "সংখ্যালঘু অধিকার",
+      "রাষ্ট্রদ্রোহ মামলা",
+      "মানবাধিকার",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261103-005",
+    "slug": "live-hindustan-four-thousand-km-india-bangladesh-border-smuggling-challenge",
+    "title": "चार हजार किलोमीटर से लंबी भारत-बांग्लादेश सीमा पर तस्करी बड़ी चुनौती - Hindustan",
+    "englishTitle": "Live Hindustan: Trans-Border Smuggling and Infiltration Across 4,000-km Frontier Remain Complex Security Test: BSF",
+    "banglaTitle": "চার হাজার কিমি ভারত-বাংলাদেশ সীমান্তে কাঁটাতার ও নদীপথে চোরাচালান দমনে বিশেষ সতর্কতা: হিন্দুস্তান",
+    "summaryBn": "ভারত ও বাংলাদেশের মধ্যবর্তী ৪,০৯৬ কিলোমিটার দীর্ঘ আন্তর্জাতিক সীমান্তে নদীমাতৃক অঞ্চল ও অরক্ষিত অংশে গরু, মাদক ও স্বর্ণ চোরাচালান দমন করা একটি অন্যতম বড় জাতীয় নিরাপত্তা চ্যালেঞ্জ হয়ে দাঁড়িয়েছে। লাইভ হিন্দুস্তানের শিলিগুড়ি ও পূর্বোত্তর সীমান্ত প্রতিবেদনে বিএসএফের নজরদারি ব্যবস্থা, স্মার্ট ফেনসিং এবং সীমান্তবর্তী গ্রামগুলোতে অনুপ্রবেশ রোধে গৃহীত সমন্বিত পদক্ষেপ তুলে ধরা হয়েছে।",
+    "summaryEn": "Live Hindustan highlights the extensive security challenges along the 4,096-km India-Bangladesh international frontier, where riverine gaps and porous sections complicate anti-smuggling and anti-infiltration operations. The report details BSF's deployment of smart fencing, thermal sensors, and intensified coordinated village surveillance.",
+    "keyPointsBn": [
+      "৪ হাজার কিলোমিটার দীর্ঘ আন্তর্জাতিক সীমান্তে নদীপথ ও চরাঞ্চলের নিরাপত্তা পর্যবেক্ষণ",
+      "শিলিগুড়ি করিডোর সংলগ্ন এলাকায় ড্রোন ও থার্মাল ইমেজিং ক্যামেরার ব্যবহার জোরদার",
+      "সীমান্তপারের চোরাচালান প্রতিরোধে স্থানীয় প্রশাসন ও বিএসএফের যৌথ মহড়া"
+    ],
+    "keyPointsEn": [
+      "Complex terrain and riverine gaps challenge anti-trafficking operations along 4,096-km border",
+      "Deployment of advanced smart fencing, thermal sensors, and aerial surveillance around Siliguri",
+      "Enhanced inter-agency vigilance to block illegal crossings and contraband corridors"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দীর্ঘ আন্তর্জাতিক সীমান্তের ভৌগোলিক বাস্তবতা ও আধুনিক সীমান্ত ব্যবস্থাপনা নিয়ে নিরাপত্তাভিত্তিক বিশ্লেষণ।",
+    "sentimentReasonEn": "In-depth frontier defense analysis detailing tactical challenges across varied border terrain.",
+    "source": {
+      "name": "Live Hindustan",
+      "bureau": "Siliguri",
+      "language": "Hindi",
+      "originalUrl": "https://www.livehindustan.com/national/story-india-bangladesh-border-security-smuggling-fencing-gaps-and-challenges-across-five-states-201793715233903.html",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T08:15:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&auto=format&fit=crop&q=80",
+    "mediaFormat": "rss",
+    "tags": [
+      "লাইভ হিন্দুস্তান",
+      "শিলিগুড়ি",
+      "সীমান্ত",
+      "বিএসএফ",
+      "নিরাপত্তা"
+    ]
+  },
+  {
+    "id": "news-20261103-006",
+    "slug": "zee-24-ghanta-garment-workers-protest-unrest-video-dispatch",
+    "title": "Bangladesh | শ্রমিক বিক্ষোভে ফের তুলকালামকাণ্ড বাংলাদেশে! এবার কী হল? | Zee 24 Ghanta - YouTube",
+    "englishTitle": "Zee 24 Ghanta: Violence and Road Blockades in Bangladesh Industrial Hubs, Detailed Visual Ground Report",
+    "banglaTitle": "পোশাক শ্রমিকদের আন্দোলনে ফের তুলকালাম ও সংঘর্ষ, বন্ধ শতাধিক কারখানা: জি ২৪ ঘণ্টার এক্সক্লুসিভ ফুটেজ",
+    "summaryBn": "কলকাতার প্রধান সংবাদ চ্যানেল জি ২৪ ঘণ্টার বিশেষ ভিডিও প্রতিবেদনে বাংলাদেশের পোশাক খাতে নতুন করে শুরু হওয়া ব্যাপক সংঘাত ও ভাঙচুরের দৃশ্য প্রচার করা হয়েছে। ঢাকা-ময়মনসিংহ মহাসড়ক অবরোধ, যানবাহনে অগ্নিসংযোগ এবং পুলিশের সঙ্গে শ্রমিকদের দফায় দফায় সংঘর্ষের ভিডিও চিত্র বিশ্লেষণ করে পশ্চিমবঙ্গের অর্থনৈতিক ও সীমান্ত প্রভাব তুলে ধরেছে চ্যানেলটি।",
+    "summaryEn": "Zee 24 Ghanta broadcasts an on-the-ground video dispatch capturing violent confrontations between garment factory workers and law enforcement in Bangladesh. Highway blockades along the Dhaka-Mymensingh corridor and arson incidents are scrutinized, assessing the broader regional fallout for West Bengal and bilateral commerce.",
+    "keyPointsBn": [
+      "ঢাকা-ময়মনসিংহ মহাসড়কে পোশাক শ্রমিকদের অবরোধ ও যানবাহনে অগ্নিসংযোগের ভিডিও",
+      "শিল্পাঞ্চলে সহিংসতা ছড়ানোর পর মালিকপক্ষের জরুরি বৈঠকে কারখানা বন্ধের সিদ্ধান্ত",
+      "পশ্চিমবঙ্গের গণমাধ্যমের ক্যামেরায় বাংলাদেশের শ্রম সংকটের দ্রুত পরিবর্তনের রূপরেখা"
+    ],
+    "keyPointsEn": [
+      "Exclusive visual footage documenting intense clashes on key industrial transit corridors",
+      "Factory associations enforce precautionary shutdowns across major manufacturing clusters",
+      "Kolkata television analysis weighs economic ripples on regional export supply dynamics"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+    "categoryLabelEn": "Politics & Diplomacy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "শিল্পক্ষেত্রে সংঘাত ও মহাসড়ক অবরোধ সংক্রান্ত সংবেদনশীল ভিডিও ফুটেজ এবং তৃণমূল পরিস্থিতির দৃশ্যমান প্রতিবেদন।",
+    "sentimentReasonEn": "Hard-hitting video reportage capturing violent labor unrest and public infrastructure disruption.",
+    "source": {
+      "name": "Zee 24 Ghanta (YouTube)",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.youtube.com/watch?v=La9Lnp5ogI8",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T16:30:00.000Z",
+    "readTimeBn": "২ মিনিট",
+    "readTimeEn": "2 min read",
+    "imageUrl": "https://i.ytimg.com/vi/La9Lnp5ogI8/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=La9Lnp5ogI8",
+    "tags": [
+      "জি ২৪ ঘণ্টা",
+      "ভিডিও",
+      "পোশাক শিল্প",
+      "বিক্ষোভ",
+      "কলকাতা"
+    ]
+  },
+  {
+    "id": "news-20261103-007",
+    "slug": "etv-bharat-bangladesh-garment-crisis-impact-indian-textile-industry",
+    "title": "बांग्लादेश में कपड़ा मजदूरों का आंदोलनः भारतीय कपड़ा बाजार को इससे क्या होगा फायदा - ETV Bharat",
+    "englishTitle": "ETV Bharat: Bangladesh Apparel Unrest Could Drive Global Garment Orders to Indian Manufacturing Hubs",
+    "banglaTitle": "বাংলাদেশের পোশাক খাতে চরম অচলাবস্থায় ভারতীয় টেক্সটাইল শিল্পের সামনে নতুন রপ্তানি সুযোগ: ইটিভি ভারত",
+    "summaryBn": "বাংলাদেশে লাগাতার শ্রমিক অসন্তোষ ও পোশাক কারখানা বন্ধ থাকার কারণে বৈশ্বিক ব্র্যান্ডগুলো তাদের অর্ডারের একটি বড় অংশ ভারত, ভিয়েতনাম ও কম্বোডিয়ায় স্থানান্তরের কথা বিবেচনা করছে। ইটিভি ভারতের বিশেষ বাণিজ্যিক প্রতিবেদনে জানানো হয়েছে, তিরুপুর, সুরাট ও লুধিয়ানার ভারতীয় টেক্সটাইল ও পোশাক উৎপাদন কেন্দ্রগুলো আন্তর্জাতিক ফ্যাশন ব্র্যান্ডের বাড়তি ক্রয়াদেশ সামাল দিতে প্রস্তুতি শুরু করেছে।",
+    "summaryEn": "ETV Bharat analyzes the commercial repercussions of Bangladesh's garment sector unrest, noting that global apparel retailers are exploring order diversions to alternative hubs like India, Vietnam, and Cambodia. Major Indian manufacturing centers in Tiruppur, Surat, and Ludhiana are gearing up to absorb potential spillover export demand.",
+    "keyPointsBn": [
+      "বাংলাদেশের কারখানায় সরবরাহ বিঘ্নিত হওয়ায় বৈশ্বিক ক্রেতাদের নজর এখন ভারতে",
+      "সুরাট, তিরুপুর ও লুধিয়ানার বস্ত্রকলগুলোতে অতিরিক্ত উৎপাদন ক্ষমতার প্রস্তুতি",
+      "প্রতিবেশী দেশের সংকট কীভাবে ভারতীয় টেক্সটাইল রপ্তানিতে গতি আনতে পারে তার বিশদ পরিসংখ্যান"
+    ],
+    "keyPointsEn": [
+      "Global fashion buyers actively explore shifting apparel supply contracts to Indian hubs",
+      "Production clusters in Tiruppur, Surat, and Ludhiana position for surge in orders",
+      "Commercial review calculates potential short-to-medium term gains for Indian textile exports"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "বাণিজ্য ও অর্থনীতি",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "প্রতিবেশী দেশের সাপ্লাই চেইন সংকটের মুখে ভারতীয় তৈরি পোশাক শিল্পের রপ্তানি ও সক্ষমতা বৃদ্ধির ইতিবাচক সম্ভাবনা।",
+    "sentimentReasonEn": "Optimistic economic analysis detailing industrial expansion opportunities for domestic Indian textile mills.",
+    "source": {
+      "name": "ETV Bharat",
+      "bureau": "Mumbai",
+      "language": "Hindi",
+      "originalUrl": "https://www.etvbharat.com/hi/bharat/bangladesh-garment-crisis-textile-workers-protest-impact-on-india-apparel-industry-hin26110304852",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-03T12:00:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "ইটিভি ভারত",
+      "পোশাক রপ্তানি",
+      "টেক্সটাইল",
+      "বাণিজ্য",
+      "মুম্বাই"
+    ]
+  },
+  {
+    "id": "news-20261102-001",
+    "slug": "assam-tribune-human-rights-report-minor-abuse-cases-bangladesh",
+    "title": "Bangladesh sees 274 cases of sexual abuse of minor boys - The Assam Tribune",
+    "englishTitle": "The Assam Tribune: Human Rights Monitoring Report Highlights Protection Vulnerabilities of Minors in Bangladesh",
+    "banglaTitle": "বাংলাদেশে শিশু সুরক্ষা ও মানবাধিকার পরিস্থিতি নিয়ে তথ্য প্রকাশ, আসামের গণমাধ্যমে আলোচনা: দ্য আসাম ট্রিবিউন",
+    "summaryBn": "আসামের নেতৃস্থানীয় ইংরেজি দৈনিক ‘দ্য আসাম ট্রিবিউন’ বাংলাদেশের সমাজকল্যাণ ও শিশু সুরক্ষা নিয়ে প্রকাশিত এক মানবাধিকার প্রতিবেদনের বিশদ তথ্য তুলে ধরেছে। প্রতিবেদনে রাজনৈতিক অস্থিরতা ও প্রাতিষ্ঠানিক নজরদারির দুর্বলতার সুযোগে অপ্রাপ্তবয়স্কদের ওপর ক্রমবর্ধমান নির্যাতনের চিত্র উঠে এসেছে, যা সীমান্তবর্তী উত্তর-পূর্ব ভারতের সুশীল সমাজেও গুরুত্বের সঙ্গে আলোচিত হচ্ছে।",
+    "summaryEn": "The Assam Tribune reviews a comprehensive human rights audit documenting severe protection gaps affecting minors in Bangladesh during recent socio-political transitions. The report emphasizes the imperative of strengthening juvenile justice mechanisms, prompting constructive scrutiny among child welfare advocates across Northeast India.",
+    "keyPointsBn": [
+      "বাংলাদেশে মানবাধিকার ও শিশু সুরক্ষার দুর্বলতা নিয়ে প্রকাশিত পরিসংখ্যানের বিশ্লেষণ",
+      "সামাজিক অস্থিরতার মাঝে প্রান্তিক শিশুদের আইনি ও পারিবারিক নিরাপত্তা নিশ্চিতে তাগিদ",
+      "উত্তর-পূর্ব ভারতের গণমাধ্যমে সীমান্তবর্তী সামাজিক অবক্ষয় ও মানব পাচার সংক্রান্ত আলোচনা"
+    ],
+    "keyPointsEn": [
+      "Civil society monitoring uncovers acute vulnerabilities in institutional child protection",
+      "Calls for bolstering grassroots legal mechanisms and community-level shelter frameworks",
+      "Northeast Indian press coverage reflects shared regional concern over vulnerable populations"
+    ],
+    "category": "culture",
+    "categoryLabelBn": "সংস্কৃতি ও সাহিত্য",
+    "categoryLabelEn": "Culture & Arts",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তপারে শিশু ও দুর্বল জনগোষ্ঠীর সামাজিক সুরক্ষাহীনতা নিয়ে গম্ভীর ও বস্তুনিষ্ঠ মানবিক প্রতিবেদন।",
+    "sentimentReasonEn": "Sober investigative coverage analyzing social vulnerabilities and human rights monitoring benchmarks.",
+    "source": {
+      "name": "The Assam Tribune",
+      "bureau": "Assam",
+      "language": "English",
+      "originalUrl": "https://assamtribune.com/international/bangladesh-sees-274-cases-of-sexual-abuse-of-minor-boys-1621832",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-02T10:40:00.000Z",
+    "readTimeBn": "৩ মিনিট",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/dhakeshwari-national-temple-dhaka.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "আসাম ট্রিবিউন",
+      "মানবাধিকার",
+      "শিশু সুরক্ষা",
+      "আসাম",
+      "বাংলাদেশ"
+    ]
+  },
+  {
+    "id": "news-20261101-001",
+    "slug": "times-of-india-wage-unrest-bangladesh-garment-sector-factories-shut",
+    "title": "Wage unrest grips Bangladesh garment sector; dozens of factories shut - The Times of India",
+    "englishTitle": "The Times of India: Soaring Inflation Triggers Escalating Wage Protests in Bangladesh Apparel Sector",
+    "banglaTitle": "জীবনযাত্রার ব্যয় বৃদ্ধির চাপে বাংলাদেশে তৈরি পোশাক খাতে তীব্র শ্রমিক অসন্তোষ: টাইমস অব ইন্ডিয়া",
+    "summaryBn": "টাইমস অব ইন্ডিয়ার আন্তর্জাতিক অর্থনৈতিক পাতায় প্রকাশিত প্রতিবেদনে বলা হয়েছে, খাদ্য ও নিত্যপণ্যের অস্বাভাবিক মূল্যবৃদ্ধির মুখে বাংলাদেশের তৈরি পোশাক খাতের শ্রমিকরা বেতন বৃদ্ধির দাবিতে একযোগে আন্দোলন শুরু করেছেন। মালিকপক্ষ ও অন্তর্বর্তী সরকারের মজুরি বোর্ড গঠনের আশ্বাসের পরও সংঘাত ছড়িয়ে পড়ায় শিল্পনগরীগুলোতে একাধিক কারখানায় উৎপাদন ব্যাহত হয়েছে।",
+    "summaryEn": "The Times of India reports that acute inflationary pressure has sparked intense wage agitation across Bangladesh’s vital ready-made garments industry, triggering factory shutdowns across outer Dhaka industrial clusters. Despite government pledges to constitute an emergency wage board, union leaders demand immediate interim relief.",
+    "keyPointsBn": [
+      "উচ্চ খাদ্য মূল্যস্ফীতি ও জীবনযাত্রার ব্যয়ের কারণে তৈরি পোশাক শ্রমিকদের লাগাতার ধর্মঘট",
+      "ঢাকার সাভার, আশুলিয়া ও গাজীপুরের একাধিক শিল্প ইউনিটে উৎপাদন অনির্দিষ্টকালের জন্য স্থগিত",
+      "তৈরি পোশাক রপ্তানি থেকে বাংলাদেশের বৈদেশিক মুদ্রার ৮০ শতাংশের বেশি আয়ের ওপর সরাসরি প্রভাব"
+    ],
+    "keyPointsEn": [
+      "Record inflation spurs nationwide labor protests demanding living wage adjustments",
+      "Export processing facilities across manufacturing hubs face operational suspensions",
+      "Heightened risk to national foreign exchange reserves heavily reliant on apparel shipments"
+    ],
+    "category": "economy",
+    "categoryLabelBn": "বাণিজ্য ও অর্থনীতি",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "মুদ্রাস্ফীতি, শ্রম অর্থনীতি ও তৈরি পোশাক খাতের উৎপাদনশীলতা নিয়ে ভারতীয় শীর্ষ জাতীয় সংবাদমাধ্যমের গভীর বিশ্লেষণ।",
+    "sentimentReasonEn": "Comprehensive macroeconomic coverage evaluating labor tensions, exchange reserves, and inflation trends.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/world/rest-of-world/wage-unrest-grips-bangladesh-garment-sector-dozens-of-factories-shut/articleshow/135418991.cms",
+      "scannedAt": "2026-11-04T12:58:50.000Z"
+    },
+    "publishedAt": "2026-11-01T08:10:00.000Z",
+    "readTimeBn": "৪ মিনিট",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "tags": [
+      "টাইমস অব ইন্ডিয়া",
+      "পোশাক খাত",
+      "মুদ্রাস্ফীতি",
+      "অর্থনীতি",
+      "বাংলাদেশ"
+    ]
+  },
   {
     "id": "news-20261028-001",
     "slug": "firstpost-hasina-challenges-legitimacy-elections-excluding-awami-league",
@@ -184,7 +718,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "imageUrl": "https://i.ytimg.com/vi/0H0h1MKG7ec/hqdefault.jpg",
     "mediaFormat": "youtube",
     "videoUrl": "https://www.youtube.com/watch?v=0H0h1MKG7ec",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "tags": [
       "শেখ হাসিনা",

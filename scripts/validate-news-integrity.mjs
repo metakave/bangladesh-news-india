@@ -51,6 +51,7 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'munsifdaily.com', validNames: ['The Munsif Daily', 'Munsif Daily', 'Munsif Urdu', 'Munsif'] },
   { domain: 'taasir.com', validNames: ['Daily Taasir', 'Roznama Taasir', 'Taasir'] },
   { domain: 'thecsrjournal.in', validNames: ['The CSR Journal', 'CSR Journal'] },
+  { domain: 'etvbharat.com', validNames: ['ETV Bharat'] },
   { domain: 'zeenews.india.com', validNames: ['Zee News', 'Zee News World', 'Zee News Sports', 'Zee 24 Ghanta', 'Zee 24 Ghanta (YouTube)'] }
 ];
 
