@@ -43,6 +43,7 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'ntnews.com', validNames: ['Namasthe Telangana', 'NT News'] },
   { domain: 'madhyamam.com', validNames: ['Madhyamam'] },
   { domain: 'divyamarathi.bhaskar.com', validNames: ['Divya Marathi'] },
+  { domain: 'bhaskar.com', validNames: ['Dainik Bhaskar', 'Bhaskar'] },
   { domain: 'ptcnews.tv', validNames: ['PTC News'] },
   { domain: 'inquilab.com', validNames: ['The Inquilab', 'Inquilab', 'Roznama Inquilab'] },
   { domain: 'theinquilab.com', validNames: ['The Inquilab', 'Inquilab', 'Roznama Inquilab'] },

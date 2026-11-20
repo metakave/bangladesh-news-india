@@ -71,27 +71,27 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "৪ নভেম্বর, ২০২৬ এ ১:০০ PM",
-  "lastScannedAtEn": "04 Nov 2026, 01:00 pm",
-  "totalScanned24h": 4786,
-  "bangladeshMatches": 1233,
+  "lastScannedAtBn": "২১ নভেম্বর, ২০২৬ এ ১২:৩০ AM",
+  "lastScannedAtEn": "21 Nov 2026, 12:30 am",
+  "totalScanned24h": 5274,
+  "bangladeshMatches": 1742,
   "sentimentDistribution": {
-    "positive": 38,
-    "neutral": 47,
-    "negative": 15
+    "positive": 36,
+    "neutral": 48,
+    "negative": 16
   },
   "bureauDistribution": {
-    "delhi": 44,
-    "kolkata": 34,
-    "mumbai": 11,
-    "tripura": 5,
+    "delhi": 43,
+    "kolkata": 33,
+    "mumbai": 12,
+    "tripura": 6,
     "assam": 3,
     "siliguri": 3
   },
   "languageDistribution": {
     "english": 46,
-    "bengali": 35,
-    "hindi": 14,
+    "bengali": 34,
+    "hindi": 15,
     "tamil": 2,
     "telugu": 1,
     "marathi": 1,
@@ -100,6 +100,50 @@ export const SCANNER_STATS = {
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+      "id": "alert-126",
+      "headlineBn": "গঙ্গা জলবণ্টন চুক্তি ও শেখ হাসিনার প্রত্যর্পণ নিয়ে পররাষ্ট্র মন্ত্রণালয়ের নীতি স্পষ্ট করল দিল্লি — নবভারত টাইমস",
+      "headlineEn": "Navbharat Times: MEA Clarifies India's Position on Ganga Treaty Renewal, Hasina Extradition and Border Stability",
+      "timeAgoBn": "১৫ মিনিট আগে",
+      "timeAgoEn": "15 mins ago",
+      "sourceName": "Navbharat Times",
+      "sourceBureau": "Delhi",
+      "sentiment": "neutral",
+      "url": "https://navbharattimes.indiatimes.com/india/mea-reply-on-ganges-water-sharing-treaty-extradition-of-sheikh-hasina-bangladesh-violence/articleshow/136030189.cms"
+  },
+  {
+      "id": "alert-127",
+      "headlineBn": "তারেক রহমানের ভারতবিরোধী মন্তব্যে প্রতিক্রিয়া জানাতে অস্বীকার সাউথ ব্লকের — সংবাদ প্রতিদিন",
+      "headlineEn": "Sangbad Pratidin: New Delhi Declines to React to Tarique Rahman's Rhetoric Blaming India for Hasina Return Unrest",
+      "timeAgoBn": "৩০ মিনিট আগে",
+      "timeAgoEn": "30 mins ago",
+      "sourceName": "Sangbad Pratidin",
+      "sourceBureau": "Kolkata",
+      "sentiment": "negative",
+      "url": "https://www.sangbadpratidin.in/india/india-declines-comment-on-tarique-rahmans-jibe-over-bangladesh-unrest/pid/1437466/"
+  },
+  {
+      "id": "alert-128",
+      "headlineBn": "রোহিঙ্গা গণহত্যায় মিয়ানমারকে দায়ী করে আন্তর্জাতিক আদালতের রায়কে স্বাগত জানালেন শেখ হাসিনা — ত্রিপুরা টাইমস",
+      "headlineEn": "Tripura Times: Sheikh Hasina Welcomes Historic ICJ Judgment Holding Myanmar Accountable for Rohingya Genocide",
+      "timeAgoBn": "৪৫ মিনিট আগে",
+      "timeAgoEn": "45 mins ago",
+      "sourceName": "Tripura Times",
+      "sourceBureau": "Tripura",
+      "sentiment": "positive",
+      "url": "https://tripuratimes.com/ttimes/sheikh-hasina-welcomes-icj-judgment-holding-myanmar-responsible-for-rohingya-genocide-43252.html"
+  },
+  {
+      "id": "alert-129",
+      "headlineBn": "বিজিবি কর্তৃক আটক বিএসএফ জওয়ান পতাকা বৈঠকের মাধ্যমে নিরাপদে ত্রিপুরা সীমান্তে ফেরত — ত্রিপুরা টাইমস",
+      "headlineEn": "Tripura Times: BSF Jawan Detained by BGB Safely Handed Over to India Following Flag Meeting in Tripura",
+      "timeAgoBn": "১ ঘণ্টা আগে",
+      "timeAgoEn": "1 hour ago",
+      "sourceName": "Tripura Times",
+      "sourceBureau": "Tripura",
+      "sentiment": "positive",
+      "url": "https://tripuratimes.com/ttimes/bsf-jawan-returns-to-india-after-detention-by-bgb-in-bangladesh-border-issue-resolved-through-flag-meeting-43200.html"
+  },
   {
     "id": "alert-122",
     "headlineBn": "‘গঙ্গা জলচুক্তি নবায়ন ও সংযোগ নিয়ে প্রাতিষ্ঠানিক ব্যবস্থা বহাল রয়েছে’: ভারতের বিদেশ মন্ত্রক — দ্য হিন্দু",
@@ -148,6 +192,540 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+      "id": "news-20261120-001",
+      "slug": "navbharat-times-mea-ganga-water-sharing-sheikh-hasina-extradition",
+      "title": "गंगा जल बंटवारे संधि, शेख हसीना के प्रत्यर्पण से लेकर बांग्लादेश हिंसा तक, भारतीय विदेश मंत्रालय का आया जवाब - Navbharat Times",
+      "englishTitle": "Navbharat Times: MEA Responds to Demands on Ganga Water Treaty, Sheikh Hasina Extradition, and Escalating Border Violence",
+      "banglaTitle": "গঙ্গা জলবণ্টন চুক্তি, শেখ হাসিনার প্রত্যর্পণ ও সীমান্ত সহিংসতা নিয়ে অবস্থান স্পষ্ট করল ভারতের বিদেশ মন্ত্রক: নবভারত টাইমস",
+      "summaryBn": "গঙ্গা জলবণ্টন চুক্তি নবায়ন, শেখ হাসিনার কথিত প্রত্যর্পণ দাবি এবং বাংলাদেশে ক্রমবর্ধমান রাজনৈতিক অস্থিরতা ও সীমান্তবর্তী সহিংসতার প্রেক্ষাপটে ভারতের অবস্থান বিশদভাবে ব্যাখ্যা করেছে বিদেশ মন্ত্রক। নবভারত টাইমসের প্রতিবেদনে জানা গেছে, দিল্লি জানিয়েছে যে প্রতিষ্ঠিত দ্বিপাক্ষিক কাঠামো বজায় রয়েছে এবং চুক্তি নবায়নের জন্য উপযুক্ত পরিবেশ ও পারস্পরিক স্থিতিশীলতা অপরিহার্য।",
+      "summaryEn": "Navbharat Times reports that the Ministry of External Affairs detailed India's diplomatic position regarding the impending expiration of the 1996 Ganga Water Sharing Treaty, Dhaka's calls for Sheikh Hasina's extradition, and escalating security unrest across Bangladesh, reiterating that established institutional bilateral mechanisms remain active while urging de-escalation.",
+      "keyPointsBn": [
+          "গঙ্গা জলবণ্টন চুক্তির পর্যালোচনা এবং কারিগরি আলোচনার জন্য যৌথ প্রাতিষ্ঠানিক পথ খোলা রয়েছে",
+          "শেখ হাসিনার প্রত্যর্পণ সংক্রান্ত রাজনৈতিক বক্তব্যের বিষয়ে আইনি ও দ্বিপাক্ষিক প্রেক্ষাপট স্মরণ করিয়ে দিল দিল্লি",
+          "সীমান্তবর্তী স্থিতিশীলতা রক্ষা এবং সংখ্যালঘুদের সুরক্ষা নিশ্চিত করতে ঢাকার প্রতি আহ্বান"
+      ],
+      "keyPointsEn": [
+          "Institutional channels remain open for technical consultations on Ganga Water Treaty renewal",
+          "New Delhi emphasizes adherence to established bilateral agreements amidst extradition rhetoric",
+          "Urges calm and heightened vigilance to safeguard border peace and minority security"
+      ],
+      "category": "diplomacy",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "দ্বিপাক্ষিক পানি চুক্তি ও রাজনৈতিক বিষয়াবলিতে ভারতের ভারসাম্যপূর্ণ ও প্রাতিষ্ঠানিক কূটনৈতিক বার্তা।",
+      "sentimentReasonEn": "Balanced diplomatic reporting outlining India's structured stance on shared waters and regional stability.",
+      "source": {
+          "name": "Navbharat Times",
+          "bureau": "Delhi",
+          "language": "Hindi",
+          "originalUrl": "https://navbharattimes.indiatimes.com/india/mea-reply-on-ganges-water-sharing-treaty-extradition-of-sheikh-hasina-bangladesh-violence/articleshow/136030189.cms",
+          "scannedAt": "2026-11-20T14:58:51.000Z"
+      },
+      "publishedAt": "2026-11-20T14:58:51.000Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "/images/default-geopolitical-map.jpg",
+      "mediaFormat": "rss",
+      "isLeadStory": true,
+      "isTrending": true,
+      "tags": [
+          "গঙ্গা চুক্তি",
+          "পররাষ্ট্র মন্ত্রণালয়",
+          "শেখ হাসিনা",
+          "নবভারত টাইমস",
+          "কূটনীতি"
+      ]
+  },
+  {
+      "id": "news-20261120-002",
+      "slug": "sangbad-pratidin-india-declines-comment-tarique-rahman-jibe",
+      "title": "হাসিনা ফেরাতে উত্তাল বাংলাদেশ, ভারতের ‘হাত’ দেখছেন তারেক! পালটা বিবৃতি দিল্লির - Sangbad Pratidin",
+      "englishTitle": "Sangbad Pratidin: Tarique Rahman Blames India for Pro-Hasina Protests; New Delhi Declines Provocative Engagement",
+      "banglaTitle": "হাসিনা ফেরাতে উত্তাল বাংলাদেশ, ভারতের ‘হাত’ দেখছেন তারেক! পালটা প্রতিক্রিয়া দিল্লির: সংবাদ প্রতিদিন",
+      "summaryBn": "বাংলাদেশে শেখ হাসিনার প্রত্যাবর্তনের দাবিতে দেশব্যাপী বিক্ষোভ ও আওয়ামী লীগের ডাকা হরতালে দেশ অচল হয়ে পড়ার মুখে ভারতের ভূমিকা নিয়ে প্রশ্ন তুলেছেন বিএনপি নেতা তারেক রহমান। সংবাদ প্রতিদিনের প্রতিবেদনে বলা হয়েছে, তারেক রহমান এই অস্থিরতার পেছনে ভারতের ইন্ধন থাকার অভিযোগ তুললেও নয়াদিল্লির সাউথ ব্লক ভিত্তিহীন রাজনৈতিক আক্রমণ ও উস্কানিমূলক মন্তব্যে প্রতিক্রিয়া না দেওয়ার সিদ্ধান্ত নিয়েছে।",
+      "summaryEn": "Sangbad Pratidin reports that as Bangladesh faces nationwide disruptions triggered by pro-Hasina protests and Awami League shutdowns, BNP's Tarique Rahman alleged Indian backing behind the unrest. However, New Delhi's South Block firmly declined to engage with unverified accusations, emphasizing regional peace and responsible rhetoric.",
+      "keyPointsBn": [
+          "আওয়ামী লীগের বিক্ষোভ ও অস্থিরতার পেছনে দিল্লির ‘হাত’ থাকার অভিযোগ আনেন তারেক রহমান",
+          "ভিত্তিহীন রাজনৈতিক বয়ানে অংশ না নেওয়ার নীতিগত অবস্থানে অনড় রইল ভারতের বিদেশ মন্ত্রক",
+          "বাংলাদেশের অভ্যন্তরীণ সার্বভৌম সংঘাতকে প্রতিবেশীর ওপর চাপানোর প্রবণতা নিয়ে কূটনৈতিক মহলে সমালোচনা"
+      ],
+      "keyPointsEn": [
+          "Tarique Rahman levels veiled allegations against India amidst escalating nationwide protests",
+          "New Delhi refrains from dignifying unsubstantiated political allegations with formal rebuttals",
+          "Diplomats emphasize domestic accountability rather than deflecting internal crisis across borders"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "দ্বিপাক্ষিক সম্পর্কে অস্থিরতা তৈরির লক্ষ্যে আরোপিত রাজনৈতিক বাগাড়ম্বর এবং দিল্লির সাবধানী প্রতিক্রিয়া।",
+      "sentimentReasonEn": "Coverage of political tensions and India's refusal to be drawn into contentious domestic rhetoric.",
+      "source": {
+          "name": "Sangbad Pratidin",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://www.sangbadpratidin.in/india/india-declines-comment-on-tarique-rahmans-jibe-over-bangladesh-unrest/pid/1437466/",
+          "scannedAt": "2026-11-20T15:08:04.000Z"
+      },
+      "publishedAt": "2026-11-20T15:08:04.000Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop&q=80",
+      "mediaFormat": "rss",
+      "isTrending": true,
+      "tags": [
+          "তারেক রহমান",
+          "সংবাদ প্রতিদিন",
+          "সাউথ ব্লক",
+          "শেখ হাসিনা",
+          "রাজনীতি"
+      ]
+  },
+  {
+      "id": "news-20261120-003",
+      "slug": "tripura-times-sheikh-hasina-welcomes-icj-judgment-rohingya-genocide",
+      "title": "Sheikh Hasina welcomes ICJ judgment holding Myanmar responsible for Rohingya genocide - Tripura Times",
+      "englishTitle": "Tripura Times: Sheikh Hasina Welcomes Historic ICJ Judgment Holding Myanmar Accountable for Rohingya Genocide",
+      "banglaTitle": "রোহিঙ্গা গণহত্যায় মিয়ানমারকে দায়ী করে আন্তর্জাতিক আদালতের রায়কে স্বাগত জানালেন শেখ হাসিনা: ত্রিপুরা টাইমস",
+      "summaryBn": "রোহিঙ্গা জনগোষ্ঠীর ওপর সামরিক দমনপীড়ন ও গণহত্যার অভিযোগে মিয়ানমারকে আন্তর্জাতিক অপরাধে দায়ী সাব্যস্ত করে দেওয়া আন্তর্জাতিক ন্যায়বিচার আদালত (আইসিজে)-এর যুগান্তকারী রায়কে স্বাগত জানিয়েছেন ক্ষমতাচ্যুত প্রধানমন্ত্রী শেখ হাসিনা। ত্রিপুরা টাইমসের খবরে বলা হয়, সাবেক প্রধানমন্ত্রী মানবিক কারণে লাখ লাখ শরণার্থীকে আশ্রয় দেওয়ার স্মৃতি স্মরণ করে আন্তর্জাতিক সম্প্রদায়কে দ্রুত প্রত্যাবাসনে চাপ সৃষ্টির আহ্বান জানান।",
+      "summaryEn": "Tripura Times reported that former Bangladesh Prime Minister Sheikh Hasina welcomed the International Court of Justice (ICJ) ruling finding Myanmar accountable for genocidal acts against the Rohingya minority, urging the international community to maintain pressure on Naypyidaw for a secure and dignified repatriation mechanism.",
+      "keyPointsBn": [
+          "আইসিজে আদালতের যুগান্তকারী সিদ্ধান্তকে নির্যাতিত রোহিঙ্গাদের জন্য আন্তর্জাতিক ন্যায়বিচারের স্বীকৃতি হিসেবে মূল্যায়ন",
+          "২০১৭ সালে মানবিক বিবেচনায় আশ্রয় প্রদানের উদ্যোগ এবং ভারতের মানবিক সহযোগিতার ভূমিকা স্মরণ",
+          "আন্তর্জাতিক সম্প্রদায়কে রোহিঙ্গাদের নিরাপদে নিজ দেশে পুনর্বাসনের পথ সুগম করার আহ্বান"
+      ],
+      "keyPointsEn": [
+          "Former prime minister applauds ICJ decision as crucial legal milestone for Rohingya justice",
+          "Recalls 2017 humanitarian relief operations supported by India's Operation Insaniyat",
+          "Calls upon multilateral stakeholders to expedite secure, monitored repatriation protocols"
+      ],
+      "category": "diplomacy",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "positive",
+      "sentimentReasonBn": "আন্তর্জাতিক আদালতে রোহিঙ্গাদের পক্ষে ন্যায়বিচারের ঐতিহাসিক রায়কে স্বাগত জানিয়ে দেওয়া গঠনমূলক বিবৃতি।",
+      "sentimentReasonEn": "Constructive geopolitical report highlighting legal accountability and regional humanitarian milestones.",
+      "source": {
+          "name": "Tripura Times",
+          "bureau": "Tripura",
+          "language": "English",
+          "originalUrl": "https://tripuratimes.com/ttimes/sheikh-hasina-welcomes-icj-judgment-holding-myanmar-responsible-for-rohingya-genocide-43252.html",
+          "scannedAt": "2026-11-20T14:15:00.000Z"
+      },
+      "publishedAt": "2026-11-20T14:15:00.000Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/default-geopolitical-map.jpg",
+      "mediaFormat": "rss",
+      "tags": [
+          "ত্রিপুরা টাইমস",
+          "শেখ হাসিনা",
+          "রোহিঙ্গা",
+          "আইসিজে",
+          "কূটনীতি"
+      ]
+  },
+  {
+      "id": "news-20261120-004",
+      "slug": "assam-tribune-assam-accord-panel-bangladesh-diplomacy-deportation",
+      "title": "Assam Accord panel submits report seeks Bangladesh diplomacy time-bound deportation - The Assam Tribune",
+      "englishTitle": "The Assam Tribune: High-Level Assam Accord Panel Recommends Formal Diplomatic Framework with Dhaka for Deportation",
+      "banglaTitle": "আসাম চুক্তি বাস্তবায়নে ঢাকার সাথে আনুষ্ঠানিক কূটনৈতিক প্রত্যর্পণ ফ্রেমওয়ার্কের সুপারিশ বিশেষজ্ঞ কমিটির: আসাম ট্রিবিউন",
+      "summaryBn": "আসাম চুক্তির অনুচ্ছেদ ৬ বাস্তবায়নে গঠিত উচ্চপর্যায়ের কমিটি তাদের চূড়ান্ত প্রতিবেদনে বাংলাদেশ থেকে অবৈধ অনুপ্রবেশ ও প্রত্যাবাসন সমস্যা নিরসনে দ্বিপাক্ষিক কূটনৈতিক চুক্তি সম্পাদনের জোর সুপারিশ করেছে। আসাম ট্রিবিউনের প্রতিবেদনে বলা হয়েছে, কমিটি সময়াবদ্ধ প্রত্যর্পণ চুক্তি নিশ্চিত করতে কেন্দ্রীয় সরকারকে বাংলাদেশ সরকারের সাথে উচ্চপর্যায়ের কূটনৈতিক যোগাযোগ বৃদ্ধির পরামর্শ দিয়েছে।",
+      "summaryEn": "The Assam Tribune reported that a high-level committee on the implementation of Clause 6 of the Assam Accord submitted its findings, recommending the Government of India pursue structured bilateral diplomatic treaties with Dhaka to facilitate time-bound, verified deportation procedures.",
+      "keyPointsBn": [
+          "আসাম চুক্তির ৬ নম্বর অনুচ্ছেদ বাস্তবায়নে গঠিত কমিটির বিস্তৃত সুপারিশ দাখিল",
+          "বাংলাদেশ সীমান্তের অবৈধ অভিবাসন স্থায়ীভাবে নিরসনে আনুষ্ঠানিক দ্বিপাক্ষিক চুক্তির প্রস্তাব",
+          "সীমান্তে নদী ও স্থলপথে কঠোর নজরদারি বজায় রাখার ওপর জোর"
+      ],
+      "keyPointsEn": [
+          "Assam Accord panel submits formal framework outlining border enforcement and legal pathways",
+          "Advocates comprehensive bilateral repatriation treaty between New Delhi and Dhaka",
+          "Emphasizes technologically fortified border fencing across riverine stretches"
+      ],
+      "category": "border",
+      "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+      "categoryLabelEn": "Border & Security",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "আসামের সীমান্ত ব্যবস্থাপনা ও কূটনৈতিক সমাধানের লক্ষ্যে সুপারিশকৃত আইনগত ফ্রেমওয়ার্ক।",
+      "sentimentReasonEn": "Structured institutional coverage focusing on legal mechanisms and cross-border security governance.",
+      "source": {
+          "name": "The Assam Tribune",
+          "bureau": "Assam",
+          "language": "English",
+          "originalUrl": "https://assamtribune.com/assam/assam-accord-panel-submits-report-seeks-bangladesh-diplomacy-time-bound-deportation-1623045",
+          "scannedAt": "2026-11-20T13:30:00.000Z"
+      },
+      "publishedAt": "2026-11-20T13:30:00.000Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "/images/bsf-border-outpost-tripura.jpg",
+      "mediaFormat": "rss",
+      "tags": [
+          "আসাম ট্রিবিউন",
+          "আসাম চুক্তি",
+          "সীমান্ত নিরাপত্তা",
+          "প্রত্যর্পণ",
+          "কূটনীতি"
+      ]
+  },
+  {
+      "id": "news-20261120-005",
+      "slug": "firstpost-siliguri-corridor-chickens-neck-bangladesh-china-threat-analysis",
+      "title": "Siliguri Corridor Security: Strategic Threat Assessment Amid Bangladesh Political Shift - Firstpost",
+      "englishTitle": "Firstpost: Strategic Analysis on Dhaka's Geopolitical Realignment and Defense of the Siliguri 'Chicken's Neck' Corridor",
+      "banglaTitle": "শিলিগুড়ি করিডোরের নিরাপত্তা ও ঢাকার ভূরাজনৈতিক পরিবর্তন নিয়ে রণকৌশলগত বিশ্লেষণ: ফার্স্টপোস্ট",
+      "summaryBn": "ফার্স্টপোস্টের বিশেষ ভিডিও বিশ্লেষণে ভারতের উত্তর-পূর্বাঞ্চলীয় রাজ্যগুলোকে সংযুক্তকারী অতীব সংবেদনশীল শিলিগুড়ি ‘চিকেনস নেক’ করিডোরের নিরাপত্তা পরিস্থিতি বিশ্লেষণ করা হয়েছে। বাংলাদেশের রাজনৈতিক রূপান্তর ও বহিরাগত শক্তির প্রভাব বৃদ্ধির পটভূমিতে ভারতীয় সামরিক ও সীমান্ত নিরাপত্তা বিশ্লেষকরা উত্তরবঙ্গের এই সংকীর্ণ করিডোর সুরক্ষিত রাখার প্রয়োজনীয়তার ওপর আলোকপাত করেছেন।",
+      "summaryEn": "In an in-depth video dispatch, Firstpost analyzes the strategic defense architecture surrounding India's vital Siliguri 'Chicken's Neck' Corridor connecting the mainland to the Northeast. Analysts assess potential geopolitical risks stemming from political instability in Bangladesh and reiterate India's defensive readiness along northern Bengal borders.",
+      "keyPointsBn": [
+          "শিলিগুড়ি করিডোরের ২২ কিলোমিটার সরু ভূখণ্ডে সামরিক প্রস্তুতি ও ড্রোন নজরদারি জোরদার",
+          "বাংলাদেশে রাজনৈতিক ক্ষমতার পরিবর্তনের প্রেক্ষিতে আঞ্চলিক সংযোগের সুরক্ষা নিশ্চিত করার অগ্রাধিকার",
+          "উত্তরবঙ্গের সীমান্ত নিরাপত্তা অক্ষুণ্ণ রাখতে ত্রিস্তরীয় নিরাপত্তা বলয় মোতায়েন"
+      ],
+      "keyPointsEn": [
+          "Elevated surveillance and integrated military posture along the 22-km Siliguri Corridor",
+          "Defense experts review geopolitical ripple effects of Bangladesh's evolving foreign alignments",
+          "Multi-tier security grid maintained across north Bengal's strategic transit choke points"
+      ],
+      "category": "border",
+      "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+      "categoryLabelEn": "Border & Security",
+      "sentiment": "neutral",
+      "sentimentReasonBn": "উত্তরবঙ্গের সামরিক নিরাপত্তা ও জাতীয় ভৌগোলিক সংহতি রক্ষার রণকৌশলগত পুঙ্খানুপুঙ্খ বিশ্লেষণ।",
+      "sentimentReasonEn": "In-depth strategic and defense analysis addressing national security infrastructure around the Siliguri transit point.",
+      "source": {
+          "name": "Firstpost",
+          "bureau": "Siliguri",
+          "language": "English",
+          "originalUrl": "https://www.youtube.com/shorts/Og7nycVKiAI",
+          "scannedAt": "2026-11-20T12:00:00.000Z"
+      },
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "https://i.ytimg.com/vi/Og7nycVKiAI/hqdefault.jpg",
+      "mediaFormat": "youtube",
+      "videoUrl": "https://www.youtube.com/shorts/Og7nycVKiAI",
+      "isTrending": true,
+      "tags": [
+          "শিলিগুড়ি করিডোর",
+          "ফার্স্টপোস্ট",
+          "সীমান্ত নিরাপত্তা",
+          "চিকেনস নেক",
+          "ইউটিউব"
+      ]
+  },
+  {
+      "id": "news-20261120-006",
+      "slug": "abp-live-sheikh-hasina-passport-renewal-extradition-dhaka-stance",
+      "title": "पासपोर्ट नहीं, प्रत्यर्पण चाहिए! शेख हसीना की वापसी पर बांग्लादेश का अड़ियल रुख - ABP News",
+      "englishTitle": "ABP News: 'Extradition, Not Passport' — Dhaka Hardens Stance on Sheikh Hasina's Travel Documents Amid Return Plans",
+      "banglaTitle": "‘পাসপোর্ট নয়, প্রত্যর্পণ চাই!’ শেখ হাসিনার কূটনৈতিক পাসপোর্ট নিয়ে ঢাকার অনড় অবস্থান: এবিপি নিউজ",
+      "summaryBn": "সাবেক প্রধানমন্ত্রী শেখ হাসিনার সাধারণ বা জরুরি পাসপোর্ট নবায়নের আবেদন প্রত্যাখ্যান করেছে ঢাকার অন্তর্বর্তী সরকার। এবিপি নিউজের প্রতিবেদনে প্রকাশ, ঢাকা সাফ জানিয়ে দিয়েছে যে পাসপোর্ট প্রদানের বদলে দ্বিপাক্ষিক প্রত্যর্পণ চুক্তির আওতায় হাসিনাকে দেশে ফেরত পাঠানোর দাবিই তাদের অগ্রাধিকার। আন্তর্জাতিক আইনজীবীদের মাধ্যমে আইনি লড়াই তীব্র হচ্ছে।",
+      "summaryEn": "ABP News reports that the interim administration in Dhaka declined requests to reissue or renew travel documents for former prime minister Sheikh Hasina, stating its focus remains firmly on seeking her formal extradition under bilateral extradition protocols.",
+      "keyPointsBn": [
+          "শেখ হাসিনার পাসপোর্ট নবায়নের আইনি আবেদন গ্রহণ করতে ঢাকার অস্বীকৃতি",
+          "দ্বিপাক্ষিক প্রত্যর্পণ চুক্তির আওতায় বিচারের মুখোমুখি করার দাবি পুনর্ব্যক্ত",
+          "লন্ডনের আন্তর্জাতিক আইন বিশেষজ্ঞদের মাধ্যমে প্রতিকার চাওয়ার উদ্যোগ"
+      ],
+      "keyPointsEn": [
+          "Dhaka mission withholds passport renewal processing for former Prime Minister Sheikh Hasina",
+          "Interim authorities maintain demand for formal extradition pursuant to bilateral treaties",
+          "Legal representatives challenge document denial across international jurisdictional forums"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "সাবেক প্রধানমন্ত্রীর পাসপোর্ট ও আইনি মর্যাদা নিয়ে ঢাকা ও নির্বাসিত নেতৃত্বের মধ্যকার তীব্র সংঘাত।",
+      "sentimentReasonEn": "Reportage detailing administrative standoff and escalating legal controversies surrounding official travel documentation.",
+      "source": {
+          "name": "ABP Live",
+          "bureau": "Delhi",
+          "language": "Hindi",
+          "originalUrl": "https://www.abplive.com/news/world/sheikh-hasina-bangladesh-passport-extradition-india-return-3217439",
+          "scannedAt": "2026-11-20T17:51:25.000Z"
+      },
+      "publishedAt": "2026-11-20T17:51:25.000Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&auto=format&fit=crop&q=80",
+      "mediaFormat": "rss",
+      "tags": [
+          "শেখ হাসিনা",
+          "পাসপোর্ট",
+          "এবিপি নিউজ",
+          "প্রত্যর্পণ",
+          "রাজনীতি"
+      ]
+  },
+  {
+      "id": "news-20261120-007",
+      "slug": "times-of-india-bangladesh-civil-war-territory-sheikh-hasina-sentence",
+      "title": "“Bangladesh Entering Civil War Territory”: Abhijit Iyer Mitra On Sheikh Hasina’s Death Sentence - The Times of India",
+      "englishTitle": "The Times of India: Defense Expert Warns Bangladesh Strains Toward Protracted Conflict Amid ICT Trials and AL Protests",
+      "banglaTitle": "‘গৃহযুদ্ধের ঝুঁকির মুখে বাংলাদেশ’: শেখ হাসিনার বিচার ও অস্থিরতা নিয়ে প্রতিরক্ষা বিশেষজ্ঞের হুঁশিয়ারি, টাইমস অফ ইন্ডিয়া",
+      "summaryBn": "টাইমস অফ ইন্ডিয়ার বিশেষ ভিডিও ব্রিফে সামরিক ও ভূরাজনৈতিক বিশেষজ্ঞ অভিজিৎ আইয়ার-মিত্র সতর্ক করে বলেছেন যে বাংলাদেশে আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের একপাক্ষিক বিচার এবং আওয়ামী লীগের তৃণমূল প্রতিরোধের সংঘাত দেশকে অভ্যন্তরীণ গৃহযুদ্ধের মতো তীব্র সংকটের দিকে ঠেলে দিচ্ছে। সংঘাত দীর্ঘায়িত হলে গোটা দক্ষিণ এশিয়ার বাণিজ্য ও নিরাপত্তার ওপর এর প্রভাব পড়বে বলে তিনি অভিমত দেন।",
+      "summaryEn": "In a strategic analysis for The Times of India, defense analyst Abhijit Iyer-Mitra cautioned that hardening political polarization between the interim regime and grassroots Awami League cadres over controversial ICT tribunals threatens to plunge Bangladesh into chronic internal destabilization.",
+      "keyPointsBn": [
+          "আন্তর্জাতিক অপরাধ ট্রাইব্যুনালের বিচার ও মৃত্যুদণ্ড দাবির ফলে রাজনৈতিক বিভাজন চরম আকার ধারণ করেছে",
+          "আওয়ামী লীগের দেশব্যাপী প্রতিরোধ ও হরতালের ফলে রাষ্ট্রযন্ত্রের প্রশাসনিক নিয়ন্ত্রণ চ্যালেঞ্জের মুখে",
+          "পূর্ব সীমান্তে রাজনৈতিক বিশৃঙ্খলা ভারতীয় অর্থনীতির ট্রানজিট ও সীমান্ত বাণিজ্যের জন্য বড় ঝুঁকি"
+      ],
+      "keyPointsEn": [
+          "Analysis warns rapid trial acceleration against political leadership threatens structural institutional breakdown",
+          "Nationwide party lockdowns challenge administrative command across regional districts",
+          "Prolonged unrest on India's eastern flank poses significant friction for regional logistics and connectivity"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "পার্শ্ববর্তী দেশের অভ্যন্তরীণ শাসনব্যবস্থা ভেঙে পড়ার ঝুঁকি ও আঞ্চলিক স্থিতিশীলতার ওপর গভীর উদ্বেগ।",
+      "sentimentReasonEn": "Analytical warnings highlighting systemic instability and security risks to South Asian regional balance.",
+      "source": {
+          "name": "The Times of India",
+          "bureau": "Mumbai",
+          "language": "English",
+          "originalUrl": "https://timesofindia.indiatimes.com/short-videos/briefs/bangladesh-entering-civil-war-territory-abhijit-iyer-mitra-on-sheikh-hasinas-death-sentence/shorttakes/136037236.cms",
+          "scannedAt": "2026-11-20T18:18:31.000Z"
+      },
+      "publishedAt": "2026-11-20T18:18:31.000Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "/images/default-geopolitical-map.jpg",
+      "mediaFormat": "rss",
+      "tags": [
+          "টাইমস অফ ইন্ডিয়া",
+          "শেখ হাসিনা",
+          "আন্তর্জাতিক অপরাধ ট্রাইব্যুনাল",
+          "ভূরাজনীতি",
+          "রাজনীতি"
+      ]
+  },
+  {
+      "id": "news-20261120-008",
+      "slug": "tripura-times-bsf-jawan-returns-flag-meeting-border-detention",
+      "title": "BSF jawan returns to India after detention by BGB in Bangladesh border issue resolved through flag meeting - Tripura Times",
+      "englishTitle": "Tripura Times: BSF Jawan Handed Over Safely to India Following Commandant-Level Flag Meeting with BGB in Tripura",
+      "banglaTitle": "ত্রিপুরা সীমান্তে পতাকা বৈঠকের মাধ্যমে বিজিবি কর্তৃক আটক বিএসএফ জওয়ানকে নিরাপদে হস্তান্তর: ত্রিপুরা টাইমস",
+      "summaryBn": "ত্রিপুরা সীমান্তে শূন্যরেখা অতিক্রমের দায়ে বর্ডার গার্ড বাংলাদেশ (বিজিবি) কর্তৃক আটক এক বিএসএফ জওয়ানকে সফল কোম্পানি কমান্ডার পর্যায়ের পতাকা বৈঠকের পর অক্ষত অবস্থায় ভারতের হাতে ফিরিয়ে দেওয়া হয়েছে। ত্রিপুরা টাইমসের প্রতিবেদনে জানানো হয়, ভুলবশত সীমান্ত অতিক্রমের পর সৌহার্দ্যপূর্ণ দ্বিপাক্ষিক প্রটোকল মেনে সীমান্ত রক্ষা বাহিনীর পেশাদারিত্বের প্রমাণ মিলেছে।",
+      "summaryEn": "Tripura Times reported that a BSF jawan inadvertently crossing the international boundary line was safely returned to Indian authorities after a commandant-level flag meeting between the Border Security Force and Border Guard Bangladesh along the Tripura frontier, reaffirming professional field-level coordination protocols.",
+      "keyPointsBn": [
+          "ত্রিপুরা সীমান্তে অনিচ্ছাকৃত সীমান্ত অতিক্রমের ঘটনা শান্তিপূর্ণভাবে পতাকা বৈঠকের মাধ্যমে নিষ্পত্তি",
+          "বিএসএফ এবং বিজিবির উচ্চপদস্থ কর্মকর্তাদের উপস্থিতিতে আনুষ্ঠানিক হস্তান্তর সম্পন্ন",
+          "উত্তেজনাকর পরিস্থিতির মধ্যেও মাঠপর্যায়ের প্রতিষ্ঠিত সীমান্ত প্রটোকলের কার্যকারিতা প্রমাণিত"
+      ],
+      "keyPointsEn": [
+          "Border incident involving inadvertent crossing amicably resolved through established military flag meeting",
+          "Formal handover completed in the presence of senior border commanders on the Tripura border",
+          "Underscores the vital operational integrity of bilateral field-level security protocols"
+      ],
+      "category": "border",
+      "categoryLabelBn": "সীমান্ত নিরাপত্তা",
+      "categoryLabelEn": "Border & Security",
+      "sentiment": "positive",
+      "sentimentReasonBn": "সীমান্তে আটক জওয়ানকে দ্রুত ও শান্তিপূর্ণভাবে ফেরত পাওয়ার ইতিবাচক ও দায়িত্বশীল দ্বিপাক্ষিক সমাধান।",
+      "sentimentReasonEn": "Constructive and peaceful resolution of a sensitive border crossing incident through professional bilateral dialogue.",
+      "source": {
+          "name": "Tripura Times",
+          "bureau": "Tripura",
+          "language": "English",
+          "originalUrl": "https://tripuratimes.com/ttimes/bsf-jawan-returns-to-india-after-detention-by-bgb-in-bangladesh-border-issue-resolved-through-flag-meeting-43200.html",
+          "scannedAt": "2026-11-20T11:45:00.000Z"
+      },
+      "publishedAt": "2026-11-20T11:45:00.000Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "/images/bsf-border-outpost-tripura.jpg",
+      "mediaFormat": "rss",
+      "tags": [
+          "ত্রিপুরা টাইমস",
+          "বিএসএফ",
+          "বিজিবি",
+          "পতাকা বৈঠক",
+          "সীমান্ত নিরাপত্তা"
+      ]
+  },
+  {
+      "id": "news-20261119-001",
+      "slug": "tv9-bangla-youtube-bangladesh-violence-awami-league-lockdown-torched",
+      "title": "Bangladesh Violence: বাংলাদেশ উত্তাল, আওয়ামী লীগের ডাকে সর্বাত্মক লকডাউন ও অবরোধ - TV9 Bangla",
+      "englishTitle": "TV9 Bangla: Visual Dispatches of Arson, Clashes and Transport Shutdown Amid Awami League's General Strike",
+      "banglaTitle": "জ্বলছে বাংলাদেশ! আওয়ামী লীগের ডাকা সর্বাত্মক অবরোধে ঢাকাসহ সারাদেশে ব্যাপক অগ্নিসংযোগ: টিভি৯ বাংলা",
+      "summaryBn": "টিভি৯ বাংলার বিশেষ ভিডিও প্রতিবেদনে দেখা গেছে, ক্ষমতাচ্যুত আওয়ামী লীগের দেশব্যাপী হরতাল ও অবরোধের ডাকের পর ঢাকা, চট্টগ্রাম ও গোপালগঞ্জে ব্যাপক সংঘর্ষ, যানবাহন ভাঙচুর ও অগ্নিসংযোগের ঘটনা ঘটেছে। বিভিন্ন স্থানে পুলিশ ও যৌথবাহিনীর ব্যারিকেড ভেঙে বিক্ষোভকারীরা সড়কে নেমে বিক্ষোভ প্রদর্শন করে, যার ফলে জনজীবন সম্পূর্ণ স্থবির হয়ে পড়ে।",
+      "summaryEn": "TV9 Bangla's on-the-ground video dispatches capture dramatic visuals of nationwide shutdowns, arson incidents, and clashes between law enforcement and pro-Awami League demonstrators across Dhaka, Chittagong, and Gopalganj following calls for a total general strike.",
+      "keyPointsBn": [
+          "ঢাকাসহ বিভাগীয় শহরগুলোতে গণপরিবহন ও রেল যোগাযোগ প্রায় সম্পূর্ণ অচল",
+          "গোপালগঞ্জ ও বিভিন্ন জেলা সদরে পুলিশ ক্যাম্প ও সরকারি দপ্তরে হামলার খবর",
+          "পরিস্থিতি সামাল দিতে ঢাকাসহ স্পর্শকাতর শহরগুলোতে সেনাবহিনীর টহল বৃদ্ধি"
+      ],
+      "keyPointsEn": [
+          "Public transport and arterial logistics halted across major commercial hubs",
+          "Clashes reported outside administrative centers as security forces deploy tear gas",
+          "Military and paramilitary contingents establish perimeter checkpoints in central urban districts"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "দেশজুড়ে ব্যাপক অগ্নিসংযোগ, সহিংসতা ও রাজনৈতিক অস্থিরতার ফলে জনজীবনের চরম বিপর্যয়।",
+      "sentimentReasonEn": "Visual journalism documenting severe public disruption, civil unrest, and law enforcement escalation.",
+      "source": {
+          "name": "TV9 Bangla",
+          "bureau": "Kolkata",
+          "language": "Bengali",
+          "originalUrl": "https://www.youtube.com/watch?v=iq9kkSJt-Xo",
+          "scannedAt": "2026-11-19T17:34:07.000Z"
+      },
+      "publishedAt": "2026-11-19T17:34:07.000Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "https://i.ytimg.com/vi/iq9kkSJt-Xo/hqdefault.jpg",
+      "mediaFormat": "youtube",
+      "videoUrl": "https://www.youtube.com/watch?v=iq9kkSJt-Xo",
+      "tags": [
+          "টিভি৯ বাংলা",
+          "আওয়ামী লীগ",
+          "লকডাউন",
+          "সহিংসতা",
+          "ইউটিউব"
+      ]
+  },
+  {
+      "id": "news-20261119-002",
+      "slug": "hindustan-times-three-killed-violence-hasina-return-buzz-arrests",
+      "title": "3 killed as violence grips Bangladesh amid Hasina's return buzz; 120+ linked to her party arrested - Hindustan Times",
+      "englishTitle": "Hindustan Times: Three Dead, Over 120 Detained as Nationwide Crackdown Follows Hasina Return Mobilization",
+      "banglaTitle": "হাসিনা ফেরার ঘোষণায় উত্তাল বাংলাদেশ, সংঘর্ষে নিহত ৩, শতাধিক আওয়ামী লীগ নেতাকর্মী গ্রেপ্তার: হিন্দুস্তান টাইমস",
+      "summaryBn": "সাবেক প্রধানমন্ত্রী শেখ হাসিনার ডিসেম্বরে স্বদেশ প্রত্যাবর্তনের প্রস্তুতি ঘিরে বাংলাদেশে রক্তক্ষয়ী সংঘর্ষ ছড়িয়ে পড়েছে। হিন্দুস্তান টাইমসের প্রতিবেদনে জানানো হয়, গত ২৪ ঘণ্টায় বিক্ষোভ ও সহিংসতায় অন্তত তিনজন নিহত হয়েছেন এবং দেশব্যাপী অভিযানে আওয়ামী লীগের ১২০ জনেরও বেশি নেতা-কর্মীকে গ্রেপ্তার করেছে নিরাপত্তা বাহিনী। প্রশাসন সব জেলায় সর্বোচ্চ সতর্কাবস্থা জারি করেছে।",
+      "summaryEn": "The Hindustan Times reported that at least three people were killed and over 120 Awami League activists arrested across Bangladesh amidst surging street clashes triggered by the party's announcement of Sheikh Hasina's planned return from India, leading to elevated security alerts nationwide.",
+      "keyPointsBn": [
+          "সারাদেশে আইন-শৃঙ্খলা বাহিনীর অভিযানে শতাধিক রাজনৈতিক কর্মী আটক",
+          "সংঘর্ষে হতাহতের ঘটনায় আন্তর্জাতিক মানবাধিকার সংস্থাগুলোর উদ্বেগ প্রকাশ",
+          "স্বরাষ্ট্র মন্ত্রণালয়ের পক্ষ থেকে নাশকতার বিরুদ্ধে জিরো টলারেন্স নীতি ঘোষণার হুঁশিয়ারি"
+      ],
+      "keyPointsEn": [
+          "Security forces arrest over 120 political activists in preemptive sweeps across multiple divisions",
+          "Casualties in urban clashes spark international monitoring calls for civic de-escalation",
+          "Interim ministry announces zero-tolerance measures against street demonstrations"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "প্রাণহানি এবং ব্যাপক ধরপাকড়ের মাধ্যমে রাজনৈতিক সংকট আরও গভীর হওয়ার চিত্র।",
+      "sentimentReasonEn": "Serious coverage highlighting fatal casualties, mass detentions, and deteriorating public security.",
+      "source": {
+          "name": "Hindustan Times",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://www.hindustantimes.com/world-news/3-killed-as-violence-grips-bangladesh-amid-hasinas-return-buzz-120-linked-to-her-party-arrested-101795182684277.html",
+          "scannedAt": "2026-11-19T15:15:14.000Z"
+      },
+      "publishedAt": "2026-11-19T15:15:14.000Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80",
+      "mediaFormat": "rss",
+      "tags": [
+          "হিন্দুস্তান টাইমস",
+          "শেখ হাসিনা",
+          "গ্রেপ্তার",
+          "আওয়ামী লীগ",
+          "সহিংসতা"
+      ]
+  },
+  {
+      "id": "news-20261119-003",
+      "slug": "the-hindu-bangladesh-hit-by-fresh-arson-attacks-political-unrest",
+      "title": "Bangladesh hit by fresh arson attacks in political unrest - The Hindu",
+      "englishTitle": "The Hindu: Coordinated Arson Attacks Target State Infrastructure in Bangladesh Amid Deepening Crisis",
+      "banglaTitle": "রাজনৈতিক অস্থিরতায় নতুন করে অগ্নিসংযোগের কবলে বাংলাদেশ, সরকারি স্থাপনায় হামলা: দ্য হিন্দু",
+      "summaryBn": "দ্য হিন্দুর আন্তর্জাতিক পাতায় প্রকাশিত বিশেষ প্রতিবেদনে বলা হয়েছে, বাংলাদেশে চলমান অস্থিরতার মধ্যে নতুন করে বিভিন্ন শহরে সমন্বিত অগ্নিসংযোগ ও পেট্রোল বোমা হামলার ঘটনা ঘটেছে। রেললাইন উপড়ে ফেলা এবং সরকারি ভবনে আগুন দেওয়ার ঘটনার পর প্রধান প্রধান মহাসড়কে সেনা টহল বাড়ানো হয়েছে এবং জরুরি যোগাযোগ সেবা সাময়িকভাবে সীমিত করা হয়েছে।",
+      "summaryEn": "The Hindu reports that Bangladesh experienced a fresh wave of coordinated arson attacks targeting municipal government facilities and transport arteries. In response to railway sabotages and incendiary device incidents, authorities stepped up joint army patrols along vital transit corridors.",
+      "keyPointsBn": [
+          "সরকারি যানবাহন ও রেলস্টেশনে অগ্নিসংযোগের ঘটনায় জনজীবন বিপর্যস্ত",
+          "নাশকতা ঠেকাতে হাইওয়ে ও স্পর্শকাতর অর্থনৈতিক জোনে বাড়তি সামরিক কন্টিনজেন্ট মোতায়েন",
+          "রাজনৈতিক দলগুলোকে সহিংস পথ পরিহার করে সমঝোতায় আসার আহ্বান সুশীল সমাজের"
+      ],
+      "keyPointsEn": [
+          "Arson incidents damage public utility offices and regional rail links",
+          "Armed forces expand presence across key inter-district highways and industrial parks",
+          "Civil society representatives call for urgent dialogue to halt destruction of civic infrastructure"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "নাগরিক পরিকাঠামো ও সরকারি সম্পত্তির ওপর ব্যাপক আক্রমণ এবং জনজীবনে নিরাপত্তাহীনতার প্রতিফলন।",
+      "sentimentReasonEn": "Sober journalistic account detailing infrastructure damage and civic disruptions caused by politically driven arson.",
+      "source": {
+          "name": "The Hindu",
+          "bureau": "Delhi",
+          "language": "English",
+          "originalUrl": "https://www.thehindu.com/news/international/bangladesh-hit-by-fresh-arson-attacks-in-political-unrest/article71725621.ece",
+          "scannedAt": "2026-11-19T22:36:02.000Z"
+      },
+      "publishedAt": "2026-11-19T22:36:02.000Z",
+      "readTimeBn": "৪ মিনিট",
+      "readTimeEn": "4 min read",
+      "imageUrl": "/images/default-geopolitical-map.jpg",
+      "mediaFormat": "rss",
+      "tags": [
+          "দ্য হিন্দু",
+          "অগ্নিসংযোগ",
+          "সহিংসতা",
+          "বাংলাদেশ",
+          "রাজনীতি"
+      ]
+  },
+  {
+      "id": "news-20261118-001",
+      "slug": "dainik-bhaskar-bangladesh-hasina-return-awami-league-crackdown-plan",
+      "title": "बांग्लादेश में हसीना की वापसी से पहले सरकार सख्त: अवामी लीग के नेताओं पर कार्रवाई की तैयारी - Dainik Bhaskar",
+      "englishTitle": "Dainik Bhaskar: Administration Mounts Administrative Crackdown on Awami League Leadership Ahead of Hasina Return Plan",
+      "banglaTitle": "হাসিনার ফেরার পরিকল্পনায় শঙ্কিত সরকার, আওয়ামী লীগ নেতাদের বিরুদ্ধে কঠোর অভিযানের নির্দেশ: দৈনিক ভাস্কর",
+      "summaryBn": "দৈনিক ভাস্করের প্রতিবেদনে বলা হয়েছে, সাবেক প্রধানমন্ত্রী শেখ হাসিনার দেশে প্রত্যাবর্তনের সম্ভাব্য দিনক্ষণ ঘনিয়ে আসার সাথে সাথে অন্তর্বর্তী প্রশাসন প্রশাসনযন্ত্রকে সর্বাত্মক তৎপর করে তুলেছে। গোয়েন্দা প্রতিবেদনের ভিত্তিতে দেশের সকল জেলা ও বিভাগীয় শহরে আওয়ামী লীগের তৃণমূল নেটওয়ার্ক ও সম্ভাব্য জমায়েতের বিরুদ্ধে কঠোর প্রশাসনিক ব্যবস্থা নেওয়ার নীল নকশা তৈরি হয়েছে।",
+      "summaryEn": "Dainik Bhaskar reported that the interim administration in Bangladesh has intensified preemptive administrative measures against grassroots Awami League organizational hubs. Citing security intelligence assessments, authorities have directed nationwide containment plans to thwart large-scale mobilizations planned for December.",
+      "keyPointsBn": [
+          "সকল জেলা প্রশাসনকে আওয়ামী লীগের সাংগঠনিক জমায়েত প্রতিরোধে কড়া নির্দেশনা",
+          "শীর্ষ ও মধ্যম সারির নেতাদের ব্যাংক হিসাব এবং যোগাযোগের ওপর গোয়েন্দা নজরদারি জোরদার",
+          "আন্তর্জাতিক সম্প্রদায়ের কাছে রাজনৈতিক সংঘাত এড়াতে ভারসাম্য রক্ষার বার্তা"
+      ],
+      "keyPointsEn": [
+          "District administrations instructed to enforce strict assembly restrictions",
+          "Enhanced regulatory scrutiny placed on organizational leadership communications",
+          "Diplomatic observers emphasize maintaining democratic space to prevent long-term political instability"
+      ],
+      "category": "politics",
+      "categoryLabelBn": "রাজনীতি ও কূটনীতি",
+      "categoryLabelEn": "Politics & Diplomacy",
+      "sentiment": "negative",
+      "sentimentReasonBn": "রাজনৈতিক দল ও নেতৃত্বের ওপর প্রশাসনিক দমনপীড়নের নীল নকশা এবং গণতান্ত্রিক পরিসর সংকোচনের বিবরণ।",
+      "sentimentReasonEn": "Critical report on pre-emptive political suppression and rising administrative restrictions.",
+      "source": {
+          "name": "Dainik Bhaskar",
+          "bureau": "Mumbai",
+          "language": "Hindi",
+          "originalUrl": "https://www.bhaskar.com/g/international/news/bangladesh-sheikh-hasina-return-awami-league-leaders-crackdown-plan-139733295.html",
+          "scannedAt": "2026-11-18T01:15:58.000Z"
+      },
+      "publishedAt": "2026-11-18T01:15:58.000Z",
+      "readTimeBn": "৩ মিনিট",
+      "readTimeEn": "3 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=800&auto=format&fit=crop&q=80",
+      "mediaFormat": "rss",
+      "tags": [
+          "দৈনিক ভাস্কর",
+          "শেখ হাসিনা",
+          "আওয়ামী লীগ",
+          "ক্র্যাকডাউন",
+          "রাজনীতি"
+      ]
+  },
+  {
     "id": "news-20261104-001",
     "slug": "the-hindu-ganga-water-treaty-structured-mechanism-mea-clarification",
     "title": "Weeks before expiry of Ganga Water Treaty, MEA says ‘structured mechanism’ remains in place for pact - The Hindu",
@@ -183,7 +761,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeEn": "4 min read",
     "imageUrl": "/images/default-geopolitical-map.jpg",
     "mediaFormat": "rss",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "tags": [
       "গঙ্গা চুক্তি",
