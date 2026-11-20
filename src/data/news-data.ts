@@ -627,7 +627,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
       "publishedAt": "2026-11-19T15:15:14.000Z",
       "readTimeBn": "৪ মিনিট",
       "readTimeEn": "4 min read",
-      "imageUrl": "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800&auto=format&fit=crop&q=80",
+      "imageUrl": "/images/bangladesh-unrest-hasina-protests.jpg",
       "mediaFormat": "rss",
       "tags": [
           "হিন্দুস্তান টাইমস",
