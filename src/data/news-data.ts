@@ -1695,7 +1695,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "publishedAt": "2026-10-27T11:20:00.000Z",
     "readTimeBn": "৩ মিনিট",
     "readTimeEn": "3 min read",
-    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "imageUrl": "/images/indian-envoy-bangladesh-pm-meeting.jpg",
     "mediaFormat": "rss",
     "tags": [
       "ডিডি নিউজ",
