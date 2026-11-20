@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cinzel, Newsreader, Noto_Serif_Bengali, Noto_Serif_Devanagari, Plus_Jakarta_Sans, Space_Grotesk } from 'next/font/google';
+import { Cinzel, Newsreader, Noto_Serif_Bengali, Plus_Jakarta_Sans, Space_Grotesk } from 'next/font/google';
 import '@/styles/globals.css';
 import { AppProvider } from '@/context/ThemeContext';
 import Header from '@/components/Header';
@@ -28,13 +28,6 @@ const notoBengali = Noto_Serif_Bengali({
   subsets: ['bengali'],
   weight: ['400', '500', '600', '700', '800', '900'],
   variable: '--font-bengali-custom',
-  display: 'swap',
-});
-
-const notoDevanagari = Noto_Serif_Devanagari({
-  subsets: ['devanagari'],
-  weight: ['400', '500', '600', '700', '800'],
-  variable: '--font-devanagari-custom',
   display: 'swap',
 });
 
@@ -198,11 +191,14 @@ export default function RootLayout({
     <html
       lang="bn"
       data-lang="bn"
-      className={`${cinzel.variable} ${newsreader.variable} ${notoBengali.variable} ${notoDevanagari.variable} ${plusJakarta.variable} ${spaceGrotesk.variable}`}
+      className={`${cinzel.variable} ${newsreader.variable} ${notoBengali.variable} ${plusJakarta.variable} ${spaceGrotesk.variable}`}
       suppressHydrationWarning
     >
       <head>
         <GoogleAnalytics />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://www.google.com" crossOrigin="anonymous" />

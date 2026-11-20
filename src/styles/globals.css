@@ -4,7 +4,7 @@
   --font-masthead: var(--font-cinzel), 'Cinzel', var(--font-bengali-custom), 'Noto Serif Bengali', serif;
   --font-mono: var(--font-mono-custom), 'Space Grotesk', var(--font-bengali-custom), 'Noto Serif Bengali', monospace;
   --font-bengali: var(--font-bengali-custom), 'Noto Serif Bengali', serif;
-  --font-devanagari: var(--font-devanagari-custom), 'Noto Serif Devanagari', serif;
+  --font-devanagari: 'Noto Serif Devanagari', var(--font-serif), serif;
 
   /* Light Theme Palette (Premium Editorial Newspaper - 30% Lighter Soft Beige) */
   --bg-primary: #fcf5ee;
