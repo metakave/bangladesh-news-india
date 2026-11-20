@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { SCANNED_NEWS_ITEMS, CATEGORIES } from '@/data/news-data';
 
-const SITE_URL = 'https://bangladesh-news-india.vercel.app';
+const SITE_URL = 'https://narrativecompass.bd';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

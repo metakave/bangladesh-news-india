@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Narrative Compass | Indian News Monitoring & Media Analytics',
     description: 'Learn about Narrative Compass, our methodology, 3-marker sentiment engine, and platform founder Sadiq M. Alam.',
-    url: 'https://bangladesh-news-india.vercel.app/about',
+    url: 'https://narrativecompass.bd/about',
   },
 };
 

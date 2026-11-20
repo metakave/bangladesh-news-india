@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '120+ Indian Outlets Reporting Bangladesh | Narrative Compass Directory',
     description: 'Explore the complete directory of Indian news outlets monitored for coverage of Bangladesh.',
-    url: 'https://bangladesh-news-india.vercel.app/bangladesh-indian-news-media',
+    url: 'https://narrativecompass.bd/bangladesh-indian-news-media',
   },
 };
 

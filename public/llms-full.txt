@@ -1,7 +1,7 @@
 # Narrative Compass (ন্যারেটিভ কম্পাস) — Full System & Dataset Specification
 
 ## Overview
-Narrative Compass (https://bangladesh-news-india.vercel.app) is an independent automated news narrative scanner and intelligence platform tracking how Indian media reports on Bangladesh. It scans newspaper RSS feeds, news portals, and verified YouTube media channels across Delhi, Kolkata, Siliguri, Agartala, and Silchar.
+Narrative Compass (https://narrativecompass.bd) is an independent automated news narrative scanner and intelligence platform tracking how Indian media reports on Bangladesh. It scans newspaper RSS feeds, news portals, and verified YouTube media channels across Delhi, Kolkata, Siliguri, Agartala, and Silchar.
 
 ## Key Target Domains
 1. **Bangladeshi News in India (ভারতীয় মিডিয়ায় বাংলাদেশের খবর)**: Indexing stories about Bangladesh published by Indian news platforms like Anandabazar Patrika, The Hindu, The Indian Express, Hindustan Times, Tripura Times, Uttarbanga Sambad, The Assam Tribune, and News Vanguard.

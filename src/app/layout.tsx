@@ -45,7 +45,7 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
-const SITE_URL = 'https://bangladesh-news-india.vercel.app';
+const SITE_URL = 'https://narrativecompass.bd';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

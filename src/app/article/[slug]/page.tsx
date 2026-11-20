@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { SCANNED_NEWS_ITEMS } from '@/data/news-data';
 import ArticleClientView from '@/components/ArticleClientView';
 
-const SITE_URL = 'https://bangladesh-news-india.vercel.app';
+const SITE_URL = 'https://narrativecompass.bd';
 
 interface PageProps {
   params: Promise<{ slug: string }>;

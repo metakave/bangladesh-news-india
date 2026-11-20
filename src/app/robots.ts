@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const SITE_URL = 'https://bangladesh-news-india.vercel.app';
+const SITE_URL = 'https://narrativecompass.bd';
 
 export default function robots(): MetadataRoute.Robots {
   return {
