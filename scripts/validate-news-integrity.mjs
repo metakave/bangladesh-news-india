@@ -53,7 +53,8 @@ const DOMAIN_SOURCE_RULES = [
   { domain: 'taasir.com', validNames: ['Daily Taasir', 'Roznama Taasir', 'Taasir'] },
   { domain: 'thecsrjournal.in', validNames: ['The CSR Journal', 'CSR Journal'] },
   { domain: 'etvbharat.com', validNames: ['ETV Bharat'] },
-  { domain: 'zeenews.india.com', validNames: ['Zee News', 'Zee News World', 'Zee News Sports', 'Zee 24 Ghanta', 'Zee 24 Ghanta (YouTube)'] }
+  { domain: 'zeenews.india.com', validNames: ['Zee News', 'Zee News World', 'Zee News Sports', 'Zee 24 Ghanta', 'Zee 24 Ghanta (YouTube)'] },
+  { domain: 'newindianexpress.com', validNames: ['The New Indian Express', 'New Indian Express'] }
 ];
 
 // Banned image IDs safeguard
@@ -67,30 +68,44 @@ for (const banned of BANNED_IMAGES) {
 
 // Extract all news item JSON blocks
 const items = [];
-const itemRegex = /\{\s*"id":\s*"([^"]+)"[\s\S]*?"title":\s*"([^"]+)"[\s\S]*?"source":\s*\{([\s\S]*?)\}/g;
-let match;
-
-while ((match = itemRegex.exec(content)) !== null) {
-  const id = match[1];
-  const title = match[2];
-  const sourceBlock = match[3];
-
-  const nameMatch = sourceBlock.match(/"name":\s*"([^"]+)"/);
-  const originalUrlMatch = sourceBlock.match(/"originalUrl":\s*"([^"]+)"/);
-  const langMatch = sourceBlock.match(/"language":\s*"([^"]+)"/);
-
-  if (nameMatch && originalUrlMatch) {
-    items.push({
-      id,
-      title,
-      sourceName: nameMatch[1],
-      originalUrl: originalUrlMatch[1],
-      language: langMatch ? langMatch[1] : 'Unknown'
+const scannedMatch = content.match(/export const SCANNED_NEWS_ITEMS: NewsItem\[\] = (\[[\s\S]*?\]);\s*export const ARTICLES/);
+if (scannedMatch) {
+  try {
+    const parsedScanned = new Function('return ' + scannedMatch[1])();
+    parsedScanned.forEach(item => {
+      items.push({
+        id: item.id,
+        title: item.title,
+        sourceName: item.source?.name || '',
+        originalUrl: item.source?.originalUrl || '',
+        language: item.source?.language || 'Unknown'
+      });
     });
+  } catch (err) {
+    console.error('Failed to parse SCANNED_NEWS_ITEMS:', err);
   }
 }
 
-console.log(`📊 Validating ${items.length} news dispatches...`);
+// Also check BREAKING_NEWS_ALERTS
+const alertsMatch = content.match(/export const BREAKING_NEWS_ALERTS: BreakingAlert\[\] = (\[[\s\S]*?\]);/);
+if (alertsMatch) {
+  try {
+    const parsedAlerts = new Function('return ' + alertsMatch[1])();
+    parsedAlerts.forEach(alert => {
+      items.push({
+        id: alert.id,
+        title: alert.headlineBn,
+        sourceName: alert.sourceName || '',
+        originalUrl: alert.url || '',
+        language: 'Bengali'
+      });
+    });
+  } catch (err) {
+    console.error('Failed to parse BREAKING_NEWS_ALERTS:', err);
+  }
+}
+
+console.log(`📊 Validating ${items.length} news dispatches & breaking alerts...`);
 
 let errorCount = 0;
 let warningCount = 0;
