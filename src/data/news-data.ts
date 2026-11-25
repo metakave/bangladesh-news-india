@@ -71,27 +71,27 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "২১ নভেম্বর, ২০২৬ এ ২:৩০ PM",
-  "lastScannedAtEn": "21 Nov 2026, 02:30 pm",
-  "totalScanned24h": 5310,
-  "bangladeshMatches": 1785,
+  "lastScannedAtBn": "২৫ নভেম্বর, ২০২৬ এ ৫:০৫ PM",
+  "lastScannedAtEn": "25 Nov 2026, 05:05 pm",
+  "totalScanned24h": 4583,
+  "bangladeshMatches": 1427,
   "sentimentDistribution": {
-    "positive": 35,
-    "neutral": 49,
-    "negative": 16
+    "positive": 28,
+    "neutral": 47,
+    "negative": 25
   },
   "bureauDistribution": {
-    "delhi": 44,
-    "kolkata": 34,
+    "delhi": 46,
+    "kolkata": 31,
     "mumbai": 12,
     "tripura": 5,
     "assam": 3,
-    "siliguri": 2
+    "siliguri": 3
   },
   "languageDistribution": {
-    "english": 46,
-    "bengali": 34,
-    "hindi": 15,
+    "english": 47,
+    "bengali": 31,
+    "hindi": 17,
     "tamil": 2,
     "telugu": 1,
     "marathi": 1,
@@ -100,6 +100,50 @@ export const SCANNER_STATS = {
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-132",
+    "headlineBn": "১৬ ডিসেম্বর বাংলাদেশে ফেরার ঘোষণা শেখ হাসিনার, দিল্লিতে অবস্থান নিয়ে প্রতিবেদন — এনডিটিভি",
+    "headlineEn": "NDTV: Sheikh Hasina Eyes December 16 Return to Bangladesh; Inside Her Stay in India",
+    "timeAgoBn": "১০ মিনিট আগে",
+    "timeAgoEn": "10 mins ago",
+    "sourceName": "NDTV",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://www.ndtv.com/india-news/where-is-sheikh-hasina-now-what-we-know-about-her-life-in-india-12373859"
+  },
+  {
+    "id": "alert-133",
+    "headlineBn": "ভারত থেকে ফিরলেই শেখ হাসিনাকে গ্রেপ্তারের হুঁশিয়ারি ঢাকার — উইওন (WION)",
+    "headlineEn": "WION: Dhaka Vows to Arrest Sheikh Hasina Immediately Upon Planned Return From India",
+    "timeAgoBn": "২৫ মিনিট আগে",
+    "timeAgoEn": "25 mins ago",
+    "sourceName": "WION",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.youtube.com/watch?v=4MGzAql-lm0"
+  },
+  {
+    "id": "alert-134",
+    "headlineBn": "হাসিনার ফেরার ঘোষণার মাঝে ১৫ দিনে গ্রামীণ ব্যাংকে শতাধিক হামলা ও অগ্নিসংযোগ — দৈনিক জাগরণ",
+    "headlineEn": "Dainik Jagran: Grameen Bank Faces Wave of Arson With 100 Attacks in 15 Days",
+    "timeAgoBn": "৪০ মিনিট আগে",
+    "timeAgoEn": "40 mins ago",
+    "sourceName": "Jagran",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.jagran.com/world/other-bangladesh-political-violence-amid-talk-of-hasina-return-grameen-bank-faces-a-wave-of-arson-100-attacks-in-15-days-40448024.html"
+  },
+  {
+    "id": "alert-135",
+    "headlineBn": "পোশাক শ্রমিকদের ন্যূনতম মজুরি ৩৬ শতাংশ বাড়াল বাংলাদেশ — দ্য আসাম ট্রিবিউন",
+    "headlineEn": "The Assam Tribune: Bangladesh Hikes Minimum Wage for Garment Workers by 36%",
+    "timeAgoBn": "১ ঘণ্টা আগে",
+    "timeAgoEn": "1 hour ago",
+    "sourceName": "Assam Tribune",
+    "sourceBureau": "Assam",
+    "sentiment": "positive",
+    "url": "https://assamtribune.com/international/bangladesh-hikes-minimum-wage-for-garment-workers-by-36-1623259"
+  },
   {
     "id": "alert-128",
     "headlineBn": "অশান্তিতে ফের তেতে উঠছে পদ্মাপাড়: ঢাকা-সহ ১৮ জেলায় বিজিবি মোতায়েন করল তারেক সরকার — নিউজ১৮ বাংলা",
@@ -236,6 +280,583 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20261125-001",
+    "slug": "ndtv-where-is-sheikh-hasina-now-life-in-india-december-16-return",
+    "title": "Where Is Sheikh Hasina Now? What We Know About Her Life In India - NDTV",
+    "englishTitle": "NDTV: Where Is Sheikh Hasina Now? Inside Her Life in India Ahead of Planned December 16 Return",
+    "banglaTitle": "ভারতে ঠিক কোথায় ও কীভাবে আছেন শেখ হাসিনা? ১৬ ডিসেম্বর ফেরার ঘোষণার মাঝে দিল্লির অবস্থান: এনডিটিভি",
+    "summaryBn": "শেখ হাসিনার ১৬ ডিসেম্বর বিজয় দিবসে বাংলাদেশে ফেরার ঘোষণাকে কেন্দ্র করে ভারতের জাতীয় গণমাধ্যম এনডিটিভি তাঁর বর্তমান অবস্থান ও নিরাপত্তা ব্যবস্থা নিয়ে একটি বিস্তারিত প্রতিবেদন প্রকাশ করেছে। প্রতিবেদনে বলা হয়েছে, দিল্লিতে কড়া নিরাপত্তার মধ্যে অবস্থানরত হাসিনা বাংলাদেশের সাম্প্রতিক পরিস্থিতি নিবিড়ভাবে পর্যবেক্ষণ করছেন এবং আইনি ও কূটনৈতিক বিকল্পগুলো যাচাই করছেন।",
+    "summaryEn": "NDTV examines former Bangladesh Prime Minister Sheikh Hasina's current stay and security arrangements in India as she eyes a symbolic December 16 Victory Day return to Dhaka. The report details how New Delhi is navigating diplomatic sensitivities while ensuring her safety amid escalating extradition demands from Bangladesh.",
+    "keyPointsBn": [
+      "দিল্লিতে কড়া নিরাপত্তা বলয়ে অবস্থান করছেন শেখ হাসিনা, নিয়মিত পর্যবেক্ষণ করছেন ঢাকার পরিস্থিতি",
+      "১৬ ডিসেম্বর বিজয় দিবসে দেশে ফেরার ঘোষণা ঘিরে ভারত-বাংলাদেশ কূটনীতিতে নতুন চাঞ্চল্য",
+      "প্রত্যর্পণ দাবি ও ট্রাভেল ডকুমেন্ট ইস্যুতে আন্তর্জাতিক আইনি কাঠামো খতিয়ে দেখছে ভারত"
+    ],
+    "keyPointsEn": [
+      "Sheikh Hasina remains under tight security in India while closely tracking developments in Dhaka",
+      "Symbolic December 16 Victory Day return plan triggers fresh diplomatic scrutiny between India and Bangladesh",
+      "New Delhi evaluates legal frameworks around voluntary return versus formal extradition requests"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতে শেখ হাসিনার অবস্থান এবং দ্বিপাক্ষিক কূটনৈতিক ভারসাম্য নিয়ে তথ্যভিত্তিক প্রতিবেদন।",
+    "sentimentReasonEn": "Factual reporting on Sheikh Hasina's stay in India and the diplomatic balancing act facing New Delhi.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/india-news/where-is-sheikh-hasina-now-what-we-know-about-her-life-in-india-12373859",
+      "originalHeadline": "Where Is Sheikh Hasina Now? What We Know About Her Life In India",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T10:30:00.000Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/sheikh-hasina-mea.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "NDTV",
+      "Sheikh Hasina",
+      "Delhi Bureau",
+      "December 16",
+      "Diplomacy"
+    ]
+  },
+  {
+    "id": "news-20261125-002",
+    "slug": "news18-can-india-extradite-sheikh-hasina-voluntary-return-law",
+    "title": "Can India Extradite Sheikh Hasina If She Wants To Return To Bangladesh On Her Own? What Law Says - News18",
+    "englishTitle": "News18: Legal Analysis on Whether India Can Extradite Sheikh Hasina Amid Her Voluntary Return Offer",
+    "banglaTitle": "শেখ হাসিনা স্বেচ্ছায় ফিরতে চাইলে ভারত কি তাঁকে প্রত্যর্পণ করতে পারে? কী বলছে আন্তর্জাতিক আইন: নিউজ১৮",
+    "summaryBn": "নিউজ১৮-এর আইনি বিশ্লেষণে উঠে এসেছে, শেখ হাসিনা যদি স্বেচ্ছায় বাংলাদেশে ফিরতে চান তবে ২০১৩ সালের ভারত-বাংলাদেশ প্রত্যর্পণ চুক্তির কার্যকারিতা কী হবে। বিশেষজ্ঞরা বলছেন, রাজনৈতিক অপরাধের ব্যতিক্রম ধারা এবং পাসপোর্ট বাতিলের কারণে সৃষ্ট জটিলতায় ঢাকার প্রত্যর্পণ দাবি আইনি প্রশ্নের মুখে পড়েছে।",
+    "summaryEn": "News18 breaks down the legal complexities of the 2013 India-Bangladesh Extradition Treaty following Sheikh Hasina's stated willingness to return to Dhaka voluntarily. Legal experts note that political offense exceptions and Dhaka's passport revocation complicate formal extradition proceedings.",
+    "keyPointsBn": [
+      "২০১৩ সালের প্রত্যর্পণ চুক্তির রাজনৈতিক অপরাধ সংক্রান্ত ধারা নিয়ে আইনি বিশ্লেষণ",
+      "স্বেচ্ছায় ফেরার প্রস্তাবে ঢাকার প্রত্যর্পণ চাপের আইনি ভিত্তি দুর্বল হওয়ার ইঙ্গিত",
+      "আন্তর্জাতিক আইন ও মানবাধিকার মানদণ্ড মেনেই সিদ্ধান্ত নেবে ভারত"
+    ],
+    "keyPointsEn": [
+      "Legal breakdown of political offense clauses under the 2013 India-Bangladesh Extradition Treaty",
+      "Voluntary return offer complicates Dhaka's formal diplomatic push for forced extradition",
+      "New Delhi's legal stance remains anchored in due process and international treaty norms"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "প্রত্যর্পণ চুক্তি ও আন্তর্জাতিক আইনের নিরপেক্ষ ও বিশ্লেষণাত্মক উপস্থাপনা।",
+    "sentimentReasonEn": "Objective legal analysis of bilateral extradition treaties and international law.",
+    "source": {
+      "name": "News18",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.news18.com/india/can-india-extradite-sheikh-hasina-if-she-wants-to-return-to-bangladesh-on-her-own-what-law-says-ws-l-10440173.html",
+      "originalHeadline": "Can India Extradite Sheikh Hasina If She Wants To Return To Bangladesh On Her Own? What Law Says",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T09:45:00.000Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+      "News18",
+      "Extradition Treaty",
+      "Sheikh Hasina",
+      "International Law"
+    ]
+  },
+  {
+    "id": "news-20261125-003",
+    "slug": "telegraph-india-bengal-arjun-singh-bangladesh-remarks-hasina-dec-16",
+    "title": "Bengal minister Arjun Singh’s vow to ‘take over Bangladesh’ after Hasina picks Dec 16 for return - Telegraph India",
+    "englishTitle": "The Telegraph: Political Reactions in West Bengal After Sheikh Hasina Picks December 16 for Bangladesh Return",
+    "banglaTitle": "১৬ ডিসেম্বর হাসিনার ফেরার ঘোষণার পর পশ্চিমবঙ্গের রাজনীতিতে তোলপাড়, অর্জুন সিংয়ের মন্তব্যে বিতর্ক: দ্য টেলিগ্রাফ",
+    "summaryBn": "শেখ হাসিনার ১৬ ডিসেম্বর বাংলাদেশে ফেরার ঘোষণার পর পশ্চিমবঙ্গের রাজনৈতিক মহলে তীব্র প্রতিক্রিয়া দেখা দিয়েছে। দ্য টেলিগ্রাফের প্রতিবেদনে জানানো হয়েছে, বিজেপি নেতা অর্জুন সিংয়ের বাংলাদেশ সংক্রান্ত বিতর্কিত মন্তব্য ঘিরে রাজ্য রাজনীতিতে নতুন করে আলোচনা শুরু হয়েছে, যদিও দিল্লির কেন্দ্রীয় নেতৃত্ব এ বিষয়ে সতর্ক অবস্থান নিয়েছে।",
+    "summaryEn": "The Telegraph India reports on heightened political rhetoric in West Bengal following Sheikh Hasina's announcement of a December 16 return to Bangladesh, highlighting controversial remarks by Bengal leader Arjun Singh while central authorities maintain diplomatic restraint.",
+    "keyPointsBn": [
+      "১৬ ডিসেম্বর বিজয় দিবসে হাসিনার প্রত্যাবর্তন ঘোষণায় পশ্চিমবঙ্গে রাজনৈতিক প্রতিক্রিয়া",
+      "সীমান্তবর্তী রাজ্য পশ্চিমবঙ্গের রাজনীতিতে বাংলাদেশ ইস্যুর প্রভাব বৃদ্ধি",
+      "কূটনৈতিক সংবেদনশীলতা বজায় রেখে পরিস্থিতির ওপর নজর রাখছে কেন্দ্রীয় সরকার"
+    ],
+    "keyPointsEn": [
+      "Political reactions flare in West Bengal over Sheikh Hasina's December 16 return plan",
+      "Border state politics increasingly shaped by cross-border developments in Bangladesh",
+      "Central authorities maintain measured diplomatic posture despite local political rhetoric"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "সীমান্তবর্তী রাজ্যের নেতাদের উস্কানিমূলক বক্তব্য দ্বিপাক্ষিক সম্পর্কে অস্বস্তি বাড়াতে পারে।",
+    "sentimentReasonEn": "Provocative political statements in border states risk adding friction to bilateral ties.",
+    "source": {
+      "name": "Telegraph India",
+      "bureau": "Kolkata",
+      "language": "English",
+      "originalUrl": "https://www.telegraphindia.com/west-bengal/bengal-minister-arjun-singhs-vow-to-take-over-bangladesh-after-sheikh-hasina-picks-december-16-for-return/cid/2191235",
+      "originalHeadline": "Bengal minister Arjun Singh’s vow to ‘take over Bangladesh’ after Hasina picks Dec 16 for return",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T09:15:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+      "Telegraph India",
+      "Kolkata Bureau",
+      "West Bengal",
+      "Sheikh Hasina",
+      "December 16"
+    ]
+  },
+  {
+    "id": "news-20261125-004",
+    "slug": "jagran-bangladesh-grameen-bank-arson-100-attacks-hasina-return",
+    "title": "बांग्लादेश में शेख हसीना की वापसी की चर्चा के बीच उपद्रवियों ने फूंके यूनुस के ग्रामीण बैंक, 15 दिन में 100 हमले - Jagran",
+    "englishTitle": "Dainik Jagran: Grameen Bank Branches Face Wave of Arson With 100 Attacks in 15 Days Amid Hasina Return Buzz",
+    "banglaTitle": "হাসিনার ফেরার ঘোষণার মাঝেই বাংলাদেশে গ্রামীণ ব্যাংকের শাখায় অগ্নিসংযোগ, ১৫ দিনে শতাধিক হামলা: দৈনিক জাগরণ",
+    "summaryBn": "দৈনিক জাগরণের প্রতিবেদনে বলা হয়েছে, শেখ হাসিনার দেশে ফেরার ঘোষণার পর বাংলাদেশে রাজনৈতিক সহিংসতা আরও তীব্র হয়েছে। গত ১৫ দিনে ড. মুহাম্মদ ইউনূসের প্রতিষ্ঠিত গ্রামীণ ব্যাংকের একাধিক শাখাসহ অন্তত ১০০টি স্থানে হামলা ও অগ্নিসংযোগের ঘটনা ঘটেছে বলে প্রতিবেদনে উল্লেখ করা হয়েছে।",
+    "summaryEn": "Dainik Jagran reports a sharp spike in political violence across Bangladesh ahead of Sheikh Hasina's proposed return, noting that branches of Grameen Bank and other institutions have faced around 100 arson and vandalism incidents over the past 15 days.",
+    "keyPointsBn": [
+      "গত ১৫ দিনে বাংলাদেশে গ্রামীণ ব্যাংক ও বিভিন্ন স্থাপনায় শতাধিক হামলা ও অগ্নিসংযোগ",
+      "শেখ হাসিনার প্রত্যাবর্তন ঘোষণাকে ঘিরে দেশজুড়ে চরম উত্তেজনা ও অস্থিরতা",
+      "আইনশৃঙ্খলা পরিস্থিতি নিয়ন্ত্রণে হিমশিম খাচ্ছে তারেক রহমানের প্রশাসন"
+    ],
+    "keyPointsEn": [
+      "Over 100 arson and vandalism attacks reported across Bangladesh in 15 days, including Grameen Bank sites",
+      "Escalating street unrest linked to political mobilization ahead of December 16",
+      "Security forces struggle to contain widespread infrastructure targeting"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ব্যাংক ও জনসাধারণের সম্পত্তিতে অগ্নিসংযোগ বাংলাদেশের অভ্যন্তরীণ নিরাপত্তা ও অর্থনীতির জন্য গুরুতর হুমকি।",
+    "sentimentReasonEn": "Widespread arson targeting financial institutions underscores severe domestic instability.",
+    "source": {
+      "name": "Jagran",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://www.jagran.com/world/other-bangladesh-political-violence-amid-talk-of-hasina-return-grameen-bank-faces-a-wave-of-arson-100-attacks-in-15-days-40448024.html",
+      "originalHeadline": "बांग्लादेश में शेख हसीना की वापसी की चर्चा के बीच उपद्रवियों ने फूंके यूनुस के ग्रामीण बैंक, 15 दिन में 100 हमले",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T08:45:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangladesh-unrest-hasina-protests.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": true,
+    "tags": [
+      "Jagran",
+      "Grameen Bank",
+      "Arson",
+      "Sheikh Hasina",
+      "Bangladesh Unrest"
+    ]
+  },
+  {
+    "id": "news-20261125-005",
+    "slug": "wion-youtube-bangladesh-vows-to-arrest-hasina-if-she-returns-from-india",
+    "title": "Bangladesh Vows To Arrest Hasina If She Returns From India | WION",
+    "englishTitle": "WION Video: Dhaka Vows Immediate Arrest of Sheikh Hasina Upon Her Planned Return From India",
+    "banglaTitle": "ভারত থেকে ফিরলেই শেখ হাসিনাকে গ্রেপ্তার করা হবে, হুঁশিয়ারি ঢাকার: উইওন (WION) ভিডিও প্রতিবেদন",
+    "summaryBn": "উইওন (WION)-এর ভিডিও প্রতিবেদনে জানানো হয়েছে, শেখ হাসিনার ১৬ ডিসেম্বর বাংলাদেশে ফেরার ঘোষণার পরপরই ঢাকার অন্তর্বর্তী সরকার তাঁকে বিমানবন্দরেই গ্রেপ্তারের হুঁশিয়ারি দিয়েছে। তারেক রহমানের নেতৃত্বাধীন সরকার জানিয়েছে, আদালতের গ্রেপ্তারি পরোয়ানা কার্যকর করতে সব ধরনের প্রস্তুতি নেওয়া হয়েছে।",
+    "summaryEn": "WION's video dispatch reports that Dhaka has vowed to arrest former Prime Minister Sheikh Hasina immediately if she returns from India on December 16, stating that law enforcement is prepared to execute pending court warrants.",
+    "keyPointsBn": [
+      "১৬ ডিসেম্বর ফিরলে শেখ হাসিনাকে তাৎক্ষণিক গ্রেপ্তারের ঘোষণা ঢাকার",
+      "আদালতের পরোয়ানা কার্যকরে বিমানবন্দর ও সীমান্তে সতর্কতা জারি",
+      "দিল্লি ও ঢাকার মধ্যে কূটনৈতিক টানাপোড়েন নতুন মাত্রায় পৌঁছেছে"
+    ],
+    "keyPointsEn": [
+      "Dhaka announces immediate arrest plans if Sheikh Hasina returns on December 16",
+      "Airports and border checkpoints placed on alert to execute court warrants",
+      "Diplomatic standoff between New Delhi and Dhaka intensifies ahead of Victory Day"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "গ্রেপ্তারের হুঁশিয়ারি ও পাল্টা রাজনৈতিক কর্মসূচি বাংলাদেশে বড় ধরনের সংঘাতের আশঙ্কা তৈরি করেছে।",
+    "sentimentReasonEn": "Arrest vows and counter-mobilization heighten the risk of severe political confrontation.",
+    "source": {
+      "name": "WION",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=4MGzAql-lm0",
+      "originalHeadline": "Bangladesh Vows To Arrest Hasina If She Returns From India | WION",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T08:15:00.000Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://i.ytimg.com/vi/4MGzAql-lm0/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=4MGzAql-lm0",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": true,
+    "tags": [
+      "WION",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Sheikh Hasina",
+      "Arrest Warrant"
+    ]
+  },
+  {
+    "id": "news-20261125-006",
+    "slug": "aajtak-why-sheikh-hasina-selected-december-16-return-bangladesh",
+    "title": "शेख हसीना ने बांग्लादेश लौटने के लिए 16 दिसंबर की तारीख ही क्यों चुनी? - AajTak",
+    "englishTitle": "AajTak: Why Sheikh Hasina Selected December 16 Victory Day for Her Return to Bangladesh",
+    "banglaTitle": "বাংলাদেশে ফেরার জন্য ১৬ ডিসেম্বর তারিখটিই কেন বেছে নিলেন শেখ হাসিনা? আজতক বিশ্লেষণ",
+    "summaryBn": "আজতকের বিশেষ প্রতিবেদনে বিশ্লেষণ করা হয়েছে, শেখ হাসিনা কেন ১৬ ডিসেম্বরকে তাঁর প্রত্যাবর্তনের দিন হিসেবে বেছে নিয়েছেন। ১৯৭১ সালের এই দিনে বাংলাদেশের মুক্তিযুদ্ধে চূড়ান্ত বিজয় অর্জিত হয়েছিল। রাজনৈতিক বিশ্লেষকদের মতে, মুক্তিযুদ্ধের চেতনা ও বঙ্গবন্ধুর আদর্শকে সামনে রেখে জনসমর্থন পুনর্গঠনের কৌশল হিসেবেই তিনি এই ঐতিহাসিক দিনটি বেছে নিয়েছেন।",
+    "summaryEn": "AajTak analyzes the strategic and historical symbolism behind Sheikh Hasina choosing December 16—Bangladesh's Victory Day—for her planned return, noting her effort to rally Awami League supporters around the 1971 Liberation War legacy.",
+    "keyPointsBn": [
+      "১৯৭১ সালের বিজয় দিবসের ঐতিহাসিক গুরুত্বকে কাজে লাগাতে চান শেখ হাসিনা",
+      "মুক্তিযুদ্ধের চেতনায় আওয়ামী লীগের কর্মী-সমর্থকদের ঐক্যবদ্ধ করার কৌশল",
+      "তারেক রহমান সরকারের বিরুদ্ধে রাজনৈতিক ও আদর্শিক চাপ তৈরির প্রচেষ্টা"
+    ],
+    "keyPointsEn": [
+      "December 16 Victory Day carries deep historical resonance for the 1971 Liberation War",
+      "Symbolic date aimed at mobilizing Awami League grassroots cadres nationwide",
+      "Strategic move intensifies political and ideological pressure on Tarique Rahman's government"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ঐতিহাসিক ও রাজনৈতিক প্রেক্ষাপট তুলে ধরে একটি ভারসাম্যপূর্ণ বিশ্লেষণাত্মক প্রতিবেদন।",
+    "sentimentReasonEn": "Balanced analytical coverage examining the historical symbolism of December 16.",
+    "source": {
+      "name": "AajTak",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://www.aajtak.in/defence-news/story/why-sheikh-hasina-selected-16-december-date-to-return-bangladesh-dskc-2705685-2026-11-25",
+      "originalHeadline": "शेख हसीना ने बांग्लादेश लौटने के लिए 16 दिसंबर की तारीख ही क्यों चुनी?",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T07:45:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/dhaka-national-parliament-symbolic.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "AajTak",
+      "December 16",
+      "Victory Day",
+      "Sheikh Hasina",
+      "Awami League"
+    ]
+  },
+  {
+    "id": "news-20261125-007",
+    "slug": "firstpost-palki-sharma-youtube-hasina-sets-return-date-vantage",
+    "title": "The Palki Sharma Show LIVE: Hasina Sets Return Date | Firstpost",
+    "englishTitle": "Firstpost Vantage: Palki Sharma Examines Geopolitical Stakes as Sheikh Hasina Sets Return Date",
+    "banglaTitle": "শেখ হাসিনার প্রত্যাবর্তনের দিনক্ষণ ঘোষণা ও দক্ষিণ এশিয়ার ভূ-রাজনীতি: ফার্স্টপোস্ট (পালকি শর্মা)",
+    "summaryBn": "মুম্বাই-ভিত্তিক আন্তর্জাতিক সংবাদমাধ্যম ফার্স্টপোস্টের জনপ্রিয় অনুষ্ঠান 'দ্য পালকি শর্মা শো'-তে শেখ হাসিনার ১৬ ডিসেম্বর বাংলাদেশে ফেরার ঘোষণা এবং এর ভূ-রাজনৈতিক প্রভাব নিয়ে বিস্তারিত আলোচনা করা হয়েছে। এতে ভারত-বাংলাদেশ সীমান্ত নিরাপত্তা, তারেক রহমান সরকারের প্রতিক্রিয়া এবং আঞ্চলিক স্থিতিশীলতার ওপর এর প্রভাব বিশ্লেষণ করা হয়।",
+    "summaryEn": "Firstpost's flagship broadcast hosted by Palki Sharma examines the regional geopolitical ramifications of Sheikh Hasina setting December 16 as her return date, assessing Dhaka's response and border security implications for India.",
+    "keyPointsBn": [
+      "শেখ হাসিনার ১৬ ডিসেম্বর ফেরার ঘোষণায় দক্ষিণ এশিয়ার কূটনীতিতে নতুন সমীকরণ",
+      "তারেক রহমান সরকারের অবস্থান ও আন্তর্জাতিক সম্প্রদায়ের প্রতিক্রিয়া বিশ্লেষণ",
+      "ভারতের পূর্ব সীমান্তের নিরাপত্তা ও স্থিতিশীলতার ওপর সম্ভাব্য প্রভাব"
+    ],
+    "keyPointsEn": [
+      "Sheikh Hasina's return timeline reshapes South Asian diplomatic calculations",
+      "Analysis of Tarique Rahman administration's response and international reaction",
+      "Assessment of security implications along India's eastern frontier"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "দক্ষিণ এশিয়ার ভূ-রাজনৈতিক পরিস্থিতি নিয়ে গভীর ও তথ্যসমৃদ্ধ ভিডিও বিশ্লেষণ।",
+    "sentimentReasonEn": "In-depth geopolitical analysis of India-Bangladesh diplomatic dynamics.",
+    "source": {
+      "name": "Firstpost",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=k_5ihihhnWM",
+      "originalHeadline": "The Palki Sharma Show LIVE: Hasina Sets Return Date | Putin’s Arctic Power",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T07:15:00.000Z",
+    "readTimeBn": "৪ মিনিট ভিডিও",
+    "readTimeEn": "4 min video",
+    "imageUrl": "https://i.ytimg.com/vi/k_5ihihhnWM/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=k_5ihihhnWM",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Firstpost",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Mumbai Bureau",
+      "Palki Sharma",
+      "Sheikh Hasina"
+    ]
+  },
+  {
+    "id": "news-20261125-008",
+    "slug": "live-hindustan-sheikh-hasina-return-via-west-bengal-border-siliguri",
+    "title": "शेख हसीना बंगाल के रास्ते जाएंगी बांग्लादेश? भारत से बांग्लादेश तक हलचल; 16 दिसंबर को वापसी का ऐलान - Live Hindustan",
+    "englishTitle": "Live Hindustan: Speculation Over Whether Sheikh Hasina Will Cross Into Bangladesh via West Bengal Land Border",
+    "banglaTitle": "পশ্চিমবঙ্গের স্থলবন্দর দিয়েই কি বাংলাদেশে ফিরবেন শেখ হাসিনা? ১৬ ডিসেম্বরের ঘোষণায় সীমান্তে তৎপরতা: লাইভ হিন্দুস্তান",
+    "summaryBn": "লাইভ হিন্দুস্তানের প্রতিবেদনে বলা হয়েছে, ১৬ ডিসেম্বর শেখ হাসিনার বাংলাদেশে ফেরার ঘোষণাকে কেন্দ্র করে দিল্লি থেকে শুরু করে পশ্চিমবঙ্গ ও শিলিগুড়ি সীমান্ত পর্যন্ত ব্যাপক তৎপরতা শুরু হয়েছে। তিনি আকাশপথে নাকি পশ্চিমবঙ্গের কোনো স্থলবন্দর দিয়ে বাংলাদেশে প্রবেশ করবেন, তা নিয়ে নিরাপত্তা মহলে জল্পনা চলছে।",
+    "summaryEn": "Live Hindustan reports heightened security and political speculation across West Bengal and the Siliguri corridor following Sheikh Hasina's December 16 return announcement, as observers weigh whether she might travel by air or via a land border crossing.",
+    "keyPointsBn": [
+      "১৬ ডিসেম্বর হাসিনার প্রত্যাবর্তন ঘিরে পশ্চিমবঙ্গ ও উত্তরবঙ্গের সীমান্তে বাড়তি নজরদারি",
+      "আকাশপথ নাকি স্থলবন্দর—কোন পথে ফিরবেন হাসিনা তা নিয়ে জল্পনা তুঙ্গে",
+      "ভারত-বাংলাদেশ সীমান্তে বিএসএফ ও স্থানীয় প্রশাসনের সতর্কতা বৃদ্ধি"
+    ],
+    "keyPointsEn": [
+      "Heightened vigilance along West Bengal and North Bengal border corridors ahead of Dec 16",
+      "Speculation mounts over air versus land-border transit options for Hasina's return",
+      "BSF and regional authorities step up coordination along key frontier checkpoints"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত নিরাপত্তা ও সম্ভাব্য যাতায়াত পথ নিয়ে তথ্যভিত্তিক প্রতিবেদন।",
+    "sentimentReasonEn": "Factual reporting on border security preparedness and transit speculation.",
+    "source": {
+      "name": "Live Hindustan",
+      "bureau": "Siliguri",
+      "language": "Hindi",
+      "originalUrl": "https://www.livehindustan.com/international/sheikh-hasina-announce-return-to-bangladesh-on-16-december-border-via-west-bengal-201795590185500.html",
+      "originalHeadline": "शेख हसीना बंगाल के रास्ते जाएंगी बांग्लादेश? भारत से बांग्लादेश तक हलचल; 16 दिसंबर को वापसी का ऐलान",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T06:30:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/border-checkpost-petrapole-gede.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Live Hindustan",
+      "Siliguri Bureau",
+      "West Bengal Border",
+      "Sheikh Hasina",
+      "December 16"
+    ]
+  },
+  {
+    "id": "news-20261125-009",
+    "slug": "news18-hindi-uncertainty-sheikh-hasina-return-air-or-land-border",
+    "title": "हवाई या लैंड बॉर्डर मार्ग से, 16 दिसंबर को शेख हसीना कैसे लौटेंगी बांग्लादेश? - News18 Hindi",
+    "englishTitle": "News18 Hindi: Air or Land Route? Uncertainty Over Logistics of Sheikh Hasina's December 16 Return",
+    "banglaTitle": "আকাশপথ নাকি স্থলসীমান্ত—১৬ ডিসেম্বর কীভাবে বাংলাদেশে ফিরবেন শেখ হাসিনা? নিউজ১৮ হিন্দি",
+    "summaryBn": "নিউজ১৮ হিন্দির প্রতিবেদনে বলা হয়েছে, শেখ হাসিনার পাসপোর্ট বাতিল থাকায় ১৬ ডিসেম্বর তাঁর বাংলাদেশে ফেরার প্রক্রিয়া নিয়ে অনিশ্চয়তা রয়েছে। তিনি চার্টার্ড বিমান নাকি স্থলসীমান্ত ব্যবহার করবেন এবং বাংলাদেশের অন্তর্বর্তী সরকার কী পদক্ষেপ নেবে, তা নিয়ে কূটনৈতিক মহলে আলোচনা চলছে।",
+    "summaryEn": "News18 Hindi examines the logistical and legal hurdles surrounding Sheikh Hasina's December 16 return plan, noting that her revoked passport leaves open questions about whether she can travel via commercial flight, charter, or land border.",
+    "keyPointsBn": [
+      "পাসপোর্ট বাতিল থাকায় শেখ হাসিনার ভ্রমণ প্রক্রিয়া নিয়ে আইনি ও কারিগরি জটিলতা",
+      "আকাশপথ ও স্থলসীমান্ত উভয় বিকল্পের নিরাপত্তা ঝুঁকি পর্যালোচনা",
+      "ঢাকার বিমানবন্দর ও সীমান্তে নিরাপত্তা জোরদার করেছে অন্তর্বর্তী সরকার"
+    ],
+    "keyPointsEn": [
+      "Revoked passport creates legal and logistical hurdles for Sheikh Hasina's travel",
+      "Security risks assessed for both aviation and land-border entry routes",
+      "Dhaka tightens security across international airports and border crossings"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভ্রমণ ও সীমান্ত সংক্রান্ত বাস্তবসম্মত কারিগরি বিশ্লেষণ।",
+    "sentimentReasonEn": "Practical assessment of travel logistics and border security protocols.",
+    "source": {
+      "name": "News18 Hindi",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://hindi.news18.com/news/nation/uncertainty-over-sheikh-hasina-return-to-bangladesh-on-december-16-will-she-go-by-air-or-land-border-ws-l-11011995.html",
+      "originalHeadline": "हवाई या लैंड बॉर्डर मार्ग से, 16 दिसंबर को शेख हसीना कैसे लौटेंगी बांग्लादेश?",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T06:00:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/india-bangladesh-border-fence.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "News18 Hindi",
+      "Sheikh Hasina",
+      "Border Route",
+      "December 16"
+    ]
+  },
+  {
+    "id": "news-20261125-010",
+    "slug": "assam-tribune-bangladesh-hikes-minimum-wage-garment-workers-36-percent",
+    "title": "Bangladesh hikes minimum wage for garment workers by 36% - The Assam Tribune",
+    "englishTitle": "The Assam Tribune: Bangladesh Hikes Minimum Wage for Garment Workers by 36% Amid Sector Unrest",
+    "banglaTitle": "তীব্র শ্রমিক অসন্তোষের মুখে পোশাক শ্রমিকদের ন্যূনতম মজুরি ৩৬ শতাংশ বাড়াল বাংলাদেশ: দ্য আসাম ট্রিবিউন",
+    "summaryBn": "দ্য আসাম ট্রিবিউনের প্রতিবেদনে জানানো হয়েছে, দীর্ঘদিনের শ্রমিক বিক্ষোভ ও উৎপাদন ব্যাহত হওয়ার পর বাংলাদেশ সরকার পোশাক শ্রমিকদের ন্যূনতম মজুরি ৩৬ শতাংশ বৃদ্ধি করেছে। এই সিদ্ধান্তের ফলে তৈরি পোশাক খাতে স্থিতিশীলতা ফিরবে বলে আশা করা হচ্ছে, যা আঞ্চলিক বস্ত্র বাণিজ্য ও সরবরাহ শৃঙ্খলের জন্য গুরুত্বপূর্ণ।",
+    "summaryEn": "The Assam Tribune reports that Bangladesh has raised the minimum wage for garment workers by 36% following weeks of labor protests and factory closures, a move aimed at stabilizing the crucial export sector and regional supply chains.",
+    "keyPointsBn": [
+      "শ্রমিক আন্দোলনের চাপে তৈরি পোশাক খাতে ন্যূনতম মজুরি ৩৬ শতাংশ বৃদ্ধি",
+      "রপ্তানি ও কারখানা উৎপাদনে স্থিতিশীলতা ফেরানোর আশা করছে শিল্প মালিকরা",
+      "দক্ষিণ এশিয়ার বস্ত্র বাণিজ্য ও ভারতের সুতা রপ্তানির ওপর ইতিবাচক প্রভাবের সম্ভাবনা"
+    ],
+    "keyPointsEn": [
+      "Minimum wage for garment workers raised by 36% after prolonged labor unrest",
+      "Industry leaders hope the hike restores stability to export-oriented factories",
+      "Stabilized garment production benefits regional textile and yarn trade with India"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "অর্থনীতি ও বাণিজ্য",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "positive",
+    "sentimentReasonBn": "শ্রমিকদের মজুরি বৃদ্ধি পোশাক শিল্পে স্থিতিশীলতা ও আঞ্চলিক বাণিজ্যে ইতিবাচক প্রভাব ফেলবে।",
+    "sentimentReasonEn": "Wage hike helps stabilize Bangladesh's garment sector and regional textile supply chains.",
+    "source": {
+      "name": "Assam Tribune",
+      "bureau": "Assam",
+      "language": "English",
+      "originalUrl": "https://assamtribune.com/international/bangladesh-hikes-minimum-wage-for-garment-workers-by-36-1623259",
+      "originalHeadline": "Bangladesh hikes minimum wage for garment workers by 36%",
+      "scannedAt": "2026-11-25T11:05:00.000Z"
+    },
+    "publishedAt": "2026-11-25T05:30:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/india-bangladesh-trade-land-port.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Assam Tribune",
+      "Assam Bureau",
+      "Garment Sector",
+      "Trade",
+      "Minimum Wage"
+    ]
+  },
+  {
+    "id": "news-20261125-011",
+    "slug": "tripura-times-rights-body-alarm-bangladesh-proposed-cyber-law",
+    "title": "Rights body raises alarm over potential misuse of Bangladesh's proposed cyber law - Tripura Times",
+    "englishTitle": "Tripura Times: Rights Groups Warn Against Potential Misuse of Bangladesh's Proposed Cyber Law",
+    "banglaTitle": "বাংলাদেশের প্রস্তাবিত সাইবার আইনের সম্ভাব্য অপব্যবহার নিয়ে মানবাধিকার সংস্থার উদ্বেগ: ত্রিপুরা টাইমস",
+    "summaryBn": "ত্রিপুরা টাইমসের প্রতিবেদনে বলা হয়েছে, আন্তর্জাতিক মানবাধিকার সংস্থাগুলো বাংলাদেশের প্রস্তাবিত নতুন সাইবার নিরাপত্তা আইনের কিছু ধারা নিয়ে গভীর উদ্বেগ প্রকাশ করেছে। তাদের আশঙ্কা, এই আইনটি ভিন্নমতাবলম্বী, সাংবাদিক ও রাজনৈতিক প্রতিপক্ষের কণ্ঠরোধে ব্যবহৃত হতে পারে।",
+    "summaryEn": "Tripura Times reports that international rights organizations have raised concerns over vague provisions in Bangladesh's proposed cyber legislation, warning it could be misused to curb press freedom and target political dissent.",
+    "keyPointsBn": [
+      "বাংলাদেশের প্রস্তাবিত সাইবার আইনের অস্পষ্ট ধারা নিয়ে মানবাধিকার সংস্থার সতর্কবার্তা",
+      "সংবাদমাধ্যমের স্বাধীনতা ও নাগরিক অধিকার সংকুচিত হওয়ার আশঙ্কা",
+      "আইনটি পাসের আগে আন্তর্জাতিক মানদণ্ড অনুযায়ী সংশোধনের দাবি"
+    ],
+    "keyPointsEn": [
+      "Rights bodies flag vague provisions in Bangladesh's proposed cyber legislation",
+      "Concerns raised over potential curtailment of press freedom and online dissent",
+      "Calls for aligning the draft law with international human rights standards"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "মতপ্রকাশের স্বাধীনতা ও নাগরিক অধিকারের ওপর সম্ভাব্য খড়্গ নিয়ে উদ্বেগজনক প্রতিবেদন।",
+    "sentimentReasonEn": "Concerns over potential misuse of cyber laws against journalists and political critics.",
+    "source": {
+      "name": "Tripura Times",
+      "bureau": "Tripura",
+      "language": "English",
+      "originalUrl": "https://tripuratimes.com/ttimes/rights-body-raises-alarm-over-potential-misuse-of-bangladeshs-proposed-cyber-law-43336.html",
+      "originalHeadline": "Rights body raises alarm over potential misuse of Bangladesh's proposed cyber law",
+      "scannedAt": "2026-11-24T16:00:00.000Z"
+    },
+    "publishedAt": "2026-11-24T15:30:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/international-crimes-tribunal-dhaka.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Tripura Times",
+      "Tripura Bureau",
+      "Cyber Law",
+      "Human Rights",
+      "Press Freedom"
+    ]
+  },
+  {
+    "id": "news-20261125-012",
+    "slug": "tripura-times-bangladesh-plunges-into-economic-crisis",
+    "title": "Bangladesh plunges into economic crisis - Tripura Times",
+    "englishTitle": "Tripura Times: Political Turmoil and Supply Disruptions Push Bangladesh Toward Deeper Economic Strain",
+    "banglaTitle": "রাজনৈতিক অস্থিরতা ও সরবরাহ সংকটে গভীর অর্থনৈতিক চাপে বাংলাদেশ: ত্রিপুরা টাইমস",
+    "summaryBn": "ত্রিপুরা টাইমসের আরেকটি প্রতিবেদনে বলা হয়েছে, চলমান রাজনৈতিক অস্থিরতা, হরতাল ও অবরোধের কারণে বাংলাদেশের অর্থনীতিতে বড় ধরনের চাপ সৃষ্টি হয়েছে। নিত্যপ্রয়োজনীয় পণ্যের মূল্যবৃদ্ধি এবং বৈদেশিক মুদ্রার রিজার্ভের ওপর চাপের ফলে সাধারণ মানুষের জীবনযাত্রা কঠিন হয়ে পড়েছে, যা সীমান্ত বাণিজ্যেও প্রভাব ফেলছে।",
+    "summaryEn": "Tripura Times reports that prolonged political unrest, transport blockades, and inflation are placing severe strain on Bangladesh's economy, impacting consumer prices and cross-border commercial flows with Northeast India.",
+    "keyPointsBn": [
+      "টানা হরতাল ও রাজনৈতিক অস্থিরতায় বাংলাদেশের অর্থনৈতিক প্রবৃদ্ধি ব্যাহত",
+      "উচ্চ মূল্যস্ফীতি ও সরবরাহ সংকটে সাধারণ মানুষের ভোগান্তি বৃদ্ধি",
+      "ত্রিপুরা ও উত্তর-পূর্ব ভারতের সঙ্গে সীমান্ত বাণিজ্যেও এর নেতিবাচক প্রভাব"
+    ],
+    "keyPointsEn": [
+      "Prolonged strikes and unrest disrupt domestic commerce and economic growth",
+      "High inflation and supply bottlenecks squeeze household budgets across Bangladesh",
+      "Cross-border trade volumes with Tripura and Northeast India face headwinds"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "অর্থনীতি ও বাণিজ্য",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "অর্থনৈতিক সংকট ও মূল্যস্ফীতি আঞ্চলিক বাণিজ্য ও স্থিতিশীলতার জন্য নেতিবাচক।",
+    "sentimentReasonEn": "Economic strain and supply disruptions negatively impact regional trade.",
+    "source": {
+      "name": "Tripura Times",
+      "bureau": "Tripura",
+      "language": "English",
+      "originalUrl": "https://tripuratimes.com/ttimes/bangladesh-plunges-into-economic-crisis-43339.html",
+      "originalHeadline": "Bangladesh plunges into economic crisis",
+      "scannedAt": "2026-11-24T14:00:00.000Z"
+    },
+    "publishedAt": "2026-11-24T13:30:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/petrapole-benapole-trade-cargo.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Tripura Times",
+      "Tripura Bureau",
+      "Economy",
+      "Inflation",
+      "Border Trade"
+    ]
+  },
+  {
     "id": "news-20261121-001",
     "slug": "news18-bengali-bgb-deployed-dhaka-districts-hasina-tarique-clash",
     "title": "Bangladesh: অশান্তিতে ফের তেতে উঠছে পদ্মাপার! ঢাকা-সহ ১৮ জেলায় বিজিবি মোতায়েন করল তারেক সরকার! হাসিনার 'লাশ'-এর রাজনীতি বলে তোপ বিএনপির - News18 Bengali",
@@ -272,7 +893,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeEn": "3 min read",
     "imageUrl": "/images/bangladesh-unrest-hasina-protests.jpg",
     "mediaFormat": "rss",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [
@@ -10898,8 +11519,8 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
     "id": "news-20260923-002",
     "slug": "sangbad-pratidin-hasina-december-return-readiness-to-face-trial",
-    "title": "Sangbad Pratidin: 'Sheikh Hasina Asserts Return by December, Ready to Face Trial for People\'s Welfare'",
-    "englishTitle": "Sangbad Pratidin: 'Sheikh Hasina Asserts Return by December, Ready to Face Trial for People\'s Welfare'",
+    "title": "Sangbad Pratidin: 'Sheikh Hasina Asserts Return by December, Ready to Face Trial for People's Welfare'",
+    "englishTitle": "Sangbad Pratidin: 'Sheikh Hasina Asserts Return by December, Ready to Face Trial for People's Welfare'",
     "banglaTitle": "‘দেশে ফিরছি ডিসেম্বরেই, জনতার কল্যাণে প্রয়োজনে কারাবাসের মূল্য দিতেও প্রস্তুত’: সংবাদ প্রতিদিন",
     "summaryBn": "‘সংবাদ প্রতিদিন’-এর কলকাতা সংস্করণে প্রকাশিত খবরে বলা হয়েছে, শেখ হাসিনা ডিসেম্বরের মধ্যেই ঢাকায় ফেরার ব্যাপারে অনড় মনোভাব প্রকাশ করেছেন। তিনি মন্তব্য করেছেন যে দেশের সাধারণ মানুষের মৌলিক অধিকার পুনরুদ্ধারের স্বার্থে তিনি যেকোনো আইনি চ্যালেঞ্জ বা কারাবাস বরণে দ্বিধাবোধ করবেন না।",
     "summaryEn": "Sangbad Pratidin highlights Sheikh Hasina's assertive statement expressing readiness to return to Bangladesh by December 2026, stating she is fully prepared to confront judicial trials and possible incarceration to champion democratic rights for Bangladeshi citizens.",
