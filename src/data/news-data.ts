@@ -71,35 +71,80 @@ export const CATEGORIES = [
 ];
 
 export const SCANNER_STATS = {
-  "lastScannedAtBn": "২৫ নভেম্বর, ২০২৬ এ ৫:০৫ PM",
-  "lastScannedAtEn": "25 Nov 2026, 05:05 pm",
-  "totalScanned24h": 4583,
-  "bangladeshMatches": 1427,
+  "lastScannedAtBn": "২৬ নভেম্বর, ২০২৬ এ ১১:১৫ PM",
+  "lastScannedAtEn": "26 Nov 2026, 11:15 pm",
+  "totalScanned24h": 5413,
+  "bangladeshMatches": 2031,
   "sentimentDistribution": {
-    "positive": 28,
-    "neutral": 47,
-    "negative": 25
+    "positive": 25,
+    "neutral": 48,
+    "negative": 27
   },
   "bureauDistribution": {
-    "delhi": 46,
-    "kolkata": 31,
+    "delhi": 47,
+    "kolkata": 30,
     "mumbai": 12,
     "tripura": 5,
     "assam": 3,
     "siliguri": 3
   },
   "languageDistribution": {
-    "english": 47,
-    "bengali": 31,
-    "hindi": 17,
+    "english": 48,
+    "bengali": 30,
+    "hindi": 16,
     "tamil": 2,
     "telugu": 1,
     "marathi": 1,
-    "malayalam": 1
+    "malayalam": 1,
+    "assamese": 1
   }
 };
 
 export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
+  {
+    "id": "alert-136",
+    "headlineBn": "শেখ হাসিনার প্রত্যাবর্তনের আগে তারেক রহমান সরকারকে প্রাক্তন পেন্টাগন কর্মকর্তার কড়া হুঁশিয়ারি — এনডিটিভি",
+    "headlineEn": "NDTV: Ex-Pentagon Official Warns Tarique Rahman Government Ahead of Sheikh Hasina's Return",
+    "timeAgoBn": "১০ মিনিট আগে",
+    "timeAgoEn": "10 mins ago",
+    "sourceName": "NDTV",
+    "sourceBureau": "Delhi",
+    "sentiment": "neutral",
+    "url": "https://www.ndtv.com/world-news/if-hasina-is-harmed-ex-pentagon-official-warns-tarique-rahman-ahead-of-her-return-12380831"
+  },
+  {
+    "id": "alert-137",
+    "headlineBn": "হাসিনার প্রাক্তন উপ-প্রেস সচিবসহ ৩ জন গ্রেপ্তার, দেশজুড়ে ১০৮ প্লাটুন বিজিবি মোতায়েন — ইন্ডিয়া টুডে",
+    "headlineEn": "India Today: Dhaka Arrests Hasina's Former Aide and Deploys 108 BGB Platoons Amid Unrest",
+    "timeAgoBn": "২৫ মিনিট আগে",
+    "timeAgoEn": "25 mins ago",
+    "sourceName": "India Today",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.indiatoday.in/world/story/sheikh-hasina-return-bangladesh-arrests-former-aide-deploys-108-border-force-platoons-amid-political-unrest-3047693-2026-11-26"
+  },
+  {
+    "id": "alert-138",
+    "headlineBn": "মালদার মহদিপুর সীমান্ত দিয়ে বাংলাদেশে ফিরলেন আওয়ামী লীগ নেতা — নিউজ১৮ বাংলা",
+    "headlineEn": "News18 Bengali: Awami League Leader Returns to Bangladesh via Malda Mahadipur Border",
+    "timeAgoBn": "৪০ মিনিট আগে",
+    "timeAgoEn": "40 mins ago",
+    "sourceName": "News18 Bengali",
+    "sourceBureau": "Siliguri",
+    "sentiment": "neutral",
+    "url": "https://bengali.news18.com/news/west-bengal/malda-awami-league-leader-habibur-rahman-returns-to-bangladesh-via-mahadipur-border-l18-rc-local18-2977710.html"
+  },
+  {
+    "id": "alert-139",
+    "headlineBn": "আওয়ামী লীগের ২ দিনের দেশব্যাপী হরতাল ও বিক্ষোভের ডাক — উইওন (WION)",
+    "headlineEn": "WION: Awami League Calls 2-Day Nationwide Shutdown Ahead of Sheikh Hasina's Return",
+    "timeAgoBn": "১ ঘণ্টা আগে",
+    "timeAgoEn": "1 hour ago",
+    "sourceName": "WION",
+    "sourceBureau": "Delhi",
+    "sentiment": "negative",
+    "url": "https://www.youtube.com/watch?v=Zxqv2OBWI0E"
+  },
   {
     "id": "alert-132",
     "headlineBn": "১৬ ডিসেম্বর বাংলাদেশে ফেরার ঘোষণা শেখ হাসিনার, দিল্লিতে অবস্থান নিয়ে প্রতিবেদন — এনডিটিভি",
@@ -280,6 +325,583 @@ export const BREAKING_NEWS_ALERTS: BreakingAlert[] = [
 
 export const SCANNED_NEWS_ITEMS: NewsItem[] = [
   {
+    "id": "news-20261126-001",
+    "slug": "ndtv-ex-pentagon-official-warns-tarique-rahman-ahead-of-hasina-return",
+    "title": "Ahead Of Sheikh Hasina's Return, Ex-Pentagon Official's Warning For Dhaka - NDTV",
+    "englishTitle": "NDTV: Ex-Pentagon Official Warns Tarique Rahman Government Ahead of Sheikh Hasina's Planned Return",
+    "banglaTitle": "শেখ হাসিনার প্রত্যাবর্তনের আগে তারেক রহমান সরকারকে প্রাক্তন পেন্টাগন কর্মকর্তার কড়া হুঁশিয়ারি: এনডিটিভি",
+    "summaryBn": "এনডিটিভির প্রতিবেদনে জানানো হয়েছে, শেখ হাসিনার ১৬ ডিসেম্বর বাংলাদেশে ফেরার ঘোষণার পর প্রাক্তন মার্কিন পেন্টাগন কর্মকর্তা মাইকেল রুবিন ঢাকাকে কড়া সতর্কবার্তা দিয়েছেন। তিনি বলেন, হাসিনার নিরাপত্তায় কোনো ধরনের বিঘ্ন ঘটলে তার দায় সরাসরি তারেক রহমান সরকারকে নিতে হবে এবং এর আন্তর্জাতিক পরিণতি হবে গুরুতর।",
+    "summaryEn": "NDTV reports that former Pentagon official Michael Rubin issued a stark warning to Bangladesh Prime Minister Tarique Rahman's government ahead of Sheikh Hasina's planned December 16 return, stating Dhaka will be held directly responsible if any harm comes to her.",
+    "keyPointsBn": [
+      "শেখ হাসিনার নিরাপত্তা নিয়ে তারেক রহমান সরকারকে প্রাক্তন পেন্টাগন কর্মকর্তার কড়া সতর্কবার্তা",
+      "১৬ ডিসেম্বর প্রত্যাবর্তন ঘিরে আন্তর্জাতিক কূটনৈতিক মহলে বাড়ছে নজরদারি",
+      "ভারতের অবস্থানের প্রতি সমর্থন জানিয়ে দক্ষিণ এশিয়ায় স্থিতিশীলতার আহ্বান"
+    ],
+    "keyPointsEn": [
+      "Former Pentagon official warns Dhaka over Sheikh Hasina's safety ahead of Dec 16 return",
+      "International diplomatic scrutiny intensifies around Bangladesh's interim leadership",
+      "Statement underscores regional stability concerns and backs India's measured stance"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক নিরাপত্তা বিশ্লেষকের সতর্কবার্তা ও কূটনৈতিক প্রেক্ষাপট তুলে ধরা হয়েছে।",
+    "sentimentReasonEn": "Factual reporting on international security warnings ahead of Hasina's return.",
+    "source": {
+      "name": "NDTV",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.ndtv.com/world-news/if-hasina-is-harmed-ex-pentagon-official-warns-tarique-rahman-ahead-of-her-return-12380831",
+      "originalHeadline": "Ahead Of Sheikh Hasina's Return, Ex-Pentagon Official's Warning For Dhaka",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T16:30:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/south-block-mea-delhi.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": true,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "NDTV",
+      "Sheikh Hasina",
+      "Tarique Rahman",
+      "Pentagon",
+      "Diplomacy"
+    ]
+  },
+  {
+    "id": "news-20261126-002",
+    "slug": "india-today-hasina-ex-deputy-press-secretary-arrested-108-bgb-platoons",
+    "title": "Sheikh Hasina's ex-deputy press secretary, 2 others arrested ahead of her return; 108 BGB platoons deployed - India Today",
+    "englishTitle": "India Today: Dhaka Arrests Hasina's Former Aide and Deploys 108 BGB Platoons Amid Unrest",
+    "banglaTitle": "হাসিনার ফেরার আগে তাঁর প্রাক্তন উপ-প্রেস সচিবসহ ৩ জন গ্রেপ্তার, দেশজুড়ে ১০৮ প্লাটুন বিজিবি মোতায়েন: ইন্ডিয়া টুডে",
+    "summaryBn": "ইন্ডিয়া টুডের প্রতিবেদনে বলা হয়েছে, শেখ হাসিনার ১৬ ডিসেম্বর ফেরার ঘোষণার পরপরই বাংলাদেশে ব্যাপক ধরপাকড় শুরু হয়েছে। তাঁর প্রাক্তন উপ-প্রেস সচিবসহ আওয়ামী লীগের আরও দুই নেতাকে গ্রেপ্তার করেছে পুলিশ। পাশাপাশি আইনশৃঙ্খলা পরিস্থিতি নিয়ন্ত্রণে রাজধানী ঢাকাসহ বিভিন্ন জেলায় ১০৮ প্লাটুন বিজিবি মোতায়েন করা হয়েছে।",
+    "summaryEn": "India Today reports that Bangladeshi authorities arrested Sheikh Hasina's former deputy press secretary along with two Awami League leaders, while deploying 108 platoons of Border Guard Bangladesh (BGB) across Dhaka and other districts amid escalating unrest.",
+    "keyPointsBn": [
+      "শেখ হাসিনার প্রাক্তন উপ-প্রেস সচিব ও দুই আওয়ামী লীগ নেতা গ্রেপ্তার",
+      "সহিংসতা ও হরতাল মোকাবিলায় ১০৮ প্লাটুন বিজিবি মোতায়েন",
+      "ডিসেম্বর ১৬-কে সামনে রেখে ঢাকাসহ সারা দেশে নিরাপত্তা ব্যবস্থা জোরদার"
+    ],
+    "keyPointsEn": [
+      "Former deputy press secretary to Sheikh Hasina and two Awami League leaders arrested",
+      "108 BGB platoons deployed nationwide to contain protests and shutdown calls",
+      "Security tightened across Dhaka ahead of December 16"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ব্যাপক গ্রেপ্তার ও ১০৮ প্লাটুন সীমান্তরক্ষী বাহিনী মোতায়েন অভ্যন্তরীণ অস্থিরতার তীব্রতা নির্দেশ করে।",
+    "sentimentReasonEn": "Mass arrests and heavy paramilitary deployment highlight severe domestic instability.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/world/story/sheikh-hasina-return-bangladesh-arrests-former-aide-deploys-108-border-force-platoons-amid-political-unrest-3047693-2026-11-26",
+      "originalHeadline": "Sheikh Hasina's ex-deputy press secretary, 2 others arrested ahead of her return",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T15:45:00.000Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/bangladesh-unrest-hasina-protests.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": true,
+    "tags": [
+      "India Today",
+      "BGB",
+      "Arrests",
+      "Sheikh Hasina",
+      "Bangladesh Unrest"
+    ]
+  },
+  {
+    "id": "news-20261126-003",
+    "slug": "anandabazar-dhaka-reaction-sheikh-hasina-december-16-return-india-ties",
+    "title": "‘শেখ হাসিনার পাগলামি টের পাচ্ছে ভারত’! আওয়ামী লীগ নেত্রীকে দ্বিপাক্ষিক সুসম্পর্কের পথে কাঁটা বলে তোপ ঢাকার - Anandabazar Patrika",
+    "englishTitle": "Anandabazar Patrika: Dhaka Targets Sheikh Hasina as Obstacle to Bilateral Ties Over Dec 16 Return Plan",
+    "banglaTitle": "‘শেখ হাসিনার পাগলামি টের পাচ্ছে ভারত’! দ্বিপাক্ষিক সম্পর্কের পথে তাঁকে কাঁটা বলে তোপ ঢাকার: আনন্দবাজার পত্রিকা",
+    "summaryBn": "আনন্দবাজার পত্রিকার প্রতিবেদনে জানা গেছে, শেখ হাসিনার ১৬ ডিসেম্বর দেশে ফেরার ঘোষণাকে কেন্দ্র করে ঢাকার অন্তর্বর্তী সরকারের শীর্ষ মহল থেকে ভারতের প্রতি তীব্র কূটনৈতিক বার্তা দেওয়া হয়েছে। ঢাকার দাবি, ভারতে অবস্থানরত আওয়ামী লীগ নেত্রী দুই দেশের দ্বিপাক্ষিক সুসম্পর্কের পথে বাধা সৃষ্টি করছেন।",
+    "summaryEn": "Anandabazar Patrika reports sharp reactions from Dhaka's interim leadership following Sheikh Hasina's December 16 return announcement, with Bangladeshi officials claiming her continued presence in India complicates bilateral relations.",
+    "keyPointsBn": [
+      "শেখ হাসিনাকে ভারত-বাংলাদেশ সম্পর্কের পথে বাধা হিসেবে উল্লেখ করল ঢাকা",
+      "১৬ ডিসেম্বর ফেরার ঘোষণায় দুই দেশের কূটনৈতিক টানাপোড়েন বৃদ্ধি",
+      "নয়াদিল্লির পক্ষ থেকে আনুষ্ঠানিক কূটনৈতিক সংযম বজায় রাখার ইঙ্গিত"
+    ],
+    "keyPointsEn": [
+      "Dhaka officials claim Sheikh Hasina's presence in India hinders bilateral ties",
+      "December 16 return announcement deepens diplomatic friction",
+      "New Delhi continues to maintain measured diplomatic restraint"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "negative",
+    "sentimentReasonBn": "ঢাকার তীব্র কূটনৈতিক মন্তব্য দুই দেশের দ্বিপাক্ষিক সম্পর্কে নতুন অস্বস্তি তৈরি করেছে।",
+    "sentimentReasonEn": "Sharp rhetoric from Dhaka adds strain to India-Bangladesh diplomatic relations.",
+    "source": {
+      "name": "Anandabazar Patrika",
+      "bureau": "Kolkata",
+      "language": "Bengali",
+      "originalUrl": "https://www.anandabazar.com/world/reaction-of-dhaka-on-awami-league-chief-sheikh-hasinas-wish-to-return-bangladesh-on-december-16-dgtl/cid/1729160",
+      "originalHeadline": "‘শেখ হাসিনার পাগলামি টের পাচ্ছে ভারত’! আওয়ামী লীগ নেত্রীকে দ্বিপাক্ষিক সুসম্পর্কের পথে কাঁটা বলে তোপ ঢাকার",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T15:00:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/default-geopolitical-map.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": true,
+    "isBreaking": false,
+    "tags": [
+      "আনন্দবাজার",
+      "শেখ হাসিনা",
+      "কূটনীতি",
+      "কলকাতা ব্যুরো",
+      "ওপার বাংলা"
+    ]
+  },
+  {
+    "id": "news-20261126-004",
+    "slug": "news18-bengali-awami-league-leader-returns-via-malda-mahadipur-border",
+    "title": "Awami League Leader: শেখ হাসিনার দেশে ফেরার বার্তার পর বাংলাদেশে ফিরলেন আওয়ামী লীগ নেতা - News18 Bengali",
+    "englishTitle": "News18 Bengali: Awami League Leader Returns to Bangladesh via Malda Mahadipur Border",
+    "banglaTitle": "শেখ হাসিনার বার্তার পর মালদার মহদিপুর সীমান্ত দিয়ে বাংলাদেশে ফিরলেন আওয়ামী লীগ নেতা: নিউজ১৮ বাংলা",
+    "summaryBn": "নিউজ১৮ বাংলার প্রতিবেদনে জানা গেছে, শেখ হাসিনার দেশে ফেরার বার্তার পর পশ্চিমবঙ্গের মালদা জেলার মহদিপুর স্থলবন্দর সীমান্ত দিয়ে বাংলাদেশে ফিরে গেছেন আওয়ামী লীগ নেতা হাবিবুর রহমান। সীমান্তে বিএসএফ ও অভিবাসন দপ্তরের নিয়মিত প্রক্রিয়া সম্পন্ন করেই তিনি ওপার বাংলায় প্রবেশ করেন বলে জানা গেছে।",
+    "summaryEn": "News18 Bengali reports that Awami League leader Habibur Rahman crossed back into Bangladesh through the Mahadipur land border in West Bengal's Malda district following Sheikh Hasina's return message.",
+    "keyPointsBn": [
+      "মালদার মহদিপুর স্থলবন্দর দিয়ে বাংলাদেশে প্রত্যাবর্তন আওয়ামী লীগ নেতার",
+      "শেখ হাসিনার ১৬ ডিসেম্বর ফেরার ঘোষণার পর সীমান্তে বাড়তি নজরদারি",
+      "উত্তরবঙ্গ ও মালদা সীমান্তে যাতায়াত পরিস্থিতির ওপর নজর রাখছে বিএসএফ"
+    ],
+    "keyPointsEn": [
+      "Awami League leader Habibur Rahman returns to Bangladesh via Malda's Mahadipur border",
+      "Border checkpoints see heightened vigilance ahead of December 16",
+      "BSF monitors cross-border movement along North Bengal corridors"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "সীমান্ত দিয়ে প্রত্যাবর্তনের তথ্যভিত্তিক আঞ্চলিক প্রতিবেদন।",
+    "sentimentReasonEn": "Factual regional reporting on cross-border movement at Mahadipur.",
+    "source": {
+      "name": "News18 Bengali",
+      "bureau": "Siliguri",
+      "language": "Bengali",
+      "originalUrl": "https://bengali.news18.com/news/west-bengal/malda-awami-league-leader-habibur-rahman-returns-to-bangladesh-via-mahadipur-border-l18-rc-local18-2977710.html",
+      "originalHeadline": "Awami League Leader: শেখ হাসিনার দেশে ফেরার বার্তার পর বাংলাদেশে ফিরলেন আওয়ামী লীগ নেতা",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T14:20:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/border-checkpost-petrapole-gede.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "News18 Bengali",
+      "Siliguri Bureau",
+      "Mahadipur",
+      "Awami League",
+      "Border"
+    ]
+  },
+  {
+    "id": "news-20261126-005",
+    "slug": "india-today-insight-how-dhaka-draws-india-into-crossfire-hasina-return",
+    "title": "How Dhaka draws India into crossfire as Sheikh Hasina plans return - India Today",
+    "englishTitle": "India Today Insight: How Dhaka Draws New Delhi Into Crossfire Over Sheikh Hasina's Return Plan",
+    "banglaTitle": "শেখ হাসিনার প্রত্যাবর্তন ঘিরে যেভাবে ভারতকে টেনে আনছে ঢাকা: ইন্ডিয়া টুডে বিশ্লেষণ",
+    "summaryBn": "ইন্ডিয়া টুডের বিশ্লেষণধর্মী প্রতিবেদনে বলা হয়েছে, শেখ হাসিনার ১৬ ডিসেম্বর দেশে ফেরার ঘোষণাকে কেন্দ্র করে ঢাকার অভ্যন্তরীণ রাজনৈতিক সংকটে ভারতকে জড়ানোর চেষ্টা চলছে। প্রত্যর্পণ চুক্তি ও পাসপোর্ট বাতিল ইস্যুতে দিল্লির কূটনৈতিক অবস্থান কী হতে পারে, তা নিয়ে বিস্তারিত আলোচনা করা হয়েছে।",
+    "summaryEn": "India Today analyzes how Dhaka's political leadership is drawing New Delhi into domestic controversies surrounding Sheikh Hasina's planned return, examining the legal and diplomatic tightrope facing Indian policymakers.",
+    "keyPointsBn": [
+      "বাংলাদেশের অভ্যন্তরীণ রাজনৈতিক সংকটে ভারতকে জড়ানোর কৌশলগত প্রচেষ্টা",
+      "প্রত্যর্পণ চুক্তি ও আন্তর্জাতিক আইনের ভারসাম্য রক্ষায় দিল্লির অবস্থান",
+      "আঞ্চলিক স্থিতিশীলতা বজায় রাখতে কূটনৈতিক চ্যানেল সচল রাখার গুরুত্ব"
+    ],
+    "keyPointsEn": [
+      "Dhaka's rhetoric pulls India into domestic political crossfire over Hasina",
+      "New Delhi balances 2013 extradition treaty obligations with legal due process",
+      "Analysts stress keeping diplomatic channels open to preserve regional stability"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারত-বাংলাদেশ কূটনৈতিক টানাপোড়েনের গভীর ও ভারসাম্যপূর্ণ বিশ্লেষণ।",
+    "sentimentReasonEn": "In-depth geopolitical analysis of bilateral diplomatic pressures.",
+    "source": {
+      "name": "India Today",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.indiatoday.in/india-today-insight/story/how-dhaka-draws-india-into-crossfire-as-sheikh-hasina-plans-return-3047616-2026-11-26",
+      "originalHeadline": "How Dhaka draws India into crossfire as Sheikh Hasina plans return",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T13:45:00.000Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/indian-envoy-bangladesh-pm-meeting.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "India Today",
+      "Diplomacy",
+      "Sheikh Hasina",
+      "Delhi Bureau"
+    ]
+  },
+  {
+    "id": "news-20261126-006",
+    "slug": "wion-youtube-bangladesh-shutdown-awami-league-2-day-protest-call",
+    "title": "Bangladesh Shutdown: Awami League's 2-Day Protest Call as Hasina's Return Looms | WION",
+    "englishTitle": "WION Video: Awami League Calls 2-Day Nationwide Shutdown Ahead of Sheikh Hasina's Return",
+    "banglaTitle": "হাসিনার ফেরার আগে আওয়ামী লীগের ২ দিনের দেশব্যাপী হরতাল ও বিক্ষোভের ডাক: উইওন (WION) ভিডিও",
+    "summaryBn": "উইওন (WION)-এর ভিডিও প্রতিবেদনে জানানো হয়েছে, শেখ হাসিনার ১৬ ডিসেম্বর প্রত্যাবর্তনের আগে আওয়ামী লীগ দেশব্যাপী দুই দিনের হরতাল ও বিক্ষোভ কর্মসূচি ঘোষণা করেছে। এর ফলে ঢাকাসহ বিভিন্ন শহরে যান চলাচল ও জনজীবনে ব্যাপক প্রভাব পড়ার আশঙ্কা দেখা দিয়েছে।",
+    "summaryEn": "WION's video dispatch covers the Awami League's call for a two-day nationwide shutdown and protest across Bangladesh as tensions mount ahead of Sheikh Hasina's planned return.",
+    "keyPointsBn": [
+      "আওয়ামী লীগের দুই দিনের দেশব্যাপী হরতাল ও বিক্ষোভ কর্মসূচি ঘোষণা",
+      "শেখ হাসিনার ১৬ ডিসেম্বর ফেরার আগে রাজনৈতিক উত্তেজনা চরমে",
+      "ঢাকা ও প্রধান শহরগুলোতে নিরাপত্তা বাহিনীর টহল জোরদার"
+    ],
+    "keyPointsEn": [
+      "Awami League announces two-day nationwide shutdown and protest",
+      "Political tensions escalate ahead of Sheikh Hasina's Dec 16 return",
+      "Security forces step up patrols across Dhaka and major urban hubs"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "দুই দিনের হরতাল ও বিক্ষোভের ডাকে জনজীবন ও বাণিজ্যিক কার্যক্রমে বিঘ্নের আশঙ্কা।",
+    "sentimentReasonEn": "Nationwide shutdown calls risk disrupting civic life and commerce.",
+    "source": {
+      "name": "WION",
+      "bureau": "Delhi",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=Zxqv2OBWI0E",
+      "originalHeadline": "Bangladesh Shutdown: Awami League's 2-Day Protest Call as Hasina's Return Looms",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T13:00:00.000Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://i.ytimg.com/vi/Zxqv2OBWI0E/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=Zxqv2OBWI0E",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "WION",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Awami League",
+      "Shutdown"
+    ]
+  },
+  {
+    "id": "news-20261126-007",
+    "slug": "navbharat-times-sheikh-hasina-ex-deputy-press-secretary-arrested",
+    "title": "बांग्लादेश में सियासी हलचल: शेख हसीना के पूर्व उप प्रेस सचिव गिरफ्तार, रडार पर कई नेता - Navbharat Times",
+    "englishTitle": "Navbharat Times: Political Stir in Bangladesh as Hasina's Former Deputy Press Secretary Arrested",
+    "banglaTitle": "বাংলাদেশে রাজনৈতিক ধরপাকড়: শেখ হাসিনার প্রাক্তন উপ-প্রেস সচিব গ্রেপ্তার, নজরে আরও একাধিক নেতা: নবভারত টাইমস",
+    "summaryBn": "নবভারত টাইমসের প্রতিবেদনে বলা হয়েছে, বাংলাদেশে রাজনৈতিক অস্থিরতার মাঝে শেখ হাসিনার প্রাক্তন উপ-প্রেস সচিব ও আওয়ামী লীগের আরও দুই নেতাকে গ্রেপ্তার করা হয়েছে। প্রশাসনের দাবি, নাশকতা ও হরতাল কর্মসূচিতে উস্কানি দেওয়ার অভিযোগে তাঁদের বিরুদ্ধে ব্যবস্থা নেওয়া হয়েছে।",
+    "summaryEn": "Navbharat Times reports that Bangladeshi police arrested Sheikh Hasina's former deputy press secretary and two Awami League leaders, with more party figures reportedly under surveillance ahead of planned protests.",
+    "keyPointsBn": [
+      "শেখ হাসিনার প্রাক্তন উপ-প্রেস সচিবসহ তিনজনকে গ্রেপ্তার করল ঢাকা পুলিশ",
+      "আওয়ামী লীগের আরও একাধিক নেতা প্রশাসনের নজরদারিতে",
+      "হরতাল ও বিক্ষোভ দমনে কঠোর অবস্থান নিয়েছে তারেক রহমানের সরকার"
+    ],
+    "keyPointsEn": [
+      "Dhaka police arrest Hasina's former deputy press secretary and two party leaders",
+      "More Awami League figures placed under security surveillance",
+      "Tarique Rahman government takes hardline stance against shutdown calls"
+    ],
+    "category": "politics",
+    "categoryLabelBn": "রাজনীতি ও শাসনব্যবস্থা",
+    "categoryLabelEn": "Politics & Governance",
+    "sentiment": "negative",
+    "sentimentReasonBn": "রাজনৈতিক নেতাদের গ্রেপ্তার ও ধরপাকড় বাংলাদেশে সংঘাতময় পরিস্থিতি আরও বাড়িয়ে তুলছে।",
+    "sentimentReasonEn": "Arrests of political aides heighten partisan tension in Bangladesh.",
+    "source": {
+      "name": "Navbharat Times",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://navbharattimes.indiatimes.com/world/bangladesh/sheikh-hasina-ex-deputy-press-secretary-two-awami-league-leaders-arrested-in-bangladesh/articleshow/136195565.cms",
+      "originalHeadline": "बांग्लादेश में सियासी हलचल: शेख हसीना के पूर्व उप प्रेस सचिव गिरफ्तार, रडार पर कई नेता",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T12:15:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/bangabhaban-presidential-palace-dhaka.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Navbharat Times",
+      "Sheikh Hasina",
+      "Arrests",
+      "Awami League"
+    ]
+  },
+  {
+    "id": "news-20261126-008",
+    "slug": "times-of-india-abhijit-iyer-mitra-hasina-extradition-tarique-dilemma",
+    "title": "Bangladesh’s ‘India Attack’ From Pak: Abhijit Iyer-Mitra On Hasina ‘Extradition’ & Tarique’s Dilemma - The Times of India",
+    "englishTitle": "The Times of India: Abhijit Iyer-Mitra on Hasina Extradition Debate and Tarique Rahman's Dilemma",
+    "banglaTitle": "হাসিনার প্রত্যর্পণ ও তারেক রহমানের উভয়সংকট নিয়ে অভিজিৎ আইয়ার-মিত্রের বিশ্লেষণ: টাইমস অফ ইন্ডিয়া",
+    "summaryBn": "টাইমস অফ ইন্ডিয়ার বিশেষ আলোচনায় প্রতিরক্ষা ও কূটনৈতিক বিশ্লেষক অভিজিৎ আইয়ার-মিত্র বলেছেন, শেখ হাসিনার প্রত্যর্পণ এবং ১৬ ডিসেম্বর দেশে ফেরার ঘোষণা তারেক রহমান সরকারের জন্য বড় ধরনের রাজনৈতিক উভয়সংকট তৈরি করেছে। তিনি দক্ষিণ এশিয়ার ভূ-রাজনীতিতে ভারতের কৌশলগত অবস্থানের গুরুত্ব তুলে ধরেন।",
+    "summaryEn": "The Times of India features defense analyst Abhijit Iyer-Mitra discussing how Sheikh Hasina's return plan and extradition demands have created a strategic dilemma for Tarique Rahman's administration.",
+    "keyPointsBn": [
+      "শেখ হাসিনার প্রত্যাবর্তন ঘোষণায় তারেক রহমান সরকারের সামনে রাজনৈতিক উভয়সংকট",
+      "পাকিস্তান-বাংলাদেশ ঘনিষ্ঠতা ও ভারতের নিরাপত্তা উদ্বেগ নিয়ে বিশ্লেষণ",
+      "দ্বিপাক্ষিক সম্পর্কে বাস্তববাদী কূটনীতির ওপর গুরুত্বারোপ"
+    ],
+    "keyPointsEn": [
+      "Hasina's return plan creates a political dilemma for Tarique Rahman",
+      "Analysis of regional security dynamics and India's strategic posture",
+      "Emphasis on pragmatic diplomacy in South Asia"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "কূটনৈতিক ও প্রতিরক্ষা বিশ্লেষকের মতামতভিত্তিক প্রতিবেদন।",
+    "sentimentReasonEn": "Expert commentary on regional geopolitics and bilateral diplomacy.",
+    "source": {
+      "name": "The Times of India",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://timesofindia.indiatimes.com/videos/times-axis/bangladeshs-india-attack-from-pak-abhijit-iyer-mitra-on-hasina-extradition-tariques-dilemma/videoshow/136197321.cms",
+      "originalHeadline": "Bangladesh’s ‘India Attack’ From Pak: Abhijit Iyer-Mitra On Hasina ‘Extradition’ & Tarique’s Dilemma",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T11:30:00.000Z",
+    "readTimeBn": "৪ মিনিট পড়া",
+    "readTimeEn": "4 min read",
+    "imageUrl": "/images/delhi-dhaka-bilateral-summit.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Times of India",
+      "Mumbai Bureau",
+      "Abhijit Iyer-Mitra",
+      "Extradition",
+      "Tarique Rahman"
+    ]
+  },
+  {
+    "id": "news-20261126-009",
+    "slug": "firstpost-youtube-india-says-hasina-return-separate-from-extradition",
+    "title": "India says Hasina's plan to return to Bangladesh is separate from extradition | Firstpost",
+    "englishTitle": "Firstpost Video: India Clarifies Hasina's Voluntary Return Plan Is Separate From Extradition",
+    "banglaTitle": "হাসিনার দেশে ফেরার পরিকল্পনা প্রত্যর্পণ প্রক্রিয়া থেকে সম্পূর্ণ আলাদা, স্পষ্ট করল ভারত: ফার্স্টপোস্ট",
+    "summaryBn": "ফার্স্টপোস্টের ভিডিও প্রতিবেদনে জানানো হয়েছে, ভারতের বিদেশ মন্ত্রক স্পষ্ট করেছে যে শেখ হাসিনার স্বেচ্ছায় বাংলাদেশে ফেরার পরিকল্পনা এবং ঢাকার আনুষ্ঠানিক প্রত্যর্পণ দাবি দুটি সম্পূর্ণ আলাদা বিষয়। দিল্লি জানিয়েছে, যেকোনো পদক্ষেপ আন্তর্জাতিক আইনি কাঠামোর মধ্য থেকেই নেওয়া হবে।",
+    "summaryEn": "Firstpost's video report covers New Delhi's clarification that Sheikh Hasina's personal decision to return to Bangladesh is legally distinct from Dhaka's formal extradition request.",
+    "keyPointsBn": [
+      "স্বেচ্ছায় প্রত্যাবর্তন ও প্রত্যর্পণ দাবি দুটি আলাদা বিষয় বলে স্পষ্ট করল ভারত",
+      "আন্তর্জাতিক আইন ও দ্বিপাক্ষিক চুক্তির বিধান মেনেই পদক্ষেপ নেবে দিল্লি",
+      "১৬ ডিসেম্বর ঘিরে কূটনৈতিক মহলে বাড়তি তৎপরতা"
+    ],
+    "keyPointsEn": [
+      "India clarifies voluntary return plan is separate from formal extradition",
+      "New Delhi reiterates adherence to international law and treaty provisions",
+      "Diplomatic activity intensifies ahead of December 16"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "ভারতের বিদেশ মন্ত্রকের আনুষ্ঠানিক ও আইনানুগ অবস্থানের স্পষ্ট উপস্থাপনা।",
+    "sentimentReasonEn": "Clear presentation of India's official legal and diplomatic position.",
+    "source": {
+      "name": "Firstpost",
+      "bureau": "Mumbai",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=WbgA8fujS5w",
+      "originalHeadline": "India says Hasina's plan to return to Bangladesh is separate from extradition",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T10:45:00.000Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://i.ytimg.com/vi/WbgA8fujS5w/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=WbgA8fujS5w",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Firstpost",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Extradition",
+      "MEA Delhi"
+    ]
+  },
+  {
+    "id": "news-20261126-010",
+    "slug": "news18-hindi-ex-pentagon-official-warns-bangladesh-backs-india",
+    "title": "'अगर शेख हसीना का बाल भी बांका हुआ तो...', बांग्लादेश को अमेरिका से आई वॉर्निंग - News18 Hindi",
+    "englishTitle": "News18 Hindi: US Security Expert Warns Bangladesh Over Hasina's Safety, Backs India's Stance",
+    "banglaTitle": "শেখ হাসিনার কোনো ক্ষতি হলে দায় নিতে হবে ঢাকাকে, আমেরিকা থেকে সতর্কবার্তা: নিউজ১৮ হিন্দি",
+    "summaryBn": "নিউজ১৮ হিন্দির প্রতিবেদনে বলা হয়েছে, শেখ হাসিনার নিরাপত্তা নিয়ে প্রাক্তন মার্কিন প্রতিরক্ষা কর্মকর্তা মাইকেল রুবিন বাংলাদেশ সরকারকে কড়া হুঁশিয়ারি দিয়েছেন এবং এই ইস্যুতে ভারতের অবস্থানের প্রশংসা করেছেন।",
+    "summaryEn": "News18 Hindi covers former Pentagon official Michael Rubin's warning to Dhaka regarding Sheikh Hasina's safety and his endorsement of India's diplomatic handling of the situation.",
+    "keyPointsBn": [
+      "শেখ হাসিনার নিরাপত্তা নিয়ে বাংলাদেশকে কড়া বার্তা প্রাক্তন মার্কিন কর্মকর্তার",
+      "ভারতের কূটনৈতিক সংযম ও অবস্থানের প্রশংসা",
+      "১৬ ডিসেম্বর ঘিরে আন্তর্জাতিক মহলের নজরদারি বৃদ্ধি"
+    ],
+    "keyPointsEn": [
+      "Former US official warns Dhaka over Sheikh Hasina's security",
+      "Endorses India's diplomatic restraint and legal approach",
+      "International scrutiny grows ahead of December 16"
+    ],
+    "category": "diplomacy",
+    "categoryLabelBn": "কূটনীতি ও ভূ-রাজনীতি",
+    "categoryLabelEn": "Diplomacy & Geopolitics",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "আন্তর্জাতিক নিরাপত্তা বিশ্লেষকের মন্তব্য ও ভারতের অবস্থানের সমর্থন।",
+    "sentimentReasonEn": "International security commentary supporting India's diplomatic stance.",
+    "source": {
+      "name": "News18 Hindi",
+      "bureau": "Delhi",
+      "language": "Hindi",
+      "originalUrl": "https://hindi.news18.com/world/south-asia-if-a-hair-on-sheikh-hasina-head-is-harmed-ex-pentagon-official-warns-bangladesh-ahead-of-dec-16-return-backs-india-11015192.html",
+      "originalHeadline": "'अगर शेख हसीना का बाल भी बांका हुआ तो...', बांग्लादेश को अमेरिका से आई वॉर्निंग",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T10:00:00.000Z",
+    "readTimeBn": "৩ মিনিট পড়া",
+    "readTimeEn": "3 min read",
+    "imageUrl": "/images/sheikh-hasina-mea.jpg",
+    "mediaFormat": "rss",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "News18 Hindi",
+      "Sheikh Hasina",
+      "Pentagon",
+      "India"
+    ]
+  },
+  {
+    "id": "news-20261126-011",
+    "slug": "wion-youtube-bangladesh-unrest-mobile-banking-services-hit-gopalganj",
+    "title": "Bangladesh Unrest | Report: Mobile Banking Services Hit in Hasina's Home Turf | WION",
+    "englishTitle": "WION Video: Mobile Banking and Financial Services Disrupted in Gopalganj Amid Unrest",
+    "banglaTitle": "অশান্তির জেরে গোপালগঞ্জে মোবাইল ব্যাংকিং ও আর্থিক লেনদেন ব্যাহত: উইওন (WION) প্রতিবেদন",
+    "summaryBn": "উইওন (WION)-এর আরেকটি ভিডিও প্রতিবেদনে জানানো হয়েছে, চলমান রাজনৈতিক অস্থিরতা ও সহিংসতার কারণে শেখ হাসিনার নিজ জেলা গোপালগঞ্জসহ আশপাশের এলাকায় মোবাইল ব্যাংকিং ও ডিজিটাল লেনদেন সেবা মারাত্মকভাবে ব্যাহত হয়েছে। এতে সাধারণ মানুষ ও ক্ষুদ্র ব্যবসায়ীরা ভোগান্তিতে পড়েছেন।",
+    "summaryEn": "WION reports that ongoing political unrest and security crackdowns have disrupted mobile banking and digital financial services in Gopalganj, impacting local commerce and daily transactions.",
+    "keyPointsBn": [
+      "গোপালগঞ্জে অশান্তির কারণে মোবাইল ব্যাংকিং ও আর্থিক সেবা ব্যাহত",
+      "ক্ষুদ্র ব্যবসায়ী ও সাধারণ নাগরিকদের লেনদেনে চরম ভোগান্তি",
+      "স্থানীয় অর্থনীতিতে অস্থিরতার নেতিবাচক প্রভাব"
+    ],
+    "keyPointsEn": [
+      "Mobile banking services disrupted in Gopalganj amid ongoing unrest",
+      "Small businesses and residents face transaction hurdles",
+      "Political turmoil weighs on local economic activity"
+    ],
+    "category": "trade",
+    "categoryLabelBn": "অর্থনীতি ও বাণিজ্য",
+    "categoryLabelEn": "Trade & Economy",
+    "sentiment": "negative",
+    "sentimentReasonBn": "আর্থিক ও মোবাইল ব্যাংকিং সেবা ব্যাহত হওয়া স্থানীয় অর্থনীতির জন্য ক্ষতিকর।",
+    "sentimentReasonEn": "Disruption of mobile financial services hurts local commerce.",
+    "source": {
+      "name": "WION",
+      "bureau": "Tripura",
+      "language": "English",
+      "originalUrl": "https://www.youtube.com/watch?v=B3xuhBoOIKU",
+      "originalHeadline": "Bangladesh Unrest | Report: Mobile Banking Services Hit in Hasina's Home Turf",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T09:15:00.000Z",
+    "readTimeBn": "২ মিনিট ভিডিও",
+    "readTimeEn": "2 min video",
+    "imageUrl": "https://i.ytimg.com/vi/B3xuhBoOIKU/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=B3xuhBoOIKU",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "WION",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Mobile Banking",
+      "Gopalganj"
+    ]
+  },
+  {
+    "id": "news-20261126-012",
+    "slug": "assamese-media-youtube-sheikh-hasina-december-16-return-analysis",
+    "title": "Sheikh Hasina Bangladesh Return | ১৬ ডিচেম্বৰত বাংলাদেশলৈ উভতি যাব পাৰিবনে হসীনা? - Assam Video Dispatch",
+    "englishTitle": "Assam Media Dispatch: Can Sheikh Hasina Return to Bangladesh on December 16?",
+    "banglaTitle": "১৬ ডিসেম্বর কি বাংলাদেশে ফিরতে পারবেন শেখ হাসিনা? অসমীয়া গণমাধ্যমের বিশেষ বিশ্লেষণ",
+    "summaryBn": "আসাম-ভিত্তিক গণমাধ্যমের ভিডিও প্রতিবেদনে শেখ হাসিনার ১৬ ডিসেম্বর বাংলাদেশে ফেরার সম্ভাবনা এবং এর ফলে উত্তর-পূর্ব ভারতের সীমান্ত নিরাপত্তায় সম্ভাব্য প্রভাব নিয়ে আলোচনা করা হয়েছে।",
+    "summaryEn": "An Assamese media video dispatch examines whether Sheikh Hasina can return to Bangladesh on December 16 and assesses the potential implications for Northeast India's border security.",
+    "keyPointsBn": [
+      "১৬ ডিসেম্বর শেখ হাসিনার প্রত্যাবর্তনের সম্ভাবনা নিয়ে অসমীয়া গণমাধ্যমে আলোচনা",
+      "উত্তর-পূর্ব ভারতের সীমান্ত নিরাপত্তায় সম্ভাব্য প্রভাব বিশ্লেষণ",
+      "আঞ্চলিক স্থিতিশীলতার ওপর বিশেষ গুরুত্বারোপ"
+    ],
+    "keyPointsEn": [
+      "Assamese media analyzes feasibility of Sheikh Hasina's Dec 16 return",
+      "Evaluates potential impact on Northeast India border security",
+      "Highlights importance of regional stability"
+    ],
+    "category": "border",
+    "categoryLabelBn": "সীমান্ত ও নিরাপত্তা",
+    "categoryLabelEn": "Border & Security",
+    "sentiment": "neutral",
+    "sentimentReasonBn": "উত্তর-পূর্ব ভারতের আঞ্চলিক দৃষ্টিকোণ থেকে তথ্যভিত্তিক বিশ্লেষণ।",
+    "sentimentReasonEn": "Regional perspective on border security and December 16 developments.",
+    "source": {
+      "name": "Assam Tribune",
+      "bureau": "Assam",
+      "language": "Assamese",
+      "originalUrl": "https://www.youtube.com/watch?v=dNnzD6UIk_Q",
+      "originalHeadline": "Sheikh Hasina Bangladesh Return | ১৬ডিচেম্বৰত বাংলাদেশলৈ উভতি যাব পাৰিবনে হসীনা?",
+      "scannedAt": "2026-11-26T17:14:00.000Z"
+    },
+    "publishedAt": "2026-11-26T08:30:00.000Z",
+    "readTimeBn": "৩ মিনিট ভিডিও",
+    "readTimeEn": "3 min video",
+    "imageUrl": "https://i.ytimg.com/vi/dNnzD6UIk_Q/hqdefault.jpg",
+    "mediaFormat": "youtube",
+    "videoUrl": "https://www.youtube.com/watch?v=dNnzD6UIk_Q",
+    "isLeadStory": false,
+    "isTrending": false,
+    "isBreaking": false,
+    "tags": [
+      "Assam Bureau",
+      "YouTube Video",
+      "ভিডিও রিপোর্ট",
+      "Sheikh Hasina",
+      "December 16"
+    ]
+  },
+  {
     "id": "news-20261125-001",
     "slug": "ndtv-where-is-sheikh-hasina-now-life-in-india-december-16-return",
     "title": "Where Is Sheikh Hasina Now? What We Know About Her Life In India - NDTV",
@@ -316,7 +938,7 @@ export const SCANNED_NEWS_ITEMS: NewsItem[] = [
     "readTimeEn": "4 min read",
     "imageUrl": "/images/sheikh-hasina-mea.jpg",
     "mediaFormat": "rss",
-    "isLeadStory": true,
+    "isLeadStory": false,
     "isTrending": true,
     "isBreaking": true,
     "tags": [
